@@ -6,12 +6,13 @@ LeNet-5
 """
 from keras.datasets import mnist
 from keras.utils import np_utils
+
 # Load dataset as train and test sets
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
 # Set numeric type to float32 from uint8
-x_train = x_train.astype(‘float32’)
-x_test = x_test.astype(‘float32’)
+x_train = x_train.astype('float32')
+x_test = x_test.astype('float32')
 
 # Normalize value to [0, 1]
 x_train /= 255
