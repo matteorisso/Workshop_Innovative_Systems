@@ -30,3 +30,22 @@ x_test_float = x_test_float.reshape(x_test.shape[0], 28,28,1)
 
 predictions = trained_model.predict(x_test_float)
 
+# List_prediction is the list where is saved the most probable number according
+# to the CNN
+List_prediction=[]
+
+# Iteration on the matrix predictions
+for i in predictions :
+    # argmax() gives the index of the max value in i, therefore the max 
+    # value in i-esim row of predictions.
+    # The result of argmax is stored in List_prediction
+    List_prediction.append(i.argmax())
+
+# Cast numpy array y_test to list in order to perform the comparison
+List_y_test = y_test.tolist()   
+
+# Number of elements that differ between prediction and corrects results
+n_diff = len(set(List_prediction)-set(List_y_test))
+
+print("The number of elements that differ between prediction and expected results is : ")
+print(n_diff)
