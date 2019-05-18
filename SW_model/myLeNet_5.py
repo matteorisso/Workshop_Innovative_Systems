@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
@@ -22,8 +22,8 @@ x_train = x_train.astype('float32')
 x_test = x_test.astype('float32')
 
 # Normalize value to [0, 1]
-x_train /= 255
-x_test /= 255
+x_train /= 255.0
+x_test /= 255.0
 
 # Transform lables to one-hot encoding
 y_train = np_utils.to_categorical(y_train, 10)
