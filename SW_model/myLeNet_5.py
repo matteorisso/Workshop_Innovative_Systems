@@ -10,7 +10,6 @@ Description : Software model of the CNN LeNet-5 for handwritten digits
 
 # Loading of the dataset mnist
 from keras.datasets import mnist
-
 # Loading from keras utilities function
 from keras.utils import np_utils
 
@@ -37,8 +36,8 @@ x_test = x_test.reshape(x_test.shape[0], 28,28,1)
 # Creation of the NN model as a sequential model, this means that all the layer 
 # will be stucked in the order with whom appears in the code.
 from keras.models import Sequential
-from keras import models, layers
-import keras
+from keras import layers, losses
+#import keras
 #Instantiate an empty model
 model = Sequential()
 
@@ -72,7 +71,7 @@ model.add(layers.Dense(84, activation = 'tanh'))
 model.add(layers.Dense(10, activation = 'softmax'))
 
 # Compile the model
-model.compile(loss = keras.losses.categorical_crossentropy, \
+model.compile(loss = losses.categorical_crossentropy, \
               optimizer = 'SGD', metrics = ['accuracy'])
 
 # We can train the model by calling model.fit function and pass in the 
