@@ -8,6 +8,9 @@ Description : Software model of the CNN LeNet-5 for handwritten digits
               recognition, implemented using keras.
 """
 
+import keras
+
+
 # Loading of the dataset mnist
 from keras.datasets import mnist
 
@@ -38,7 +41,6 @@ x_test = x_test.reshape(x_test.shape[0], 28,28,1)
 # will be stucked in the order with whom appears in the code.
 from keras.models import Sequential
 from keras import models, layers
-import keras
 #Instantiate an empty model
 model = Sequential()
 
