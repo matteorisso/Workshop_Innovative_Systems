@@ -8,13 +8,11 @@ from keras.datasets import mnist
 from keras.utils import np_utils
 
 
-def get(): 
-    # Load dataset as train and test sets
+def load(): 
     return mnist.load_data()    
 
 def process():
-
-    (x_train, y_train), (x_test, y_test) = get()
+    (x_train, y_train), (x_test, y_test) = load()
     # Set numeric type to float32 from uint8
     x_train = x_train.astype('float32')
     x_test = x_test.astype('float32')

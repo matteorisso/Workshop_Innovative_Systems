@@ -8,9 +8,7 @@ import plot
 import dataset
 import keras
 
-(x_test, y_test) = dataset.process()[1]
-
-BATCH_SIZE = 1
+x_test = dataset.process()[1][0]
 
 trained = keras.models.load_model("lenet5model.h5")
 '''
@@ -21,14 +19,15 @@ hidden_outputs = [layer.output for layer in trained.layers] #comprehension pytho
 
 #Creates a model that will return the OFMAPs of each layer, starting from
 #previously trained sequential model. 
+
 model = keras.Model(inputs = trained.input, outputs = hidden_outputs) 
+model.summary()
 
-# Returns a list of eight Numpy arrays: one array per layer activation
+
 # N.B.: the input data MUST be organized in a 4D tensor.
-#x_test = x_test[BATCH_SIZE-1].reshape(1,28,28,1)
-''' perché fare predict su un sample se ho già l'uscita della rete trained? 
-'''
-feature_maps = model.predict(x_test[0:2])
-layers_name = [layer.name for layer in model.layers]    
+x_test = x_test[0].reshape(1,28,28,1)
 
+feature_maps = model.predict(x_test)
+
+layers_name = [layer.name for layer in model.layers[1:]]    
 plot.fmap(layers_name, feature_maps)
