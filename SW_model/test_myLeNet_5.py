@@ -28,7 +28,10 @@ from keras.datasets import mnist
 x_test_float = x_test.astype('float32')
 x_test_float = x_test_float.reshape(x_test.shape[0], 28,28,1)
 
-predictions = trained_model.predict(x_test_float)
+img_reshaped = img.reshape(1,28,28,1)
+predictions = trained_model.predict(img_reshaped)
+
+#predictions = trained_model.predict(x_test_float)
 
 # List_prediction is the list where is saved the most probable number according
 # to the CNN
