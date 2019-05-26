@@ -1,5 +1,5 @@
 ## LENET5 SW MODEL
-####Keras Sequential Model
+###Keras Sequential Model
 
 > High Level API implementation of the architecture:
 
@@ -16,11 +16,11 @@ modules :
 	- png2mnist class for *png* images processing
 - **plot.py**	 : plot utils   
 
-####Tensorflow Functional API 
+###Tensorflow Functional API 
 
 > Low Level API implementation of the architecture:
 
-*** BUG: KeyError restoring model from checkpoint ***
+***BUG: KeyError restoring model from checkpoint***
 
 ***run*** :
 1. 'python3.X main.py'	: train the model, plot predictions examples 
