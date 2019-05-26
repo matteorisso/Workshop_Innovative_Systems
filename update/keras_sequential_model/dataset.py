@@ -11,6 +11,7 @@ import numpy as np
 from PIL import Image, ImageFilter # pillow 
 
 class mnist():
+    
     def __init__(self, n_classes=10):
         
         # set labels
@@ -32,7 +33,7 @@ class mnist():
         # reshape img to LeNet5 input (32,32,1)
         self.x_train      = np.pad(self.x_train, ((0,0),(2,2),(2,2),(0,0)), 'constant')
         self.x_test       = np.pad(self.x_test, ((0,0),(2,2),(2,2),(0,0)), 'constant')
-         
+        print()
         print("Updated Image Shape: {}".format(self.x_train[0].shape))
     
     def preprocess_input(self):
