@@ -183,9 +183,11 @@ class lenet():
     #TEST - after training -    			
     def test_examples(self):
         
+        
         self.x_test, self.y_test = shuffle(self.x_test,self.y_test)
         
         with tf.Session() as self.sess:
+            self.sess.run(tf.initialize_all_variables())
             self.cls_pred = self.sess.run(self.cls_prediction, feed_dict={self.x: self.x_test,self.y: self.y_test})
 			
             plot.plot_images(self.x_test, self.y_test, self.cls_pred, title='Correct Examples')

@@ -38,12 +38,13 @@ def plot_images(images, cls_true, cls_pred=None, title=None):
         plt.suptitle(title, size=14)
     plt.show(block=False)
     
-    save_dir = os.path.join(os.getcwd(), 'saved_models/'+title.lower())
+    save_dir = os.path.join(os.getcwd(), 'saved_models')
     if not os.path.isdir(save_dir):
-        os.makedirs(save_dir)
-            
-    path = os.path.join(save_dir)
+        os.makedirs(save_dir)     
+    path = os.path.join(save_dir, title.lower())
     plt.savefig("{}.png".format(path))
+        
+    plt.show()
         
 def plot_example_errors(images, cls_true, cls_pred, title=None):
     """

@@ -9,7 +9,7 @@ import tf_lenet_class as lenet
 import os
 
 model = lenet.lenet()
-model.configure()
+model.configure(epochs=3)
 model.train()
 
 ckpt = os.path.join(os.getcwd(), 'model.ckpt')
