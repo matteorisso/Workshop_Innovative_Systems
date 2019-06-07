@@ -15,7 +15,7 @@ sys.stdout = open('transcript','w')
 '''
 
 data = dataset.mnist()
-(x_train, y_train), (x_test, y_test) = data.process()
+(x_train, y_train), (x_test, y_test) = data.preprocess_input()
 
 print("Image Shape: {}\n".format(x_train[0].shape))
 

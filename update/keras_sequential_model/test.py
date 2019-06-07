@@ -52,18 +52,21 @@ for (i,j) in zip(predictions_MNIST, predictions_ourDS) :
     List_prediction_ourDS.append(j.argmax())
 
 # cast numpy array y_test to list in order to perform the comparison
-List_y_test = y_test.tolist()   
+List_y = y_test.tolist()  
+List_y_test = []
+for i in List_y : 
+    List_y_test.append(i.index(1.0))
 
 # number of elements that differ between prediction and corrects results
 n_diff_MNIST = 0
 n_diff_ourDS = 0
 
-for i in [(l_1 - l_2) for l_1, l_2 in zip(List_prediction_MNIST,List_y_test)] :
-    if i != 0 :
+for k in [l_1-l_2 for l_1, l_2 in zip(List_prediction_MNIST,List_y_test)] :
+    if k != 0 :
         n_diff_MNIST += 1
 
-for i in [(l_1 - l_2) for l_1, l_2 in zip(List_prediction_ourDS,List_ourDS_test)] :
-    if i != 0 :
+for k in [l_1-l_2 for l_1, l_2 in zip(List_prediction_ourDS,List_ourDS_test)] :
+    if k != 0 :
         n_diff_ourDS += 1
 
 print("The number of elements that differ between prediction and expected results is : ")
