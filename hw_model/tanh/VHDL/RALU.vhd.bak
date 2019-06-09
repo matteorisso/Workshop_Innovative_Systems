@@ -1,15 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.fixed_pkg.all;
+use ieee.numeric_std.all;
 
 entity RALU is
-generic ( 	qi : natural:= 8;
-				qf : natural:= 8 );			
     port (
-	 
-          AD : in sfixed(qi-1 downto -qf);
-          OT : out sfixed(qi-1 downto -qf)
-         );
+        AD : in std_ulogic_vector(7 downto -8);
+        OT : out std_ulogic_vector(7 downto -8);
+    );
 end entity;
 
 architecture behavioral of RALU is

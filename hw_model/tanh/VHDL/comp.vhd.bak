@@ -1,14 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.fixed_pkg.all;
+use ieee.numeric_std.all;
 
 entity comp is
-generic ( 	qi : natural:= 8;
-				qf : natural:= 8 );				
-port (  
-
-        A : in sfixed(qi-1 downto -qf);  
-        O : out sfixed(qi-1 downto -qf);
+port (  A : in std_logic_vector (7 downto -8);  
+        O: out std_logic_vector (7 downto -8);
        );   
 end entity;
 
