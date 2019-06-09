@@ -1,5 +1,5 @@
 Analysis & Synthesis report for conv2d
-Sun Jun 09 01:59:44 2019
+Sun Jun 09 14:41:06 2019
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -14,122 +14,161 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |pe_array
- 13. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac
- 14. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul
- 15. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac|adder:add
- 16. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac|regn:acc
- 17. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac
- 18. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac|multiplier:mul
- 19. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac|adder:add
- 20. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac|regn:acc
- 21. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac
- 22. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac|multiplier:mul
- 23. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac|adder:add
- 24. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac|regn:acc
- 25. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac
- 26. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac|multiplier:mul
- 27. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac|adder:add
- 28. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac|regn:acc
- 29. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac
- 30. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul
- 31. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac|adder:add
- 32. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac|regn:acc
- 33. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac
- 34. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac|multiplier:mul
- 35. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac|adder:add
- 36. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac|regn:acc
- 37. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac
- 38. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac|multiplier:mul
- 39. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac|adder:add
- 40. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac|regn:acc
- 41. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac
- 42. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac|multiplier:mul
- 43. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac|adder:add
- 44. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac|regn:acc
- 45. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac
- 46. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul
- 47. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac|adder:add
- 48. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac|regn:acc
- 49. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac
- 50. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac|multiplier:mul
- 51. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac|adder:add
- 52. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac|regn:acc
- 53. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac
- 54. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac|multiplier:mul
- 55. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac|adder:add
- 56. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac|regn:acc
- 57. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac
- 58. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac|multiplier:mul
- 59. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac|adder:add
- 60. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac|regn:acc
- 61. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac
- 62. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul
- 63. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac|adder:add
- 64. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac|regn:acc
- 65. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac
- 66. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac|multiplier:mul
- 67. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac|adder:add
- 68. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac|regn:acc
- 69. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac
- 70. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac|multiplier:mul
- 71. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac|adder:add
- 72. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac|regn:acc
- 73. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac
- 74. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac|multiplier:mul
- 75. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac|adder:add
- 76. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac|regn:acc
- 77. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac
- 78. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac|multiplier:mul
- 79. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac|adder:add
- 80. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac|regn:acc
- 81. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac
- 82. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac|multiplier:mul
- 83. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac|adder:add
- 84. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac|regn:acc
- 85. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac
- 86. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac|multiplier:mul
- 87. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac|adder:add
- 88. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac|regn:acc
- 89. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac
- 90. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac|multiplier:mul
- 91. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac|adder:add
- 92. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac|regn:acc
- 93. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add
- 94. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add
- 95. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add
- 96. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add
- 97. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
- 98. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
- 99. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
-100. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
-101. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
-102. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
-103. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
-104. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
-105. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
-106. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
-107. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
-108. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
-109. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
-110. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
-111. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
-112. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
-113. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
-114. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
-115. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
-116. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
-117. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1
-118. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2
-119. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1
-120. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2
-121. lpm_mult Parameter Settings by Entity Instance
-122. Port Connectivity Checks: "pe:\rgen:0:cgen:0:mac|regn:acc"
-123. Elapsed Time Per Partition
-124. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |pe_array
+ 11. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac
+ 12. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul
+ 13. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac|adder:add
+ 14. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:0:mac|regn:acc
+ 15. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac
+ 16. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac|multiplier:mul
+ 17. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac|adder:add
+ 18. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:1:mac|regn:acc
+ 19. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac
+ 20. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac|multiplier:mul
+ 21. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac|adder:add
+ 22. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:2:mac|regn:acc
+ 23. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac
+ 24. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac|multiplier:mul
+ 25. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac|adder:add
+ 26. Parameter Settings for User Entity Instance: pe:\rgen:0:cgen:3:mac|regn:acc
+ 27. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac
+ 28. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul
+ 29. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac|adder:add
+ 30. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:0:mac|regn:acc
+ 31. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac
+ 32. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac|multiplier:mul
+ 33. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac|adder:add
+ 34. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:1:mac|regn:acc
+ 35. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac
+ 36. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac|multiplier:mul
+ 37. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac|adder:add
+ 38. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:2:mac|regn:acc
+ 39. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac
+ 40. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac|multiplier:mul
+ 41. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac|adder:add
+ 42. Parameter Settings for User Entity Instance: pe:\rgen:1:cgen:3:mac|regn:acc
+ 43. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac
+ 44. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul
+ 45. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac|adder:add
+ 46. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:0:mac|regn:acc
+ 47. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac
+ 48. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac|multiplier:mul
+ 49. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac|adder:add
+ 50. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:1:mac|regn:acc
+ 51. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac
+ 52. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac|multiplier:mul
+ 53. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac|adder:add
+ 54. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:2:mac|regn:acc
+ 55. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac
+ 56. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac|multiplier:mul
+ 57. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac|adder:add
+ 58. Parameter Settings for User Entity Instance: pe:\rgen:2:cgen:3:mac|regn:acc
+ 59. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac
+ 60. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul
+ 61. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac|adder:add
+ 62. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:0:mac|regn:acc
+ 63. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac
+ 64. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac|multiplier:mul
+ 65. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac|adder:add
+ 66. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:1:mac|regn:acc
+ 67. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac
+ 68. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac|multiplier:mul
+ 69. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac|adder:add
+ 70. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:2:mac|regn:acc
+ 71. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac
+ 72. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac|multiplier:mul
+ 73. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac|adder:add
+ 74. Parameter Settings for User Entity Instance: pe:\rgen:3:cgen:3:mac|regn:acc
+ 75. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac
+ 76. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac|multiplier:mul
+ 77. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac|adder:add
+ 78. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:0:mac|regn:acc
+ 79. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac
+ 80. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac|multiplier:mul
+ 81. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac|adder:add
+ 82. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:1:mac|regn:acc
+ 83. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac
+ 84. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac|multiplier:mul
+ 85. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac|adder:add
+ 86. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:2:mac|regn:acc
+ 87. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac
+ 88. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac|multiplier:mul
+ 89. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac|adder:add
+ 90. Parameter Settings for User Entity Instance: pe:\rgen:4:cgen:3:mac|regn:acc
+ 91. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add
+ 92. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s0_0
+ 93. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s0_1
+ 94. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s1_0
+ 95. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s1_1
+ 96. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r0_0
+ 97. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r0_1
+ 98. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r1_0
+ 99. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r1_1
+100. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add
+101. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s0_0
+102. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s0_1
+103. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s1_0
+104. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s1_1
+105. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r0_0
+106. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r0_1
+107. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r1_0
+108. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r1_1
+109. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add
+110. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s0_0
+111. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s0_1
+112. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s1_0
+113. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s1_1
+114. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r0_0
+115. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r0_1
+116. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r1_0
+117. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r1_1
+118. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add
+119. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s0_0
+120. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s0_1
+121. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s1_0
+122. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s1_1
+123. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r0_0
+124. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r0_1
+125. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r1_0
+126. Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r1_1
+127. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
+128. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
+129. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
+130. Parameter Settings for Inferred Entity Instance: pe:\rgen:4:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
+131. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
+132. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
+133. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
+134. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0
+135. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
+136. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
+137. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
+138. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:2:mac|multiplier:mul|lpm_mult:Mult0
+139. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
+140. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
+141. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
+142. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:1:mac|multiplier:mul|lpm_mult:Mult0
+143. Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
+144. Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
+145. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
+146. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0
+147. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1
+148. Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2
+149. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1
+150. Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2
+151. lpm_mult Parameter Settings by Entity Instance
+152. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r1_1"
+153. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r1_0"
+154. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r0_1"
+155. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r0_0"
+156. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s1_1"
+157. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s1_0"
+158. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s0_1"
+159. Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s0_0"
+160. Port Connectivity Checks: "pe:\rgen:0:cgen:0:mac|regn:acc"
+161. Port Connectivity Checks: "pe:\rgen:0:cgen:0:mac|adder:add"
+162. Elapsed Time Per Partition
+163. Analysis & Synthesis Messages
 
 
 
@@ -155,7 +194,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 09 01:59:44 2019         ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun 09 14:41:06 2019         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; conv2d                                        ;
 ; Top-level Entity Name              ; pe_array                                      ;
@@ -332,14 +371,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Compilation Hierarchy Node                       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                      ; Library Name ;
 +--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; |pe_array                                        ; 1590 (0)          ; 916 (0)      ; 0           ; 36           ; 0       ; 18        ; 274  ; 0            ; |pe_array                                                                                                                                                ;              ;
-;    |binary_adder_tree:\sum:0:add|                ; 64 (64)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:0:add                                                                                                                   ;              ;
-;    |binary_adder_tree:\sum:1:add|                ; 64 (64)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:1:add                                                                                                                   ;              ;
-;    |binary_adder_tree:\sum:2:add|                ; 64 (64)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:2:add                                                                                                                   ;              ;
-;    |binary_adder_tree:\sum:3:add|                ; 64 (64)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:3:add                                                                                                                   ;              ;
-;    |pe:\rgen:0:cgen:0:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac                                                                                                                          ;              ;
-;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
-;          |lpm_mult:Mult0|                        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
-;             |mult_h1t:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
+;    |binary_adder_tree:\sum:0:add|                ; 64 (0)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:0:add                                                                                                                   ;              ;
+;       |regn:r0_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:0:add|regn:r0_0                                                                                                         ;              ;
+;       |regn:r0_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:0:add|regn:r0_1                                                                                                         ;              ;
+;       |regn:r1_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:0:add|regn:r1_0                                                                                                         ;              ;
+;       |regn:r1_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:0:add|regn:r1_1                                                                                                         ;              ;
+;    |binary_adder_tree:\sum:1:add|                ; 64 (0)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:1:add                                                                                                                   ;              ;
+;       |regn:r0_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:1:add|regn:r0_0                                                                                                         ;              ;
+;       |regn:r0_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:1:add|regn:r0_1                                                                                                         ;              ;
+;       |regn:r1_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:1:add|regn:r1_0                                                                                                         ;              ;
+;       |regn:r1_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:1:add|regn:r1_1                                                                                                         ;              ;
+;    |binary_adder_tree:\sum:2:add|                ; 64 (0)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:2:add                                                                                                                   ;              ;
+;       |regn:r0_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:2:add|regn:r0_0                                                                                                         ;              ;
+;       |regn:r0_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:2:add|regn:r0_1                                                                                                         ;              ;
+;       |regn:r1_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:2:add|regn:r1_0                                                                                                         ;              ;
+;       |regn:r1_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:2:add|regn:r1_1                                                                                                         ;              ;
+;    |binary_adder_tree:\sum:3:add|                ; 64 (0)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:3:add                                                                                                                   ;              ;
+;       |regn:r0_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:3:add|regn:r0_0                                                                                                         ;              ;
+;       |regn:r0_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:3:add|regn:r0_1                                                                                                         ;              ;
+;       |regn:r1_0|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:3:add|regn:r1_0                                                                                                         ;              ;
+;       |regn:r1_1|                                ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|binary_adder_tree:\sum:3:add|regn:r1_1                                                                                                         ;              ;
+;    |pe:\rgen:0:cgen:0:mac|                       ; 370 (0)           ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac                                                                                                                          ;              ;
+;       |multiplier:mul|                           ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
+;          |lpm_mult:Mult0|                        ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
+;             |mult_h1t:auto_generated|            ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
+;                |alt_mac_mult:mac_mult1|          ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1                                             ;              ;
+;                   |mac_mult_35h1:auto_generated| ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated                ;              ;
+;                      |mult_tbo:mult1|            ; 337 (337)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated|mult_tbo:mult1 ;              ;
 ;       |regn:acc|                                 ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:0:mac|regn:acc                                                                                                                 ;              ;
 ;    |pe:\rgen:0:cgen:1:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:1:mac                                                                                                                          ;              ;
 ;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:1:mac|multiplier:mul                                                                                                           ;              ;
@@ -356,10 +414,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_mult:Mult0|                        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
 ;             |mult_h1t:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
 ;       |regn:acc|                                 ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:0:cgen:3:mac|regn:acc                                                                                                                 ;              ;
-;    |pe:\rgen:1:cgen:0:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac                                                                                                                          ;              ;
-;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
-;          |lpm_mult:Mult0|                        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
-;             |mult_h1t:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
+;    |pe:\rgen:1:cgen:0:mac|                       ; 370 (0)           ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac                                                                                                                          ;              ;
+;       |multiplier:mul|                           ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
+;          |lpm_mult:Mult0|                        ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
+;             |mult_h1t:auto_generated|            ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
+;                |alt_mac_mult:mac_mult1|          ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1                                             ;              ;
+;                   |mac_mult_35h1:auto_generated| ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated                ;              ;
+;                      |mult_tbo:mult1|            ; 337 (337)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated|mult_tbo:mult1 ;              ;
 ;       |regn:acc|                                 ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:0:mac|regn:acc                                                                                                                 ;              ;
 ;    |pe:\rgen:1:cgen:1:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:1:mac                                                                                                                          ;              ;
 ;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:1:mac|multiplier:mul                                                                                                           ;              ;
@@ -376,13 +437,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_mult:Mult0|                        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
 ;             |mult_h1t:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
 ;       |regn:acc|                                 ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:1:cgen:3:mac|regn:acc                                                                                                                 ;              ;
-;    |pe:\rgen:2:cgen:0:mac|                       ; 370 (0)           ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac                                                                                                                          ;              ;
-;       |multiplier:mul|                           ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
-;          |lpm_mult:Mult0|                        ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
-;             |mult_h1t:auto_generated|            ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
-;                |alt_mac_mult:mac_mult1|          ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1                                             ;              ;
-;                   |mac_mult_35h1:auto_generated| ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated                ;              ;
-;                      |mult_tbo:mult1|            ; 337 (337)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated|mult_tbo:mult1 ;              ;
+;    |pe:\rgen:2:cgen:0:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac                                                                                                                          ;              ;
+;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
+;          |lpm_mult:Mult0|                        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
+;             |mult_h1t:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
 ;       |regn:acc|                                 ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:0:mac|regn:acc                                                                                                                 ;              ;
 ;    |pe:\rgen:2:cgen:1:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:1:mac                                                                                                                          ;              ;
 ;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:1:mac|multiplier:mul                                                                                                           ;              ;
@@ -399,13 +457,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_mult:Mult0|                        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:3:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
 ;             |mult_h1t:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:3:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
 ;       |regn:acc|                                 ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:2:cgen:3:mac|regn:acc                                                                                                                 ;              ;
-;    |pe:\rgen:3:cgen:0:mac|                       ; 370 (0)           ; 33 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac                                                                                                                          ;              ;
-;       |multiplier:mul|                           ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
-;          |lpm_mult:Mult0|                        ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
-;             |mult_h1t:auto_generated|            ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
-;                |alt_mac_mult:mac_mult1|          ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1                                             ;              ;
-;                   |mac_mult_35h1:auto_generated| ; 337 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated                ;              ;
-;                      |mult_tbo:mult1|            ; 337 (337)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1|mac_mult_35h1:auto_generated|mult_tbo:mult1 ;              ;
+;    |pe:\rgen:3:cgen:0:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac                                                                                                                          ;              ;
+;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul                                                                                                           ;              ;
+;          |lpm_mult:Mult0|                        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0                                                                                            ;              ;
+;             |mult_h1t:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated                                                                    ;              ;
 ;       |regn:acc|                                 ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:0:mac|regn:acc                                                                                                                 ;              ;
 ;    |pe:\rgen:3:cgen:1:mac|                       ; 33 (0)            ; 33 (0)       ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:1:mac                                                                                                                          ;              ;
 ;       |multiplier:mul|                           ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |pe_array|pe:\rgen:3:cgen:1:mac|multiplier:mul                                                                                                           ;              ;
@@ -464,48 +519,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; binary_adder_tree:\sum:3:add|sum3[8,9] ; Lost fanout        ;
-; binary_adder_tree:\sum:2:add|sum3[8,9] ; Lost fanout        ;
-; binary_adder_tree:\sum:1:add|sum3[8,9] ; Lost fanout        ;
-; binary_adder_tree:\sum:0:add|sum3[8,9] ; Lost fanout        ;
-; binary_adder_tree:\sum:3:add|sum2[8]   ; Lost fanout        ;
-; binary_adder_tree:\sum:3:add|sum1[8]   ; Lost fanout        ;
-; binary_adder_tree:\sum:2:add|sum2[8]   ; Lost fanout        ;
-; binary_adder_tree:\sum:2:add|sum1[8]   ; Lost fanout        ;
-; binary_adder_tree:\sum:1:add|sum2[8]   ; Lost fanout        ;
-; binary_adder_tree:\sum:1:add|sum1[8]   ; Lost fanout        ;
-; binary_adder_tree:\sum:0:add|sum2[8]   ; Lost fanout        ;
-; binary_adder_tree:\sum:0:add|sum1[8]   ; Lost fanout        ;
-; Total Number of Removed Registers = 16 ;                    ;
-+----------------------------------------+--------------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                        ;
-+--------------------------------------+--------------------+----------------------------------------+
-; Register name                        ; Reason for Removal ; Registers Removed due to This Register ;
-+--------------------------------------+--------------------+----------------------------------------+
-; binary_adder_tree:\sum:3:add|sum3[8] ; Lost Fanouts       ; binary_adder_tree:\sum:3:add|sum1[8]   ;
-; binary_adder_tree:\sum:2:add|sum3[8] ; Lost Fanouts       ; binary_adder_tree:\sum:2:add|sum1[8]   ;
-; binary_adder_tree:\sum:1:add|sum3[8] ; Lost Fanouts       ; binary_adder_tree:\sum:1:add|sum1[8]   ;
-; binary_adder_tree:\sum:0:add|sum3[8] ; Lost Fanouts       ; binary_adder_tree:\sum:0:add|sum1[8]   ;
-+--------------------------------------+--------------------+----------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 916   ;
-; Number of registers using Synchronous Clear  ; 256   ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 660   ;
+; Number of registers using Asynchronous Clear ; 916   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -1415,6 +1437,94 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s0_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s0_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s1_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|adder:s1_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r0_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r0_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r1_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:0:add|regn:r1_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add ;
 +----------------+-------+--------------------------------------------------+
@@ -1423,6 +1533,94 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; qi             ; 8     ; Signed Integer                                   ;
 ; qf             ; 8     ; Signed Integer                                   ;
 +----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s0_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s0_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s1_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|adder:s1_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r0_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r0_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r1_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:1:add|regn:r1_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1437,6 +1635,94 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s0_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s0_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s1_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|adder:s1_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r0_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r0_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r1_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:2:add|regn:r1_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add ;
 +----------------+-------+--------------------------------------------------+
@@ -1445,6 +1731,94 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; qi             ; 8     ; Signed Integer                                   ;
 ; qf             ; 8     ; Signed Integer                                   ;
 +----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s0_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s0_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s1_0 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|adder:s1_1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                              ;
+; qf             ; 8     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r0_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r0_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r1_0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_adder_tree:\sum:3:add|regn:r1_1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                             ;
+; qf             ; 8     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1589,76 +1963,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
-+------------------------------------------------+------------+----------------------------------------+
-; Parameter Name                                 ; Value      ; Type                                   ;
-+------------------------------------------------+------------+----------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                         ;
-; LPM_WIDTHA                                     ; 16         ; Untyped                                ;
-; LPM_WIDTHB                                     ; 16         ; Untyped                                ;
-; LPM_WIDTHP                                     ; 32         ; Untyped                                ;
-; LPM_WIDTHR                                     ; 32         ; Untyped                                ;
-; LPM_WIDTHS                                     ; 1          ; Untyped                                ;
-; LPM_REPRESENTATION                             ; SIGNED     ; Untyped                                ;
-; LPM_PIPELINE                                   ; 0          ; Untyped                                ;
-; LATENCY                                        ; 0          ; Untyped                                ;
-; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped                                ;
-; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                                ;
-; USE_EAB                                        ; OFF        ; Untyped                                ;
-; MAXIMIZE_SPEED                                 ; 5          ; Untyped                                ;
-; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                                ;
-; CARRY_CHAIN                                    ; MANUAL     ; Untyped                                ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                    ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                                ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                                ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                                ;
-; CBXI_PARAMETER                                 ; mult_h1t   ; Untyped                                ;
-; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                                ;
-; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                                ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                                ;
-+------------------------------------------------+------------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
-+------------------------------------------------+------------+----------------------------------------+
-; Parameter Name                                 ; Value      ; Type                                   ;
-+------------------------------------------------+------------+----------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                         ;
-; LPM_WIDTHA                                     ; 16         ; Untyped                                ;
-; LPM_WIDTHB                                     ; 16         ; Untyped                                ;
-; LPM_WIDTHP                                     ; 32         ; Untyped                                ;
-; LPM_WIDTHR                                     ; 32         ; Untyped                                ;
-; LPM_WIDTHS                                     ; 1          ; Untyped                                ;
-; LPM_REPRESENTATION                             ; SIGNED     ; Untyped                                ;
-; LPM_PIPELINE                                   ; 0          ; Untyped                                ;
-; LATENCY                                        ; 0          ; Untyped                                ;
-; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped                                ;
-; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                                ;
-; USE_EAB                                        ; OFF        ; Untyped                                ;
-; MAXIMIZE_SPEED                                 ; 5          ; Untyped                                ;
-; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                                ;
-; CARRY_CHAIN                                    ; MANUAL     ; Untyped                                ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                    ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                                ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                                ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                                ;
-; CBXI_PARAMETER                                 ; mult_h1t   ; Untyped                                ;
-; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                                ;
-; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                                ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                                ;
-+------------------------------------------------+------------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
 +------------------------------------------------+------------+----------------------------------------+
 ; Parameter Name                                 ; Value      ; Type                                   ;
@@ -1729,7 +2033,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
 +------------------------------------------------+------------+----------------------------------------+
 ; Parameter Name                                 ; Value      ; Type                                   ;
 +------------------------------------------------+------------+----------------------------------------+
@@ -1764,7 +2068,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
 +------------------------------------------------+------------+----------------------------------------+
 ; Parameter Name                                 ; Value      ; Type                                   ;
 +------------------------------------------------+------------+----------------------------------------+
@@ -1869,7 +2173,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
 +------------------------------------------------+------------+----------------------------------------+
 ; Parameter Name                                 ; Value      ; Type                                   ;
 +------------------------------------------------+------------+----------------------------------------+
@@ -1904,7 +2208,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
 +------------------------------------------------+------------+----------------------------------------+
 ; Parameter Name                                 ; Value      ; Type                                   ;
 +------------------------------------------------+------------+----------------------------------------+
@@ -2009,7 +2313,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
 +------------------------------------------------+------------+----------------------------------------+
 ; Parameter Name                                 ; Value      ; Type                                   ;
 +------------------------------------------------+------------+----------------------------------------+
@@ -2044,7 +2348,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
 +------------------------------------------------+------------+----------------------------------------+
 ; Parameter Name                                 ; Value      ; Type                                   ;
 +------------------------------------------------+------------+----------------------------------------+
@@ -2148,8 +2452,78 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
++------------------------------------------------+------------+----------------------------------------+
+; Parameter Name                                 ; Value      ; Type                                   ;
++------------------------------------------------+------------+----------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                         ;
+; LPM_WIDTHA                                     ; 16         ; Untyped                                ;
+; LPM_WIDTHB                                     ; 16         ; Untyped                                ;
+; LPM_WIDTHP                                     ; 32         ; Untyped                                ;
+; LPM_WIDTHR                                     ; 32         ; Untyped                                ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                                ;
+; LPM_REPRESENTATION                             ; SIGNED     ; Untyped                                ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                                ;
+; LATENCY                                        ; 0          ; Untyped                                ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped                                ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                                ;
+; USE_EAB                                        ; OFF        ; Untyped                                ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped                                ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                                ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                                ;
+; CBXI_PARAMETER                                 ; mult_h1t   ; Untyped                                ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                                ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                                ;
++------------------------------------------------+------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
++------------------------------------------------+------------+----------------------------------------+
+; Parameter Name                                 ; Value      ; Type                                   ;
++------------------------------------------------+------------+----------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                         ;
+; LPM_WIDTHA                                     ; 16         ; Untyped                                ;
+; LPM_WIDTHB                                     ; 16         ; Untyped                                ;
+; LPM_WIDTHP                                     ; 32         ; Untyped                                ;
+; LPM_WIDTHR                                     ; 32         ; Untyped                                ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                                ;
+; LPM_REPRESENTATION                             ; SIGNED     ; Untyped                                ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                                ;
+; LATENCY                                        ; 0          ; Untyped                                ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped                                ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                                ;
+; USE_EAB                                        ; OFF        ; Untyped                                ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped                                ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                                ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                                ;
+; CBXI_PARAMETER                                 ; mult_h1t   ; Untyped                                ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                                ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                                ;
++------------------------------------------------+------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1 ;
 +------------------------------+---------------+------------------------------------------------------------------------------------------------------+
 ; Parameter Name               ; Value         ; Type                                                                                                 ;
 +------------------------------+---------------+------------------------------------------------------------------------------------------------------+
@@ -2196,7 +2570,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2 ;
 +-------------------------------+--------------+----------------------------------------------------------------------------------------------------+
 ; Parameter Name                ; Value        ; Type                                                                                               ;
 +-------------------------------+--------------+----------------------------------------------------------------------------------------------------+
@@ -2298,7 +2672,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1 ;
 +------------------------------+---------------+------------------------------------------------------------------------------------------------------+
 ; Parameter Name               ; Value         ; Type                                                                                                 ;
 +------------------------------+---------------+------------------------------------------------------------------------------------------------------+
@@ -2345,7 +2719,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2 ;
+; Parameter Settings for Inferred Entity Instance: pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2 ;
 +-------------------------------+--------------+----------------------------------------------------------------------------------------------------+
 ; Parameter Name                ; Value        ; Type                                                                                               ;
 +-------------------------------+--------------+----------------------------------------------------------------------------------------------------+
@@ -2496,28 +2870,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 16                                                  ;
-;     -- LPM_WIDTHB                     ; 16                                                  ;
-;     -- LPM_WIDTHP                     ; 32                                                  ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                              ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                  ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                  ;
-;     -- USE_EAB                        ; OFF                                                 ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 16                                                  ;
-;     -- LPM_WIDTHB                     ; 16                                                  ;
-;     -- LPM_WIDTHP                     ; 32                                                  ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                              ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                  ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                  ;
-;     -- USE_EAB                        ; OFF                                                 ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
 ; Entity Instance                       ; pe:\rgen:3:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 16                                                  ;
 ;     -- LPM_WIDTHB                     ; 16                                                  ;
@@ -2540,7 +2892,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:1:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Entity Instance                       ; pe:\rgen:1:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 16                                                  ;
 ;     -- LPM_WIDTHB                     ; 16                                                  ;
 ;     -- LPM_WIDTHP                     ; 32                                                  ;
@@ -2551,7 +2903,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:0:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Entity Instance                       ; pe:\rgen:0:cgen:3:mac|multiplier:mul|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 16                                                  ;
 ;     -- LPM_WIDTHB                     ; 16                                                  ;
 ;     -- LPM_WIDTHP                     ; 32                                                  ;
@@ -2584,7 +2936,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:1:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Entity Instance                       ; pe:\rgen:1:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 16                                                  ;
 ;     -- LPM_WIDTHB                     ; 16                                                  ;
 ;     -- LPM_WIDTHP                     ; 32                                                  ;
@@ -2595,7 +2947,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:0:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Entity Instance                       ; pe:\rgen:0:cgen:2:mac|multiplier:mul|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 16                                                  ;
 ;     -- LPM_WIDTHB                     ; 16                                                  ;
 ;     -- LPM_WIDTHP                     ; 32                                                  ;
@@ -2628,7 +2980,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Entity Instance                       ; pe:\rgen:1:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 16                                                  ;
 ;     -- LPM_WIDTHB                     ; 16                                                  ;
 ;     -- LPM_WIDTHP                     ; 32                                                  ;
@@ -2639,7 +2991,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
-; Entity Instance                       ; pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
+; Entity Instance                       ; pe:\rgen:0:cgen:1:mac|multiplier:mul|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 16                                                  ;
 ;     -- LPM_WIDTHB                     ; 16                                                  ;
 ;     -- LPM_WIDTHP                     ; 32                                                  ;
@@ -2672,7 +3024,101 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
+; Entity Instance                       ; pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                                  ;
+;     -- LPM_WIDTHB                     ; 16                                                  ;
+;     -- LPM_WIDTHP                     ; 32                                                  ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                              ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                  ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                  ;
+;     -- USE_EAB                        ; OFF                                                 ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
+; Entity Instance                       ; pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                                  ;
+;     -- LPM_WIDTHB                     ; 16                                                  ;
+;     -- LPM_WIDTHP                     ; 32                                                  ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                              ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                  ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                  ;
+;     -- USE_EAB                        ; OFF                                                 ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                  ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                  ;
 +---------------------------------------+-----------------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r1_1" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r1_0" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r0_1" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|regn:r0_0" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s1_1"                                                                 ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; cout ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s1_0"                                                                 ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; cout ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s0_1"                                                                 ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; cout ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_adder_tree:\sum:0:add|adder:s0_0"                                                                 ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; cout ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------+
@@ -2682,6 +3128,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------+
 ; en   ; Input ; Info     ; Stuck at VCC                     ;
 +------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pe:\rgen:0:cgen:0:mac|adder:add"                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; cout ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -2699,7 +3154,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Jun 09 01:59:05 2019
+    Info: Processing started: Sun Jun 09 14:40:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off conv2d -c conv2d
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file multiplier.vhd
@@ -2708,11 +3163,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file multipl
 Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
     Info (12022): Found design unit 1: adder-behavior
     Info (12023): Found entity 1: adder
-Info (12021): Found 2 design units, including 1 entities, in source file binary_adder_tree.vhd
-    Info (12022): Found design unit 1: binary_adder_tree-structure
+Info (12021): Found 3 design units, including 1 entities, in source file binary_adder_tree.vhd
+    Info (12022): Found design unit 1: binary_adder_tree-behavior
+    Info (12022): Found design unit 2: binary_adder_tree-structure
     Info (12023): Found entity 1: binary_adder_tree
-Info (12021): Found 2 design units, including 1 entities, in source file pe_array.vhd
+Info (12021): Found 3 design units, including 1 entities, in source file pe_array.vhd
     Info (12022): Found design unit 1: pe_array-structure
+    Info (12022): Found design unit 2: strucural_cfg
     Info (12023): Found entity 1: pe_array
 Info (12021): Found 2 design units, including 1 entities, in source file regn.vhd
     Info (12022): Found design unit 1: regn-behavior
@@ -2737,33 +3194,39 @@ Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1471)
 Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1472): subtype or type has null range
 Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1473): subtype or type has null range
 Info (12128): Elaborating entity "adder" for hierarchy "pe:\rgen:0:cgen:0:mac|adder:add"
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1471): subtype or type has null range
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1472): subtype or type has null range
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1473): subtype or type has null range
 Info (12128): Elaborating entity "regn" for hierarchy "pe:\rgen:0:cgen:0:mac|regn:acc"
 Warning (10492): VHDL Process Statement warning at regn.vhd(34): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "binary_adder_tree" for hierarchy "binary_adder_tree:\sum:0:add"
 Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1471): subtype or type has null range
 Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1472): subtype or type has null range
 Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1473): subtype or type has null range
+Info (12128): Elaborating entity "adder" for hierarchy "binary_adder_tree:\sum:0:add|adder:s0_0"
+Info (12128): Elaborating entity "regn" for hierarchy "binary_adder_tree:\sum:0:add|regn:r0_0"
+Warning (10492): VHDL Process Statement warning at regn.vhd(34): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (278001): Inferred 20 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:4:cgen:3:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:4:cgen:2:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:4:cgen:1:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:4:cgen:0:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:3:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:3:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:3:cgen:3:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:2:cgen:3:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:2:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:2:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:3:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:3:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:3:cgen:2:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:2:cgen:2:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:1:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:1:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:2:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:2:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:3:cgen:1:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:2:cgen:1:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:0:mac|multiplier:mul|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:0:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:1:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:1:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:3:cgen:0:mac|multiplier:mul|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:2:cgen:0:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:1:cgen:0:mac|multiplier:mul|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "pe:\rgen:0:cgen:0:mac|multiplier:mul|Mult0"
 Info (12130): Elaborated megafunction instantiation "pe:\rgen:4:cgen:3:mac|multiplier:mul|lpm_mult:Mult0"
 Info (12133): Instantiated megafunction "pe:\rgen:4:cgen:3:mac|multiplier:mul|lpm_mult:Mult0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "16"
@@ -2781,16 +3244,16 @@ Info (270001): Converted 2 DSP block slices
     Info (270002): Used 20 DSP blocks before DSP block balancing
         Info (270003): Used 20 DSP block slices in "Simple Multiplier (18-bit)" mode implemented in approximately 20 DSP blocks
     Info (270013): Converted the following 2 DSP block slices to logic elements
-        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
-            Info (270004): DSP block output node "pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
-            Info (270005): DSP block multiplier node "pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_mult1"
-        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
-            Info (270004): DSP block output node "pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
-            Info (270005): DSP block multiplier node "pe:\rgen:3:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_mult1"
+        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
+            Info (270004): DSP block output node "pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
+            Info (270005): DSP block multiplier node "pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_mult1"
+        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
+            Info (270004): DSP block output node "pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_out2"
+            Info (270005): DSP block multiplier node "pe:\rgen:1:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|mac_mult1"
     Info (270002): Used 18 DSP blocks after DSP block balancing
         Info (270003): Used 18 DSP block slices in "Simple Multiplier (18-bit)" mode implemented in approximately 18 DSP blocks
-Info (12130): Elaborated megafunction instantiation "pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1"
-Info (12133): Instantiated megafunction "pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1"
+Info (12133): Instantiated megafunction "pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1" with the following parameter:
     Info (12134): Parameter "MULT_REPRESENTATION_A" = "SIGNED"
     Info (12134): Parameter "MULT_REPRESENTATION_B" = "SIGNED"
     Info (12134): Parameter "MULT_PIPELINE" = "0"
@@ -2815,8 +3278,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mac_
     Info (12023): Found entity 1: mac_mult_35h1
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_tbo.tdf
     Info (12023): Found entity 1: mult_tbo
-Info (12130): Elaborated megafunction instantiation "pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2"
-Info (12133): Instantiated megafunction "pe:\rgen:2:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2"
+Info (12133): Instantiated megafunction "pe:\rgen:0:cgen:0:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "OUTPUT_ONLY"
     Info (12134): Parameter "dataa_width" = "32"
     Info (12134): Parameter "datab_width" = "0"
@@ -2851,36 +3314,20 @@ Info (12133): Instantiated megafunction "pe:\rgen:2:cgen:0:mac|multiplier:mul|lp
     Info (12134): Parameter "zeroacc_pipeline_clear" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mac_out_8n82.tdf
     Info (12023): Found entity 1: mac_out_8n82
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13014): Ignored 856 buffer(s)
     Info (13016): Ignored 28 CARRY_SUM buffer(s)
     Info (13019): Ignored 828 SOFT buffer(s)
-Info (17049): 16 registers lost all their fanouts during netlist optimizations. The first 16 are displayed below.
-    Info (17050): Register "binary_adder_tree:\sum:3:add|sum3[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:3:add|sum3[9]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:2:add|sum3[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:2:add|sum3[9]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:1:add|sum3[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:1:add|sum3[9]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:0:add|sum3[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:0:add|sum3[9]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:3:add|sum2[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:3:add|sum1[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:2:add|sum2[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:2:add|sum1[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:1:add|sum2[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:1:add|sum1[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:0:add|sum2[8]" lost all its fanouts during netlist optimizations.
-    Info (17050): Register "binary_adder_tree:\sum:0:add|sum1[8]" lost all its fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Info (21057): Implemented 1900 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 210 input pins
     Info (21059): Implemented 64 output pins
     Info (21061): Implemented 1590 logic cells
     Info (21062): Implemented 36 DSP elements
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 388 megabytes
-    Info: Processing ended: Sun Jun 09 01:59:44 2019
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 389 megabytes
+    Info: Processing ended: Sun Jun 09 14:41:07 2019
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:00:34
 
 

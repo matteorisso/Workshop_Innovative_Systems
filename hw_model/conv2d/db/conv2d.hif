@@ -674,6 +674,24 @@ fdb70d04cf39242dcc91bb321a0a9ef
 pkg|fixed_float_types.vhd
 2b5a158da067bde99c6f0d8d41b399b
 }
+# hierarchies {
+binary_adder_tree:\sum:0:add|regn:r0_0
+binary_adder_tree:\sum:0:add|regn:r0_1
+binary_adder_tree:\sum:0:add|regn:r1_0
+binary_adder_tree:\sum:0:add|regn:r1_1
+binary_adder_tree:\sum:1:add|regn:r0_0
+binary_adder_tree:\sum:1:add|regn:r0_1
+binary_adder_tree:\sum:1:add|regn:r1_0
+binary_adder_tree:\sum:1:add|regn:r1_1
+binary_adder_tree:\sum:2:add|regn:r0_0
+binary_adder_tree:\sum:2:add|regn:r0_1
+binary_adder_tree:\sum:2:add|regn:r1_0
+binary_adder_tree:\sum:2:add|regn:r1_1
+binary_adder_tree:\sum:3:add|regn:r0_0
+binary_adder_tree:\sum:3:add|regn:r0_1
+binary_adder_tree:\sum:3:add|regn:r1_0
+binary_adder_tree:\sum:3:add|regn:r1_1
+}
 # macro_sequence
 
 # end
@@ -4011,58 +4029,6 @@ dataa0
 
 # end
 # entity
-pe_array
-# storage
-db|conv2d.(0).cnf
-db|conv2d.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-pe_array.vhd
-aa615e6545bc2698a4c59a3017971fce
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-qi
-8
-PARAMETER_SIGNED_DEC
-DEF
-qf
-8
-PARAMETER_SIGNED_DEC
-DEF
-c
-4
-PARAMETER_SIGNED_DEC
-DEF
-}
-# include_file {
-pkg|fixed_pkg.vhd
-fdb70d04cf39242dcc91bb321a0a9ef
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
-param.vhd
-ddab844a43949c5c6f567fbd29e6bdf1
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 pe
 # storage
 db|conv2d.(1).cnf
@@ -4140,156 +4106,6 @@ pe:\rgen:4:cgen:3:mac
 
 # end
 # entity
-adder
-# storage
-db|conv2d.(2).cnf
-db|conv2d.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-adder.vhd
-fa834361a34a58a46845ddee16e1c63
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-qi
-3
-PARAMETER_SIGNED_DEC
-USR
-qf
-30
-PARAMETER_SIGNED_DEC
-USR
- constraint(a)
-2 downto -30
-PARAMETER_STRING
-USR
- constraint(b)
-2 downto -30
-PARAMETER_STRING
-USR
- constraint(res)
-2 downto -30
-PARAMETER_STRING
-USR
-}
-# include_file {
-pkg|fixed_pkg.vhd
-fdb70d04cf39242dcc91bb321a0a9ef
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
-}
-# hierarchies {
-pe:\rgen:0:cgen:0:mac|adder:add
-pe:\rgen:0:cgen:1:mac|adder:add
-pe:\rgen:0:cgen:2:mac|adder:add
-pe:\rgen:0:cgen:3:mac|adder:add
-pe:\rgen:1:cgen:0:mac|adder:add
-pe:\rgen:1:cgen:1:mac|adder:add
-pe:\rgen:1:cgen:2:mac|adder:add
-pe:\rgen:1:cgen:3:mac|adder:add
-pe:\rgen:2:cgen:0:mac|adder:add
-pe:\rgen:2:cgen:1:mac|adder:add
-pe:\rgen:2:cgen:2:mac|adder:add
-pe:\rgen:2:cgen:3:mac|adder:add
-pe:\rgen:3:cgen:0:mac|adder:add
-pe:\rgen:3:cgen:1:mac|adder:add
-pe:\rgen:3:cgen:2:mac|adder:add
-pe:\rgen:3:cgen:3:mac|adder:add
-pe:\rgen:4:cgen:0:mac|adder:add
-pe:\rgen:4:cgen:1:mac|adder:add
-pe:\rgen:4:cgen:2:mac|adder:add
-pe:\rgen:4:cgen:3:mac|adder:add
-}
-# macro_sequence
-
-# end
-# entity
-binary_adder_tree
-# storage
-db|conv2d.(4).cnf
-db|conv2d.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-binary_adder_tree.vhd
-7ef354e914e92ef7eb39e64d644464e
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-qi
-8
-PARAMETER_SIGNED_DEC
-USR
-qf
-8
-PARAMETER_SIGNED_DEC
-USR
- constraint(a)
-7 downto -8
-PARAMETER_STRING
-USR
- constraint(b)
-7 downto -8
-PARAMETER_STRING
-USR
- constraint(c)
-7 downto -8
-PARAMETER_STRING
-USR
- constraint(d)
-7 downto -8
-PARAMETER_STRING
-USR
- constraint(e)
-7 downto -8
-PARAMETER_STRING
-USR
- constraint(result)
-7 downto -8
-PARAMETER_STRING
-USR
-}
-# include_file {
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
-pkg|fixed_pkg.vhd
-fdb70d04cf39242dcc91bb321a0a9ef
-}
-# hierarchies {
-binary_adder_tree:\sum:0:add
-binary_adder_tree:\sum:1:add
-binary_adder_tree:\sum:2:add
-binary_adder_tree:\sum:3:add
-}
-# macro_sequence
-
-# end
-# entity
 multiplier
 # storage
 db|conv2d.(32).cnf
@@ -4362,6 +4178,281 @@ pe:\rgen:4:cgen:0:mac|multiplier:mul
 pe:\rgen:4:cgen:1:mac|multiplier:mul
 pe:\rgen:4:cgen:2:mac|multiplier:mul
 pe:\rgen:4:cgen:3:mac|multiplier:mul
+}
+# macro_sequence
+
+# end
+# entity
+adder
+# storage
+db|conv2d.(2).cnf
+db|conv2d.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+adder.vhd
+438bb639cc15801f447d64ba5c4a275
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+qi
+3
+PARAMETER_SIGNED_DEC
+USR
+qf
+30
+PARAMETER_SIGNED_DEC
+USR
+ constraint(a)
+2 downto -30
+PARAMETER_STRING
+USR
+ constraint(b)
+2 downto -30
+PARAMETER_STRING
+USR
+ constraint(res)
+2 downto -30
+PARAMETER_STRING
+USR
+}
+# include_file {
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
+pkg|fixed_pkg.vhd
+fdb70d04cf39242dcc91bb321a0a9ef
+}
+# hierarchies {
+pe:\rgen:0:cgen:0:mac|adder:add
+pe:\rgen:0:cgen:1:mac|adder:add
+pe:\rgen:0:cgen:2:mac|adder:add
+pe:\rgen:0:cgen:3:mac|adder:add
+pe:\rgen:1:cgen:0:mac|adder:add
+pe:\rgen:1:cgen:1:mac|adder:add
+pe:\rgen:1:cgen:2:mac|adder:add
+pe:\rgen:1:cgen:3:mac|adder:add
+pe:\rgen:2:cgen:0:mac|adder:add
+pe:\rgen:2:cgen:1:mac|adder:add
+pe:\rgen:2:cgen:2:mac|adder:add
+pe:\rgen:2:cgen:3:mac|adder:add
+pe:\rgen:3:cgen:0:mac|adder:add
+pe:\rgen:3:cgen:1:mac|adder:add
+pe:\rgen:3:cgen:2:mac|adder:add
+pe:\rgen:3:cgen:3:mac|adder:add
+pe:\rgen:4:cgen:0:mac|adder:add
+pe:\rgen:4:cgen:1:mac|adder:add
+pe:\rgen:4:cgen:2:mac|adder:add
+pe:\rgen:4:cgen:3:mac|adder:add
+}
+# macro_sequence
+
+# end
+# entity
+adder
+# storage
+db|conv2d.(33).cnf
+db|conv2d.(33).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+adder.vhd
+438bb639cc15801f447d64ba5c4a275
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+qi
+8
+PARAMETER_SIGNED_DEC
+USR
+qf
+8
+PARAMETER_SIGNED_DEC
+USR
+ constraint(a)
+7 downto -8
+PARAMETER_STRING
+USR
+ constraint(b)
+7 downto -8
+PARAMETER_STRING
+USR
+ constraint(res)
+7 downto -8
+PARAMETER_STRING
+USR
+}
+# include_file {
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
+pkg|fixed_pkg.vhd
+fdb70d04cf39242dcc91bb321a0a9ef
+}
+# hierarchies {
+binary_adder_tree:\sum:0:add|adder:s0_0
+binary_adder_tree:\sum:0:add|adder:s0_1
+binary_adder_tree:\sum:0:add|adder:s1_0
+binary_adder_tree:\sum:0:add|adder:s1_1
+binary_adder_tree:\sum:1:add|adder:s0_0
+binary_adder_tree:\sum:1:add|adder:s0_1
+binary_adder_tree:\sum:1:add|adder:s1_0
+binary_adder_tree:\sum:1:add|adder:s1_1
+binary_adder_tree:\sum:2:add|adder:s0_0
+binary_adder_tree:\sum:2:add|adder:s0_1
+binary_adder_tree:\sum:2:add|adder:s1_0
+binary_adder_tree:\sum:2:add|adder:s1_1
+binary_adder_tree:\sum:3:add|adder:s0_0
+binary_adder_tree:\sum:3:add|adder:s0_1
+binary_adder_tree:\sum:3:add|adder:s1_0
+binary_adder_tree:\sum:3:add|adder:s1_1
+}
+# macro_sequence
+
+# end
+# entity
+binary_adder_tree
+# storage
+db|conv2d.(4).cnf
+db|conv2d.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+binary_adder_tree.vhd
+7a815088ea25216f1315dfd25f2e833a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+qi
+8
+PARAMETER_SIGNED_DEC
+USR
+qf
+8
+PARAMETER_SIGNED_DEC
+USR
+ constraint(a)
+7 downto -8
+PARAMETER_STRING
+USR
+ constraint(b)
+7 downto -8
+PARAMETER_STRING
+USR
+ constraint(c)
+7 downto -8
+PARAMETER_STRING
+USR
+ constraint(d)
+7 downto -8
+PARAMETER_STRING
+USR
+ constraint(e)
+7 downto -8
+PARAMETER_STRING
+USR
+ constraint(result)
+7 downto -8
+PARAMETER_STRING
+USR
+}
+# include_file {
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
+pkg|fixed_pkg.vhd
+fdb70d04cf39242dcc91bb321a0a9ef
+}
+# hierarchies {
+binary_adder_tree:\sum:0:add
+binary_adder_tree:\sum:1:add
+binary_adder_tree:\sum:2:add
+binary_adder_tree:\sum:3:add
+}
+# macro_sequence
+
+# end
+# entity
+pe_array
+# storage
+db|conv2d.(0).cnf
+db|conv2d.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+pe_array.vhd
+da991de0f9ab13e957c2ca54d9bddfcc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+qi
+8
+PARAMETER_SIGNED_DEC
+DEF
+qf
+8
+PARAMETER_SIGNED_DEC
+DEF
+c
+4
+PARAMETER_SIGNED_DEC
+DEF
+}
+# include_file {
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
+param.vhd
+ddab844a43949c5c6f567fbd29e6bdf1
+pkg|fixed_pkg.vhd
+fdb70d04cf39242dcc91bb321a0a9ef
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

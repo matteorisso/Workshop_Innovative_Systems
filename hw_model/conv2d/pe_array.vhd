@@ -67,3 +67,13 @@ end generate sum;
 -- binary tree adder with param : log2r stages - even / odd r%2 = 0
 end architecture;
 
+
+configuration strucural_cfg of pe_array is
+  for structure
+    for all : binary_adder_tree
+      use entity work.binary_adder_tree(structure);
+      -- architecture structure specified for BAT design entity
+    end for;
+  end for;
+end strucural_cfg;
+
