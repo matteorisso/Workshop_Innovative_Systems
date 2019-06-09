@@ -71,17 +71,17 @@ class lenet():
         fc3     = tf.nn.tanh(fc3)
 		# Layer 5: Fully Connected. Input = 84. Output = 10.
         logits  = tf.add(tf.matmul(fc3, weights['out']), biases['out'])
-        self.logits = tf.nn.softmax(logits)             
+        #SELF?
+        logits = tf.nn.softmax(logits)             
     
     
     def configure(self, epochs=10, batch_size=128, lr=0.001):
         
-        self.saver=tf.train.Saver()
-        
         # load MNIST dataset 
-        self.data = dataset.mnist()
-        self.x_train,    self.y_train    = self.data.x_train,   self.data.y_train
-        self.x_test,     self.y_test     = self.data.x_test,    self.data.y_test
+        data = dataset.mnist()
+        
+        self.x_train,    self.y_train    = data.x_train,   data.y_train
+        self.x_test,     self.y_test     = data.x_test,    data.y_test
         
         self.x_train     = tf.keras.utils.normalize(self.x_train, axis=-1)
         
@@ -130,10 +130,11 @@ class lenet():
 	    Save the model after training.
     '''
     def train(self, save=True, savepath='./model.ckpt'):
-        
-        with tf.Session() as self.sess:
+	
+        saver=tf.train.Saver()
+        with tf.Session() as sess:
             
-            self.sess.run(tf.global_variables_initializer())
+            sess.run(tf.global_variables_initializer())
 			# `sess.graph` provides access to the graph used in a <a href="./../api_docs/python/tf/Session"><code>tf.Session</code></a>.
 			#writer = tf.summary.FileWriter("/tmp/log/...", sess.graph)
             print()
@@ -161,20 +162,21 @@ class lenet():
 			#SAVE    
                 print()
                 print('Saving...')
-                self.saver.save(self.sess,savepath)
+                saver.save(self.sess,savepath)
 					
 	# RESTORE WEIGHTS 
     def load_model(self, path='./model.ckpt'):
         
-        with tf.Session() as self.sess:
+        saver=tf.train.Saver()
+        with tf.Session() as sess:
             
-            self.sess.run(tf.initialize_all_variables())
+            sess.run(tf.initialize_all_variables())
             
             print()
             print('Loading model...')
-            self.saver.restore(self.sess, path)
+            saver.restore(sess, path)
             
-            self.loss_test, self.acc_test = self.sess.run([self.loss, self.accuracy], feed_dict={self.x: self.x_test, self.y: self.y_test})
+            self.loss_test, self.acc_test = sess.run([self.loss, self.accuracy], feed_dict={self.x: self.x_test, self.y: self.y_test})
             print()
             print('---------------------------------------------------------')
             print('Test Loss: {0:.2f}, Test Accuracy: {1:.01%}'.format(self.loss_test, self.acc_test))
@@ -183,12 +185,12 @@ class lenet():
     #TEST - after training -    			
     def test_examples(self):
         
-        
         self.x_test, self.y_test = shuffle(self.x_test,self.y_test)
         
-        with tf.Session() as self.sess:
-            self.sess.run(tf.initialize_all_variables())
-            self.cls_pred = self.sess.run(self.cls_prediction, feed_dict={self.x: self.x_test,self.y: self.y_test})
+        with tf.Session() as sess:
+            sess.run(tf.initialize_all_variables())
+            self.cls_pred = sess.run(self.cls_prediction, \
+                                     feed_dict={self.x: self.x_test,self.y: self.y_test})
 			
             plot.plot_images(self.x_test, self.y_test, self.cls_pred, title='Correct Examples')
             plot.plot_example_errors(self.x_test, self.y_test, self.cls_pred, title='Misclassified Examples')

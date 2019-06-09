@@ -5,8 +5,10 @@ Created on Tue May 21 10:48:33 2019
 @author: Matteo Risso, Alessandro Romeo, Antonio Simone
 """
 from tensorflow.keras import Sequential, layers, losses, utils
-import matplotlib.pyplot as plt
+
+import plot
 import dataset
+
 import os
 
 '''
@@ -69,48 +71,7 @@ print("Test loss {:.4f}, accuracy {:.2f}%".format(test_score[0], \
 plotting the training accuracy and loss after each epoch.
 '''
 ''' 
-
-https://keras.io/visualization/
-'''   
-save_dir = os.path.join(os.getcwd(), 'saved_models')
-if not os.path.isdir(save_dir):
-    os.makedirs(save_dir)
-  
-acc = hist.history['acc']
-val_acc = hist.history['val_acc']
-loss = hist.history['loss']
-val_loss = hist.history['val_loss']
-epochs = range(1, len(acc) + 1)
-
-title = 'Training and validation accuracy'
-
-plt.plot(epochs, acc, 'r', label='Training acc')
-plt.plot(epochs, val_acc, 'g', label='Validation acc')
-plt.title(title)
-plt.legend()
-plt.ylabel('Accuracy')
-plt.xlabel('Epoch')
-
-path = os.path.join(save_dir, title)
-plt.savefig("{}.png".format(path))
-
-title = 'Training and validation loss'
-
-plt.figure()
-plt.title(title)
-
-plt.plot(epochs, loss, 'r', label='Training loss')
-plt.plot(epochs, val_loss, 'g', label='Validation loss')
-
-plt.legend()
-plt.ylabel('Loss')
-plt.xlabel('Epoch')
-
-path = os.path.join(save_dir, title)
-plt.savefig("{}.png".format(path))
-    
-plt.show()
-    
+plot.history(hist)
 ''' 
 Save model and weights
 '''
@@ -124,5 +85,5 @@ if not os.path.isdir(save_dir):
 model_path = os.path.join(save_dir, model_name)
 lenet.save(model_path)
 
-print('*KUDOS* Trained model saved at {} '.format(model_path))
+print('*KUDOS* \nTrained model saved at {} '.format(model_path))
 utils.plot_model(lenet, to_file='lenet5model.png')
