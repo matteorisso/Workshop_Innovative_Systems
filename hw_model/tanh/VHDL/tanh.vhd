@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.fixed_pkg.all;
+use work.param.all;
 
 entity tanh is
 generic ( 	qi : natural:= 8;
@@ -47,11 +48,21 @@ end component;
 
 --port map
 begin 
-  
-LUT: RALU port map(AD=>A, OT=>s1);
+ 
+LUT:  RALU generic map ( qi => qi, qf => qf )
+												port map ( 
+															 AD=>A, 
+															 OT=>s1); 
+															 
+comparator:  comp generic map ( qi => qi, qf => qf )
+												port map ( 
+															 A=>A, 
+															 O=>s2);															 
 
-comparator: comp port map(A=>A, O=>s2);
-
-subtractor: sub port map(A=>sl, B=>s2, Y=>O);
+subtractor: sub generic map ( qi => qi, qf => qf )
+												port map ( 
+															 A=>s1,
+															 B=>s2, 
+															 Y=>O);
   
 end architecture;

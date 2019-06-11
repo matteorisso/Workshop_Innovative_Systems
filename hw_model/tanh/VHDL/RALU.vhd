@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.fixed_pkg.all;
+use work.param.all;
 
 entity RALU is
 generic ( 	qi : natural:= 8;
