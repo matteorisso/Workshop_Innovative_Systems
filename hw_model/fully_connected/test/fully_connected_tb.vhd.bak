@@ -1,86 +1,130 @@
---
--- Testbench of the: fully connected layer 400 to 120.
+ --
+-- testbench of the: fully connected layer 400 to 120.
 --
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use std.textio.all;
+use ieee.std_logic_textio.all;
 use work.fixed_pkg.all; 
 
-package IFMAP_OFMAP_type is
+package ifmap_ofmap_type is
 
-	--constant IFMAP_size : natural := 400;
-	--constant OFMAP_size : natural := 120;
-	constant PE_number : natural := 20;
-	constant qi : natural := 8;
-	constant qf : natural := 8;
+	--constant ifmap_size : natural := 400;
+	--constant ofmap_size : natural := 120;
+	constant pe_number	: natural := 20;
+	constant qi			: natural := 8;
+	constant qf			: natural := 8;
 	
-	type IFMAP_type is array(0 to PE_number-1) of sfixed(qi-1 downto -qf);
+	type ifmap_type is array(0 to pe_number-1) of sfixed(qi-1 downto -qf);
 	
-end package IFMAP_OFMAP_type;
+end package ifmap_ofmap_type;
 
 
-LIBRARY IEEE;
-LIBRARY STD;
-USE IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.NUMERIC_STD.ALL;
-USE STD.textio.all;
-USE ieee.std_logic_textio.all;
+library ieee;
+library std;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use std.textio.all;
+use ieee.std_logic_textio.all;
 use work.fixed_pkg.all; 
 
-use work.IFMAP_OFMAP_type.all;
+use work.ifmap_ofmap_type.all;
 
-ENTITY TB_FC IS
+entity tb_fc is
 	
 	
 
-END TB_FC;
+end tb_fc;
 
-ARCHITECTURE Test OF TB_FC IS
+architecture test of tb_fc is
 
-	COMPONENT fully_connected IS
-		PORT(	
-		CLK, RST_N : in std_logic;
-		IFMAP, WEIGHTS : in IFMAP_type;
-		OFMAP : out IFMAP_type
+	component fully_connected is
+		port(	
+		clk		: in std_logic;
+		rst_n	: in std_logic;
+		ifmap	: in std_logic;
+		weights : in ifmap_type;
+		ofmap	: out ifmap_type
 		);
-	END COMPONENT;
+	end component;
+	
+	file file_vectors : text;
+	file file_results : text;
+	
+	signal tb_clk		: std_logic;
+	signal tb_rst		: std_logic;
+	signal tb_ifmap		: ifmap_type;
+	signal tb_weigths	: ifmap_type; 
+	signal tb_ofmap		: ifmap_type;
 	
 	
-	SIGNAL TB_CLK, TB_RST : STD_LOGIC;
-	SIGNAL TB_IFMAP, TB_WEIGTHS, TB_OFMAP : IFMAP_type;
+begin
 	
-	
-BEGIN
-	
-	PROCESS -- Clock generation at 50MHz.
-	BEGIN
-		TB_CLK <= '1';
-		WAIT FOR 10 ns;
-		TB_CLK <= '0';
-		WAIT FOR 10 ns;
-	END PROCESS;
-	
-	process
+	process -- clock generation at 500mhz.
 	begin
-	TB_RST <= '1';
+		tb_clk <= '1';
+		wait for 1 ns;
+		tb_clk <= '0';
+		wait for 1 ns;
+	end process;
 	
-	WAIT FOR 40 ns; 
-	TB_RST <= '0';
-	TB_IFMAP <= (OTHERS => (OTHERS => '0'));
-	TB_WEIGTHS <= (OTHERS => (OTHERS => '0'));
 	
-	WAIT FOR 800 ns;
-	TB_RST <= '1';
+	-- process for:
+	-- 1) reading input stimuli from file
+	-- 2) writing results to file
+	process
+	variable v_iline	: line;
+	variable v_oline	: line;
+	variable v_ifmap	: ifmap_type;
+	variable v_weights	: ifmap_type;
+	variable v_space	: character; 
+	 
+	begin
+
+	-- opening input and output files in read/write modes
+	file_open(file_vectors, "random_in.txt",  read_mode);
+	file_open(file_results, "sim_results.txt", write_mode);
+	
+	tb_rst <= '0';
+	
+	wait for 10 ns;
+	
+	tb_rst <= '1';
+	
+	-- read input stimuli from file random_in.txt
+	while not endfile(file_vectors) loop
+	  readline(file_vectors, v_iline);
+	  read(v_iline, v_space); -- read the space character
+	  read(v_iline, v_space); -- read the space character
+	  read(v_iline, v_ifmap); -- get array of ifmap
+	  read(v_iline, v_space); -- read the space character	  
+	  read(v_iline, v_weights);	-- get array of weights
+	  
+	  tb_ifmap		<= v_ifmap;
+	  tb_weigths	<= v_weights;
+	  
+	  wait for 2 ns;
+	  
+	end loop;
+	
+	write(v_oline, tb_ofmap, right, 16);
+	writeline(file_results, v_oline);
+
+	-- closin in/out files
+	file_close(file_vectors);
+	file_close(file_results);
 	
 	wait;
 	end process;
 
-	FC : fully_connected
-		PORT MAP(
-			CLK => TB_CLK, 
-			RST_N => TB_RST, 
-			IFMAP => TB_IFMAP, 
-			WEIGHTS => TB_WEIGTHS,
-			OFMAP => TB_OFMAP
+	fc : fully_connected
+		port map(
+			clk		=> tb_clk, 
+			rst_n	=> tb_rst, 
+			ifmap 	=> tb_ifmap, 
+			weights => tb_weigths,
+			ofmap 	=> tb_ofmap
 			);
 		 
-END Test;
+end test;
