@@ -1,2 +1,0 @@
-dec2q ed err contengono rispettivamente una funzione matlab per converitre numeri da decimali a fixed point 
-mentre err contiene il codice usato per stimare gli errori medi(plot) nei range 0-1 e 1-2 dove l'errore è maggiore

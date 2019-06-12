@@ -1,0 +1,8 @@
+Nel file "output_tanh" ci sono i risultati della funzione tanh fatta su matlab 
+convertiti in fixed point. 
+
+Questi risultati vanno confrontati con i risultati di Modelsim che una volta fatta 
+la simulazione possono essere esportati su Excel. 
+
+In questo modo se sottraiamo tra di loro i due set di valori possiamo verificare che 
+non ci siano errori sui bit. 

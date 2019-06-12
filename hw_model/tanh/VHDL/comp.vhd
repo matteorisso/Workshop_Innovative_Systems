@@ -1,7 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.fixed_pkg.all;
-use work.param.all;
 
 entity comp is
 generic ( 	qi : natural:= 8;
@@ -9,7 +8,7 @@ generic ( 	qi : natural:= 8;
 port (  
 
         A : in sfixed(qi-1 downto -qf);  
-        O : out sfixed(qi-1 downto -qf);
+        O : out sfixed(qi-1 downto -qf)
        );   
 end entity;
 

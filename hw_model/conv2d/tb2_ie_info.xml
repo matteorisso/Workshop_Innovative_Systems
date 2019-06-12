@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Access Violation at 0X670E7B9A</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	 0x670e7b99: QtCore4 + 0xe7b99 (?hasText@QMimeData@@QBE_NXZ + 0x39)
+	 0x761fcb28: ole32 + 0x7cb28 (CreateDataCache + 0x6658)
+	 0x761fcc41: ole32 + 0x7cc41 (CreateDataCache + 0x6771)
+	 0x761fd9f4: ole32 + 0x7d9f4 (CreateDataCache + 0x7524)
+	 0x75f9bf1a: USER32 + 0x3bf1a (AddClipboardFormatListener + 0x49a)
+	 0x75f983e9: USER32 + 0x383e9 (DispatchMessageW + 0x979)
+	 0x75f97f89: USER32 + 0x37f89 (DispatchMessageW + 0x519)
+	 0x75f9a6d8: USER32 + 0x3a6d8 (SystemParametersInfoW + 0x4a8)
+	 0x77cacd3c: ntdll + 0x6cd3c (KiUserCallbackDispatcher + 0x4c)
+	 0x761fa3d5: ole32 + 0x7a3d5 (CreateDataCache + 0x3f05)
+	 0x761fbd2c: ole32 + 0x7bd2c (CreateDataCache + 0x585c)
+	 0x761fdb6e: ole32 + 0x7db6e (OleFlushClipboard + 0x9e)
+	 0x6507aba2: QtGui4 + 0x7aba2 (?event@QClipboard@@MAE_NPAVQEvent@@@Z + 0x42)
+	 0x670dba1c: QtCore4 + 0xdba1c (?notifyInternal@QCoreApplication@@AAE_NPAVQObject@@PAVQEvent@@@Z + 0x8c)
+	 0x670dc495: QtCore4 + 0xdc495 (?sendEvent@QCoreApplication@@SA_NPAVQObject@@PAVQEvent@@@Z + 0x25)
+	 0x6501b03a: QtGui4 + 0x1b03a (??1QApplication@@UAE@XZ + 0x6a)
+	   0x9a2bfc: GCL_AFCQ + 0x2bfc (??1AFCQ_APP@@UAE@XZ + 0x2c)
+	   0xbe514f: SYS_QUI + 0x1514f (??1QUI_APP@@UAE@XZ + 0x3f)
+	   0x4010eb: quartus + 0x10eb (?qgq_main@@YAHHPAPBD@Z + 0xeb)
+	   0x921c61: CCL_MSG + 0x1c61 (?msg_main_thread@@YAPAXPAX@Z + 0x11)
+	   0xe31be8: ccl_thr + 0x1be8 (_thr_final_wrapper + 0x8)
+	   0x921bd5: CCL_MSG + 0x1bd5 (?msg_thread_wrapper@@YAPAXP6APAXPAX@Z0@Z + 0x85)
+	   0x8a429a: ccl_mem + 0x429a (?mem_thread_wrapper@@YAPAXP6APAXPAX@Z0@Z + 0x4a)
+	   0x94b5d1: CCL_MSG + 0x2b5d1 (?msg_exe_main@@YAHHPAPBDP6AHH0@Z@Z + 0x81)
+	   0x40112c: quartus + 0x112c (_main + 0x1c)
+	   0x401c97: quartus + 0x1c97 (_WinMain@16 + 0xb7)
+	   0x40137e: quartus + 0x137e (_atexit + 0x1a1)
+	 0x75458493: KERNEL32 + 0x18493 (BaseThreadInitThunk + 0x23)
+	 0x77ca41c7: ntdll + 0x641c7 (RtlAreBitsSet + 0x87)
+	 0x77ca4197: ntdll + 0x64197 (RtlAreBitsSet + 0x57)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Access Violation at 00000000</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2019/06/11 23:19:53</DateInvoked>
+		<ElapsedTime>1141146</ElapsedTime>
+		<IP>192.168.1.6</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>2</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>2994</CPUSpeed>
+			<Hostname>LAPTOP-372EJE78</Hostname>
+			<NIC>
+				<Address>a81e849acc72</Address>
+			</NIC>
+			<NIC>
+				<Address>b0359f2399f2</Address>
+			</NIC>
+			<NIC>
+				<Address>b2359f2399f2</Address>
+			</NIC>
+			<NIC>
+				<Address>b0359f2399f3</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+			<TotalVirtualRAM>0</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>184849027222642.154342440021</InstallationID>
+			<Version>
+				<Build>259</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>2</ServicePack>
+				<VersionNumber>11.1</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>184849027222642.154005858622492</UserID>
+			<UserName>Alessandro</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2011-08-26</SchemaVersion>
+</ProgramExecution>
+

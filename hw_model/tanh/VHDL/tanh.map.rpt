@@ -1,0 +1,387 @@
+Analysis & Synthesis report for tanh
+Tue Jun 11 23:38:13 2019
+Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |tanh
+ 10. Parameter Settings for User Entity Instance: RALU:LUT
+ 11. Parameter Settings for User Entity Instance: comp:comparator
+ 12. Parameter Settings for User Entity Instance: sub:subtractor
+ 13. Parameter Settings for User Entity Instance: regn_tanh1:rg1
+ 14. Parameter Settings for User Entity Instance: regn_tanh1:rg2
+ 15. Port Connectivity Checks: "sub:subtractor"
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                       ;
++------------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jun 11 23:38:13 2019         ;
+; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
+; Revision Name                      ; tanh                                          ;
+; Top-level Entity Name              ; tanh                                          ;
+; Family                             ; Cyclone II                                    ;
+; Total logic elements               ; 48                                            ;
+;     Total combinational functions  ; 32                                            ;
+;     Dedicated logic registers      ; 32                                            ;
+; Total registers                    ; 32                                            ;
+; Total pins                         ; 35                                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                             ;
+; Total PLLs                         ; 0                                             ;
++------------------------------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; tanh               ; tanh               ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                  ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+
+; param.vhd                        ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/param.vhd                 ;
+; pkg/fixed_pkg.vhd                ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/pkg/fixed_pkg.vhd         ;
+; pkg/fixed_float_types.vhd        ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/pkg/fixed_float_types.vhd ;
+; tanh.vhd                         ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/tanh.vhd                  ;
+; sub.vhd                          ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/sub.vhd                   ;
+; regn_tanh1.vhd                   ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/regn_tanh1.vhd            ;
+; RALU.vhd                         ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/RALU.vhd                  ;
+; comp.vhd                         ; yes             ; User VHDL File  ; C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/VHDL/comp.vhd                  ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 48    ;
+;                                             ;       ;
+; Total combinational functions               ; 32    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 22    ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 10    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 24    ;
+;     -- arithmetic mode                      ; 8     ;
+;                                             ;       ;
+; Total registers                             ; 32    ;
+;     -- Dedicated logic registers            ; 32    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 35    ;
+; Maximum fan-out node                        ; ck    ;
+; Maximum fan-out                             ; 32    ;
+; Total fan-out                               ; 251   ;
+; Average fan-out                             ; 2.54  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+; |tanh                      ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |tanh                 ;              ;
+;    |comp:comparator|       ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tanh|comp:comparator ;              ;
+;    |regn_tanh1:rg1|        ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tanh|regn_tanh1:rg1  ;              ;
+;    |regn_tanh1:rg2|        ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tanh|regn_tanh1:rg2  ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |tanh ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; qi             ; 8     ; Signed Integer                              ;
+; qf             ; 8     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RALU:LUT ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; qi             ; 8     ; Signed Integer               ;
+; qf             ; 8     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comp:comparator ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; qi             ; 8     ; Signed Integer                      ;
+; qf             ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sub:subtractor ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; qi             ; 8     ; Signed Integer                     ;
+; qf             ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn_tanh1:rg1 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; qi             ; 8     ; Signed Integer                     ;
+; qf             ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn_tanh1:rg2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; qi             ; 8     ; Signed Integer                     ;
+; qf             ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sub:subtractor"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jun 11 23:38:06 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tanh -c tanh
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 0 entities, in source file param.vhd
+    Info (12022): Found design unit 1: param
+Info (12021): Found 2 design units, including 0 entities, in source file pkg/fixed_pkg.vhd
+    Info (12022): Found design unit 1: fixed_pkg
+    Info (12022): Found design unit 2: fixed_pkg-body
+Info (12021): Found 1 design units, including 0 entities, in source file pkg/fixed_float_types.vhd
+    Info (12022): Found design unit 1: fixed_float_types
+Info (12021): Found 2 design units, including 1 entities, in source file tb_tanh.vhd
+    Info (12022): Found design unit 1: tb_tanh-sim
+    Info (12023): Found entity 1: tb_tanh
+Info (12021): Found 2 design units, including 1 entities, in source file tanh.vhd
+    Info (12022): Found design unit 1: tanh-behavioral
+    Info (12023): Found entity 1: tanh
+Info (12021): Found 2 design units, including 1 entities, in source file sub.vhd
+    Info (12022): Found design unit 1: sub-behavioral
+    Info (12023): Found entity 1: sub
+Info (12021): Found 2 design units, including 1 entities, in source file regn_tanh2.vhd
+    Info (12022): Found design unit 1: regn_tanh2-behavior
+    Info (12023): Found entity 1: regn_tanh2
+Info (12021): Found 2 design units, including 1 entities, in source file regn_tanh1.vhd
+    Info (12022): Found design unit 1: regn_tanh1-behavior
+    Info (12023): Found entity 1: regn_tanh1
+Info (12021): Found 2 design units, including 1 entities, in source file ralu.vhd
+    Info (12022): Found design unit 1: RALU-behavioral
+    Info (12023): Found entity 1: RALU
+Info (12021): Found 2 design units, including 1 entities, in source file comp.vhd
+    Info (12022): Found design unit 1: comp-behavioral
+    Info (12023): Found entity 1: comp
+Info (12127): Elaborating entity "tanh" for the top level hierarchy
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1471): subtype or type has null range
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1472): subtype or type has null range
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(1473): subtype or type has null range
+Info (12128): Elaborating entity "RALU" for hierarchy "RALU:LUT"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'U'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'X'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'Z'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'W'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'-'"
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(5284): subtype or type has null range
+Info (12128): Elaborating entity "comp" for hierarchy "comp:comparator"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'U'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'X'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'Z'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'W'"
+Warning (10325): VHDL Choice warning at std_1164.vhd(1092): ignored choice containing meta-value "'-'"
+Warning (10445): VHDL Subtype or Type Declaration warning at fixed_pkg.vhd(5284): subtype or type has null range
+Info (12128): Elaborating entity "sub" for hierarchy "sub:subtractor"
+Info (12128): Elaborating entity "regn_tanh1" for hierarchy "regn_tanh1:rg1"
+Warning (10492): VHDL Process Statement warning at regn_tanh1.vhd(29): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+Info (21057): Implemented 83 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 48 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 362 megabytes
+    Info: Processing ended: Tue Jun 11 23:38:13 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:04
+
+

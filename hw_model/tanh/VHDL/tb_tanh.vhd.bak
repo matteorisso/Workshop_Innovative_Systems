@@ -1,0 +1,98 @@
+--****************************************Info****************************************--
+--Authors: Sofiane Landi, Vito Luca Guglielmi, Alessio Parisi, Alessandro Romeo  
+--Project: Butterfly
+--******************************************X*****************************************--
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_textio.all;
+library ieee_proposed;
+use ieee_proposed.fixed_pkg.all;
+
+----The entity for testbench must be empty
+entity TB_datapath is 
+end entity;
+
+architecture SIMULATION of TB_datapath is
+
+signal	clk : std_logic := '1';
+signal rst, start : std_logic := '0';
+signal in1, in2, out1, out2: sfixed(0 downto -15);
+signal sel_1, sel_3, sel_sum, sel_4, cin1, done : std_logic;
+signal sel_2, sel_5, sel_7 : std_logic_vector (1 downto 0);
+signal en_reg : std_logic_vector(4 downto 0);
+
+component datapath is
+port(clk, rst, sel_1,sel_3, sel_sum, sel_4, cin1, start : in std_logic;
+     sel_2, sel_5, sel_7 : in std_logic_vector (1 downto 0);
+     in1, in2 : in sfixed (0 downto -15);
+     en_reg : in std_logic_vector(4 downto 0);
+     out1, out2 : out sfixed (0 downto -15)
+     );
+end component;
+
+component CU is
+  port( CLK:          in std_logic;
+        RST:          in std_logic;
+        START:        in std_logic;
+        SEL_MUX1:     out std_logic;
+        SEL_MUX2:     out std_logic_vector(1 downto 0);
+        SEL_MUX3:     out std_logic;
+        SEL_MUX4:     out std_logic;
+        SEL_MUX_SUM:  out std_logic;
+        SEL_MUX_OUT:  out std_logic_vector(1 downto 0);
+        SEL_REG1:     out std_logic_vector(1 downto 0);
+        EN_REG:       out std_logic_vector(4 downto 0);
+        CIN1:         out std_logic;
+        DONE:         out std_logic       
+);                      
+end component;
+
+begin	
+
+DP: datapath port map(clk=>clk, rst=>rst, sel_3=>sel_3, sel_sum=>sel_sum, sel_4=>sel_4, cin1=>cin1, start=>start,
+                      sel_1=>sel_1, sel_2=>sel_2, sel_5=>sel_5, sel_7=>sel_7, en_reg=>en_reg, in1=>in1, in2=>in2, out1=>out1, out2=>out2);
+
+CT: CU       port map(clk=>clk, rst=>rst, SEL_MUX3=>sel_3, SEL_MUX_SUM=>sel_sum, SEL_MUX4=>sel_4, CIN1=>cin1, start=>start,
+                      SEL_MUX1=>sel_1, SEL_MUX2=>sel_2, SEL_REG1=>sel_5, SEL_MUX_OUT=>sel_7, EN_REG=>en_reg, done=>done);
+                      
+		----Generate system clock/reset
+		clk <= not clk after 20 ns;  --25 Mhz clock generator
+		rst <= '1', '0' after 5 ns;--Asynchronous initial reset
+		
+stimulus: process
+		begin   
+--		  ar <= "0111111111111111";
+--		  ai <= "0100000000000000";
+--		  br <= "0010000000000000";
+--		  bi <= "0001000000000000";
+--		  wr <= "1000000000000000";
+--		  wi <= "0111111111111111";
+      in1 <= "0100000000000000";
+      in2 <= "0100000000000000";
+      
+      wait for 200 ns;
+      
+		  wait until rising_edge(clk); 
+		          
+		  start <= '1';
+		  wait until rising_edge(clk);
+		  start <= '0';
+      wait until rising_edge(clk);
+      wait until rising_edge(clk);
+      wait until rising_edge(clk);
+      
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  wait;
+		  
+	  end process;
+
+end architecture;
