@@ -56,6 +56,19 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Compiling package fixed_float_types
 
+} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd {1 {vcom -work work -2002 -explicit {C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\fully_connected.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling package ifmap_ofmap_type
+-- Loading package ifmap_ofmap_type
+-- Compiling entity fully_connected
+-- Compiling architecture behavior of fully_connected
+
 } {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/mult.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/mult.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -67,19 +80,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity multiplier
 -- Compiling architecture behavior of multiplier
 
-} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package fixed_float_types
--- Loading package fixed_pkg
--- Compiling package IFMAP_OFMAP_type
--- Loading package IFMAP_OFMAP_type
--- Compiling entity fully_connected
--- Compiling architecture behavior of fully_connected
-
 } {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -90,5 +90,19 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package fixed_pkg
 -- Compiling entity multiplier
 -- Compiling architecture behavior of multiplier
+
+} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling package ifmap_ofmap_type
+-- Loading package ifmap_ofmap_type
+-- Compiling entity tb_fc
+-- Compiling architecture test of tb_fc
 
 } {} {}}

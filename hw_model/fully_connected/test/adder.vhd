@@ -4,14 +4,13 @@ use work.fixed_pkg.all;
 
 entity adder is
 generic ( 	qi : natural:= 8;
-				qf : natural:= 8 );
-port (
-			
-			a, b 	: in 	sfixed(qi-1 downto -qf);
-		--	cin 	: in  std_logic;
-			res	: out sfixed(qi-1 downto -qf)
-			;cout : out std_logic
-			);
+			qf : natural:= 8 );
+port(	
+	a, b 	: in 	sfixed(qi-1 downto -qf);
+--	cin 	: in  std_logic;
+	res		: out sfixed(qi-1 downto -qf);
+	cout 	: out std_logic
+	);
 end entity;
 
 architecture behavior of adder is

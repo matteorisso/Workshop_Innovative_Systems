@@ -28,8 +28,8 @@ def random_pattern(L) :
 
 # Function that applies the algorithm of fully connected layer algorithm.
 def fully_c_algorithm(I,W) :
-    for i in range(M) :
-        OFMAP[i] += I[i]*W[i]
+    for k in range(M) :
+        OFMAP[k] += I[k]*W[k]
 
 def dec2bin(var) :
 	if var >= 0 :
@@ -49,8 +49,9 @@ for i in range(N) :
     IFMAP = []
     WEIGHTS = []
     
-    line1 = "\n"
-    f_IN.write(line1) 
+    #line1 = "\n"
+    #f_IN.write(line1) 
+    
     # Generation of the M random value of IFMAP and writing in the file
     for j in range(M) :
     	# Generation.
@@ -59,8 +60,9 @@ for i in range(N) :
     	line3 = dec2bin(IFMAP[j]) + "\n"
     	f_IN.write(line3)
     
-    line1 = "\n"
-    f_IN.write(line1) 
+    #line1 = "\n"
+    #f_IN.write(line1)
+    
      # Generation of the M random value of WEIGHTS and writing in the file
     for j in range(M) :
     	# Generation.

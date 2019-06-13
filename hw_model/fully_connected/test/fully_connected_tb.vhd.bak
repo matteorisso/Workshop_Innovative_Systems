@@ -2,6 +2,7 @@
 -- testbench of the: fully connected layer 400 to 120.
 --
 library ieee;
+LIBRARY STD;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use std.textio.all;
@@ -43,7 +44,7 @@ architecture test of tb_fc is
 		port(	
 		clk		: in std_logic;
 		rst_n	: in std_logic;
-		ifmap	: in std_logic;
+		ifmap	: in ifmap_type;
 		weights : in ifmap_type;
 		ofmap	: out ifmap_type
 		);
@@ -69,6 +70,14 @@ begin
 		wait for 1 ns;
 	end process;
 	
+	process -- reset generation 
+	begin
+		tb_rst <= '0';
+		wait for 12 ns;
+		tb_rst <= '1;
+		wait;
+	end process;
+	
 	
 	-- process for:
 	-- 1) reading input stimuli from file
@@ -76,8 +85,8 @@ begin
 	process
 	variable v_iline	: line;
 	variable v_oline	: line;
-	variable v_ifmap	: ifmap_type;
-	variable v_weights	: ifmap_type;
+	variable v_ifmap	: sfixed(qi-1 downto -qf);
+	variable v_weights	: sfixed(qi-1 downto -qf);
 	variable v_space	: character; 
 	 
 	begin
@@ -86,38 +95,43 @@ begin
 	file_open(file_vectors, "random_in.txt",  read_mode);
 	file_open(file_results, "sim_results.txt", write_mode);
 	
-	tb_rst <= '0';
-	
 	wait for 10 ns;
 	
-	tb_rst <= '1';
 	
 	-- read input stimuli from file random_in.txt
 	while not endfile(file_vectors) loop
-	  readline(file_vectors, v_iline);
-	  read(v_iline, v_space); -- read the space character
-	  read(v_iline, v_space); -- read the space character
-	  read(v_iline, v_ifmap); -- get array of ifmap
-	  read(v_iline, v_space); -- read the space character	  
-	  read(v_iline, v_weights);	-- get array of weights
-	  
-	  tb_ifmap		<= v_ifmap;
-	  tb_weigths	<= v_weights;
+		
+		-- reading array of input
+		for i in 0 to pe_number-1 loop
+			readline(file_vectors, v_iline);
+			read(v_iline, v_ifmap);
+			tb_ifmap(i) <= v_ifmap; 
+		end loop;
+		
+		-- reading array of weights
+		for i in 0 to pe_number-1 loop
+			readline(file_vectors, v_iline);
+			read(v_iline, v_weights);
+			tb_weigths(i) <= v_weights; 
+		end loop;
 	  
 	  wait for 2 ns;
 	  
 	end loop;
 	
-	write(v_oline, tb_ofmap, right, 16);
-	writeline(file_results, v_oline);
-
+	-- writing array of output
+	for i in 0 to pe_number-1 loop
+		write(v_oline, tb_ofmap(i), right, 16);
+		writeline(file_results, v_oline); 
+	end loop;
+        
 	-- closin in/out files
 	file_close(file_vectors);
 	file_close(file_results);
-	
+	    
 	wait;
 	end process;
-
+        
 	fc : fully_connected
 		port map(
 			clk		=> tb_clk, 
@@ -128,3 +142,4 @@ begin
 			);
 		 
 end test;
+        
