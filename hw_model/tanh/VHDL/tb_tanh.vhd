@@ -1,18 +1,18 @@
 library ieee;
+LIBRARY STD;
 use ieee.std_logic_1164.all;
-use work.fixed_pkg.all;
 use ieee.numeric_std.all;
-use STD.textio.all;
+use std.textio.all;
 use ieee.std_logic_textio.all;
+use work.fixed_pkg.all; 
 use work.param.all;
 
 entity tb_tanh is 
-generic ( 	qi : natural:= 8;      -- IL GENERIC DEVO METTERLO NELL'ENTITY? 
-				qf : natural:= 8 );	
+
 end entity;
 
 architecture sim of tb_tanh is
-
+				
 signal ck : std_logic := '1';
 signal rstn: std_logic := '0';
 signal en  : std_logic := '0';
@@ -47,11 +47,13 @@ th:  tanh generic map ( qi => qi, qf => qf )
                                               A=>in1,
                                               O=>out1); 
 
-                      
-		----Generate system clock/reset
+ 	process -- clock/reset generation 
+	begin
 		ck <= not ck after 20 ns;  --25 Mhz clock generator
 		en  <=  '1';
 		rstn <= '1', '0' after 5 ns;  --Asynchronous initial reset
+		
+	end process;	
 		
 stimulus: process
     variable v_ILINE : line;

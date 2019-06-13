@@ -1,7 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.fixed_pkg.all;
-use work.param.all;
 
 entity sub is
 generic ( 	qi : natural:= 8;
