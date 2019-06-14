@@ -4,16 +4,14 @@ use work.fixed_pkg.all;
 use work.param.all;
 
 entity pe_array is 
-generic ( qi : natural := 8; qf : natural := 8;
---			  r : natural := 5; 
-			  c : natural := 4);
+generic ( qi : natural := 8; qf : natural := 8; 
+			 filter_size : natural := 5;  imap_rf : natural := 4);
 port ( 	
-			ck, rstn : in std_logic;
-			
-			im : in  impx;
-			k	: in  kernel;
-			om : out ompx);
-
+			ck 	: in  std_logic;
+			rstn	: in  std_logic;
+			im 	: in  imap_in;
+			k		: in  filter;
+			om 	: out omap);
 end entity;
 
 
@@ -39,28 +37,29 @@ port(
 end component;
 
 
-signal ps : psum; 
+signal ps : psum_row; 
 
 
 begin
 
-rgen: for i in 0 to 4 generate
-	cgen: for j in 0 to c-1 generate
+rgen: for i in 0 to filter_size-1 generate
+	cgen: for j in 0 to array_c-1 generate
 		
 		mac:  pe	generic map ( qi => qi, qf => qf ) 
-						port map ( ck, rstn, im(i+j), k(i), ps(i*4 + j));
+						port map ( ck, rstn, im(i+j), k(i), ps(i*array_c + j));
 	end generate cgen;
 end generate rgen;
 
-sum: for j in 0 to c-1 generate
+sum: for j in 0 to array_c-1 generate
+				
 			add:  binary_adder_tree generic map ( qi => qi, qf => qf )
 												port map ( 
 																ck, rstn, 
 																ps(j),
-																ps(j+4),
-																ps(j+8),
-																ps(j+12),
-																ps(j+16),
+																ps(j+array_c),
+																ps(j+2*array_c),
+																ps(j+3*array_c),
+																ps(j+4*array_c),
 																om(j));
 end generate sum;
 

@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun Jun 09 18:43:21 2019
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Fri Jun 14 17:21:03 2019
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
 Revision Name : conv2d
-Top-level Entity Name : pe_array
+Top-level Entity Name : pe
 Family : Cyclone II
-Total logic elements : 1,590
-    Total combinational functions : 1,590
-    Dedicated logic registers : 916
-Total registers : 916
-Total pins : 274
+Total logic elements : 75
+    Total combinational functions : 75
+    Dedicated logic registers : 18
+Total registers : 18
+Total pins : 50
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 36
+Embedded Multiplier 9-bit elements : 2
 Total PLLs : 0
