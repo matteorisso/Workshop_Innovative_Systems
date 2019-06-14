@@ -74,7 +74,7 @@ begin
 	begin
 		tb_rst <= '0';
 		wait for 12 ns;
-		tb_rst <= '1;
+		tb_rst <= '1';
 		wait;
 	end process;
 	
@@ -118,6 +118,8 @@ begin
 	  wait for 2 ns;
 	  
 	end loop;
+	
+	wait for 2 ns
 	
 	-- writing array of output
 	for i in 0 to pe_number-1 loop

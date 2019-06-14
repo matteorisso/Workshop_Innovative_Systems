@@ -30,6 +30,19 @@ def random_pattern(L) :
 def fully_c_algorithm(I,W) :
     for k in range(M) :
         OFMAP[k] += I[k]*W[k]
+        
+# Functon that perform the truncation to 16 bit
+def trunc(sample) :
+    if sample >= 0 :
+        sample_bin = list('{0:043b}'.format(sample))
+        sample_bin_trunc = sample_bin[:16]
+        sample_bin_trunc_str = ''.join(sample_bin_trunc)
+    else :
+        sample_bin = list(format(2**43 + sample,'b'))
+        sample_bin_trunc = sample_bin[:16]
+        sample_bin_trunc_str = ''.join(sample_bin_trunc)
+    sample_bin_trunc_str = sample_bin_trunc_str[:8]+'.'+sample_bin_trunc_str[8:]
+    return sample_bin_trunc_str
 
 def dec2bin(var) :
 	if var >= 0 :
@@ -74,10 +87,14 @@ for i in range(N) :
         
     # Algorithm.
     fully_c_algorithm(IFMAP,WEIGHTS)
+    
+    # Trunc to 16 bit
+    
     	
 # Write results on output file
 for line in OFMAP :
-    f_OUT.write(str(line) + "\n")
+    
+    f_OUT.write(trunc(line) + "\n")
 
 f_IN.close()
 f_OUT.close()

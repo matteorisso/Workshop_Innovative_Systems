@@ -119,6 +119,8 @@ begin
 	  
 	end loop;
 	
+	wait for 2 ns;
+	
 	-- writing array of output
 	for i in 0 to pe_number-1 loop
 		write(v_oline, tb_ofmap(i), right, 16);
