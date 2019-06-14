@@ -1,0 +1,94 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+use work.fixed_pkg.all;
+use work.param.all;
+
+-- imap tile pixel reuse : filter_size - stride
+
+entity spad is
+generic ( qi : natural := 8; qf : natural := 8 );
+port (
+			sdin   : in  sfixed(qi-1 downto -qf );
+			ck 	 : in std_logic; 
+			rstn	 : in std_logic; 
+			ld		 : in std_logic;  
+			en_cnt : in std_logic; 
+			sdout  : out sfixed(qi-1 downto -qf )); 
+end entity; 
+
+
+architecture structure of spad is
+
+component regn
+generic ( qi : natural:= 1; qf : natural:= 15 ) ;	
+port (
+			d 		:	in sfixed(qi-1 downto -qf);
+			ck 	:	in std_logic;  
+			rstn	:	in std_logic;  
+			en		:	in std_logic;
+			q  	:  out sfixed(qi-1 downto -qf));
+end component; 
+
+component countern
+generic ( n: integer := 16 );  
+port ( en, sync_rst_n, clk : in std_logic; 
+       q : out unsigned (N-1 downto 0); 
+       tc: out std_logic ); 
+end component; 
+
+
+signal imap : imap_rf ;  
+
+signal q_cnt	: std_logic_vector; 
+signal en_cnt	: std_logic; 
+
+
+
+
+type state is (idle, startup_ld, startup_wait, inner_loop, inner_ld );
+signal ps, ns : state; 
+
+begin
+
+
+rfgen: for i in 0 to imap_rf'length -1 generate
+	ir:if i = 0 generate
+	r: regn generic map ( qi => qi, qf => qf ) port map ( din, ck, rstn, load, imap(i) );
+	end generate;
+	ar:if i > 0 generate
+	r: regn generic map ( qi => qi, qf => qf ) port map ( imap(i-1), ck, rstn, load, imap(i));
+	end generate; 
+end generate rfgen; 
+
+
+cnt: countern generic map ( n => 3 ) port map ( en_cnt, rstn, ck, q_cnt );
+
+sdout <= imap(0) when q_cnt = X"4" else
+			imap(1) when q_cnt = X"3" else
+			imap(2) when q_cnt = X"2" else
+			imap(3) when q_cnt = X"1" else
+			imap(4) ;
+			
+			
+
+
+
+state_update:
+process(ck)
+begin
+if rising_edge(ck) then
+	ps <= ns; 
+end if; 
+end process; 
+
+ns_cc: 
+process(ps, ld, il, din, rstn)
+begin
+
+case(ps) is
+when idle => imap <= others=>(others=>'0');
+
+
+
+end architecture structure; 

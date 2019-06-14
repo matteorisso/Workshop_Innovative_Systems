@@ -27,7 +27,7 @@ port (
 			a, b 	: in 	sfixed(qi-1 downto -qf);
 		--	cin 	: in  std_logic;
 			res	: out sfixed(qi-1 downto -qf)
-		--	;cout : out std_logic
+			;cout : out std_logic
 			);
 end component; 
 
@@ -43,41 +43,43 @@ end component;
 
 signal rstn_acc : std_logic; 
 
--- fractional scaling Q1.X 
--- mpy result in Q1.(2*X)
--- bit-growth : approx floor( log2( k 2**(qi-1) ) : k = #ops
--- 2 bit gain 
-
+-- fractional scaling Q1.X
 constant nqi  : natural := 1; 
 constant nqf  : natural := psum'length-1; 
-constant bitg : natural := 2; 
 
 signal mpy_a, mpy_b : sfixed(nqi-1 downto -nqf) ; 		
 signal mpy_tmp 	  : sfixed(nqi downto -2*nqf ) ;		
-signal mpy_res		  : sfixed( nqi+bitg -1 downto -2*nqf ) ;
  	
-signal d_acc    : sfixed( nqi+bitg -1 downto -2*nqf ) ; 	
-signal q_acc    : sfixed( nqi+bitg -1 downto -2*nqf ) ; 	
+-- bit-growth + chopping mpy_res (2*nqf to nqf)
+-- NB: truncation yield negative bias error
+
+constant bitg : natural := 2; 
+
+signal mpy_res	 : sfixed(nqi+bitg -1 downto -nqf ) ;
+signal d_acc    : sfixed( nqi+bitg -1 downto -nqf ) ; 	
+signal q_acc    : sfixed( nqi+bitg -1 downto -nqf ) ; 	
 
 begin
 
 mul 	: multiplier	generic map ( qi => nqi, 	   qf => nqf   ) port map (mpy_a, mpy_b, mpy_tmp);
-add	: adder			generic map ( qi => nqi+bitg, qf => 2*nqf ) port map (mpy_res, q_acc, d_acc);
-acc	: regn			generic map ( qi => nqi+bitg, qf => 2*nqf ) port map (d_acc, ck, rstn, '1', q_acc);
+add	: adder			generic map ( qi => nqi+bitg, qf => nqf ) port map (mpy_res, q_acc, d_acc);
+acc	: regn			generic map ( qi => nqi+bitg, qf => nqf ) port map (d_acc, ck, rstn, '1', q_acc);
 
 -- *//* memo --
 -- adder tree pipe(output freeze to avoid switching @acc sampling during inner loop)
 
 mpy_a 	<= im ; 
-
 mpy_b 	<= k ;					
 
-mpy_res 	<= mpy_tmp(mpy_tmp'high) & mpy_tmp ;						
+mpy_res 	<= mpy_tmp(mpy_tmp'high)&mpy_tmp(mpy_tmp'high downto -nqf) ;
+
+-- rounding 
+psum <= resize(q_acc, nqi+bitg-1, -(nqf-nqi-bitg+1) ) ;
+
+
 
 -- *//* generic scaling ? 
-
-psum 		<= q_acc( nqi+bitg-1 downto -(nqf-nqi-bitg+1) ); 	 
-
+--psum 		<= q_acc( nqi+bitg-1 downto -(nqf-nqi-bitg+1) ); 	 
 --round-off noise ?
 
 -- *//*round
