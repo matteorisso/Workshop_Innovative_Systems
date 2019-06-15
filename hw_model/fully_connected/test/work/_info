@@ -18,7 +18,7 @@ L5
 VWHjU9mcECTgneI^8GgAC10
 Z10 OV;C;10.1d;51
 32
-Z11 !s108 1560593566.226000
+Z11 !s108 1560610261.460000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd|
 Z13 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd|
 Z14 o-work work -2002 -explicit -O0
@@ -119,7 +119,7 @@ L6
 V@Qa`Q;?2Y8P:0<GZETLGg0
 R10
 32
-Z27 !s108 1560593566.628000
+Z27 !s108 1560610261.858000
 Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd|
 Z29 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd|
 R14
@@ -161,7 +161,7 @@ L5
 VS;o3miMWji2U>bz=cCz623
 R10
 32
-Z33 !s108 1560593566.361000
+Z33 !s108 1560610261.599000
 Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd|
 Z35 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd|
 R14
@@ -204,13 +204,13 @@ VeYEO:7fNSShb=2ATE_F2b3
 R10
 32
 !i10b 1
-!s108 1560593566.895000
+!s108 1560610262.124000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/param.vhd|
 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/param.vhd|
 R14
 R15
 Epe
-Z36 w1560592937
+Z36 w1560610092
 R2
 R3
 R4
@@ -224,7 +224,7 @@ L5
 VL4nzNAQ0a2M7o3UVZ1`Cn3
 R10
 32
-Z39 !s108 1560593566.492000
+Z39 !s108 1560610261.726000
 Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd|
 Z41 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd|
 R14
@@ -265,7 +265,7 @@ L5
 VO4aU=4[8lE7Jl=2CULD7h2
 R10
 32
-Z45 !s108 1560593566.116000
+Z45 !s108 1560610261.346000
 Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd|
 Z47 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd|
 R14
@@ -308,7 +308,7 @@ L10
 V9OQ:aQ9dZ=a]B5Pfg]1nk1
 R10
 32
-Z52 !s108 1560593566.759000
+Z52 !s108 1560610261.992000
 Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd|
 Z54 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd|
 R14
@@ -327,6 +327,7 @@ DEx4 work 5 tb_fc 0 22 9OQ:aQ9dZ=a]B5Pfg]1nk1
 l36
 L14
 VKOI^O0ezVP:B^79mY8;KS2
+!s100 jh^MY9i^bjk1e1SN=NDRY0
 R10
 32
 R52
@@ -334,5 +335,4 @@ R53
 R54
 R14
 R15
-!s100 jh^MY9i^bjk1e1SN=NDRY0
 !i10b 1

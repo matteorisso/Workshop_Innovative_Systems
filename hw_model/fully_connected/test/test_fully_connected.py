@@ -7,6 +7,9 @@ import random
 MIN = -32768 
 MAX = 32767
 
+# Constant used to perform the rounding to nearest even.
+Round_const = 2**26
+
 # Dimension of the input vector:
 N = 400
 
@@ -31,18 +34,31 @@ def fully_c_algorithm(I,W) :
     for k in range(M) :
         OFMAP[k] += I[k]*W[k]
         
-# Functon that perform the truncation to 16 bit
-def trunc(sample) :
-    if sample >= 0 :
-        sample_bin = list('{0:043b}'.format(sample))
-        sample_bin_trunc = sample_bin[:16]
-        sample_bin_trunc_str = ''.join(sample_bin_trunc)
+# Functon that perform the rounding to nearest even to 16 bit
+def round_even(sample) :
+    rounded_sample = sample + Round_const
+    if rounded_sample >= 0 :
+        sample_bin = list('{0:043b}'.format(rounded_sample))
+        if sample_bin[16] == '0' :
+            sample_bin_str = ''.join(sample_bin)
+            sample_bin_str = sample_bin_str[:16]
+        else :
+            sample_bin_str = '{0:043b}'.format(sample)
+            sample_bin_str = sample_bin_str[:16]
     else :
-        sample_bin = list(format(2**43 + sample,'b'))
-        sample_bin_trunc = sample_bin[:16]
-        sample_bin_trunc_str = ''.join(sample_bin_trunc)
-    sample_bin_trunc_str = sample_bin_trunc_str[:8]+'.'+sample_bin_trunc_str[8:]
-    return sample_bin_trunc_str
+        sample_bin = list(format(2**43 + rounded_sample,'b'))
+        if sample_bin[16] == '0' :
+            sample_bin_str = ''.join(sample_bin)
+            sample_bin_str = sample_bin_str[:16]
+        else :
+            if sample < 0 :
+                sample_bin_str = format(2**43 + sample,'b')
+                sample_bin_str = sample_bin_str[:16]
+            else :
+                sample_bin_str = '{0:043b}'.format(sample)
+                sample_bin_str = sample_bin_str[:16]
+    return sample_bin_str[:8]+'.'+sample_bin_str[8:]
+
 
 def dec2bin(var) :
 	if var >= 0 :
@@ -87,14 +103,12 @@ for i in range(N) :
         
     # Algorithm.
     fully_c_algorithm(IFMAP,WEIGHTS)
-    
-    # Trunc to 16 bit
-    
+        
     	
 # Write results on output file
 for line in OFMAP :
     
-    f_OUT.write(trunc(line) + "\n")
+    f_OUT.write(round_even(line) + "\n")
 
 f_IN.close()
 f_OUT.close()
