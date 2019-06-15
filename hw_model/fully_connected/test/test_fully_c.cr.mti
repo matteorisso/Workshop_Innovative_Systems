@@ -1,15 +1,4 @@
-C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package fixed_float_types
--- Loading package fixed_pkg
--- Compiling entity regn
--- Compiling architecture behavior of regn
-
-} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd
+C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -19,6 +8,17 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package fixed_pkg
 -- Compiling entity adder
 -- Compiling architecture behavior of adder
+
+} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity regn
+-- Compiling architecture behavior of regn
 
 } {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -31,7 +31,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity pe
 -- Compiling architecture mac of pe
 
-} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd
+} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd {0 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -39,12 +39,30 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Loading package fixed_float_types
 -- Loading package fixed_pkg
--- Compiling package ifmap_ofmap_type
--- Loading package ifmap_ofmap_type
--- Compiling entity fully_connected
--- Compiling architecture behavior of fully_connected
+** Error: (vcom-11) Could not find work.param.
 
-} {} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd
+** Error: C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd(4): (vcom-1195) Cannot find expanded name "work.param".
+
+** Error: C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd(4): Unknown expanded name.
+** Error: C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd(6): VHDL Compiler exiting
+
+} {9.0 10.0 11.0 12.0 13.0 15.0} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd {0 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+** Error: (vcom-11) Could not find work.param.
+
+** Error: C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd(8): (vcom-1195) Cannot find expanded name "work.param".
+
+** Error: C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd(8): Unknown expanded name.
+** Error: C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd(10): VHDL Compiler exiting
+
+} {10.0 11.0 12.0 13.0 14.0 16.0} {}} C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd {1 {vcom -work work -2002 -explicit C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
