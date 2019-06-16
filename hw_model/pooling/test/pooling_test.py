@@ -39,30 +39,53 @@ def dec2bin(var) :
 		bin_var = format(2**16 + var,'b')	
 	return bin_var
 
+def ca2todec(var) :
+    if var[0] == '1' :
+        L_var = list(var)
+        pos = 0
+        for i in L_var :
+            if i == '0' :
+                L_var[pos] = '1'
+            else :
+                L_var[pos] = '0'
+            pos += 1
+        str_var = ''.join(L_var)
+        return (int(str_var,2)+1)*(-1)
+    else :
+        return int(var,2)
+    
+def shift_dec(v) :
+    bin_string = dec2bin(v)
+    bin_string_shift = bin_string[0] + bin_string[0] + bin_string[:-2]
+    return ca2todec(bin_string_shift)
+    
+
 # File where store the random value:
-f_IN = open('random_IN.txt','w')
+f_IN = open('random_in.txt','w')
 
 # File where store the output:
 f_OUT = open('results.txt','w')
 
 # Random value generation:
+iter=0
 for i in range(4) :
     # Generation of the M random value of IFMAP and writing in the file
     for j in range(M) :
     	# Generation.
     	random_pattern(IFMAP)
     	# Write to file.
-    	line3 = dec2bin(IFMAP[j]) + "\n"
-    	f_IN.write(line3) 
+    	line3 = dec2bin(IFMAP[j+(M*iter)]) + "\n"
+    	f_IN.write(line3)
+    iter += 1
 
 for k in range(M) :
-    OFMAP[k] = (IFMAP[k] + IFMAP[k+M] + IFMAP[k+(2*M)] + IFMAP[k+(3*M)])
-    OFMAP[k] = dec2bin(OFMAP[k] >> 2)
-         	
+    OFMAP[k] = (shift_dec(IFMAP[k]) + shift_dec(IFMAP[k+M]) \
+         + shift_dec(IFMAP[k+(2*M)]) + shift_dec(IFMAP[k+(3*M)]))
+    OFMAP[k] = dec2bin(OFMAP[k])
+            	
 # Write results on output file
 for line in OFMAP :
-    
-    f_OUT.write(line + "\n")
+    f_OUT.write(line[:8] + '.' + line[8:] + "\n")
 
 f_IN.close()
 f_OUT.close()

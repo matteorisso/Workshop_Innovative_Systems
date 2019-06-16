@@ -63,10 +63,10 @@ architecture behavior of PE_pooling is
 
 begin
 
-	a_shifted <= "00"&a(qi-1 downto -qf+2);
-	b_shifted <= "00"&b(qi-1 downto -qf+2);
-	c_shifted <= "00"&c(qi-1 downto -qf+2);
-	d_shifted <= "00"&d(qi-1 downto -qf+2);
+	a_shifted <= a(a'high)&a(a'high)&a(qi-1 downto -qf+2);
+	b_shifted <= b(b'high)&b(b'high)&b(qi-1 downto -qf+2);
+	c_shifted <= c(c'high)&c(c'high)&c(qi-1 downto -qf+2);
+	d_shifted <= d(d'high)&d(d'high)&d(qi-1 downto -qf+2);
 	
 
 	reg_a : regn generic map(
@@ -81,7 +81,7 @@ begin
 					q 		=> a_reg
 					);
 	reg_b : regn generic map(
-					qi =>8,
+					qi => 8,
 					qf => 8
 					)	
 				 port map(

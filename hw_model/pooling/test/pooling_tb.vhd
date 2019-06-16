@@ -78,7 +78,7 @@ begin
 	
 	
 	-- read input stimuli from file random_in.txt
-	while not endfile(file_vectors) loop
+	--while not endfile(file_vectors) loop
 		
 		-- reading array of a input
 		for i in 0 to pe_number-1 loop
@@ -110,9 +110,9 @@ begin
 	  
 	  --wait for 2 ns;
 	  
-	end loop;
+	--end loop;
 	
-	wait for 4 ns;
+	wait for 6 ns;
 	
 	-- writing array of output
 	for i in 0 to pe_number-1 loop

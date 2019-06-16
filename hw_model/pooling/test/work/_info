@@ -4,14 +4,12 @@ K3
 cModel Technology
 dC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test
 Eadder
-Z0 DPx4 work 17 fixed_float_types 0 22 W4ATgTeAlJQj3_40TOTBN3
-Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z2 DPx4 work 9 fixed_pkg 0 22 5TnRg=Reg:iA=eKTIfzdL2
-Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-32
-!i10b 1
-Z5 w1560591655
+Z0 w1560591655
+Z1 DPx4 work 17 fixed_float_types 0 22 W4ATgTeAlJQj3_40TOTBN3
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx4 work 9 fixed_pkg 0 22 5TnRg=Reg:iA=eKTIfzdL2
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z6 dC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\pooling\test
 Z7 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/adder.vhd
 Z8 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/adder.vhd
@@ -19,35 +17,36 @@ l0
 L5
 VWHjU9mcECTgneI^8GgAC10
 Z9 OV;C;10.1d;51
-Z10 !s108 1560634759.482000
+32
+Z10 !s108 1560691423.432000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/adder.vhd|
 Z12 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/adder.vhd|
 Z13 o-work work -2002 -explicit -O0
 Z14 tExplicit 1
 !s100 Bi[ld<eba1[_OCD]Llkc;0
+!i10b 1
 Abehavior
-Z15 DPx4 work 17 fixed_float_types 0 22 W4ATgTeAlJQj3_40TOTBN3
 R1
 R2
 R3
 R4
+R5
 DEx4 work 5 adder 0 22 WHjU9mcECTgneI^8GgAC10
-32
-!i10b 1
 l25
 L21
 Ve]YDX3Nki`c>;T[9C2?g]1
 R9
+32
 R10
 R11
 R12
 R13
 R14
 !s100 7D[hOF_0zn<RzW2:jVXVR0
+!i10b 1
 Pfixed_float_types
 32
-!i10b 1
-Z16 w1560075263
+Z15 w1560075263
 R6
 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_float_types.vhd
 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_float_types.vhd
@@ -57,60 +56,60 @@ VW4ATgTeAlJQj3_40TOTBN3
 R9
 R13
 R14
+!i10b 1
 !s100 K7S6f`lOn:f8[LPBGH_0k0
 !s108 1560634760.403000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_float_types.vhd|
 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_float_types.vhd|
 Pfixed_pkg
-R15
 R1
+R2
+R5
 R4
-R3
 32
 b1
-!i10b 1
-R16
+R15
 R6
-Z17 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd
-Z18 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd
+Z16 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd
+Z17 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd
 l0
 L26
 V5TnRg=Reg:iA=eKTIfzdL2
 R9
-Z19 !s108 1560634760.068000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd|
-Z21 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd|
+Z18 !s108 1560634760.068000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd|
+Z20 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/fixed_pkg.vhd|
 R13
 R14
+!i10b 1
 !s100 DDkQK>KB9Bm;_f976FOZ;1
 Bbody
-R2
-Z22 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
-R15
-R1
-R4
 R3
+Z21 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R1
+R2
+R5
+R4
 32
-!i10b 1
 l0
 L1467
 VlCiXAPZ3l`VRB11=KUcIN0
 R9
+R18
 R19
 R20
-R21
 R13
 R14
 nbody
+!i10b 1
 !s100 SjjmD93OV>>go_:CjFCU;0
 Pparam
-R15
 R1
+R2
+R5
 R4
 R3
-R2
 32
-!i10b 1
 w1560629575
 R6
 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/param.vhd
@@ -121,177 +120,178 @@ VLXZeznh0IA9PKzBUmFgjz3
 R9
 R13
 R14
+!i10b 1
 !s100 jFEk97cL]QX0@l[Qj9OGK2
 !s108 1560634760.285000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/param.vhd|
 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/param.vhd|
 Epe_pooling
-R15
+Z22 w1560685401
 R1
 R2
 R3
 R4
-32
-!i10b 1
-Z23 w1560628894
+R5
 R6
-Z24 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/PE_pooling.vhd
-Z25 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/PE_pooling.vhd
+Z23 8C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\pooling\test\PE_pooling.vhd
+Z24 FC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\pooling\test\PE_pooling.vhd
 l0
 L5
 V4P_9<Lc:?OcTJR=eG8lhB0
 R9
-Z26 !s108 1560634759.664000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/PE_pooling.vhd|
-Z28 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/PE_pooling.vhd|
+32
+Z25 !s108 1560691423.566000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\pooling\test\PE_pooling.vhd|
+Z27 !s107 C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\pooling\test\PE_pooling.vhd|
 R13
 R14
 !s100 I<DBN6GI5Hbig1]=AFA=41
+!i10b 1
 Abehavior
-R15
 R1
 R2
 R3
 R4
+R5
 DEx4 work 10 pe_pooling 0 22 4P_9<Lc:?OcTJR=eG8lhB0
-32
-!i10b 1
 l64
 L23
-V40MW_7LKS61geVFU1UMIz0
+VSigUPBSi`HzDgokXOf`_W2
 R9
+32
+R25
 R26
 R27
-R28
 R13
 R14
-!s100 4;TbTGXT5D`V46;^KQGj<0
+!s100 Zdc6UIEhOOXCk5@Ie8WPK1
+!i10b 1
 Epooling
+Z28 w1560632000
 Z29 DPx4 work 5 param 0 22 LXZeznh0IA9PKzBUmFgjz3
-R15
 R1
 R2
 R3
 R4
-32
-!i10b 1
-Z30 w1560632000
+R5
 R6
-Z31 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd
-Z32 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd
+Z30 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd
+Z31 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd
 l0
 L6
 Vz0?>0]0F3IOJPh6XLfDma3
 R9
-Z33 !s108 1560634759.803000
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd|
-Z35 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd|
+32
+Z32 !s108 1560691423.719000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd|
+Z34 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling.vhd|
 R13
 R14
 !s100 gP0^MTTYXimREM82oIP?b3
+!i10b 1
 Abehavior
 R29
-R15
 R1
 R2
 R3
 R4
+R5
 DEx4 work 7 pooling 0 22 z0?>0]0F3IOJPh6XLfDma3
-32
-!i10b 1
 l40
 L21
 VQW>VXK@6Y25bAGae7ih>W0
+!s100 FE__N[fY7kfioi?>eWSe80
 R9
+32
+R32
 R33
 R34
-R35
 R13
 R14
-!s100 FE__N[fY7kfioi?>eWSe80
+!i10b 1
 Eregn
-R15
+Z35 w1560591803
 R1
 R2
 R3
 R4
-32
-!i10b 1
-Z36 w1560591803
+R5
 R6
-Z37 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd
-Z38 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd
+Z36 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd
+Z37 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd
 l0
 L5
 VO4aU=4[8lE7Jl=2CULD7h2
 R9
-Z39 !s108 1560634759.369000
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd|
-Z41 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd|
+32
+Z38 !s108 1560691423.315000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd|
+Z40 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/regn.vhd|
 R13
 R14
 !s100 MJ^IMA]n_nY]E`CVE0A1d2
+!i10b 1
 Abehavior
-R15
 R1
 R2
 R3
 R4
+R5
 DEx4 work 4 regn 0 22 O4aU=4[8lE7Jl=2CULD7h2
-32
-!i10b 1
 l22
 L21
 VOLBI55Uhm^mA=4C7ZeeQI2
 R9
+32
+R38
 R39
 R40
-R41
 R13
 R14
 !s100 KhEMGZGl4M2VO]TkX_Ez;3
+!i10b 1
 Etb_pooling
+Z41 w1560680648
 R29
-R15
-R2
-Z42 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R1
 R3
+Z42 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R2
 R4
-32
-!i10b 1
-Z43 w1560632275
+R5
 R6
-Z44 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd
-Z45 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd
+Z43 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd
+Z44 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd
 l0
 L10
 VcHVHGIXP26QWd]6VFIAY01
-R9
-Z46 !s108 1560634759.938000
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd|
-Z48 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd|
-R13
-R14
 !s100 Nkb5[cUK_W2GgU0UgHLTf1
-Atest
-R29
-R15
-R2
-R42
-R1
-R3
-R4
-DEx4 work 10 tb_pooling 0 22 cHVHGIXP26QWd]6VFIAY01
+R9
 32
 !i10b 1
-l41
-L14
-V8B=DZDGUScnHV2IjnTZYo3
-R9
-R46
-R47
-R48
+Z45 !s108 1560691423.848000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd|
+Z47 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/pooling/test/pooling_tb.vhd|
 R13
 R14
-!s100 TG6?e?ID566ibfLm@lBLF3
+Atest
+R29
+R1
+R3
+R42
+R2
+R4
+R5
+Z48 DEx4 work 10 tb_pooling 0 22 cHVHGIXP26QWd]6VFIAY01
+l41
+L14
+Z49 VfMD9a?V<l<`WjEcOmZmeK0
+Z50 !s100 U^ai1efU_^Vj_dYS?IWhD2
+R9
+32
+!i10b 1
+R45
+R46
+R47
+R13
+R14
