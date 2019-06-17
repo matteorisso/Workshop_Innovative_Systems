@@ -11,17 +11,15 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity tb_tanh
 -- Compiling architecture sim of tb_tanh
 
-} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp2.vhd
+} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/param.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/param.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
 -- Loading package NUMERIC_STD
 -- Loading package fixed_float_types
 -- Loading package fixed_pkg
--- Compiling entity comp2
--- Compiling architecture behavioral of comp2
+-- Compiling package param
 
 } {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/cmp1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/cmp1.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -35,17 +33,7 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity cmp1
 -- Compiling architecture behavioral of cmp1
 
-} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/param.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/param.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package fixed_float_types
--- Loading package fixed_pkg
--- Compiling package param
-
-} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp3.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp3.vhd
+} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp2.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -54,24 +42,8 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package NUMERIC_STD
 -- Loading package fixed_float_types
 -- Loading package fixed_pkg
--- Compiling entity comp3
--- Compiling architecture behavioral of comp3
-
-} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/regn_tanh.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/regn_tanh.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package fixed_float_types
--- Loading package fixed_pkg
--- Compiling entity regn_tanh
--- Compiling architecture behavior of regn_tanh
-
-} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_float_types.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_float_types.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Compiling package fixed_float_types
+-- Compiling entity comp2
+-- Compiling architecture behavioral of comp2
 
 } {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_pkg.vhd {2 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_pkg.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -88,6 +60,34 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 ** Warning: [3] C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_pkg.vhd(1472): (vcom-1246) Range 0 downto 1 is null.
 ** Warning: [3] C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_pkg.vhd(1473): (vcom-1246) Range 0 downto 1 is null.
 ** Warning: [3] C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_pkg.vhd(6889): (vcom-1246) Range 2 to 1 is null.
+
+} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_float_types.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/pkg/fixed_float_types.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Compiling package fixed_float_types
+
+} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/regn_tanh.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/regn_tanh.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity regn_tanh
+-- Compiling architecture behavior of regn_tanh
+
+} {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp3.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/comp3.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity comp3
+-- Compiling architecture behavioral of comp3
 
 } {} {}} C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/tanh.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Documents/GitHub/Workshop_Innovative_Systems/hw_model/tanh/tanh.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
