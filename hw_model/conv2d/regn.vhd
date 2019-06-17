@@ -1,9 +1,3 @@
---------------------------------------------------------------------- 
-
--- SDI_BUTTERFLY_2018_NICOLA_SALVATI_SIMONE_TARDANICO
-
----------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use work.fixed_pkg.all;

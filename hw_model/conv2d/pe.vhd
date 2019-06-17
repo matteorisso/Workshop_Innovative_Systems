@@ -65,9 +65,6 @@ mul 	: multiplier	generic map ( qi => nqi, 	   qf => nqf   ) port map (mpy_a, mp
 add	: adder			generic map ( qi => nqi+bitg, qf => nqf ) port map (mpy_res, q_acc, d_acc);
 acc	: regn			generic map ( qi => nqi+bitg, qf => nqf ) port map (d_acc, ck, rstn, '1', q_acc);
 
--- *//* memo --
--- adder tree pipe(output freeze to avoid switching @acc sampling during inner loop)
-
 mpy_a 	<= im ; 
 mpy_b 	<= k ;					
 

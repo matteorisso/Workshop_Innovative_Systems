@@ -1,6 +1,30 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="conv2d">
-		<CBX_INST_ENTRY INSTANCE_NAME="|pe|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:3:reg|altshift_taps:q_rtl_0" CBX_FILE_NAME="shift_taps_ghm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:1:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_35h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:0:cgen:1:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:1:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_35h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:0:cgen:2:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:1:cgen:1:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:2:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:4:cgen:3:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_8n82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:0:cgen:3:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:1:cgen:2:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:1:cgen:3:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:2:cgen:1:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:2:cgen:2:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:3:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:3:cgen:1:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:4:cgen:0:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:1:cgen:0:i_h:mac|multiplier:mul|lpm_mult:Mult0|mult_h1t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_8n82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:2:cgen:3:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:3:cgen:2:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:4:cgen:1:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:3:cgen:3:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|conv2d|pe_array:pes|pe:\rgen:4:cgen:2:i_w:mac|multiplier:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

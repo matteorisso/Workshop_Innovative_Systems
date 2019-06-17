@@ -3,13 +3,15 @@ use ieee.std_logic_1164.all;
 use work.fixed_pkg.all;
 use work.param.all;
 
+-- strip mining 5x4 PE set
+
 entity pe_array is 
-generic ( qi : natural := 8; qf : natural := 8; 
-			 filter_size : natural := 5;  imap_rf : natural := 4);
+generic ( qi : natural := 8; qf : natural := 8; filter_size : natural := 5);
 port ( 	
 			ck 	: in  std_logic;
 			rstn	: in  std_logic;
-			im 	: in  imap_in;
+			im_h 	: in  imap;
+			im_w 	: in  imap; 
 			k		: in  filter;
 			om 	: out omap);
 end entity;
@@ -37,7 +39,7 @@ port(
 end component;
 
 
-signal ps : psum_row; 
+signal ps : psum; 
 
 
 begin
@@ -45,8 +47,18 @@ begin
 rgen: for i in 0 to filter_size-1 generate
 	cgen: for j in 0 to array_c-1 generate
 		
+		i_h:
+		if i+j < filter_size-1 generate
 		mac:  pe	generic map ( qi => qi, qf => qf ) 
-						port map ( ck, rstn, im(i+j), k(i), ps(i*array_c + j));
+						port map ( ck, rstn, im_h(i+j), k(i), ps(i*array_c + j));
+		end generate i_h;
+	
+		i_w:
+		if i+j > filter_size-2 generate
+		mac:  pe	generic map ( qi => qi, qf => qf ) 
+						port map ( ck, rstn, im_w(i+j-imap'length), k(i), ps(i*array_c + j));
+		end generate i_w;
+		
 	end generate cgen;
 end generate rgen;
 
@@ -63,7 +75,6 @@ sum: for j in 0 to array_c-1 generate
 																om(j));
 end generate sum;
 
--- binary tree adder with param : log2r stages - even / odd r%2 = 0
 end architecture;
 
 

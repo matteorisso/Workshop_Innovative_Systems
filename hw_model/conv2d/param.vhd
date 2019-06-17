@@ -10,13 +10,12 @@ package param is
 	constant stride 		: natural := 1; 	
 	constant array_c		: natural := 4; 
 	
-	-- pe array
-	type filter		is array ( 0 to filter_size ) of sfixed (qi-1 downto -qf);
-	type imap_in	is array ( 0 to ( filter_size - 1 ) + ( array_c - 1 ) ) of sfixed (qi-1 downto -qf);
-	type psum_row	is array ( 0 to filter_size*array_c - 1 ) of sfixed (qi-1 downto -qf);
+	type filter		is array ( 0 to filter_size-1) of sfixed (qi-1 downto -qf);
+	-- pe_array
+	type imap    	is array ( 0 to ( filter_size - 2 ) ) of sfixed (qi-1 downto -qf);
+	type psum		is array ( 0 to filter_size*array_c - 1 ) of sfixed (qi-1 downto -qf);
 	type omap		is array ( 0 to array_c  - 1 ) of sfixed (qi-1 downto -qf);
-
-	-- pe 
+	-- im_pad
 	type imap_rf	is array ( 0 to filter_size - stride) of sfixed (qi-1 downto -qf);
 
 end param;

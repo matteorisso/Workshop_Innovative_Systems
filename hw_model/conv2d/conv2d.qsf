@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY pe
+set_global_assignment -name TOP_LEVEL_ENTITY conv2d
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:46:41  JUNE 08, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP2"
@@ -56,6 +56,8 @@ set_global_assignment -name VHDL_FILE pkg/fixed_float_types.vhd
 set_global_assignment -name VHDL_FILE pe.vhd
 set_global_assignment -name VHDL_FILE param.vhd
 set_global_assignment -name VHDL_FILE conv2d.vhd
+set_global_assignment -name VHDL_FILE im_buffer.vhd
+set_global_assignment -name VHDL_FILE im_buffer_word.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
