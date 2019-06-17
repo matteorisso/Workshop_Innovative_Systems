@@ -1,27 +1,3 @@
- --
--- testbench of the: fully connected layer 400 to 120.
---
-library ieee;
-LIBRARY STD;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use std.textio.all;
-use ieee.std_logic_textio.all;
-use work.fixed_pkg.all; 
-
-package ifmap_ofmap_type is
-
-	--constant ifmap_size : natural := 400;
-	--constant ofmap_size : natural := 120;
-	constant pe_number	: natural := 20;
-	constant qi			: natural := 8;
-	constant qf			: natural := 8;
-	
-	type ifmap_type is array(0 to pe_number-1) of sfixed(qi-1 downto -qf);
-	
-end package ifmap_ofmap_type;
-
-
 library ieee;
 library std;
 use ieee.std_logic_1164.all;
@@ -29,13 +5,10 @@ use ieee.numeric_std.all;
 use std.textio.all;
 use ieee.std_logic_textio.all;
 use work.fixed_pkg.all; 
-
-use work.ifmap_ofmap_type.all;
+use work.param.all;
 
 entity tb_fc is
 	
-	
-
 end tb_fc;
 
 architecture test of tb_fc is
@@ -118,6 +91,8 @@ begin
 	  wait for 2 ns;
 	  
 	end loop;
+	
+	wait for 2 ns;
 	
 	-- writing array of output
 	for i in 0 to pe_number-1 loop

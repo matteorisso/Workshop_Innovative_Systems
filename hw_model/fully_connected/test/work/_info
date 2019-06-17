@@ -4,49 +4,48 @@ K3
 cModel Technology
 Z0 dC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test
 Eadder
-Z1 DPx4 work 17 fixed_float_types 0 22 W4ATgTeAlJQj3_40TOTBN3
-Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z3 DPx4 work 9 fixed_pkg 0 22 5TnRg=Reg:iA=eKTIfzdL2
-Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-32
-!i10b 1
-Z6 w1560409893
+Z1 w1560591655
+Z2 DPx4 work 17 fixed_float_types 0 22 W4ATgTeAlJQj3_40TOTBN3
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx4 work 9 fixed_pkg 0 22 5TnRg=Reg:iA=eKTIfzdL2
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z7 dC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test
-Z8 8C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\adder.vhd
-Z9 FC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\adder.vhd
+Z8 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd
+Z9 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd
 l0
 L5
-VcYC?:?CeU9M;lNg=_ze4J1
+VWHjU9mcECTgneI^8GgAC10
 Z10 OV;C;10.1d;51
-Z11 !s108 1560457993.075000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\adder.vhd|
-Z13 !s107 C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\adder.vhd|
+32
+Z11 !s108 1560610261.460000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd|
+Z13 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/adder.vhd|
 Z14 o-work work -2002 -explicit -O0
 Z15 tExplicit 1
-!s100 QMd<<UZ?Dg?H>l2GH1[_^3
+!s100 Bi[ld<eba1[_OCD]Llkc;0
+!i10b 1
 Abehavior
-R1
 R2
 R3
 R4
 R5
-DEx4 work 5 adder 0 22 cYC?:?CeU9M;lNg=_ze4J1
-32
-!i10b 1
-l20
-L16
+R6
+DEx4 work 5 adder 0 22 WHjU9mcECTgneI^8GgAC10
+l25
+L21
 Ve]YDX3Nki`c>;T[9C2?g]1
 R10
+32
 R11
 R12
 R13
 R14
 R15
-!s100 S<IEL?`ne9][D:YnBXcgC2
+!s100 7D[hOF_0zn<RzW2:jVXVR0
+!i10b 1
 Pfixed_float_types
 32
-!i10b 1
 Z16 w1560075263
 R7
 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fixed_float_types.vhd
@@ -57,18 +56,18 @@ VW4ATgTeAlJQj3_40TOTBN3
 R10
 R14
 R15
+!i10b 1
 !s100 K7S6f`lOn:f8[LPBGH_0k0
 !s108 1560408369.594000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fixed_float_types.vhd|
 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fixed_float_types.vhd|
 Pfixed_pkg
-R1
 R2
+R3
+R6
 R5
-R4
 32
 b1
-!i10b 1
 R16
 R7
 Z17 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fixed_pkg.vhd
@@ -82,16 +81,16 @@ Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/s
 Z21 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fixed_pkg.vhd|
 R14
 R15
+!i10b 1
 !s100 DDkQK>KB9Bm;_f976FOZ;1
 Bbody
-R3
-Z22 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
-R1
-R2
-R5
 R4
+Z22 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R2
+R3
+R6
+R5
 32
-!i10b 1
 l0
 L1467
 VlCiXAPZ3l`VRB11=KUcIN0
@@ -102,240 +101,238 @@ R21
 R14
 R15
 nbody
+!i10b 1
 !s100 SjjmD93OV>>go_:CjFCU;0
 Efully_connected
-Z23 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
-Z24 DPx4 work 16 ifmap_ofmap_type 0 22 ]KhJLKC^Cmb8JYPhViP712
-R1
+Z23 w1560591495
+Z24 DPx4 work 5 param 0 22 eYEO:7fNSShb=2ATE_F2b3
 R2
 R3
 R4
 R5
-32
-!i10b 1
-Z25 w1560408037
+R6
 R7
-Z26 8C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\fully_connected.vhd
-Z27 FC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\fully_connected.vhd
+Z25 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd
+Z26 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd
 l0
-L23
-VQ8LM=bVDklbG@=90jcU0z2
+L6
+V@Qa`Q;?2Y8P:0<GZETLGg0
 R10
-Z28 !s108 1560457993.501000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\fully_connected.vhd|
-Z30 !s107 C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\fully_connected.vhd|
+32
+Z27 !s108 1560610261.858000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd|
+Z29 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected.vhd|
 R14
 R15
-!s100 >0n[`3_b]9SQFYXDn_8UQ2
+!s100 TXP4@jX;z[PSiShP][Yg:2
+!i10b 1
 Abehavior
-R23
 R24
-R1
 R2
 R3
 R4
 R5
-DEx4 work 15 fully_connected 0 22 Q8LM=bVDklbG@=90jcU0z2
-32
-!i10b 1
-l52
-L38
-V3U_e9lX>z^g;7mMYOWb^@2
+R6
+DEx4 work 15 fully_connected 0 22 @Qa`Q;?2Y8P:0<GZETLGg0
+l34
+L18
+VfNYS:;YF]DjC7@=6PCmz[0
 R10
+32
+R27
 R28
 R29
-R30
 R14
 R15
-!s100 T12N]l16ifK5cRUkaA_><0
-Pifmap_ofmap_type
-R1
-R3
-R23
-R2
-R4
-R5
-32
+!s100 l]9LAR:Lb4oQB7`zk81TO0
 !i10b 1
-Z31 w1560453342
-R7
-Z32 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd
-Z33 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd
-l0
-L12
-V]KhJLKC^Cmb8JYPhViP712
-R10
-Z34 !s108 1560457993.670000
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd|
-Z36 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd|
-R14
-R15
-!s100 Ia^018<W_ZY>=D^7T_?2`2
 Emultiplier
-R1
+Z30 w1560591588
 R2
 R3
 R4
 R5
-32
-!i10b 1
-Z37 w1560409963
+R6
 R7
-Z38 8C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\multiplier.vhd
-Z39 FC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\multiplier.vhd
+Z31 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd
+Z32 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd
 l0
 L5
-VfalKUF]@HK:zn5O_`59Z]3
+VS;o3miMWji2U>bz=cCz623
 R10
-Z40 !s108 1560457993.219000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\multiplier.vhd|
-Z42 !s107 C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\multiplier.vhd|
+32
+Z33 !s108 1560610261.599000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd|
+Z35 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/multiplier.vhd|
 R14
 R15
-!s100 nK?2Wz>TWBZa]?j:YiXH]3
+!s100 <VmKdiSMCQoXcIbZzk4Jh2
+!i10b 1
 Abehavior
-R1
 R2
 R3
 R4
 R5
-DEx4 work 10 multiplier 0 22 falKUF]@HK:zn5O_`59Z]3
-32
-!i10b 1
-l16
-L14
+R6
+DEx4 work 10 multiplier 0 22 S;o3miMWji2U>bz=cCz623
+l21
+L19
 VoUE8JSkP5hGM:kjem`hB]3
 R10
-R40
-R41
-R42
+32
+R33
+R34
+R35
 R14
 R15
-!s100 Fm`Q=328f<zOU<T1_RR2a1
+!s100 cDDzFgV25<jMm?c1Dgz5Q0
+!i10b 1
+Pparam
+R2
+R3
+R6
+R5
+R4
+w1560593212
+R7
+8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/param.vhd
+FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/param.vhd
+l0
+L24
+VeYEO:7fNSShb=2ATE_F2b3
+!s100 GTkU=;OVg20XgWiBiSz?30
+R10
+32
+!i10b 1
+!s108 1560610262.124000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/param.vhd|
+!s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/param.vhd|
+R14
+R15
 Epe
-R1
+Z36 w1560610092
 R2
 R3
 R4
 R5
-32
-!i10b 1
-Z43 w1560457981
+R6
 R7
-Z44 8C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\pe.vhd
-Z45 FC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\pe.vhd
+Z37 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd
+Z38 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd
 l0
 L5
 VL4nzNAQ0a2M7o3UVZ1`Cn3
 R10
-Z46 !s108 1560457993.362000
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\pe.vhd|
-Z48 !s107 C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\pe.vhd|
+32
+Z39 !s108 1560610261.726000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd|
+Z41 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/pe.vhd|
 R14
 R15
 !s100 IQI8_32Od9maK9TVLQ8NX2
+!i10b 1
 Amac
-R1
 R2
 R3
 R4
 R5
+R6
 DEx4 work 2 pe 0 22 L4nzNAQ0a2M7o3UVZ1`Cn3
-32
-!i10b 1
-l66
+l85
 L18
-VS^3GHnd=l3IkZKFf6>c2e1
+V2;b>4^d`ijWdGV?KdYYRi3
 R10
-R46
-R47
-R48
+32
+R39
+R40
+R41
 R14
 R15
-!s100 `N95]mJ]?lSE9mP?WeDMM0
+!s100 WnS8gVB;A5K<@]XaP92750
+!i10b 1
 Eregn
-R1
+Z42 w1560591803
 R2
 R3
 R4
 R5
-32
-!i10b 1
-Z49 w1560279301
+R6
 R7
-Z50 8C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\regn.vhd
-Z51 FC:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\regn.vhd
+Z43 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd
+Z44 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd
 l0
-L11
-Vl1dPC=F:hgD;OWQEB5MWL3
+L5
+VO4aU=4[8lE7Jl=2CULD7h2
 R10
-Z52 !s108 1560457992.882000
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\regn.vhd|
-Z54 !s107 C:\Users\Admin\Desktop\sdi\Workshop_Innovative_Systems\hw_model\fully_connected\test\regn.vhd|
+32
+Z45 !s108 1560610261.346000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd|
+Z47 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/regn.vhd|
 R14
 R15
-!s100 S3BSPKeX6Q9ZUSJQ:RLK[0
+!s100 MJ^IMA]n_nY]E`CVE0A1d2
+!i10b 1
 Abehavior
-R1
 R2
 R3
 R4
 R5
-DEx4 work 4 regn 0 22 l1dPC=F:hgD;OWQEB5MWL3
-32
-!i10b 1
-l24
-L23
+R6
+DEx4 work 4 regn 0 22 O4aU=4[8lE7Jl=2CULD7h2
+l22
+L21
 VOLBI55Uhm^mA=4C7ZeeQI2
 R10
+32
+R45
+R46
+R47
+R14
+R15
+!s100 KhEMGZGl4M2VO]TkX_Ez;3
+!i10b 1
+Etb_fc
+Z48 w1560591482
+R24
+R2
+R4
+Z49 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R3
+R5
+R6
+R7
+Z50 8C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd
+Z51 FC:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd
+l0
+L10
+V9OQ:aQ9dZ=a]B5Pfg]1nk1
+R10
+32
+Z52 !s108 1560610261.992000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd|
+Z54 !s107 C:/Users/Admin/Desktop/sdi/Workshop_Innovative_Systems/hw_model/fully_connected/test/fully_connected_tb.vhd|
+R14
+R15
+!s100 kkOH^0Z4=Sd<SB^`IKfo41
+!i10b 1
+Atest
+R24
+R2
+R4
+R49
+R3
+R5
+R6
+DEx4 work 5 tb_fc 0 22 9OQ:aQ9dZ=a]B5Pfg]1nk1
+l36
+L14
+VKOI^O0ezVP:B^79mY8;KS2
+!s100 jh^MY9i^bjk1e1SN=NDRY0
+R10
+32
 R52
 R53
 R54
 R14
 R15
-!s100 <f[KaIkz2j_?@amM^aPoB0
-Etb_fc
-R24
-R1
-R3
-R23
-R2
-R4
-R5
-32
 !i10b 1
-R31
-R7
-R32
-R33
-l0
-L35
-V9o14kcf_fbLi[A:Td<aJ`0
-R10
-R34
-R35
-R36
-R14
-R15
-!s100 mAzPB@RDg@:7?WQmJK2g_1
-Atest
-R24
-R1
-R3
-R23
-R2
-R4
-R5
-DEx4 work 5 tb_fc 0 22 9o14kcf_fbLi[A:Td<aJ`0
-32
-!i10b 1
-l63
-L41
-VmCJ@B`ROEX5?Kd@UjX8e=0
-!s100 Tfg@5>k450bePI_GR]dR<3
-R10
-R34
-R35
-R36
-R14
-R15

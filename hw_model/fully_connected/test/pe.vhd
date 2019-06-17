@@ -9,8 +9,8 @@ generic(
 		);
 port(	
 	ck, rstn 	: in 	std_logic; 	
-	im, k  		: in  sfixed( qi-1 downto -qf );
-	psum	 	: out sfixed( qi-1 downto -qf )
+	im, k  		: in  	sfixed( qi-1 downto -qf );
+	psum	 	: out 	sfixed( qi-1 downto -qf )
 	);
 			
 end entity;
@@ -19,65 +19,82 @@ architecture mac of pe is
 
 
 component multiplier
-generic (	qi : natural:= 8; qf : natural:= 8 );
-port (
-			a, b 	: in 	sfixed(qi-1 downto -qf);
-			res	: out sfixed(2*qi-1 downto -2*qf));
+
+	generic(
+			qi : natural := 8; 
+			qf : natural := 8 
+			);
+	port(
+		a	: in 	sfixed(qi-1 downto -qf);
+		b 	: in 	sfixed(qi-1 downto -qf);
+		res	: out 	sfixed(2*qi-1 downto -2*qf)
+		);		
+		
 end component;
 
 component adder
-generic ( 	qi : natural:= 8; qf : natural:= 8 );
-port (
-			a, b 	: in 	sfixed(qi-1 downto -qf);
-		--	cin 	: in  std_logic;
-			res	: out sfixed(qi-1 downto -qf)
-		--	cout : out std_logic
+
+	generic( 	
+			qi : natural := 8; 
+			qf : natural := 8 
 			);
+	port(
+		a		: in 	sfixed(qi-1 downto -qf);
+		b 		: in 	sfixed(qi-1 downto -qf);
+	--	cin 	: in  	std_logic;
+		res		: out 	sfixed(qi-1 downto -qf)
+	--	cout	: out 	std_logic
+			);
+			
 end component; 
 
 component regn
-generic (qi : natural:= 8; qf : natural:= 8);	
-port(
-		d 	:	in sfixed(qi-1 downto -qf);
-		ck, 
-		rstn, 
-		en	:	in std_logic;
-		q  :  out sfixed(qi-1 downto -qf));
+
+	generic(
+			qi : natural := 8; 
+			qf : natural := 8
+			);	
+	port(
+		d 		:	in sfixed(qi-1 downto -qf);
+		ck		:	in std_logic;
+		rstn	:	in std_logic;
+		en		:	in std_logic;
+		q  		:  out sfixed(qi-1 downto -qf)
+		);
+			
 end component;
 
 signal rstn_acc : std_logic; 
+ 
 
--- fractional scaling Q1.X 
--- mpy result in Q1.(2*X)
--- bit-growth : approx floor( log2( k 2**(qi-1) ) : k = #ops
--- 2 bit gain 
-
+-- fractional scaling Q1.X
 constant nqi  : natural := 1; 
-constant nqf  : natural := psum'length-1; -- =15
-constant bitg : natural := 2; 
+constant nqf  : natural := psum'length-1; 
 
-signal mpy_a, mpy_b : sfixed(nqi-1 downto -nqf) ; -- = 0 downto -15
-signal mpy_tmp 	  : sfixed(nqi downto -2*nqf ) ;  -- = 1 downto -30		
-signal mpy_res		  : sfixed( nqi+bitg -1 downto -2*nqf-10 ) ;
- 	
-signal d_acc    : sfixed( nqi+bitg -1 downto -2*nqf-10 ) ; 	
-signal q_acc    : sfixed( nqi+bitg -1 downto -2*nqf-10 ) ; 	
+signal mpy_a	: sfixed(nqi-1 downto -nqf); -- = 0 downto -15
+signal mpy_b	: sfixed(nqi-1 downto -nqf); -- = 0 downto -15
+signal mpy_tmp	: sfixed(nqi downto -2*nqf ) ; -- = 1 downto -30		
+
+constant bitg 	: natural := 2; 
+constant bit_ov : natural := 10; -- to avoid overflow
+
+signal mpy_res	: sfixed( nqi+bitg -1 downto -2*nqf-bit_ov ) ;	
+signal d_acc    : sfixed( nqi+bitg -1 downto -2*nqf-bit_ov ) ; 	
+signal q_acc    : sfixed( nqi+bitg -1 downto -2*nqf-bit_ov ) ; 	
 
 begin
 
-mul 	: multiplier	generic map ( qi => nqi, qf => nqf   ) port map (mpy_a, mpy_b, mpy_tmp);
-add	: adder			generic map ( qi => nqi+bitg, qf => 2*nqf+10 ) port map (mpy_res, q_acc, d_acc);
-acc	: regn			generic map ( qi => nqi+bitg, qf => 2*nqf+10 ) port map (d_acc, ck, rstn, '1', q_acc);
+mul : multiplier	generic map ( qi => nqi, qf => nqf   )				port map (mpy_a, mpy_b, mpy_tmp);
+add	: adder			generic map ( qi => nqi+bitg, qf => 2*nqf+bit_ov )	port map (mpy_res, q_acc, d_acc);
+acc	: regn			generic map ( qi => nqi+bitg, qf => 2*nqf+bit_ov )	port map (d_acc, ck, rstn, '1', q_acc);
 
-mpy_a 	<= im ; 
+mpy_a <= im ; 
+mpy_b <= k ;					
 
-mpy_b 	<= k ;					
+mpy_res <= (bit_ov DOWNTO 0 => mpy_tmp(mpy_tmp'high)) & mpy_tmp;						
 
-mpy_res 	<= (10 DOWNTO 0 => mpy_tmp(mpy_tmp'high)) & mpy_tmp ;						
+psum <= resize(q_acc, nqi+bitg-1, -(nqf-nqi-bitg+1));
 
--- *//* generic scaling ? 
-
-psum 		<= q_acc( nqi+bitg-1 downto -(nqf-nqi-bitg+1) ); -- 2 downto -13
 
 --round-off noise ?
 
