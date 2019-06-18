@@ -4,11 +4,12 @@ package param is
 
 	constant qi : natural := 8; 
 	constant qf : natural := 8;
-	
 
 	constant filter_size : natural := 5;
 	constant stride 		: natural := 1; 	
 	constant array_c		: natural := 4; 
+
+	-- subtype sfixed ? 
 	
 	type filter		is array ( 0 to filter_size-1) of sfixed (qi-1 downto -qf);
 	-- pe_array

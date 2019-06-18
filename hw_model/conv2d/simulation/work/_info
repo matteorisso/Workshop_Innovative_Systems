@@ -1,0 +1,647 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\11.1\modelsim_ase\altera\vhdl\stratixv_pcie_hip\stratixv_pcie_hip_components
+Eadder
+Z0 w1560083506
+Z1 DPx4 work 17 fixed_float_types 0 22 W4ATgTeAlJQj3_40TOTBN3
+Z2 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+Z3 DPx4 work 9 fixed_pkg 0 22 :HMJWhk2O[HbM<3:J>FAf3
+Z4 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Antonio\Desktop\conv2d\simulation
+Z7 8C:/Users/Antonio/Desktop/conv2d/adder.vhd
+Z8 FC:/Users/Antonio/Desktop/conv2d/adder.vhd
+l0
+L5
+VcYC?:?CeU9M;lNg=_ze4J1
+Z9 OV;C;10.0c;49
+32
+Z10 !s108 1560879021.844000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/adder.vhd|
+Z12 !s107 C:/Users/Antonio/Desktop/conv2d/adder.vhd|
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+!s100 bz_R74n39AG?^=32SclAY2
+Abehavior
+R1
+R2
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 cYC?:?CeU9M;lNg=_ze4J1
+l21
+L17
+Ve]YDX3Nki`c>;T[9C2?g]1
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!s100 FA@_ChlJ51Ai8ZQ`lFdW:2
+Ebinary_adder_tree
+Z15 w1560291641
+R1
+R2
+R3
+R4
+R5
+R6
+Z16 8C:/Users/Antonio/Desktop/conv2d/binary_adder_tree.vhd
+Z17 FC:/Users/Antonio/Desktop/conv2d/binary_adder_tree.vhd
+l0
+L5
+V9H=@3bn7;bChKF>[UgImJ2
+R9
+32
+Z18 !s108 1560879022.406000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/binary_adder_tree.vhd|
+Z20 !s107 C:/Users/Antonio/Desktop/conv2d/binary_adder_tree.vhd|
+R13
+R14
+!s100 ;4ojFY[`56S`>DPD62^AJ0
+Astructure
+R1
+R2
+R3
+R4
+R5
+Z21 DEx4 work 17 binary_adder_tree 0 22 9H=@3bn7;bChKF>[UgImJ2
+l85
+L53
+VPc?4RXI0fW:WXSI0[;M142
+R9
+32
+R18
+R19
+R20
+R13
+R14
+!s100 Z;?COhR1KWoTbnRY2QQ080
+Abehavior
+R1
+R2
+R3
+R4
+R5
+R21
+l24
+L19
+Vc>FL0<PVgRPC5]SS8@DHl1
+R9
+32
+R18
+R19
+R20
+R13
+R14
+!s100 ]7f_C0Eo^[keIdIO`5cY<3
+Econv2d
+Z22 w1560877420
+Z23 DPx4 work 5 param 0 22 jn_Q3:bA9Xe9U21ZHP8<20
+R1
+R3
+R2
+R4
+R5
+R6
+Z24 8C:/Users/Antonio/Desktop/conv2d/conv2d.vhd
+Z25 FC:/Users/Antonio/Desktop/conv2d/conv2d.vhd
+l0
+L9
+VGZSU59O;i9Nbdl`_1ISEG1
+R9
+32
+Z26 !s108 1560879023.344000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/conv2d.vhd|
+Z28 !s107 C:/Users/Antonio/Desktop/conv2d/conv2d.vhd|
+R13
+R14
+!s100 @7W9eoZQkhM1cA;NfD:LY3
+Astructure
+R23
+R1
+R3
+R2
+R4
+R5
+DEx4 work 6 conv2d 0 22 GZSU59O;i9Nbdl`_1ISEG1
+l98
+L30
+V3HHT[X0TI2m[BRf4XCe132
+R9
+32
+R26
+R27
+R28
+R13
+R14
+!s100 JO3Zkc;Ygcj04_`K@b5T93
+Econv2d_tb
+Z29 w1560880510
+R23
+R1
+R3
+Z30 DPx4 ieee 16 std_logic_textio 0 22 nS@;e8VD1o]DCVjBMSZYk3
+R2
+R4
+R5
+R6
+Z31 8C:/Users/Antonio/Desktop/conv2d/simulation/conv2d_tb.vhd
+Z32 FC:/Users/Antonio/Desktop/conv2d/simulation/conv2d_tb.vhd
+l0
+L10
+V;ZSS:6<0[63CLCS89;8nb3
+!s100 61KULCmz1kc34b^8:Q:@V2
+R9
+32
+Z33 !s108 1560880540.496000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/simulation/conv2d_tb.vhd|
+Z35 !s107 C:/Users/Antonio/Desktop/conv2d/simulation/conv2d_tb.vhd|
+R13
+R14
+Atest
+R23
+R1
+R3
+R30
+R2
+R4
+R5
+Z36 DEx4 work 9 conv2d_tb 0 22 ;ZSS:6<0[63CLCS89;8nb3
+l95
+L15
+V<RDNkbA5HEYMRe@CF=_m_1
+!s100 OlzbDfzZ[:H0lKZh06RlU0
+R9
+32
+R33
+R34
+R35
+R13
+R14
+Ecountern
+Z37 w1560874470
+R2
+R4
+R5
+R6
+Z38 8C:/Users/Antonio/Desktop/conv2d/countern.vhd
+Z39 FC:/Users/Antonio/Desktop/conv2d/countern.vhd
+l0
+L5
+VX_cXDol>>5D`IL34?06bO3
+R9
+32
+Z40 !s108 1560879024.125000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/countern.vhd|
+Z42 !s107 C:/Users/Antonio/Desktop/conv2d/countern.vhd|
+R13
+R14
+!s100 7?gmAYkjCcJf0=RmD1BO00
+Abehavior
+R2
+R4
+R5
+DEx4 work 8 countern 0 22 X_cXDol>>5D`IL34?06bO3
+l19
+L15
+VOWPbYCfnANYEaddQz72M43
+R9
+32
+R40
+R41
+R42
+R13
+R14
+!s100 IgoAYDd`3P[4:Pl4Eee?<3
+Pfixed_float_types
+w1543707988
+R6
+8C:/Users/Antonio/Desktop/conv2d/pkg/fixed_float_types.vhd
+FC:/Users/Antonio/Desktop/conv2d/pkg/fixed_float_types.vhd
+l0
+L16
+VW4ATgTeAlJQj3_40TOTBN3
+R9
+32
+R13
+R14
+!s100 K7S6f`lOn:f8[LPBGH_0k0
+!s108 1560879042.067000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/pkg/fixed_float_types.vhd|
+!s107 C:/Users/Antonio/Desktop/conv2d/pkg/fixed_float_types.vhd|
+Pfixed_pkg
+R1
+R2
+R5
+R4
+Z43 w1543877882
+R6
+Z44 8C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd
+Z45 FC:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd
+l0
+L26
+V:HMJWhk2O[HbM<3:J>FAf3
+R9
+32
+b1
+Z46 !s108 1560879039.252000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd|
+Z48 !s107 C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd|
+R13
+R14
+!s100 DCT0g[b3QiWmj@Y12WNLO1
+Bbody
+R3
+Z49 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R1
+R2
+R5
+R4
+l0
+L1467
+VPk`j]Nh=[k2l5AW>EaRCM0
+R9
+32
+R46
+R47
+R48
+R13
+R14
+nbody
+!s100 RlP81hTKDmXb2Dc3ANk8f2
+Efsm
+R29
+R1
+R3
+R23
+R2
+R4
+R5
+R6
+Z50 8C:/Users/Antonio/Desktop/conv2d/simulation/fsm.vhd
+Z51 FC:/Users/Antonio/Desktop/conv2d/simulation/fsm.vhd
+l0
+L9
+VNLkZP9h_g5]>gblCN1:A93
+R9
+32
+Z52 !s108 1560880534.211000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/simulation/fsm.vhd|
+Z54 !s107 C:/Users/Antonio/Desktop/conv2d/simulation/fsm.vhd|
+R13
+R14
+!s100 ]Q=8gHf]2]<kndJlH5[^g1
+Astructure
+R1
+R3
+R23
+R2
+R4
+R5
+DEx4 work 3 fsm 0 22 NLkZP9h_g5]>gblCN1:A93
+l47
+L39
+VU[HV`gS<f4b8o4n2Y;<n31
+R9
+32
+R52
+R53
+R54
+R13
+R14
+!s100 MDm[j32o^kjhe>8IV]KJU3
+Eim_buffer
+Z55 w1560791836
+R23
+R1
+R3
+R2
+R4
+R5
+R6
+Z56 8C:/Users/Antonio/Desktop/conv2d/im_buffer.vhd
+Z57 FC:/Users/Antonio/Desktop/conv2d/im_buffer.vhd
+l0
+L8
+V:G?K[dZmPma<X?UeYldlE0
+R9
+32
+Z58 !s108 1560879025.705000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/im_buffer.vhd|
+Z60 !s107 C:/Users/Antonio/Desktop/conv2d/im_buffer.vhd|
+R13
+R14
+!s100 Tj9WNjQZ[_FJE5jOS1VoU0
+Astructure
+R23
+R1
+R3
+R2
+R4
+R5
+DEx4 work 9 im_buffer 0 22 :G?K[dZmPma<X?UeYldlE0
+l33
+L18
+V7;9^JYTdPh8hXI58g@;5P2
+R9
+32
+R58
+R59
+R60
+R13
+R14
+!s100 ^[3jeVla2a@WEYjcbSG]C3
+Eim_buffer_word
+Z61 w1560791888
+R23
+R1
+R3
+R2
+R4
+R5
+R6
+Z62 8C:/Users/Antonio/Desktop/conv2d/im_buffer_word.vhd
+Z63 FC:/Users/Antonio/Desktop/conv2d/im_buffer_word.vhd
+l0
+L8
+VQli1zlz6>zJUl93`mfC?W3
+R9
+32
+Z64 !s108 1560879026.548000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/im_buffer_word.vhd|
+Z66 !s107 C:/Users/Antonio/Desktop/conv2d/im_buffer_word.vhd|
+R13
+R14
+!s100 i<jhXd4C9FO=W75WlT;K@3
+Astructure
+R23
+R1
+R3
+R2
+R4
+R5
+DEx4 work 14 im_buffer_word 0 22 Qli1zlz6>zJUl93`mfC?W3
+l31
+L18
+V_KPi><TQNnGYHQ;7<S_AI0
+R9
+32
+R64
+R65
+R66
+R13
+R14
+!s100 KcliB4X>GhE0e^iOmS94V1
+Eim_pad
+Z67 w1560762143
+R23
+R1
+R3
+R2
+R4
+R5
+R6
+Z68 8C:/Users/Antonio/Desktop/conv2d/im_pad.vhd
+Z69 FC:/Users/Antonio/Desktop/conv2d/im_pad.vhd
+l0
+L13
+Vo7DGDQnY8YTeQH`BKM9e31
+R9
+32
+Z70 !s108 1560879027.423000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/im_pad.vhd|
+Z72 !s107 C:/Users/Antonio/Desktop/conv2d/im_pad.vhd|
+R13
+R14
+!s100 iHY9WL9H:deM6cRaE54G@0
+Astructure
+R23
+R1
+R3
+R2
+R4
+R5
+DEx4 work 6 im_pad 0 22 o7DGDQnY8YTeQH`BKM9e31
+l40
+L25
+V`nL:ZKXGMM=g9aL;=JJj23
+R9
+32
+R70
+R71
+R72
+R13
+R14
+!s100 G@>elg7=WZfTOJ;`JD42d1
+Emultiplier
+Z73 w1560038343
+R1
+R2
+R3
+R4
+R5
+R6
+Z74 8C:/Users/Antonio/Desktop/conv2d/multiplier.vhd
+Z75 FC:/Users/Antonio/Desktop/conv2d/multiplier.vhd
+l0
+L5
+VfalKUF]@HK:zn5O_`59Z]3
+R9
+32
+Z76 !s108 1560879032.877000
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/multiplier.vhd|
+Z78 !s107 C:/Users/Antonio/Desktop/conv2d/multiplier.vhd|
+R13
+R14
+!s100 >0be4Ah;Z1h0`<WKW3X0T1
+Abehavior
+R1
+R2
+R3
+R4
+R5
+DEx4 work 10 multiplier 0 22 falKUF]@HK:zn5O_`59Z]3
+l15
+L13
+VoUE8JSkP5hGM:kjem`hB]3
+R9
+32
+R76
+R77
+R78
+R13
+R14
+!s100 FT>:JP7HYI8YJ_l3C4W:k3
+Pparam
+R1
+R2
+R5
+R4
+R3
+w1560810794
+R6
+8C:/Users/Antonio/Desktop/conv2d/param.vhd
+FC:/Users/Antonio/Desktop/conv2d/param.vhd
+l0
+L3
+Vjn_Q3:bA9Xe9U21ZHP8<20
+R9
+32
+R13
+R14
+!s100 93GlV0DjH8=2ZQXA=7RMG0
+!s108 1560879033.784000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/param.vhd|
+!s107 C:/Users/Antonio/Desktop/conv2d/param.vhd|
+Epe
+Z79 w1560771095
+R1
+R2
+R3
+R4
+R5
+R6
+Z80 8C:/Users/Antonio/Desktop/conv2d/pe.vhd
+Z81 FC:/Users/Antonio/Desktop/conv2d/pe.vhd
+l0
+L5
+VL4nzNAQ0a2M7o3UVZ1`Cn3
+R9
+32
+Z82 !s108 1560879034.893000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/pe.vhd|
+Z84 !s107 C:/Users/Antonio/Desktop/conv2d/pe.vhd|
+R13
+R14
+!s100 lk`CcW0Cho@M1lkfWNZX>1
+Amac
+R1
+R2
+R3
+R4
+R5
+Z85 DEx4 work 2 pe 0 22 L4nzNAQ0a2M7o3UVZ1`Cn3
+l62
+L14
+VKjhG50o@jZki3Z?a0814B2
+R9
+32
+R82
+R83
+R84
+R13
+R14
+!s100 VUEXfiz2:WP:ik9UBR0nY0
+Epe_array
+Z86 w1560789940
+R23
+R1
+R2
+R3
+R4
+R5
+R6
+Z87 8C:/Users/Antonio/Desktop/conv2d/pe_array.vhd
+Z88 FC:/Users/Antonio/Desktop/conv2d/pe_array.vhd
+l0
+L8
+VaT67=:g2U47R<M[5dW9[g0
+R9
+32
+Z89 !s108 1560879037.455000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/pe_array.vhd|
+Z91 !s107 C:/Users/Antonio/Desktop/conv2d/pe_array.vhd|
+R13
+R14
+!s100 J5dPfQ6Ti^8EFhjJ^o1<22
+Astructure
+R23
+R1
+R2
+R3
+R4
+R5
+Z92 DEx4 work 8 pe_array 0 22 aT67=:g2U47R<M[5dW9[g0
+l45
+L20
+V@h<M;UAdE@9>EM?7X8:j63
+R9
+32
+R89
+R90
+R91
+R13
+R14
+!s100 Sh80N0EDeWzno?71c@2eD0
+Eregn
+R79
+R1
+R2
+R3
+R4
+R5
+R6
+Z93 8C:/Users/Antonio/Desktop/conv2d/regn.vhd
+Z94 FC:/Users/Antonio/Desktop/conv2d/regn.vhd
+l0
+L5
+Vl1dPC=F:hgD;OWQEB5MWL3
+R9
+32
+Z95 !s108 1560879038.689000
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/conv2d/regn.vhd|
+Z97 !s107 C:/Users/Antonio/Desktop/conv2d/regn.vhd|
+R13
+R14
+!s100 UXcCOW?h`5GUWnEoLl0Sb2
+Abehavior
+R1
+R2
+R3
+R4
+R5
+DEx4 work 4 regn 0 22 l1dPC=F:hgD;OWQEB5MWL3
+l18
+L17
+VOLBI55Uhm^mA=4C7ZeeQI2
+R9
+32
+R95
+R96
+R97
+R13
+R14
+!s100 2B:VD>VEYV3J91hfOm;?42
+Cstrucural_cfg
+astructure
+epe_array
+R85
+R21
+DAx4 work 8 pe_array 9 structure 22 @h<M;UAdE@9>EM?7X8:j63
+R23
+R1
+R2
+R3
+R4
+R5
+R92
+R86
+R6
+R87
+R88
+l0
+L81
+VL3X`<hF<<]WhLG@JUID>m0
+R9
+32
+R89
+R90
+R91
+R13
+R14
+!s100 lIjF`Nk9c9S=RB0FRcO6^1

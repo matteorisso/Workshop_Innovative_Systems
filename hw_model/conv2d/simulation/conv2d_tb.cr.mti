@@ -1,0 +1,167 @@
+C:/Users/Antonio/Desktop/conv2d/adder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/adder.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity adder
+-- Compiling architecture behavior of adder
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/im_buffer_word.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/im_buffer_word.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Loading package param
+-- Compiling entity im_buffer_word
+-- Compiling architecture structure of im_buffer_word
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/binary_adder_tree.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/binary_adder_tree.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity binary_adder_tree
+-- Compiling architecture behavior of binary_adder_tree
+-- Compiling architecture structure of binary_adder_tree
+-- Loading entity binary_adder_tree
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/countern.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/countern.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity countern
+-- Compiling architecture behavior of countern
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/im_buffer.vhd {2 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/im_buffer.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Loading package param
+-- Compiling entity im_buffer
+-- Compiling architecture structure of im_buffer
+** Warning: [5] C:/Users/Antonio/Desktop/conv2d/im_buffer.vhd(15): Nonresolved signal 'dout' may have multiple sources.
+  Drivers:
+    C:/Users/Antonio/Desktop/conv2d/im_buffer.vhd(49):Instantiation w
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/multiplier.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/multiplier.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity multiplier
+-- Compiling architecture behavior of multiplier
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/param.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/param.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling package param
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/pkg/fixed_float_types.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/pkg/fixed_float_types.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Compiling package fixed_float_types
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd {2 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Compiling package fixed_pkg
+-- Loading package MATH_REAL
+-- Compiling package body fixed_pkg
+-- Loading package fixed_pkg
+** Warning: [3] C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd(1471): (vcom-1246) Range 0 downto 1 is null.
+** Warning: [3] C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd(1472): (vcom-1246) Range 0 downto 1 is null.
+** Warning: [3] C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd(1473): (vcom-1246) Range 0 downto 1 is null.
+** Warning: [3] C:/Users/Antonio/Desktop/conv2d/pkg/fixed_pkg.vhd(6889): (vcom-1246) Range 2 to 1 is null.
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/im_pad.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/im_pad.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Loading package param
+-- Compiling entity im_pad
+-- Compiling architecture structure of im_pad
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/pe_array.vhd {2 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/pe_array.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Loading package param
+-- Compiling entity pe_array
+-- Compiling architecture structure of pe_array
+-- Compiling configuration strucural_cfg
+-- Loading entity pe_array
+-- Loading architecture structure of pe_array
+-- Loading entity pe
+-- Loading entity binary_adder_tree
+** Warning: C:/Users/Antonio/Desktop/conv2d/pe_array.vhd(83): (vcom-1263) Component configuration "all : binary_adder_tree" applies to no component instantiation statements.
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/conv2d.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/conv2d.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Loading package param
+-- Compiling entity conv2d
+-- Compiling architecture structure of conv2d
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/regn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/regn.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity regn
+-- Compiling architecture behavior of regn
+
+} {} {}} C:/Users/Antonio/Desktop/conv2d/pe.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/conv2d/pe.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity pe
+-- Compiling architecture mac of pe
+
+} {} {}}

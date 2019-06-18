@@ -27,11 +27,11 @@ rst: if (sync_rst_n = '0') then
 			
      elsif EN = '1' then   
             if (terminal_cnt = '0')  then    
-                  if ( cnt_out = arr ) then  -- check stop   
-                      terminal_cnt <='1';              -- update terminal count at next ck cycle  
- 		      cnt_out <= cnt_out+1; 	       -- update Q			  
+                  if ( cnt_out = arr -1) then  -- check stop   
+                    terminal_cnt <='1';              -- update terminal count at next ck cycle  
+					cnt_out <= cnt_out+1; 	       -- update Q			  
                   else
-                      cnt_out <= cnt_out+1;            -- update Q  
+                      cnt_out <= cnt_out+1;         -- update Q  
                   end if;             
             else
                   cnt_out <= (others => '0');          -- EN = '1', TC = '1' => re-start count       

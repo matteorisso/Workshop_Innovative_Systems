@@ -4776,6 +4776,46 @@ pe_array:pes|binary_adder_tree:\sum:3:add|regn:d1_1
 pe_array:pes|binary_adder_tree:\sum:3:add|regn:d1_2
 pe_array:pes|binary_adder_tree:\sum:3:add|regn:d1_3
 pe_array:pes|binary_adder_tree:\sum:3:add|regn:d1_4
+im_pad:\imrf:0:lbo:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:0:lbo:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:0:lbo:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:0:lbo:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:0:lbo:rf|regn:\rfgen:4:ar:r
+im_pad:\imrf:1:lbo:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:1:lbo:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:1:lbo:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:1:lbo:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:1:lbo:rf|regn:\rfgen:4:ar:r
+im_pad:\imrf:2:lbo:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:2:lbo:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:2:lbo:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:2:lbo:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:2:lbo:rf|regn:\rfgen:4:ar:r
+im_pad:\imrf:3:lbo:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:3:lbo:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:3:lbo:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:3:lbo:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:3:lbo:rf|regn:\rfgen:4:ar:r
+im_pad:\imrf:4:ext:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:4:ext:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:4:ext:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:4:ext:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:4:ext:rf|regn:\rfgen:4:ar:r
+im_pad:\imrf:5:ext:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:5:ext:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:5:ext:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:5:ext:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:5:ext:rf|regn:\rfgen:4:ar:r
+im_pad:\imrf:6:ext:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:6:ext:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:6:ext:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:6:ext:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:6:ext:rf|regn:\rfgen:4:ar:r
+im_pad:\imrf:7:ext:rf|regn:\rfgen:0:ir:r
+im_pad:\imrf:7:ext:rf|regn:\rfgen:1:ar:r
+im_pad:\imrf:7:ext:rf|regn:\rfgen:2:ar:r
+im_pad:\imrf:7:ext:rf|regn:\rfgen:3:ar:r
+im_pad:\imrf:7:ext:rf|regn:\rfgen:4:ar:r
 im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:0:reg
 im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:1:reg
 im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:2:reg
@@ -4904,46 +4944,6 @@ im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:0:reg
 im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:1:reg
 im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:2:reg
 im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:3:reg
-im_pad:\imrf:0:lbo:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:0:lbo:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:0:lbo:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:0:lbo:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:0:lbo:rf|regn:\rfgen:4:ar:r
-im_pad:\imrf:1:lbo:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:1:lbo:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:1:lbo:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:1:lbo:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:1:lbo:rf|regn:\rfgen:4:ar:r
-im_pad:\imrf:2:lbo:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:2:lbo:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:2:lbo:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:2:lbo:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:2:lbo:rf|regn:\rfgen:4:ar:r
-im_pad:\imrf:3:lbo:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:3:lbo:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:3:lbo:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:3:lbo:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:3:lbo:rf|regn:\rfgen:4:ar:r
-im_pad:\imrf:4:ext:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:4:ext:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:4:ext:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:4:ext:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:4:ext:rf|regn:\rfgen:4:ar:r
-im_pad:\imrf:5:ext:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:5:ext:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:5:ext:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:5:ext:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:5:ext:rf|regn:\rfgen:4:ar:r
-im_pad:\imrf:6:ext:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:6:ext:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:6:ext:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:6:ext:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:6:ext:rf|regn:\rfgen:4:ar:r
-im_pad:\imrf:7:ext:rf|regn:\rfgen:0:ir:r
-im_pad:\imrf:7:ext:rf|regn:\rfgen:1:ar:r
-im_pad:\imrf:7:ext:rf|regn:\rfgen:2:ar:r
-im_pad:\imrf:7:ext:rf|regn:\rfgen:3:ar:r
-im_pad:\imrf:7:ext:rf|regn:\rfgen:4:ar:r
 }
 # macro_sequence
 
@@ -8382,58 +8382,6 @@ clk_en
 
 # end
 # entity
-conv2d
-# storage
-db|conv2d.(0).cnf
-db|conv2d.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-conv2d.vhd
-a8e6a077869660a67e77d9566a6c55
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-qi
-8
-PARAMETER_SIGNED_DEC
-DEF
-qf
-8
-PARAMETER_SIGNED_DEC
-DEF
-filter_size
-5
-PARAMETER_SIGNED_DEC
-DEF
-}
-# include_file {
-param.vhd
-bc4e8be307f7aab85d780d68647e2d
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
-pkg|fixed_pkg.vhd
-fdb70d04cf39242dcc91bb321a0a9ef
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 pe_array
 # storage
 db|conv2d.(34).cnf
@@ -8488,12 +8436,12 @@ PARAMETER_STRING
 USR
 }
 # include_file {
-param.vhd
-bc4e8be307f7aab85d780d68647e2d
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
 pkg|fixed_pkg.vhd
 fdb70d04cf39242dcc91bb321a0a9ef
+param.vhd
+642366816bf087b0419c59ae8654d56c
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
 }
 # hierarchies {
 pe_array:pes
@@ -8544,12 +8492,12 @@ PARAMETER_STRING
 USR
 }
 # include_file {
-param.vhd
-bc4e8be307f7aab85d780d68647e2d
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
 pkg|fixed_pkg.vhd
 fdb70d04cf39242dcc91bb321a0a9ef
+param.vhd
+642366816bf087b0419c59ae8654d56c
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
 }
 # hierarchies {
 im_buffer:lb
@@ -8600,12 +8548,12 @@ PARAMETER_STRING
 USR
 }
 # include_file {
-param.vhd
-bc4e8be307f7aab85d780d68647e2d
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
 pkg|fixed_pkg.vhd
 fdb70d04cf39242dcc91bb321a0a9ef
+param.vhd
+642366816bf087b0419c59ae8654d56c
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
 }
 # hierarchies {
 im_buffer:lb|im_buffer_word:\mem:0:first:w
@@ -8691,12 +8639,12 @@ PARAMETER_STRING
 USR
 }
 # include_file {
-param.vhd
-bc4e8be307f7aab85d780d68647e2d
-pkg|fixed_float_types.vhd
-2b5a158da067bde99c6f0d8d41b399b
 pkg|fixed_pkg.vhd
 fdb70d04cf39242dcc91bb321a0a9ef
+param.vhd
+642366816bf087b0419c59ae8654d56c
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
 }
 # hierarchies {
 im_pad:\imrf:0:lbo:rf
@@ -8707,6 +8655,54 @@ im_pad:\imrf:4:ext:rf
 im_pad:\imrf:5:ext:rf
 im_pad:\imrf:6:ext:rf
 im_pad:\imrf:7:ext:rf
+}
+# macro_sequence
+
+# end
+# entity
+conv2d
+# storage
+db|conv2d.(0).cnf
+db|conv2d.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+conv2d.vhd
+b2f26f8ef19cb9f6cc8bdc49cea021
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+qi
+8
+PARAMETER_SIGNED_DEC
+DEF
+qf
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# include_file {
+pkg|fixed_float_types.vhd
+2b5a158da067bde99c6f0d8d41b399b
+pkg|fixed_pkg.vhd
+fdb70d04cf39242dcc91bb321a0a9ef
+param.vhd
+642366816bf087b0419c59ae8654d56c
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for conv2d
-Mon Jun 17 19:48:57 2019
+Tue Jun 18 11:02:22 2019
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -178,217 +178,217 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
 170. Parameter Settings for User Entity Instance: pe_array:pes|binary_adder_tree:\sum:3:add|regn:d1_2
 171. Parameter Settings for User Entity Instance: pe_array:pes|binary_adder_tree:\sum:3:add|regn:d1_3
 172. Parameter Settings for User Entity Instance: pe_array:pes|binary_adder_tree:\sum:3:add|regn:d1_4
-173. Parameter Settings for User Entity Instance: countern:tick_ofmap
-174. Parameter Settings for User Entity Instance: countern:tick_channel
-175. Parameter Settings for User Entity Instance: im_buffer:lb
-176. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w
-177. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:0:reg
-178. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:1:reg
-179. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:2:reg
-180. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:3:reg
-181. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w
-182. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:0:reg
-183. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:1:reg
-184. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:2:reg
-185. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:3:reg
-186. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w
-187. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:0:reg
-188. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:1:reg
-189. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:2:reg
-190. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:3:reg
-191. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w
-192. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:0:reg
-193. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:1:reg
-194. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:2:reg
-195. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:3:reg
-196. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w
-197. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:0:reg
-198. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:1:reg
-199. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:2:reg
-200. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:3:reg
-201. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w
-202. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:0:reg
-203. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:1:reg
-204. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:2:reg
-205. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:3:reg
-206. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w
-207. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:0:reg
-208. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:1:reg
-209. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:2:reg
-210. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:3:reg
-211. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w
-212. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:0:reg
-213. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:1:reg
-214. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:2:reg
-215. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:3:reg
-216. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w
-217. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:0:reg
-218. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:1:reg
-219. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:2:reg
-220. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:3:reg
-221. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w
-222. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:0:reg
-223. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:1:reg
-224. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:2:reg
-225. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:3:reg
-226. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w
-227. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:0:reg
-228. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:1:reg
-229. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:2:reg
-230. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:3:reg
-231. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w
-232. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:0:reg
-233. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:1:reg
-234. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:2:reg
-235. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:3:reg
-236. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w
-237. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:0:reg
-238. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:1:reg
-239. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:2:reg
-240. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:3:reg
-241. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w
-242. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:0:reg
-243. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:1:reg
-244. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:2:reg
-245. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:3:reg
-246. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w
-247. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:0:reg
-248. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:1:reg
-249. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:2:reg
-250. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:3:reg
-251. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w
-252. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:0:reg
-253. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:1:reg
-254. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:2:reg
-255. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:3:reg
-256. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w
-257. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:0:reg
-258. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:1:reg
-259. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:2:reg
-260. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:3:reg
-261. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w
-262. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:0:reg
-263. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:1:reg
-264. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:2:reg
-265. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:3:reg
-266. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w
-267. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:0:reg
-268. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:1:reg
-269. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:2:reg
-270. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:3:reg
-271. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w
-272. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:0:reg
-273. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:1:reg
-274. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:2:reg
-275. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:3:reg
-276. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w
-277. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:0:reg
-278. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:1:reg
-279. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:2:reg
-280. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:3:reg
-281. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w
-282. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:0:reg
-283. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:1:reg
-284. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:2:reg
-285. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:3:reg
-286. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w
-287. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:0:reg
-288. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:1:reg
-289. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:2:reg
-290. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:3:reg
-291. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w
-292. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:0:reg
-293. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:1:reg
-294. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:2:reg
-295. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:3:reg
-296. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w
-297. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:0:reg
-298. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:1:reg
-299. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:2:reg
-300. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:3:reg
-301. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w
-302. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:0:reg
-303. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:1:reg
-304. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:2:reg
-305. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:3:reg
-306. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w
-307. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:0:reg
-308. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:1:reg
-309. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:2:reg
-310. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:3:reg
-311. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w
-312. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:0:reg
-313. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:1:reg
-314. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:2:reg
-315. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:3:reg
-316. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w
-317. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:0:reg
-318. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:1:reg
-319. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:2:reg
-320. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:3:reg
-321. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w
-322. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:0:reg
-323. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:1:reg
-324. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:2:reg
-325. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:3:reg
-326. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w
-327. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:0:reg
-328. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:1:reg
-329. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:2:reg
-330. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:3:reg
-331. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w
-332. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:0:reg
-333. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:1:reg
-334. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:2:reg
-335. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:3:reg
-336. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf
-337. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:0:ir:r
-338. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:1:ar:r
-339. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:2:ar:r
-340. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:3:ar:r
-341. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:4:ar:r
-342. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf
-343. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:0:ir:r
-344. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:1:ar:r
-345. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:2:ar:r
-346. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:3:ar:r
-347. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:4:ar:r
-348. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf
-349. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:0:ir:r
-350. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:1:ar:r
-351. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:2:ar:r
-352. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:3:ar:r
-353. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:4:ar:r
-354. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf
-355. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:0:ir:r
-356. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:1:ar:r
-357. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:2:ar:r
-358. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:3:ar:r
-359. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:4:ar:r
-360. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf
-361. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:0:ir:r
-362. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:1:ar:r
-363. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:2:ar:r
-364. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:3:ar:r
-365. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:4:ar:r
-366. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf
-367. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:0:ir:r
-368. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:1:ar:r
-369. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:2:ar:r
-370. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:3:ar:r
-371. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:4:ar:r
-372. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf
-373. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:0:ir:r
-374. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:1:ar:r
-375. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:2:ar:r
-376. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:3:ar:r
-377. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:4:ar:r
-378. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf
-379. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:0:ir:r
-380. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:1:ar:r
-381. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:2:ar:r
-382. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:3:ar:r
-383. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:4:ar:r
+173. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf
+174. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:0:ir:r
+175. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:1:ar:r
+176. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:2:ar:r
+177. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:3:ar:r
+178. Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:4:ar:r
+179. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf
+180. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:0:ir:r
+181. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:1:ar:r
+182. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:2:ar:r
+183. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:3:ar:r
+184. Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:4:ar:r
+185. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf
+186. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:0:ir:r
+187. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:1:ar:r
+188. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:2:ar:r
+189. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:3:ar:r
+190. Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:4:ar:r
+191. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf
+192. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:0:ir:r
+193. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:1:ar:r
+194. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:2:ar:r
+195. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:3:ar:r
+196. Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:4:ar:r
+197. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf
+198. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:0:ir:r
+199. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:1:ar:r
+200. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:2:ar:r
+201. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:3:ar:r
+202. Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:4:ar:r
+203. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf
+204. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:0:ir:r
+205. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:1:ar:r
+206. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:2:ar:r
+207. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:3:ar:r
+208. Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:4:ar:r
+209. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf
+210. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:0:ir:r
+211. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:1:ar:r
+212. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:2:ar:r
+213. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:3:ar:r
+214. Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:4:ar:r
+215. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf
+216. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:0:ir:r
+217. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:1:ar:r
+218. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:2:ar:r
+219. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:3:ar:r
+220. Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:4:ar:r
+221. Parameter Settings for User Entity Instance: countern:tick_ofmap
+222. Parameter Settings for User Entity Instance: countern:tick_channel
+223. Parameter Settings for User Entity Instance: im_buffer:lb
+224. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w
+225. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:0:reg
+226. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:1:reg
+227. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:2:reg
+228. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:3:reg
+229. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w
+230. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:0:reg
+231. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:1:reg
+232. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:2:reg
+233. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:3:reg
+234. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w
+235. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:0:reg
+236. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:1:reg
+237. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:2:reg
+238. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:2:mid:w|regn:\gen:3:reg
+239. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w
+240. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:0:reg
+241. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:1:reg
+242. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:2:reg
+243. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:3:mid:w|regn:\gen:3:reg
+244. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w
+245. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:0:reg
+246. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:1:reg
+247. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:2:reg
+248. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:4:mid:w|regn:\gen:3:reg
+249. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w
+250. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:0:reg
+251. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:1:reg
+252. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:2:reg
+253. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:5:mid:w|regn:\gen:3:reg
+254. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w
+255. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:0:reg
+256. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:1:reg
+257. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:2:reg
+258. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:6:mid:w|regn:\gen:3:reg
+259. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w
+260. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:0:reg
+261. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:1:reg
+262. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:2:reg
+263. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:7:mid:w|regn:\gen:3:reg
+264. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w
+265. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:0:reg
+266. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:1:reg
+267. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:2:reg
+268. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:8:mid:w|regn:\gen:3:reg
+269. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w
+270. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:0:reg
+271. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:1:reg
+272. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:2:reg
+273. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:9:mid:w|regn:\gen:3:reg
+274. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w
+275. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:0:reg
+276. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:1:reg
+277. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:2:reg
+278. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:10:mid:w|regn:\gen:3:reg
+279. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w
+280. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:0:reg
+281. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:1:reg
+282. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:2:reg
+283. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:11:mid:w|regn:\gen:3:reg
+284. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w
+285. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:0:reg
+286. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:1:reg
+287. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:2:reg
+288. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:12:mid:w|regn:\gen:3:reg
+289. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w
+290. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:0:reg
+291. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:1:reg
+292. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:2:reg
+293. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:13:mid:w|regn:\gen:3:reg
+294. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w
+295. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:0:reg
+296. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:1:reg
+297. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:2:reg
+298. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:14:mid:w|regn:\gen:3:reg
+299. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w
+300. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:0:reg
+301. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:1:reg
+302. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:2:reg
+303. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:15:mid:w|regn:\gen:3:reg
+304. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w
+305. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:0:reg
+306. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:1:reg
+307. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:2:reg
+308. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:16:mid:w|regn:\gen:3:reg
+309. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w
+310. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:0:reg
+311. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:1:reg
+312. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:2:reg
+313. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:17:mid:w|regn:\gen:3:reg
+314. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w
+315. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:0:reg
+316. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:1:reg
+317. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:2:reg
+318. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:18:mid:w|regn:\gen:3:reg
+319. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w
+320. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:0:reg
+321. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:1:reg
+322. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:2:reg
+323. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:19:mid:w|regn:\gen:3:reg
+324. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w
+325. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:0:reg
+326. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:1:reg
+327. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:2:reg
+328. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:20:mid:w|regn:\gen:3:reg
+329. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w
+330. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:0:reg
+331. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:1:reg
+332. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:2:reg
+333. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:21:mid:w|regn:\gen:3:reg
+334. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w
+335. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:0:reg
+336. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:1:reg
+337. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:2:reg
+338. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:22:mid:w|regn:\gen:3:reg
+339. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w
+340. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:0:reg
+341. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:1:reg
+342. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:2:reg
+343. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:23:mid:w|regn:\gen:3:reg
+344. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w
+345. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:0:reg
+346. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:1:reg
+347. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:2:reg
+348. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:24:mid:w|regn:\gen:3:reg
+349. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w
+350. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:0:reg
+351. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:1:reg
+352. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:2:reg
+353. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:25:mid:w|regn:\gen:3:reg
+354. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w
+355. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:0:reg
+356. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:1:reg
+357. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:2:reg
+358. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:26:mid:w|regn:\gen:3:reg
+359. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w
+360. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:0:reg
+361. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:1:reg
+362. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:2:reg
+363. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:27:mid:w|regn:\gen:3:reg
+364. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w
+365. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:0:reg
+366. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:1:reg
+367. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:2:reg
+368. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:28:mid:w|regn:\gen:3:reg
+369. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w
+370. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:0:reg
+371. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:1:reg
+372. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:2:reg
+373. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:29:mid:w|regn:\gen:3:reg
+374. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w
+375. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:0:reg
+376. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:1:reg
+377. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:2:reg
+378. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:30:mid:w|regn:\gen:3:reg
+379. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w
+380. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:0:reg
+381. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:1:reg
+382. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:2:reg
+383. Parameter Settings for User Entity Instance: im_buffer:lb|im_buffer_word:\mem:31:last:w|regn:\gen:3:reg
 384. Parameter Settings for Inferred Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:3:reg|altshift_taps:q_rtl_0
 385. Parameter Settings for Inferred Entity Instance: pe_array:pes|pe:\rgen:4:cgen:3:i_w:mac|multiplier:mul|lpm_mult:Mult0
 386. Parameter Settings for Inferred Entity Instance: pe_array:pes|pe:\rgen:4:cgen:2:i_w:mac|multiplier:mul|lpm_mult:Mult0
@@ -418,29 +418,30 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
 410. lpm_mult Parameter Settings by Entity Instance
 411. Port Connectivity Checks: "im_buffer:lb"
 412. Port Connectivity Checks: "countern:tick_channel"
-413. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_4"
-414. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_3"
-415. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_2"
-416. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_1"
-417. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_0"
-418. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_4"
-419. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_3"
-420. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_2"
-421. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_1"
-422. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_0"
-423. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r1_1"
-424. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r1_0"
-425. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r0_1"
-426. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r0_0"
-427. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s1_1"
-428. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s1_0"
-429. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s0_1"
-430. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s0_0"
-431. Port Connectivity Checks: "pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|regn:acc"
-432. Port Connectivity Checks: "pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|adder:add"
-433. Port Connectivity Checks: "pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|multiplier:mul"
-434. Elapsed Time Per Partition
-435. Analysis & Synthesis Messages
+413. Port Connectivity Checks: "countern:tick_ofmap"
+414. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_4"
+415. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_3"
+416. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_2"
+417. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_1"
+418. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_0"
+419. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_4"
+420. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_3"
+421. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_2"
+422. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_1"
+423. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_0"
+424. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r1_1"
+425. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r1_0"
+426. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r0_1"
+427. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r0_0"
+428. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s1_1"
+429. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s1_0"
+430. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s0_1"
+431. Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s0_0"
+432. Port Connectivity Checks: "pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|regn:acc"
+433. Port Connectivity Checks: "pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|adder:add"
+434. Port Connectivity Checks: "pe_array:pes|pe:\rgen:0:cgen:0:i_h:mac|multiplier:mul"
+435. Elapsed Time Per Partition
+436. Analysis & Synthesis Messages
 
 
 
@@ -466,16 +467,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 17 19:48:57 2019         ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 18 11:02:22 2019         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; conv2d                                        ;
 ; Top-level Entity Name              ; conv2d                                        ;
 ; Family                             ; Cyclone II                                    ;
-; Total logic elements               ; 3,571                                         ;
-;     Total combinational functions  ; 2,611                                         ;
+; Total logic elements               ; 3,570                                         ;
+;     Total combinational functions  ; 2,610                                         ;
 ;     Dedicated logic registers      ; 1,979                                         ;
 ; Total registers                    ; 1979                                          ;
-; Total pins                         ; 275                                           ;
+; Total pins                         ; 278                                           ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 1,856                                         ;
 ; Embedded Multiplier 9-bit elements ; 36                                            ;
@@ -627,28 +628,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 3,571 ;
+; Estimated Total logic elements              ; 3,570 ;
 ;                                             ;       ;
-; Total combinational functions               ; 2611  ;
+; Total combinational functions               ; 2610  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 720   ;
-;     -- 3 input functions                    ; 1406  ;
-;     -- <=2 input functions                  ; 485   ;
+;     -- 4 input functions                    ; 722   ;
+;     -- 3 input functions                    ; 1405  ;
+;     -- <=2 input functions                  ; 483   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1415  ;
+;     -- normal mode                          ; 1414  ;
 ;     -- arithmetic mode                      ; 1196  ;
 ;                                             ;       ;
 ; Total registers                             ; 1979  ;
 ;     -- Dedicated logic registers            ; 1979  ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 275   ;
+; I/O pins                                    ; 278   ;
 ; Total memory bits                           ; 1856  ;
 ; Embedded Multiplier 9-bit elements          ; 36    ;
 ; Maximum fan-out node                        ; ck    ;
 ; Maximum fan-out                             ; 2043  ;
-; Total fan-out                               ; 16354 ;
+; Total fan-out                               ; 16353 ;
 ; Average fan-out                             ; 3.29  ;
 +---------------------------------------------+-------+
 
@@ -658,9 +659,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                     ; Library Name ;
 +-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |conv2d                                             ; 2611 (66)         ; 1979 (0)     ; 1856        ; 36           ; 0       ; 18        ; 275  ; 0            ; |conv2d                                                                                                                                                                 ;              ;
+; |conv2d                                             ; 2610 (66)         ; 1979 (0)     ; 1856        ; 36           ; 0       ; 18        ; 278  ; 0            ; |conv2d                                                                                                                                                                 ;              ;
 ;    |countern:tick_channel|                          ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conv2d|countern:tick_channel                                                                                                                                           ;              ;
-;    |countern:tick_ofmap|                            ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conv2d|countern:tick_ofmap                                                                                                                                             ;              ;
+;    |countern:tick_ofmap|                            ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conv2d|countern:tick_ofmap                                                                                                                                             ;              ;
 ;    |im_buffer:lb|                                   ; 14 (0)            ; 75 (0)       ; 1856        ; 0            ; 0       ; 0         ; 0    ; 0            ; |conv2d|im_buffer:lb                                                                                                                                                    ;              ;
 ;       |im_buffer_word:\mem:0:first:w|               ; 0 (0)             ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conv2d|im_buffer:lb|im_buffer_word:\mem:0:first:w                                                                                                                      ;              ;
 ;          |regn:\gen:0:reg|                          ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conv2d|im_buffer:lb|im_buffer_word:\mem:0:first:w|regn:\gen:0:reg                                                                                                      ;              ;
@@ -931,7 +932,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; Number of registers using Synchronous Load   ; 305   ;
 ; Number of registers using Asynchronous Clear ; 1966  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 652   ;
+; Number of registers using Clock Enable       ; 648   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1083,28 +1084,28 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                        ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------------------+----------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_4|q[-7] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_4|q[-5] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_4|q[-5] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_4|q[-6] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_3|q[-4] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_2|q[-7] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_1|q[-3] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_0|q[-5] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_3|q[5]  ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_2|q[-6] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_1|q[1]  ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_0|q[-8] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_3|q[4]  ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_2|q[-5] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_1|q[4]  ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_0|q[-5] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_3|q[-4] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_2|q[0]  ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_1|q[-4] ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_0|q[-5] ;                            ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |conv2d|countern:tick_ofmap|cnt_out[1]                            ;                            ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |conv2d|countern:tick_channel|cnt_out[0]                          ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_4|q[0]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_4|q[-7] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_4|q[0]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_4|q[1]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_3|q[-6] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_2|q[-3] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_1|q[1]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:3:add|regn:d0_0|q[4]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_3|q[-4] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_2|q[-8] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_1|q[-4] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:2:add|regn:d0_0|q[-4] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_3|q[5]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_2|q[-8] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_1|q[5]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:1:add|regn:d0_0|q[4]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_3|q[0]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_2|q[-7] ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_1|q[5]  ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |conv2d|pe_array:pes|binary_adder_tree:\sum:0:add|regn:d0_0|q[-8] ;                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |conv2d|countern:tick_ofmap|cnt_out[2]                            ;                            ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |conv2d|countern:tick_channel|cnt_out[2]                          ;                            ;
 ; 8:1                ; 128 bits  ; 640 LEs       ; 384 LEs              ; 256 LEs                ; |conv2d|im_pad:\imrf:1:lbo:rf|Mux11                               ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------------------+----------------------------+
 
@@ -1125,7 +1126,6 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------+-------+-----------------------------------------------+
 ; qi             ; 8     ; Signed Integer                                ;
 ; qf             ; 8     ; Signed Integer                                ;
-; filter_size    ; 5     ; Signed Integer                                ;
 +----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2855,6 +2855,534 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; qi             ; 8     ; Signed Integer                                                          ;
 ; qf             ; 8     ; Signed Integer                                                          ;
 +----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; qi             ; 8     ; Signed Integer                            ;
+; qf             ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:0:ir:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:1:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:2:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:3:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:4:ar:r ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; qi             ; 8     ; Signed Integer                                               ;
+; qf             ; 8     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -4651,534 +5179,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:0:lbo:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:1:lbo:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:2:lbo:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:3:lbo:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:4:ext:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:5:ext:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:6:ext:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; qi             ; 8     ; Signed Integer                            ;
-; qf             ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:0:ir:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:1:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:2:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:3:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: im_pad:\imrf:7:ext:rf|regn:\rfgen:4:ar:r ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; qi             ; 8     ; Signed Integer                                               ;
-; qf             ; 8     ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:3:reg|altshift_taps:q_rtl_0 ;
 +----------------+----------------+-----------------------------------------------------------------------------------------------+
@@ -6452,6 +6452,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-------------------------------------------------+
+; Port Connectivity Checks: "countern:tick_ofmap" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; en   ; Input ; Info     ; Stuck at VCC          ;
++------+-------+----------+-----------------------+
+
+
 +---------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "pe_array:pes|binary_adder_tree:\sum:0:add|regn:d1_4" ;
 +------+-------+----------+-------------------------------------------------------+
@@ -6646,7 +6655,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:44     ;
+; Top            ; 00:00:39     ;
 +----------------+--------------+
 
 
@@ -6656,7 +6665,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Jun 17 19:47:38 2019
+    Info: Processing started: Tue Jun 18 11:01:21 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off conv2d -c conv2d
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file im_pad.vhd
@@ -6718,12 +6727,12 @@ Info (12128): Elaborating entity "binary_adder_tree" for hierarchy "pe_array:pes
 Info (12128): Elaborating entity "adder" for hierarchy "pe_array:pes|binary_adder_tree:\sum:0:add|adder:s0_0"
 Info (12128): Elaborating entity "regn" for hierarchy "pe_array:pes|binary_adder_tree:\sum:0:add|regn:r0_0"
 Warning (10492): VHDL Process Statement warning at regn.vhd(28): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "im_pad" for hierarchy "im_pad:\imrf:0:lbo:rf"
 Info (12128): Elaborating entity "countern" for hierarchy "countern:tick_ofmap"
 Info (12128): Elaborating entity "countern" for hierarchy "countern:tick_channel"
 Info (12128): Elaborating entity "im_buffer" for hierarchy "im_buffer:lb"
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "tmp" into its bus
 Info (12128): Elaborating entity "im_buffer_word" for hierarchy "im_buffer:lb|im_buffer_word:\mem:0:first:w"
-Info (12128): Elaborating entity "im_pad" for hierarchy "im_pad:\imrf:0:lbo:rf"
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276034): Inferred altshift_taps megafunction from the following design logic: "im_buffer:lb|im_buffer_word:\mem:1:mid:w|regn:\gen:3:reg|q_rtl_0"
         Info (286033): Parameter NUMBER_OF_TAPS set to 1
@@ -6858,16 +6867,16 @@ Info (13014): Ignored 826 buffer(s)
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-Info (21057): Implemented 3947 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 211 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 3572 logic cells
+Info (21057): Implemented 3949 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 212 input pins
+    Info (21059): Implemented 66 output pins
+    Info (21061): Implemented 3571 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21062): Implemented 36 DSP elements
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 399 megabytes
-    Info: Processing ended: Mon Jun 17 19:48:58 2019
-    Info: Elapsed time: 00:01:20
-    Info: Total CPU time (on all processors): 00:00:58
+    Info: Processing ended: Tue Jun 18 11:02:23 2019
+    Info: Elapsed time: 00:01:02
+    Info: Total CPU time (on all processors): 00:00:55
 
 

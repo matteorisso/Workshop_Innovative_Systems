@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jun 18 11:03:52 2019
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
+Revision Name : conv2d
+Top-level Entity Name : conv2d
+Family : Cyclone II
+Device : EP2C35F484C6
+Timing Models : Final
+Total logic elements : 3,188 / 33,216 ( 10 % )
+    Total combinational functions : 2,610 / 33,216 ( 8 % )
+    Dedicated logic registers : 1,979 / 33,216 ( 6 % )
+Total registers : 1979
+Total pins : 278 / 322 ( 86 % )
+Total virtual pins : 0
+Total memory bits : 1,856 / 483,840 ( < 1 % )
+Embedded Multiplier 9-bit elements : 36 / 70 ( 51 % )
+Total PLLs : 0 / 4 ( 0 % )
