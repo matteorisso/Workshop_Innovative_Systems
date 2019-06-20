@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 use std.textio.all;
 use ieee.std_logic_textio.all;
 use work.fixed_pkg.all; 
-use work.param.all;
+use work.ptype.all;
 
 entity tb_conv is
 	
@@ -13,16 +13,19 @@ end tb_conv;
 
 architecture test of tb_conv is
 
--- METTERE IL PORT CORRETTO 
-	component conv2d is
-      port (
-			ck		  : in std_logic; 
-			rstn	  : in std_logic;
-			ld_loop_n : in std_logic;
-			im 	      : in  imap_in;
-			k		  : in  filter;
-			ofmap     : in  imap_in);
-	end component;
+   component nfu is
+
+      port(
+		ck 			: in std_logic; 
+		rstn		: in std_logic; 
+		ld_v 		: in std_logic;
+		ld_h 		: in std_logic; 
+		sel			: in std_logic;
+		weight		: in 	sfixed(qi-1 downto -qf);   -- il tipo dei pesi? non dovrebbero essere array? 
+		din_h		: in 	data_h;
+		din_v		: in 	data_v;
+		omap		: out matrix);
+    end component;
 	
 	file file_vectors : text;
 	file file_weigths : text;	
@@ -30,9 +33,11 @@ architecture test of tb_conv is
 	
 	signal tb_clk		: std_logic;
 	signal tb_rst		: std_logic;
-	signal tb_imap		: imap_in;
-	signal tb_weigths	: filter; 
-	signal tb_ofmap		: imap_in;
+	signal tb_imaph		: data_h;
+	signal tb_imapv		: data_v;
+    signal tb_sel	    : std_logic;
+	signal tb_weigths	: sfixed(qi-1 downto -qf); 
+	signal tb_ofmap		: matrix;
 	signal ld_parallel  : std_logic;	
 	signal ld_right     : std_logic;		
 	
@@ -69,8 +74,8 @@ begin
 
 	-- opening input and output files in read/write modes
 	file_open(file_vectors, "random_in.txt",  read_mode);
-	file_open(file_weigths, " ",  read_mode);	
-	file_open(file_results, "sim_results.txt", write_mode);
+	file_open(file_weigths, "random_filter",  read_mode);	
+	file_open(file_results, "results.txt", write_mode);
 	
 	wait for 10 ns;
 	
@@ -80,7 +85,7 @@ begin
 		
 		-- reading array of input
 		
-		for i in 0 to 3
+		for i in 0 to 3                         --parallel
 	     ld_parallel <= '1';
 		   
 		   	readline(file_vectors, v_iline);
@@ -104,7 +109,7 @@ begin
 		
 		wait for 1 ns; 
 
-        for i in 0 to 4 -- orizz 
+        for i in 0 to 4                           -- orizz 
 	     ld_right <= '1';
 	       
 		   wait for 1 ns;
@@ -126,7 +131,7 @@ begin
 		end loop;
 		
 	    -- writing array of output
-	    for i in 0 to pe_number-1 loop
+	    for i in 0 to pe_number-1 loop                --Dobbiamo scrivere una matrice in output??????
 	 	    write(v_oline, tb_ofmap(i), right, 16);
 		    writeline(file_results, v_oline); 
 	    end loop;		
@@ -148,12 +153,16 @@ begin
         
 	conv : conv2d
 		port map(
-			clk		=> tb_clk, 
-			rst_n	=> tb_rst, 
-			im 	    => tb_imap, 
-			k       => tb_weigths,
-			ofmap 	=> tb_ofmap
-			);
+		
+		ck 	    => tb_clk,
+		rstn    => tb_rst,
+		ld_v 	=> ld_parallel,
+		ld_h 	=> ld_right, 
+		sel		=> tb_sel,
+		weight	=> tb_weigths,
+		din_h	=> tb_imaph,
+		din_v   => tb_imapv,
+		omap    => tb_ofmap);
 		 
 end test;
        
