@@ -21,7 +21,7 @@ architecture test of tb_conv is
 		ld_v 		: in std_logic;
 		ld_h 		: in std_logic; 
 		sel			: in std_logic;
-		weight		: in 	sfixed(qi-1 downto -qf);   -- il tipo dei pesi? non dovrebbero essere array? 
+		weight		: in 	sfixed(qi-1 downto -qf);   
 		din_h		: in 	data_h;
 		din_v		: in 	data_v;
 		omap		: out matrix);
@@ -59,94 +59,117 @@ begin
 		wait;
 	end process;
 	
-	
-	-- process for:
-	-- 1) reading input stimuli from file
-	-- 2) writing results to file
+	-- process for writing results to file	
 	process
 	variable v_iline	: line;
 	variable v_oline	: line;
-	variable v_imap	    : imap_in;
-	variable v_weights	: sfixed(qi-1 downto -qf);
 	variable v_space	: character; 
 	 
 	begin
 
-	-- opening input and output files in read/write modes
-	file_open(file_vectors, "random_in.txt",  read_mode);
-	file_open(file_weigths, "random_filter",  read_mode);	
+	-- opening output file in write modes	
 	file_open(file_results, "results.txt", write_mode);
 	
-	wait for 10 ns;
+	wait for 25 ns;
 	
+	-- writing array of output
+	    for i in 0 to py-1 loop
+	 	    write(v_oline, tb_ofmap, right, 16);
+		    writeline(file_results, v_oline); 
+	    end loop;			
+
+	-- closin out file
+	file_close(file_results);
+
+	wait;
+	end process;		
+	
+	-- process for reading kernels from file
+	process
+	variable v_iline	: line;
+	variable v_oline	: line;
+	variable v_weights	: sfixed(qi-1 downto -qf);
+	variable v_space	: character; 
+	 
+	begin
+	
+	-- opening input files in read modes
+	file_open(file_weigths, "random_filter",  read_mode);	
+	
+	wait for 10 ns;
+
+		-- reading array of weights         
+			readline(file_weigths, v_iline);
+			read(v_iline, v_weights);
+			tb_weigths <= v_weights; 		
+
+	-- closin in file
+	file_close(file_weigths);	
+
+	wait;
+	end process;	
+	
+	
+	-- process for reading input stimuli from file
+	process
+	variable v_iline	: line;
+	variable v_oline	: line;
+	variable v_imaph	: data_h;
+	variable v_imapv	: data_v;	
+	variable v_space	: character; 
+	 
+	begin
+
+	-- opening input file in read modes
+	file_open(file_vectors, "random_in.txt",  read_mode);
+	
+	wait for 10 ns;
 	
 	-- read input stimuli from file random_in.txt
 	while not endfile(file_vectors) loop
 		
 		-- reading array of input
 		
-		for i in 0 to 3                         --parallel
-	     ld_parallel <= '1';
+		for i in 0 to 3                       
 		   
 		   	readline(file_vectors, v_iline);
-			read(v_iline, v_imap(i));	       
+			read(v_iline, v_imaph);	       
             
-            tb_imap(i) <= v_imap(i);
+            tb_imaph <= v_imaph;
         end loop; 
 		
-		-- reading array of weights         
-		for i in 0 to pe_number-1 loop
-			readline(file_weigths, v_iline);
-			read(v_iline, v_weights);
-			tb_weigths(i) <= v_weights; 
-		end loop;
-		
-	-- writing array of output
-	    for i in 0 to pe_number-1 loop
-	 	    write(v_oline, tb_ofmap(i), right, 16);
-		    writeline(file_results, v_oline); 
-	    end loop;		
-		
 		wait for 1 ns; 
+		
+	 for j in 0 to 4	                            --loop per le 5 volte in verticale
 
-        for i in 0 to 4                           -- orizz 
-	     ld_right <= '1';
+       for i in 0 to 4                           --5 volte in orizz 
 	       
 		   wait for 1 ns;
 		   
 		for i in 0 to 3
-	     ld_parallel <= '1';
 		   
 		   	readline(file_vectors, v_iline);
-			read(v_iline, v_imap(i));	       
+			read(v_iline, v_imaph);	       
             
-            tb_imap(i) <= v_imap(i);
+            tb_imaph <= v_imaph;
         end loop;
-		
-	    -- reading array of weights         
-		for i in 0 to pe_number-1 loop
-			readline(file_weigths, v_iline);
-			read(v_iline, v_weights);
-			tb_weigths(i) <= v_weights; 
-		end loop;
-		
-	    -- writing array of output
-	    for i in 0 to pe_number-1 loop                --Dobbiamo scrivere una matrice in output??????
-	 	    write(v_oline, tb_ofmap(i), right, 16);
-		    writeline(file_results, v_oline); 
-	    end loop;		
+	   end loop;	
 		
 		wait for 1 ns; 
+
+		   	readline(file_vectors, v_iline);   -- 1 in verticale
+			read(v_iline, v_imapv);	       
+            
+            tb_imapv <= v_imapv;		
         
-        end loop;
+     end loop;
+		
 	  
 	end loop;
 	
         
-	-- closin in/out files
+	-- closin in file
 	file_close(file_vectors);
-	file_close(file_weigths);	
-	file_close(file_results);
 	    
 	wait;
 	end process;
