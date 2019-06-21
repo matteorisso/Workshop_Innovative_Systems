@@ -38,8 +38,8 @@ architecture test of tb_conv is
 	signal tb_rstn		: std_logic;
 	signal tb_imaph		: data_h;
 	signal tb_imapv		: data_v;
+	signal tb_weigths	: sfixed(qi-1 downto -qf):=(others=>'0'); 
     signal tb_sel	    : std_logic;
-	signal tb_weigths	: sfixed(qi-1 downto -qf); 
 	signal tb_ofmap		: matrix;
 	signal tb_ld_h 		: std_logic;	
 	signal tb_ld_v  	: std_logic;		
@@ -52,7 +52,7 @@ begin
 	
 	
 	
-	DUT: conv2d
+	DUT: nfu
 		port map(
 		
 		ck 	    => tb_clk,
@@ -83,7 +83,6 @@ begin
 	
 	-- process for writing results to file	
 	process
-	variable v_iline	: line;
 	variable v_oline	: line;
 	variable v_space	: character; 
 	 
@@ -96,8 +95,10 @@ begin
 	
 	-- writing array of output
 	    for i in 0 to py-1 loop
-	 	    write(v_oline, tb_ofmap, right, 16);
-		    writeline(file_results, v_oline); 
+			for j in 0 to px-1 loop
+				write(v_oline, tb_ofmap(i,j), right, 16);
+			end loop; 
+			writeline(file_results, v_oline); 
 	    end loop;			
 
 	-- closin out file
@@ -116,7 +117,7 @@ begin
 	begin
 	
 	-- opening input files in read modes
-	file_open(file_weigths, "../stimuli/random_filter",  read_mode);	
+	file_open(file_weigths, "../stimuli/random_filter.txt",  read_mode);	
 	
 	wait for (py-1)*period;  						-- init time period 
 	while not endfile(file_weigths) loop
