@@ -88,13 +88,13 @@ for i in range(ifmap_size) :
 for i in range(filter_size) :
     for j in range(filter_size) :
         FILTER[i][j] = random_pattern()
-        f_filter.write(dec2bin(FILTER[i][j]) + "\n")
+        f_filter.write(str(FILTER[i][j]) + "\n")
     	
 # First four vector :
 for i in range(4) :
     for j in range(4) :
         f_descr.write("I" + str(i) + "," + str(j) + " ")
-        f_IN.write(dec2bin(IFMAP[i][j]) + " ")
+        f_IN.write(str(IFMAP[i][j]) + " ")
     f_descr.write("\n")
     f_IN.write("\n")       
 
@@ -108,14 +108,14 @@ for k in range(5) :
     for i in range(5) :
         for j in range(4) :
             f_descr.write("I" + str(m+j) + "," + str(n+i) + " ")
-            f_IN.write(dec2bin(IFMAP[m+j][n+i]) + " ")
+            f_IN.write(str(IFMAP[m+j][n+i]) + " ")
         f_descr.write("\n")
         f_IN.write("\n")
         
     # Loop one vector (vert), each element is Iq,p+j :
     for j in range(4) :
             f_descr.write("I" + str(q) + "," + str(p+j) + " ")
-            f_IN.write(dec2bin(IFMAP[q][p+j]) + " ")
+            f_IN.write(str(IFMAP[q][p+j]) + " ")
     f_descr.write("----vert" + "\n")
     f_IN.write("\n")
     m += 1
