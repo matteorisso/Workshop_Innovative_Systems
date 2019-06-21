@@ -1,0 +1,143 @@
+m255
+K3
+z0
+13
+cModel Technology
+dC:\Users\Antonio\Desktop\conv2d\simulation
+Pfixed_float_types
+Z0 w1561028962
+Z1 dC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation
+8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_float_types.vhd
+FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_float_types.vhd
+l0
+L16
+V3db9e13VVCjP5``a79@H;2
+!s100 cW]eNFhGGd5lB:5@0FCJB2
+Z2 OV;C;10.5b;63
+32
+!s110 1561139828
+!i10b 1
+!s108 1561139828.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_float_types.vhd|
+!s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_float_types.vhd|
+!i113 1
+Z3 o-work work -2002 -explicit
+Z4 tExplicit 1 CvgOpt 0
+Pfixed_pkg
+Z5 DPx4 work 17 fixed_float_types 0 22 3db9e13VVCjP5``a79@H;2
+Z6 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+R0
+R1
+Z9 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd
+Z10 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd
+l0
+L26
+VSiNmh@bZnecz[FT3gQE120
+!s100 1D04<3iVLm>hi0^CZl9Pj2
+R2
+32
+b1
+!s110 1561139829
+!i10b 1
+Z11 !s108 1561139829.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd|
+Z13 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd|
+!i113 1
+R3
+R4
+Bbody
+Z14 DPx4 work 9 fixed_pkg 0 22 SiNmh@bZnecz[FT3gQE120
+DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R5
+R6
+R7
+R8
+l0
+L1467
+V4JT1NTPAd;o<:nz@o7lz:2
+!s100 fJ=Zl3fjP=lkkaGR;?0kb3
+R2
+32
+!s110 1561139830
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R3
+R4
+Pptype
+R5
+R6
+R7
+R8
+R14
+R0
+R1
+8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/ptype.vhd
+FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/ptype.vhd
+l0
+L3
+VVcz8Lh:9QSZ3HC_]Baz9]3
+!s100 NnS7oeWOjXahS3><ZXITm3
+R2
+32
+!s110 1561139832
+!i10b 1
+!s108 1561139831.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/ptype.vhd|
+!s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/ptype.vhd|
+!i113 1
+R3
+R4
+Etb_conv
+Z15 w1561140788
+Z16 DPx4 work 5 ptype 0 22 Vcz8Lh:9QSZ3HC_]Baz9]3
+R5
+R14
+Z17 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R6
+R8
+R7
+R1
+Z18 8C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\DianNao\simulation\conv2d_tb.vhd
+Z19 FC:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\DianNao\simulation\conv2d_tb.vhd
+l0
+L13
+V;MA00n0W;G8AQY5c8BiF[0
+!s100 c0C56?zzkJSo4IQ25VOJ`3
+R2
+32
+Z20 !s110 1561140798
+!i10b 1
+Z21 !s108 1561140797.000000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\DianNao\simulation\conv2d_tb.vhd|
+Z23 !s107 C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\DianNao\simulation\conv2d_tb.vhd|
+!i113 1
+R3
+R4
+Atest
+R16
+R5
+R14
+R17
+R6
+R8
+R7
+Z24 DEx4 work 7 tb_conv 0 22 ;MA00n0W;G8AQY5c8BiF[0
+l49
+L17
+VF<0cHbfmijC5fjdLKTWn93
+!s100 Xk?;KA^blK;C`V>zGXmf]2
+R2
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R3
+R4
