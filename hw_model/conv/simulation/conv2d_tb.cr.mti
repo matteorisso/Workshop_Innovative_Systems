@@ -1,22 +1,27 @@
-C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/conv2d_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\DianNao\simulation\conv2d_tb.vhd}
+C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Loading package std_logic_textio
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity pe
+-- Compiling architecture structure of pe
+
+} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
 -- Loading package fixed_float_types
 -- Loading package fixed_pkg
 -- Loading package ptype
--- Compiling entity tb_conv
--- Compiling architecture test of tb_conv
+-- Compiling entity nfu
+-- Compiling architecture structure of nfu
 
-} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_float_types.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_float_types.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Compiling package fixed_float_types
-
-} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd
+} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -27,12 +32,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package MATH_REAL
 -- Compiling package body fixed_pkg
 -- Loading package fixed_pkg
-** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd(1471): (vcom-1246) Range 0 downto 1 is null.
-** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd(1472): (vcom-1246) Range 0 downto 1 is null.
-** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd(1473): (vcom-1246) Range 0 downto 1 is null.
-** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/pkg/fixed_pkg.vhd(6889): (vcom-1246) Range 2 to 1 is null.
+** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd(1471): (vcom-1246) Range 0 downto 1 is null.
+** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd(1472): (vcom-1246) Range 0 downto 1 is null.
+** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd(1473): (vcom-1246) Range 0 downto 1 is null.
+** Warning: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd(6889): (vcom-1246) Range 2 to 1 is null.
 
-} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/ptype.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/DianNao/simulation/ptype.vhd
+} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_float_types.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_float_types.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling package fixed_float_types
+
+} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/ptype.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/ptype.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -41,5 +51,38 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package fixed_float_types
 -- Loading package fixed_pkg
 -- Compiling package ptype
+
+} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity multiplier
+-- Compiling architecture behavior of multiplier
+
+} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity regn
+-- Compiling architecture behavior of regn
+
+} {} {}} C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package fixed_float_types
+-- Loading package fixed_pkg
+-- Compiling entity adder
+-- Compiling architecture behavior of adder
 
 } {} {}}
