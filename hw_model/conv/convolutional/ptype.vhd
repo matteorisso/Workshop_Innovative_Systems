@@ -3,8 +3,8 @@ use work.fixed_pkg.all;
 package ptype is
 
 
-constant qi : natural:=8;
-constant qf : natural:=8;
+constant qi : natural:=1;
+constant qf : natural:=15;
 
 constant px : natural:=4; -- pe array x-dim
 constant py	: natural:=4; -- pe array y-dim

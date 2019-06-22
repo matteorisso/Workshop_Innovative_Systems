@@ -8,16 +8,16 @@ entity pe is
 generic( qi : natural:= 8; qf : natural:=8 );
 port(
 		ck 			: in std_logic; 
-		rstn			: in std_logic; 
-		ld_v 			: in std_logic;
-		ld_h 			: in std_logic; 
+		rstn		: in std_logic; 
+		ld_v 		: in std_logic;
+		ld_h 		: in std_logic; 
 		sel			: in std_logic;
-		weight		: in  sfixed(qi-1 downto -qf);
-		pe_right 	: in	sfixed(qi-1 downto -qf);
-		pe_bottom	: in	sfixed(qi-1 downto -qf);
+		weight		: in sfixed(qi-1 downto -qf);
+		pe_right 	: in sfixed(qi-1 downto -qf);
+		pe_bottom	: in sfixed(qi-1 downto -qf);
 		pe_top		: out sfixed(qi-1 downto -qf);
 		pe_left		: out sfixed(qi-1 downto -qf);
-		omap			: out sfixed(qi-1 downto -qf));
+		omap		: out sfixed(qi-1 downto -qf));
 		
 end entity; 
 
@@ -56,15 +56,15 @@ port(
 end component; 
 
 
-signal d_reg		: sfixed(qi-1 downto -qf);
-signal q_reg 		: sfixed(qi-1 downto -qf);
+signal d_reg : sfixed(qi-1 downto -qf);
+signal q_reg : sfixed(qi-1 downto -qf);
 
 -- fractional scaling Q1.X
-constant nqi  : natural := 1; 
-constant nqf  : natural := pe_right'length-1; 
+constant nqi : natural := 1; 
+constant nqf : natural := pe_right'length-1; 
 
-signal mpy_a		: sfixed(nqi-1 downto -nqf) ;
-signal mpy_b 		: sfixed(nqi-1 downto -nqf) ; 		
+signal mpy_a	: sfixed(nqi-1 downto -nqf) ;
+signal mpy_b 	: sfixed(nqi-1 downto -nqf) ; 		
 signal mpy_tmp 	: sfixed(nqi downto -2*nqf) ;		
  	
 -- bit-growth + chopping mpy_res (2*nqf to nqf)
@@ -72,9 +72,9 @@ signal mpy_tmp 	: sfixed(nqi downto -2*nqf) ;
 
 constant bitg : natural := 2; 
 
-signal mpy_res	 : sfixed( nqi+bitg -1 downto -nqf ) ;
-signal d_acc    : sfixed( nqi+bitg -1 downto -nqf ) ; 	
-signal q_acc    : sfixed( nqi+bitg -1 downto -nqf ) ; 	
+signal mpy_res : sfixed( nqi+bitg -1 downto -nqf ) ;
+signal d_acc   : sfixed( nqi+bitg -1 downto -nqf ) ; 	
+signal q_acc   : sfixed( nqi+bitg -1 downto -nqf ) ; 	
 
 begin
 
@@ -85,18 +85,18 @@ regv	: regn			generic map ( qi => nqi, qf => nqf ) port map (d_reg, ck, rstn, ld
 
 mpy_a 	<= 	q_reg; 
 mpy_b 	<= 	weight; 
-mpy_res 	<=		mpy_tmp( mpy_tmp'high ) & 	
-					mpy_tmp( mpy_tmp'high downto - nqf ) ;
+mpy_res <=		mpy_tmp( mpy_tmp'high ) & 	
+				mpy_tmp( mpy_tmp'high downto - nqf ) ;
 
 
-mul 	: multiplier	generic map ( qi => nqi, 	   qf => nqf ) port map (mpy_a, mpy_b, mpy_tmp);
+mul : multiplier	generic map ( qi => nqi, 	  qf => nqf ) port map (mpy_a, mpy_b, mpy_tmp);
 add	: adder			generic map ( qi => nqi+bitg, qf => nqf ) port map (mpy_res, q_acc, d_acc);
 acc	: regn			generic map ( qi => nqi+bitg, qf => nqf ) port map (d_acc, ck, rstn, '1', q_acc);
 
 
 
 pe_left	<= q_reg; 
-omap 		<= q_acc(nqi+bitg-1 downto -(nqf-bitg)); -- chopping
+omap 	<= q_acc(nqi+bitg-1 downto -(nqf-bitg)) ;  
 
 end architecture; 
 

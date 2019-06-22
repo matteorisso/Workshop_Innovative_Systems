@@ -20,14 +20,14 @@ VMV@lHUc1<c895^:AQDa9=3
 !s100 797SD7R9dQDT1=aWPVch23
 Z9 OV;C;10.5b;63
 32
-Z10 !s110 1561148640
+!s110 1561219788
 !i10b 1
-Z11 !s108 1561148640.000000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/adder.vhd|
-Z13 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/adder.vhd|
+Z10 !s108 1561219788.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/adder.vhd|
+Z12 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/adder.vhd|
 !i113 1
-Z14 o-work work -2002 -explicit
-Z15 tExplicit 1 CvgOpt 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
 Abehavior
 R1
 R2
@@ -41,14 +41,14 @@ VKdc7h1Q@;I[zk068m;Ymz1
 !s100 GCME^iMcB6Z6@`XCO]na83
 R9
 32
-R10
+Z15 !s110 1561219789
 !i10b 1
+R10
 R11
 R12
-R13
 !i113 1
+R13
 R14
-R15
 Pfixed_float_types
 Z16 w1561028962
 R6
@@ -60,14 +60,14 @@ V3db9e13VVCjP5``a79@H;2
 !s100 cW]eNFhGGd5lB:5@0FCJB2
 R9
 32
-!s110 1561148646
+Z17 !s110 1561219794
 !i10b 1
-Z17 !s108 1561148646.000000
+Z18 !s108 1561219794.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_float_types.vhd|
 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_float_types.vhd|
 !i113 1
+R13
 R14
-R15
 Pfixed_pkg
 R1
 R2
@@ -75,8 +75,8 @@ R5
 R4
 R16
 R6
-Z18 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd
-Z19 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd
+Z19 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd
+Z20 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd
 l0
 L26
 VSiNmh@bZnecz[FT3gQE120
@@ -84,59 +84,59 @@ VSiNmh@bZnecz[FT3gQE120
 R9
 32
 b1
-Z20 !s110 1561148647
+Z21 !s110 1561219795
 !i10b 1
-R17
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd|
-Z22 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd|
+R18
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd|
+Z23 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pkg/fixed_pkg.vhd|
 !i113 1
+R13
 R14
-R15
 Bbody
 R3
-DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z24 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R1
 R2
 R5
 R4
 l0
-L1467
-V4JT1NTPAd;o<:nz@o7lz:2
-!s100 fJ=Zl3fjP=lkkaGR;?0kb3
+Z25 L1467
+Z26 V4JT1NTPAd;o<:nz@o7lz:2
+Z27 !s100 fJ=Zl3fjP=lkkaGR;?0kb3
 R9
 32
-R20
-!i10b 1
-R17
 R21
+!i10b 1
+R18
 R22
+R23
 !i113 1
+R13
 R14
-R15
 Emultiplier
-Z23 w1560038343
+Z28 w1560038343
 R1
 R2
 R3
 R4
 R5
 R6
-Z24 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd
-Z25 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd
+Z29 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd
+Z30 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd
 l0
 L5
 VT2N`A;eUVF3oYFlGbf;VO2
 !s100 jSW@H4bFGBJ[:RM>[8E]V0
 R9
 32
-Z26 !s110 1561148642
+Z31 !s110 1561219790
 !i10b 1
-Z27 !s108 1561148642.000000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd|
-Z29 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd|
+Z32 !s108 1561219790.000000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd|
+Z34 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/multiplier.vhd|
 !i113 1
+R13
 R14
-R15
 Abehavior
 R1
 R2
@@ -150,41 +150,41 @@ VH_FI7l<XGN5<?NJeK6emF2
 !s100 Mb=e=SB4haNo`]AVjg=142
 R9
 32
-R26
+R31
 !i10b 1
-R27
-R28
-R29
+R32
+R33
+R34
 !i113 1
+R13
 R14
-R15
 Enfu
-Z30 w1561142058
-Z31 DPx4 work 5 ptype 0 22 Vcz8Lh:9QSZ3HC_]Baz9]3
+Z35 w1561142058
+Z36 DPx4 work 5 ptype 0 22 MAf^6U@9<Az[^JR1IfeD;3
 R1
 R3
 R2
 R4
 R5
 R6
-Z32 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd
-Z33 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd
+Z37 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd
+Z38 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd
 l0
 L8
 V298DO4YSXZ0WWAf_dDLM]1
 !s100 MO1L]RfIFE`a@dzKojK]42
 R9
 32
-Z34 !s110 1561148643
+Z39 !s110 1561219791
 !i10b 1
-R27
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd|
-Z36 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd|
+Z40 !s108 1561219791.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd|
+Z42 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/nfu.vhd|
 !i113 1
+R13
 R14
-R15
 Astructure
-R31
+R36
 R1
 R3
 R2
@@ -197,83 +197,83 @@ VdEl^J8BLSGd;7Z=Z04lZh0
 !s100 ;3OiO[[]4Rm:iD@=goNSf1
 R9
 32
-R34
+R39
 !i10b 1
-R27
-R35
-R36
+R40
+R41
+R42
 !i113 1
+R13
 R14
-R15
 Epe
-Z37 w1560975250
+Z43 w1561219131
 R1
 R2
 R3
 R4
 R5
 R6
-Z38 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd
-Z39 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd
+Z44 8C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\pe.vhd
+Z45 FC:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\pe.vhd
 l0
 L7
-V?5?bV9b6Nz9VZ;ZWke^Y?0
-!s100 3Z<SUj4UPB?>6Oo0S;0221
+Vf@;IGblLJQj8K@@a9>cGQ1
+!s100 onV[0O8NJ33hbFi1NW77U3
 R9
 32
-R34
+Z46 !s110 1561219792
 !i10b 1
-Z40 !s108 1561148643.000000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd|
-Z42 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd|
+Z47 !s108 1561219792.000000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\pe.vhd|
+Z49 !s107 C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\pe.vhd|
 !i113 1
+R13
 R14
-R15
 Astructure
 R1
 R2
 R3
 R4
 R5
-DEx4 work 2 pe 0 22 ?5?bV9b6Nz9VZ;ZWke^Y?0
+DEx4 work 2 pe 0 22 f@;IGblLJQj8K@@a9>cGQ1
 l79
 L27
-VgIia5??W4oLR<Ri>AFj::3
-!s100 GR13OYQ9[dWL]b?l0HHn01
+V5hlKGEOPdQeH9jTQ;4Oz73
+!s100 lC@FePf0c?G^dGFB6e?6V0
 R9
 32
-Z43 !s110 1561148644
+R46
 !i10b 1
-R40
-R41
-R42
+R47
+R48
+R49
 !i113 1
+R13
 R14
-R15
 Pptype
 R1
 R2
 R5
 R4
 R3
-R16
+w1561219718
 R6
-8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/ptype.vhd
-FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/ptype.vhd
+8C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\ptype.vhd
+FC:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\ptype.vhd
 l0
 L3
-VVcz8Lh:9QSZ3HC_]Baz9]3
-!s100 NnS7oeWOjXahS3><ZXITm3
+VMAf^6U@9<Az[^JR1IfeD;3
+!s100 EhA2^h70A7aI<4l=X;mVR1
 R9
 32
-R43
+!s110 1561219793
 !i10b 1
-!s108 1561148644.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/ptype.vhd|
-!s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/ptype.vhd|
+R47
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\ptype.vhd|
+!s107 C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\ptype.vhd|
 !i113 1
+R13
 R14
-R15
 Eregn
 R0
 R1
@@ -282,22 +282,22 @@ R3
 R4
 R5
 R6
-Z44 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd
-Z45 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd
+Z50 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd
+Z51 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd
 l0
 L5
 V17`LfnI=b@9EX=UZTnX692
 !s100 k?efaiQC`6Wl8]a[NTX[X1
 R9
 32
-Z46 !s110 1561148645
+R17
 !i10b 1
-Z47 !s108 1561148645.000000
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd|
-Z49 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd|
+Z52 !s108 1561219793.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd|
+Z54 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/regn.vhd|
 !i113 1
+R13
 R14
-R15
 Abehavior
 R1
 R2
@@ -311,60 +311,60 @@ VK<6bGYNO?@44`EABdbjlU1
 !s100 jbjk?NUlT:mSU63znY8I00
 R9
 32
-R46
+R17
 !i10b 1
-R47
-R48
-R49
+R52
+R53
+R54
 !i113 1
+R13
 R14
-R15
 Etb_conv
-Z50 w1561149128
-R31
+Z55 w1561219547
+R36
 R1
 R3
-Z51 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z56 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R2
 R4
 R5
 R6
-Z52 8C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd
-Z53 FC:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd
+Z57 8C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\conv2d_tb.vhd
+Z58 FC:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\conv2d_tb.vhd
 l0
 L13
 V;MA00n0W;G8AQY5c8BiF[0
 !s100 c0C56?zzkJSo4IQ25VOJ`3
 R9
 32
-Z54 !s110 1561149236
-!i10b 1
-Z55 !s108 1561149235.000000
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd|
-Z57 !s107 C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd|
-!i113 1
-R14
 R15
+!i10b 1
+Z59 !s108 1561219789.000000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\conv2d_tb.vhd|
+Z61 !s107 C:\Users\Antonio\Documents\GitHub\Workshop_Innovative_Systems\hw_model\conv\simulation\conv2d_tb.vhd|
+!i113 1
+R13
+R14
 Atest
-R31
+R36
 R1
 R3
-R51
+R56
 R2
 R4
 R5
-Z58 DEx4 work 7 tb_conv 0 22 ;MA00n0W;G8AQY5c8BiF[0
+DEx4 work 7 tb_conv 0 22 ;MA00n0W;G8AQY5c8BiF[0
 l51
 L17
-VZh=`:aoC<8L8Ro`nomkon1
-!s100 fo5iWme1ShK8L<WPZ@12=1
+V?HJ:Con_fQ<d>hVTVeYHl3
+!s100 ABEId[ZZYka4?ojTEZ[1z0
 R9
 32
-R54
-!i10b 1
-R55
-R56
-R57
-!i113 1
-R14
 R15
+!i10b 1
+R59
+R60
+R61
+!i113 1
+R13
+R14

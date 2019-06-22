@@ -9,14 +9,14 @@ entity nfu is
 generic ( qi : natural := 8 ; qf : natural := 8 );
 port(
 		ck 			: in std_logic; 
-		rstn			: in std_logic; 
-		ld_v 			: in std_logic;
-		ld_h 			: in std_logic; 
+		rstn		: in std_logic; 
+		ld_v 		: in std_logic;
+		ld_h 		: in std_logic; 
 		sel			: in std_logic;
-		weight		: in 	sfixed(qi-1 downto -qf);
-		din_h			: in 	data_h;
-		din_v			: in 	data_v;
-		omap			: out matrix);
+		weight		: in sfixed(qi-1 downto -qf);
+		din_h		: in data_h;
+		din_v		: in data_v;
+		omap		: out matrix);
 end entity;
 
 
@@ -26,16 +26,16 @@ component pe
 generic( qi : natural:= 8; qf : natural:=8 );
 port(
 		ck 			: in std_logic; 
-		rstn			: in std_logic; 
-		ld_v 			: in std_logic;
-		ld_h 			: in std_logic; 
+		rstn		: in std_logic; 
+		ld_v 		: in std_logic;
+		ld_h 		: in std_logic; 
 		sel			: in std_logic;
-		weight		: in  sfixed(qi-1 downto -qf);
-		pe_right 	: in	sfixed(qi-1 downto -qf);
-		pe_bottom	: in	sfixed(qi-1 downto -qf);
+		weight		: in sfixed(qi-1 downto -qf);
+		pe_right 	: in sfixed(qi-1 downto -qf);
+		pe_bottom	: in sfixed(qi-1 downto -qf);
 		pe_top		: out sfixed(qi-1 downto -qf);
 		pe_left		: out sfixed(qi-1 downto -qf);
-		omap			: out sfixed(qi-1 downto -qf));
+		omap		: out sfixed(qi-1 downto -qf));
 		
 end component; 
 
@@ -62,16 +62,16 @@ r:for i in 1 to py-1 generate
 		pei:	pe	generic map ( qi => qi, qf => qf )
 							port map ( 
 										ck 			=>ck,
-										rstn			=>rstn,
-										ld_v			=>ld_v,
-										ld_h			=>ld_h,
+										rstn		=>rstn,
+										ld_v		=>ld_v,
+										ld_h		=>ld_h,
 										sel			=>sel,
 										weight		=>weight,
-										pe_right		=>data_x(i,j),
+										pe_right	=>data_x(i,j),
 										pe_bottom	=>data_y(i,j),
 										pe_left		=>data_x(i,j-1),
 										pe_top		=>data_y(i-1,j),
-										omap			=>omap(i,j));
+										omap		=>omap(i,j));
 	end generate;
 end generate;
 
@@ -83,15 +83,15 @@ for i in 1 to py-1 generate
 	pei:	pe	generic map ( qi => qi, qf => qf )
 							port map ( 
 										ck 			=>ck,
-										rstn			=>rstn,
-										ld_v			=>ld_v,
-										ld_h			=>ld_h,
+										rstn		=>rstn,
+										ld_v		=>ld_v,
+										ld_h		=>ld_h,
 										sel			=>sel,
 										weight		=>weight,
-										pe_right		=>data_x(i,0),
+										pe_right	=>data_x(i,0),
 										pe_bottom	=>data_y(i,0),
 										pe_top		=>data_y(i-1,0),
-										omap			=>omap(i,0));
+										omap		=>omap(i,0));
 end generate; 
 
 top_r:
@@ -102,14 +102,14 @@ for j in 0 to px-1 generate
 	pei:	pe	generic map ( qi => qi, qf => qf )
 							port map ( 
 										ck 			=>ck,
-										rstn			=>rstn,
-										ld_v			=>ld_v,
-										ld_h			=>ld_h,
+										rstn		=>rstn,
+										ld_v		=>ld_v,
+										ld_h		=>ld_h,
 										sel			=>sel,
 										weight		=>weight,
-										pe_right		=>data_x(0,0),
+										pe_right	=>data_x(0,0),
 										pe_bottom	=>data_y(0,0),
-										omap			=>omap(0,0));
+										omap		=>omap(0,0));
 	end generate;
 	
 	top_c:
@@ -117,15 +117,15 @@ for j in 0 to px-1 generate
 	pei:	pe	generic map ( qi => qi, qf => qf )
 							port map ( 
 										ck 			=>ck,
-										rstn			=>rstn,
-										ld_v			=>ld_v,
-										ld_h			=>ld_h,
+										rstn		=>rstn,
+										ld_v		=>ld_v,
+										ld_h		=>ld_h,
 										sel			=>sel,
 										weight		=>weight,
-										pe_right		=>data_x(0,j),
+										pe_right	=>data_x(0,j),
 										pe_bottom	=>data_y(0,j),
 										pe_left		=>data_x(0,j-1),
-										omap			=>omap(0,j));
+										omap		=>omap(0,j));
 	end generate;
 end generate; 
 				

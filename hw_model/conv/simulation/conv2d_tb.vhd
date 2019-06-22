@@ -53,6 +53,7 @@ begin
 	
 	
 	DUT: nfu
+		generic map ( qi => 1, qf => 15 )
 		port map(
 		
 		ck 	    => tb_clk,
@@ -119,7 +120,7 @@ begin
 	-- opening input files in read modes
 	file_open(file_weigths, "../stimuli/random_filter.txt",  read_mode);	
 	
-	wait for (py-1)*period;  						-- init time period 
+	wait for (py-1)*period+period;  						-- init time period 4 cycle + offset (rst)
 	while not endfile(file_weigths) loop
 		-- reading array of weights         
 			readline(file_weigths, v_iline);
@@ -153,6 +154,8 @@ begin
 		
 		-- init array of pe: wait 4 ck loading from the bottom one row @ck cycle
 		-- reading array of input
+		wait for period;
+		
 		for i in 0 to py-1 loop                      
 		   
 		    readline(file_vectors, v_iline);
