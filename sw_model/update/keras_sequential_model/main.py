@@ -50,6 +50,9 @@ plt.imshow(image,cmap="gray")
 # evaluate fmaps 
 feature_maps = model.predict(x_test[index].reshape(1,32,32,1))
 layers_name = [layer.name for layer in model.layers[1:]]    
+
+
+
 # display hidden layers outputs (fmaps)
 plot.featuremaps(layers_name, feature_maps)
 '''

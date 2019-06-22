@@ -66,7 +66,8 @@ begin
 		din_v   => tb_imapv,
 		omap    => tb_ofmap);
 		
-	process -- clock generation at 500mhz.
+	-- clock generation
+	process 
 	begin
 		tb_clk <= '0';
 		wait for half_period;
@@ -74,7 +75,9 @@ begin
 		wait for half_period;
 	end process;
 	
-	process -- reset generation  -- DUT starts @( period + half_period ) II tb_clk cycle
+	-- reset generation
+	process   
+	-- DUT starts after (period + half_period) - second clock cycle -
 	begin
 		tb_rstn <= '0';
 		wait for 2*half_period;
@@ -92,14 +95,21 @@ begin
 	-- opening output file in write modes	
 	file_open(file_results, "./results.txt", write_mode);
 	
-	wait for ( 25*period + half_period ) ; -- 25 cycles + first rising edge offset
+	wait for (py-1)*period + period + 25*period; 
+	
+	-- //**	
+	-- init time period 4 cycle + 
+	-- offset (reset cycle) 	+ 
+	-- no. of filter elements 	+ 
+	-- offset (sampling on rising edge)
+	-- **//
 	
 	-- writing array of output
 	    for i in 0 to py-1 loop
 			for j in 0 to px-1 loop
-				write(v_oline, tb_ofmap(i,j), right, 16);
-			end loop; 
-			writeline(file_results, v_oline); 
+				write(v_oline, to_real(tb_ofmap(i,j)));
+			writeline(file_results,v_oline);
+			end loop;  
 	    end loop;			
 
 	-- closin out file
@@ -136,13 +146,17 @@ begin
 	end process;	
 	
 	
-	-- process for reading input stimuli from file
+	-- process for reading input stimuli from file 
+	
+	-- //**
+	-- set cmd and data on leading falling edge
+	-- DUT samples on trailing rising edge 
+	-- **//
 	process
 	variable v_iline	: line;
-	variable v_oline	: line;
+	
 	variable v_imaph	: sfixed(qi-1 downto -qf);
 	variable v_imapv	: sfixed(qi-1 downto -qf);	
-	variable v_space	: character; 
 	 
 	begin
 
@@ -152,37 +166,33 @@ begin
 	-- read input stimuli from file random_in.txt
 	while not endfile(file_vectors) loop
 		
-		-- init array of pe: wait 4 ck loading from the bottom one row @ck cycle
-		-- reading array of input
-		wait for period;
-		
-		for i in 0 to py-1 loop                      
+		wait for period;							-- wait first reset cycle
+
+		for i in 0 to py-1 loop                     -- init array of pe: wait 4 ck loading from the bottom one row per ck cycle 
 		   
-		    readline(file_vectors, v_iline);
-			for item in 0 to px-1 loop
+		    readline(file_vectors, v_iline); 		
+			for item in 0 to px-1 loop				-- reading array of input
 				read(v_iline, v_imapv);
 				tb_imapv(item) <= v_imapv;
 			end loop; 
 			
 			tb_ld_v	<= '1'; 
 			tb_sel	<= '1'; 
+			
 			if i = py-1 then 
 				tb_ld_h <= '1'; 
 			end if; 
-			
-			wait for period; 
-			
-        end loop; 
-		
-		-- end init 
+	
+			wait for period; 						-- set tb command and input data on falling edge after reset cycle			
+        end loop; 									-- pe ready
 		
 		tb_ld_v		<= '0';
 		tb_ld_h		<= '0';
 		
-		-- filter_size - 1 volte in verticale (kernel dim)
 		
-		for i in 0 to 4	 loop                      -- loop per le 5 volte in verticale		
-			for j in 0 to 4  loop                  -- 5 volte in orizz 
+		for i in 0 to 4	 loop                 		-- loop per le 5 volte in verticale		
+													-- orizzontale						
+			for j in 0 to 3  loop                  	-- primo prodotto nel ciclo di ld_v, altri 4 in orizzontale
 			
 				readline(file_vectors, v_iline);
 				for item in 0 to py-1 loop
@@ -202,23 +212,26 @@ begin
 				read(v_iline, v_imapv);
 				tb_imapv(item) 	<= v_imapv;	
             end loop;
-            
-			tb_sel		<= '1'; 
-			tb_ld_h		<= '1';
-			tb_ld_v		<= '1';
-			wait for period; 
+			if i < 4 then	
+				tb_sel		<= '1'; 
+				tb_ld_h		<= '1';
+				tb_ld_v		<= '1';
+			else 
+				tb_sel	<= '0'; 
+				tb_ld_h	<= '0';
+				tb_ld_v	<= '0';
+			end if; 
 			
+				wait for period;
 		end loop;
-	  
+	
 	end loop;
 	
-        
-	-- closin in file
-	file_close(file_vectors);
-	    
+	-- closing in file
+	file_close(file_vectors);    
+	
 	wait;
-	end process;
-        
+	end process;    
 
 		 
 end test;

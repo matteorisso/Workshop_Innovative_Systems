@@ -12,10 +12,9 @@ project compileall
 # Compile of fixed_float_types.vhd was successful.
 # Compile of fixed_pkg.vhd was successful with warnings.
 # 9 compiles, 0 failed with no errors.
-# Compile of conv2d_tb.vhd was successful.
 vsim work.tb_conv
 # vsim work.tb_conv 
-# Start time: 11:56:38 on Jun 22,2019
+# Start time: 19:14:28 on Jun 22,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -31,654 +30,16 @@ vsim work.tb_conv
 # Loading work.regn(behavior)
 # Loading work.multiplier(behavior)
 # Loading work.adder(behavior)
-# ** Warning: Design size of 15763 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 add wave sim:/tb_conv/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlft7cri9h".
+#           Attempting to use alternate WLF file "./wlft0f9v5n".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7cri9h
-radix -sfixed
-# sfixed
-run 100 ns
-# Compile of conv2d_tb.vhd was successful.
-restart
-# Loading work.tb_conv(test)
-run 100 ns
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-# Compile of conv2d_tb.vhd was successful.
-restart
-# Loading work.tb_conv(test)
+#           Using alternate file: ./wlft0f9v5n
+run 260 ns
 run 270 ns
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/*
-# (vish-4014) No objects found matching '/tb_conv/DUT/top_r(0)/*'.
-add wave sim:/tb_conv/DUT/top_left_corner/*
-# (vish-4014) No objects found matching '/tb_conv/DUT/top_left_corner/*'.
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/left_corner/*
-# (vish-4014) No objects found matching '/tb_conv/DUT/top_r(0)/left_corner/*'.
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-restart
-run 100 ns
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-run 200 ns
-run 260 ns
-restarrt
-# invalid command name "restarrt"
-restart
-# Compile of adder.vhd was successful.
-# Compile of conv2d_tb.vhd was successful.
-# Compile of multiplier.vhd was successful.
-# Compile of nfu.vhd was successful.
-# Compile of pe.vhd was successful.
-# Compile of ptype.vhd was successful.
-# Compile of regn.vhd was successful.
-# Compile of fixed_float_types.vhd was successful.
-# Compile of fixed_pkg.vhd was successful with warnings.
-# 9 compiles, 0 failed with no errors.
-run 200 ns
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-run 260 ns
-# Compile of pe.vhd failed with 3 errors.
-# Compile of pe.vhd failed with 2 errors.
-# Compile of pe.vhd was successful.
-restart
-# Loading work.fixed_float_types
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 9 (-5 downto -13).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv/DUT/r(1)/c(1)/pei File: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd Line: 100
-# FATAL ERROR while loading design
-# Compile of pe.vhd was successful.
-restart
-# No Design Loaded!
-vsim work.tb_conv
-# vsim work.tb_conv 
-# Start time: 11:56:38 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(0)/left_corner/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(1)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(2)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(3)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftrxx0n4".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftrxx0n4
-restart
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(0)/left_corner/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(1)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(2)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(3)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-run 100 ns
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-# Compile of conv2d_tb.vhd failed with 4 errors.
-# Compile of conv2d_tb.vhd was successful.
-vsim work.tb_conv
-# End time: 15:35:12 on Jun 22,2019, Elapsed time: 3:38:34
-# Errors: 5, Warnings: 70
-# vsim work.tb_conv 
-# Start time: 15:35:15 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(0)/left_corner/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(1)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(2)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(3)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftzm147r".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftzm147r
-radix -sfixed
-# sfixed
-run 100 ns
-# Compile of pe.vhd was successful.
-vsim work.tb_conv
-# End time: 15:40:12 on Jun 22,2019, Elapsed time: 0:04:57
-# Errors: 0, Warnings: 35
-# vsim work.tb_conv 
-# Start time: 15:40:12 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(1)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(2)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/r(3)/c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(1)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(2)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/left_c(3)/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(0)/left_corner/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(1)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(2)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/top_r(3)/top_c/pei/omap(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(0)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(0)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(1)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(1)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(2)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(2)(3)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(0)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(0)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(1)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(1)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(2)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(2)(-1 downto -8).
-# ** Warning: (vsim-8684) No drivers exist on out port /tb_conv/DUT/omap(3)(3)(-1 downto -8), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /tb_conv/tb_ofmap(3)(3)(-1 downto -8).
-# Compile of pe.vhd was successful.
-quit -sim
-# End time: 15:42:33 on Jun 22,2019, Elapsed time: 0:02:21
-# Errors: 0, Warnings: 33
-vsim work.tb_conv
-# vsim work.tb_conv 
-# Start time: 15:42:39 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-add wave sim:/tb_conv/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlfteen1qs".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfteen1qs
-radix -sfixed
-# sfixed
-run 200 ns
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-restart
-run 200 ns
-# GetModuleFileName: Impossibile trovare il modulo specificato.
-# 
-# 
-run 260 ns
-vsim work.tb_conv
-# End time: 16:07:31 on Jun 22,2019, Elapsed time: 0:24:52
-# Errors: 0, Warnings: 3
-# vsim work.tb_conv 
-# Start time: 16:07:33 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlft0k28g7".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0k28g7
-run 200 ns
-quit -sim
-# End time: 16:14:09 on Jun 22,2019, Elapsed time: 0:06:36
-# Errors: 0, Warnings: 3
-vsim work.tb_conv
-# vsim work.tb_conv 
-# Start time: 16:14:21 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-restart
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlft7gvwr1".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7gvwr1
-radix -binary
-# binary
-run 200 ns
 project compileall
 # Compile of adder.vhd was successful.
 # Compile of conv2d_tb.vhd was successful.
@@ -690,181 +51,11 @@ project compileall
 # Compile of fixed_float_types.vhd was successful.
 # Compile of fixed_pkg.vhd was successful with warnings.
 # 9 compiles, 0 failed with no errors.
-vsim work.tb_con
-# End time: 16:26:54 on Jun 22,2019, Elapsed time: 0:12:33
-# Errors: 0, Warnings: 3
-# vsim work.tb_con 
-# Start time: 16:26:54 on Jun 22,2019
-# ** Error: (vsim-3170) Could not find 'tb_con'.
-#         Searched libraries:
-#             C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/work
-# Error loading design
-# End time: 16:27:02 on Jun 22,2019, Elapsed time: 0:00:08
-# Errors: 1, Warnings: 0
 vsim work.tb_conv
-# vsim work.tb_conv 
-# Start time: 16:27:04 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-restart
-add wave sim:/tb_conv/top_r(0)/letf_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftrdeszk".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftrdeszk
-# (vish-4014) No objects found matching '/tb_conv/top_r(0)/letf_corner/pei/*'.
-add wave -position insertpoint sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-radix -binary
-# binary
-run 200 ns
-# Compile of pe.vhd was successful.
-vsim work.tb_conv
-# End time: 16:59:02 on Jun 22,2019, Elapsed time: 0:31:58
-# Errors: 1, Warnings: 3
-# vsim work.tb_conv 
-# Start time: 16:59:03 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 8 (7 downto 0). Right is 16 (2 downto -13).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_conv/DUT/r(1)/c(1)/pei File: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd Line: 101
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 16:59:11 on Jun 22,2019, Elapsed time: 0:00:08
-# Errors: 1, Warnings: 0
-# Compile of pe.vhd was successful.
-vsim work.tb_conv
-# vsim work.tb_conv 
-# Start time: 17:02:08 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15782 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-add wave sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftiikjq3".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftiikjq3
-radix -sfixed
-# sfixed
-run 200 ns
-vsim -quit
-# ** Error: (vish-3296) Unknown option '-quit'.
-# Use the -help option for complete vsim usage.
-# Error loading design
-quit -sim
-# End time: 17:04:30 on Jun 22,2019, Elapsed time: 0:02:22
-# Errors: 3, Warnings: 3
-vsim work.tb_conv
-# vsim work.tb_conv 
-# Start time: 17:05:12 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15782 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-add wave sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftreine1".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftreine1
-radix -sfixed
-# sfixed
-run 200 ns
-# Compile of conv2d_tb.vhd was successful.
-vsim work.tb_conv
-# End time: 17:37:13 on Jun 22,2019, Elapsed time: 0:32:01
+# End time: 19:23:13 on Jun 22,2019, Elapsed time: 0:08:45
 # Errors: 0, Warnings: 3
 # vsim work.tb_conv 
-# Start time: 17:37:13 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15782 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-add wave sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlft33ksds".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft33ksds
-radix -binary
-# binary
-run 200 ns
-# Compile of pe.vhd was successful.
-# Compile of pe.vhd was successful.
-vsim work.tb_conv
-# End time: 17:45:44 on Jun 22,2019, Elapsed time: 0:08:31
-# Errors: 0, Warnings: 3
-# vsim work.tb_conv 
-# Start time: 17:45:44 on Jun 22,2019
+# Start time: 19:23:13 on Jun 22,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -882,29 +73,166 @@ vsim work.tb_conv
 # Loading work.adder(behavior)
 # ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-add wave sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
+add wave sim:/tb_conv/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftad0cf7".
+#           Attempting to use alternate WLF file "./wlft48fs21".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftad0cf7
-radix -sfixed
-# sfixed
-run 200 ns
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 16 (7 downto -8). Right is 18 (2 downto -15).
-#    Time: 0 ps  Iteration: 0  Process: /tb_conv/DUT/top_r(3)/top_c/pei/line__101 File: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd
-# Fatal error in Architecture structure at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd line 101
+#           Using alternate file: ./wlft48fs21
+run 260 ns
+run 270 ns
+quit -sim
+# End time: 19:42:33 on Jun 22,2019, Elapsed time: 0:19:20
+# Errors: 0, Warnings: 3
+# Compile of conv2d_tb.vhd was successful.
+vsim work.tb_conv
+# vsim work.tb_conv 
+# Start time: 19:44:16 on Jun 22,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading work.fixed_pkg(body)
+# Loading work.ptype
+# Loading work.tb_conv(test)
+# Loading work.nfu(structure)
+# Loading work.pe(structure)
+# Loading work.regn(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.adder(behavior)
+# ** Warning: Design size of 15768 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+add wave sim:/tb_conv/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
+#           Attempting to use alternate WLF file "./wlftqw45q7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqw45q7
+run 270 ns
+run 300 ns
+# Compile of conv2d_tb.vhd failed with 2 errors.
+# Compile of conv2d_tb.vhd failed with 2 errors.
+# Compile of conv2d_tb.vhd was successful.
+vsim work.tb_conv
+# End time: 19:55:16 on Jun 22,2019, Elapsed time: 0:11:00
+# Errors: 0, Warnings: 3
+# vsim work.tb_conv 
+# Start time: 19:55:16 on Jun 22,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading work.fixed_pkg(body)
+# Loading work.ptype
+# Loading work.tb_conv(test)
+# Loading work.nfu(structure)
+# Loading work.pe(structure)
+# Loading work.regn(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.adder(behavior)
+# ** Warning: Design size of 15768 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+add wave sim:/tb_conv/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
+#           Attempting to use alternate WLF file "./wlftarv75b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftarv75b
+run 300 ns
+# Compile of conv2d_tb.vhd was successful.
+vsim work.tb_conv
+# End time: 20:00:33 on Jun 22,2019, Elapsed time: 0:05:17
+# Errors: 0, Warnings: 3
+# vsim work.tb_conv 
+# Start time: 20:00:33 on Jun 22,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading work.fixed_pkg(body)
+# Loading work.ptype
+# Loading work.tb_conv(test)
+# Loading work.nfu(structure)
+# Loading work.pe(structure)
+# Loading work.regn(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.adder(behavior)
+# ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+add wave sim:/tb_conv/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
+#           Attempting to use alternate WLF file "./wlftz1q8c3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftz1q8c3
+run 300 ns
+# Compile of conv2d_tb.vhd was successful.
+vsim work.tb_conv
+# End time: 20:20:45 on Jun 22,2019, Elapsed time: 0:20:12
+# Errors: 0, Warnings: 3
+# vsim work.tb_conv 
+# Start time: 20:20:45 on Jun 22,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading work.fixed_pkg(body)
+# Loading work.ptype
+# Loading work.tb_conv(test)
+# Loading work.nfu(structure)
+# Loading work.pe(structure)
+# Loading work.regn(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.adder(behavior)
+# ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+add wave sim:/tb_conv/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
+#           Attempting to use alternate WLF file "./wlftkids5y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkids5y
+run 300 ns
+# Compile of conv2d_tb.vhd was successful.
+add wave sim:/tb_conv/*
+run 300 ns
+# ** Fatal: (vsim-3551) TEXTIO : Read past end of file "../stimuli/random_in.txt".
+#    Time: 360 ns  Iteration: 0  Process: /tb_conv/line__142 File: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd line 188
 # 
 # HDL call sequence:
-# Stopped at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/pe.vhd 101 Architecture structure
+# Stopped at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd 188 ForLoop loop
 # 
-# Compile of pe.vhd failed with 3 errors.
-# Compile of pe.vhd was successful.
+add wave sim:/tb_conv/*
+run 300 ns
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd 188 ForLoop loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd 188 ForLoop loop
+# 
+# Compile of conv2d_tb.vhd was successful.
+add wave sim:/tb_conv/*
 vsim work.tb_conv
-# End time: 17:49:54 on Jun 22,2019, Elapsed time: 0:04:10
-# Errors: 2, Warnings: 3
+# End time: 21:07:35 on Jun 22,2019, Elapsed time: 0:46:50
+# Errors: 4, Warnings: 3
 # vsim work.tb_conv 
-# Start time: 17:49:54 on Jun 22,2019
+# Start time: 21:07:35 on Jun 22,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -922,72 +250,32 @@ vsim work.tb_conv
 # Loading work.adder(behavior)
 # ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-add wave sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftgy7w71".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftgy7w71
-radix -sfixed
-# sfixed
-run 200 ns
-# Compile of conv2d_tb.vhd was successful.
-# Compile of pe.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.tb_conv
-# End time: 18:00:16 on Jun 22,2019, Elapsed time: 0:10:22
-# Errors: 0, Warnings: 3
-# vsim work.tb_conv 
-# Start time: 18:00:16 on Jun 22,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.fixed_float_types
-# Loading ieee.math_real(body)
-# Loading work.fixed_pkg(body)
-# Loading work.ptype
-# Loading work.tb_conv(test)
-# Loading work.nfu(structure)
-# Loading work.pe(structure)
-# Loading work.regn(behavior)
-# Loading work.multiplier(behavior)
-# Loading work.adder(behavior)
-# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-add wave sim:/tb_conv/DUT/top_r(0)/left_corner/pei/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlftjdigaz".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjdigaz
-radix -sfixed
-# sfixed
-run 200 ns
+run 300 ns
 add wave sim:/tb_conv/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
+#           Attempting to use alternate WLF file "./wlftg6zx0z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftg6zx0z
 restart
-run 200 ns
+run 300 ns
 # GetModuleFileName: Impossibile trovare il modulo specificato.
 # 
 # 
-quit -sim
-# End time: 18:05:55 on Jun 22,2019, Elapsed time: 0:05:39
-# Errors: 0, Warnings: 3
-project compileall
-# Compile of adder.vhd was successful.
+run -all
+# ** Fatal: (vsim-3551) TEXTIO : Read past end of file "../stimuli/random_in.txt".
+#    Time: 360 ns  Iteration: 0  Process: /tb_conv/line__141 File: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd line 187
+# 
+# HDL call sequence:
+# Stopped at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd 187 ForLoop loop
+# 
 # Compile of conv2d_tb.vhd was successful.
-# Compile of multiplier.vhd was successful.
-# Compile of nfu.vhd was successful.
-# Compile of pe.vhd was successful.
-# Compile of ptype.vhd was successful.
-# Compile of regn.vhd was successful.
-# Compile of fixed_float_types.vhd was successful.
-# Compile of fixed_pkg.vhd was successful with warnings.
-# 9 compiles, 0 failed with no errors.
 vsim work.tb_conv
+# End time: 21:20:38 on Jun 22,2019, Elapsed time: 0:13:03
+# Errors: 2, Warnings: 3
 # vsim work.tb_conv 
-# Start time: 18:06:45 on Jun 22,2019
+# Start time: 21:20:38 on Jun 22,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -1003,53 +291,22 @@ vsim work.tb_conv
 # Loading work.regn(behavior)
 # Loading work.multiplier(behavior)
 # Loading work.adder(behavior)
-# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 15767 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 add wave sim:/tb_conv/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlft06jr87".
+#           Attempting to use alternate WLF file "./wlft31747h".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft06jr87
-run 200 ns
-project compileall
-# Compile of adder.vhd was successful.
+#           Using alternate file: ./wlft31747h
+run -all
 # Compile of conv2d_tb.vhd was successful.
-# Compile of multiplier.vhd was successful.
-# Compile of nfu.vhd was successful.
-# Compile of pe.vhd was successful.
-# Compile of ptype.vhd was successful.
-# Compile of regn.vhd was successful.
-# Compile of fixed_float_types.vhd was successful.
-# Compile of fixed_pkg.vhd was successful with warnings.
-# 9 compiles, 0 failed with no errors.
+stop
 vsim work.tb_conv
-# End time: 18:09:14 on Jun 22,2019, Elapsed time: 0:02:29
+# End time: 21:52:01 on Jun 22,2019, Elapsed time: 0:31:23
 # Errors: 0, Warnings: 3
 # vsim work.tb_conv 
-# Start time: 18:09:14 on Jun 22,2019
-# Loading std.standard
-# ** Error: (vsim-13) Recompile work.tb_conv because work.ptype has changed.
-# ** Error (suppressible): (vsim-12) Recompile work.tb_conv(test) after work.tb_conv is recompiled.
-# ** Error: (vsim-13) Recompile work.tb_conv(test) because work.ptype has changed.
-# Error loading design
-# End time: 18:09:22 on Jun 22,2019, Elapsed time: 0:00:08
-# Errors: 3, Warnings: 0
-quit -sim
-project compileall
-# Compile of adder.vhd was successful.
-# Compile of conv2d_tb.vhd was successful.
-# Compile of multiplier.vhd was successful.
-# Compile of nfu.vhd was successful.
-# Compile of pe.vhd was successful.
-# Compile of ptype.vhd was successful.
-# Compile of regn.vhd was successful.
-# Compile of fixed_float_types.vhd was successful.
-# Compile of fixed_pkg.vhd was successful with warnings.
-# 9 compiles, 0 failed with no errors.
-vsim work.tb_conv
-# vsim work.tb_conv 
-# Start time: 18:09:59 on Jun 22,2019
+# Start time: 21:52:02 on Jun 22,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -1065,14 +322,74 @@ vsim work.tb_conv
 # Loading work.regn(behavior)
 # Loading work.multiplier(behavior)
 # Loading work.adder(behavior)
-# ** Warning: Design size of 15764 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 15768 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 add wave sim:/tb_conv/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
-#           Attempting to use alternate WLF file "./wlft37s7rf".
+#           Attempting to use alternate WLF file "./wlftjav630".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft37s7rf
-run 200 ns
-# End time: 18:14:26 on Jun 22,2019, Elapsed time: 0:04:27
+#           Using alternate file: ./wlftjav630
+run -all
+stop
+vsim work.tb_conv
+# End time: 22:09:28 on Jun 22,2019, Elapsed time: 0:17:26
 # Errors: 0, Warnings: 3
+# vsim work.tb_conv 
+# Start time: 22:09:28 on Jun 22,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading work.fixed_pkg(body)
+# Loading work.ptype
+# Loading work.tb_conv(test)
+# Loading work.nfu(structure)
+# Loading work.pe(structure)
+# Loading work.regn(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.adder(behavior)
+# ** Warning: Design size of 15768 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Compile of conv2d_tb.vhd was successful.
+vsim work.tb_conv
+# End time: 22:10:08 on Jun 22,2019, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 1
+# vsim work.tb_conv 
+# Start time: 22:10:08 on Jun 22,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading work.fixed_pkg(body)
+# Loading work.ptype
+# Loading work.tb_conv(test)
+# Loading work.nfu(structure)
+# Loading work.pe(structure)
+# Loading work.regn(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.adder(behavior)
+# ** Warning: Design size of 15768 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+add wave sim:/tb_conv/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Antonio  Hostname: AS-3459DV  ProcessID: 15468
+#           Attempting to use alternate WLF file "./wlftiyfv6e".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftiyfv6e
+run -all
+# ** Fatal: (vsim-3551) TEXTIO : Read past end of file "../stimuli/random_in.txt".
+#    Time: 360 ns  Iteration: 0  Process: /tb_conv/line__156 File: C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd
+# Fatal error in ForLoop loop at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd line 197
+# 
+# HDL call sequence:
+# Stopped at C:/Users/Antonio/Documents/GitHub/Workshop_Innovative_Systems/hw_model/conv/simulation/conv2d_tb.vhd 197 ForLoop loop
+# 
+# End time: 22:22:05 on Jun 22,2019, Elapsed time: 0:11:57
+# Errors: 2, Warnings: 3
