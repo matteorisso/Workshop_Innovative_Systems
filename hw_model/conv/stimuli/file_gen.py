@@ -50,6 +50,13 @@ def dec2bin(var) :
 		bin_var = format(2**16 + var,'b')	
 	return bin_var
 
+def dec2bin32(var) :
+	if var >= 0 :
+		bin_var = '{0:037b}'.format(var)
+	else :
+		bin_var = format(2**37 + var,'b')	
+	return bin_var
+
 def ca2todec(var) :
     if var[0] == '1' :
         L_var = list(var)
@@ -88,13 +95,13 @@ for i in range(ifmap_size) :
 for i in range(filter_size) :
     for j in range(filter_size) :
         FILTER[i][j] = random_pattern()
-        f_filter.write(str(FILTER[i][j]) + "\n")
+        f_filter.write(dec2bin(FILTER[i][j]) + "\n")
     	
 # First four vector :
 for i in range(4) :
     for j in range(4) :
         f_descr.write("I" + str(i) + "," + str(j) + " ")
-        f_IN.write(str(IFMAP[i][j]) + " ")
+        f_IN.write(dec2bin(IFMAP[i][j]) + " ")
     f_descr.write("\n")
     f_IN.write("\n")       
 
@@ -108,14 +115,14 @@ for k in range(5) :
     for i in range(5) :
         for j in range(4) :
             f_descr.write("I" + str(m+j) + "," + str(n+i) + " ")
-            f_IN.write(str(IFMAP[m+j][n+i]) + " ")
+            f_IN.write(dec2bin(IFMAP[m+j][n+i]) + " ")
         f_descr.write("\n")
         f_IN.write("\n")
         
     # Loop one vector (vert), each element is Iq,p+j :
     for j in range(4) :
             f_descr.write("I" + str(q) + "," + str(p+j) + " ")
-            f_IN.write(str(IFMAP[q][p+j]) + " ")
+            f_IN.write(dec2bin(IFMAP[q][p+j]) + " ")
     f_descr.write("----vert" + "\n")
     f_IN.write("\n")
     m += 1
@@ -131,7 +138,7 @@ for i in range(ifmap_size - filter_size + stride) :
 # Write conv results to file :
 for i in range(ifmap_size - filter_size + stride) :
     for j in range(ifmap_size - filter_size + stride) :
-        f_OUT.write(dec2bin(OFMAP[i][j]) + " ")
+        f_OUT.write(str(OFMAP[i][j]) + " ")
     f_OUT.write("\n")
 
     
