@@ -73,7 +73,9 @@ plotting the training accuracy and loss after each epoch.
 ''' 
 plot.history(hist)
 ''' 
+'''
 Save model and weights
+'''
 '''
 save_dir = os.path.join(os.getcwd(), 'saved_models')
 model_name = 'lenet5model.h5'
