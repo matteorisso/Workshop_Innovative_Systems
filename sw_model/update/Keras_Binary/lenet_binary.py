@@ -97,29 +97,29 @@ lenet.add(Activation('relu', name = 'act3'))
 
 lenet.add(Flatten())
 
-lenet.add(BinaryDense(120, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
+#lenet.add(BinaryDense(120, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
+#                      use_bias = use_bias, name = 'fc1'))
+#
+#lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
+#                             name = 'bn4'))
+#
+#lenet.add(Activation('relu', name = 'act4'))
+
+lenet.add(BinaryDense(84, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
                       use_bias = use_bias, name = 'fc1'))
 
 lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn4'))
-
+ 
 lenet.add(Activation('relu', name = 'act4'))
 
-lenet.add(BinaryDense(84, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
+lenet.add(BinaryDense(10, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
                       use_bias = use_bias, name = 'fc2'))
 
 lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn5'))
- 
-lenet.add(Activation('relu', name = 'act5'))
 
-lenet.add(BinaryDense(10, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
-                      use_bias = use_bias, name = 'fc3'))
-
-lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
-                             name = 'bn6'))
-
-lenet.add(Activation('softmax', name = 'act6'))
+lenet.add(Activation('softmax', name = 'act5'))
 
 
 '''
