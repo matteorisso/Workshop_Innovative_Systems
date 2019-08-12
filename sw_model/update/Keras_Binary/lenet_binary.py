@@ -14,12 +14,16 @@ from keras.optimizers import SGD, Adam, RMSprop
 from keras.callbacks import LearningRateScheduler
 from keras.utils import np_utils
 
+from binary_ops import binary_tanh as binary_tanh_op
 from binary_layers import BinaryDense, BinaryConv2D
 
 import plot
 import dataset
 
 import os
+
+def binary_tanh(x):
+    return binary_tanh_op(x)
 
 '''
 import sys
@@ -62,6 +66,7 @@ lenet.add(BinaryConv2D(filters = conv1_filters, kernel_size = kernel_size,
 lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn1'))
 
+#lenet.add(Activation(binary_tanh, name = 'act1'))
 lenet.add(Activation('relu', name = 'act1'))
 
 lenet.add(AveragePooling2D(pool_size = (2, 2), 
@@ -77,6 +82,7 @@ lenet.add(BinaryConv2D(filters = conv2_filters, kernel_size = kernel_size,
 lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn2'))
 
+#lenet.add(Activation(binary_tanh, name = 'act2'))
 lenet.add(Activation('relu', name = 'act2'))
 
 lenet.add(AveragePooling2D(pool_size = (2, 2), 
@@ -93,6 +99,7 @@ lenet.add(BinaryConv2D(filters = conv3_filters, kernel_size = kernel_size,
 lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn3'))
 
+#lenet.add(Activation(binary_tanh, name = 'act3'))
 lenet.add(Activation('relu', name = 'act3'))
 
 lenet.add(Flatten())
@@ -111,6 +118,7 @@ lenet.add(BinaryDense(84, H = H, kernel_lr_multiplier = kernel_lr_multiplier,
 lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn4'))
  
+#lenet.add(Activation(binary_tanh, name = 'act4'))
 lenet.add(Activation('relu', name = 'act4'))
 
 lenet.add(BinaryDense(10, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
@@ -163,6 +171,7 @@ plot.history(hist)
 Save model and weights
 '''
 lenet.save("trained_LeNet5_bin.h5")
+lenet.save_weights('my_model_weights.h5')
 
 '''
 save_dir = os.path.join(os.getcwd(), 'saved_models')
