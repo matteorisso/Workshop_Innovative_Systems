@@ -174,8 +174,17 @@ lenet.save("trained_LeNet5_tern.h5")
 #lenet.save_weights('my_model_weights.h5')
 
 '''
-Save Weights
+Intermediate Layer
 '''
+from keras import models
+layer_outputs = [layer.output for layer in lenet.layers[:]]
+activation_model = models.Model(inputs = lenet.input, outputs = layer_outputs)
+activation_model.predict(x_test[0].reshape(1,32,32,1))
+
+
+'''
+Save Weights
+
 
 os.chdir('./weights_adam')
 
@@ -261,6 +270,9 @@ for i in range(len(bn5)) :
 
 zero_density = zero_num / weights_num
 print("Zero density {:.4f}%".format(zero_density * 100))
+
+'''
+
 '''
 save_dir = os.path.join(os.getcwd(), 'saved_models')
 model_name = 'lenet5model.h5'
