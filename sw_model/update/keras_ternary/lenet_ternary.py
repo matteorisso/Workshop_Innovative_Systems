@@ -174,12 +174,21 @@ lenet.save("trained_LeNet5_tern.h5")
 #lenet.save_weights('my_model_weights.h5')
 
 '''
+To load model
+
+trained_model = keras.models.load_model("trained_LeNet5_tern.h5",
+                                        custom_objects={'Clip':ternary_layers.Clip,
+                                        'TernaryDense':ternary_layers.TernaryDense,
+                                        'TernaryConv2D':ternary_layers.TernaryConv2D})
+'''
+
+'''
 Intermediate Layer
 '''
 from keras import models
 layer_outputs = [layer.output for layer in lenet.layers[:]]
 activation_model = models.Model(inputs = lenet.input, outputs = layer_outputs)
-activation_model.predict(x_test[0].reshape(1,32,32,1))
+activations = activation_model.predict(x_test[0].reshape(1,32,32,1))
 
 
 '''
