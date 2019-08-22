@@ -1,0 +1,720 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Alessandro\Desktop
+Eblockg
+Z0 w1566290877
+Z1 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Alessandro\Desktop\p4_Git
+Z4 8C:/Users/Alessandro/Desktop/p4_Git/blockG.vhd
+Z5 FC:/Users/Alessandro/Desktop/p4_Git/blockG.vhd
+l0
+L4
+VUSQFWMVCc:[Z?Vd@z8=bn3
+Z6 OV;C;10.0c;49
+32
+Z7 !s108 1566293937.598000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/blockG.vhd|
+Z9 !s107 C:/Users/Alessandro/Desktop/p4_Git/blockG.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 <F9@^G?1LlWLhjHVHG1H^3
+Abehavioral
+R1
+R2
+Z12 DEx4 work 6 blockg 0 22 USQFWMVCc:[Z?Vd@z8=bn3
+l16
+L14
+VFP=[mga5eXo>j2hNEF3I43
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 N^2aHc5KQ77JKUI?GKRa:2
+Eblockpg
+Z13 w1566290839
+R1
+R2
+R3
+Z14 8C:/Users/Alessandro/Desktop/p4_Git/blockPG.vhd
+Z15 FC:/Users/Alessandro/Desktop/p4_Git/blockPG.vhd
+l0
+L4
+V?=jzShcfdZFi;?eUONe>a2
+R6
+32
+Z16 !s108 1566293938.301000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/blockPG.vhd|
+Z18 !s107 C:/Users/Alessandro/Desktop/p4_Git/blockPG.vhd|
+R10
+R11
+!s100 YHZcK0__lUehEL3bJ_L4Y2
+Abehavioral
+R1
+R2
+Z19 DEx4 work 7 blockpg 0 22 ?=jzShcfdZFi;?eUONe>a2
+l18
+L16
+VEW]ooCdM;d;?n?h342`8H2
+R6
+32
+R16
+R17
+R18
+R10
+R11
+!s100 V_PH^;LL`FHoIHhLo7>^O1
+Ecarryselect
+Z20 w1566293684
+Z21 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+R1
+R2
+R3
+Z22 8C:/Users/Alessandro/Desktop/p4_Git/carrySelect.vhd
+Z23 FC:/Users/Alessandro/Desktop/p4_Git/carrySelect.vhd
+l0
+L5
+VzT>3CBG>UA3V]j8G2k]1O3
+R6
+32
+Z24 !s108 1566293938.879000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/carrySelect.vhd|
+Z26 !s107 C:/Users/Alessandro/Desktop/p4_Git/carrySelect.vhd|
+R10
+R11
+!s100 c2a>_EoGifDikjzSA;5_=0
+Astructural
+R21
+R1
+R2
+Z27 DEx4 work 11 carryselect 0 22 zT>3CBG>UA3V]j8G2k]1O3
+l32
+L18
+V4_<Laa?b5]Cmkh8TEG[6k2
+R6
+32
+R24
+R25
+R26
+R10
+R11
+!s100 gSOZgNc7T2j[0ibTQ6Ze71
+Ecarryselectblock
+Z28 w1566292746
+R21
+R1
+R2
+R3
+Z29 8C:/Users/Alessandro/Desktop/p4_Git/carrySelectBlock.vhd
+Z30 FC:/Users/Alessandro/Desktop/p4_Git/carrySelectBlock.vhd
+l0
+L5
+VcXGMll2L^e24illZeNV]a0
+R6
+32
+Z31 !s108 1566293939.348000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/carrySelectBlock.vhd|
+Z33 !s107 C:/Users/Alessandro/Desktop/p4_Git/carrySelectBlock.vhd|
+R10
+R11
+!s100 EMl;gP3aIAYcH[A2OG@NP1
+Astructural
+R21
+R1
+R2
+Z34 DEx4 work 16 carryselectblock 0 22 cXGMll2L^e24illZeNV]a0
+l46
+L17
+V<T3k87Zb:UDbklN8mZG4F3
+R6
+32
+R31
+R32
+R33
+R10
+R11
+!s100 CLn?Ll9<09bES2oh]k8K70
+Ccfg_carry_select
+Z35 astructural
+ecarrySelect
+R34
+DCx4 work 22 cfg_carry_select_block 0 22 ]dTDX_6>H6^gDH8lC73`92
+DAx4 work 11 carryselect 10 structural 22 4_<Laa?b5]Cmkh8TEG[6k2
+R21
+R1
+R2
+R27
+R20
+R3
+R22
+R23
+l0
+L50
+VXCVTkAn[oCV8<c^bK73X^2
+R6
+32
+R24
+R25
+R26
+R10
+R11
+!s100 h4L_:k6Gf8nhTe=iZXGkQ2
+Ccfg_carry_select_block
+R35
+ecarrySelectBlock
+Z36 DEx4 work 13 mux21_generic 0 22 0ke4]CfZd7POPl2V5_oNn3
+Z37 DEx4 work 3 rca 0 22 d;>dYo@1PTe?@G]ZKcPo`3
+DCx4 work 24 cfg_mux21_gen_behavioral 0 22 kQNVl;M2CY;gQQIhojKUm0
+Z38 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z39 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+DCx4 work 18 cfg_rca_structural 0 22 @^W_Yh_4SV6>YCHUn1f`H2
+DAx4 work 16 carryselectblock 10 structural 22 <T3k87Zb:UDbklN8mZG4F3
+R21
+R1
+R2
+R34
+R28
+R3
+R29
+R30
+l0
+L76
+V]dTDX_6>H6^gDH8lC73`92
+R6
+32
+R31
+R32
+R33
+R10
+R11
+!s100 k3hQY1RN[[kG:@1[G^8Xz1
+Ccfg_fa_behavioral
+Z40 aBEHAVIORAL
+eFA
+DAx4 work 2 fa 10 behavioral 22 8L@JW_zS9GKKYhfAm?@iz0
+R1
+R2
+Z41 DEx4 work 2 fa 0 22 z8A7=Ikm``G<@lQg]C0;U0
+Z42 w1566290689
+R3
+Z43 8C:/Users/Alessandro/Desktop/p4_Git/fa.vhd
+Z44 FC:/Users/Alessandro/Desktop/p4_Git/fa.vhd
+l0
+L23
+VA[<AVd`zHbh[L1I]jC8;j3
+R6
+32
+Z45 !s108 1566293939.973000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/fa.vhd|
+Z47 !s107 C:/Users/Alessandro/Desktop/p4_Git/fa.vhd|
+R10
+R11
+!s100 jRoGH::`kf7<116;>MeHa1
+Ccfg_mux21_gen_behavioral
+aBehavioral
+Z48 eMUX21_GENERIC
+DAx4 work 13 mux21_generic 10 behavioral 22 hMgfQzE?^jT3NmILbF_Z<1
+R21
+R1
+R2
+R36
+Z49 w1566292449
+R3
+Z50 8C:/Users/Alessandro/Desktop/p4_Git/mux21_generic.vhd
+Z51 FC:/Users/Alessandro/Desktop/p4_Git/mux21_generic.vhd
+l0
+L46
+VkQNVl;M2CY;gQQIhojKUm0
+R6
+32
+Z52 !s108 1566293941.629000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/mux21_generic.vhd|
+Z54 !s107 C:/Users/Alessandro/Desktop/p4_Git/mux21_generic.vhd|
+R10
+R11
+!s100 DD3R@S`f9e2e;;PJT1ONk1
+Ccfg_mux21_gen_structural
+aStructural
+R48
+Z55 DEx4 work 8 mux_2to1 0 22 >FLJNbWJNhYieInm]8YJ:2
+DAx4 work 13 mux21_generic 10 structural 22 L`aH9bDS5[@0Md1i6WXLB1
+R21
+R1
+R2
+R36
+R49
+R3
+R50
+R51
+l0
+L51
+VZCLajQDagmeIk7:0S]1GV0
+R6
+32
+R52
+R53
+R54
+R10
+R11
+!s100 QL^zOjkTVG[5o32JDU>KY1
+Ccfg_pgnetwork
+abehavioral
+epgNetwork
+DAx4 work 9 pgnetwork 10 behavioral 22 AP`51OiFhEoDkUnnNZ1QK2
+R21
+R1
+R2
+Z56 DEx4 work 9 pgnetwork 0 22 bQHcT^dO6D1@b3@h]SlB;3
+Z57 w1566293791
+R3
+Z58 8C:/Users/Alessandro/Desktop/p4_Git/pgNetwork.vhd
+Z59 FC:/Users/Alessandro/Desktop/p4_Git/pgNetwork.vhd
+l0
+L40
+VoK=L0f>JdGI2^6=2ddROe1
+R6
+32
+Z60 !s108 1566293943.973000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/pgNetwork.vhd|
+Z62 !s107 C:/Users/Alessandro/Desktop/p4_Git/pgNetwork.vhd|
+R10
+R11
+!s100 Fg4<i]G55T>`H7[EC@7Xo1
+Ccfg_rca_behavioral
+R40
+eRCA
+DAx4 work 3 rca 10 behavioral 22 B^<VABHkV9z;4MPOX<3Ck0
+R21
+R38
+R39
+R1
+R2
+R37
+Z63 w1566292092
+R3
+Z64 8C:/Users/Alessandro/Desktop/p4_Git/rca.vhd
+Z65 FC:/Users/Alessandro/Desktop/p4_Git/rca.vhd
+l0
+L64
+VO]7HRAdZ9GWak?:H194;i3
+R6
+32
+Z66 !s108 1566293944.458000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/rca.vhd|
+Z68 !s107 C:/Users/Alessandro/Desktop/p4_Git/rca.vhd|
+R10
+R11
+!s100 ojn]klaK_GZPdT_^IT8aG1
+Ccfg_rca_structural
+aSTRUCTURAL
+eRCA
+R41
+DCx4 work 17 cfg_fa_behavioral 0 22 A[<AVd`zHbh[L1I]jC8;j3
+DAx4 work 3 rca 10 structural 22 z05FblL`62FmMmTHzUL@Q2
+R21
+R38
+R39
+R1
+R2
+R37
+R63
+R3
+R64
+R65
+l0
+L54
+V@^W_Yh_4SV6>YCHUn1f`H2
+R6
+32
+R66
+R67
+R68
+R10
+R11
+!s100 SD<>VZ89G;2=MIWYJa^oh1
+Ccfg_sparsetree
+R35
+esparseTree
+R19
+R12
+R56
+DCx4 work 13 cfg_pgnetwork 0 22 oK=L0f>JdGI2^6=2ddROe1
+DAx4 work 10 sparsetree 10 structural 22 nQizL:;iif]^U58W1Gj5R3
+Z69 DPx4 work 9 functions 0 22 HgbNLO<JU=WgjIoaHcToC1
+R21
+R1
+R2
+Z70 DEx4 work 10 sparsetree 0 22 2QYSY4ii6je275dmo^Eb_0
+Z71 w1566293817
+R3
+Z72 8C:/Users/Alessandro/Desktop/p4_Git/sparseTree.vhd
+Z73 FC:/Users/Alessandro/Desktop/p4_Git/sparseTree.vhd
+l0
+L158
+Vg:nb919ZoFae`=NiIUAPl1
+!s100 E@K98kGN8HeXQU[g<z``m3
+R6
+32
+Z74 !s108 1566293945.692000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/sparseTree.vhd|
+Z76 !s107 C:/Users/Alessandro/Desktop/p4_Git/sparseTree.vhd|
+R10
+R11
+Efa
+R42
+R1
+R2
+R3
+R43
+R44
+l0
+L4
+Vz8A7=Ikm``G<@lQg]C0;U0
+R6
+32
+R45
+R46
+R47
+R10
+R11
+!s100 hTigHaQHV3^i1jzZ1M=8P2
+Abehavioral
+R1
+R2
+R41
+l15
+L13
+V8L@JW_zS9GKKYhfAm?@iz0
+R6
+32
+R45
+R46
+R47
+R10
+R11
+!s100 GM197c?QLE9]V@Z_Z8f6>1
+Pfunctions
+R1
+R2
+Z77 w1566290634
+R3
+Z78 8C:/Users/Alessandro/Desktop/p4_Git/functions.vhd
+Z79 FC:/Users/Alessandro/Desktop/p4_Git/functions.vhd
+l0
+L4
+VHgbNLO<JU=WgjIoaHcToC1
+R6
+32
+b1
+Z80 !s108 1566293940.739000
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/functions.vhd|
+Z82 !s107 C:/Users/Alessandro/Desktop/p4_Git/functions.vhd|
+R10
+R11
+!s100 ^FK>g`QA9c3:SSA52?8Xn0
+Bbody
+R69
+R1
+R2
+l0
+L16
+VMhV4=cElO=6^zNB;=28Y>0
+R6
+32
+R80
+R81
+R82
+R10
+R11
+nbody
+!s100 T_<]AM7`TS_6:i3mT964n3
+Emux21_generic
+R49
+R21
+R1
+R2
+R3
+R50
+R51
+l0
+L5
+V0ke4]CfZd7POPl2V5_oNn3
+R6
+32
+R52
+R53
+R54
+R10
+R11
+!s100 E3_14M^lX5^eA9ETjAzkg2
+Astructural
+R21
+R1
+R2
+R36
+l33
+L24
+VL`aH9bDS5[@0Md1i6WXLB1
+R6
+32
+R52
+R53
+R54
+R10
+R11
+!s100 KmO[[N1j8Zl<X?lM>5nR71
+Abehavioral
+R21
+R1
+R2
+R36
+l18
+L16
+VhMgfQzE?^jT3NmILbF_Z<1
+R6
+32
+R52
+R53
+R54
+R10
+R11
+!s100 FVKH2fhL9M8@87_Mcg2Mm1
+Emux_2to1
+Z83 w1566290537
+R1
+R2
+R3
+Z84 8C:/Users/Alessandro/Desktop/p4_Git/mux_2to1.vhd
+Z85 FC:/Users/Alessandro/Desktop/p4_Git/mux_2to1.vhd
+l0
+L4
+V>FLJNbWJNhYieInm]8YJ:2
+R6
+32
+Z86 !s108 1566293941.145000
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/mux_2to1.vhd|
+Z88 !s107 C:/Users/Alessandro/Desktop/p4_Git/mux_2to1.vhd|
+R10
+R11
+!s100 >jN]omDUHN]1?=<^j1Eaj0
+Astructural
+R1
+R2
+R55
+l14
+L12
+VRfL32JB7b8ln4lJ:jW5X?2
+R6
+32
+R86
+R87
+R88
+R10
+R11
+!s100 BLZo3_;eZfYZRUKo1`]@43
+Ep4_tb
+Z89 w1566293899
+Z90 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R21
+R1
+R2
+R3
+Z91 8C:/Users/Alessandro/Desktop/p4_Git/p4_tb.vhd
+Z92 FC:/Users/Alessandro/Desktop/p4_Git/p4_tb.vhd
+l0
+L6
+VZA1N>BVzG@23?PiIMAQYc2
+R6
+32
+Z93 !s108 1566293942.692000
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/p4_tb.vhd|
+Z95 !s107 C:/Users/Alessandro/Desktop/p4_Git/p4_tb.vhd|
+R10
+R11
+!s100 V8<k^3Rb73M[=X[kNEZA:2
+Aarch
+R90
+R21
+R1
+R2
+DEx4 work 5 p4_tb 0 22 ZA1N>BVzG@23?PiIMAQYc2
+l29
+L9
+V;7=SJ7Fj_`Sc]Q7NdA=[z2
+R6
+32
+R93
+R94
+R95
+R10
+R11
+!s100 e]Qh6TWeB=0AA90ki7E4K0
+Ep4adder
+Z96 w1566293781
+R21
+R1
+R2
+R3
+Z97 8C:/Users/Alessandro/Desktop/p4_Git/P4Adder.vhd
+Z98 FC:/Users/Alessandro/Desktop/p4_Git/P4Adder.vhd
+l0
+L5
+VMb15zLN4<dB:SUg<4Roja3
+R6
+32
+Z99 !s108 1566293943.208000
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/p4_Git/P4Adder.vhd|
+Z101 !s107 C:/Users/Alessandro/Desktop/p4_Git/P4Adder.vhd|
+R10
+R11
+!s100 0<V4kRA]45dk<mG7?5I2m0
+Astructural
+R21
+R1
+R2
+DEx4 work 7 p4adder 0 22 Mb15zLN4<dB:SUg<4Roja3
+l49
+L18
+VkDGnB;dID_<5T9DP_=2J70
+R6
+32
+R99
+R100
+R101
+R10
+R11
+!s100 z9Io]270Wc;Lc=diFZ7=>0
+Epgnetwork
+R57
+R21
+R1
+R2
+R3
+R58
+R59
+l0
+L5
+VbQHcT^dO6D1@b3@h]SlB;3
+R6
+32
+R60
+R61
+R62
+R10
+R11
+!s100 @Z<oXC4gDTnadb>NEL>5n3
+Abehavioral
+R21
+R1
+R2
+R56
+l18
+L16
+VAP`51OiFhEoDkUnnNZ1QK2
+R6
+32
+R60
+R61
+R62
+R10
+R11
+!s100 z`hKiFXY0VTl1ma7AU_YH1
+Erca
+R63
+R21
+R38
+R39
+R1
+R2
+R3
+R64
+R65
+l0
+L6
+Vd;>dYo@1PTe?@G]ZKcPo`3
+R6
+32
+R66
+R67
+R68
+R10
+R11
+!s100 1W?P92JJ=9k]G?MHm<?VV2
+Abehavioral
+R21
+R38
+R39
+R1
+R2
+R37
+l45
+L42
+VB^<VABHkV9z;4MPOX<3Ck0
+!s100 OocT^B;ajH>neDnc1KNdV3
+R6
+32
+R66
+R67
+R68
+R10
+R11
+Astructural
+R21
+R38
+R39
+R1
+R2
+R37
+l28
+L15
+Vz05FblL`62FmMmTHzUL@Q2
+!s100 P^P^3Vo9>h=CLTm7fUSj`1
+R6
+32
+R66
+R67
+R68
+R10
+R11
+Esparsetree
+R71
+R69
+R21
+R1
+R2
+R3
+R72
+R73
+l0
+L6
+V2QYSY4ii6je275dmo^Eb_0
+!s100 5:ZlA@_Dm>@7Y:=EXBnS00
+R6
+32
+R74
+R75
+R76
+R10
+R11
+Astructural
+R69
+R21
+R1
+R2
+R70
+l60
+L20
+VnQizL:;iif]^U58W1Gj5R3
+!s100 k2z6GWN4S5mdeHTPF8:FT1
+R6
+32
+R74
+R75
+R76
+R10
+R11

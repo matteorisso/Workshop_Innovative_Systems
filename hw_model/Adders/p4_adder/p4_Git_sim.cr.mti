@@ -1,0 +1,165 @@
+C:/Users/Alessandro/Desktop/p4_Git/functions.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/functions.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package functions
+-- Compiling package body functions
+-- Loading package functions
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/mux21_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/mux21_generic.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX21_GENERIC
+-- Compiling architecture Behavioral of MUX21_GENERIC
+-- Compiling architecture Structural of MUX21_GENERIC
+-- Loading entity MUX21_GENERIC
+-- Compiling configuration CFG_MUX21_GEN_BEHAVIORAL
+-- Loading entity MUX21_GENERIC
+-- Loading architecture Behavioral of MUX21_GENERIC
+-- Compiling configuration CFG_MUX21_GEN_STRUCTURAL
+-- Loading entity MUX21_GENERIC
+-- Loading architecture Structural of MUX21_GENERIC
+-- Loading entity mux_2to1
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/sparseTree.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/sparseTree.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package functions
+-- Compiling entity sparseTree
+-- Compiling architecture structural of sparseTree
+-- Compiling configuration cfg_sparseTree
+-- Loading entity sparseTree
+-- Loading architecture structural of sparseTree
+-- Loading entity pgNetwork
+-- Loading entity blockG
+-- Loading entity blockPG
+-- Loading configuration cfg_pgnetwork
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/mux_2to1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/mux_2to1.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2to1
+-- Compiling architecture Structural of mux_2to1
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/pgNetwork.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/pgNetwork.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pgNetwork
+-- Compiling architecture behavioral of pgNetwork
+-- Compiling configuration cfg_pgNetwork
+-- Loading entity pgNetwork
+-- Loading architecture behavioral of pgNetwork
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/p4_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/p4_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity p4_tb
+-- Compiling architecture arch of p4_tb
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/carrySelect.vhd {2 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/carrySelect.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity carrySelect
+-- Compiling architecture structural of carrySelect
+-- Compiling configuration cfg_carry_select
+-- Loading entity carrySelect
+-- Loading architecture structural of carrySelect
+-- Loading entity carrySelectBlock
+-- Loading configuration cfg_carry_select_block
+** Warning: C:/Users/Alessandro/Desktop/p4_Git/carrySelect.vhd(53): (vcom-1263) Component configuration "all : carrySelectBlock" applies to no component instantiation statements.
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/blockG.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/blockG.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity blockG
+-- Compiling architecture behavioral of blockG
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/blockPG.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/blockPG.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity blockPG
+-- Compiling architecture behavioral of blockPG
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/P4Adder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/P4Adder.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity P4Adder
+-- Compiling architecture Structural of P4Adder
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/carrySelectBlock.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/carrySelectBlock.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity carrySelectBlock
+-- Compiling architecture structural of carrySelectBlock
+-- Compiling configuration cfg_carry_select_block
+-- Loading entity carrySelectBlock
+-- Loading architecture structural of carrySelectBlock
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity RCA
+-- Loading entity MUX21_GENERIC
+-- Loading configuration cfg_rca_structural
+-- Loading configuration cfg_mux21_gen_behavioral
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/rca.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/rca.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity RCA
+-- Compiling architecture STRUCTURAL of RCA
+-- Compiling architecture BEHAVIORAL of RCA
+-- Loading entity RCA
+-- Compiling configuration CFG_RCA_STRUCTURAL
+-- Loading entity RCA
+-- Loading architecture STRUCTURAL of RCA
+-- Loading entity FA
+-- Loading configuration cfg_fa_behavioral
+-- Compiling configuration CFG_RCA_BEHAVIORAL
+-- Loading entity RCA
+-- Loading architecture BEHAVIORAL of RCA
+
+} {} {}} C:/Users/Alessandro/Desktop/p4_Git/fa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/p4_Git/fa.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FA
+-- Compiling architecture BEHAVIORAL of FA
+-- Compiling configuration CFG_FA_BEHAVIORAL
+-- Loading entity FA
+-- Loading architecture BEHAVIORAL of FA
+
+} {} {}}
