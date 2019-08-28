@@ -46,6 +46,7 @@ layer_outputs = [layer.output for layer in trained_model.layers[:]]
 # the sequential model previously trained "trained_LeNet5.h5"
 activation_model = models.Model(inputs = trained_model.input, \
                                 outputs = layer_outputs) 
+								
 
 # Returns a list of eight Numpy arrays: one array per layer activation
 activations = activation_model.predict(x_test_float)

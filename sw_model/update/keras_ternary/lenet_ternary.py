@@ -16,7 +16,7 @@ from keras.optimizers import SGD, Adam, RMSprop
 from keras.callbacks import LearningRateScheduler
 from keras.utils import np_utils
 
-from ternary_ops import ternarize
+from ternary_ops import ternarize, ternary_activation
 from ternary_layers import TernaryDense, TernaryConv2D
 
 import plot
@@ -27,7 +27,7 @@ import os
 
 '''
 import sys
-sys.stdout = open('transcript','w')
+sys.stdout = open('transcript','w') 
 '''
 
 data                                    = dataset.mnist()
@@ -67,7 +67,7 @@ lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn1'))
 
 #lenet.add(Activation(binary_tanh, name = 'act1'))
-lenet.add(Activation('relu', name = 'act1'))
+lenet.add(Activation(ternarize, name = 'act1'))
 
 lenet.add(AveragePooling2D(pool_size = (2, 2), 
                            padding = 'valid', name  = 'pool1'))
@@ -83,7 +83,7 @@ lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn2'))
 
 #lenet.add(Activation(binary_tanh, name = 'act2'))
-lenet.add(Activation('relu', name = 'act2'))
+lenet.add(Activation(ternarize, name = 'act2'))
 
 lenet.add(AveragePooling2D(pool_size = (2, 2), 
                            padding = 'valid', name = 'pool2'))
@@ -100,7 +100,7 @@ lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn3'))
 
 #lenet.add(Activation(binary_tanh, name = 'act3'))
-lenet.add(Activation('relu', name = 'act3'))
+lenet.add(Activation(ternarize, name = 'act3'))
 
 lenet.add(Flatten())
 
@@ -119,7 +119,7 @@ lenet.add(BatchNormalization(epsilon = epsilon, momentum = momentum, axis = 1,
                              name = 'bn4'))
  
 #lenet.add(Activation(binary_tanh, name = 'act4'))
-lenet.add(Activation('relu', name = 'act4'))
+lenet.add(Activation(ternarize, name = 'act4'))
 
 lenet.add(TernaryDense(10, H = H, kernel_lr_multiplier = kernel_lr_multiplier, 
                       use_bias = use_bias, name = 'fc2'))

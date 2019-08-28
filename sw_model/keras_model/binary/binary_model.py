@@ -15,11 +15,12 @@ import config as cf
 
 from build_model import build_model 
 from binary_ops import binarize
+from quantized_ops import quantize
 #from ternary_ops import ternarize
 ''' 
  create model
 '''
-model = build_model('binary',BinaryNet=True)
+model = build_model('binary',BinaryNet=False)
 
 '''
  configure  model 
@@ -62,9 +63,9 @@ x_test,y_test=test
 '''
  check saved model
 '''
-if os.path.isfile(cf.BinaryNet_path+'.hdf5'):
+if os.path.isfile(cf.BinaryConnect_path+'.hdf5'):
     
-    model.load_weights(cf.BinaryNet_path+'.hdf5')
+    model.load_weights(cf.BinaryConnect_path+'.hdf5')
     
     W = model.get_weights()
     Wq = np.copy(W)        
@@ -76,6 +77,8 @@ if os.path.isfile(cf.BinaryNet_path+'.hdf5'):
         for it in range(len(W)):
             if len(W[it].shape)>1:#keep batch norm parameters full-precision
                 Wq[it]  = sess.run(binarize(tf.convert_to_tensor(W[it])))
+            #else:
+                #Wq[it]  = sess.run(quantize(tf.convert_to_tensor(W[it]),16))
     Wq = Wq.tolist() #from ndarray to numpy array list
     model.set_weights(Wq)    
 #   create dictionary to savemat

@@ -57,7 +57,7 @@ for i in bn_1.T:
 bool_A = [booleanize(i) for i in A]
 bool_B = [booleanize(i) for i in B]
 
-conv = activations['binary_conv2d_10/convolution:0']
+conv = activations['binary_conv2d_1/convolution:0']
 
 
 act_f_output = numpy.zeros([28,28,6])
@@ -67,8 +67,8 @@ for i in range(6):
             bool_R = booleanize(conv[k,j,i]-ceil(R[i]))
             act_f_output[k,j,i] = table(bool_A[i],bool_B[i],bool_R)
             
-numpy.array_equal(act_f_output,activations['activation_29/sub_1:0'])
-            
+print(numpy.array_equal(act_f_output,activations['activation_1/sub_1:0']))
+          
             
 '''
 
@@ -77,16 +77,17 @@ A_sign      = [sign(i)*1 for i in A]
 
 bn_output = numpy.zeros([28,28,6])
 
-for i in range(6):
-    bn_output[:,:,i] = A_sign[i]*conv[:,:,i]+B_integer[i]
+#for i in range(6):
+#    bn_output[:,:,i] = (A_sign[i]*conv[:,:,i])+B_integer[i]
    
 act_f_output = numpy.zeros([28,28,6])
 
 for i in range(6):
     for j in range(28):
         for k in range(28):
+            bn_output[k,j,i] = (A_sign[i]*conv[k,j,i])+B_integer[i]
             act_f_output[k,j,i] = sign(bn_output[k,j,i])
             
-numpy.array_equal(act_f_output,activations['activation_29/sub_1:0'])
+print(numpy.array_equal(act_f_output,activations['activation_1/sub_1:0']))
 
 '''

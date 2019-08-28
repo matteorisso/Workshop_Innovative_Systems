@@ -1,0 +1,122 @@
+m255
+K3
+13
+cModel Technology
+d/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda
+Edadda
+Z0 w1566480990
+Z1 DPx4 work 10 dadda_func 0 22 mIi^g4XY;5]@WkDBNO_0Z3
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/test
+Z6 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda.vhd
+Z7 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda.vhd
+l0
+L7
+VMQOa?Clm6lZIC7HNAXgT[1
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1566481274.638928
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda.vhd|
+Z11 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 3ACo@T;XNh^4cdYl15ni?1
+!i10b 1
+Astructure
+R1
+R2
+R3
+R4
+DEx4 work 5 dadda 0 22 MQOa?Clm6lZIC7HNAXgT[1
+l19
+L17
+V8TYaI83E:J;P;@bmBB>[13
+!s100 2?fd^LDnG;WV;WXL<gO<]2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!i10b 1
+Pdadda_func
+R2
+R3
+R4
+Z14 w1566481051
+R5
+Z15 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda_func.vhd
+Z16 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda_func.vhd
+l0
+L5
+VmIi^g4XY;5]@WkDBNO_0Z3
+R8
+32
+b1
+Z17 !s108 1566481274.609257
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda_func.vhd|
+Z19 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/dadda_func.vhd|
+R12
+R13
+!s100 3GdOm[D0R1cJG=1Q?e0LI2
+!i10b 1
+Bbody
+R1
+R2
+R3
+R4
+l0
+L12
+VPIlZh=bZf@K@eTQ<2OhHU0
+R8
+32
+R17
+R18
+R19
+R12
+R13
+nbody
+!s100 4k_g8@m^dQi@67V?GH59Z0
+!i10b 1
+Etb_dadda
+Z20 w1566481260
+R1
+R2
+R3
+R4
+R5
+Z21 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/test/tb_dadda.vhd
+Z22 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/test/tb_dadda.vhd
+l0
+L7
+V^mAMgQo`@k]T4oMgXE=TV1
+!s100 A0JDL7T9Y:ebn5d1J8e7A2
+R8
+32
+!i10b 1
+Z23 !s108 1566481274.667078
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/test/tb_dadda.vhd|
+Z25 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/dadda/test/tb_dadda.vhd|
+R12
+R13
+Atest
+R1
+R2
+R3
+R4
+DEx4 work 8 tb_dadda 0 22 ^mAMgQo`@k]T4oMgXE=TV1
+l29
+L11
+Vz`lRkf=^^hO:`<<kXPeH[3
+!s100 SXCF8TW@966FRb`dZ]7mW2
+R8
+32
+!i10b 1
+R23
+R24
+R25
+R12
+R13

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
 import keras.backend as K
+import tensorflow as tf
+
 
 
 def switch(condition, t, e):
@@ -45,3 +47,11 @@ def ternarize_dot(x, W):
     '''
     Wt = _ternarize(W)
     return K.dot(x, W) + K.stop_gradient(K.dot(x, Wt - W))
+
+def ternary_activation(x, slope_tensor = None, alpha = 1):
+    """
+    Does not support slope annealing (slope_tensor is ignored)
+    Wolfram Alpha plot:
+    https://www.wolframalpha.com/input/?i=plot+(1.5*tanh(x)+%2B+0.5(tanh(-(3-1e-2)*x))),+x%3D+-2+to+2
+    """
+    return 1.5*tf.tanh(alpha*x) + 0.5*(tf.tanh(-(3/alpha)*x))
