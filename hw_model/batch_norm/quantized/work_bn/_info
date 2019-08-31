@@ -1,0 +1,671 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm\quantized
+Eadder
+Z1 w1567151453
+Z2 DPx4 work 10 dadda_func 0 22 9anzIFacU=j8=?f>ehZkC0
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm\quantized
+Z7 8D:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm\quantized\adder.vhd
+Z8 FD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm\quantized\adder.vhd
+l0
+L7
+VQA0Ebo7o55<8dK5KB:0:C2
+Z9 OV;C;10.1d;51
+32
+Z10 !s108 1567254514.865000
+Z11 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm\quantized\adder.vhd|
+Z12 !s107 D:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm\quantized\adder.vhd|
+Z13 o-work work_bn -2002 -explicit -O0
+Z14 tExplicit 1
+!s100 dZX^cF3TiAn=SKfAlBF;>0
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 QA0Ebo7o55<8dK5KB:0:C2
+l18
+L17
+Vhb896D4ne:YS9]K<IOJ<Z0
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!s100 W4Ga7fX^:UKgNf^h8Vd>J0
+!i10b 1
+Eadder_dadda
+Z15 w1567153441
+R2
+R3
+R4
+R5
+R6
+Z16 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/adder_dadda.vhd
+Z17 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/adder_dadda.vhd
+l0
+L7
+V^a[QIBg]F_M4Ad=CVo<gl0
+R9
+32
+Z18 !s108 1567254511.635000
+Z19 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/adder_dadda.vhd|
+Z20 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/adder_dadda.vhd|
+R13
+R14
+!s100 70fH:@JEml[B:V0X8I=oh1
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 11 adder_dadda 0 22 ^a[QIBg]F_M4Ad=CVo<gl0
+l18
+L17
+VR1__;65hHL>ldDHFTRS>F0
+R9
+32
+R18
+R19
+R20
+R13
+R14
+!s100 nW=e58ilaHI2Xg:cDMWnz3
+!i10b 1
+Ebatch_norm
+Z21 w1567252446
+R3
+R4
+R5
+R6
+Z22 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm.vhd
+Z23 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm.vhd
+l0
+L5
+V^oR@6HR>HE9L2UnY@`1cQ2
+R9
+32
+Z24 !s108 1567254515.225000
+Z25 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm.vhd|
+Z26 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm.vhd|
+R13
+R14
+!s100 jZhGcLbTz?1gYOWWfCO:k0
+!i10b 1
+Astructure
+R3
+R4
+R5
+DEx4 work 10 batch_norm 0 22 ^oR@6HR>HE9L2UnY@`1cQ2
+l77
+L19
+V<o;6?M]kG8o:]KO_cR?Ec0
+R9
+32
+R24
+R25
+R26
+R13
+R14
+!s100 ZLRCIG:1:aEk`ld`lDh`c1
+!i10b 1
+Ebatch_norm_fsm
+Z27 w1567248468
+R3
+R4
+R5
+R6
+Z28 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_fsm.vhd
+Z29 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_fsm.vhd
+l0
+L5
+VQCc;XKkLh?6Z>C1AnkK1D3
+R9
+32
+Z30 !s108 1567254515.529000
+Z31 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_fsm.vhd|
+Z32 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_fsm.vhd|
+R13
+R14
+!s100 :nU<5AZi`jh@bgk?i1zUY2
+!i10b 1
+Abehavior
+R3
+R4
+R5
+DEx4 work 14 batch_norm_fsm 0 22 QCc;XKkLh?6Z>C1AnkK1D3
+l30
+L24
+VhV^M9Xlg:0JBbdNoB>ANN1
+R9
+32
+R30
+R31
+R32
+R13
+R14
+!s100 2BDJOnmBQHAEa:h5]2o7d2
+!i10b 1
+Ebatch_norm_pe
+Z33 w1567254819
+R3
+R4
+R5
+R6
+Z34 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_pe.vhd
+Z35 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_pe.vhd
+l0
+L5
+V_n<zV>AX7Q]6LSMSn>Tbj1
+R9
+32
+Z36 !s108 1567254835.537000
+Z37 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_pe.vhd|
+Z38 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_pe.vhd|
+R13
+R14
+!s100 2I[X1a[ePa:Cl[I3@zCo[1
+!i10b 1
+Astructure
+R3
+R4
+R5
+DEx4 work 13 batch_norm_pe 0 22 _n<zV>AX7Q]6LSMSn>Tbj1
+l84
+L25
+V?E<H2oK7HDOW9T72YO>0k2
+R9
+32
+R36
+R37
+R38
+R13
+R14
+!s100 h5M1UW?4=eMP03M79`44H1
+!i10b 1
+Edadda
+Z39 w1567153381
+R2
+R4
+R5
+R6
+Z40 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda.vhd
+Z41 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda.vhd
+l0
+L6
+VYQ4Qe2EcW=e[OiIi9==L@3
+R9
+32
+Z42 !s108 1567254516.198000
+Z43 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda.vhd|
+Z44 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda.vhd|
+R13
+R14
+!s100 Q>d>M=>Cb6en@8[fi2lK93
+!i10b 1
+Astructure
+R2
+R4
+R5
+DEx4 work 5 dadda 0 22 YQ4Qe2EcW=e[OiIi9==L@3
+l89
+L16
+VkH]7>k<Jb26Ybf4mb;IBm2
+R9
+32
+R42
+R43
+R44
+R13
+R14
+!s100 EO6D`dV]:RaL@NVc;BJWN0
+!i10b 1
+Edadda_and_matrix
+Z45 w1567002183
+R2
+R4
+R5
+R6
+Z46 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_and_matrix.vhd
+Z47 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_and_matrix.vhd
+l0
+L6
+VMmCAo;5C7`_XdS>>NnE?I2
+R9
+32
+Z48 !s108 1567254511.962000
+Z49 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_and_matrix.vhd|
+Z50 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_and_matrix.vhd|
+R13
+R14
+!s100 n2UP`_I>kYX1M@zh5A24J2
+!i10b 1
+Astructure
+R2
+R4
+R5
+DEx4 work 16 dadda_and_matrix 0 22 MmCAo;5C7`_XdS>>NnE?I2
+l18
+L16
+Vk87J;4N6?a`]dG<@B0A`L0
+R9
+32
+R48
+R49
+R50
+R13
+R14
+!s100 e`73dmQc2ikz=c2KnT]gB2
+!i10b 1
+Edadda_first_level
+Z51 w1567005602
+R2
+R4
+R5
+R6
+Z52 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_first_level.vhd
+Z53 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_first_level.vhd
+l0
+L6
+V4:I>8nfDkfzcOCNAa`=703
+R9
+32
+Z54 !s108 1567254512.323000
+Z55 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_first_level.vhd|
+Z56 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_first_level.vhd|
+R13
+R14
+!s100 L0Ph@4[<ASJg;mQiC1RF;3
+!i10b 1
+Astructure
+R2
+R4
+R5
+DEx4 work 17 dadda_first_level 0 22 4:I>8nfDkfzcOCNAa`=703
+l35
+L13
+VW09VoULLjEKnj0:FzW7o=1
+R9
+32
+R54
+R55
+R56
+R13
+R14
+!s100 WIELh87L_6bIaY=CYeLz]2
+!i10b 1
+Edadda_fourth_level
+Z57 w1567073645
+R2
+R4
+R5
+R6
+Z58 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_fourth_level.vhd
+Z59 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_fourth_level.vhd
+l0
+L6
+VgnKzEfod]fEK[9`YQ]f4g0
+R9
+32
+Z60 !s108 1567254512.689000
+Z61 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_fourth_level.vhd|
+Z62 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_fourth_level.vhd|
+R13
+R14
+!s100 E7DdPh8MfbdOK9aaLNid93
+!i10b 1
+Astructure
+R2
+R4
+R5
+DEx4 work 18 dadda_fourth_level 0 22 gnKzEfod]fEK[9`YQ]f4g0
+l37
+L15
+V2_KaFclie`_6SDfMKe]lO2
+R9
+32
+R60
+R61
+R62
+R13
+R14
+!s100 :MP5SbEniQBJ8bbe6?E`J3
+!i10b 1
+Pdadda_func
+R4
+R5
+Z63 w1567068609
+R6
+Z64 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_func.vhd
+Z65 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_func.vhd
+l0
+L4
+V9anzIFacU=j8=?f>ehZkC0
+R9
+32
+b1
+Z66 !s108 1567254513.010000
+Z67 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_func.vhd|
+Z68 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_func.vhd|
+R13
+R14
+!s100 Q9Tlg6]@:jCz?K^JcU93R2
+!i10b 1
+Bbody
+R2
+R4
+R5
+l0
+L16
+VE?H_Azzb3zmB1Wg6@Q?PA3
+R9
+32
+R66
+R67
+R68
+R13
+R14
+nbody
+!s100 @>0ZB:@HZ41eGUQeI<O=O0
+!i10b 1
+Edadda_second_level
+Z69 w1567090602
+R2
+R4
+R5
+R6
+Z70 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_second_level.vhd
+Z71 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_second_level.vhd
+l0
+L6
+VRo1H`8]RMbYTlBKd?5T8h1
+R9
+32
+Z72 !s108 1567254513.391000
+Z73 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_second_level.vhd|
+Z74 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_second_level.vhd|
+R13
+R14
+!s100 ZmbUMEo0K_k^225YV4fB:0
+!i10b 1
+Astructure
+R2
+R4
+R5
+DEx4 work 18 dadda_second_level 0 22 Ro1H`8]RMbYTlBKd?5T8h1
+l38
+L16
+VbiIRNPXeo?l;;Ldd:GI=R3
+R9
+32
+R72
+R73
+R74
+R13
+R14
+!s100 Hl0oHGDYF9^N_Uljjg^N81
+!i10b 1
+Edadda_third_level
+Z75 w1567076027
+R2
+R4
+R5
+R6
+Z76 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_third_level.vhd
+Z77 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_third_level.vhd
+l0
+L6
+VJ4_:hWAgDBd`LzOPYE[291
+R9
+32
+Z78 !s108 1567254513.732000
+Z79 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_third_level.vhd|
+Z80 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_third_level.vhd|
+R13
+R14
+!s100 5IkW:n1D=[1onacP_L9PW0
+!i10b 1
+Astructure
+R2
+R4
+R5
+DEx4 work 17 dadda_third_level 0 22 J4_:hWAgDBd`LzOPYE[291
+l37
+L15
+V0i6c3n=geBMkaUd5iCXX10
+R9
+32
+R78
+R79
+R80
+R13
+R14
+!s100 ;]a:^fUBI`i9A=:UFb>UW2
+!i10b 1
+Efull_adder
+Z81 w1567002687
+R4
+R5
+R6
+Z82 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/full_adder.vhd
+Z83 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/full_adder.vhd
+l0
+L4
+VBgoc@gKWm^6:FYHi0l2a?3
+R9
+32
+Z84 !s108 1567254514.151000
+Z85 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/full_adder.vhd|
+Z86 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/full_adder.vhd|
+R13
+R14
+!s100 5ETOfLUcP[bjNh4^<kUGz3
+!i10b 1
+Astructure
+R4
+R5
+DEx4 work 10 full_adder 0 22 Bgoc@gKWm^6:FYHi0l2a?3
+l30
+L14
+V<S4ei;dABZ0L99DzJhmbf3
+R9
+32
+R84
+R85
+R86
+R13
+R14
+!s100 X_LJ@iWYWF`:cjol:>bGP1
+!i10b 1
+Egeneric_mux2to1
+Z87 w1567253972
+R3
+R4
+R5
+R6
+Z88 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_mux2to1.vhd
+Z89 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_mux2to1.vhd
+l0
+L5
+VLgV?g4CCQOTdZAHX^kS661
+R9
+32
+Z90 !s108 1567254516.572000
+Z91 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_mux2to1.vhd|
+Z92 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_mux2to1.vhd|
+R13
+R14
+!s100 ZLF7GJ8Z9Jh>4mM_EM09F2
+!i10b 1
+Abehavior
+R3
+R4
+R5
+DEx4 work 15 generic_mux2to1 0 22 LgV?g4CCQOTdZAHX^kS661
+l19
+L17
+VHez_9gNbUG<=bOWQjEe>L2
+R9
+32
+R90
+R91
+R92
+R13
+R14
+!s100 YQ=``jYi`zQR7O97iIWEP1
+!i10b 1
+Egeneric_register
+Z93 w1567241577
+R3
+R4
+R5
+R6
+Z94 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_register.vhd
+Z95 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_register.vhd
+l0
+L5
+VUlbMZd_VP98Vh`c34156l2
+R9
+32
+Z96 !s108 1567254516.890000
+Z97 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_register.vhd|
+Z98 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_register.vhd|
+R13
+R14
+!s100 mk>:`zNP8HT^9A1KdC><C3
+!i10b 1
+Abehavior
+R3
+R4
+R5
+DEx4 work 16 generic_register 0 22 UlbMZd_VP98Vh`c34156l2
+l20
+L18
+VEA5<IPd9oTXCE?Z0GEK<b0
+R9
+32
+R96
+R97
+R98
+R13
+R14
+!s100 h]D<cF968g^Y9DoCjUk912
+!i10b 1
+Ehalf_adder
+Z99 w1567002360
+R4
+R5
+R6
+Z100 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/half_adder.vhd
+Z101 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/half_adder.vhd
+l0
+L4
+VH;EeZA44O67[ASzZOE5fV3
+R9
+32
+Z102 !s108 1567254514.532000
+Z103 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/half_adder.vhd|
+Z104 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/half_adder.vhd|
+R13
+R14
+!s100 [C<hVOJL=5c@FmSL9_B^i2
+!i10b 1
+Astructure
+R4
+R5
+DEx4 work 10 half_adder 0 22 H;EeZA44O67[ASzZOE5fV3
+l15
+L13
+V@i=9denJ:CYdo=>8LDlmg0
+R9
+32
+R102
+R103
+R104
+R13
+R14
+!s100 `k8l;HdH[:fTFY3:M7GU>2
+!i10b 1
+Erelu_4bit
+R93
+R3
+R4
+R5
+R6
+Z105 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/relu_4bit.vhd
+Z106 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/relu_4bit.vhd
+l0
+L5
+V91fhHE<YRg]blJiY4aL4C3
+R9
+32
+Z107 !s108 1567254517.242000
+Z108 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/relu_4bit.vhd|
+Z109 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/relu_4bit.vhd|
+R13
+R14
+!s100 SXZ[A:AY38lP0Ul?ATJ_R0
+!i10b 1
+Astructure
+R3
+R4
+R5
+DEx4 work 9 relu_4bit 0 22 91fhHE<YRg]blJiY4aL4C3
+l25
+L14
+V0h[^VeNaIO;5o6CG?=jd61
+R9
+32
+R107
+R108
+R109
+R13
+R14
+!s100 8GGIkM1_ibdf0jMDTQdT>2
+!i10b 1
+Etb_batch_norm
+Z110 w1567257360
+R3
+R4
+R5
+R6
+Z111 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/tb_batch_norm.vhd
+Z112 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/tb_batch_norm.vhd
+l0
+L5
+V[=]A`h`]Y8iCfJmHiU==20
+!s100 Yl908L3^40C6F<PQXUDj22
+R9
+32
+!i10b 1
+Z113 !s108 1567257395.083000
+Z114 !s90 -reportprogress|300|-work|work_bn|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/tb_batch_norm.vhd|
+Z115 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/tb_batch_norm.vhd|
+R13
+R14
+Atest
+R3
+R4
+R5
+Z116 DEx4 work 13 tb_batch_norm 0 22 [=]A`h`]Y8iCfJmHiU==20
+l31
+L9
+V3kkj;;`XWV02VYdNN@J?z1
+!s100 MmVnfN9;9cV63j77^@J`a1
+R9
+32
+!i10b 1
+R113
+R114
+R115
+R13
+R14

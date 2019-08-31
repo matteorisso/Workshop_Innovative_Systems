@@ -52,10 +52,10 @@ begin
 	
 	  tb_a    <= std_logic_vector(to_signed(0, tb_a_s'length));
 	  tb_b    <= std_logic_vector(to_signed(0, tb_b_s'length));
-	  wait for 5 ns;
+	  wait for 1 ns;
 
 
-	  for i in 1 to 5 loop
+	  for i in 1 to 500 loop
 		-- random number generation
 		uniform(seed1, seed2, rand_1);
 		uniform(seed1, seed2, rand_2);
@@ -71,11 +71,11 @@ begin
 
 		-- assert
 		assert (tb_res = std_logic_vector(prod)) report "there is a bug." severity warning;  -- nothing is written if the sum is correct 
-		wait for 5 ns;
+		wait for 1 ns;
 	  end loop;
-
+		
 	  wait;
-
+		
 	end process;
 	
 	-- process 

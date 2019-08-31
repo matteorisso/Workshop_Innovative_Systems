@@ -31,21 +31,26 @@ def bn_param_reduction(gamma,beta,mu,sigma):
     b  =    beta - (mu*gamma)/(sqrt(sigma))
     return a,b
 
-def dec2bin(var,fp) :
+def dec2bin(var,fp, ip) :
     if var >= 0 :
-        string = '0'+str(fp+1)+'b'
+        string = '0'+str(fp+ip)+'b'
         bin_var = format(var,string)
     else :
-        bin_var = format(2**(fp+1) + var,'b')	
+        bin_var = format(2**(fp+ip) + var,'b')	
     return bin_var
 
-def float2fix(x,fract_part):
-    if x < -1:
-        x = -1
-    if x > 0.96875:
-        x = 0.96875
-    x_fix = int(round(x*pow(2,fract_part)))
-    x_fix_bin = dec2bin(x_fix,fract_part)
+def float2fix(x,fract_part, int_part):
+    if x < -1*pow(2,int_part-1):
+        x = -1*pow(2,int_part-1)
+    upper_bound = 0
+    for i in range(1,fract_part+1):
+        upper_bound += pow(2,-i)
+    for i in range(int_part-1):
+        upper_bound += pow(2,i)
+    if x > upper_bound:
+        x = upper_bound
+    x_fix = int(ceil(x*pow(2,fract_part)))
+    x_fix_bin = dec2bin(x_fix,fract_part, int_part)
     x_fix = 0
     acc = 0
     for i in x_fix_bin:
@@ -59,7 +64,7 @@ def float2fix(x,fract_part):
         else:
             x_fix += int(i)*pow(2,-1*acc)
             acc += 1      
-    return x_fix
+    return x_fix,x_fix_bin
 
 Conv_ = lambda filters, kernel_size, dim, channel : BinaryConv2D(\
                                                    kernel_size=kernel_size, 
@@ -152,7 +157,7 @@ if os.path.isfile(cf.BinaryConnect_path+'.hdf5'):
 #model.layers[13].set_weights(Wq[20])
 
 '''
- load dataset
+#load dataset
 '''
 data = dataset.mnist()
 train,test = data.process()
@@ -175,7 +180,7 @@ bn_2 = numpy.asarray(Wq[6:10])
 bn_3 = numpy.asarray(Wq[11:15])
 bn_4 = numpy.asarray(Wq[16:20])
 
-frac_part = 5
+frac_part = 7
 
 for i in bn_1.T:
     A_1.append(bn_param_reduction(i[0],i[1],i[2],i[3])[0])
