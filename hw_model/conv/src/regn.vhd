@@ -1,34 +1,33 @@
 library ieee;
-use ieee.std_logic_1164.all;
-use work.fixed_pkg.all;
+use ieee.std_logic_1164.all; 
+use ieee.numeric_std.all;
 
 entity regn is
-generic ( qi : natural:= 1; qf : natural:= 15 ) ;	
-port(
-		d 	:	in sfixed(qi-1 downto -qf);
-		ck, 
-		rstn, 
-		en	:	in std_logic;
-		q  :  out sfixed(qi-1 downto -qf));
+generic ( N : natural := 4 );
+port ( 
+		d 		: in signed(N-1 downto 0);
+		ck		: in std_logic; 
+		rst	: in std_logic;
+		en 	: in std_logic; 
+		q 		: out signed(N-1 downto 0));
 end entity;
 
-architecture behavior of regn is
+architecture beh of regn is
+
+signal int_en : std_logic;
+
 begin
 
-process(ck,rstn)
-
+int_en <= rst or en;
+process(ck,int_en)
 begin
-
-if (rstn = '0') then
-
-	q <= (others=>'0');
-
-elsif (rising_edge(ck) and en = '1') then
-
-	q <= d; 
-
- 
+if ck'event and ck='1' and int_en='1' then
+	if rst = '1' then
+		q <= (others=>'0');
+	else
+		q <= d;
+	end if;
 end if;
-end process;
+end process; 
 
-end architecture behavior; 
+end architecture;

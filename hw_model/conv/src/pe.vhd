@@ -1,102 +1,58 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-use work.fixed_pkg.all; 
-
-
-entity pe is 
-generic( qi : natural:= 8; qf : natural:=8 );
+entity PE is 
+generic( N : natural:= 4;  G : natural:= 7); 
 port(
-		ck 			: in std_logic; 
-		rstn		: in std_logic; 
-		ld_v 		: in std_logic;
-		ld_h 		: in std_logic; 
-		sel			: in std_logic;
-		weight		: in sfixed(qi-1 downto -qf);
-		pe_right 	: in sfixed(qi-1 downto -qf);
-		pe_bottom	: in sfixed(qi-1 downto -qf);
-		pe_top		: out sfixed(qi-1 downto -qf);
-		pe_left		: out sfixed(qi-1 downto -qf);
-		omap		: out sfixed(qi-1 downto -qf));
-		
-end entity; 
+	ck : in std_logic;
+	rst: in std_logic; 
+	en	: in std_logic;
+	k  : in std_logic;
+	i_data: in signed(N-1 downto 0);
+	o_data: out signed(N-1+G downto 0));
+end entity;
 
+architecture structure of PE is
 
+signal int_en : std_logic;
 
-
-architecture structure of pe is
-
-
-
-
-component adder
-generic ( qi : natural:= 8; qf : natural:= 8 );
-port (
-			a, b 	: in 	sfixed(qi-1 downto -qf);
-		--	cin 	: in  std_logic;
-			res	: out sfixed(qi-1 downto -qf);
-			cout : out std_logic);
-end component; 
-
-component multiplier
-generic ( qi : natural:= 8; qf : natural:= 8 );
-port (
-			a, b 	: in 	sfixed(qi-1 downto -qf);
-			res	: out sfixed(2*qi-1 downto -2*qf));
-end component;
-
-component regn
-generic ( qi : natural:= 1; qf : natural:= 15 ) ;	
-port(
-		d 	:	in sfixed(qi-1 downto -qf);
-		ck, 
-		rstn, 
-		en	:	in std_logic;
-		q  :  out sfixed(qi-1 downto -qf));
-end component; 
-
-
-signal d_reg : sfixed(qi-1 downto -qf);
-signal q_reg : sfixed(qi-1 downto -qf);
-
--- fractional scaling Q1.X
-constant nqi : natural := 1; 
-constant nqf : natural := pe_right'length-1; 
-
-signal mpy_a	: sfixed(nqi-1 downto -nqf) ;
-signal mpy_b 	: sfixed(nqi-1 downto -nqf) ; 		
-signal mpy_tmp 	: sfixed(nqi downto -2*nqf) ;		
- 	
--- bit-growth + chopping mpy_res (2*nqf to nqf)
--- NB: truncation yields negative bias error
-
-constant bitg : natural := 2; 
-
-signal mpy_res : sfixed( nqi+bitg -1 downto -nqf ) ;
-signal d_acc   : sfixed( nqi+bitg -1 downto -nqf ) ; 	
-signal q_acc   : sfixed( nqi+bitg -1 downto -nqf ) ; 	
+signal q_im  : signed(N-1 downto 0);
+signal sgnext: signed(N-1+G downto 0); 
+signal d_acc : signed(N-1+G downto 0);
+signal q_acc : signed(N-1+G downto 0);
+signal q_k 	 : std_logic;
 
 begin
+add: 
+entity work.adder_subn 	generic map(N => N+G)
+					port map(
+								a 			=> q_acc, 
+								b 			=> sgnext, 
+								add_subn => q_k, 
+								res 		=> d_acc);
 
-with sel select d_reg <= pe_right when '0', pe_bottom when others; 
+sgnext(N-1+G downto N-1)<= (others=> q_im(q_im'high));
+sgnext(N-1 downto 0)<= q_im;  
 
-regh	: regn			generic map ( qi => nqi, qf => nqf ) port map (d_reg, ck, rstn, ld_h, q_reg);
-regv	: regn			generic map ( qi => nqi, qf => nqf ) port map (d_reg, ck, rstn, ld_v, pe_top);
+int_en <= rst or en; 
 
-mpy_a 	<= 	q_reg; 
-mpy_b 	<= 	weight; 
-mpy_res <=		mpy_tmp( mpy_tmp'high ) & 	
-				mpy_tmp( mpy_tmp'high downto - nqf ) ;
+process(ck,int_en)
+begin
+if ck'event and ck='1' and int_en = '1' then
+	if rst = '1' then
+		q_im 	<= (others=>'0');
+		q_acc <= (others=>'0');
+		q_k 	<= '0';
+	else
+		q_acc <= d_acc;
+		q_im 	<= i_data;
+		q_k 	<= not k;  
+	end if;
+end if;
+end process;
 
-
-mul : multiplier	generic map ( qi => nqi, 	  qf => nqf ) port map (mpy_a, mpy_b, mpy_tmp);
-add	: adder			generic map ( qi => nqi+bitg, qf => nqf ) port map (mpy_res, q_acc, d_acc);
-acc	: regn			generic map ( qi => nqi+bitg, qf => nqf ) port map (d_acc, ck, rstn, '1', q_acc);
-
-
-
-pe_left	<= q_reg; 
-omap 	<= q_acc(nqi+bitg-1 downto -(nqf-bitg)) ;  
+o_data <= q_acc; 
 
 end architecture; 
-
+	

@@ -1,0 +1,161 @@
+# Reading C:/altera/11.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do npu_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\11.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\11.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/regn.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regn
+# -- Compiling architecture behavior of regn
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/fulladder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladder
+# -- Compiling architecture dataflow of fulladder
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/pe.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PE
+# -- Compiling architecture structure of PE
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/adder_subn.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder_subn
+# -- Compiling architecture structure of adder_subn
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/pe_block_param.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package PE_Block_param
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/regfile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package PE_Block_param
+# -- Compiling entity regfile
+# -- Compiling architecture structure of regfile
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/pe_block.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package PE_Block_param
+# -- Compiling entity PE_Block
+# -- Compiling architecture structure of PE_Block
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/main_wrap.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package PE_Block_param
+# -- Compiling entity main_wrap
+# -- Compiling architecture rtl of main_wrap
+# vcom -93 -work work {C:/Users/Antonio/Desktop/npu/shifter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package PE_Block_param
+# -- Compiling entity shifter
+# -- Compiling architecture dataflow of shifter
+# 
+#  
+help
+# Type help <command> to get information on that command, or try one of the following:
+#   commands  List all available commands and topics.
+#   Debugging Lists debugging commands.
+#   Execution Information on controlling execution of the simulation.
+#   Tcl       Information on Tcl commands.
+#   Tk        Information on Tk commands.
+#   incrTcl   Information on incrTcl commands.
+# 
+Tk
+# invalid command name "Tk"
+help Tk
+# See help on these commands:
+#   bell         grab        place               tk_getSaveFile       
+#   bind         grid        radiobutton         tk_menuSetFocus      
+#   bindtags     image       raise               tk_messageBox        
+#   button       label       scale               tk_popup     
+#   canvas       labelframe  scrollbar           tk_textCopy  
+#   checkbutton  listbox     selection           tk_textCut   
+#   clipboard    lower       send                tk_textPaste 
+#   destroy      menu        spinbox             tkwait               
+#   entry        menubutton  text                toplevel     
+#   event        message     tk                  update               
+#   focus        option      tk_chooseColor      winfo                
+#   font         pack        tk_chooseDirectory  wm              
+#   frame        panedwindow tk_getOpenFile     
+# 
+help bell
+# Tk command:  Ring a display's bell.
+# Usage: bell [-displayof <window>]
+help text
+# Tk command:  Create and manipulate text widgets
+# Usage: text <pathName> [<options>]
+help canvas
+# Tk command:  Create and manipulate canvas widgets.
+# Usage: canvas <pathName> [<options>]
+help
+# Type help <command> to get information on that command, or try one of the following:
+#   commands  List all available commands and topics.
+#   Debugging Lists debugging commands.
+#   Execution Information on controlling execution of the simulation.
+#   Tcl       Information on Tcl commands.
+#   Tk        Information on Tk commands.
+#   incrTcl   Information on incrTcl commands.
+# 
+help Tcl
+# See help on these commands:
+#   after       fcopy      load       seek           vwait    
+#   append      file       lrange     set            while    
+#   array       fileevent  lreplace   socket         
+#   bgerror     flush      lsearch    source   	   
+#   binary      for        lset       split    	   
+#   break       foreach    lsort      string         
+#   catch       format     msgcat     subst           
+#   cd          gets       namespace  switch         
+#   clock       glob       open       tcl_endOfWord           
+#   close       global     package    tcl_findLibrary         
+#   concat      history    parray     tcl_startOfNextWord     
+#   continue    http       pid        tcl_startOfPreviousWord  
+#   dde         if         proc       tcl_wordBreakAfter             
+#   encoding    incr       puts       tcl_wordBreakBefore            
+#   eof         info       pwd        tell        	           
+#   error       interp     read       time        	           
+#   eval        join       regexp     trace       	           
+#   exec        lappend    registry   unset                          
+#   exit        lindex     regsub     update                   
+#   expr        linsert    rename     uplevel                  
+#   fblocked    list       return     upvar                    
+#   fconfigure  llength    scan       variable                
+# 
+help join
+# Tcl command:  Create a string by joining together list elements.
+# Usage: join list [joinString]
