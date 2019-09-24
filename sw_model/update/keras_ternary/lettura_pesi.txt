@@ -1,3 +1,0 @@
-kernel = lenet.layers[0].get_weights()
-kernel = kernel[0].reshape(5,5,6)
-kernel0 = kernel[:,:,0]

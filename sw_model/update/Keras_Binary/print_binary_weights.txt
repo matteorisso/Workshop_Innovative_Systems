@@ -1,5 +1,0 @@
-a=binarize(lenet.layers[0].kernel, H=1.)
-import tensorflow as tf
-with tf.Session() as sess:
-    sess.run(tf.initialize_all_variables())
-    print (sess.run(a))
