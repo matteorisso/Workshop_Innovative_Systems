@@ -1,0 +1,482 @@
+m255
+K3
+13
+cModel Technology
+dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\wallace
+Eadder
+Z0 w1568967631
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm13
+Z5 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/adder.vhd
+Z6 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/adder.vhd
+l0
+L5
+VfT`HUaRP3zl:>><:ReNb^3
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1568985335.853000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/adder.vhd|
+Z10 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/adder.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 4lTU<EAHRiUWd54Z6H^G13
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 5 adder 0 22 fT`HUaRP3zl:>><:ReNb^3
+l16
+L15
+V;UHmil4eH9K_bBn`9kd=J2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 RD[gEfdjWmnGEoP9DI4`Q2
+!i10b 1
+Ebatch_norm
+Z13 w1568968697
+R1
+R2
+R3
+R4
+Z14 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm.vhd
+Z15 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm.vhd
+l0
+L5
+VKR6]?4QjHM6NbjJ_Ek>N03
+R7
+32
+Z16 !s108 1568985336.776000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm.vhd|
+Z18 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm.vhd|
+R11
+R12
+!s100 5[GWhEm77ieBOgEj<KnOg3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 10 batch_norm 0 22 KR6]?4QjHM6NbjJ_Ek>N03
+l77
+L19
+V7RCn:fDSPUT:O=I`R;ooX3
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 iY?aB2HkAh?J9P0gco1:W3
+!i10b 1
+Ebatch_norm_fsm
+Z19 w1567417681
+R1
+R2
+R3
+R4
+Z20 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_fsm.vhd
+Z21 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_fsm.vhd
+l0
+L5
+VXg^4zKM`8SPTJQSHnGl;93
+R7
+32
+Z22 !s108 1568985336.141000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_fsm.vhd|
+Z24 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_fsm.vhd|
+R11
+R12
+!s100 :nU<5AZi`jh@bgk?i1zUY2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 14 batch_norm_fsm 0 22 Xg^4zKM`8SPTJQSHnGl;93
+l30
+L24
+Va>6mh^8X?nL0idmNef?[h3
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 Qej:]96cJnBIWe7o=OZ6;2
+!i10b 1
+Ebatch_norm_pe
+Z25 w1568970804
+R1
+R2
+R3
+R4
+Z26 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_pe.vhd
+Z27 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_pe.vhd
+l0
+L5
+V]M=fdo2U5>i64eXN`AknN3
+R7
+32
+Z28 !s108 1568985336.445000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_pe.vhd|
+Z30 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/batch_norm_pe.vhd|
+R11
+R12
+!s100 iX1h>2SUU]H1zBlmT`KRG1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 13 batch_norm_pe 0 22 ]M=fdo2U5>i64eXN`AknN3
+l86
+L25
+Vz8T>0[PVQ<RikH;e1gkYR2
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 Yba5Ho]`Pho:7Pg2Uz`g?2
+!i10b 1
+Efull_adder
+Z31 w1567002687
+R2
+R3
+R4
+Z32 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/full_adder.vhd
+Z33 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/full_adder.vhd
+l0
+L4
+VX7gfVUIRFak]IRY3H`?=j1
+R7
+32
+Z34 !s108 1568985334.193000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/full_adder.vhd|
+Z36 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/full_adder.vhd|
+R11
+R12
+!s100 5ETOfLUcP[bjNh4^<kUGz3
+!i10b 1
+Astructure
+R2
+R3
+DEx4 work 10 full_adder 0 22 X7gfVUIRFak]IRY3H`?=j1
+l30
+L14
+V=Ho:5zNFFP;LRhI]QfQB50
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 X_LJ@iWYWF`:cjol:>bGP1
+!i10b 1
+Egeneric_mux2to1
+Z37 w1567253972
+R1
+R2
+R3
+R4
+Z38 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_mux2to1.vhd
+Z39 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_mux2to1.vhd
+l0
+L5
+VeCh=5;f^GOC=b3dImZZdb2
+R7
+32
+Z40 !s108 1568985335.303000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_mux2to1.vhd|
+Z42 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_mux2to1.vhd|
+R11
+R12
+!s100 ZLF7GJ8Z9Jh>4mM_EM09F2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 generic_mux2to1 0 22 eCh=5;f^GOC=b3dImZZdb2
+l19
+L17
+VS8[XBK`CT`AilzL]UeTiX2
+R7
+32
+R40
+R41
+R42
+R11
+R12
+!s100 YQ=``jYi`zQR7O97iIWEP1
+!i10b 1
+Egeneric_register
+Z43 w1567241577
+R1
+R2
+R3
+R4
+Z44 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_register.vhd
+Z45 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_register.vhd
+l0
+L5
+VJAG9?z39f4>mmN0AJUkG71
+R7
+32
+Z46 !s108 1568985335.612000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_register.vhd|
+Z48 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/generic_register.vhd|
+R11
+R12
+!s100 mk>:`zNP8HT^9A1KdC><C3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 16 generic_register 0 22 JAG9?z39f4>mmN0AJUkG71
+l20
+L18
+VSg;KLR>P0]l^Kk@bNO4lb3
+R7
+32
+R46
+R47
+R48
+R11
+R12
+!s100 h]D<cF968g^Y9DoCjUk912
+!i10b 1
+Ehalf_adder
+Z49 w1567002360
+R2
+R3
+R4
+Z50 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/half_adder.vhd
+Z51 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/half_adder.vhd
+l0
+L4
+VlME8G]o;;1LolC@@kYX0m3
+R7
+32
+Z52 !s108 1568985333.864000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/half_adder.vhd|
+Z54 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/half_adder.vhd|
+R11
+R12
+!s100 [C<hVOJL=5c@FmSL9_B^i2
+!i10b 1
+Astructure
+R2
+R3
+DEx4 work 10 half_adder 0 22 lME8G]o;;1LolC@@kYX0m3
+l15
+L13
+VFd:7SUDmj0`[Ll7>b[Ihz0
+R7
+32
+R52
+R53
+R54
+R11
+R12
+!s100 `k8l;HdH[:fTFY3:M7GU>2
+!i10b 1
+Erelu_4bit
+Z55 w1568968681
+R1
+R2
+R3
+R4
+Z56 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/relu_4bit.vhd
+Z57 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/relu_4bit.vhd
+l0
+L5
+V_>M:722=>>H<389VSa3HE2
+R7
+32
+Z58 !s108 1568985337.096000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/relu_4bit.vhd|
+Z60 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/relu_4bit.vhd|
+R11
+R12
+!s100 H`W7m3dAo8X]BlmBK^nT51
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 9 relu_4bit 0 22 _>M:722=>>H<389VSa3HE2
+l25
+L14
+VNknXI6NGB?]472ZQcb;0l1
+!s100 S66?Ade[kHnPakN^1n1EK0
+R7
+32
+R58
+R59
+R60
+R11
+R12
+!i10b 1
+Etb_batch_norm
+Z61 w1568985328
+R1
+R2
+R3
+R4
+Z62 8D:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm13\tb_batch_norm.vhd
+Z63 FD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm13\tb_batch_norm.vhd
+l0
+L5
+VN3LP^Q77<@CnZ6GeUhHzn3
+!s100 Yl908L3^40C6F<PQXUDj22
+R7
+32
+!i10b 1
+Z64 !s108 1568985337.436000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm13\tb_batch_norm.vhd|
+Z66 !s107 D:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm13\tb_batch_norm.vhd|
+R11
+R12
+Atest
+R1
+R2
+R3
+Z67 DEx4 work 13 tb_batch_norm 0 22 N3LP^Q77<@CnZ6GeUhHzn3
+l31
+L9
+V<PEYCG8j7P6MKjGmROM[72
+!s100 L_LLPb;JM`nLT7g=DJ6:40
+R7
+32
+!i10b 1
+R64
+R65
+R66
+R11
+R12
+Ewallace
+Z68 w1568965568
+Z69 DPx4 work 12 wallace_func 0 22 K?<YTJWe=KP<GYY6GRf[[3
+R2
+R3
+R4
+Z70 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace.vhd
+Z71 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace.vhd
+l0
+L6
+Vj[Xz:VF;2lHbQCIlgMQA80
+R7
+32
+Z72 !s108 1568985334.963000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace.vhd|
+Z74 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace.vhd|
+R11
+R12
+!s100 HDeT9Lk_0H]^@[7Y_aFn@1
+!i10b 1
+Astructure
+R69
+R2
+R3
+DEx4 work 7 wallace 0 22 j[Xz:VF;2lHbQCIlgMQA80
+l71
+L16
+VEM;37dQ^Wjd9DX:1>i3@l3
+R7
+32
+R72
+R73
+R74
+R11
+R12
+!s100 ^4m6Nc7e`Dm7=>zl?GMmL2
+!i10b 1
+Ewallace_and_matrix
+Z75 w1568729872
+R69
+R2
+R3
+R4
+Z76 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_and_matrix.vhd
+Z77 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_and_matrix.vhd
+l0
+L6
+V3zI7<N69H;gdM7^Zc7[f@1
+R7
+32
+Z78 !s108 1568985334.456000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_and_matrix.vhd|
+Z80 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_and_matrix.vhd|
+R11
+R12
+!s100 <O1L[XIHG3G;l=b6`zaKF1
+!i10b 1
+Astructure
+R69
+R2
+R3
+DEx4 work 18 wallace_and_matrix 0 22 3zI7<N69H;gdM7^Zc7[f@1
+l18
+L16
+V?gO1aljdmOBB008Siz]3<0
+R7
+32
+R78
+R79
+R80
+R11
+R12
+!s100 DbgK^EDPWzzDB24`aRGBc1
+!i10b 1
+Pwallace_func
+R2
+R3
+Z81 w1568812085
+R4
+Z82 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_func.vhd
+Z83 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_func.vhd
+l0
+L4
+VK?<YTJWe=KP<GYY6GRf[[3
+R7
+32
+b1
+Z84 !s108 1568985333.618000
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_func.vhd|
+Z86 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm13/wallace_func.vhd|
+R11
+R12
+!s100 BkfMdB;:AJ6B9d6kZh:^K3
+!i10b 1
+Bbody
+R69
+R2
+R3
+l0
+L19
+VfSz71@TH[HfV^zbO?]dMd2
+R7
+32
+R84
+R85
+R86
+R11
+R12
+nbody
+!s100 ^C<31EKRaNOYjcEmcVO1D3
+!i10b 1
