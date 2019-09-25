@@ -7,14 +7,14 @@ use work.param.all;
 entity mem is
 generic( H : natural:= 32/WL*32 ; WL : natural := WL); 
 port( 
-		ck 		: in std_logic;
-		cs 		: in std_logic; 
-		rd			: in std_logic;
-		wr		 	: in std_logic;
-		rd_addr 	: in unsigned(7 downto 0);
-		wr_addr 	: in unsigned(7 downto 0);
-		i_data	: in signed(WL-1 downto 0); 
-		o_data 	: out signed(WL-1 downto 0)); 
+		ck 		: in 	std_logic;
+		cs 		: in 	std_logic; 
+		rd		: in 	std_logic;
+		wr		: in 	std_logic;
+		rd_addr : in 	unsigned(7 downto 0);
+		wr_addr : in 	unsigned(7 downto 0);
+		i_data	: in 	signed(WL-1 downto 0); 
+		o_data 	: out 	signed(WL-1 downto 0)); 
 end entity;
 
 architecture beh of mem is
@@ -24,7 +24,6 @@ signal mem: mem_type := (others => (others => '0'));
 
 begin
 
--- synchronous write op
 wr_proc: process(ck)
 begin
 if (ck'event and ck = '1') then
@@ -34,7 +33,6 @@ if (ck'event and ck = '1') then
 end if; 
 end process; 
 
--- synchronous read op
 rd_proc: process(ck) 
 begin
 if (ck'event and ck = '1') then

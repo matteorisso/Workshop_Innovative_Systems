@@ -9,26 +9,26 @@ end entity;
 
 architecture test of tb_fsm is 
 
-signal ck_tb 	: std_logic;
-signal rst_tb 	: std_logic; 
-signal start_tb : std_logic; 
-signal done_tb  : std_logic; 
+signal ck_tb 	      : std_logic;
+signal rst_tb 	      : std_logic; 
+signal start_tb       : std_logic; 
+signal done_tb  	  : std_logic; 
 
 
-signal int_tc_rd		: std_logic;
-signal int_tc_wr 		: std_logic;
-signal int_tc_vmode	: std_logic; 
-signal int_tc_res 	: std_logic;
-signal int_tc_tilev 	: std_logic;
-signal int_tc_tilec 	: std_logic;
+signal int_tc_rd      : std_logic;
+signal int_tc_wr      : std_logic;
+signal int_tc_vmode	  : std_logic; 
+signal int_tc_res     : std_logic;
+signal int_tc_tilev   : std_logic;
+signal int_tc_tilec   : std_logic;
 
-signal int_en_rd_ptr	 : std_logic;
-signal int_en_wr_ptr	 : std_logic; 
+signal int_en_rd_ptr  : std_logic;
+signal int_en_wr_ptr  : std_logic; 
 signal int_en_res_ptr : std_logic; 
 
-signal i_kernel_tb : std_logic:= '0';
-signal i_data_tb 	 : RFRowData;
-signal o_data_tb	 : PEResData; 
+signal i_kernel_tb    : std_logic:= '0';
+signal i_data_tb      : RFRowData;
+signal o_data_tb      : PEResData; 
 
 begin
 
@@ -80,14 +80,14 @@ end process;
 
 cu: 
 entity work.conv_fsm port map (
-	ck	 			=> ck_tb, 
-	rst 			=> rst_tb,
+	ck	 		=> ck_tb, 
+	rst 		=> rst_tb,
 	start 		=> start_tb,
 	TC_WR 		=> int_tc_wr, 
-	TC_HMODE		=> int_tc_rd,
-	TC_VMODE		=> int_tc_vmode,
-	TC_RES  		=> int_tc_res,
-	TC_TILEV		=> int_tc_tilev, 
+	TC_HMODE	=> int_tc_rd,
+	TC_VMODE	=> int_tc_vmode,
+	TC_RES      => int_tc_res,
+	TC_TILEV    => int_tc_tilev, 
 	TC_TILEC 	=> int_tc_tilec,
 	EN_RD_PTR  	=> int_en_rd_ptr,
 	EN_WR_PTR  	=> int_en_wr_ptr,
@@ -96,13 +96,13 @@ entity work.conv_fsm port map (
 					
 dp: 
 entity work.main port map (
-	ck	 			=> ck_tb, 
-	rst 			=> rst_tb,
+	ck	 		=> ck_tb, 
+	rst 		=> rst_tb,
 	TC_WR 		=> int_tc_wr, 
-	TC_HMODE		=> int_tc_rd,
-	TC_VMODE		=> int_tc_vmode,
-	TC_RES  		=> int_tc_res,
-	TC_TILEV		=> int_tc_tilev, 
+	TC_HMODE	=> int_tc_rd,
+	TC_VMODE	=> int_tc_vmode,
+	TC_RES  	=> int_tc_res,
+	TC_TILEV	=> int_tc_tilev, 
 	TC_TILEC 	=> int_tc_tilec,
 	EN_RD_PTR  	=> int_en_rd_ptr,
 	EN_WR_PTR  	=> int_en_wr_ptr,
@@ -110,4 +110,5 @@ entity work.main port map (
 	i_kernel 	=> i_kernel_tb,
 	i_data 		=> i_data_tb,
 	o_data 		=> o_data_tb);
+	
 end architecture; 

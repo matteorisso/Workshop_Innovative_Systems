@@ -4,15 +4,14 @@ use ieee.numeric_std.all;
 
 use work.param.all;
 
-entity shift5p is
-generic ( W : natural:= W ; WL : natural:= WL ; N : natural:= N );
+entity mux5to1 is
 port(
-		sel 	 : in unsigned(2 downto 0); 
-      i_data : in  RFRowData;
-		o_data : out PERowData);
+	i_data	: in 	RFRowData;
+	sel 	: in 	unsigned(2 downto 0); 
+    o_data 	: out 	PERowData);
 end entity;
 
-architecture dataflow of shift5p is
+architecture dataflow of mux5to1 is
 begin
 
 process(i_data,sel)
