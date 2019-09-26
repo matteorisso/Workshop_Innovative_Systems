@@ -7,13 +7,13 @@ use work.param.all;
 
 entity weight_buffer is --wrapper
 port( 
-		ck 		: in std_logic;
-		rst		: in std_logic;
+		ck 			: in std_logic;
+		rst			: in std_logic;
 		cs			: in std_logic;
 		rd			: in std_logic;
-		vmode_ptr: in unsigned(clog2K-1 downto 0);
-		hmode_ptr: in unsigned(clog2K-1 downto 0);
-		o_data 	: out std_logic);
+		vmode_ptr	: in unsigned(clog2K-1 downto 0);
+		hmode_ptr	: in unsigned(clog2K-1 downto 0);
+		o_data 		: out std_logic);
 end entity;
 
 architecture rtl of weight_buffer is
@@ -31,13 +31,18 @@ begin
 process(ck,rst)
 begin
 if rst = '1' then
+
 	o_data <= '0';
+	
 elsif (ck'event and ck = '1') then
+	
 	if ( cs = '1' and rd = '1') then
+	
 		o_data <= reg(to_integer(vmode_ptr))(to_integer(hmode_ptr)); 
 	end if;
+	
 end if;
-
 end process; 
+
 end architecture;
 

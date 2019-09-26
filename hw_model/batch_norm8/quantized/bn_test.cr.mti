@@ -1,0 +1,163 @@
+D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/full_adder.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/full_adder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_adder
+-- Compiling architecture structure of full_adder
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_fourth_level.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_fourth_level.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package dadda_func
+-- Compiling entity dadda_fourth_level
+-- Compiling architecture structure of dadda_fourth_level
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_first_level.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_first_level.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package dadda_func
+-- Compiling entity dadda_first_level
+-- Compiling architecture structure of dadda_first_level
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_and_matrix.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_and_matrix.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package dadda_func
+-- Compiling entity dadda_and_matrix
+-- Compiling architecture structure of dadda_and_matrix
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_register.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_register.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity generic_register
+-- Compiling architecture behavior of generic_register
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/tb_batch_norm.vhd {1 {vcom -work work_bn -2002 -explicit {D:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\batch_norm\quantized\tb_batch_norm.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_batch_norm
+-- Compiling architecture test of tb_batch_norm
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/adder_dadda.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/adder_dadda.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package dadda_func
+-- Compiling entity adder_dadda
+-- Compiling architecture behavior of adder_dadda
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/relu_4bit.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/relu_4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity relu_4bit
+-- Compiling architecture structure of relu_4bit
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_third_level.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_third_level.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package dadda_func
+-- Compiling entity dadda_third_level
+-- Compiling architecture structure of dadda_third_level
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity batch_norm
+-- Compiling architecture structure of batch_norm
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package dadda_func
+-- Compiling entity dadda
+-- Compiling architecture structure of dadda
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/half_adder.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/half_adder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity half_adder
+-- Compiling architecture structure of half_adder
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/adder.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/adder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package dadda_func
+-- Compiling entity adder
+-- Compiling architecture behavior of adder
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_pe.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_pe.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity batch_norm_pe
+-- Compiling architecture structure of batch_norm_pe
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_fsm.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/batch_norm_fsm.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity batch_norm_fsm
+-- Compiling architecture behavior of batch_norm_fsm
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_mux2to1.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/generic_mux2to1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity generic_mux2to1
+-- Compiling architecture behavior of generic_mux2to1
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_second_level.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_second_level.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package dadda_func
+-- Compiling entity dadda_second_level
+-- Compiling architecture structure of dadda_second_level
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_func.vhd {1 {vcom -work work_bn -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_norm/quantized/dadda/dadda_func.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package dadda_func
+-- Compiling package body dadda_func
+-- Loading package dadda_func
+
+} {} {}}

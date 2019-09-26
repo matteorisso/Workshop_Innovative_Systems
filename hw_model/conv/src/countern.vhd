@@ -16,20 +16,17 @@ end entity;
 
 architecture beh of countern is
 
-signal int_en  : std_logic;
 signal cnt_out : unsigned(N-1 downto 0):= (others => '0'); 
 signal terminal_cnt : std_logic; 
 
 begin
-int_en <= rst or en;
 
-p1: process(ck, int_en)
+p1: process(ck, en, rst)
 begin
-if ( ck'event and ck='1' ) and int_en = '1' then
-	if rst = '1' then      
-		cnt_out 			<= (others=>'0'); 
-		terminal_cnt 	<= '0'; 
-   else
+if rst = '1' then
+	cnt_out 		 <= (others => '0');
+	terminal_cnt <= '0';
+elsif ( ck'event and ck='1' ) and en = '1' then
 		if terminal_cnt = '0'  then
 				if ( cnt_out = arv-1) then     		
 						terminal_cnt <= '1';
@@ -39,7 +36,6 @@ if ( ck'event and ck='1' ) and int_en = '1' then
 				cnt_out 		 	<= (others => '0');                 
 				terminal_cnt	<= '0';                 
 		end if; 
-	end if;
 end if; 
 end process; 
 
