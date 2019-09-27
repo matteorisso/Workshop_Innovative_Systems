@@ -1,0 +1,630 @@
+m255
+K3
+13
+cModel Technology
+dD:\ProgrammiVari\Quartus13
+Eact_scratchpad
+Z0 w1569570477
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\binary_net\fully_connected_1\test_fc
+Z5 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/act_scratchpad.vhd
+Z6 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/act_scratchpad.vhd
+l0
+L9
+VQzm8VCBhJYiD6_1FZzAb^2
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1569583773.450000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/act_scratchpad.vhd|
+Z10 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/act_scratchpad.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 BKIO]^_gQIPRT@^[QhXZf1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 14 act_scratchpad 0 22 Qzm8VCBhJYiD6_1FZzAb^2
+l36
+L22
+V]VWCc:a`BMl<^810Z`e;o0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 ic]G?AOdeM<_J1g;H8IMQ0
+!i10b 1
+Ebatch_table
+Z13 w1569340296
+R1
+R2
+R3
+R4
+Z14 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/batch_table.vhd
+Z15 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/batch_table.vhd
+l0
+L11
+VoE_FHD[G[VR;9O]kQdVXe1
+R7
+32
+Z16 !s108 1569583771.185000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/batch_table.vhd|
+Z18 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/batch_table.vhd|
+R11
+R12
+!s100 6ldPCVYb^CUUSefCkWH]a1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 11 batch_table 0 22 oE_FHD[G[VR;9O]kQdVXe1
+l37
+L22
+V>M37YDiM>Qon>A`hMb3Y@1
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 _6066C26z8X^K2;DfASfo3
+!i10b 1
+Ebn_unit
+Z19 w1569577931
+R1
+R2
+R3
+R4
+Z20 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/bn_unit.vhd
+Z21 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/bn_unit.vhd
+l0
+L8
+V4_Jo_eB>biM2326HHkWOV2
+R7
+32
+Z22 !s108 1569583771.499000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/bn_unit.vhd|
+Z24 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/bn_unit.vhd|
+R11
+R12
+!s100 bfcDj5i`0]1S?`Xgf6VZE3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 7 bn_unit 0 22 4_Jo_eB>biM2326HHkWOV2
+l48
+L23
+Vf7IJEl:?bBj8B`fh0H;=d1
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 SPE1CLB[8b7n>P]1Sac2M3
+!i10b 1
+Ecomparator
+Z25 w1569337397
+R1
+R2
+R3
+R4
+Z26 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/comparator.vhd
+Z27 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/comparator.vhd
+l0
+L7
+V3a<;K@CiLEYJ]BBZSPNJ=1
+R7
+32
+Z28 !s108 1569583771.859000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/comparator.vhd|
+Z30 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/comparator.vhd|
+R11
+R12
+!s100 Ja6z;JEXOo9gJSHFb0K<_0
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 10 comparator 0 22 3a<;K@CiLEYJ]BBZSPNJ=1
+l42
+L21
+V=IDL]D>0;kBDb:>ja09fM3
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 Uo`5MX3Wcb^zolbNV>eOF3
+!i10b 1
+Ecu_1d
+Z31 w1568994310
+R1
+R2
+R3
+R4
+Z32 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_1d.vhd
+Z33 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_1d.vhd
+l0
+L7
+VTZ@8igC8NEGJjXLTdSZVN1
+R7
+32
+Z34 !s108 1569583774.108000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_1d.vhd|
+Z36 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_1d.vhd|
+R11
+R12
+!s100 >n_[E_G>bM`YS>]VQDcT70
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 5 cu_1d 0 22 TZ@8igC8NEGJjXLTdSZVN1
+l19
+L17
+VzzLXEYDZ@7UJ:B5T3gImm0
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 ZFJlN:_zA:To11SIlHi:E0
+!i10b 1
+Ecu_2d
+Z37 w1569054476
+R1
+R2
+R3
+R4
+Z38 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_2d.vhd
+Z39 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_2d.vhd
+l0
+L13
+VmDMCI4:G[IU@c;j:7mHQF3
+R7
+32
+Z40 !s108 1569583774.463000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_2d.vhd|
+Z42 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/cu_2d.vhd|
+R11
+R12
+!s100 gLm5@G_bOz=m<=S=JH=L>3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 5 cu_2d 0 22 mDMCI4:G[IU@c;j:7mHQF3
+l56
+L31
+VDg5S4_mmNC8F=8JN:3el<2
+R7
+32
+R40
+R41
+R42
+R11
+R12
+!s100 Q[DRHSIBld0nm1=dz9A2b3
+!i10b 1
+Efc_eu
+Z43 w1569594914
+R1
+R2
+R3
+R4
+Z44 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_eu.vhd
+Z45 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_eu.vhd
+l0
+L12
+V3YCl^4B7;KFAIQ46Tf<>]3
+!s100 ]X9HjN[U[5O6W;l7GN<5g2
+R7
+32
+!i10b 1
+Z46 !s108 1569594989.241000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_eu.vhd|
+Z48 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_eu.vhd|
+R11
+R12
+Astructure
+R1
+R2
+R3
+Z49 DEx4 work 5 fc_eu 0 22 3YCl^4B7;KFAIQ46Tf<>]3
+l149
+L38
+V>nnz]ZAfHFflDlNC@iGNI0
+!s100 K;ATXeT=N=gE9EM3GGKZF1
+R7
+32
+!i10b 1
+R46
+R47
+R48
+R11
+R12
+Efc_fsm
+Z50 w1569583668
+R1
+R2
+R3
+R4
+Z51 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_fsm.vhd
+Z52 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_fsm.vhd
+l0
+L5
+V?LGjbalALk6JPL?o5<^6;0
+R7
+32
+Z53 !s108 1569583775.188000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_fsm.vhd|
+Z55 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fc_fsm.vhd|
+R11
+R12
+!s100 RdLo^ed^WTo7l[HVd_8oD3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 6 fc_fsm 0 22 ?LGjbalALk6JPL?o5<^6;0
+l32
+L26
+VH^L5Xn6>IQh<XIG;PMD2a1
+R7
+32
+R53
+R54
+R55
+R11
+R12
+!s100 iVXhEe88^6@KYkOg2BMXG0
+!i10b 1
+Efull_adder
+Z56 w1567002687
+R2
+R3
+R4
+Z57 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/full_adder.vhd
+Z58 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/full_adder.vhd
+l0
+L4
+VX7gfVUIRFak]IRY3H`?=j1
+R7
+32
+Z59 !s108 1569583772.133000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/full_adder.vhd|
+Z61 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/full_adder.vhd|
+R11
+R12
+!s100 5ETOfLUcP[bjNh4^<kUGz3
+!i10b 1
+Astructure
+R2
+R3
+DEx4 work 10 full_adder 0 22 X7gfVUIRFak]IRY3H`?=j1
+l30
+L14
+V=Ho:5zNFFP;LRhI]QfQB50
+R7
+32
+R59
+R60
+R61
+R11
+R12
+!s100 X_LJ@iWYWF`:cjol:>bGP1
+!i10b 1
+Efully_conected
+Z62 w1569579441
+R1
+R2
+R3
+R4
+Z63 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fully_connected.vhd
+Z64 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fully_connected.vhd
+l0
+L7
+VG_MA59PBNCNXWNHP>CEFg3
+R7
+32
+Z65 !s108 1569583775.481000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fully_connected.vhd|
+Z67 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/fully_connected.vhd|
+R11
+R12
+!s100 Wo;dAQnekEkY453=VlRXH3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 14 fully_conected 0 22 G_MA59PBNCNXWNHP>CEFg3
+l80
+L27
+V2VNW?7OmfZnC?[:72hO7]1
+R7
+32
+R65
+R66
+R67
+R11
+R12
+!s100 K22^F=]9I:1cMfz<>0]ZA1
+!i10b 1
+Efully_connected
+Z68 w1569584118
+R1
+R2
+R3
+R4
+R63
+R64
+l0
+L7
+V:fhT]6B37Z5kdRMe`JcIM0
+R7
+32
+Z69 !s108 1569584124.694000
+R66
+R67
+R11
+R12
+!s100 ]?`1fQ:1>nheiDe7VH4H70
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 15 fully_connected 0 22 :fhT]6B37Z5kdRMe`JcIM0
+l80
+L27
+V17IV=HA69_Qkh^4Ti70aU3
+R7
+32
+R69
+R66
+R67
+R11
+R12
+!s100 XcJhETQZk>Y8PXA4?U?UR2
+!i10b 1
+Egeneric_adder
+Z70 w1569570812
+R1
+R2
+R3
+R4
+Z71 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_adder.vhd
+Z72 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_adder.vhd
+l0
+L7
+VKZd15>AgS5i2LmXWckG;^0
+R7
+32
+Z73 !s108 1569583772.484000
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_adder.vhd|
+Z75 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_adder.vhd|
+R11
+R12
+!s100 Q0Y=^@GlzPj3z4g`liCOc3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 13 generic_adder 0 22 KZd15>AgS5i2LmXWckG;^0
+l20
+L19
+V6L_H[mhSc99a52nlC64H`0
+R7
+32
+R73
+R74
+R75
+R11
+R12
+!s100 iSFRj1[KIJh>>IX_c24aQ0
+!i10b 1
+Egeneric_mux2to1
+Z76 w1568994059
+R1
+R2
+R3
+R4
+Z77 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_mux2to1.vhd
+Z78 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_mux2to1.vhd
+l0
+L7
+VeCh=5;f^GOC=b3dImZZdb2
+R7
+32
+Z79 !s108 1569583772.847000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_mux2to1.vhd|
+Z81 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_mux2to1.vhd|
+R11
+R12
+!s100 3:@B4^1TSDcckVWWeYBlg3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 generic_mux2to1 0 22 eCh=5;f^GOC=b3dImZZdb2
+l22
+L20
+VS8[XBK`CT`AilzL]UeTiX2
+R7
+32
+R79
+R80
+R81
+R11
+R12
+!s100 I@VbCKA5nZ;3Sgn9HR[BW0
+!i10b 1
+Egeneric_register
+Z82 w1569055049
+R1
+R2
+R3
+R4
+Z83 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_register.vhd
+Z84 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_register.vhd
+l0
+L8
+VP[4RScPR[KTaK<QCGQ;0`3
+R7
+32
+Z85 !s108 1569583773.155000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_register.vhd|
+Z87 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/generic_register.vhd|
+R11
+R12
+!s100 Wf87RnVLAPnO]z?]_2YdJ2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 16 generic_register 0 22 P[4RScPR[KTaK<QCGQ;0`3
+l24
+L23
+V^2R8j9FXHzEZlT:mcReJR2
+R7
+32
+R85
+R86
+R87
+R11
+R12
+!s100 @^od6Y=fAE4JDUZC7LKg=3
+!i10b 1
+Ehalf_adder
+Z88 w1567002360
+R2
+R3
+R4
+Z89 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/half_adder.vhd
+Z90 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/half_adder.vhd
+l0
+L4
+VlME8G]o;;1LolC@@kYX0m3
+R7
+32
+Z91 !s108 1569583770.944000
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/half_adder.vhd|
+Z93 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/half_adder.vhd|
+R11
+R12
+!s100 [C<hVOJL=5c@FmSL9_B^i2
+!i10b 1
+Astructure
+R2
+R3
+DEx4 work 10 half_adder 0 22 lME8G]o;;1LolC@@kYX0m3
+l15
+L13
+VFd:7SUDmj0`[Ll7>b[Ihz0
+R7
+32
+R91
+R92
+R93
+R11
+R12
+!s100 `k8l;HdH[:fTFY3:M7GU>2
+!i10b 1
+Epopcount
+Z94 w1569007650
+R1
+R2
+R3
+R4
+Z95 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/popcount.vhd
+Z96 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/popcount.vhd
+l0
+L11
+VhAUT[JLKSm7bY49JY[5?I2
+R7
+32
+Z97 !s108 1569583773.802000
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/popcount.vhd|
+Z99 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/popcount.vhd|
+R11
+R12
+!s100 ^_9h<laZ0ChVho4m@0fE;2
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 8 popcount 0 22 hAUT[JLKSm7bY49JY[5?I2
+l61
+L20
+VnES]8cQViokPkELcE0]j<2
+R7
+32
+R97
+R98
+R99
+R11
+R12
+!s100 UzKKHJb0=XcD?[mic`EkE2
+!i10b 1
+Etb_fc
+Z100 w1569593933
+R1
+R2
+R3
+R4
+Z101 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/test_fc/tb_fc.vhd
+Z102 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/test_fc/tb_fc.vhd
+l0
+L5
+V94HIf3=700O^RbWdWD3R`0
+R7
+32
+Z103 !s108 1569593943.108000
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/test_fc/tb_fc.vhd|
+Z105 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/fully_connected_1/test_fc/tb_fc.vhd|
+R11
+R12
+!s100 1L]41^c7J;41z_HFIP?k62
+!i10b 1
+Atest
+R1
+R2
+R3
+DEx4 work 5 tb_fc 0 22 94HIf3=700O^RbWdWD3R`0
+l43
+L9
+Vi>U0H<Sh5_Z2_TMVJdSQ]3
+R7
+32
+R103
+R104
+R105
+R11
+R12
+!s100 IEzd8JD56n=X<nG1Q_7^Y1
+!i10b 1

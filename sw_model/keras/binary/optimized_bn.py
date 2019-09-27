@@ -47,7 +47,7 @@ calcolo a, b, -b/a
 A      = []
 B      = []
 R      = []
-bn_1   = numpy.asarray(Wq[1:5])
+bn_1   = numpy.asarray(Wq[16:20])
 
 for i in bn_1.T:
     A.append(bn_param_reduction(i[0],i[1],i[2],i[3])[0])
@@ -56,7 +56,7 @@ for i in bn_1.T:
 
 bool_A = [booleanize(i) for i in A]
 bool_B = [booleanize(i) for i in B]
-
+'''
 conv = activations['binary_conv2d_1/convolution:0']
 
 
@@ -71,7 +71,7 @@ print(numpy.array_equal(act_f_output,activations['activation_1/sub_1:0']))
           
             
 '''
-
+'''
 B_integer   = [ceil(i) for i in B]
 A_sign      = [sign(i)*1 for i in A]
 

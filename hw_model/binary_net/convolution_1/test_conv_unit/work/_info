@@ -1,0 +1,889 @@
+m255
+K3
+13
+cModel Technology
+dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\binary_net\convolution\test_conv_unit_fsm
+Ebatch_table
+Z0 w1569340296
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\binary_net\convolution\test_conv_unit
+Z5 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/batch_table.vhd
+Z6 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/batch_table.vhd
+l0
+L11
+VoE_FHD[G[VR;9O]kQdVXe1
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1569493142.117000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/batch_table.vhd|
+Z10 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/batch_table.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 6ldPCVYb^CUUSefCkWH]a1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 11 batch_table 0 22 oE_FHD[G[VR;9O]kQdVXe1
+l37
+L22
+V>M37YDiM>Qon>A`hMb3Y@1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 _6066C26z8X^K2;DfASfo3
+!i10b 1
+Ebn_unit
+Z13 w1569483839
+R1
+R2
+R3
+R4
+Z14 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/bn_unit.vhd
+Z15 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/bn_unit.vhd
+l0
+L8
+VlWK1@KVD1PGj>a6i38Xi@2
+R7
+32
+Z16 !s108 1569493142.431000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/bn_unit.vhd|
+Z18 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/bn_unit.vhd|
+R11
+R12
+!s100 TVO>hZ=H?X5Lh62@QYVG_2
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 7 bn_unit 0 22 lWK1@KVD1PGj>a6i38Xi@2
+l67
+L25
+VSQoO[jZO`J50gXClznc9E0
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 hUNAzJ4MV<oS^U6Q<dLR^1
+!i10b 1
+Ecomparator
+Z19 w1569337397
+R1
+R2
+R3
+R4
+Z20 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/comparator.vhd
+Z21 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/comparator.vhd
+l0
+L7
+V3a<;K@CiLEYJ]BBZSPNJ=1
+R7
+32
+Z22 !s108 1569493141.818000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/comparator.vhd|
+Z24 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/comparator.vhd|
+R11
+R12
+!s100 Ja6z;JEXOo9gJSHFb0K<_0
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 10 comparator 0 22 3a<;K@CiLEYJ]BBZSPNJ=1
+l42
+L21
+V=IDL]D>0;kBDb:>ja09fM3
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 Uo`5MX3Wcb^zolbNV>eOF3
+!i10b 1
+Econv_unit
+Z25 w1569488778
+R1
+R2
+R3
+R4
+Z26 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit.vhd
+Z27 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit.vhd
+l0
+L7
+V1b]Rz:Lz@H8a5ZiOni_M83
+R7
+32
+Z28 !s108 1569493143.387000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit.vhd|
+Z30 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit.vhd|
+R11
+R12
+!s100 JhR_Fj<WS=]k4onAWHi^N0
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 9 conv_unit 0 22 1b]Rz:Lz@H8a5ZiOni_M83
+l302
+L53
+VU=XbM2YAhSbZ_eJP3jk632
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 PQlN@bFNf`FB5D1QlaR3k3
+!i10b 1
+Econv_unit_eu
+Z31 w1569491308
+R1
+R2
+R3
+R4
+Z32 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_eu.vhd
+Z33 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_eu.vhd
+l0
+L9
+VR`1EXPD_;1HEG6S=G5>=:2
+R7
+32
+Z34 !s108 1569493142.702000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_eu.vhd|
+Z36 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_eu.vhd|
+R11
+R12
+!s100 m:ZccLEUZ5I_zSD^KFMV]1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 12 conv_unit_eu 0 22 R`1EXPD_;1HEG6S=G5>=:2
+l331
+L117
+V`^GoQ;hzBVPXA[9TJcoAH0
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 B<P;Q:]`X]`S;FDTdcYX^2
+!i10b 1
+Econv_unit_fsm
+Z37 w1569495353
+R1
+R2
+R3
+R4
+Z38 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_fsm.vhd
+Z39 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_fsm.vhd
+l0
+L5
+Vz1ETbKflSmbjz5D93l2IH1
+!s100 XQiUS06LOf:[G:KhUZnCd2
+R7
+32
+!i10b 1
+Z40 !s108 1569495367.447000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_fsm.vhd|
+Z42 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/conv_unit_fsm.vhd|
+R11
+R12
+Abehavior
+R1
+R2
+R3
+Z43 DEx4 work 13 conv_unit_fsm 0 22 z1ETbKflSmbjz5D93l2IH1
+l88
+L82
+V2l6V4ioE?9d[U2YzJ42ab3
+!s100 ;i5NNZK@JM10HmmcGRT4k2
+R7
+32
+!i10b 1
+R40
+R41
+R42
+R11
+R12
+Ecounter5b
+Z44 w1569318271
+R1
+R2
+R3
+R4
+Z45 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/counter5b.vhd
+Z46 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/counter5b.vhd
+l0
+L10
+VlCV@L:f=PbZ2jn^oVG`W]2
+R7
+32
+Z47 !s108 1569493138.881000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/counter5b.vhd|
+Z49 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/counter5b.vhd|
+R11
+R12
+!s100 HIJl5BWd<h0N0hChe@aec0
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 9 counter5b 0 22 lCV@L:f=PbZ2jn^oVG`W]2
+l26
+L24
+V=Zd^a4j7GZH@83S36YjZi1
+R7
+32
+R47
+R48
+R49
+R11
+R12
+!s100 k:ER@??PLAkINHW5EXRLO3
+!i10b 1
+Ecu_1d
+Z50 w1568994310
+R1
+R2
+R3
+R4
+Z51 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_1d.vhd
+Z52 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_1d.vhd
+l0
+L7
+VTZ@8igC8NEGJjXLTdSZVN1
+R7
+32
+Z53 !s108 1569493139.683000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_1d.vhd|
+Z55 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_1d.vhd|
+R11
+R12
+!s100 >n_[E_G>bM`YS>]VQDcT70
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 5 cu_1d 0 22 TZ@8igC8NEGJjXLTdSZVN1
+l19
+L17
+VzzLXEYDZ@7UJ:B5T3gImm0
+R7
+32
+R53
+R54
+R55
+R11
+R12
+!s100 ZFJlN:_zA:To11SIlHi:E0
+!i10b 1
+Ecu_2d
+Z56 w1569054476
+R1
+R2
+R3
+R4
+Z57 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_2d.vhd
+Z58 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_2d.vhd
+l0
+L13
+VmDMCI4:G[IU@c;j:7mHQF3
+R7
+32
+Z59 !s108 1569493139.889000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_2d.vhd|
+Z61 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/cu_2d.vhd|
+R11
+R12
+!s100 gLm5@G_bOz=m<=S=JH=L>3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 5 cu_2d 0 22 mDMCI4:G[IU@c;j:7mHQF3
+l56
+L31
+VDg5S4_mmNC8F=8JN:3el<2
+R7
+32
+R59
+R60
+R61
+R11
+R12
+!s100 Q[DRHSIBld0nm1=dz9A2b3
+!i10b 1
+Efull_adder
+Z62 w1567002687
+R2
+R3
+R4
+Z63 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/full_adder.vhd
+Z64 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/full_adder.vhd
+l0
+L4
+VX7gfVUIRFak]IRY3H`?=j1
+R7
+32
+Z65 !s108 1569493137.595000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/full_adder.vhd|
+Z67 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/full_adder.vhd|
+R11
+R12
+!s100 5ETOfLUcP[bjNh4^<kUGz3
+!i10b 1
+Astructure
+R2
+R3
+DEx4 work 10 full_adder 0 22 X7gfVUIRFak]IRY3H`?=j1
+l30
+L14
+V=Ho:5zNFFP;LRhI]QfQB50
+R7
+32
+R65
+R66
+R67
+R11
+R12
+!s100 X_LJ@iWYWF`:cjol:>bGP1
+!i10b 1
+Egeneric_mux2to1
+Z68 w1568994059
+R1
+R2
+R3
+R4
+Z69 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux2to1.vhd
+Z70 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux2to1.vhd
+l0
+L7
+VeCh=5;f^GOC=b3dImZZdb2
+R7
+32
+Z71 !s108 1569493137.915000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux2to1.vhd|
+Z73 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux2to1.vhd|
+R11
+R12
+!s100 3:@B4^1TSDcckVWWeYBlg3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 generic_mux2to1 0 22 eCh=5;f^GOC=b3dImZZdb2
+l22
+L20
+VS8[XBK`CT`AilzL]UeTiX2
+R7
+32
+R71
+R72
+R73
+R11
+R12
+!s100 I@VbCKA5nZ;3Sgn9HR[BW0
+!i10b 1
+Egeneric_mux5to1
+Z74 w1569321837
+R1
+R2
+R3
+R4
+Z75 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux5to1.vhd
+Z76 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux5to1.vhd
+l0
+L7
+V>j58Blca_kJ7klOOS>6>e0
+R7
+32
+Z77 !s108 1569493138.213000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux5to1.vhd|
+Z79 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_mux5to1.vhd|
+R11
+R12
+!s100 @QQ39>bZnldVodozkSJQm3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 generic_mux5to1 0 22 >j58Blca_kJ7klOOS>6>e0
+l39
+L23
+V6CXmRUHCGVJ^c_YYNFB5l1
+R7
+32
+R77
+R78
+R79
+R11
+R12
+!s100 >JGO9QHn11M[lnP08R`<K0
+!i10b 1
+Egeneric_register
+Z80 w1569055049
+R1
+R2
+R3
+R4
+Z81 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_register.vhd
+Z82 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_register.vhd
+l0
+L8
+VP[4RScPR[KTaK<QCGQ;0`3
+R7
+32
+Z83 !s108 1569493138.448000
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_register.vhd|
+Z85 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/generic_register.vhd|
+R11
+R12
+!s100 Wf87RnVLAPnO]z?]_2YdJ2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 16 generic_register 0 22 P[4RScPR[KTaK<QCGQ;0`3
+l24
+L23
+V^2R8j9FXHzEZlT:mcReJR2
+R7
+32
+R83
+R84
+R85
+R11
+R12
+!s100 @^od6Y=fAE4JDUZC7LKg=3
+!i10b 1
+Ehalf_adder
+Z86 w1567002360
+R2
+R3
+R4
+Z87 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/half_adder.vhd
+Z88 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/half_adder.vhd
+l0
+L4
+VlME8G]o;;1LolC@@kYX0m3
+R7
+32
+Z89 !s108 1569493137.317000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/half_adder.vhd|
+Z91 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/half_adder.vhd|
+R11
+R12
+!s100 [C<hVOJL=5c@FmSL9_B^i2
+!i10b 1
+Astructure
+R2
+R3
+DEx4 work 10 half_adder 0 22 lME8G]o;;1LolC@@kYX0m3
+l15
+L13
+VFd:7SUDmj0`[Ll7>b[Ihz0
+R7
+32
+R89
+R90
+R91
+R11
+R12
+!s100 `k8l;HdH[:fTFY3:M7GU>2
+!i10b 1
+Emux32to1
+Z92 w1569061081
+R1
+R2
+R3
+R4
+Z93 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/mux32to1.vhd
+Z94 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/mux32to1.vhd
+l0
+L7
+Vd6PcoOEJHFN[CTcB4fAYg1
+R7
+32
+Z95 !s108 1569493138.653000
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/mux32to1.vhd|
+Z97 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/mux32to1.vhd|
+R11
+R12
+!s100 nbdo=i4<SFR?oRgCakbKM3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 8 mux32to1 0 22 d6PcoOEJHFN[CTcB4fAYg1
+l19
+L17
+V?<_En7Bd8c8;Vodh5L]842
+R7
+32
+R95
+R96
+R97
+R11
+R12
+!s100 do0hFJe`?4AO8bIBWYb1]0
+!i10b 1
+Epopcount
+Z98 w1569007650
+R1
+R2
+R3
+R4
+Z99 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/popcount.vhd
+Z100 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/popcount.vhd
+l0
+L11
+VhAUT[JLKSm7bY49JY[5?I2
+R7
+32
+Z101 !s108 1569493139.460000
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/popcount.vhd|
+Z103 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/popcount.vhd|
+R11
+R12
+!s100 ^_9h<laZ0ChVho4m@0fE;2
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 8 popcount 0 22 hAUT[JLKSm7bY49JY[5?I2
+l61
+L20
+VnES]8cQViokPkELcE0]j<2
+R7
+32
+R101
+R102
+R103
+R11
+R12
+!s100 UzKKHJb0=XcD?[mic`EkE2
+!i10b 1
+Eregister_file
+Z104 w1569317559
+R1
+R2
+R3
+R4
+Z105 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/register_file.vhd
+Z106 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/register_file.vhd
+l0
+L12
+V13So1JolQ36N^zA8TlfJ`0
+R7
+32
+Z107 !s108 1569493140.111000
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/register_file.vhd|
+Z109 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/register_file.vhd|
+R11
+R12
+!s100 T_fIX1fZHIOPIWE3?B[OZ3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 13 register_file 0 22 13So1JolQ36N^zA8TlfJ`0
+l83
+L39
+VLF8ZC0mIS`Jk@FM6blMk21
+R7
+32
+R107
+R108
+R109
+R11
+R12
+!s100 DS?TIX7L4L[T1[JmQ@WPI0
+!i10b 1
+Erf_controller
+Z110 w1569315477
+R1
+R2
+R3
+R4
+Z111 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_controller.vhd
+Z112 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_controller.vhd
+l0
+L9
+V:V:c<;OW2a@AMXa5SBWoB0
+R7
+32
+Z113 !s108 1569493140.647000
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_controller.vhd|
+Z115 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_controller.vhd|
+R11
+R12
+!s100 lm3X[kkh^<7j8<I;<[UDQ2
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 13 rf_controller 0 22 :V:c<;OW2a@AMXa5SBWoB0
+l25
+L21
+V]b77gkN0:ekLo<W[i6Z:H3
+R7
+32
+R113
+R114
+R115
+R11
+R12
+!s100 6CchCY5F9zjZzcHR@:[iU2
+!i10b 1
+Erf_interface
+Z116 w1569068530
+R1
+R2
+R3
+R4
+Z117 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_interface.vhd
+Z118 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_interface.vhd
+l0
+L12
+V<fojQOIoS4:G;QVMWez[61
+R7
+32
+Z119 !s108 1569493140.407000
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_interface.vhd|
+Z121 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rf_interface.vhd|
+R11
+R12
+!s100 ZYiMKD[^Bdn4RM;:DSH^b1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 12 rf_interface 0 22 <fojQOIoS4:G;QVMWez[61
+l66
+L34
+Vz]El7hT858c1VTgfcm?o83
+R7
+32
+R119
+R120
+R121
+R11
+R12
+!s100 U6H3h1cX@V`Uk<nAYWb<:0
+!i10b 1
+Erfint_mux_controller
+Z122 w1569254067
+R1
+R2
+R3
+R4
+Z123 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rfint_mux_controller.vhd
+Z124 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rfint_mux_controller.vhd
+l0
+L9
+V1EQNJJK<BYP9Lad3?fK][0
+R7
+32
+Z125 !s108 1569493140.975000
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rfint_mux_controller.vhd|
+Z127 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/rfint_mux_controller.vhd|
+R11
+R12
+!s100 iOYD^XfC`d5h=49jdgf4S1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 20 rfint_mux_controller 0 22 1EQNJJK<BYP9Lad3?fK][0
+l23
+L21
+V<_e2ZzdX[ogTejEhG@j530
+R7
+32
+R125
+R126
+R127
+R11
+R12
+!s100 Y2@VTA<9[zDV[cAc6L;=J1
+!i10b 1
+Esipo_reg
+Z128 w1569493054
+R1
+R2
+R3
+R4
+Z129 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/sipo_reg.vhd
+Z130 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/sipo_reg.vhd
+l0
+L7
+VGORiDaJQ9_5J1<QT@e1mU1
+R7
+32
+Z131 !s108 1569493139.156000
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/sipo_reg.vhd|
+Z133 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/sipo_reg.vhd|
+R11
+R12
+!s100 7oN_8jC1o3m]U^6I[:@R02
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 8 sipo_reg 0 22 GORiDaJQ9_5J1<QT@e1mU1
+l24
+L20
+V:]@1NdQlHGMH`IeOQ[Km22
+R7
+32
+R131
+R132
+R133
+R11
+R12
+!s100 EHEEz0J9`3O@:g:5^nQo^1
+!i10b 1
+Esubpage_controller
+Z134 w1569311413
+R1
+R2
+R3
+R4
+Z135 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/subpage_controller.vhd
+Z136 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/subpage_controller.vhd
+l0
+L12
+VcBYD^<L=fPgC@86[Kk_Xf1
+R7
+32
+Z137 !s108 1569493141.238000
+Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/subpage_controller.vhd|
+Z139 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/subpage_controller.vhd|
+R11
+R12
+!s100 N`[0?_?2Pf`5[DmOaJb=L1
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 18 subpage_controller 0 22 cBYD^<L=fPgC@86[Kk_Xf1
+l32
+L26
+VZ?;227[^k4YK2?[WM8GbG1
+R7
+32
+R137
+R138
+R139
+R11
+R12
+!s100 GJ_5A8K3nDHCIiXK;6A]e2
+!i10b 1
+Etb_conv_unit
+Z140 w1569492034
+R1
+R2
+R3
+R4
+Z141 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/test_conv_unit/tb_conv_unit.vhd
+Z142 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/test_conv_unit/tb_conv_unit.vhd
+l0
+L5
+V;M9[DH8:gdBR5ZzeWAe9=1
+R7
+32
+Z143 !s108 1569493143.739000
+Z144 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/test_conv_unit/tb_conv_unit.vhd|
+Z145 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/test_conv_unit/tb_conv_unit.vhd|
+R11
+R12
+!s100 VA6j8Ra@z;7:zT0=O^l2F1
+!i10b 1
+Atest
+R1
+R2
+R3
+DEx4 work 12 tb_conv_unit 0 22 ;M9[DH8:gdBR5ZzeWAe9=1
+l95
+L9
+VL_^WAz[N0>Pi3UG`nFM>`2
+!s100 7WNHCiDQRnV^Dg9g=zo_g0
+R7
+32
+R143
+R144
+R145
+R11
+R12
+!i10b 1
+Ew_scratchpad
+Z146 w1569068509
+R1
+R2
+R3
+R4
+Z147 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/w_scratchpad.vhd
+Z148 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/w_scratchpad.vhd
+l0
+L9
+VDzRCgFff`n`FACgURT9Zi3
+R7
+32
+Z149 !s108 1569493141.550000
+Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/w_scratchpad.vhd|
+Z151 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/convolution/w_scratchpad.vhd|
+R11
+R12
+!s100 Dd1<KA7f:fZ>D@S1ZALRo2
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 12 w_scratchpad 0 22 DzRCgFff`n`FACgURT9Zi3
+l44
+L30
+Vg0Mm<;nf7?=[9;5OdbzL>3
+R7
+32
+R149
+R150
+R151
+R11
+R12
+!s100 3H=nCo:>4o^?]?bYfPzVF3
+!i10b 1
