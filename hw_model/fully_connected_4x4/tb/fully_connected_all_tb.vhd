@@ -181,7 +181,6 @@ begin
 
 	wait for 2 ns;	
 
-	
 	-- read input stimuli from file random_in2.txt
  for j in 0 to 1 loop
  
@@ -201,6 +200,8 @@ begin
      wait for 2 ns;		 
 	
 	end loop;
+	
+     wait for 2 ns;		
 	
 	 	-- writing array of output
 	for i in 0 to 8-1 loop

@@ -8,7 +8,7 @@ Z0 w1569349017
 Z1 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
 Z2 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dC:\Users\Alessandro\Desktop\fully_connected_4x4\sim
+Z4 dC:\Users\Alessandro\Desktop\Workshop\Componenti\fully_connected_4x4\sim
 Z5 8../src/add_sub.vhd
 Z6 F../src/add_sub.vhd
 l0
@@ -16,7 +16,7 @@ L5
 V38U_R_J_o`BLMBP4`I@Fo3
 Z7 OV;C;10.0c;49
 31
-Z8 !s108 1569487346.375000
+Z8 !s108 1569669355.118000
 Z9 !s90 -reportprogress|300|-93|-work|./work|../src/add_sub.vhd|
 Z10 !s107 ../src/add_sub.vhd|
 Z11 o-93 -work ./work -O0
@@ -52,7 +52,7 @@ L6
 VP_ZjT5GZ`7><ho_T=aICc3
 R7
 31
-Z18 !s108 1569487348.703000
+Z18 !s108 1569669357.793000
 Z19 !s90 -reportprogress|300|-93|-work|./work|../src/comparator.vhd|
 Z20 !s107 ../src/comparator.vhd|
 R11
@@ -89,7 +89,7 @@ L6
 VRnAiBEGdaH70G;C5fe?Gl0
 R7
 31
-Z24 !s108 1569487348.312000
+Z24 !s108 1569669357.199000
 Z25 !s90 -reportprogress|300|-93|-work|./work|../src/counter.vhd|
 Z26 !s107 ../src/counter.vhd|
 R11
@@ -124,7 +124,7 @@ L4
 VN^T4RbSoYQjmJl;gb^fJT3
 R7
 31
-Z30 !s108 1569487346.093000
+Z30 !s108 1569669354.758000
 Z31 !s90 -reportprogress|300|-93|-work|./work|../src/fa.vhd|
 Z32 !s107 ../src/fa.vhd|
 R11
@@ -158,7 +158,7 @@ L5
 VoBc96allZSRM^<KZnLJBQ3
 R7
 31
-Z36 !s108 1569487347.078000
+Z36 !s108 1569669356.000000
 Z37 !s90 -reportprogress|300|-93|-work|./work|../src/ff.vhd|
 Z38 !s107 ../src/ff.vhd|
 R11
@@ -194,7 +194,7 @@ L6
 VR:WiK3<eX1kNZ7m?[5S?]3
 R7
 31
-Z43 !s108 1569487350.687000
+Z43 !s108 1569669360.246000
 Z44 !s90 -reportprogress|300|-93|-work|./work|../src/fsm_fully_connected.vhd|
 Z45 !s107 ../src/fsm_fully_connected.vhd|
 R11
@@ -231,7 +231,7 @@ L7
 V:WGOBZ9B<aLXY;mLL_d772
 R7
 31
-Z49 !s108 1569487350.281000
+Z49 !s108 1569669359.934000
 Z50 !s90 -reportprogress|300|-93|-work|./work|../src/fully_connected.vhd|
 Z51 !s107 ../src/fully_connected.vhd|
 R11
@@ -255,7 +255,7 @@ R11
 R12
 !s100 SQBA2CmVd^Z3;K:kk3:Gk0
 Efully_connected_all_tb
-Z52 w1569487317
+Z52 w1569669349
 R40
 Z53 DPx4 ieee 16 std_logic_textio 0 22 nS@;e8VD1o]DCVjBMSZYk3
 R1
@@ -270,7 +270,7 @@ VQR8iXFQeg0]15:^8?c2=21
 !s100 <8`ZeLzl9F0P5FXo:dbH_1
 R7
 31
-Z56 !s108 1569487351.031000
+Z56 !s108 1569669360.856000
 Z57 !s90 -reportprogress|300|-93|-work|./work|../tb/fully_connected_all_tb.vhd|
 Z58 !s107 ../tb/fully_connected_all_tb.vhd|
 R11
@@ -284,8 +284,8 @@ R3
 Z59 DEx4 work 22 fully_connected_all_tb 0 22 QR8iXFQeg0]15:^8?c2=21
 l97
 L16
-VghH9n6Ac^e>l5gT=2bgo71
-!s100 @LbnU6P;GYh8L]>YoR0]h2
+V_?ZMPeZn1@Z>hj4LbDhXI1
+!s100 _z:ZUSPOR=]SEk4E[Sdj>0
 R7
 31
 R56
@@ -306,7 +306,7 @@ L5
 VC[eT;gVE00V5FUOW^SSOI1
 R7
 31
-Z63 !s108 1569487349.047000
+Z63 !s108 1569669358.637000
 Z64 !s90 -reportprogress|300|-93|-work|./work|../src/mux2to1.vhd|
 Z65 !s107 ../src/mux2to1.vhd|
 R11
@@ -340,7 +340,7 @@ L4
 VVfjcUkPN<XX701FVmf`FI2
 R7
 31
-Z69 !s108 1569487349.484000
+Z69 !s108 1569669359.028000
 Z70 !s90 -reportprogress|300|-93|-work|./work|../src/mux_c.vhd|
 Z71 !s107 ../src/mux_c.vhd|
 R11
@@ -373,7 +373,7 @@ L4
 Vzm]ALKP5GQ<]X6FXKCdi?3
 R7
 31
-Z75 !s108 1569487349.812000
+Z75 !s108 1569669359.496000
 Z76 !s90 -reportprogress|300|-93|-work|./work|../src/mux_c2.vhd|
 Z77 !s107 ../src/mux_c2.vhd|
 R11
@@ -410,7 +410,7 @@ R7
 R11
 R12
 !s100 ]MRJ0zT:NP_^j7fm@6<Jj0
-!s108 1569487345.828000
+!s108 1569669354.462000
 !s90 -reportprogress|300|-93|-work|./work|../src/param.vhd|
 !s107 ../src/param.vhd|
 Epe
@@ -426,7 +426,7 @@ L5
 ViP<o]E]z1mAI4fG7>WP@>1
 R7
 31
-Z81 !s108 1569487347.984000
+Z81 !s108 1569669356.746000
 Z82 !s90 -reportprogress|300|-93|-work|./work|../src/pe.vhd|
 Z83 !s107 ../src/pe.vhd|
 R11
@@ -461,7 +461,7 @@ L5
 VHN4NjSaRWTPK=2OB;8Ygl2
 R7
 31
-Z87 !s108 1569487346.734000
+Z87 !s108 1569669355.633000
 Z88 !s90 -reportprogress|300|-93|-work|./work|../src/regn.vhd|
 Z89 !s107 ../src/regn.vhd|
 R11
@@ -496,7 +496,7 @@ L4
 VDZoDAK>=DMC`Nji9[UZW_3
 R7
 31
-Z93 !s108 1569487347.546000
+Z93 !s108 1569669356.390000
 Z94 !s90 -reportprogress|300|-93|-work|./work|../src/sign_ext.vhd|
 Z95 !s107 ../src/sign_ext.vhd|
 R11
