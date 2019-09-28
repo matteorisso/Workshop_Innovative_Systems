@@ -30,7 +30,7 @@ reg:entity work.regfile port map (
 tap: for i in 0 to W-1 generate mux: 
 	entity work.mux5to1	port map (
 		i_data 	=> ss(i), 
-		sel 	=> rd_ptr, 
+		sel 		=> rd_ptr, 
 		o_data 	=> o_data(i));
 		
 end generate; 

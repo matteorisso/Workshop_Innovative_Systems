@@ -19,10 +19,18 @@ signal cprop: std_logic_vector(N downto 0);
 
 begin
 
-faGen:for i in 0 to N-1 generate
+gen: for i in 0 to N-1 generate fai: 
+	entity work.fa port map (
+		a 		=> a(i), 
+		b 		=> notb(i), 
+		c_in 	=> cprop(i), 
+		sum 	=> res(i), 
+		c_out => cprop(i+1));
+	
 	notb(i) <= b(i) xor add_subn; 
-	fai: entity work.fa port map (a => a(i), b => notb(i), c_in => cprop(i), sum => res(i), c_out => cprop(i+1));
+
 end generate; 
+
 c_out 	<= cprop(N);
 cprop(0)	<= add_subn;
  

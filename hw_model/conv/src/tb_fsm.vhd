@@ -11,7 +11,7 @@ architecture test of tb_fsm is
 
 signal ck_tb 	      : std_logic;
 signal rst_tb 	      : std_logic; 
-signal start_tb       : std_logic; 
+signal start_tb      : std_logic; 
 signal done_tb  	  : std_logic; 
 
 
@@ -26,7 +26,7 @@ signal int_en_rd_ptr  : std_logic;
 signal int_en_wr_ptr  : std_logic; 
 signal int_en_res_ptr : std_logic; 
 
-signal i_kernel_tb    : std_logic:= '0';
+signal i_kernel_tb    : std_logic_vector(1 downto 0):= (others=>'0');
 signal i_data_tb      : RFRowData;
 signal o_data_tb      : PEResData; 
 

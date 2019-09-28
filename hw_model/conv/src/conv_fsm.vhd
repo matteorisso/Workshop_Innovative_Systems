@@ -1,3 +1,4 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -99,14 +100,16 @@ done 			<= '0';
 case(ps) is
 when INIT => 
 			EN_WR_PTR 	<= '1';
+		-- ctrl_en_pe  <= '0';
 when HMODE =>
 			EN_RD_PTR 	<= '1'; 
+		--	ctrl_en_pe 	<= '1';
 when VMODE =>  
 		--	CS <= '1';
-		--	RD <= '1'; 
-		-- KERNEL_ROW_PTR 
+		--	RD <= '1'; kernel
 			EN_WR_PTR   <= '1'; 
 when RES =>
+			--	ctrl_en_pe 	<= '0';
 			EN_RES_PTR 	<= '1';
 when EOC => 
 			done <= '1'; 

@@ -24,14 +24,20 @@ begin
 p1: process(ck, en, rst)
 begin
 if rst = '1' then
+
 	cnt_out 		 <= (others => '0');
 	terminal_cnt <= '0';
+	
 elsif ( ck'event and ck='1' ) and en = '1' then
+
 		if terminal_cnt = '0'  then
+				
+				cnt_out <= cnt_out+1;
+				
 				if ( cnt_out = arv-1) then     		
 						terminal_cnt <= '1';
 				end if;
-				cnt_out <= cnt_out+1;
+				
 		else
 				cnt_out 		 	<= (others => '0');                 
 				terminal_cnt	<= '0';                 

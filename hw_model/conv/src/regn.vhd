@@ -7,8 +7,8 @@ generic ( N : natural := 4 );
 port ( 
 		d 		: in signed(N-1 downto 0);
 		ck		: in std_logic; 
-		rst		: in std_logic;
-		en 		: in std_logic; 
+		rst	: in std_logic;
+		en 	: in std_logic; 
 		q 		: out signed(N-1 downto 0));
 end entity;
 

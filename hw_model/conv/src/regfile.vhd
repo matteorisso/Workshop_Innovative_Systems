@@ -21,10 +21,10 @@ rGen: for i in 0 to W-1 generate regi:
 	
 	entity work.regn 	generic map (N => WL) port map (
 		ck 	=> ck, 
-		rst => rst, 
-		en 	=> en(i), 
-		d 	=> i_data, 
-		q 	=> o_data(i)
+		rst 	=> rst, 
+		en	 	=> en(i), 
+		d 		=> i_data, 
+		q 		=> o_data(i)
 	);
 end generate;
 	

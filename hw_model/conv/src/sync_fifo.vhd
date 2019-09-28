@@ -26,7 +26,7 @@ begin
 data_b:
 entity work.data_buffer port map (
 	ck 		=> ck, 
-	rst 	=> rst, 
+	rst 		=> rst, 
 	en 		=> int_mask, 
 	rd_ptr 	=> rd_ptr, 
 	i_data 	=> i_data, 
