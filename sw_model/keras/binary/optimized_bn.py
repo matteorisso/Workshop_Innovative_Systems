@@ -47,7 +47,7 @@ calcolo a, b, -b/a
 A      = []
 B      = []
 R      = []
-bn_1   = numpy.asarray(Wq[16:20])
+bn_1   = numpy.asarray(Wq[1:5])
 
 for i in bn_1.T:
     A.append(bn_param_reduction(i[0],i[1],i[2],i[3])[0])
