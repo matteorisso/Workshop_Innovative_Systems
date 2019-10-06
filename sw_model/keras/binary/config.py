@@ -80,6 +80,6 @@ from build_model import build_model
 from ternary_ops import ternarize
 from binary_ops import binarize
 
-model_path = BinaryNet
-build = lambda : build_model('binary',BinaryNet=True)
+model_path = BinaryConnect
+build = lambda : build_model('ternary',BinaryNet=False)
 qop = lambda x : binarize(x)
