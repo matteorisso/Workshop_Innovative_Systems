@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.param.all;
+use work.globals.all;
 
 entity pe_block is
 port(
@@ -49,3 +49,4 @@ row: for i in 0 to W-1 generate
 end generate;
 
 end architecture;
+

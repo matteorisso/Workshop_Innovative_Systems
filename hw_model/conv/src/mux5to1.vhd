@@ -2,12 +2,12 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.param.all;
+use work.globals.all;
 
 entity mux5to1 is
 port(
 	i_data	: in 	RFRowData;
-	sel 	: in 	unsigned(2 downto 0); 
+	sel 		: in 	unsigned(2 downto 0); 
     o_data 	: out 	PERowData);
 end entity;
 

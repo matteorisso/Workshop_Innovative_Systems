@@ -2,16 +2,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.param.all;
+use work.globals.all;
 
 entity wr_pipe is 
 port( 
-		ck 	 : in  std_logic; 
-		rst 	 : in  std_logic; 
-		EN_RES_PTR : in std_logic; 
-		TC_RES 	  : out std_logic;
-		i_data : in  PEBlockDataRes;
-		o_data : out PEResData);
+		ck 	 				: in  std_logic; 
+		rst 	 				: in  std_logic; 
+		ctrl_en_res_ptr 	: in std_logic; 
+		s_tc_res	 	 		: out std_logic;
+		i_data 				: in  PEBlockDataRes;
+		o_data		 		: out PEResData
+		);
 end entity;
 
 architecture beh of wr_pipe is 
@@ -64,10 +65,10 @@ int_res31 <= i_data(3)(PEResData'length-1-(G+N)*1 downto PEResData'length-(G+N)*
 int_res32 <= i_data(3)(PEResData'length-1-(G+N)*2 downto PEResData'length-(G+N)*3);
 int_res33 <= i_data(3)(PEResData'length-1-(G+N)*3 downto PEResData'length-(G+N)*4);
 
-o_data	<= int_q_reg;
-TC_RES 	<= int_tc_res;
+o_data		<= int_q_reg;
+s_tc_res 	<= int_tc_res;
 
-int_en_res_ptr <= EN_RES_PTR; 
+int_en_res_ptr <= ctrl_en_res_ptr; 
 int_arv_res 	<= to_unsigned(W-1,clog2W); 
 
 res_cnt: 
@@ -92,14 +93,15 @@ end case;
 end process; 
 
 pipe:
-process(ck,int_en_res_ptr)
+process(ck, rst, int_en_res_ptr)
 begin
-if ck'event and ck='1' and int_en_res_ptr='1' then
-	if rst = '1' then
-		int_q_reg <= (others=>'0');
-	else
+if rst = '1' then
+	int_q_reg <= (others=>'0');
+elsif rising_edge(ck) and int_en_res_ptr='1' then
 		int_q_reg <= int_d_reg;
-	end if;
 end if;
 end process;
+ 
+
+
 end architecture; 
