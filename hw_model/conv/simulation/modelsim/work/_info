@@ -1,0 +1,1016 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\11.1\modelsim_ase\altera\vhdl\stratixv_pcie_hip\stratixv_pcie_hip_components
+Eadder_subn
+Z0 w1569358900
+Z1 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+Z2 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Antonio\Desktop\npu\simulation\modelsim
+Z5 8C:/Users/Antonio/Desktop/npu/adder_subn.vhd
+Z6 FC:/Users/Antonio/Desktop/npu/adder_subn.vhd
+l0
+L5
+VCAJ1XAG4eE?JRnH6SNZi11
+Z7 OV;C;10.0c;49
+32
+Z8 !s108 1569366731.387000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/adder_subn.vhd|
+Z10 !s107 C:/Users/Antonio/Desktop/npu/adder_subn.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 KVm]Mij`[4`0:E0?K]Vde3
+Astructure
+Z13 DEx4 work 2 fa 0 22 fn];ozkmIMKT`5Q_2D_U`3
+R1
+R2
+R3
+Z14 DEx4 work 10 adder_subn 0 22 CAJ1XAG4eE?JRnH6SNZi11
+l20
+L15
+VG:[LbbgGPB4;:[3FCm=dh3
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 i3^TQU3ZYGnmWLY3mg0na1
+Eaddr_gen
+Z15 w1569337618
+Z16 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+Z17 DPx4 work 5 param 0 22 15O`YSI9jTmiXi^f@AHPL2
+R1
+R2
+R3
+R4
+Z18 8C:/Users/Antonio/Desktop/npu/addr_gen.vhd
+Z19 FC:/Users/Antonio/Desktop/npu/addr_gen.vhd
+l0
+L7
+VgcWe<FRU693CM6ZO8[0`J1
+R7
+32
+Z20 !s108 1569366731.936000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/addr_gen.vhd|
+Z22 !s107 C:/Users/Antonio/Desktop/npu/addr_gen.vhd|
+R11
+R12
+!s100 1bgAk[LiZBbOXUo>Hno=T1
+Artl
+Z23 DEx4 work 8 countern 0 22 Q9`o46hB]Gz2>LBf8Jn203
+R16
+R17
+R1
+R2
+R3
+Z24 DEx4 work 8 addr_gen 0 22 gcWe<FRU693CM6ZO8[0`J1
+l44
+L22
+VEcT?N<;oZfGS6@V>5>fa?0
+R7
+32
+R20
+R21
+R22
+R11
+R12
+!s100 `^7d>?RSEUFmfNH:HIP5h0
+Econv_fsm
+Z25 w1569278862
+R1
+R2
+R3
+R4
+Z26 8C:/Users/Antonio/Desktop/npu/conv_fsm.vhd
+Z27 FC:/Users/Antonio/Desktop/npu/conv_fsm.vhd
+l0
+L5
+VgCO4Rz><V[7fKJ?agHgRl1
+R7
+32
+Z28 !s108 1569366733.786000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/conv_fsm.vhd|
+Z30 !s107 C:/Users/Antonio/Desktop/npu/conv_fsm.vhd|
+R11
+R12
+!s100 fKnjYzHEXB_j]AzBm8JDT3
+Abeh
+R1
+R2
+R3
+Z31 DEx4 work 8 conv_fsm 0 22 gCO4Rz><V[7fKJ?agHgRl1
+l31
+L26
+VJ@P1K25N>;5Q<_Tk53n9R2
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 KO@do?]BYK<d=f`Z1CCGl2
+Ecore
+Z32 w1569359219
+R16
+R17
+R1
+R2
+R3
+R4
+Z33 8C:/Users/Antonio/Desktop/npu/core.vhd
+Z34 FC:/Users/Antonio/Desktop/npu/core.vhd
+l0
+L7
+VVdHjlHbOia65Mo2dn]1:o2
+R7
+32
+Z35 !s108 1569366735.746000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/core.vhd|
+Z37 !s107 C:/Users/Antonio/Desktop/npu/core.vhd|
+R11
+R12
+!s100 Jdn1L>aXcUlWo2XlPMdSC2
+Artl
+Z38 DEx4 work 8 pe_block 0 22 N`28YI7JUXg?fKB0cHON;0
+Z39 DEx4 work 9 sync_fifo 0 22 ?9S]VnGeYDNjJ]MKi0@W13
+R16
+R17
+R1
+R2
+R3
+Z40 DEx4 work 4 core 0 22 VdHjlHbOia65Mo2dn]1:o2
+l25
+L21
+Vn@17FADQbBfZH_G9Q<D>C1
+R7
+32
+R35
+R36
+R37
+R11
+R12
+!s100 Oc7?L4FNDoK1cCR^;eJHL2
+Ecountern
+Z41 w1569363532
+R1
+R2
+R3
+R4
+Z42 8C:/Users/Antonio/Desktop/npu/countern.vhd
+Z43 FC:/Users/Antonio/Desktop/npu/countern.vhd
+l0
+L6
+VQ9`o46hB]Gz2>LBf8Jn203
+R7
+32
+Z44 !s108 1569366736.674000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/countern.vhd|
+Z46 !s107 C:/Users/Antonio/Desktop/npu/countern.vhd|
+R11
+R12
+!s100 _aGmOJg9^<oL4d1<S5h_32
+Abeh
+R1
+R2
+R3
+R23
+l22
+L17
+VB464VVVX0ejiX9AWU6WWb2
+R7
+32
+R44
+R45
+R46
+R11
+R12
+!s100 B]Ho`PdKI:3nnVCWHTLn]3
+Abehavior
+R1
+R2
+R3
+R23
+l23
+L17
+Vn;T9WbPZzXW@1JQ:D`U6J0
+R7
+32
+R45
+R11
+R12
+w1569168007
+R46
+!s108 1569245446.392000
+!s100 EFVMiMdN:z`nJ71Q`fXG91
+Edata_buffer
+Z47 w1569358144
+R16
+R17
+R1
+R2
+R3
+R4
+Z48 8C:/Users/Antonio/Desktop/npu/data_buffer.vhd
+Z49 FC:/Users/Antonio/Desktop/npu/data_buffer.vhd
+l0
+L7
+VWNNTP__kB_L>9=]L0a15z0
+R7
+32
+Z50 !s108 1569366737.248000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/data_buffer.vhd|
+Z52 !s107 C:/Users/Antonio/Desktop/npu/data_buffer.vhd|
+R11
+R12
+!s100 H[C^NbY3l[1o6aaS23]jW3
+Artl_v1
+Z53 DEx4 work 7 mux5to1 0 22 Z0c6m;V7oeAE^;MO=84]>1
+Z54 DEx4 work 7 regfile 0 22 VUYzjC12=d0MLSePkcE;J3
+R16
+R17
+R1
+R2
+R3
+Z55 DEx4 work 11 data_buffer 0 22 WNNTP__kB_L>9=]L0a15z0
+l21
+L17
+V3jMg@W5UY7VLS0inU_Rhm1
+R7
+32
+R50
+R51
+R52
+R11
+R12
+!s100 ;Y^l@do[n;;>bml=Z_gT?0
+Efa
+Z56 w1568825851
+R2
+R3
+R4
+Z57 8C:/Users/Antonio/Desktop/npu/fa.vhd
+Z58 FC:/Users/Antonio/Desktop/npu/fa.vhd
+l0
+L4
+Vfn];ozkmIMKT`5Q_2D_U`3
+R7
+32
+Z59 !s108 1569366738.641000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/fa.vhd|
+Z61 !s107 C:/Users/Antonio/Desktop/npu/fa.vhd|
+R11
+R12
+!s100 9h?bEk]c[7IgOg<d=hY1i3
+Adataflow
+R2
+R3
+R13
+l15
+L13
+V7DI=OiPnhe8OOz@UA:iG82
+R7
+32
+R59
+R60
+R61
+R11
+R12
+!s100 ;4IPIh;JdlHM7Y@j^d7cN2
+Efifo
+Z62 w1569342476
+R16
+Z63 DPx4 work 5 param 0 22 fSDR;XzBVzH[bfdi3fIN^2
+R1
+R2
+R3
+R4
+Z64 8C:/Users/Antonio/Desktop/npu/FIFO.vhd
+Z65 FC:/Users/Antonio/Desktop/npu/FIFO.vhd
+l0
+L7
+V1iF^nVmdM1Yb7G_[<2=eS2
+R7
+32
+Z66 !s108 1569342498.465000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/FIFO.vhd|
+Z68 !s107 C:/Users/Antonio/Desktop/npu/FIFO.vhd|
+R11
+R12
+!s100 GDY@hoC2?@?0j9BmjX46E1
+Artl
+R16
+R63
+R1
+R2
+R3
+Z69 DEx4 work 4 fifo 0 22 1iF^nVmdM1Yb7G_[<2=eS2
+l37
+L19
+VARAHFLlXU1eK9B_CB4e:i0
+R7
+32
+R66
+R67
+R68
+R11
+R12
+!s100 aaX>N>hO3ZmVa1Bgk@laf0
+Efifo_ptr
+Z70 w1569329137
+R16
+R63
+R1
+R2
+R3
+R4
+Z71 8C:/Users/Antonio/Desktop/npu/FIFO_ptr.vhd
+Z72 FC:/Users/Antonio/Desktop/npu/FIFO_ptr.vhd
+l0
+L7
+VFb8R^A05a>;X80c5o7A3I1
+R7
+32
+Z73 !s108 1569340626.059000
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/FIFO_ptr.vhd|
+Z75 !s107 C:/Users/Antonio/Desktop/npu/FIFO_ptr.vhd|
+R11
+R12
+!s100 7cBGHgKJZ55DiP4j>08az2
+Arlt
+R23
+R16
+R63
+R1
+R2
+R3
+DEx4 work 8 fifo_ptr 0 22 Fb8R^A05a>;X80c5o7A3I1
+l23
+L21
+V`^IcBJI@dX4I<XM@8>UmJ1
+R7
+32
+R73
+R74
+R75
+R11
+R12
+!s100 B2?39YF>ehcName6hZZHh2
+Emain
+Z76 w1569365199
+R16
+R17
+R1
+R2
+R3
+R4
+Z77 8C:/Users/Antonio/Desktop/npu/main.vhd
+Z78 FC:/Users/Antonio/Desktop/npu/main.vhd
+l0
+L7
+VaHLA0Nf_Fa6G^oeZ=bY7C1
+R7
+32
+Z79 !s108 1569366739.664000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/main.vhd|
+Z81 !s107 C:/Users/Antonio/Desktop/npu/main.vhd|
+R11
+R12
+!s100 Vm01jgZ;TR3`P7gJ_HLHh1
+Artl
+R23
+R24
+Z82 DEx4 work 7 wr_pipe 0 22 n?6NLbgXIfIiJ9[BRN?G13
+R40
+Z83 DEx4 work 13 weight_buffer 0 22 XZC7ZF735h2[k3RF]i;9Y1
+R16
+R17
+R1
+R2
+R3
+Z84 DEx4 work 4 main 0 22 aHLA0Nf_Fa6G^oeZ=bY7C1
+l72
+L25
+V1R_9MVL9PW8KTD1B:W8zP2
+R7
+32
+R79
+R80
+R81
+R11
+R12
+!s100 30N?TBJl75C[f[gKo]KmA3
+Emem
+Z85 w1569168181
+R16
+R17
+R1
+R2
+R3
+R4
+Z86 8C:/Users/Antonio/Desktop/npu/mem.vhd
+Z87 FC:/Users/Antonio/Desktop/npu/mem.vhd
+l0
+L7
+VJH7TD@^LBOkKfE@:mXk8F1
+R7
+32
+Z88 !s108 1569366740.590000
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/mem.vhd|
+Z90 !s107 C:/Users/Antonio/Desktop/npu/mem.vhd|
+R11
+R12
+!s100 hAJmP;X92:0jR8SG97FBK2
+Abeh
+R16
+R17
+R1
+R2
+R3
+DEx4 work 3 mem 0 22 JH7TD@^LBOkKfE@:mXk8F1
+l25
+L20
+VK`Hl>GbZRGGERh8S5AGBi1
+R7
+32
+R88
+R89
+R90
+R11
+R12
+!s100 O04WCYgId_h<f=?AZz;gg0
+Emux5to1
+Z91 w1569357509
+R16
+R17
+R1
+R2
+R3
+R4
+Z92 8C:/Users/Antonio/Desktop/npu/mux5to1.vhd
+Z93 FC:/Users/Antonio/Desktop/npu/mux5to1.vhd
+l0
+L7
+VZ0c6m;V7oeAE^;MO=84]>1
+R7
+32
+Z94 !s108 1569366741.518000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/mux5to1.vhd|
+Z96 !s107 C:/Users/Antonio/Desktop/npu/mux5to1.vhd|
+R11
+R12
+!s100 Vab]`?E=RZ3GSH=Tn]]CO1
+Adataflow
+R16
+R17
+R1
+R2
+R3
+R53
+l15
+L14
+VKKb4_NUV0Wg6llHhTF6Hd1
+R7
+32
+R94
+R95
+R96
+R11
+R12
+!s100 0F<iZ[<WXYHJYW:>bSLnU2
+Pparam
+R16
+R1
+R2
+R3
+w1569365765
+R4
+8C:/Users/Antonio/Desktop/npu/param.pkg.vhd
+FC:/Users/Antonio/Desktop/npu/param.pkg.vhd
+l0
+L7
+V15O`YSI9jTmiXi^f@AHPL2
+R7
+32
+R11
+R12
+!s100 _FJ9@@X]QnNNO]SZU5N2o1
+!s108 1569366742.322000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/param.pkg.vhd|
+!s107 C:/Users/Antonio/Desktop/npu/param.pkg.vhd|
+Epe
+Z97 w1569362454
+R16
+R17
+R1
+R2
+R3
+R4
+Z98 8C:/Users/Antonio/Desktop/npu/pe.vhd
+Z99 FC:/Users/Antonio/Desktop/npu/pe.vhd
+l0
+L7
+V?ce0GLSWe1E4c^?:2LT;K1
+R7
+32
+Z100 !s108 1569366742.656000
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/pe.vhd|
+Z102 !s107 C:/Users/Antonio/Desktop/npu/pe.vhd|
+R11
+R12
+!s100 dYEh6b=kRi4nVR8<@ezDD3
+Astructure
+R14
+R16
+R17
+R1
+R2
+R3
+Z103 DEx4 work 2 pe 0 22 ?ce0GLSWe1E4c^?:2LT;K1
+l26
+L18
+VWcCCQ[?hEj5dJkK9o?KQX0
+R7
+32
+R100
+R101
+R102
+R11
+R12
+!s100 H06X;5@[P_7UTWb8^G`dH1
+Epe_block
+Z104 w1569362027
+R16
+R17
+R1
+R2
+R3
+R4
+Z105 8C:/Users/Antonio/Desktop/npu/pe_block.vhd
+Z106 FC:/Users/Antonio/Desktop/npu/pe_block.vhd
+l0
+L7
+VN`28YI7JUXg?fKB0cHON;0
+R7
+32
+Z107 !s108 1569366743.232000
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/pe_block.vhd|
+Z109 !s107 C:/Users/Antonio/Desktop/npu/pe_block.vhd|
+R11
+R12
+!s100 ;KSZ=6OMAo[o4PO0B^T4A2
+Artl
+R103
+R16
+R17
+R1
+R2
+R3
+R38
+l22
+L18
+Vhbk^imPZdZdK@cO@=amN=3
+R7
+32
+R107
+R108
+R109
+R11
+R12
+!s100 Hl29I4KQFdhLB02dJak[l3
+Epebf
+Z110 w1569339361
+R16
+R63
+R1
+R2
+R3
+R4
+Z111 8C:/Users/Antonio/Desktop/npu/PEBF.vhd
+Z112 FC:/Users/Antonio/Desktop/npu/PEBF.vhd
+l0
+L7
+VW?I?<2Qck;RT<63d3_NSH1
+R7
+32
+Z113 !s108 1569340689.700000
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/PEBF.vhd|
+Z115 !s107 C:/Users/Antonio/Desktop/npu/PEBF.vhd|
+R11
+R12
+!s100 inm@nZeN>AZNV8<l?GzFK3
+Artl
+Z116 DEx4 work 7 peblock 0 22 I_O1nPKm67F7hmVHg_mze3
+R69
+R16
+R63
+R1
+R2
+R3
+DEx4 work 4 pebf 0 22 W?I?<2Qck;RT<63d3_NSH1
+l26
+L21
+VZ]:1lX^<KkF5=H39NL2jl0
+R7
+32
+R113
+R114
+R115
+R11
+R12
+!s100 4Ym]0LTSLMPX=a1]Bce=j0
+Epeblock
+Z117 w1569342849
+R16
+R63
+R1
+R2
+R3
+R4
+Z118 8C:/Users/Antonio/Desktop/npu/PEBlock.vhd
+Z119 FC:/Users/Antonio/Desktop/npu/PEBlock.vhd
+l0
+L7
+VI_O1nPKm67F7hmVHg_mze3
+R7
+32
+Z120 !s108 1569342852.491000
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/PEBlock.vhd|
+Z122 !s107 C:/Users/Antonio/Desktop/npu/PEBlock.vhd|
+R11
+R12
+!s100 ]5CE4Ml09W;QODi<dVPTA0
+Astructure
+R16
+R63
+R1
+R2
+R3
+R116
+l32
+L18
+VVL0EHID3ENzoEIHihZ4<>3
+R7
+32
+R120
+R121
+R122
+R11
+R12
+!s100 Sd<mM3>HMOX13D6<N^B?@0
+Eregfile
+Z123 w1569357810
+R16
+R17
+R1
+R2
+R3
+R4
+Z124 8C:/Users/Antonio/Desktop/npu/regfile.vhd
+Z125 FC:/Users/Antonio/Desktop/npu/regfile.vhd
+l0
+L7
+VVUYzjC12=d0MLSePkcE;J3
+R7
+32
+Z126 !s108 1569366743.770000
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/regfile.vhd|
+Z128 !s107 C:/Users/Antonio/Desktop/npu/regfile.vhd|
+R11
+R12
+!s100 >4^0c>Wk=dKFC9;MF1AoZ0
+Astructure
+Z129 DEx4 work 4 regn 0 22 6O700[oD`:@d@CconWShj0
+R16
+R17
+R1
+R2
+R3
+R54
+l18
+L16
+VHoa27V6^aOmP[P1an_bKV0
+R7
+32
+R126
+R127
+R128
+R11
+R12
+!s100 0QcoIenlj?JX]jH3IQ9W81
+Eregn
+Z130 w1569359611
+R1
+R2
+R3
+R4
+Z131 8C:/Users/Antonio/Desktop/npu/regn.vhd
+Z132 FC:/Users/Antonio/Desktop/npu/regn.vhd
+l0
+L5
+V6O700[oD`:@d@CconWShj0
+R7
+32
+Z133 !s108 1569366744.198000
+Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/regn.vhd|
+Z135 !s107 C:/Users/Antonio/Desktop/npu/regn.vhd|
+R11
+R12
+!s100 7227LgW<50;5zi8MMHGF:1
+Abeh
+R1
+R2
+R3
+R129
+l17
+L15
+VbEgiSHTHPeXbMWZCAUMgF3
+R7
+32
+R133
+R134
+R135
+R11
+R12
+!s100 :jkz]GR<Y=PcBY^4j`^Zo3
+Abehavior
+R1
+R2
+R3
+R129
+l19
+L15
+V]F^8J?eA>JXPGVC8^@KDB3
+R7
+32
+R134
+R11
+R12
+w1569168150
+R135
+!s108 1569245456.482000
+!s100 V?ST@:em[6_^JhJRdQ[Td3
+Eshift5p
+Z136 w1569021634
+R16
+R63
+R1
+R2
+R3
+R4
+Z137 8C:/Users/Antonio/Desktop/npu/shift5p.vhd
+Z138 FC:/Users/Antonio/Desktop/npu/shift5p.vhd
+l0
+L7
+VF?HzZN<MZ]Mj>mX;80XJ@2
+R7
+32
+Z139 !s108 1569340632.475000
+Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/shift5p.vhd|
+Z141 !s107 C:/Users/Antonio/Desktop/npu/shift5p.vhd|
+R11
+R12
+!s100 :3Z_1iiEg6N;`WYT4DYWM1
+Adataflow
+R16
+R63
+R1
+R2
+R3
+Z142 DEx4 work 7 shift5p 0 22 F?HzZN<MZ]Mj>mX;80XJ@2
+l16
+L15
+VOj`3Ka4NizFG0B_Y9XQ?>2
+R7
+32
+R139
+R140
+R141
+R11
+R12
+!s100 9;e7b5oPIFNoBNEb;5IZ61
+Eshregfile
+R70
+R16
+R63
+R1
+R2
+R3
+R4
+Z143 8C:/Users/Antonio/Desktop/npu/SHRegFile.vhd
+Z144 FC:/Users/Antonio/Desktop/npu/SHRegFile.vhd
+l0
+L7
+V[dMIiEKo4[5?j2hCFL@T92
+R7
+32
+Z145 !s108 1569340633.261000
+Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/SHRegFile.vhd|
+Z147 !s107 C:/Users/Antonio/Desktop/npu/SHRegFile.vhd|
+R11
+R12
+!s100 D364Y@O11CC9?=3;aXNF_2
+Artl_v1
+R142
+DEx4 work 7 regfile 0 22 2@;GdTbAUVdEOk^Dj=8443
+R16
+R63
+R1
+R2
+R3
+DEx4 work 9 shregfile 0 22 [dMIiEKo4[5?j2hCFL@T92
+l22
+L18
+VUl^6S8OfOg0VP2deig6k61
+R7
+32
+R145
+R146
+R147
+R11
+R12
+!s100 H_VEa^X_ReMUj5m6RVF[I0
+Esync_fifo
+Z148 w1569358182
+R16
+R17
+R1
+R2
+R3
+R4
+Z149 8C:/Users/Antonio/Desktop/npu/sync_fifo.vhd
+Z150 FC:/Users/Antonio/Desktop/npu/sync_fifo.vhd
+l0
+L7
+V?9S]VnGeYDNjJ]MKi0@W13
+R7
+32
+Z151 !s108 1569366744.963000
+Z152 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/sync_fifo.vhd|
+Z153 !s107 C:/Users/Antonio/Desktop/npu/sync_fifo.vhd|
+R11
+R12
+!s100 :iIEFb6TJFJPV1oA@IZfS2
+Artl
+R55
+R16
+R17
+R1
+R2
+R3
+R39
+l25
+L18
+V6`PTeh@f:k[eaEVSA=M`^3
+R7
+32
+R151
+R152
+R153
+R11
+R12
+!s100 V51XZ1mNYK2YYbzL]HZhL0
+Etb_fsm
+Z154 w1569347142
+R16
+R17
+R1
+R2
+R3
+R4
+Z155 8C:/Users/Antonio/Desktop/npu/tb_fsm.vhd
+Z156 FC:/Users/Antonio/Desktop/npu/tb_fsm.vhd
+l0
+L7
+V@O;AM_=>fChZ3LV[ogEPY3
+R7
+32
+Z157 !s108 1569366745.831000
+Z158 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/tb_fsm.vhd|
+Z159 !s107 C:/Users/Antonio/Desktop/npu/tb_fsm.vhd|
+R11
+R12
+!s100 dnD:Fn1JQa9]MmH3elZMY2
+Atest
+R84
+R31
+R16
+R17
+R1
+R2
+R3
+DEx4 work 6 tb_fsm 0 22 @O;AM_=>fChZ3LV[ogEPY3
+l33
+L10
+VL6SkO<AOa3Cif_<MLPi[;0
+R7
+32
+R157
+R158
+R159
+R11
+R12
+!s100 Fjkh@h6FhgXloSnKe6T:81
+Etb_main
+w1569077844
+DPx4 work 5 param 0 22 4C_1[lT]R4>;iJD?XTHYC3
+R1
+R2
+R3
+R4
+R155
+R156
+l0
+L7
+VEHkN`=FEjhhV4kFG@DR?B0
+R7
+32
+R11
+R12
+R158
+R159
+!s100 2P7EM1AP7UFY>8NG9cBR<3
+!s108 1569103114.333000
+Eweight_buffer
+Z160 w1569345299
+R16
+R17
+R1
+R2
+R3
+R4
+Z161 8C:/Users/Antonio/Desktop/npu/weight_buffer.vhd
+Z162 FC:/Users/Antonio/Desktop/npu/weight_buffer.vhd
+l0
+L8
+VXZC7ZF735h2[k3RF]i;9Y1
+R7
+32
+Z163 !s108 1569366746.630000
+Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/weight_buffer.vhd|
+Z165 !s107 C:/Users/Antonio/Desktop/npu/weight_buffer.vhd|
+R11
+R12
+!s100 UCUEG2V3MNdJ:=_8HEm8o3
+Artl
+R16
+R17
+R1
+R2
+R3
+R83
+l29
+L19
+VJe;Y@[>cQ8EL6BV4joW9]0
+!s100 W_7F17N`;5>@kF@6P^b031
+R7
+32
+R163
+R164
+R165
+R11
+R12
+Ewr_pipe
+Z166 w1569340600
+R16
+R17
+R1
+R2
+R3
+R4
+Z167 8C:/Users/Antonio/Desktop/npu/wr_pipe.vhd
+Z168 FC:/Users/Antonio/Desktop/npu/wr_pipe.vhd
+l0
+L7
+Vn?6NLbgXIfIiJ9[BRN?G13
+!s100 B8Ak<N`[XaYjn=Ab^C>Cj2
+R7
+32
+Z169 !s108 1569366748.121000
+Z170 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Antonio/Desktop/npu/wr_pipe.vhd|
+Z171 !s107 C:/Users/Antonio/Desktop/npu/wr_pipe.vhd|
+R11
+R12
+Abeh
+R23
+R16
+R17
+R1
+R2
+R3
+R82
+l45
+L17
+Z172 VA>z]lgiFo`VBIE?QYIL2]2
+Z173 !s100 :03QEEEKUlA6fGka<n@7Y2
+R7
+32
+R169
+R170
+R171
+R11
+R12

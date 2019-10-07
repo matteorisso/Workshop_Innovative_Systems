@@ -1,0 +1,21 @@
+popcnt(A XNOR B)
+
+eg:
+
+A=10010
+B=01111
+
+popcnt(A XNOR B) = popcnt(00010) = 1 = P
+
+scaling : (map 0 to -1 and 1 to +1)
+res = 2P-N = 2*1-5 = -3
+res = #1s-#0s = 1-4 = -3
+
+
+A=110110111
+B=010111010
+
+scaling : (map 0 to -1 and 1 to +1)
+popcnt(A XNOR B) = popcnt(011110010) = 5 = P
+res = 2P-N = 2*5 - 9 = +1
+res = #1s-#0s = 5-4 = +1

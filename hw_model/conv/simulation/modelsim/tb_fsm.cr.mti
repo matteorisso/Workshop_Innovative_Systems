@@ -1,0 +1,215 @@
+C:/Users/Antonio/Desktop/npu/tb_fsm.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/tb_fsm.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity tb_fsm
+-- Compiling architecture test of tb_fsm
+-- Loading entity conv_fsm
+-- Loading entity main
+
+} {} {}} C:/Users/Antonio/Desktop/npu/addr_gen.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/addr_gen.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity addr_gen
+-- Compiling architecture rtl of addr_gen
+-- Loading entity countern
+
+} {} {}} C:/Users/Antonio/Desktop/npu/wr_pipe.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/wr_pipe.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity wr_pipe
+-- Compiling architecture beh of wr_pipe
+-- Loading entity countern
+
+} {} {}} C:/Users/Antonio/Desktop/npu/regfile.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/regfile.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity regfile
+-- Compiling architecture structure of regfile
+-- Loading entity regn
+
+} {} {}} C:/Users/Antonio/Desktop/npu/countern.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/countern.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity countern
+-- Compiling architecture beh of countern
+
+} {} {}} C:/Users/Antonio/Desktop/npu/pe_block.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/pe_block.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity pe_block
+-- Compiling architecture rtl of pe_block
+-- Loading entity PE
+
+} {} {}} C:/Users/Antonio/Desktop/npu/mem.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/mem.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity mem
+-- Compiling architecture beh of mem
+
+} {} {}} C:/Users/Antonio/Desktop/npu/param.pkg.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/param.pkg.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling package param
+
+} {} {}} C:/Users/Antonio/Desktop/npu/weight_buffer.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/weight_buffer.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity weight_buffer
+-- Compiling architecture rtl of weight_buffer
+
+} {} {}} C:/Users/Antonio/Desktop/npu/core.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/core.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity core
+-- Compiling architecture rtl of core
+-- Loading entity sync_fifo
+-- Loading entity pe_block
+
+} {} {}} C:/Users/Antonio/Desktop/npu/conv_fsm.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/conv_fsm.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity conv_fsm
+-- Compiling architecture beh of conv_fsm
+
+} {} {}} C:/Users/Antonio/Desktop/npu/mux5to1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/mux5to1.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity mux5to1
+-- Compiling architecture dataflow of mux5to1
+
+} {} {}} C:/Users/Antonio/Desktop/npu/data_buffer.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/data_buffer.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity data_buffer
+-- Compiling architecture rtl_v1 of data_buffer
+-- Loading entity regfile
+-- Loading entity mux5to1
+
+} {} {}} C:/Users/Antonio/Desktop/npu/regn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/regn.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity regn
+-- Compiling architecture beh of regn
+
+} {} {}} C:/Users/Antonio/Desktop/npu/pe.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/pe.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity PE
+-- Compiling architecture structure of PE
+-- Loading entity adder_subn
+
+} {} {}} C:/Users/Antonio/Desktop/npu/main.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/main.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity main
+-- Compiling architecture rtl of main
+-- Loading entity weight_buffer
+-- Loading entity core
+-- Loading entity wr_pipe
+-- Loading entity addr_gen
+-- Loading entity countern
+
+} {} {}} C:/Users/Antonio/Desktop/npu/adder_subn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/adder_subn.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity adder_subn
+-- Compiling architecture structure of adder_subn
+-- Loading entity fa
+
+} {} {}} C:/Users/Antonio/Desktop/npu/fa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/fa.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture dataflow of fa
+
+} {} {}} C:/Users/Antonio/Desktop/npu/sync_fifo.vhd {1 {vcom -work work -2002 -explicit C:/Users/Antonio/Desktop/npu/sync_fifo.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity sync_fifo
+-- Compiling architecture rtl of sync_fifo
+-- Loading entity data_buffer
+
+} {} {}}

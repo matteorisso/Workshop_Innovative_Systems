@@ -1,0 +1,449 @@
+m255
+K3
+13
+cModel Technology
+dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\binary_net\convolution\test_bn_unit
+Eadd_subb
+Z0 w1569416126
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\binary_net\softmax\test_softmax
+Z5 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/add_subb.vhd
+Z6 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/add_subb.vhd
+l0
+L7
+VkHl>i14^G4GNcdZ1bR6;33
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1569421809.505000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/add_subb.vhd|
+Z10 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/add_subb.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 HWjC3@gczPgQZ]=e[ik]C1
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 8 add_subb 0 22 kHl>i14^G4GNcdZ1bR6;33
+l19
+L18
+V9G1=lg]YE:=KC>CSZ6o2F0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 D6n<G[LfYgXLX`YhIL9nF2
+!i10b 1
+Ecounter4b
+Z13 w1569415781
+R1
+R2
+R3
+R4
+Z14 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/counter4b.vhd
+Z15 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/counter4b.vhd
+l0
+L9
+VKJD2zGhPKKPaCO5;Kn0C11
+R7
+32
+Z16 !s108 1569421809.805000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/counter4b.vhd|
+Z18 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/counter4b.vhd|
+R11
+R12
+!s100 PX68DP0?Q@Jk[o4BTckM[0
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 9 counter4b 0 22 KJD2zGhPKKPaCO5;Kn0C11
+l24
+L22
+V209Y^5mk[OLcH9R:F38Dc1
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 jR3YHSD7[zggYaMPhG]_e3
+!i10b 1
+Eexp_func
+Z19 w1569421752
+R1
+R2
+R3
+R4
+Z20 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/exp_func.vhd
+Z21 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/exp_func.vhd
+l0
+L7
+VOL<T2UgNbX3L4mPe`mAAz2
+R7
+32
+Z22 !s108 1569421810.290000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/exp_func.vhd|
+Z24 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/exp_func.vhd|
+R11
+R12
+!s100 d@9l[:U4_z^ZKdT<RfMDW0
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 8 exp_func 0 22 OL<T2UgNbX3L4mPe`mAAz2
+l55
+L21
+VcEzaHm=Ph0UkZ3ZQ=:2i11
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 51<TAzdLaUH5nQ>`f=doj0
+!i10b 1
+Egeneric_mux2to1
+Z25 w1568994059
+R1
+R2
+R3
+R4
+Z26 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_mux2to1.vhd
+Z27 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_mux2to1.vhd
+l0
+L7
+VeCh=5;f^GOC=b3dImZZdb2
+R7
+32
+Z28 !s108 1569421808.931000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_mux2to1.vhd|
+Z30 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_mux2to1.vhd|
+R11
+R12
+!s100 3:@B4^1TSDcckVWWeYBlg3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 generic_mux2to1 0 22 eCh=5;f^GOC=b3dImZZdb2
+l22
+L20
+VS8[XBK`CT`AilzL]UeTiX2
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 I@VbCKA5nZ;3Sgn9HR[BW0
+!i10b 1
+Egeneric_register
+Z31 w1569055049
+R1
+R2
+R3
+R4
+Z32 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_register.vhd
+Z33 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_register.vhd
+l0
+L8
+VP[4RScPR[KTaK<QCGQ;0`3
+R7
+32
+Z34 !s108 1569421809.232000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_register.vhd|
+Z36 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/generic_register.vhd|
+R11
+R12
+!s100 Wf87RnVLAPnO]z?]_2YdJ2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 16 generic_register 0 22 P[4RScPR[KTaK<QCGQ;0`3
+l24
+L23
+V^2R8j9FXHzEZlT:mcReJR2
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 @^od6Y=fAE4JDUZC7LKg=3
+!i10b 1
+Emax_func
+Z37 w1569420274
+R1
+R2
+R3
+R4
+Z38 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_func.vhd
+Z39 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_func.vhd
+l0
+L8
+VTll[n<Poa7F_1C0b^2Xd`1
+R7
+32
+Z40 !s108 1569421810.589000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_func.vhd|
+Z42 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_func.vhd|
+R11
+R12
+!s100 zHSQ445^6f4MbNBHZBU?<0
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 8 max_func 0 22 Tll[n<Poa7F_1C0b^2Xd`1
+l39
+L20
+VYT=I1:?ce@Q1h;Vz@bRg81
+R7
+32
+R40
+R41
+R42
+R11
+R12
+!s100 [i5Q:Y1S<P_UeYjmS3ocG1
+!i10b 1
+Emax_intf
+Z43 w1569420637
+R1
+R2
+R3
+R4
+Z44 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_intf.vhd
+Z45 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_intf.vhd
+l0
+L8
+VI2_jG5DgJT@lK1YRBA;B93
+R7
+32
+Z46 !s108 1569421810.889000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_intf.vhd|
+Z48 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/max_intf.vhd|
+R11
+R12
+!s100 ElVm^0_=FOS<;ClP0`lK:3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 8 max_intf 0 22 I2_jG5DgJT@lK1YRBA;B93
+l31
+L29
+V<ndHI12_M6JUK`=ja=TB23
+R7
+32
+R46
+R47
+R48
+R11
+R12
+!s100 Mobc?_MS^zZ>U51Ol=5SA1
+!i10b 1
+Esoftmax
+Z49 w1569416857
+R1
+R2
+R3
+R4
+Z50 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax.vhd
+Z51 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax.vhd
+l0
+L5
+Vk5H3Pkkf9f2RdAHFBOjYm2
+R7
+32
+Z52 !s108 1569421811.666000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax.vhd|
+Z54 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax.vhd|
+R11
+R12
+!s100 1CAP6GVbkzfnFYJ8F?DJ_2
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 7 softmax 0 22 k5H3Pkkf9f2RdAHFBOjYm2
+l76
+L29
+VaC9mHDZz1Mo0HI590loDM1
+R7
+32
+R52
+R53
+R54
+R11
+R12
+!s100 OnA;XL]TFQBU5najYni8K2
+!i10b 1
+Esoftmax_eu
+Z55 w1569416751
+R1
+R2
+R3
+R4
+Z56 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_eu.vhd
+Z57 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_eu.vhd
+l0
+L7
+ViTVWeHIbzfJQfOOX8_9MW1
+R7
+32
+Z58 !s108 1569421811.170000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_eu.vhd|
+Z60 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_eu.vhd|
+R11
+R12
+!s100 FIH7CfjmkB3IA`TV9b<c53
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 10 softmax_eu 0 22 iTVWeHIbzfJQfOOX8_9MW1
+l129
+L34
+VXKl^8RBF4i4[0hCZFKG811
+R7
+32
+R58
+R59
+R60
+R11
+R12
+!s100 3OPbFDNX>QnhnhGKXSTbT1
+!i10b 1
+Esoftmax_fsm
+Z61 w1569422446
+R1
+R2
+R3
+R4
+Z62 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_fsm.vhd
+Z63 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_fsm.vhd
+l0
+L5
+VJW^c_93LohF^M3>?`m3kJ0
+!s100 OISNjjg_]Sf=gd8[Db18J0
+R7
+32
+!i10b 1
+Z64 !s108 1569422451.280000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_fsm.vhd|
+Z66 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/softmax_fsm.vhd|
+R11
+R12
+Abehavior
+R1
+R2
+R3
+Z67 DEx4 work 11 softmax_fsm 0 22 JW^c_93LohF^M3>?`m3kJ0
+l28
+L22
+VUG]lUL;<cjk2LZlbkg3l50
+!s100 KK5n5CERNR:QJX`icghS<0
+R7
+32
+!i10b 1
+R64
+R65
+R66
+R11
+R12
+Etb_softmax
+Z68 w1569416887
+R1
+R2
+R3
+R4
+Z69 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/test_softmax/tb_softmax.vhd
+Z70 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/test_softmax/tb_softmax.vhd
+l0
+L5
+VbmPm]ZcckKTRcdLCE:kzX1
+R7
+32
+Z71 !s108 1569421811.976000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/test_softmax/tb_softmax.vhd|
+Z73 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/test_softmax/tb_softmax.vhd|
+R11
+R12
+!s100 [e@QQKS3TB?<=LF1dA=4P2
+!i10b 1
+Atest
+R1
+R2
+R3
+DEx4 work 10 tb_softmax 0 22 bmPm]ZcckKTRcdLCE:kzX1
+l49
+L9
+Vg0YQ<BbN5oQIk=CO=];mD1
+R7
+32
+R71
+R72
+R73
+R11
+R12
+!s100 2glLJGd@X9ZSDg50V`@8@0
+!i10b 1
+Ezero_mask
+Z74 w1569415882
+R1
+R2
+R3
+R4
+Z75 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/zero_mask.vhd
+Z76 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/zero_mask.vhd
+l0
+L10
+VB6hXlnK[3KZfghfNZM1V?2
+R7
+32
+Z77 !s108 1569421810.058000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/zero_mask.vhd|
+Z79 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/binary_net/softmax/zero_mask.vhd|
+R11
+R12
+!s100 L`87czE<k^Ml<LN04XQlz3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 9 zero_mask 0 22 B6hXlnK[3KZfghfNZM1V?2
+l60
+L37
+V7k<>XE2W8L7XGzIX<0n1P3
+R7
+32
+R77
+R78
+R79
+R11
+R12
+!s100 WI1a6i8Z[`JBMW3;3gN5P3
+!i10b 1
