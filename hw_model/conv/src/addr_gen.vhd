@@ -30,7 +30,7 @@ signal int_tileh_ptr 	: unsigned(clog2h downto 0);
 
 begin
 
-int_en			 	<= en; 
+int_en			 	<= en; -- en is tc_res and last tile v ? 
 int_offset_val		<= offset_val(offset_val'high)&offset_val(offset_val'high)&offset_val; --TEMPORARY ! GENERIC
 int_tilev_ptr		<= tilev_ptr;
 int_tileh_ptr 		<= tileh_ptr;
