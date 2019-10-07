@@ -6,10 +6,10 @@ use work.globals.all;
 
 entity imem_fifo_if is
 port(	
-	i_data_even	: in 	int_mem_t;
-	i_data_odd	: in	int_mem_t;
-	sel			: in 	unsigned(clog2W-1 downto 0);
-	o_data 		: out signed(2*N*W-1 downto 0)
+	i_data_even  	: in 	int_mem_t;
+	i_data_odd   	: in	int_mem_t;
+	sel			        : in 	unsigned(1 downto 0);
+	o_data 		     : out signed(2*N*W-1 downto 0)
 	);
 end entity;
 

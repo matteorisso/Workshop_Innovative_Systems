@@ -68,8 +68,8 @@ if rst = '1' then
 	int_odd_offset	  	<= (others=>'0'); 
 	
 elsif rising_edge(ck) then
-	if int_en = '0' then
-		if int_tileh_ptr(int_tileh_ptr'low) = '0' then
+	if int_en = '1' then
+		if int_tileh_ptr(int_tileh_ptr'low) = '1' then
 			int_odd_offset <= int_odd_offset + int_offset_val;
 		end if;
 	else
