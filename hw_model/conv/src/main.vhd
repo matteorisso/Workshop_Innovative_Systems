@@ -200,10 +200,10 @@ ADDR_GEN:
 entity work.addr_gen port map (
 	ck 					=> ck,
 	rst 					=> rst,
-	en						=> int_en_tileh_ptr,
+	inc					=> int_en_tileh_ptr,
+	even_odd_n			=> int_tileh_ptr(int_tileh_ptr'low),
 	offset_val			=> int_arv_tilev,
 	tilev_ptr			=> int_tilev_ptr,
-	tileh_ptr			=> int_tileh_ptr,
 	tc_tilev				=> int_tc_tilev,
 	even_addr 			=> int_even_addr,
 	odd_addr				=> int_odd_addr);
