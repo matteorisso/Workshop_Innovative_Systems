@@ -14,7 +14,7 @@ port(
 	tilev_ptr			: in 	unsigned(clog2v downto 0);
 	tc_tilev				: in std_logic;
 	even_addr			: out unsigned(clog2X-1 downto 0);
-	odd_addr			: out unsigned(clog2X-1 downto 0)
+	odd_addr				: out unsigned(clog2X-1 downto 0)
 	); 
 end entity;
 
@@ -34,7 +34,7 @@ signal int_after_init_val	: unsigned(clog2X-1 downto 0);
 begin
 
 int_inc			 	<= inc; 
-int_even_odd_n		<= even_odd_n;
+--int_even_odd_n		<= even_odd_n;
 int_offset_val		<= offset_val(offset_val'high)&offset_val(offset_val'high)&offset_val; --TEMPORARY ! GENERIC
 int_tilev_ptr		<= tilev_ptr;
 int_tc_tilev		<= tc_tilev; 
@@ -43,6 +43,15 @@ even_addr 			<= int_even_addr;
 odd_addr				<= int_odd_addr; 
 
 -------------------------------------------------
+even_odd_n_proc:
+process(ck,rst)
+begin
+	if rst = '1' then
+		int_even_odd_n <= '0';
+	elsif rising_edge(ck) and int_inc = '1' then
+		int_even_odd_n <= not int_even_odd_n;
+	end if;
+end process;
 
 after_init_proc:
 process(ck,rst)
