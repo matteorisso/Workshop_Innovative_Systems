@@ -53,13 +53,13 @@ when IDLE =>
 			ns <= IDLE;
 		end if; 
 		
---when LD_KERNEL =>
---	   if TC_HMODE = '1' then
---			ns <= INIT;
---		else 
---			ns <= LD_KERNEL;
---		end if;
---		
+when LD_KERNEL =>
+	   if s_tc_hmode = '1' then
+			ns <= INIT;
+		else 
+			ns <= LD_KERNEL;
+		end if;
+		
 when INIT => 
 		if s_tc_wr = '1' then
 			ns <=	HMODE;

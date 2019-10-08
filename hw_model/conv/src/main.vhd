@@ -60,6 +60,7 @@ signal int_en_res_ptr 	: std_logic;
 signal int_en_hmode_cnt	: std_logic;
 signal int_en_vmode_cnt : std_logic;
 
+signal int_en_tilev_ptr : std_logic;
 signal int_en_tileh_ptr	: std_logic;
 
 signal int_hmode_cnt 	: unsigned(clog2K-1 downto 0);
@@ -113,12 +114,13 @@ int_en_res_ptr 		<= ctrl_en_res_ptr;
 
 -------------------------------------------------
 -- intern
--------------------------------------------------
+
 -- set these in fsm 
 int_k_cs					<= '1';
 int_k_rd					<= int_en_hmode_cnt;
---int_pe_en=(not int_en_res_ptr) and int_en_hmode_cnt;   
+
 -------------------------------------------------
+
 int_pe_sync_clr		<= int_tc_res;
 
 int_last_tilev_data 	<= int_tilev_ptr(int_last_tilev_data'high downto 0);
@@ -196,14 +198,15 @@ entity work.countern generic map (N => clog2W) port map (
 	
 ADDR_GEN:
 entity work.addr_gen port map (
-	ck 				=> ck,
-	rst 				=> rst,
-	en					=> int_en_tileh_ptr,
-	offset_val		=> int_arv_tilev,
-	tilev_ptr		=> int_tilev_ptr,
-	tileh_ptr		=> int_tileh_ptr,
-	even_addr 		=> int_even_addr,
-	odd_addr			=> int_odd_addr);
+	ck 					=> ck,
+	rst 					=> rst,
+	en						=> int_en_tileh_ptr,
+	offset_val			=> int_arv_tilev,
+	tilev_ptr			=> int_tilev_ptr,
+	tileh_ptr			=> int_tileh_ptr,
+	tc_tilev				=> int_tc_tilev,
+	even_addr 			=> int_even_addr,
+	odd_addr				=> int_odd_addr);
 	
 TILE_CTRL: 
 entity work.tile_ctrl port map (
@@ -219,6 +222,7 @@ entity work.tile_ctrl port map (
 	s_tc_tilev 			=> int_tc_tilev,
 	s_tc_tileh 			=> int_tc_tileh,
 	s_tc_tilec 			=> int_tc_tilec,
+	en_tilev_ptr 		=> int_en_tilev_ptr,
 	en_tileh_ptr 		=> int_en_tileh_ptr);
 
 CKG_CTRL:

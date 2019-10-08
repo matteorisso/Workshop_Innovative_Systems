@@ -21,6 +21,7 @@ port(
 		s_tc_tilev			: out std_logic; 
 		s_tc_tileh			: out std_logic;
 		s_tc_tilec			: out std_logic;
+		en_tilev_ptr		: out std_logic;
 		en_tileh_ptr 		: out std_logic
 		);		
 end entity;
@@ -63,6 +64,7 @@ s_tc_tileh			<= int_tc_tileh;
 s_tc_tilec 			<= int_tc_tilec; 
 
 en_tileh_ptr		<= int_en_tileh_ptr;
+en_tilev_ptr		<= int_en_tilev_ptr;
 
 tilev_cnt:
 entity work.countern generic map (N => clog2v+1) port map (

@@ -12,6 +12,7 @@ port(
 	offset_val			: in 	unsigned(clog2v downto 0);
 	tilev_ptr			: in 	unsigned(clog2v downto 0);
 	tileh_ptr			: in 	unsigned(clog2v downto 0);
+	tc_tilev				: in std_logic;
 	even_addr			: out unsigned(clog2X-1 downto 0);
 	odd_addr				: out unsigned(clog2X-1 downto 0)
 	); 
@@ -45,37 +46,41 @@ odd_addr		<= int_odd_addr;
 even_addr_gen:
 process(ck,rst)
 begin
-if rst = '1' then
-	int_even_addr 			<= (others=>'0');
-	int_even_offset	  	<= (others=>'0'); 
-	
-elsif rising_edge(ck) then
-	if int_en = '1' then
-		if int_tileh_ptr(int_tileh_ptr'low) = '0' then
-			int_even_offset <= int_even_offset + int_offset_val;
-		end if;
-	else
-		int_even_addr <= int_even_offset + int_tilev_ptr; 
-	end if; 
-end if; 
+	if rst = '1' then
+		int_even_addr 			<= (others=>'0');
+		int_even_offset	  	<= (others=>'0'); 
+		
+	elsif rising_edge(ck) then
+		int_even_addr 	<= int_even_offset + int_tilev_ptr + int_tileh_ptr; 
+			
+		if int_tileh_ptr(int_tileh_ptr'low) = '1' then
+				if tc_tilev = '1' then
+					int_even_addr <= int_even_offset;		
+				end if;
+		elsif int_en = '1' then
+				int_even_offset <= int_even_offset + int_offset_val;
+		end if; 
+	end if;
 end process;
 
 odd_addr_gen:
 process(ck,rst)
 begin
-if rst = '1' then
-	int_odd_addr 		<= (others=>'0');
-	int_odd_offset	  	<= (others=>'0'); 
-	
-elsif rising_edge(ck) then
-	if int_en = '1' then
-		if int_tileh_ptr(int_tileh_ptr'low) = '1' then
-			int_odd_offset <= int_odd_offset + int_offset_val;
-		end if;
-	else
-		int_odd_addr 	<= int_odd_offset + int_tilev_ptr; 
-	end if; 
-end if; 
+	if rst = '1' then
+		int_odd_addr 		<= (others=>'0');
+		int_odd_offset	  	<= (others=>'0'); 
+		
+	elsif rising_edge(ck) then
+		int_odd_addr 	<= int_odd_offset + int_tilev_ptr + int_tileh_ptr; 
+			
+		if int_tileh_ptr(int_tileh_ptr'low) = '0' then
+				if tc_tilev = '1' then
+					int_odd_addr <= int_odd_offset;		
+				end if;
+		elsif int_en = '1' then
+				int_odd_offset <= int_odd_offset + int_offset_val;
+		end if; 
+	end if;
 end process;
 
 end architecture; 
