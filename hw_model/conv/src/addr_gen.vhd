@@ -14,7 +14,7 @@ port(
 	tilev_ptr			: in 	unsigned(clog2v downto 0);
 	tc_tilev				: in std_logic;
 	even_addr			: out unsigned(clog2X-1 downto 0);
-	odd_addr				: out unsigned(clog2X-1 downto 0)
+	odd_addr			: out unsigned(clog2X-1 downto 0)
 	); 
 end entity;
 
