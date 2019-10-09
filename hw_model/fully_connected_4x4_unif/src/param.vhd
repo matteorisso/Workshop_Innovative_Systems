@@ -21,8 +21,8 @@ constant N 	  : natural   := 4; 								-- data width (activation)
 constant WL   : natural   := (W+K-1)*N; 						-- regfile word length
 constant G 	  : natural   := 7;                    			    -- system gain , bit-growth		
 
-constant cnt_b  : natural := 7;                                 -- number of bits for counter 1
-constant cnt_b2 : natural := 3;                                 -- number of bits for counter 2 			
+constant cnt_b  : natural := 9;                                 -- number of bits for counter 1
+constant cnt_b2 : natural := 4;                                 -- number of bits for counter 2 			
 
 subtype PERowData    is signed(W*N -1 		downto 0); 			-- PE row IN       : PE i_data width * #PEs
 subtype PERowWeights is std_logic_vector(2*W -1       downto 0);-- PE row Weights  : PE i_kernel width * #PEs

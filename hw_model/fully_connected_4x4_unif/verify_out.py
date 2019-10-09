@@ -23,5 +23,11 @@ if (real_res2 == sim_res2[:10]):
     print("The second layer is correct")
 else: 
     print("The first layer is not correct")
+	
+	
+real_res1.close()
+real_res2.close()
+sim_res1.close()
+sim_res2.close()
 
 

@@ -1,0 +1,122 @@
+C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/mux_c.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/mux_c.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux_c
+-- Compiling architecture beh of mux_c
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/countern.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/countern.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity countern
+-- Compiling architecture beh of countern
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/mux_c2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/mux_c2.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux_c2
+-- Compiling architecture beh of mux_c2
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/pe_block.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/pe_block.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity pe_block
+-- Compiling architecture rtl of pe_block
+-- Loading entity PE
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/param.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/param.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling package param
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/regn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/regn.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity regn
+-- Compiling architecture beh of regn
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/pe.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/pe.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity PE
+-- Compiling architecture structure of PE
+-- Loading entity adder_subn
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/tb/fully_connected_c3_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/tb/fully_connected_c3_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity fully_connected_all_tb
+-- Compiling architecture test of fully_connected_all_tb
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/fully_connected.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/fully_connected.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity fully_connected
+-- Compiling architecture behavior of fully_connected
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/adder_subn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/adder_subn.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity adder_subn
+-- Compiling architecture structure of adder_subn
+-- Loading entity fa
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/fa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/fa.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture dataflow of fa
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/fsm_fully_connected.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/fully_connected_4x4_unif/src/fsm_fully_connected.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity fsm_fully_connected
+-- Compiling architecture behavioral of fsm_fully_connected
+
+} {} {}}

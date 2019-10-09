@@ -28,7 +28,7 @@ component fully_connected is
 		  en_cnt1     : in  std_logic; 
 		  rst_cnt2    : in  std_logic;
 		  en_cnt2     : in  std_logic; 		  
-		  layer_fc    : in  std_logic; 	     
+		  layer_fc    : in  std_logic_vector(1 downto 0); 	     
 		  i_kernel	  : in  PEBlockWeights; 
 		  i_data 	  : in  signed(W-1 downto 0);
 		  o_data 	  : out PEBlockDataRes;
@@ -80,7 +80,7 @@ end component;
     signal tb_en_cnt1      : std_logic;
 	signal tb_rst_cnt2     : std_logic;	
     signal tb_en_cnt2      : std_logic;	
-    signal tb_layer_fc	   : std_logic;
+    signal tb_layer_fc	   : std_logic_vector(1 downto 0);
 	signal tb_i_kernel	   : PEBlockWeights; 
 	signal tb_i_data 	   : signed(W-1 downto 0);
     signal tb_cnt1         : unsigned(cnt_b-1 downto 0);	
@@ -136,7 +136,7 @@ begin
     tb_en        <= '0';       -- These enable has to be controlled from the fsm for the clk gating
     tb_ckg_cmask <= (others => '1');
     tb_ckg_rmask <= (others => '1');	
-	tb_layer_fc  <= '0';
+	tb_layer_fc  <= "01";
 	
 	wait for 3 ns;
 
@@ -145,7 +145,7 @@ begin
     tb_en        <= '1';       -- These enable has to be controlled from the fsm for the clk gating
     tb_ckg_cmask <= (others => '0');
     tb_ckg_rmask <= (others => '0');
-	tb_layer_fc  <= '0';	
+	tb_layer_fc  <= "01";	
 	
 	wait for 2 ns;
 
@@ -188,7 +188,7 @@ begin
 	 wait for 20 ns;
 
     tb_start     <= '1';	  --SECOND LAYER
-	tb_layer_fc  <= '1';	
+	tb_layer_fc  <= "10";	
 
 	wait for 2 ns;	
 	

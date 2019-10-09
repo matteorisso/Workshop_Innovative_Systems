@@ -69,7 +69,7 @@ elsif ck'event and ck='1' and int_en = '0' then
 	if sync_clr = '1' then
 	
 		q_im	<= (others=>'0');
-		q_acc <= (others=>'0');
+		q_acc   <= (others=>'0');
 		q_k 	<= '0';
 	
 	else
