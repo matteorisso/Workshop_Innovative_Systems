@@ -1,0 +1,6 @@
+bnn  		- binary weights
+full-bnn	- binary act/weights
+qnn		- gen quantized weights
+full-qnn	- gen quantized act/weights
+tnn		- ternary weights
+full-tnn	- ternary act/weights
