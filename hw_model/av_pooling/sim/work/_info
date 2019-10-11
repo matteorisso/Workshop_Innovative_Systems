@@ -1,0 +1,388 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Alessandro\Desktop
+Eadder_subn
+Z0 w1569682378
+Z1 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+Z2 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Alessandro\Desktop\Workshop\Componenti\av_pooling\sim
+Z5 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/adder_subn.vhd
+Z6 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/adder_subn.vhd
+l0
+L5
+VCAJ1XAG4eE?JRnH6SNZi11
+Z7 OV;C;10.0c;49
+32
+Z8 !s108 1570808879.077000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/adder_subn.vhd|
+Z10 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/adder_subn.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 KVm]Mij`[4`0:E0?K]Vde3
+Astructure
+Z13 DEx4 work 2 fa 0 22 fn];ozkmIMKT`5Q_2D_U`3
+R1
+R2
+R3
+Z14 DEx4 work 10 adder_subn 0 22 CAJ1XAG4eE?JRnH6SNZi11
+l20
+L15
+VlO8CKCnMj>bDm=JE5ES<d2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 CkFBQQNMK`H5g=0JD65g60
+Eavr_pooling
+Z15 w1570808873
+Z16 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+Z17 DPx4 work 5 param 0 22 k2VcXz>X`d4d@2MJ`l`S82
+R1
+R2
+R3
+R4
+Z18 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/avr_pooling.vhd
+Z19 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/avr_pooling.vhd
+l0
+L7
+VlY=kf1k^Y`XJNk>cR3Ja`0
+R7
+32
+Z20 !s108 1570808880.450000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/avr_pooling.vhd|
+Z22 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/avr_pooling.vhd|
+R11
+R12
+!s100 ZIZl>FmSL4^dnfCdX=03T1
+Abehavior
+R16
+R17
+R1
+R2
+R3
+DEx4 work 11 avr_pooling 0 22 lY=kf1k^Y`XJNk>cR3Ja`0
+l109
+L35
+V`Hi:mUIP;`1g0PiZ<JFW80
+R7
+32
+R20
+R21
+R22
+R11
+R12
+!s100 Si`V:H[Q04ZO6WOdKBj@=3
+Ecountern
+Z23 w1569687189
+R1
+R2
+R3
+R4
+Z24 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/countern.vhd
+Z25 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/countern.vhd
+l0
+L6
+VQ9`o46hB]Gz2>LBf8Jn203
+R7
+32
+Z26 !s108 1570808880.008000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/countern.vhd|
+Z28 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/countern.vhd|
+R11
+R12
+!s100 _aGmOJg9^<oL4d1<S5h_32
+Abeh
+R1
+R2
+R3
+DEx4 work 8 countern 0 22 Q9`o46hB]Gz2>LBf8Jn203
+l22
+L17
+VMJ^Z<gSV2^LR>4Jf4AX=c2
+R7
+32
+R26
+R27
+R28
+R11
+R12
+!s100 <6=AmF>GY?Ml6H9=SGE7a1
+Efa
+Z29 w1570199920
+R2
+R3
+R4
+Z30 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/fa.vhd
+Z31 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/fa.vhd
+l0
+L4
+Vfn];ozkmIMKT`5Q_2D_U`3
+R7
+32
+Z32 !s108 1570808878.620000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/fa.vhd|
+Z34 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/fa.vhd|
+R11
+R12
+!s100 9h?bEk]c[7IgOg<d=hY1i3
+Adataflow
+R2
+R3
+R13
+l15
+L13
+V7DI=OiPnhe8OOz@UA:iG82
+R7
+32
+R32
+R33
+R34
+R11
+R12
+!s100 ;4IPIh;JdlHM7Y@j^d7cN2
+Egeneric_mux2to1
+Z35 w1570782384
+R1
+R2
+R3
+R4
+Z36 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/generic_mux2to1.vhd
+Z37 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/generic_mux2to1.vhd
+l0
+L7
+VmclK`V4E<BO`9hb9BGJ250
+R7
+32
+Z38 !s108 1570808879.517000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/generic_mux2to1.vhd|
+Z40 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/generic_mux2to1.vhd|
+R11
+R12
+!s100 _i^KSYRcd;:Cgeg2QTM_P0
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 generic_mux2to1 0 22 mclK`V4E<BO`9hb9BGJ250
+l22
+L20
+VS8[XBK`CT`AilzL]UeTiX2
+R7
+32
+R38
+R39
+R40
+R11
+R12
+!s100 I@VbCKA5nZ;3Sgn9HR[BW0
+Einterf
+Z41 w1570783268
+R1
+R2
+R3
+R4
+Z42 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/interf.vhd
+Z43 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/interf.vhd
+l0
+L6
+VhcaEocjTG0^RK34W01^^>1
+R7
+32
+Z44 !s108 1570808881.308000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/interf.vhd|
+Z46 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/interf.vhd|
+R11
+R12
+!s100 KA4[QZgl<7;[1c^m;8UXA1
+Abehavior
+R1
+R2
+R3
+DEx4 work 6 interf 0 22 hcaEocjTG0^RK34W01^^>1
+l43
+L28
+V9njL9CCMJRzASeA83[[391
+R7
+32
+R44
+R45
+R46
+R11
+R12
+!s100 bWP9z7hm0ZEQYGfgeEFHg3
+Pparam
+R16
+R1
+R2
+R3
+w1570434218
+R4
+8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/param.vhd
+FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/param.vhd
+l0
+L6
+Vk2VcXz>X`d4d@2MJ`l`S82
+R7
+32
+R11
+R12
+!s100 6bLJWBod:=DOUziZa75[c3
+!s108 1570808878.393000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/param.vhd|
+!s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/param.vhd|
+Epe
+Z47 w1570296955
+R16
+R17
+R1
+R2
+R3
+R4
+Z48 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe.vhd
+Z49 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe.vhd
+l0
+L7
+VF@hVoLgTU@MR6_;_8=90Y2
+R7
+32
+Z50 !s108 1570808881.738000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe.vhd|
+Z52 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe.vhd|
+R11
+R12
+!s100 D2?G2G]dG<Nh1?FLOYVMW2
+Astructure
+R14
+R16
+R17
+R1
+R2
+R3
+Z53 DEx4 work 2 pe 0 22 F@hVoLgTU@MR6_;_8=90Y2
+l28
+L18
+VTiUfXK;Q2R4VY<8OJN^SO0
+R7
+32
+R50
+R51
+R52
+R11
+R12
+!s100 TBbHiB8JAH=fm5d5dGX1R3
+Epe_block
+Z54 w1570110892
+R16
+R17
+R1
+R2
+R3
+R4
+Z55 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe_block.vhd
+Z56 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe_block.vhd
+l0
+L7
+V1?o>b;[b4U^cLUlZ3lnMF2
+R7
+32
+Z57 !s108 1570808882.126000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe_block.vhd|
+Z59 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe_block.vhd|
+R11
+R12
+!s100 `HUTBmTbXo[hTGT9b?MaK2
+Artl
+R53
+R16
+R17
+R1
+R2
+R3
+DEx4 work 8 pe_block 0 22 1?o>b;[b4U^cLUlZ3lnMF2
+l28
+L20
+V?lKHlFc1hNMgzZoMFnHHY1
+!s100 R8b]jg7EoU<_ld9^c2<EY2
+R7
+32
+R57
+R58
+R59
+R11
+R12
+Eregn
+Z60 w1569682378
+R1
+R2
+R3
+R4
+Z61 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/regn.vhd
+Z62 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/regn.vhd
+l0
+L5
+V6O700[oD`:@d@CconWShj0
+!s100 7227LgW<50;5zi8MMHGF:1
+R7
+32
+Z63 !s108 1570808882.827000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/regn.vhd|
+Z65 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/regn.vhd|
+R11
+R12
+Abeh
+R1
+R2
+R3
+Z66 DEx4 work 4 regn 0 22 6O700[oD`:@d@CconWShj0
+l17
+L15
+Z67 VbEgiSHTHPeXbMWZCAUMgF3
+Z68 !s100 3TdLRGl>@3g2W?[LNhk7z0
+R7
+32
+R63
+R64
+R65
+R11
+R12
+Eshift_left2
+Z69 w1570787422
+R1
+R2
+R3
+R4
+Z70 8C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/shift_left2.vhd
+Z71 FC:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/shift_left2.vhd
+l0
+L5
+VXQ[Nj:JX^DLICE;oL>m7_1
+R7
+32
+Z72 !s108 1570808880.889000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/shift_left2.vhd|
+Z74 !s107 C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/shift_left2.vhd|
+R11
+R12
+!s100 TeAIOa<_K@Q:PGgjcW[OS2
+Astructure
+R1
+R2
+R3
+DEx4 work 11 shift_left2 0 22 XQ[Nj:JX^DLICE;oL>m7_1
+l29
+L22
+V24f_;=IC9ko]_VkQUJAiC2
+R7
+32
+R72
+R73
+R74
+R11
+R12
+!s100 1[>VIYc=FEClU8:OX[S<n3
