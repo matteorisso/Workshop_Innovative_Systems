@@ -6,18 +6,31 @@ use work.globals.all;
 
 entity pe_block is
 port(
-		ck 			: in std_logic;
-		rst			: in std_logic;
-		sync_clr 	: in std_logic;
-		en				: in std_logic; 
-		ckg_rmask  	: in std_logic_vector(0 to W-1);
-		ckg_cmask 	: in std_logic_vector(0 to W-1);
-		i_kernel	 	: in std_logic_vector(1 downto 0); 
-		i_data 		: in  PEBlockData;
-		o_data 		: out PEBlockDataRes);
+	ck 			: in 	std_logic;
+	rst			: in 	std_logic;
+	sync_clr 	: in 	std_logic;
+	en				: in 	std_logic; 
+	ckg_rmask  	: in 	std_logic_vector(0 to W-1);
+	ckg_cmask 	: in 	std_logic_vector(0 to W-1);
+	i_kernel	 	: in	std_logic_vector(1 downto 0); 
+	i_data 		: in  PEBlockData;
+	o_data 		: out PEBlockDataRes
+	);
 end entity;
 
 architecture rtl of pe_block is
+
+component pe
+port(
+	ck 		: in 	std_logic;
+	rst		: in	std_logic; 
+	sync_clr : in 	std_logic;
+	en			: in 	std_logic;
+	k  		: in 	std_logic_vector(1 downto 0);  -- "00", "01" : zero ; "10" : +1 ; "11" : -1
+	i_data	: in 	signed(N-1 downto 0);
+	o_data	: out signed(N-1+G downto 0)
+	);
+end component;
 
 type ckg_mask_t is array (0 to W-1) of std_logic_vector(0 to W-1);
 
@@ -33,7 +46,7 @@ row: for i in 0 to W-1 generate
 	
 	col: for j in 0 to W-1 generate peij: 
 
-		entity work.pe port map (
+		pe port map (
 			ck 			=> ck, 
 			rst 			=> rst,
 			sync_clr		=> sync_clr,

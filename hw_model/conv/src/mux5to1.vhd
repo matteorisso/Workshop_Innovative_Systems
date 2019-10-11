@@ -8,7 +8,8 @@ entity mux5to1 is
 port(
 	i_data	: in 	RFRowData;
 	sel 		: in 	unsigned(2 downto 0); 
-    o_data 	: out 	PERowData);
+   o_data 	: out PERowData
+	 );
 end entity;
 
 architecture dataflow of mux5to1 is

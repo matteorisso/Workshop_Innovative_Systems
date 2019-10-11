@@ -22,120 +22,210 @@ port(
 	ctrl_en_pe			: in 	std_logic;
 	ctrl_en_rd_ptr  	: in 	std_logic;
 	ctrl_en_wr_ptr  	: in 	std_logic;
-	ctrl_en_res_ptr 	: in 	std_logic;  
+	ctrl_en_res_ptr 	: in 	std_logic;
+	ctrl_en_vmode		: in  std_logic; 
+	
 	s_tc_wr				: out std_logic; 
 	s_tc_hmode			: out std_logic;
 	s_tc_vmode			: out std_logic;
 	s_tc_res				: out std_logic; 
 	s_tc_tilev			: out std_logic; 
+	s_tc_tileh			: out std_logic; 
+	s_tc_tileb			: out std_logic; 
 	s_tc_tilec 			: out std_logic;
+	
 	i_kernel 			: in 	std_logic_vector(2*K-1 downto 0);
 	i_data 				: in  RFRowData;
 	o_data				: out PEResData);
+	
 end entity; 
 
 architecture rtl of main is
 
-signal int_o_data		 	: PEBlockDataRes;
+component ckg_ctrl 
+port (
+	ck 				: in 	std_logic;
+	rst 				: in 	std_logic; 
+	tc_hmode			: in 	std_logic;
+	tc_tilev 		: in 	std_logic;
+	tc_tileh			: in 	std_logic; 
+	ckg_mask			: in 	std_logic_vector(0 to W-1);
+	ckg_mask_lt 	: in 	std_logic_vector(0 to W-1);
+	ckg_rmask		: out std_logic_vector(0 to W-1);
+	ckg_cmask		: out std_logic_vector(0 to W-1)
+	);
+end component;
 
-signal int_pe_en 			: std_logic; 
-signal int_pe_sync_clr 	: std_logic; 
+component core 
+port(
+	ck 	 		: in std_logic;
+	rst	 		: in std_logic; 
+	ld 	 		: in std_logic; 
+	en				: in std_logic;
+	ckg_rmask	: in std_logic_vector(0 to W-1);
+	ckg_cmask	: in std_logic_vector(0 to W-1);
+	sync_clr		: in std_logic;
+	rd_ptr 		: in unsigned(2 downto 0);
+	wr_ptr 		: in unsigned(1 downto 0);
+	i_kernel 	: in std_logic_vector(1 downto 0);
+	i_data 		: in  RFRowData;
+	o_data 		: out PEBlockDataRes
+	);
+end component;
 
-signal int_k_cs			: std_logic;
-signal int_k_rd			: std_logic;  
-signal int_k_data			: std_logic_vector(1 downto 0);
+component wr_pipe
+port( 
+	ck 	 				: in  std_logic; 
+	rst 	 				: in  std_logic; 
+	ctrl_en_res_ptr 	: in 	std_logic; 
+	s_tc_res	 	 		: out std_logic;
+	i_data 				: in  PEBlockDataRes;
+	o_data		 		: out PEResData
+	);
+end component;
 
-signal int_tc_wr 			: std_logic; 
-signal int_tc_hmode		: std_logic;
-signal int_tc_vmode		: std_logic;
-signal int_tc_res 		: std_logic; 
+component weight_buffer
+port( 
+	ck 			: in 	std_logic;
+	rst			: in 	std_logic;
+	cs				: in 	std_logic;
+	rd_wr_n		: in 	std_logic;
+	vmode_ptr	: in 	unsigned(clog2K-1 downto 0);
+	hmode_ptr	: in 	unsigned(clog2K-1 downto 0);
+	i_data		: in 	std_logic_vector(2*K-1 downto 0);
+	o_data 		: out std_logic_vector(1 downto 0)
+	);
+end component;
 
-signal int_tc_tilev 		: std_logic;
-signal int_tc_tileh 		: std_logic;
-signal int_tc_tilec 		: std_logic;
+component addr_gen 
+port(
+	ck  					: in 	std_logic;
+	rst 					: in 	std_logic;
+	en_tilev_ptr		: in 	std_logic;
+	arv_tilev			: in 	unsigned(clog2v-1 downto 0);
+	arv_tileh			: in	unsigned(clog2h-1 downto 0);
+	arv_tileb			: in 	unsigned(clog2b-1 downto 0);
+	arv_tilec			: in 	unsigned(clog2c-1 downto 0); 
+	s_tc_tilev			: out std_logic; 
+	s_tc_tileh			: out std_logic;
+	s_tc_tileb			: out std_logic; 
+	s_tc_tilec			: out std_logic;
+	even_addr			: out unsigned(clog2X-1 downto 0);
+	odd_addr				: out unsigned(clog2X-1 downto 0)
+	);		
+end component;
 
-signal int_en_wr_ptr 	: std_logic; 
-signal int_en_res_ptr 	: std_logic; 
+component countern 
+generic ( N	: natural := 16 );    
+port( 
+	ck 			: in std_logic; 
+	rst			: in std_logic; 
+	sync_clr		: in std_logic; 
+	en 			: in std_logic;
+	arv			: in unsigned(N-1 downto 0); -- auto-reload value
+	q 				: out unsigned(N-1 downto 0); 
+	tc				: out std_logic
+	);
+end component;
 
-signal int_en_hmode_cnt	: std_logic;
-signal int_en_vmode_cnt : std_logic;
+component urom
+port(
+	task 				: in 	layer_t;
+	arv_hmode 		: out unsigned(clog2K-1 downto 0);
+	arv_vmode 		: out unsigned(clog2K-1 downto 0);
+	arv_wr	 		: out unsigned(clog2W-1 downto 0);
+	arv_tilev 		: out unsigned(clog2v-1 downto 0);
+	arv_tileh		: out unsigned(clog2h-1 downto 0);
+	arv_tileb 		: out unsigned(clog2b-1 downto 0);
+	arv_tilec	 	: out unsigned(clog2c-1 downto 0);
+	ckg_mask_lt		: out std_logic_vector(3 downto 0);
+	ckg_mask 		: out std_logic_vector(3 downto 0)
+	);
+end component;
 
-signal int_en_tilev_ptr : std_logic;
-signal int_en_tileh_ptr	: std_logic;
+signal int_o_data		 			: PEBlockDataRes;
 
-signal int_hmode_cnt 	: unsigned(clog2K-1 downto 0);
-signal int_vmode_cnt 	: unsigned(clog2K-1 downto 0);
-signal int_arv_hmode 	: unsigned(clog2K-1 downto 0);
-signal int_arv_vmode		: unsigned(clog2K-1 downto 0);
+signal int_k_cs					: std_logic;
+signal int_k_rd					: std_logic;  
+signal int_k_data					: std_logic_vector(1 downto 0);
 
-signal int_arv_tilev 	: unsigned(clog2v downto 0);
-signal int_arv_tileh		: unsigned(clog2h downto 0);
-signal int_arv_tilec 	: unsigned(clog2c downto 0); 
+signal int_tc_wr 					: std_logic; 
+signal int_tc_hmode				: std_logic;
+signal int_tc_vmode				: std_logic;
+signal int_tc_res 				: std_logic; 
 
-signal int_tilev_ptr 	: unsigned(clog2v downto 0);  
-signal int_tileh_ptr 	: unsigned(clog2h downto 0); 
+signal int_tc_tilev 				: std_logic;
+signal int_tc_tileh 				: std_logic;
+signal int_tc_tileb				: std_logic;
+signal int_tc_tilec 				: std_logic;
+
+signal int_en_wr_ptr 			: std_logic; 
+signal int_en_res_ptr 			: std_logic; 
+
+signal int_en_hmode_cnt			: std_logic;
+signal int_en_vmode_cnt 		: std_logic;
+
+signal int_en_tilev_ptr 		: std_logic;
+signal int_en_tileh_ptr			: std_logic;
+	
+signal int_arv_hmode 			: unsigned(clog2K-1 downto 0);
+signal int_arv_vmode				: unsigned(clog2K-1 downto 0);
+
+signal int_arv_tilev 			: unsigned(clog2v-1 downto 0);
+signal int_arv_tileh				: unsigned(clog2v-1 downto 0);
+signal int_arv_tileb				: unsigned(clog2b-1 downto 0);
+signal int_arv_tilec 			: unsigned(clog2c-1 downto 0); 
+
+signal int_tilev_ptr 			: unsigned(clog2v-1 downto 0);  
+signal int_tileh_ptr 			: unsigned(clog2v-1 downto 0); 
+
+signal int_hmode_cnt 			: unsigned(clog2K-1 downto 0);
+signal int_vmode_cnt 			: unsigned(clog2K-1 downto 0);
  
-signal int_wr_ptr 		: unsigned(clog2W-1 downto 0);
-signal int_arv_wr 		: unsigned(clog2W-1 downto 0);
+signal int_wr_ptr 				: unsigned(clog2W-1 downto 0);
+signal int_arv_wr 				: unsigned(clog2W-1 downto 0);
 
-signal int_even_addr		: unsigned(clog2X-1 downto 0);
-signal int_odd_addr		: unsigned(clog2X-1 downto 0);
+signal int_even_addr				: unsigned(clog2X-1 downto 0);
+signal int_odd_addr				: unsigned(clog2X-1 downto 0);
 
--------------------------------------------------
+signal int_pe_en 					: std_logic; 
+signal int_pe_sync_clr 			: std_logic; 
 
-signal int_arv_lt_ckg		: unsigned(clog2v-1 downto 0);
-signal int_last_tilev_data : unsigned(clog2v-1 downto 0);
-signal int_last_tileh_data : unsigned(clog2v-1 downto 0);
-signal int_last_tilev		: std_logic;
-signal int_last_tileh		: std_logic;
+signal int_arv_ckg				: unsigned(clog2v-1 downto 0);
+signal int_last_tilev			: std_logic;
+signal int_last_tileh			: std_logic;
 
-signal int_ckg_mask		: std_logic_vector(0 to W-1);
-signal int_ckg_lt_mask  : std_logic_vector(0 to W-1);
-signal int_ckg_rmask		: std_logic_vector(0 to W-1); 
-signal int_ckg_cmask		: std_logic_vector(0 to W-1); 
+signal int_ckg_mask				: std_logic_vector(0 to W-1);
+signal int_ckg_mask_lt  		: std_logic_vector(0 to W-1);
+signal int_ckg_rmask				: std_logic_vector(0 to W-1); 
+signal int_ckg_cmask				: std_logic_vector(0 to W-1); 
 
--------------------------------------------------
 begin
--------------------------------------------------
-
--- port
 
 s_tc_wr 					<= int_tc_wr;
 s_tc_hmode 				<= int_tc_hmode;
 s_tc_vmode 				<= int_tc_vmode;
 s_tc_res  				<= int_tc_res;
 s_tc_tilev 				<= int_tc_tilev;
+s_tc_tileh				<= int_tc_tileh;
+s_tc_tileb				<= int_tc_tileb;
 s_tc_tilec 				<= int_tc_tilec;
 
 int_pe_en 	   		<= ctrl_en_pe;
 int_en_hmode_cnt  	<= ctrl_en_rd_ptr;
+int_en_vmode_cnt 		<= ctrl_en_vmode 	or int_tc_res;
 int_en_wr_ptr  		<= ctrl_en_wr_ptr;
+int_en_tilev_ptr 		<= int_tc_wr and int_en_wr_ptr; 
 int_en_res_ptr 		<= ctrl_en_res_ptr;
-
--------------------------------------------------
--- intern
+int_pe_sync_clr		<= int_tc_res;
 
 -- set these in fsm 
 int_k_cs					<= '1';
 int_k_rd					<= int_en_hmode_cnt;
 
--------------------------------------------------
 
-int_pe_sync_clr		<= int_tc_res;
-
-int_last_tilev_data 	<= int_tilev_ptr(int_last_tilev_data'high downto 0);
-int_last_tileh_data 	<= int_tileh_ptr(int_last_tileh_data'high downto 0);
-int_arv_lt_ckg			<= int_arv_tilev(int_arv_lt_ckg'high downto 0);
-
-int_ckg_rmask 			<= int_ckg_lt_mask when int_last_tilev = '1' else int_ckg_mask;
-int_ckg_cmask 			<= int_ckg_lt_mask when int_last_tileh = '1' else int_ckg_mask;
-
-int_en_vmode_cnt 		<= int_tc_hmode;
-
--------------------------------------------------
-
-WEIGHT_BUFFER:
-entity work.weight_buffer port map (
+KERNEL:
+weight_buffer port map (
 	ck 		 	=> ck,
 	rst		 	=> rst,
 	cs 		 	=> int_k_cs,
@@ -145,8 +235,8 @@ entity work.weight_buffer port map (
 	i_data		=> i_kernel,
 	o_data 	 	=> int_k_data);
 	
-CORE: 
-entity work.core port map(
+NPU: 
+core port map(
 	ck 	 	 	=> ck,
 	rst	 	 	=> rst,
 	ld 	 	 	=> int_en_wr_ptr,
@@ -161,7 +251,7 @@ entity work.core port map(
 	o_data 	 	=> int_o_data);
 
 WRITE_PIPELINE:
-entity work.wr_pipe port map (
+wr_pipe port map (
 	ck						=> ck,
 	rst 					=> rst,
 	ctrl_en_res_ptr	=> int_en_res_ptr, 
@@ -170,83 +260,76 @@ entity work.wr_pipe port map (
 	o_data 	 			=> o_data);	
 
 VMODE_CNT:
-entity work.countern generic map (N => clog2K) port map (
-	ck 	=> ck, 
-	rst 	=> rst, 
-	en	 	=> int_en_vmode_cnt, 
-	arv	=> int_arv_vmode,
-	q		=> int_vmode_cnt,
-	tc		=> int_tc_vmode);
+countern generic map (N => int_arv_vmode'length) port map (
+	ck 			=> ck, 
+	rst 			=> rst, 
+	sync_clr 	=> '0',
+	en	 			=> int_en_vmode_cnt, 
+	arv			=> int_arv_vmode,
+	q				=> int_vmode_cnt,
+	tc				=> int_tc_vmode);
 											
 HMODE_CNT: 
-entity work.countern generic map (N => clog2K) port map (
-	ck 	=> ck, 
-	rst 	=> rst, 
-	en 	=> int_en_hmode_cnt, 
-	arv 	=> int_arv_hmode, 
-	q 		=> int_hmode_cnt, 
-	tc 	=> int_tc_hmode);
+countern generic map (N => int_arv_hmode'length) port map (
+	ck 			=> ck, 
+	rst 			=> rst, 
+	sync_clr 	=> '0',
+	en 			=> int_en_hmode_cnt, 
+	arv 			=> int_arv_hmode, 
+	q 				=> int_hmode_cnt, 
+	tc 			=> int_tc_hmode);
 
 FIFO_CTRL: 
-entity work.countern generic map (N => clog2W) port map (
-	ck 		=> ck, 
-	rst 		=> rst, 
-	en 		=> int_en_wr_ptr, 
-	arv		=> int_arv_wr, 
-	q 			=> int_wr_ptr,
-	tc 		=> int_tc_wr);
+countern generic map (N => int_arv_wr'length) port map (
+	ck 			=> ck, 
+	rst 			=> rst, 
+	sync_clr 	=> '0',
+	en 			=> int_en_wr_ptr, 
+	arv			=> int_arv_wr, 
+	q 				=> int_wr_ptr,
+	tc 			=> int_tc_wr);
 	
-ADDR_GEN:
-entity work.addr_gen port map (
-	ck 					=> ck,
-	rst 					=> rst,
-	inc					=> int_en_tileh_ptr,
-	even_odd_n			=> int_tileh_ptr(int_tileh_ptr'low),
-	offset_val			=> int_arv_tilev,
-	tilev_ptr			=> int_tilev_ptr,
-	tc_tilev				=> int_tc_tilev,
-	even_addr 			=> int_even_addr,
-	odd_addr				=> int_odd_addr);
+CKG_MASK_CTRL:
+ckg_ctrl port map (
+	ck 				=> ck,
+	rst 				=> rst,
+	tc_hmode			=> int_tc_hmode,
+	tc_tilev 		=> int_tc_tilev,
+	tc_tileh			=> int_tc_tileh,
+	ckg_mask			=> int_ckg_mask,
+	ckg_mask_lt		=> int_ckg_mask_lt,
+	ckg_rmask		=> int_ckg_rmask,
+	ckg_cmask		=> int_ckg_cmask
+	);
 	
-TILE_CTRL: 
-entity work.tile_ctrl port map (
+RD_ADDR_GEN: 
+addr_gen port map (
 	ck 		 			=> ck,
 	rst		 			=> rst,
-	int_en_wr_ptr		=> int_en_wr_ptr, 
-	int_tc_wr			=> int_tc_wr,
+	en_tilev_ptr		=> int_en_tilev_ptr,
 	arv_tilev			=> int_arv_tilev,
 	arv_tileh			=> int_arv_tileh,
+	arv_tileb			=> int_arv_tileb,
 	arv_tilec			=> int_arv_tilec,
-	tilev_ptr			=> int_tilev_ptr,
-	tileh_ptr			=> int_tileh_ptr,
 	s_tc_tilev 			=> int_tc_tilev,
 	s_tc_tileh 			=> int_tc_tileh,
+	s_tc_tileb			=> int_tc_tileb,
 	s_tc_tilec 			=> int_tc_tilec,
-	en_tilev_ptr 		=> int_en_tilev_ptr,
-	en_tileh_ptr 		=> int_en_tileh_ptr);
-
-CKG_CTRL:
-entity work.ckg_ctrl port map (
-	ck 					=> ck,
-	rst 					=> rst,
-	last_tilev_data 	=> int_last_tilev_data,
-	last_tileh_data 	=> int_last_tileh_data,
-	arv_lt_ckg 		 	=> int_arv_lt_ckg,
-	last_tilev		 	=> int_last_tilev,
-	last_tileh		 	=> int_last_tileh);
-
+	even_addr			=> int_even_addr,
+	odd_addr				=> int_odd_addr);
+	
 GLOBALS_T:
-entity work.urom port map (
+urom port map (
 	task 			=> task, 
 	arv_hmode 	=> int_arv_hmode,
 	arv_vmode	=> int_arv_vmode,
 	arv_wr 	 	=> int_arv_wr,
 	arv_tilev 	=> int_arv_tilev,
-	arv_tileh 	=> int_arv_tileh,
+	arv_tileh	=> int_arv_tileh,
+	arv_tileb 	=> int_arv_tileb,
 	arv_tilec 	=> int_arv_tilec,
-	ckg_lt_mask => int_ckg_lt_mask,
+	ckg_mask_lt => int_ckg_mask_lt,
 	ckg_mask		=> int_ckg_mask);
 	
-							
 end architecture; 
 

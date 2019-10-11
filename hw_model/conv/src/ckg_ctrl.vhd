@@ -6,47 +6,39 @@ use work.globals.all;
 
 entity ckg_ctrl is 
 port (
-	ck						: in  std_logic;
-	rst 					: in  std_logic; 
-	last_tilev_data	: in	unsigned(clog2v-1 downto 0);
-	last_tileh_data	: in	unsigned(clog2v-1 downto 0);
-	arv_lt_ckg			: in	unsigned(clog2v-1 downto 0);
-	last_tilev			: out std_logic; 
-	last_tileh			: out std_logic);
-end entity; 
+	ck 			: in 	std_logic;
+	rst 			: in 	std_logic; 
+	tc_hmode		: in 	std_logic;
+	tc_tilev 	: in 	std_logic;
+	tc_tileh		: in 	std_logic; 
+	ckg_mask		: in 	std_logic_vector(0 to W-1);
+	ckg_mask_lt : in 	std_logic_vector(0 to W-1);
+	ckg_rmask	: out std_logic_vector(0 to W-1);
+	ckg_cmask	: out std_logic_vector(0 to W-1)
+	);
+end entity;
 
-architecture beh of ckg_ctrl is 
+architecture beh of ckg_ctrl is
 
-signal int_last_tilev_data : unsigned(clog2v-1 downto 0);
-signal int_last_tileh_data : unsigned(clog2v-1 downto 0);
-
-signal int_arv_lt_ckg		: unsigned(clog2v-1 downto 0);
-signal int_last_tilev		: std_logic;
-signal int_last_tileh		: std_logic;
+signal int_en_ckg_r : std_logic;
+signal int_en_ckg_c : std_logic;
 
 begin
 
-int_last_tilev_data 	<= last_tilev_data;
-int_last_tileh_data 	<= last_tileh_data;
-int_arv_lt_ckg			<= arv_lt_ckg;
+ckg_sel_gen: 
+process(ck,rst)
+begin
+if rst = '1' then
+	int_en_ckg_r 	<= '0';	
+	int_en_ckg_c  	<= '0';
+elsif rising_edge(ck) and tc_hmode = '1' then
+	int_en_ckg_r 	<= tc_tilev;	
+	int_en_ckg_c  	<= tc_tileh;
+end if;
+end process;
 
-last_tilev 				<= int_last_tilev;
-last_tileh				<= int_last_tileh;
+ckg_rmask 			<= ckg_mask_lt when  int_en_ckg_r = '1' else ckg_mask;
+ckg_cmask 			<= ckg_mask_lt when  int_en_ckg_c = '1' else ckg_mask;
 
-tilev_cmp: 
-entity work.cmp generic map(N => clog2v) port map (
-	ck 		=> ck, 
-	rst 		=> rst, 
-	arv		=> int_arv_lt_ckg,
-	i_data	=>	int_last_tilev_data,
-	tc 		=> int_last_tilev);
-	
-tileh_cmp: 
-entity work.cmp generic map (N => clog2v) port map (
-	ck 		=> ck, 
-	rst 		=> rst, 
-	arv		=> int_arv_lt_ckg,
-	i_data	=> int_last_tileh_data,
-	tc 		=> int_last_tileh);
-	
-end architecture; 
+
+end architecture;

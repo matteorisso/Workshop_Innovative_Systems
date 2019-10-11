@@ -20,6 +20,19 @@ end entity;
 
 architecture rtl of imem is 
 
+component dual_port_rf
+port( 
+		ck 		: in 	std_logic;
+		rst		: in 	std_logic;
+		cs 		: in 	std_logic; 
+		rd			: in 	std_logic;
+		wr			: in 	std_logic;
+		rd_addr	: in 	unsigned(clog2X-1 downto 0);
+		wr_addr 	: in 	unsigned(clog2X-1 downto 0);
+		i_data	: in 	signed(N*W-1 downto 0); 
+		o_data 	: out signed(N*W-1 downto 0));   
+end component;
+
 type int_cs_t 	is array (0 to W-1) of std_logic;
 type int_rd_t 	is array (0 to W-1) of std_logic;
 type int_wr_t 	is array (0 to W-1) of std_logic;
@@ -53,7 +66,7 @@ end generate;
 
 odd_bin:
 for i in 0 to W-1 generate rfi:
-	entity work.dual_port_rf port map (
+	dual_port_rf port map (
 		ck 		=> ck,
 		rst		=> rst,
 		cs 		=> cs(i),

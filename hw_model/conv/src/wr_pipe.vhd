@@ -17,6 +17,19 @@ end entity;
 
 architecture beh of wr_pipe is 
 
+component countern 
+generic ( N	: natural := 16 );    
+port( 
+	ck 			: in std_logic; 
+	rst			: in std_logic; 
+	sync_clr		: in std_logic; 
+	en 			: in std_logic;
+	arv			: in unsigned(N-1 downto 0); -- auto-reload value
+	q 				: out unsigned(N-1 downto 0); 
+	tc				: out std_logic
+	);
+end component;
+
 signal int_res00 : signed((N+G)-1 downto 0);
 signal int_res01 : signed((N+G)-1 downto 0);
 signal int_res02 : signed((N+G)-1 downto 0);
@@ -38,7 +51,6 @@ signal int_en_res_ptr : std_logic;
 signal int_tc_res 	 : std_logic; 
 signal int_arv_res 	 : unsigned(1 downto 0);
 signal int_res_ptr 	 : unsigned(1 downto 0);
-
 
 signal int_d_reg	: PEResData; 
 signal int_q_reg 	: PEResData;
@@ -72,14 +84,15 @@ int_en_res_ptr <= ctrl_en_res_ptr;
 int_arv_res 	<= to_unsigned(W-1,clog2W); 
 
 res_cnt: 
-entity work.countern generic map(N => clog2W) 
+countern generic map(N => clog2W) 
 							port map(
-	ck 	=> ck, 
-	rst	=> rst,
-	en 	=> int_en_res_ptr,
-	arv	=> int_arv_res,
-	q 		=> int_res_ptr,
-	tc 	=> int_tc_res);
+	ck 		=> ck, 
+	rst		=> rst,
+	sync_clr => '0',
+	en 		=> int_en_res_ptr,
+	arv		=> int_arv_res,
+	q 			=> int_res_ptr,
+	tc 		=> int_tc_res);
 	
 mux:
 process(int_res_ptr, i_data)
