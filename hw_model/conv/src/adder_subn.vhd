@@ -5,11 +5,11 @@ use ieee.numeric_std.all;
 entity adder_subn is
 generic( N : natural:=4 );
 port(
-		a 			: in 	signed(N-1 downto 0);
-		b 			: in	signed(N-1 downto 0);
+		a 				: in 	signed(N-1 downto 0);
+		b 				: in	signed(N-1 downto 0);
 		add_subn		: in	std_logic; 
 		res 			: out	signed(N-1 downto 0);
-		c_out			: out   std_logic);
+		c_out			: out std_logic);
 end entity;
 
 architecture structure of adder_subn is

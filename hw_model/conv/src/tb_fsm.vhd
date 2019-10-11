@@ -28,10 +28,11 @@ signal int_en_pe				: std_logic;
 signal int_en_rd_ptr  		: std_logic;
 signal int_en_wr_ptr  		: std_logic; 
 signal int_en_res_ptr 		: std_logic; 
-signal int_en_vmode	 		: std_logic; 
+signal int_en_vmode	 		: std_logic;
+ 
+signal int_s_ckg				: std_logic;
 
 signal i_kernel_tb   		: std_logic_vector(2*K-1 downto 0):= (others=>'0');
-
 signal i_data_tb     		: RFRowData:= (others=>'0');
 signal o_data_tb     		: PEResData; 
 
@@ -88,6 +89,7 @@ entity work.conv_fsm3 port map (
 	s_tc_hmode			=> int_tc_rd,
 	s_tc_vmode			=> int_tc_vmode,
 	s_tc_res     		=> int_tc_res,
+	s_ckg					=> int_s_ckg,
 	s_tc_tilev   	 	=> int_tc_tilev, 
 	s_tc_tileh   	 	=> int_tc_tileh, 
 	s_tc_tileb			=> int_tc_tileb,
@@ -110,6 +112,7 @@ entity work.main port map (
 	s_tc_wr 				=> int_tc_wr, 
 	s_tc_hmode			=> int_tc_rd,
 	s_tc_vmode			=> int_tc_vmode,
+	s_ckg					=> int_s_ckg,
 	s_tc_res  			=> int_tc_res,
 	s_tc_tilev			=> int_tc_tilev, 
 	s_tc_tileh   	 	=> int_tc_tileh, 

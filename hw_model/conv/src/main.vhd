@@ -5,13 +5,12 @@ use ieee.numeric_std.all;
 use work.globals.all;
 
 -- TODO: skip ckgated pe at wr_pipe
--- TODO: merge counters in addreint_o_data gen 
 -- TODO: merge regfile in data_buffer -> all beh
--- TODO: VSG (style guide) do not use logic on ctrl signals in input (set int_pe_en from fsm !)
+-- TODO: VSG (style guide) do not use logic on ctrl signals in input (set int_pe_en from fsm)
 -- TODO: mux entities, port map no proceint_o_data (mux5to1n, mux2to1n)
 -- TODO: VSG instead of caps-lock naming, ctrl_xxxx
 -- TODO: core v2 implementation
--- TODO: split data_buffer even/odd tile, OCM (on-chip mem) 4-bit word acceint_o_data 
+-- TODO: split data_buffer even/odd tile, OCM (on-chip mem) 4-bit word access int_o_data 
 -- TODO: add fine-grained ckg to registers in PE Block (conv psum width < fc psum width)							
 
 entity main is 
@@ -29,6 +28,7 @@ port(
 	s_tc_hmode			: out std_logic;
 	s_tc_vmode			: out std_logic;
 	s_tc_res				: out std_logic; 
+	s_ckg					: out std_logic; 
 	s_tc_tilev			: out std_logic; 
 	s_tc_tileh			: out std_logic; 
 	s_tc_tileb			: out std_logic; 
@@ -51,6 +51,7 @@ port (
 	tc_tileh			: in 	std_logic; 
 	ckg_mask			: in 	std_logic_vector(0 to W-1);
 	ckg_mask_lt 	: in 	std_logic_vector(0 to W-1);
+	s_ckg				: out std_logic; 
 	ckg_rmask		: out std_logic_vector(0 to W-1);
 	ckg_cmask		: out std_logic_vector(0 to W-1)
 	);
@@ -195,6 +196,7 @@ signal int_arv_ckg				: unsigned(clog2v-1 downto 0);
 signal int_last_tilev			: std_logic;
 signal int_last_tileh			: std_logic;
 
+signal int_s_ckg					: std_logic; 
 signal int_ckg_mask				: std_logic_vector(0 to W-1);
 signal int_ckg_mask_lt  		: std_logic_vector(0 to W-1);
 signal int_ckg_rmask				: std_logic_vector(0 to W-1); 
@@ -210,6 +212,7 @@ s_tc_tilev 				<= int_tc_tilev;
 s_tc_tileh				<= int_tc_tileh;
 s_tc_tileb				<= int_tc_tileb;
 s_tc_tilec 				<= int_tc_tilec;
+s_ckg 					<= int_s_ckg;
 
 int_pe_en 	   		<= ctrl_en_pe;
 int_en_hmode_cnt  	<= ctrl_en_rd_ptr;
@@ -296,6 +299,7 @@ ckg_ctrl port map (
 	tc_hmode			=> int_tc_hmode,
 	tc_tilev 		=> int_tc_tilev,
 	tc_tileh			=> int_tc_tileh,
+	s_ckg				=> int_s_ckg,
 	ckg_mask			=> int_ckg_mask,
 	ckg_mask_lt		=> int_ckg_mask_lt,
 	ckg_rmask		=> int_ckg_rmask,
@@ -316,7 +320,21 @@ addr_gen port map (
 	s_tc_tileb			=> int_tc_tileb,
 	s_tc_tilec 			=> int_tc_tilec,
 	even_addr			=> int_even_addr,
-	odd_addr				=> int_odd_addr);
+	odd_addr				=> int_odd_addr
+	);
+	
+WR_ADDR_GEN: 
+addr_gen port map (
+	ck 		 			=> ck,
+	rst		 			=> rst,
+	en_tilev_ptr		=> int_tc_res,
+	arv_tilev			=> int_arv_tilev,
+	arv_tileh			=> int_arv_tileh,
+	arv_tileb			=> int_arv_tileb,
+	arv_tilec			=> int_arv_tilec
+--	even_addr			=> int_even_addr,
+--	odd_addr				=> int_odd_addr
+	);
 	
 GLOBALS_T:
 urom port map (

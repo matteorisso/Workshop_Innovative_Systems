@@ -13,6 +13,7 @@ port (
 	tc_tileh		: in 	std_logic; 
 	ckg_mask		: in 	std_logic_vector(0 to W-1);
 	ckg_mask_lt : in 	std_logic_vector(0 to W-1);
+	s_ckg			: out std_logic; 
 	ckg_rmask	: out std_logic_vector(0 to W-1);
 	ckg_cmask	: out std_logic_vector(0 to W-1)
 	);
@@ -24,6 +25,10 @@ signal int_en_ckg_r : std_logic;
 signal int_en_ckg_c : std_logic;
 
 begin
+
+s_ckg					<= int_en_ckg_r;
+ckg_rmask 			<= ckg_mask_lt when  int_en_ckg_r = '1' else ckg_mask;
+ckg_cmask 			<= ckg_mask_lt when  int_en_ckg_c = '1' else ckg_mask;
 
 ckg_sel_gen: 
 process(ck,rst)
@@ -37,8 +42,6 @@ elsif rising_edge(ck) and tc_hmode = '1' then
 end if;
 end process;
 
-ckg_rmask 			<= ckg_mask_lt when  int_en_ckg_r = '1' else ckg_mask;
-ckg_cmask 			<= ckg_mask_lt when  int_en_ckg_c = '1' else ckg_mask;
 
 
 end architecture;

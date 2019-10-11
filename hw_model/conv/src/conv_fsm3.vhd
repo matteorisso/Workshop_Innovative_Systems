@@ -12,6 +12,8 @@ port(
 	s_tc_hmode          	: in std_logic;
 	s_tc_vmode          	: in std_logic;
 	s_tc_res            	: in std_logic;
+	
+	s_ckg						: in std_logic; 
 	s_tc_tilev          	: in std_logic;
 	s_tc_tileh				: in std_logic;
 	s_tc_tileb				: in std_logic;
@@ -36,12 +38,6 @@ type state is (
 	HMODE, 
 	VMODE, 
 	RES, 
-	LT_HMODE, 
-	LT_VMODE, 
-	LT_HMODE_2, 
-	LT_VMODE_2, 
-	LT_HMODE_3, 
-	LT_VMODE_3,
 	LT_RES, 
 	EOC);
 
@@ -97,9 +93,13 @@ when INIT =>
 		end if;
  
 when HMODE =>
-		if s_tc_hmode = '1' then
+		if s_tc_hmode = '1' then	
 			if s_tc_vmode = '1' then
-				ns <= RES;
+				if s_ckg = '1' then
+					ns <= LT_RES;
+				else
+					ns <= RES;
+				end if;
 			else
 				ns <= VMODE; 
 			end if;
@@ -116,7 +116,18 @@ when RES =>
 		else
 				ns <= RES;
 		end if;	
-
+		
+when LT_RES =>
+		if s_tc_res = '1' then
+			if s_tc_tileb = '1' then
+				ns <= LD_KERNEL;
+			else
+				ns <= INIT;
+			end if;
+		else
+			ns <= LT_RES;
+		end if;
+		
 when others => ns <= IDLE;
 
 end case;
@@ -148,6 +159,10 @@ when VMODE =>
 			ctrl_en_wr_ptr  	<= '1';
 			
 when RES =>
+			ctrl_en_pe 			<= '0';
+			ctrl_en_res_ptr 	<= '1';
+			
+when LT_RES =>
 			ctrl_en_pe 			<= '0';
 			ctrl_en_res_ptr 	<= '1';
 		

@@ -18,16 +18,6 @@ end entity;
 
 architecture structure of PE is
 
-component adder_subn
-generic( N : natural:=4 );
-port(
-		a 			: in 	signed(N-1 downto 0);
-		b 			: in	signed(N-1 downto 0);
-		add_subn		: in	std_logic; 
-		res 			: out	signed(N-1 downto 0);
-		c_out			: out   std_logic); 
-end component;
-
 signal int_q_im  : signed(N-1 downto 0);
 signal int_sgnext: signed(N-1+G downto 0); 
 signal int_d_acc : signed(N-1+G downto 0);
@@ -43,7 +33,7 @@ int_sgnext(N-1+G downto N-1) 	<= ( others => int_q_im(int_q_im'high) );
 int_sgnext(N-1 downto 0)		<= int_q_im;  
 
 add: 
-adder_subn generic map(N => N+G) port map(
+entity work.adder_subn generic map(N => N+G) port map(
 	a 			=> int_q_acc, 
 	b 			=> int_sgnext, 
 	add_subn => int_q_k, 
