@@ -8,22 +8,22 @@ entity imem_w is
 port(
 	ck 				: in  std_logic;
 	rst 				: in 	std_logic; 
-	even_rd_addr	: in 	unsigned(clog2X-1 downto 0);
-	even_wr_addr	: in 	unsigned(clog2X-1 downto 0);
-	odd_rd_addr 	: in 	unsigned(clog2X-1 downto 0);
-	odd_wr_addr 	: in 	unsigned(clog2X-1 downto 0);
+	even_rd_addr	: in 	unsigned(clog2m-1 downto 0);
+	even_wr_addr	: in 	unsigned(clog2m-1 downto 0);
+	odd_rd_addr 	: in 	unsigned(clog2m-1 downto 0);
+	odd_wr_addr 	: in 	unsigned(clog2m-1 downto 0);
 	sel				: in	unsigned(clog2W-1 downto 0);
 	sel2				: in 	std_logic; 
-	i_data 			: in 	signed(N*W-1 downto 0);	
-	o_data 			: out signed(2*N*W-1 downto 0);
-	o_data2			: out int_mem_t
+	i_data 			: in 	RFWord;	
+	o_data 			: out FIFORowData;
+	o_data2			: out MemDataOut
 	);
 end entity; 
 
 architecture rtl of imem_w is
 
-signal int_i_data_even 	: int_mem_t;
-signal int_i_data_odd	: int_mem_t; 
+signal int_i_data_even 	: MemDataOut;
+signal int_i_data_odd	: MemDataOut; 
  
 begin
 

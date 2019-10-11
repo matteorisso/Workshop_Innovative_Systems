@@ -6,11 +6,11 @@ use work.globals.all;
 
 entity regfile is
 port( 
-	ck			: in std_logic; 
-	rst 		: in std_logic; 
-	en 		: in std_logic_vector(0 to W-1);
-	i_data	: in  RFRowData;
-	o_data	: out RFBlockData
+	ck			: in 	std_logic; 
+	rst 		: in 	std_logic; 
+	en 		: in 	std_logic_vector(0 to W-1);
+	i_data	: in  FIFORowData;
+	o_data	: out FIFOBlockData
 	);
 end entity;
 
@@ -20,7 +20,7 @@ begin
 
 rGen: for i in 0 to W-1 generate regi: 
 	
-	entity work.regn 	generic map (N => WL) port map (
+	entity work.regn 	generic map (N => N_REG_FIFO) port map (
 		ck 	=> ck, 
 		rst 	=> rst, 
 		en	 	=> en(i), 

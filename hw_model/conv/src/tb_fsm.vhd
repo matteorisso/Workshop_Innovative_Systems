@@ -24,16 +24,17 @@ signal int_tc_tileh   		: std_logic;
 signal int_tc_tileb   		: std_logic;
 signal int_tc_tilec   		: std_logic;
 
-signal int_en_pe				: std_logic; 
-signal int_en_rd_ptr  		: std_logic;
-signal int_en_wr_ptr  		: std_logic; 
-signal int_en_res_ptr 		: std_logic; 
-signal int_en_vmode	 		: std_logic;
+signal int_en_pe					: std_logic; 
+signal int_en_rd_ptr  			: std_logic;
+signal int_en_wr_ptr  			: std_logic; 
+signal int_en_res_ptr 			: std_logic; 
+signal int_en_vmode	 			: std_logic;
+signal int_ctrl_sel_arv_res 	: std_logic;
  
 signal int_s_ckg				: std_logic;
 
-signal i_kernel_tb   		: std_logic_vector(2*K-1 downto 0):= (others=>'0');
-signal i_data_tb     		: RFRowData:= (others=>'0');
+signal i_kernel_tb   		: std_logic_vector(N_WEIGHT*K-1 downto 0):= (others=>'0');
+signal i_data_tb     		: FIFORowData:= (others=>'0');
 signal o_data_tb     		: PEResData; 
 
 begin
@@ -65,7 +66,7 @@ wait;
 end process;
 
 idata: process(ck_tb)
-variable i_data_v : RFRowData:= (others=>'0'); 
+variable i_data_v : FIFORowData:= (others=>'0'); 
 begin
 if rising_edge(ck_tb) then
 	if int_en_wr_ptr = '1' then
@@ -100,6 +101,7 @@ entity work.conv_fsm3 port map (
 	ctrl_en_vmode		=> int_en_vmode,
 	ctrl_en_wr_ptr  	=> int_en_wr_ptr,
 	ctrl_en_res_ptr 	=> int_en_res_ptr,
+	ctrl_sel_arv_res 	=> int_ctrl_sel_arv_res,
 	
 	done  	  			=> done_tb);
 					
@@ -119,11 +121,12 @@ entity work.main port map (
 	s_tc_tileb			=> int_tc_tileb,
 	s_tc_tilec 			=> int_tc_tilec,
 	
+	ctrl_en_hmode  	=> int_en_rd_ptr,
+	ctrl_en_vmode		=> int_en_vmode,
 	ctrl_en_pe			=> int_en_pe,
-	ctrl_en_rd_ptr  	=> int_en_rd_ptr,
 	ctrl_en_wr_ptr  	=> int_en_wr_ptr,
 	ctrl_en_res_ptr 	=> int_en_res_ptr,
-	ctrl_en_vmode		=> int_en_vmode,
+	ctrl_sel_arv_res 	=> int_ctrl_sel_arv_res,
 	
 	i_kernel 			=> i_kernel_tb,
 	i_data 				=> i_data_tb,

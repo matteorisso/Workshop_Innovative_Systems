@@ -9,7 +9,7 @@ port(
 		ck  					: in 	std_logic;
 		rst 					: in 	std_logic;
 		
-		en_tilev_ptr		: in 	std_logic;
+		inc					: in 	std_logic;
 		arv_tilev			: in 	unsigned(clog2v-1 downto 0);
 		arv_tileh			: in	unsigned(clog2h-1 downto 0);
 		arv_tileb			: in 	unsigned(clog2b-1 downto 0);
@@ -20,8 +20,8 @@ port(
 		s_tc_tileb			: out std_logic; 
 		s_tc_tilec			: out std_logic;
 		
-		even_addr			: out unsigned(clog2X-1 downto 0);
-		odd_addr				: out unsigned(clog2X-1 downto 0)
+		even_addr			: out unsigned(clog2m-1 downto 0);
+		odd_addr				: out unsigned(clog2m-1 downto 0)
 		);		
 end entity;
 
@@ -66,16 +66,16 @@ signal int_page_ptr		: unsigned(int_arv_tileh'high downto 0);
 
 signal int_inc_even 		: std_logic;
 signal int_inc_odd		: std_logic;
-signal int_even_offset 	: unsigned(clog2X-1 downto 0); 
-signal int_odd_offset	: unsigned(clog2X-1 downto 0); 
-signal int_offset_val 	: unsigned(clog2X-1 downto 0); 
+signal int_even_offset 	: unsigned(clog2m-1 downto 0); 
+signal int_odd_offset	: unsigned(clog2m-1 downto 0); 
+signal int_offset_val 	: unsigned(clog2m-1 downto 0); 
 
-signal int_even_addr		: unsigned(clog2X-1 downto 0); 
-signal int_odd_addr		: unsigned(clog2X-1 downto 0); 
+signal int_even_addr		: unsigned(clog2m-1 downto 0); 
+signal int_odd_addr		: unsigned(clog2m-1 downto 0); 
 
 begin
 
-int_en_tilev_ptr 	<= en_tilev_ptr;
+int_en_tilev_ptr 	<= inc;
 int_en_tileh_ptr 	<= int_tc_tilev 	and int_en_tilev_ptr;
 int_en_tileb_ptr	<= int_tc_tileh 	and int_en_tileh_ptr;
 int_en_tilec_ptr	<= int_tc_tileb 	and int_en_tileb_ptr;

@@ -10,7 +10,7 @@ port(
 	rst	 	: in 		std_logic; 
 	en 	 	: in 		std_logic_vector(0 to W-1);
 	rd_ptr 	: in 		unsigned(2 downto 0);
-	i_data 	: in  	RFRowData; 
+	i_data 	: in  	FIFORowData; 
 	o_data 	: out 	PEBlockData
 	);
 end entity;
@@ -22,20 +22,20 @@ port(
 	ck			: in std_logic; 
 	rst 		: in std_logic; 
 	en 		: in std_logic_vector(0 to W-1);
-	i_data	: in  RFRowData;
-	o_data	: out RFBlockData
+	i_data	: in  FIFORowData;
+	o_data	: out FIFOBlockData
 	);
 end component;
 
 component mux5to1
 port(
-	i_data	: in 	RFRowData;
+	i_data	: in 	FIFORowData;
 	sel 		: in 	unsigned(2 downto 0); 
    o_data 	: out PERowData
 	 ); 
 end component;
 
-signal ss: RFBlockData; 
+signal ss: FIFOBlockData; 
 
 begin
 

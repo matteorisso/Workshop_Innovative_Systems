@@ -12,16 +12,16 @@ port(
 	en			: in 	std_logic;
 	k  		: in 	std_logic_vector(1 downto 0);  -- "00", "01" : zero ; "10" : +1 ; "11" : -1
 	i_data	: in 	signed(N-1 downto 0);
-	o_data	: out signed(N-1+G downto 0)
+	o_data	: out signed(N-1+BG downto 0)
 	);
 end entity;
 
 architecture structure of PE is
 
 signal int_q_im  : signed(N-1 downto 0);
-signal int_sgnext: signed(N-1+G downto 0); 
-signal int_d_acc : signed(N-1+G downto 0);
-signal int_q_acc : signed(N-1+G downto 0);
+signal int_sgnext: signed(N-1+BG downto 0); 
+signal int_d_acc : signed(N-1+BG downto 0);
+signal int_q_acc : signed(N-1+BG downto 0);
 signal int_q_k   : std_logic;
 
 signal int_d_en : std_logic; 
@@ -29,11 +29,11 @@ signal int_q_en : std_logic;
 
 begin
 
-int_sgnext(N-1+G downto N-1) 	<= ( others => int_q_im(int_q_im'high) );
-int_sgnext(N-1 downto 0)		<= int_q_im;  
+int_sgnext(N-1+BG downto N-1) 	<= ( others => int_q_im(int_q_im'high) );
+int_sgnext(N-1 downto 0)			<= int_q_im;  
 
 add: 
-entity work.adder_subn generic map(N => N+G) port map(
+entity work.adder_subn generic map(N => N+BG) port map(
 	a 			=> int_q_acc, 
 	b 			=> int_sgnext, 
 	add_subn => int_q_k, 

@@ -6,10 +6,10 @@ use work.globals.all;
 
 entity imem_bank_if is
 port(	
-	i_data_even	: in 	int_mem_t;
-	i_data_odd	: in	int_mem_t;
+	i_data_even	: in 	MemDataOut;
+	i_data_odd	: in	MemDataOut;
 	sel			: in 	std_logic;
-	o_data 		: out int_mem_t
+	o_data 		: out MemDataOut
 	);
 end entity;
 

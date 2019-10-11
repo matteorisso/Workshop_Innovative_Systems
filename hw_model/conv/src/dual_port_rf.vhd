@@ -5,22 +5,23 @@ use ieee.numeric_std.all;
 use work.globals.all;
 
 entity dual_port_rf is
+generic ( N : natural := N );
 port( 
-		ck 		: in 	std_logic;
-		rst		: in 	std_logic;
-		cs 		: in 	std_logic; 
-		rd			: in 	std_logic;
-		wr			: in 	std_logic;
-		rd_addr	: in 	unsigned(clog2X-1 downto 0);
-		wr_addr 	: in 	unsigned(clog2X-1 downto 0);
-		i_data	: in 	signed(N*W-1 downto 0); 
-		o_data 	: out signed(N*W-1 downto 0)); 
+	ck 		: in 	std_logic;
+	rst		: in 	std_logic;
+	cs 		: in 	std_logic; 
+	rd			: in 	std_logic;
+	wr			: in 	std_logic;
+	rd_addr	: in 	unsigned(clog2m-1 downto 0);
+	wr_addr 	: in 	unsigned(clog2m-1 downto 0);
+	i_data	: in 	signed(N-1 downto 0); 
+	o_data 	: out signed(N-1 downto 0)
+	); 
 end entity;
 
 architecture beh of dual_port_rf is
 
-type int_mem_t is array (0 to W*X-1) of signed(N*W-1 downto 0);
-signal word : int_mem_t := (others => (others => '0')); 
+signal word : DualPortRF := (others => (others => '0')); 
 
 begin
 

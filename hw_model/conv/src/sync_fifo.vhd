@@ -6,12 +6,12 @@ use work.globals.all;
 
 entity sync_fifo is
 port(
-	ck 	 	: in std_logic; 
-	rst	 	: in std_logic; 
-	ld 	 	: in std_logic;
-	rd_ptr 	: in unsigned(2 downto 0);
-	wr_ptr 	: in unsigned(1 downto 0);
-	i_data 	: in  RFRowData; 
+	ck 	 	: in 	std_logic; 
+	rst	 	: in 	std_logic; 
+	ld 	 	: in 	std_logic;
+	rd_ptr 	: in 	unsigned(2 downto 0);
+	wr_ptr 	: in 	unsigned(1 downto 0);
+	i_data 	: in  FIFORowData; 
 	o_data 	: out PEBlockData
 	);
 end entity;
@@ -24,7 +24,7 @@ port(
 	rst	 	: in 		std_logic; 
 	en 	 	: in 		std_logic_vector(0 to W-1);
 	rd_ptr 	: in 		unsigned(2 downto 0);
-	i_data 	: in  	RFRowData; 
+	i_data 	: in  	FIFORowData; 
 	o_data 	: out 	PEBlockData
 	);
 end component;

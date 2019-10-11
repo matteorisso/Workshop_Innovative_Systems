@@ -14,8 +14,9 @@ port(
 	arv_tileh		: out unsigned(clog2h-1 downto 0);
 	arv_tileb 		: out unsigned(clog2b-1 downto 0);
 	arv_tilec	 	: out unsigned(clog2c-1 downto 0);
-	ckg_mask_lt		: out std_logic_vector(3 downto 0);
-	ckg_mask 		: out std_logic_vector(3 downto 0)
+	arv_ckg			: out unsigned(clog2W-1 downto 0);
+	ckg_mask 		: out std_logic_vector(0 to W-1);
+	ckg_mask_lt		: out std_logic_vector(0 to W-1)
 	);
 end entity;
 
@@ -45,8 +46,9 @@ when C2 =>
 	-- OUTPUT BATCH SIZE
 	arv_tilec 		<= to_unsigned(C2_NB_TILEC-1,clog2c);
 	-- MOD OP. CKGATING
-	ckg_mask_lt		<= "0011";
+	arv_ckg			<= to_unsigned(1, clog2W);
 	ckg_mask			<= "0000";
+	ckg_mask_lt		<= "0011";
 
 when others => 
 	-- K SIZE
@@ -62,8 +64,9 @@ when others =>
 	-- OUTPUT BATCH SIZE
 	arv_tilec 		<= to_unsigned(C1_NB_TILEC-1,clog2c);	
 	-- MOD OP. CKGATING
-	ckg_mask_lt		<= "0000";
+	arv_ckg			<= to_unsigned(W-1, clog2W);
 	ckg_mask			<= "0000";
+	ckg_mask_lt		<= "0000";
 	
 end case;
 end process;

@@ -6,20 +6,22 @@ use work.globals.all;
 
 entity imem_fifo_if is
 port(	
-	i_data_even  	: in 	int_mem_t;
-	i_data_odd   	: in	int_mem_t;
-	sel			        : in 	unsigned(1 downto 0);
-	o_data 		     : out signed(2*N*W-1 downto 0)
+	i_data_even  	: in 	MemDataOut;
+	i_data_odd   	: in	MemDataOut;
+	sel			   : in 	unsigned(1 downto 0);
+	o_data 		   : out FIFORowData
 	);
 end entity;
 
 architecture rtl of imem_fifo_if is
 
-signal int_o_data_even 	: signed(N*W-1 downto 0);
-signal int_o_data_odd	: signed(N*W-1 downto 0);
+signal int_o_data_even 	: RFWord;
+signal int_o_data_odd	: RFWord;
 
 begin
-o_data <= int_o_data_even & int_o_data_odd; -- when tileh_lsb = '0' else int_o_data_odd&int_o_data_even
+
+o_data <= int_o_data_even & int_o_data_odd; 
+-- when tileh_lsb = '0' else int_o_data_odd&int_o_data_even
 
 mux4to1_even:
 process(i_data_even,sel)

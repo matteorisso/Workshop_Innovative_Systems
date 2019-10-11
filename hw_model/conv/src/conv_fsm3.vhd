@@ -24,8 +24,10 @@ port(
 	ctrl_en_vmode			: out std_logic; 
 	ctrl_en_wr_ptr			: out std_logic;
 	ctrl_en_res_ptr		: out std_logic;
+	ctrl_sel_arv_res		: out std_logic; 
 	
-	done                	: out std_logic);
+	done                	: out std_logic
+	);
 
 end entity;
 
@@ -140,6 +142,7 @@ ctrl_en_hmode 		<= '0';
 ctrl_en_vmode		<= '0';
 ctrl_en_wr_ptr 	<= '0';
 ctrl_en_res_ptr	<= '0';
+ctrl_sel_arv_res	<= '0';
 done 					<= '0'; 
 
 case(ps) is
@@ -165,6 +168,7 @@ when RES =>
 when LT_RES =>
 			ctrl_en_pe 			<= '0';
 			ctrl_en_res_ptr 	<= '1';
+			ctrl_sel_arv_res	<= '1';
 		
 when EOC => 
 			done <= '1'; 

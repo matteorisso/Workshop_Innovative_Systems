@@ -6,7 +6,7 @@ use work.globals.all;
 
 entity mux5to1 is
 port(
-	i_data	: in 	RFRowData;
+	i_data	: in 	FIFORowData;
 	sel 		: in 	unsigned(2 downto 0); 
    o_data 	: out PERowData
 	 );
@@ -18,11 +18,11 @@ begin
 process(i_data,sel)
 begin
 case( sel ) is 
-	when "001"  => o_data <= i_data(WL-1*N-1 downto WL-1*N -N*W);   
-	when "010"  => o_data <= i_data(WL-2*N-1 downto WL-2*N -N*W); 
-	when "011"  => o_data <= i_data(WL-3*N-1 downto WL-3*N -N*W); 
-	when "100"  => o_data <= i_data(WL-4*N-1 downto WL-4*N -N*W); 
-	when others => o_data <= i_data(WL-1 downto WL-0*N -N*W);
+	when "001"  => o_data <= i_data(N_REG_FIFO-1*N-1 downto N_REG_FIFO-1*N -N*W);   
+	when "010"  => o_data <= i_data(N_REG_FIFO-2*N-1 downto N_REG_FIFO-2*N -N*W); 
+	when "011"  => o_data <= i_data(N_REG_FIFO-3*N-1 downto N_REG_FIFO-3*N -N*W); 
+	when "100"  => o_data <= i_data(N_REG_FIFO-4*N-1 downto N_REG_FIFO-4*N -N*W); 
+	when others => o_data <= i_data(N_REG_FIFO-1 downto N_REG_FIFO-0*N -N*W);
 end case;
 end process; 
 

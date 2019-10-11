@@ -28,7 +28,7 @@ port(
 	en			: in 	std_logic;
 	k  		: in 	std_logic_vector(1 downto 0);  -- "00", "01" : zero ; "10" : +1 ; "11" : -1
 	i_data	: in 	signed(N-1 downto 0);
-	o_data	: out signed(N-1+G downto 0)
+	o_data	: out signed(N-1+BG downto 0)
 	);
 end component;
 
@@ -53,7 +53,7 @@ row: for i in 0 to W-1 generate
 			en 			=> int_pe_en(i)(j), 
 			k 				=> i_kernel, 
 			i_data 		=> int_i_data(i)(W*N-1 -j*N downto (W*N - N*(j+1))), 
-			o_data 		=> o_data(i)(W*(N+G)-1 -j*(N+G) downto (W*(N+G) - (N+G)*(j+1)))
+			o_data 		=> o_data(i)(W*(N+BG)-1 -j*(N+BG) downto (W*(N+BG) - (N+BG)*(j+1)))
 		);
 	
 		int_pe_en(i)(j) <= en and (ckg_rmask(i) nor ckg_cmask(j));
