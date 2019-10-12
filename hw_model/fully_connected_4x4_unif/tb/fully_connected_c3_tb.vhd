@@ -9,11 +9,11 @@ use ieee.std_logic_textio.all;
 
 use work.param.all;
 
-entity fully_connected_all_tb is
+entity fully_connected_c3_tb is
 	
 end entity;
 
-architecture test of fully_connected_all_tb is
+architecture test of fully_connected_c3_tb is
 
 component fully_connected is
 
@@ -65,7 +65,6 @@ end component;
 	file file_weights  : text;
 	file file_weights2 : text;	
 	file file_results  : text;
-	file file_results2 : text;	
 
 	
 	signal tb_clk		: std_logic;
