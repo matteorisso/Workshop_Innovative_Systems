@@ -34,7 +34,7 @@ end component;
 
 type ckg_mask_t is array (0 to W-1) of std_logic_vector(0 to W-1);
 
-signal int_pe_en : ckg_mask_t; 
+signal int_pe_en 	: ckg_mask_t; 
 signal int_i_data : peBlockData;
 
 

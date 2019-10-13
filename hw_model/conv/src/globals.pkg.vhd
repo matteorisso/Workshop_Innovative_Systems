@@ -65,6 +65,9 @@ type 	FIFOBlockData 	is array (0 to W-1) of FIFORowData;
 type 	PEBlockData 	is array (0 to W-1) of PERowData;	
 type 	PEBlockDataRes is array (0 to W-1) of PEResData;	
 
+type  PERowData2 		is array (0 to W-1) of signed(N-1 downto 0);
+type  PEResData2 		is array (0 to W-1) of signed(N+BG-1 downto 0);
+
 type layer_t is (
 	C1, 
 	C2
