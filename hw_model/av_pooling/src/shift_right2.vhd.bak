@@ -1,0 +1,70 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity shift_right2 is
+
+ generic( N : natural:= 11 );
+ 
+port(
+		in0      : in signed(N-1 downto 0);
+		in1      : in signed(N-1 downto 0);
+        in2      : in signed(N-1 downto 0);
+		in3	     : in signed(N-1 downto 0);
+	    out0     : out signed(N-8 downto 0);    -- the out has to be on 3 bits
+	    out1     : out signed(N-8 downto 0);
+	    out2     : out signed(N-8 downto 0);
+	    out3     : out signed(N-8 downto 0)
+    );
+	
+end entity;
+
+architecture structure of shift_right2 is
+
+signal o_0  : signed(N-1 downto 0);
+signal o_1  : signed(N-1 downto 0);
+signal o_2  : signed(N-1 downto 0);
+signal o_3  : signed(N-1 downto 0);
+
+signal o_0_red  : signed(N-7 downto 0);
+signal o_1_red  : signed(N-7 downto 0);
+signal o_2_red  : signed(N-7 downto 0);
+signal o_3_red  : signed(N-7 downto 0);
+
+begin
+
+o_0 <= shift_RIGHT(in0,2);
+o_1 <= shift_RIGHT(in1,2);
+o_2 <= shift_RIGHT(in2,2);
+o_3 <= shift_RIGHT(in3,2);
+
+o_0_red <= o_0(N-1 downto N-7);
+o_1_red <= o_1(N-1 downto N-7);
+o_2_red <= o_2(N-1 downto N-7);
+o_3_red <= o_3(N-1 downto N-7);
+
+out0(0) <= o_0_red(0) xor o_0_red(1);
+out1(0) <= o_1_red(0) xor o_1_red(1);
+out2(0) <= o_2_red(0) xor o_2_red(1);
+out3(0) <= o_3_red(0) xor o_3_red(1);
+
+out0(1) <= (o_0_red(0) and o_0_red(1)) xor o_0_red(2);
+out1(1) <= (o_1_red(0) and o_1_red(1)) xor o_1_red(2);
+out2(1) <= (o_2_red(0) and o_2_red(1)) xor o_2_red(2);
+out3(1) <= (o_3_red(0) and o_3_red(1)) xor o_3_red(2);
+
+out0(2) <= (o_0_red(0) and o_0_red(1) and o_0_red(2)) xor o_0_red(3);
+out1(2) <= (o_1_red(0) and o_1_red(1) and o_1_red(2)) xor o_1_red(3);
+out2(2) <= (o_2_red(0) and o_2_red(1) and o_2_red(2)) xor o_2_red(3);
+out3(2) <= (o_3_red(0) and o_3_red(1) and o_3_red(2)) xor o_3_red(3);
+
+out0((N-8) downto 3) <= ((N-8) downto 3 => '0');
+out1((N-8) downto 3) <= ((N-8) downto 3 => '0')
+out2((N-8) downto 3) <= ((N-8) downto 3 => '0');
+out3((N-8) downto 3) <= ((N-8) downto 3 => '0');
+
+ 
+end architecture;  
+
+	
+		

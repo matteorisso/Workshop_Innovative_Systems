@@ -31,7 +31,11 @@ begin
 				d_out <= "000";
 				tc_6  <= '0';
 			elsif en_h = '1' then
-				d_out	<= std_logic_vector(unsigned(d_out)+1);
+				if d_out = "110" then
+					d_out <= "000";
+				else
+					d_out	<= std_logic_vector(unsigned(d_out)+1);
+				end if;
 			end if;
 		end if;	
 		tc_6	<=	d_out(2) and d_out(1) and (not d_out(0));

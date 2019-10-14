@@ -26,7 +26,7 @@ entity avr_pooling is
 		  en_cnt      : in  std_logic; 	        
 		  o_pool 	  : out PEBlockData;
 		  tc          : out std_logic;                   -- result of the comparator used to understand when the output data are valid 
-		  cnt         : out unsigned(cnt_b-1 downto 0)   --TEST PURPOSE        
+		  cnt         : out unsigned(1 downto 0)   --TEST PURPOSE        
 		  
 	);
 	
@@ -71,7 +71,7 @@ component interf is
 
 end component;
 
-component shift_left2 is
+component shift_right2 is
 
  generic( N : natural:= 11 );
  
@@ -100,10 +100,35 @@ port(
 	); 
 end component; 
 
+-- component relu_4bit is
+	-- port(
+		-- d_in 	: in 	std_logic_vector(3 downto 0);
+		-- d_out 	: out 	std_logic_vector(3 downto 0)
+	-- );
+-- end component;
+
 signal pe_b_i_data  :   PEBlockData;
 signal pe_b_o_data  :   PEBlockDataRes;
 signal int_k_pool   :   PEBlockWeights;     -- in order to have only sum in the pooling operation the weights are set to 1
 signal s_tc         :   std_logic;
+
+-- signal in_relu00	:   std_logic_vector(3 downto 0);
+-- signal in_relu01	:   std_logic_vector(3 downto 0);
+-- signal in_relu02	:   std_logic_vector(3 downto 0);
+-- signal in_relu03	:   std_logic_vector(3 downto 0);
+-- signal in_relu10	:   std_logic_vector(3 downto 0);
+-- signal in_relu11	:   std_logic_vector(3 downto 0);
+-- signal in_relu12	:   std_logic_vector(3 downto 0);
+-- signal in_relu13	:   std_logic_vector(3 downto 0);
+-- signal in_relu20	:   std_logic_vector(3 downto 0);
+-- signal in_relu21	:   std_logic_vector(3 downto 0);
+-- signal in_relu22	:   std_logic_vector(3 downto 0);
+-- signal in_relu23	:   std_logic_vector(3 downto 0);
+-- signal in_relu30	:   std_logic_vector(3 downto 0);
+-- signal in_relu31	:   std_logic_vector(3 downto 0);
+-- signal in_relu32	:   std_logic_vector(3 downto 0);
+-- signal in_relu33	:   std_logic_vector(3 downto 0);
+
 
 	
 begin
@@ -151,18 +176,18 @@ pe_b : pe_block
 			         o_data    => pe_b_o_data
 		            );
 
-count : countern generic map ( n => 3 )
+count : countern generic map ( n => 2 )
 
             port map(
 			           ck    => ck,
  	                   rst   => rst_cnt,
 	                   en    => en_cnt,
-					   arv   => "100",
+					   arv   => "11",
  	                   q     => cnt,	
 					   tc    => s_tc
 			        );	
 					
-shift_row0: shift_left2 generic map ( n => 16)
+shift_row0: shift_right2 generic map ( n => 11)
    
             port map(
 			         in0 	=> pe_b_o_data(0)(43 downto 33),
@@ -175,7 +200,7 @@ shift_row0: shift_left2 generic map ( n => 16)
 					 out3	=> o_pool(0)(3 downto 0)
 			         );
 
-shift_row1: shift_left2 generic map ( n => 16)
+shift_row1: shift_right2 generic map ( n => 11)
    
             port map(
 			         in0 	=> pe_b_o_data(1)(43 downto 33),
@@ -188,7 +213,7 @@ shift_row1: shift_left2 generic map ( n => 16)
 					 out3	=> o_pool(1)(3 downto 0)
 			         );		
 
-shift_row2: shift_left2 generic map ( n => 16)
+shift_row2: shift_right2 generic map ( n => 11)
    
             port map(
 			         in0 	=> pe_b_o_data(2)(43 downto 33),
@@ -201,7 +226,7 @@ shift_row2: shift_left2 generic map ( n => 16)
 					 out3	=> o_pool(2)(3 downto 0)
 			         );		
 					 
-shift_row3: shift_left2 generic map ( n => 16)
+shift_row3: shift_right2 generic map ( n => 11)
    
             port map(
 			         in0 	=> pe_b_o_data(3)(43 downto 33),

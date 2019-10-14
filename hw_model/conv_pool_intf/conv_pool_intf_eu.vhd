@@ -13,13 +13,14 @@ entity conv_pool_intf_eu is
 		en_i_h		: in 	std_logic;
 		en_k_h		: in 	std_logic;
 		rst_l 		: in 	std_logic;
+		rst_cnt_l 	: in 	std_logic;
 		evenl_oddh 	: in 	std_logic;
 		toggle		: in	std_logic;
 		mux_sel		: in	std_logic;
+		out_sel		: in	std_logic;
 		inc			: in 	std_logic_vector(1 	downto 0);
 		d_out 		: out 	std_logic_vector(31 downto 0);
-		i 			: out 	std_logic_vector(9 	downto 0);
-		k	 		: out 	std_logic_vector(9 	downto 0);
+		pointer		: out 	std_logic_vector(9 	downto 0);
 		pl_nh		: out	std_logic;
 		tc_6		: out	std_logic
 	);
@@ -28,7 +29,19 @@ end conv_pool_intf_eu;
 
 architecture structure of conv_pool_intf_eu is
 	
-	component generic_register is
+	component generic_register_0 is
+		generic(n : integer := 8);
+		port(
+			en_clk	: in	std_logic;
+			clk		: in 	std_logic;
+			en_h	: in 	std_logic;
+			rst_l 	: in 	std_logic;
+			d_in 	: in 	std_logic_vector((n-1) downto 0);
+			d_out 	: out 	std_logic_vector((n-1) downto 0)
+		);
+	end component;
+	
+	component generic_register_1 is
 		generic(n : integer := 8);
 		port(
 			en_clk	: in	std_logic;
@@ -108,8 +121,10 @@ architecture structure of conv_pool_intf_eu is
 	signal xor_out	:	std_logic_vector(0	downto	0);
 	signal t_ff_out	:	std_logic_vector(0	downto	0);
 	
-	signal pnt_i	:	std_logic;
-	signal pnt_k	:	std_logic;
+	signal pnt_i	:	std_logic_vector(9	downto	0);
+	signal pnt_k	:	std_logic_vector(9	downto	0);
+	
+	
 	
 begin
 	
@@ -181,10 +196,10 @@ begin
 	
 	d_out	<=	in_a&in_b&in_c&in_d;
 	
-	xor_out	<=	toggle	xor	t_ff_out;
-	pl_nh	<=	t_ff_out;
+	xor_out(0)	<=	toggle	xor	t_ff_out(0);
+	pl_nh		<=	t_ff_out(0);
 	
-	t_ff	:	generic_register	generic map(
+	t_ff	:	generic_register_0	generic map(
 										n	=>	1
 									)
 									port map(
@@ -196,9 +211,6 @@ begin
 										d_out 	=>	t_ff_out
 									);
 		
-	i	<=	pnt_i;
-	k	<=	pnt_k;
-	
 	alu		:	adress_alu			port map(
 										en_clk		=>	en_clk,
 										clk			=>	clk,
@@ -209,13 +221,23 @@ begin
 										inc			=>	inc,
 										i 			=>	pnt_i,
 										k	 		=>	pnt_k
-									);									
+									);
+	
+	mux_pnt	:	generic_mux2to1		generic map(
+										n	=>	10	
+									)
+									port map(
+										sel 	=>	out_sel,
+										d_0 	=>	pnt_i,
+										d_1 	=>	pnt_k,
+										d_out	=>	pointer
+									);	
 	
 	cnt		:	counter3b			port map(
 										en_clk	=>	en_clk,
 										clk		=>	clk,
 										en_h	=>	en_cnt_h,
-										rst_l 	=>	rst_l,
+										rst_l 	=>	rst_cnt_l,
 										tc_6	=>	tc_6
 									);
 	
