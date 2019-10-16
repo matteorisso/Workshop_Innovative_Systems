@@ -5,9 +5,9 @@ use ieee.numeric_std.all;
 entity adder is
 
 	port(
-		a	:	in 	std_logic_vector(26 downto 0);
-		b 	:	in 	std_logic_vector(26 downto 0);
-		res	: 	out std_logic_vector(26 downto 0)
+		a	:	in 	std_logic_vector(9 downto 0);
+		b 	:	in 	std_logic_vector(9 downto 0);
+		res	: 	out std_logic_vector(9 downto 0)
 		);
 		
 end entity;

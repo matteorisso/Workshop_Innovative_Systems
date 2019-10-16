@@ -1,34 +1,41 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.param.all;
+use work.globals.all;
 
 entity tb_fsm is
 end entity;
 
 architecture test of tb_fsm is 
 
-signal ck_tb 	      : std_logic;
-signal rst_tb 	      : std_logic; 
-signal start_tb      : std_logic; 
-signal done_tb  	  : std_logic; 
+signal ck_tb 	     			: std_logic;
+signal rst_tb 	      		: std_logic; 
+signal start_tb      		: std_logic; 
+signal done_tb  	 			: std_logic; 
 
+signal int_tc_rd      		: std_logic;
+signal int_tc_wr     		: std_logic;
+signal int_tc_vmode			: std_logic; 
+signal int_tc_res     		: std_logic;
+signal int_tc_tilev   		: std_logic;
+signal int_tc_tileh   		: std_logic;
+signal int_tc_tileb   		: std_logic;
+signal int_tc_tilec   		: std_logic;
 
-signal int_tc_rd      : std_logic;
-signal int_tc_wr      : std_logic;
-signal int_tc_vmode	  : std_logic; 
-signal int_tc_res     : std_logic;
-signal int_tc_tilev   : std_logic;
-signal int_tc_tilec   : std_logic;
+signal int_en_pe					: std_logic; 
+signal int_en_rd_ptr  			: std_logic;
+signal int_en_wr_ptr  			: std_logic; 
+signal int_en_res_ptr 			: std_logic; 
+signal int_en_vmode	 			: std_logic;
+signal int_ctrl_sel_arv_res 	: std_logic;
+ 
+signal int_s_ckg				: std_logic;
 
-signal int_en_rd_ptr  : std_logic;
-signal int_en_wr_ptr  : std_logic; 
-signal int_en_res_ptr : std_logic; 
-
-signal i_kernel_tb    : std_logic_vector(1 downto 0):= (others=>'0');
-signal i_data_tb      : RFRowData;
-signal o_data_tb      : PEResData; 
+signal i_kernel_tb   		: std_logic_vector(N_WEIGHT*K-1 downto 0):= (others=>'0');
+signal i_data_tb     		: FIFORowData:= (others=>'0');
+signal o_data_tb     		: PEResData; 
 
 begin
 
@@ -58,20 +65,15 @@ start_tb <= '0';
 wait;
 end process;
 
-stimuli2: process
+idata: process(ck_tb)
+variable i_data_v : FIFORowData:= (others=>'0'); 
 begin
-i_data_tb <= to_signed(0, WL);
-wait until ck_tb'event and ck_tb='1' and int_en_wr_ptr = '1';
-i_data_tb <= to_signed(1, WL);
-wait until ck_tb'event and ck_tb='1';
-i_data_tb <= to_signed(2, WL);
-wait until ck_tb'event and ck_tb='1';
-i_data_tb <= to_signed(3, WL);
-wait until ck_tb'event and ck_tb='1';
-i_data_tb <= to_signed(4, WL);
-wait until ck_tb'event and ck_tb='1' and int_en_wr_ptr = '1';
-i_data_tb <= to_signed(-1, WL);
-wait;
+if rising_edge(ck_tb) then
+	if int_en_wr_ptr = '1' then
+		i_data_v 	:= i_data_v +1; 
+		i_data_tb 	<= i_data_v;
+	end if;
+end if;
 end process;
 
 -------------------------------------------------
@@ -79,36 +81,55 @@ end process;
 -- DUT
 
 cu: 
-entity work.conv_fsm port map (
-	ck	 		=> ck_tb, 
-	rst 		=> rst_tb,
-	start 		=> start_tb,
-	TC_WR 		=> int_tc_wr, 
-	TC_HMODE	=> int_tc_rd,
-	TC_VMODE	=> int_tc_vmode,
-	TC_RES      => int_tc_res,
-	TC_TILEV    => int_tc_tilev, 
-	TC_TILEC 	=> int_tc_tilec,
-	EN_RD_PTR  	=> int_en_rd_ptr,
-	EN_WR_PTR  	=> int_en_wr_ptr,
-	EN_RES_PTR 	=> int_en_res_ptr,
-	done  	  	=> done_tb);
+entity work.conv_fsm3 port map (
+	ck	 					=> ck_tb, 
+	rst 					=> rst_tb,
+	start 				=> start_tb,
+	
+	s_tc_wr 				=> int_tc_wr, 
+	s_tc_hmode			=> int_tc_rd,
+	s_tc_vmode			=> int_tc_vmode,
+	s_tc_res     		=> int_tc_res,
+	s_ckg					=> int_s_ckg,
+	s_tc_tilev   	 	=> int_tc_tilev, 
+	s_tc_tileh   	 	=> int_tc_tileh, 
+	s_tc_tileb			=> int_tc_tileb,
+	s_tc_tilec 			=> int_tc_tilec,
+	
+	ctrl_en_pe			=> int_en_pe,
+	ctrl_en_hmode  	=> int_en_rd_ptr,
+	ctrl_en_vmode		=> int_en_vmode,
+	ctrl_en_wr_ptr  	=> int_en_wr_ptr,
+	ctrl_en_res_ptr 	=> int_en_res_ptr,
+	ctrl_sel_arv_res 	=> int_ctrl_sel_arv_res,
+	
+	done  	  			=> done_tb);
 					
 dp: 
 entity work.main port map (
-	ck	 		=> ck_tb, 
-	rst 		=> rst_tb,
-	TC_WR 		=> int_tc_wr, 
-	TC_HMODE	=> int_tc_rd,
-	TC_VMODE	=> int_tc_vmode,
-	TC_RES  	=> int_tc_res,
-	TC_TILEV	=> int_tc_tilev, 
-	TC_TILEC 	=> int_tc_tilec,
-	EN_RD_PTR  	=> int_en_rd_ptr,
-	EN_WR_PTR  	=> int_en_wr_ptr,
-	EN_RES_PTR 	=> int_en_res_ptr,
-	i_kernel 	=> i_kernel_tb,
-	i_data 		=> i_data_tb,
-	o_data 		=> o_data_tb);
+	ck	 					=> ck_tb, 
+	rst 					=> rst_tb,
+	task					=> c2,
+	
+	s_tc_wr 				=> int_tc_wr, 
+	s_tc_hmode			=> int_tc_rd,
+	s_tc_vmode			=> int_tc_vmode,
+	s_ckg					=> int_s_ckg,
+	s_tc_res  			=> int_tc_res,
+	s_tc_tilev			=> int_tc_tilev, 
+	s_tc_tileh   	 	=> int_tc_tileh, 
+	s_tc_tileb			=> int_tc_tileb,
+	s_tc_tilec 			=> int_tc_tilec,
+	
+	ctrl_en_hmode  	=> int_en_rd_ptr,
+	ctrl_en_vmode		=> int_en_vmode,
+	ctrl_en_pe			=> int_en_pe,
+	ctrl_en_wr_ptr  	=> int_en_wr_ptr,
+	ctrl_en_res_ptr 	=> int_en_res_ptr,
+	ctrl_sel_arv_res 	=> int_ctrl_sel_arv_res,
+	
+	i_kernel 			=> i_kernel_tb,
+	i_data 				=> i_data_tb,
+	o_data 				=> o_data_tb);
 	
 end architecture; 

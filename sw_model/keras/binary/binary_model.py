@@ -123,30 +123,26 @@ activations = dict([(layer[0],layer[1][0]) for layer in activations.items()])
 spio.savemat(cf.model_path+'_activations.mat',activations)
 
 '''
-non-zero activations ratio
+zero activations ratio
 '''
-conv_inputs = [x_test[0:1][0]]
+img_inputs = [x_test[0:1][0]]
 for key in activations.keys():
-    if key.startswith('s1')\
-    or key.startswith('s2'):
-        conv_inputs.append(activations[key])     
-ratio=[]
-for it in conv_inputs:    
+    if key.startswith('s') or key.startswith('f'): 
+        #check conv and fc inputs (after activation funct.)
+        img_inputs.append(activations[key])     
+zeros_act=[]
+for it in img_inputs:    
     cnt=0 
-    for k in range(it.shape[-1]):
-        for m in it[:,:,k]:
-            for i in range(it.shape[0]):
-                    if m[i] != 0: cnt+=1
-    ratio.append(cnt/(it.shape[0]*it.shape[1]*it.shape[2])*100)
+    for i in it.ravel():
+        if i == 0: cnt+=1
+    zeros_act.append(cnt/np.size(it)*100)
 
 '''
-non-zero weights ratio
+zero weights ratio
 #'''
-#ratio=[]
-#for it in Wq:    
-#    cnt=0 
-#    for k in range(it.shape[-1]):
-#        for m in it[:,:,k]:
-#            for i in range(it.shape[0]):
-#                    if m[i] != 0: cnt+=1
-#    ratio.append(cnt/(it.shape[0]*it.shape[1]*it.shape[2])*100)
+zeros_k=[]
+for it in Wq[0::5]:    
+    cnt=0 
+    for i in it.ravel():
+        if i== 0: cnt+=1
+    zeros_k.append(cnt/np.size(it)*100)

@@ -2,20 +2,32 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.param.all;
+use work.globals.all;
 
 entity sync_fifo is
 port(
-		ck 	 	: in std_logic; 
-		rst	 	: in std_logic; 
-		ld 	 	: in std_logic;
-		rd_ptr 	: in unsigned(2 downto 0);
-		wr_ptr 	: in unsigned(1 downto 0);
-		i_data 	: in  RFRowData; 
-		o_data 	: out PEBlockData);
+	ck 	 	: in 	std_logic; 
+	rst	 	: in 	std_logic; 
+	ld 	 	: in 	std_logic;
+	rd_ptr 	: in 	unsigned(2 downto 0);
+	wr_ptr 	: in 	unsigned(1 downto 0);
+	i_data 	: in  FIFORowData; 
+	o_data 	: out PEBlockData
+	);
 end entity;
 
 architecture rtl of sync_fifo is
+
+component data_buffer
+port(
+	ck 	 	: in 		std_logic; 
+	rst	 	: in 		std_logic; 
+	en 	 	: in 		std_logic_vector(0 to W-1);
+	rd_ptr 	: in 		unsigned(2 downto 0);
+	i_data 	: in  	FIFORowData; 
+	o_data 	: out 	PEBlockData
+	);
+end component;
 
 signal int_mask 	: std_logic_vector(0 to W-1);
 signal int_en 		: std_logic_vector(0 to W-1);
@@ -24,7 +36,7 @@ signal ss		 	: PEBlockData;
 
 begin
 data_b:
-entity work.data_buffer port map (
+data_buffer port map (
 	ck 		=> ck, 
 	rst 		=> rst, 
 	en 		=> int_mask, 

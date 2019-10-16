@@ -13,7 +13,7 @@ entity rfint_mux_controller is
 		clk		: in 	std_logic;
 		en_h	: in 	std_logic;
 		rst_l 	: in 	std_logic;
-		d_out 	: inout 	std_logic_vector(14 downto 0)
+		d_out 	: inout std_logic_vector(14 downto 0)
 	);
 	
 end rfint_mux_controller;

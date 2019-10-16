@@ -17,14 +17,14 @@ entity fully_connected is
 		  en_cnt1     : in  std_logic; 
 		  rst_cnt2    : in  std_logic;
 		  en_cnt2     : in  std_logic; 		  
-		  layer_fc    : in  std_logic; 	     
+		  layer_fc    : in  std_logic_vector(1 downto 0); 	     
 		  i_kernel	  : in  PEBlockWeights; 
 		  i_data 	  : in  signed(W-1 downto 0);
 		  o_data 	  : out PEBlockDataRes;
 		  tc          : out std_logic;     -- result of the comparator used to understand when the output data are valid 
 		  tc2         : out std_logic;     -- result of the comparator2 for the evolution of the fsm 
-		  cnt1        : out unsigned(cnt_b-1 downto 0);   --TEST PURPOSE ONLY        
-		  cnt2        : out unsigned(cnt_b2-1 downto 0)   --TEST PURPOSE ONLY
+		  cnt1        : out unsigned(cnt_b-1 downto 0);   --TEST PURPOSE        
+		  cnt2        : out unsigned(cnt_b2-1 downto 0)   --TEST PURPOSE
 		  
 	);
 	
@@ -59,19 +59,20 @@ end component;
 
 component mux_c is
  
-    port ( 
-	       sel : in  std_logic;
-           o   : out unsigned (6 downto 0)
+   port ( 
+	       sel : in  std_logic_vector(1 downto 0);
+           o   : out unsigned (8 downto 0)
 		   
 		  );
+		  
 		  
 end component;
 
 component mux_c2 is
  
     port ( 
-	       sel : in  std_logic;
-           o   : out unsigned (2 downto 0)
+	       sel : in  std_logic_vector(1 downto 0);
+           o   : out unsigned (3 downto 0)
 		   
 		  );
 		  

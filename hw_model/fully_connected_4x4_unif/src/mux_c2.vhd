@@ -2,11 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all; 
 use ieee.numeric_std.all;
 
-entity mux_c2 is                                          -- mux2 in input at the comparator2, if sel = 1 the counter will stop to 2, if sel = 0 to 6
+entity mux_c2 is                                         
  
     port ( 
-	       sel : in  std_logic;
-           o   : out unsigned (2 downto 0)
+	       sel : in  std_logic_vector(1 downto 0);
+           o   : out unsigned (3 downto 0)
 		   
 		  );
 		  
@@ -16,6 +16,17 @@ architecture beh of mux_c2 is
 
 begin
 
-    o <= "110" when (sel = '0') else "010";
+p_mux_c2: process(sel)
+begin
+
+  case sel is
+  
+    when "00"      =>  o <= "1000";
+    when "01"      =>  o <= "0110";
+    when "10"      =>  o <= "0010";
+    when others    =>  o <= "0000";
+	
+  end case;
+end process;
 	
 end beh;

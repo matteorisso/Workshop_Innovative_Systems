@@ -23,7 +23,19 @@ end adress_alu;
 
 architecture structure of adress_alu is
 	
-	component generic_register is
+	component generic_register_0 is
+		generic(n : integer := 8);
+		port(
+			en_clk	: in	std_logic;
+			clk		: in 	std_logic;
+			en_h	: in 	std_logic;
+			rst_l 	: in 	std_logic;
+			d_in 	: in 	std_logic_vector((n-1) downto 0);
+			d_out 	: out 	std_logic_vector((n-1) downto 0)
+		);
+	end component;
+	
+	component generic_register_1 is
 		generic(n : integer := 8);
 		port(
 			en_clk	: in	std_logic;
@@ -91,7 +103,7 @@ begin
 											d_out	=>	mux_inc1_out
 										);								
 									
-	mux_inc0	:	generic_mux2to1		generic map(
+	mux_inc2	:	generic_mux2to1		generic map(
 											n	=>	10
 										)
 										port map(
@@ -120,7 +132,7 @@ begin
 											res	=>	sum_out
 										);								
 	
-	reg_i		:	generic_register	generic map(
+	reg_i		:	generic_register_0	generic map(
 											n	=>	10
 										)	
 										port map(
@@ -132,7 +144,7 @@ begin
 											d_out 	=>	i
 										);
 	
-	reg_k		:	generic_register	generic map(
+	reg_k		:	generic_register_1	generic map(
 											n	=>	10
 										)	
 										port map(

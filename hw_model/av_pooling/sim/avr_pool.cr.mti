@@ -1,0 +1,108 @@
+C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/regn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/regn.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity regn
+-- Compiling architecture beh of regn
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/interf.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/interf.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity interf
+-- Compiling architecture behavior of interf
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/avr_pooling.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/avr_pooling.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity avr_pooling
+-- Compiling architecture behavior of avr_pooling
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/generic_mux2to1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/generic_mux2to1.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity generic_mux2to1
+-- Compiling architecture behavior of generic_mux2to1
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity PE
+-- Compiling architecture structure of PE
+-- Loading entity adder_subn
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/param.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/param.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling package param
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/shift_left2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/shift_left2.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_left2
+-- Compiling architecture structure of shift_left2
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/countern.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/countern.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity countern
+-- Compiling architecture beh of countern
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe_block.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/pe_block.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity pe_block
+-- Compiling architecture rtl of pe_block
+-- Loading entity PE
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/adder_subn.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/adder_subn.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity adder_subn
+-- Compiling architecture structure of adder_subn
+-- Loading entity fa
+
+} {} {}} C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/fa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Alessandro/Desktop/Workshop/Componenti/av_pooling/src/fa.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture dataflow of fa
+
+} {} {}}
