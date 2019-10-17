@@ -136,8 +136,9 @@ begin
 -- 1) reading inputs from file and writing results to file
 	process
 	
-	variable flag : integer := 0;
-	variable gate : integer := 0;
+	variable flag 	 : integer := 0;
+	variable gate_dn : integer := 0;
+	variable gate_rg : integer := 1;
 	
 	variable v_iline_0_e	: line;
 	variable v_iline_1_e	: line;
@@ -163,7 +164,7 @@ begin
 	file_open(file_results,  "sim_resultspool.txt",     write_mode);		
 	
     tb_start     <= '0';	
-	tb_done		<=	'0';
+	tb_done		 <=	'0';
     tb_en        <= '0';       -- These enable has to be controlled from the fsm for the clk gating
     tb_ckg_cmask <= (others => '1');
     tb_ckg_rmask <= (others => '1');	
@@ -201,10 +202,11 @@ begin
 
 	while not endfile(file_in_0_e) loop  	
 	
-			flag := flag + 1;
-			gate := gate + 1;
+			flag 	:= flag + 1;
+			gate_dn := gate_dn + 1;
 			
 			for i in 0 to 3 loop
+				
 				readline(file_in_0_e, v_iline_0_e);
 				 read(v_iline_0_e, v_ifmap_0_e);	
 				
@@ -252,29 +254,54 @@ begin
 			else
 				wait for 8 ns;
 				flag := 0;
+				-- writing array of output
+				if gate_dn < 8 and gate_rg < 4 then
+					for i in 0 to W-1 loop         --row
+						for j in 0 to W-1 loop	    --col
+							write(v_oline, std_logic_vector(tb_o_pool(i)(W*(N)-1 -j*(N) downto (W*(N) - (N)*(j+1)))), right, N);   
+							writeline(file_results, v_oline); 
+						end loop;	
+					end loop;
+				elsif gate_dn >= 8 and gate_rg < 4 then
+					for i in 0 to W-3 loop         --row
+						for j in 0 to W-1 loop	    --col
+							write(v_oline, std_logic_vector(tb_o_pool(i)(W*(N)-1 -j*(N) downto (W*(N) - (N)*(j+1)))), right, N);   
+							writeline(file_results, v_oline); 
+						end loop;	
+					end loop;
+				else
+					for i in 0 to W-3 loop         --row
+						for j in 0 to W-3 loop	    --col
+							write(v_oline, std_logic_vector(tb_o_pool(i)(W*(N)-1 -j*(N) downto (W*(N) - (N)*(j+1)))), right, N);   
+							writeline(file_results, v_oline); 
+						end loop;	
+					end loop;
+				end if;
 			end if;
+			
+			if gate_rg >= 4 then
+				tb_ckg_cmask	<= "0011";
+			else
+				tb_ckg_cmask	<= "0000";
+			end if;
+			
+			if gate_dn = 9 then
+				tb_ckg_rmask	<= "0011";
+				gate_dn			:= 0;
+				gate_rg 		:= gate_rg + 1;
+			elsif gate_dn = 8 then
+				tb_ckg_rmask	<= "0011";
+			else
+				tb_ckg_rmask	<= "0000";
+			end if;
+			
+			
 
-	
-	
-	-- writing array of output
- -- for i in 0 to W-1 loop         --row
-	
-     -- for j in 0 to W-1 loop	    --col
-	 
-		-- write(v_oline, std_logic_vector(tb_o_data(i)(W*(N)-1 -j*(N) downto (W*(N) - (N)*(j+1)))), right, N);   
-		-- writeline(file_results, v_oline); 
-	
-	-- end loop;	
-
- -- end loop;	
- 
- 	 --wait for 2 ns; 	
-
-	
-	
  end loop;
 
  	 wait for 2 ns;  
+	 
+	 tb_done		 <=	'1';
 		
 	-- closin in/out files
 	file_close(file_in_0_e);	
