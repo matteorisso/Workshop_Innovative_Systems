@@ -4,21 +4,21 @@ K3
 cModel Technology
 dC:\Users\Alessandro\Desktop
 Eadder_subn
-Z0 w1570863792
+Z0 w1571206340
 Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\av_pooling\sim
-Z5 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd
-Z6 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd
+Z4 d/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/sim
+Z5 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd
+Z6 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd
 l0
 L5
 VCAJ1XAG4eE?JRnH6SNZi11
 Z7 OV;C;10.1d;51
 32
-Z8 !s108 1570891584.282000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd|
-Z10 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd|
+Z8 !s108 1571206784.971461
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd|
+Z10 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd|
 Z11 o-work work -2002 -explicit -O0
 Z12 tExplicit 1
 !s100 KVm]Mij`[4`0:E0?K]Vde3
@@ -42,23 +42,23 @@ R12
 !s100 CkFBQQNMK`H5g=0JD65g60
 !i10b 1
 Eavr_pooling
-Z15 w1570889387
+Z15 w1571206340
 Z16 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
 Z17 DPx4 work 5 param 0 22 k2VcXz>X`d4d@2MJ`l`S82
 R1
 R2
 R3
 R4
-Z18 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd
-Z19 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd
+Z18 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd
+Z19 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd
 l0
 L7
 V6n0D_3A:bX9aJbDF^4AcJ1
 R7
 32
-Z20 !s108 1570891586.043000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd|
-Z22 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd|
+Z20 !s108 1571206785.000256
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd|
+Z22 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd|
 R11
 R12
 !s100 9PlnmnJaGnROFC5[ni9V;0
@@ -83,23 +83,23 @@ R12
 !s100 oWNBhmPf6>::43l_@U::[1
 !i10b 1
 Eavr_pooling_fsm
-Z23 w1570877102
+R15
 R16
 R1
 R17
 R2
 R3
 R4
-Z24 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd
-Z25 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd
+Z23 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd
+Z24 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd
 l0
 L6
 V6[YN6L_8i<UW0HGD<3Y^:0
 R7
 32
-Z26 !s108 1570891586.214000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd|
-Z28 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd|
+Z25 !s108 1571206785.032871
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd|
+Z27 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd|
 R11
 R12
 !s100 k0D<DeVLFhGVK_m6ei_VN2
@@ -116,24 +116,24 @@ L28
 VBAj7gYH1P3_zAk[`UT0l63
 R7
 32
+R25
 R26
 R27
-R28
 R11
 R12
 !s100 WA4XU2OzkXK`Y<2al96UR1
 !i10b 1
 Eavr_pooling_tb
-Z29 w1570895189
+Z28 w1571212446
 R16
 R17
-Z30 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+Z29 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R1
 R2
 R3
 R4
-Z31 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd
-Z32 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd
+Z30 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd
+Z31 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd
 l0
 L12
 Vz0b?clR:g4J;`U:RzVmYc2
@@ -141,47 +141,47 @@ Vz0b?clR:g4J;`U:RzVmYc2
 R7
 32
 !i10b 1
-Z33 !s108 1570895197.214000
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd|
-Z35 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd|
+Z32 !s108 1571212453.892032
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd|
+Z34 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd|
 R11
 R12
 Atest
 R16
 R17
-R30
+R29
 R1
 R2
 R3
-Z36 DEx4 work 14 avr_pooling_tb 0 22 z0b?clR:g4J;`U:RzVmYc2
+Z35 DEx4 work 14 avr_pooling_tb 0 22 z0b?clR:g4J;`U:RzVmYc2
 l116
 L16
-V5HI`;2Y?<FmKo^oG8eCkV3
-!s100 K_VaO18:?iA<8chWKL<9<2
+Vel4imG^ER;>AM42f0Mn=42
+!s100 Og0f^bzYaaBFF5eGa@7R`2
 R7
 32
 !i10b 1
+R32
 R33
 R34
-R35
 R11
 R12
 Ecountern
-Z37 w1570863792
+R15
 R1
 R2
 R3
 R4
-Z38 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd
-Z39 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd
+Z36 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd
+Z37 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd
 l0
 L6
 VQ9`o46hB]Gz2>LBf8Jn203
 R7
 32
-Z40 !s108 1570891584.722000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd|
-Z42 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd|
+Z38 !s108 1571206784.889800
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd|
+Z40 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd|
 R11
 R12
 !s100 _aGmOJg9^<oL4d1<S5h_32
@@ -196,28 +196,28 @@ L17
 VMJ^Z<gSV2^LR>4Jf4AX=c2
 R7
 32
+R38
+R39
 R40
-R41
-R42
 R11
 R12
 !s100 <6=AmF>GY?Ml6H9=SGE7a1
 !i10b 1
 Efa
-R37
+R15
 R2
 R3
 R4
-Z43 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd
-Z44 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd
+Z41 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd
+Z42 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd
 l0
 L4
 Vfn];ozkmIMKT`5Q_2D_U`3
 R7
 32
-Z45 !s108 1570891583.700000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd|
-Z47 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd|
+Z43 !s108 1571206784.919272
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd|
+Z45 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd|
 R11
 R12
 !s100 9h?bEk]c[7IgOg<d=hY1i3
@@ -231,29 +231,29 @@ L13
 V7DI=OiPnhe8OOz@UA:iG82
 R7
 32
+R43
+R44
 R45
-R46
-R47
 R11
 R12
 !s100 ;4IPIh;JdlHM7Y@j^d7cN2
 !i10b 1
 Egeneric_mux2to1
-R37
+R15
 R1
 R2
 R3
 R4
-Z48 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
-Z49 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
+Z46 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
+Z47 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
 l0
 L7
 VmclK`V4E<BO`9hb9BGJ250
 R7
 32
-Z50 !s108 1570891583.459000
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd|
-Z52 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd|
+Z48 !s108 1571206784.710543
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd|
+Z50 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd|
 R11
 R12
 !s100 _i^KSYRcd;:Cgeg2QTM_P0
@@ -268,29 +268,29 @@ L20
 VS8[XBK`CT`AilzL]UeTiX2
 R7
 32
+R48
+R49
 R50
-R51
-R52
 R11
 R12
 !s100 I@VbCKA5nZ;3Sgn9HR[BW0
 !i10b 1
 Einterf
-R37
+R15
 R1
 R2
 R3
 R4
-Z53 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd
-Z54 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd
+Z51 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd
+Z52 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd
 l0
 L6
 VhcaEocjTG0^RK34W01^^>1
 R7
 32
-Z55 !s108 1570891585.760000
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd|
-Z57 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd|
+Z53 !s108 1571206784.941888
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd|
+Z55 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd|
 R11
 R12
 !s100 KA4[QZgl<7;[1c^m;8UXA1
@@ -305,9 +305,9 @@ L28
 V9njL9CCMJRzASeA83[[391
 R7
 32
+R53
+R54
 R55
-R56
-R57
 R11
 R12
 !s100 bWP9z7hm0ZEQYGfgeEFHg3
@@ -317,10 +317,10 @@ R16
 R1
 R2
 R3
-R37
+R15
 R4
-8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd
-FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd
+8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd
+F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd
 l0
 L6
 Vk2VcXz>X`d4d@2MJ`l`S82
@@ -330,27 +330,27 @@ R11
 R12
 !s100 6bLJWBod:=DOUziZa75[c3
 !i10b 1
-!s108 1570891583.339000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd|
-!s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd|
+!s108 1571206784.679223
+!s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd|
+!s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd|
 Epe
-Z58 w1570880811
+R15
 R16
 R17
 R1
 R2
 R3
 R4
-Z59 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd
-Z60 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd
+Z56 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd
+Z57 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd
 l0
 L7
 VF@hVoLgTU@MR6_;_8=90Y2
 R7
 32
-Z61 !s108 1570891585.181000
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd|
-Z63 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd|
+Z58 !s108 1571206784.740091
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd|
+Z60 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd|
 R11
 R12
 !s100 D2?G2G]dG<Nh1?FLOYVMW2
@@ -362,43 +362,43 @@ R17
 R1
 R2
 R3
-Z64 DEx4 work 2 pe 0 22 F@hVoLgTU@MR6_;_8=90Y2
+Z61 DEx4 work 2 pe 0 22 F@hVoLgTU@MR6_;_8=90Y2
 l28
 L18
 VTiUfXK;Q2R4VY<8OJN^SO0
 R7
 32
-R61
-R62
-R63
+R58
+R59
+R60
 R11
 R12
 !s100 TBbHiB8JAH=fm5d5dGX1R3
 !i10b 1
 Epe_block
-R37
+R15
 R16
 R17
 R1
 R2
 R3
 R4
-Z65 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd
-Z66 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd
+Z62 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd
+Z63 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd
 l0
 L7
 V1?o>b;[b4U^cLUlZ3lnMF2
 R7
 32
-Z67 !s108 1570891585.516000
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd|
-Z69 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd|
+Z64 !s108 1571206784.772488
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd|
+Z66 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd|
 R11
 R12
 !s100 `HUTBmTbXo[hTGT9b?MaK2
 !i10b 1
 Artl
-R64
+R61
 R16
 R17
 R1
@@ -410,29 +410,29 @@ L20
 V?lKHlFc1hNMgzZoMFnHHY1
 R7
 32
-R67
-R68
-R69
+R64
+R65
+R66
 R11
 R12
 !s100 R8b]jg7EoU<_ld9^c2<EY2
 !i10b 1
 Eregn
-R37
+R15
 R1
 R2
 R3
 R4
-Z70 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd
-Z71 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd
+Z67 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd
+Z68 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd
 l0
 L5
 V6O700[oD`:@d@CconWShj0
 R7
 32
-Z72 !s108 1570891584.966000
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd|
-Z74 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd|
+Z69 !s108 1571206784.803438
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd|
+Z71 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd|
 R11
 R12
 !s100 7227LgW<50;5zi8MMHGF:1
@@ -447,29 +447,66 @@ L15
 VbEgiSHTHPeXbMWZCAUMgF3
 R7
 32
-R72
-R73
-R74
+R69
+R70
+R71
 R11
 R12
 !s100 3TdLRGl>@3g2W?[LNhk7z0
 !i10b 1
-Eshift_left2
-Z75 w1570880141
+Erelu_4bit
+R15
 R1
 R2
 R3
 R4
-Z76 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd
-Z77 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd
+Z72 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd
+Z73 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd
+l0
+L5
+V2?m9b:=2JlV;=^YojZLgl2
+R7
+32
+Z74 !s108 1571206784.831944
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd|
+Z76 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd|
+R11
+R12
+!s100 99T1CZP==nU?FCGoz4nhN3
+!i10b 1
+Astructure
+R1
+R2
+R3
+DEx4 work 9 relu_4bit 0 22 2?m9b:=2JlV;=^YojZLgl2
+l25
+L14
+V1V]OX2Mkz^=oZ6n5a??Pg2
+R7
+32
+R74
+R75
+R76
+R11
+R12
+!s100 ^4>B8HY;[IHn0^hHl]:[C2
+!i10b 1
+Eshift_left2
+Z77 w1570880141
+R1
+R2
+R3
+Z78 dD:\Admin\Documents\LibriUniversitari\GitHub\Workshop_Innovative_Systems\hw_model\av_pooling\sim
+Z79 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd
+Z80 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd
 l0
 L5
 VXQ[Nj:JX^DLICE;oL>m7_1
 R7
 32
-Z78 !s108 1570882133.063000
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd|
-Z80 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd|
+Z81 !s108 1570882133.063000
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd|
+Z83 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_left2.vhd|
 R11
 R12
 !s100 TeAIOa<_K@Q:PGgjcW[OS2
@@ -484,29 +521,29 @@ L22
 V6XP]>:]lSjWPKlYbDH1zi2
 R7
 32
-R78
-R79
-R80
+R81
+R82
+R83
 R11
 R12
 !s100 b`d]QG57SPGgnnlNajj<S2
 !i10b 1
 Eshift_right2
-Z81 w1570893551
+R15
 R1
 R2
 R3
 R4
-Z82 8D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd
-Z83 FD:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd
+Z84 8/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd
+Z85 F/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd
 l0
 L5
 VZ99eQfPK`Tj=K_4C3EPkm1
 R7
 32
-Z84 !s108 1570893590.748000
-Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd|
-Z86 !s107 D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd|
+Z86 !s108 1571206784.860253
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd|
+Z88 !s107 /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd|
 R11
 R12
 !s100 i9W0b_VATo=zC7O5^g>2G3
@@ -521,9 +558,9 @@ L22
 VWBf0L4aA2Ki`E<`_CkKE33
 R7
 32
-R84
-R85
 R86
+R87
+R88
 R11
 R12
 !s100 jU`d3Xd>L3S1Z^3L0ni6?3

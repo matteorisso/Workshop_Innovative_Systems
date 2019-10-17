@@ -1,13 +1,50 @@
-D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
+/home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity generic_mux2to1
--- Compiling architecture behavior of generic_mux2to1
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity avr_pooling
+-- Compiling architecture behavior of avr_pooling
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity interf
+-- Compiling architecture behavior of interf
+
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling package param
+
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd {2 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity relu_4bit
+-- Compiling architecture structure of relu_4bit
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(30): (vcom-1272) Length of expected is 4; length of actual is 3.
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(32): (vcom-1272) Length of expected is 4; length of actual is 3.
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(34): (vcom-1272) Length of expected is 4; length of actual is 3.
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(36): (vcom-1272) Length of expected is 4; length of actual is 3.
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(38): (vcom-1272) Length of expected is 4; length of actual is 3.
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(40): (vcom-1272) Length of expected is 4; length of actual is 3.
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(42): (vcom-1272) Length of expected is 4; length of actual is 3.
+** Warning: [14] /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd(44): (vcom-1272) Length of expected is 4; length of actual is 3.
+
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/regn.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -16,7 +53,18 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity regn
 -- Compiling architecture beh of regn
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity avr_pooling_fsm
+-- Compiling architecture behavioral of avr_pooling_fsm
+
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/shift_right2.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -25,7 +73,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity shift_right2
 -- Compiling architecture structure of shift_right2
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -37,15 +85,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling architecture structure of PE
 -- Loading entity adder_subn
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity fa
--- Compiling architecture dataflow of fa
-
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/adder_subn.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -55,38 +95,36 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling architecture structure of adder_subn
 -- Loading entity fa
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/fa.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture dataflow of fa
+
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
 -- Loading package MATH_REAL
 -- Loading package param
--- Compiling entity avr_pooling
--- Compiling architecture behavior of avr_pooling
+-- Compiling entity avr_pooling_tb
+-- Compiling architecture test of avr_pooling_tb
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Compiling package param
+-- Compiling entity generic_mux2to1
+-- Compiling architecture behavior of generic_mux2to1
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_fsm.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Loading package param
--- Compiling entity avr_pooling_fsm
--- Compiling architecture behavioral of avr_pooling_fsm
-
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/countern.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -95,7 +133,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity countern
 -- Compiling architecture beh of countern
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd
+} {} {}} /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd {1 {vcom -work work -2002 -explicit /home/matteorisso/Documents/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -106,14 +144,5 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity pe_block
 -- Compiling architecture rtl of pe_block
 -- Loading entity PE
-
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/interf.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity interf
--- Compiling architecture behavior of interf
 
 } {} {}}

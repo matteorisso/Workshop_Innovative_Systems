@@ -37,7 +37,7 @@ component avr_pooling is
 		  en_cnt      : in  std_logic; 	        
 		  o_pool 	  : out PEBlockData;
 		  tc          : out std_logic;                   -- result of the comparator used to understand when the output data are valid 
-		  cnt         : out unsigned(2 downto 0)   --TEST PURPOSE   
+		  cnt         : out unsigned(1 downto 0)   --TEST PURPOSE   
 		  
 	);
 	
@@ -97,7 +97,7 @@ end component;
 	signal tb_d_6		   : signed((W*N-1) downto 0);
 	signal tb_d_7		   : signed((W*N-1) downto 0);
 	
-    signal tb_cnt1         : unsigned(2 downto 0);	
+    signal tb_cnt1         : unsigned(1 downto 0);	
     		
 
 -- signals for the FSM	
@@ -147,14 +147,14 @@ begin
 	variable v_iline_1_o	: line;
 	variable v_iline_2_o	: line;
 	variable v_iline_3_o	: line;
-	variable v_ifmap_0_e    : std_logic_vector((W*N-1) downto 0);
-	variable v_ifmap_1_e    : std_logic_vector((W*N-1) downto 0);
-	variable v_ifmap_2_e    : std_logic_vector((W*N-1) downto 0);
-	variable v_ifmap_3_e    : std_logic_vector((W*N-1) downto 0);
-	variable v_ifmap_0_o    : std_logic_vector((W*N-1) downto 0);
-	variable v_ifmap_1_o    : std_logic_vector((W*N-1) downto 0);
-	variable v_ifmap_2_o    : std_logic_vector((W*N-1) downto 0);
-	variable v_ifmap_3_o    : std_logic_vector((W*N-1) downto 0);
+	variable v_ifmap_0_e    : std_logic_vector(3 downto 0);
+	variable v_ifmap_1_e    : std_logic_vector(3 downto 0);
+	variable v_ifmap_2_e    : std_logic_vector(3 downto 0);
+	variable v_ifmap_3_e    : std_logic_vector(3 downto 0);
+	variable v_ifmap_0_o    : std_logic_vector(3 downto 0);
+	variable v_ifmap_1_o    : std_logic_vector(3 downto 0);
+	variable v_ifmap_2_o    : std_logic_vector(3 downto 0);
+	variable v_ifmap_3_o    : std_logic_vector(3 downto 0);
 	variable v_oline	    : line;		
 	 
 	begin
@@ -163,11 +163,20 @@ begin
 	file_open(file_results,  "sim_resultspool.txt",     write_mode);		
 	
     tb_start     <= '0';	
+	tb_done		<=	'0';
     tb_en        <= '0';       -- These enable has to be controlled from the fsm for the clk gating
     tb_ckg_cmask <= (others => '1');
     tb_ckg_rmask <= (others => '1');	
+	tb_d_0		<=	(others => '0');
+	tb_d_1		<=	(others => '0');
+	tb_d_2		<=	(others => '0');
+	tb_d_3		<=	(others => '0');
+	tb_d_4		<=	(others => '0');
+	tb_d_5		<=	(others => '0');
+	tb_d_6		<=	(others => '0');
+	tb_d_7		<=	(others => '0');
 	
-	wait for 3 ns;
+	wait for 4 ns;
 
     -- ATTENZIONE: viene dato lo start, la fsm lo campiona e il colpo di clk successivo prende il primo dato 
     tb_start     <= '1';	
@@ -195,50 +204,53 @@ begin
 			flag := flag + 1;
 			gate := gate + 1;
 			
-			readline(file_in_0_e, v_iline_0_e);
-			 read(v_iline_0_e, v_ifmap_0_e);	
+			for i in 0 to 3 loop
+				readline(file_in_0_e, v_iline_0_e);
+				 read(v_iline_0_e, v_ifmap_0_e);	
+				
+				  tb_d_0((15-4*i) downto (12-4*i)) <= signed(v_ifmap_0_e);
+				  
+				readline(file_in_1_e, v_iline_1_e);
+				 read(v_iline_1_e, v_ifmap_1_e);	
+				
+				  tb_d_1((15-4*i) downto (12-4*i)) <= signed(v_ifmap_1_e);
+				
+				readline(file_in_2_e, v_iline_2_e);
+				 read(v_iline_2_e, v_ifmap_2_e);	
+				
+				  tb_d_2((15-4*i) downto (12-4*i)) <= signed(v_ifmap_2_e);
+				  
+				readline(file_in_3_e, v_iline_3_e);
+				 read(v_iline_3_e, v_ifmap_3_e);	
+				
+				  tb_d_3((15-4*i) downto (12-4*i)) <= signed(v_ifmap_3_e);
+				  
+				readline(file_in_0_o, v_iline_0_o);
+				 read(v_iline_0_o, v_ifmap_0_o);	
+				
+				  tb_d_4((15-4*i) downto (12-4*i)) <= signed(v_ifmap_0_o);
+				  
+				readline(file_in_1_o, v_iline_1_o);
+				 read(v_iline_1_o, v_ifmap_1_o);	
+				
+				  tb_d_5((15-4*i) downto (12-4*i)) <= signed(v_ifmap_1_o);
+				
+				readline(file_in_2_o, v_iline_2_o);
+				 read(v_iline_2_o, v_ifmap_2_o);	
+				
+				  tb_d_6((15-4*i) downto (12-4*i)) <= signed(v_ifmap_2_o);
+				  
+				readline(file_in_3_o, v_iline_3_o);
+				 read(v_iline_3_o, v_ifmap_3_o);	
+				
+				  tb_d_7((15-4*i) downto (12-4*i)) <= signed(v_ifmap_3_o);
 			
-			  tb_d_0 <= to_signed(v_ifmap_0_e);
-			  
-			readline(file_in_1_e, v_iline_1_e);
-			 read(v_iline_1_e, v_ifmap_1_e);	
-			
-			  tb_d_1 <= to_signed(v_ifmap_1_e);
-			
-			readline(file_in_2_e, v_iline_2_e);
-			 read(v_iline_2_e, v_ifmap_2_e);	
-			
-			  tb_d_2 <= to_signed(v_ifmap_2_e);
-			  
-			readline(file_in_3_e, v_iline_3_e);
-			 read(v_iline_3_e, v_ifmap_3_e);	
-			
-			  tb_d_3 <= to_signed(v_ifmap_3_e);
-			  
-			readline(file_in_0_o, v_iline_0_o);
-			 read(v_iline_0_o, v_ifmap_0_o);	
-			
-			  tb_d_4 <= to_signed(v_ifmap_0_o);
-			  
-			readline(file_in_1_o, v_iline_1_o);
-			 read(v_iline_1_o, v_ifmap_1_o);	
-			
-			  tb_d_5 <= to_signed(v_ifmap_1_o);
-			
-			readline(file_in_2_o, v_iline_2_o);
-			 read(v_iline_2_o, v_ifmap_2_o);	
-			
-			  tb_d_6 <= to_signed(v_ifmap_2_o);
-			  
-			readline(file_in_3_o, v_iline_3_o);
-			 read(v_iline_3_o, v_ifmap_3_o);	
-			
-			  tb_d_7 <= to_signed(v_ifmap_3_o);
+			end loop;
 			
 			if flag < 2 then
 				wait for 4 ns;	
 			else
-				wait for 6 ns;
+				wait for 8 ns;
 				flag := -1;
 			end if;
 
@@ -309,7 +321,7 @@ begin
 				 
 	fsm : avr_pooling_fsm
 	    port map(
-		         clk           =>	tb_ck,
+		         clk           =>	tb_clk,
 				rst_fsm        =>	tb_rst_fsm,
 				start          =>	tb_start,
 				done		   =>	tb_done,
