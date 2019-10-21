@@ -25,8 +25,13 @@ entity datapath is
     s_tc_tileb     : out std_logic;
     s_tc_tilec     : out std_logic;
     i_weight       : in  std_logic_vector(K*N_WEIGHT-1 downto 0);
-    i_data_v       : in  signed(N*W-1 downto 0);
-    i_data_h       : in  signed(N*W-1 downto 0);
+    i_data_even    : in  mem_data_t;
+    i_data_odd     : in  mem_data_t;
+    o_cs_enc       : out unsigned(clog2W-1 downto 0);
+    o_addr_rd_even : out unsigned(clog2M-1 downto 0);
+    o_addr_wr_even : out unsigned(clog2M-1 downto 0);
+    o_addr_rd_odd  : out unsigned(clog2M-1 downto 0);
+    o_addr_wr_odd  : out unsigned(clog2M-1 downto 0);
     o_data         : out o_pe_array_t
     );
 end entity;
@@ -34,8 +39,8 @@ end entity;
 architecture rtl of datapath is
 
   signal int_o_data      : o_pe_array_t;
-  signal int_data_conv_h : signed(N*W-1 downto 0);
   signal int_data_conv_v : signed(N*W-1 downto 0);
+  signal int_data_conv_h : signed(N*W-1 downto 0);
 
   signal int_ckg_mask    : std_logic_vector(0 to W-1);
   signal int_ckg_mask_lt : std_logic_vector(0 to W-1);
@@ -71,9 +76,9 @@ architecture rtl of datapath is
   signal int_vmode_cnt : unsigned(clog2K-1 downto 0);
 
   signal int_weight_wr : std_logic;
-
+  
 begin
-
+  o_cs_enc   <= int_rf_ptr;
   s_tc_rd    <= int_tc_rd;
   s_tc_res   <= int_tc_res;
   s_tc_tilev <= int_s_tc_tilev;
@@ -184,4 +189,18 @@ begin
       ckg_mask    => int_ckg_mask,
       ckg_mask_lt => int_ckg_mask_lt
       );
+
+  imem_if_inst:
+    entity work.imem_if_top port map (
+
+      even_odd_n    => int_even_odd_n,
+      rf_ptr        => int_rf_ptr,
+      px_ptr        => int_hmode_cnt,
+      i_data_even   => i_data_even,
+      i_data_odd    => i_data_odd,
+      o_data_conv_v => int_data_conv_v,
+      o_data_conv_h => int_data_conv_h
+      );
+
+
 end architecture;

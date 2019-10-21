@@ -4,19 +4,21 @@ use ieee.numeric_std.all;
 
 use work.globals.all;
 
+-- NOT 4 SYN
+
 entity imem_if is
   port(
     i_data_v      : in  mem_data_t;
     i_data_h      : in  mem_data_t;
-    rf_ptr        : in  unsigned(clog2W-1 downto 0);  -- always hmode_cnt (hmode_cnt'high-1 downto 0); KSIZE-1 (arv = KSIZE-2)
+    rf_ptr        : in  unsigned(clog2W-1 downto 0);  
     px_ptr        : in  unsigned(clog2K-1 downto 0);
     o_data_conv_v : out signed(N*W-1 downto 0);
     o_data_conv_h : out signed(N*W-1 downto 0);
-    o_data_fc     : out signed(N-1 downto 0)
+    o_data_fc     : out signed(N downto 0)
     );
 end entity;
 
-architecture rtl of imem_if is
+architecture beh of imem_if is
 
   signal int_data_conv_even : mem_data_t;
   signal int_data_conv_odd  : mem_data_t;
@@ -24,7 +26,6 @@ architecture rtl of imem_if is
   signal int_o_data_conv_v : signed(o_data_conv_v'high downto 0);
   signal int_px_ptr        : integer;
   signal int_rf_ptr        : integer;
-
 
 begin
 

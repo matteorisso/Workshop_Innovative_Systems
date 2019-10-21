@@ -1,0 +1,326 @@
+ 
+****************************************
+check_design summary:
+Version:     F-2011.09-SP3
+Date:        Mon Oct 21 16:42:43 2019
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    100
+    Unconnected ports (LINT-28)                                   100
+
+Cells                                                             104
+    Connected to power or ground (LINT-32)                        100
+    Nets connected to multiple pins on same cell (LINT-33)          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'pe_array', port 'i_data_pool[0][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][14]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][13]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][12]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][11]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][10]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][9]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][8]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[0][0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][14]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][13]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][12]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][11]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][10]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][9]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][8]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[1][0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][14]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][13]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][12]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][11]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][10]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][9]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][8]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[2][0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][14]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][13]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][12]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][11]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][10]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][9]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][8]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_pool[3][0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_weight_fc[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_fc[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_fc[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_fc[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', port 'i_data_fc[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[8]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[7]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[6]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[5]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[4]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[3]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[2]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[1]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_0_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[0]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[8]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[7]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[6]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[5]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[4]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[3]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[2]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[1]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_1_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[0]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[8]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[7]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[6]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[5]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[4]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[3]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[2]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[1]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_2_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[0]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[8]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[7]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[6]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[5]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[4]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[3]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[2]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[1]' is connected to logic 0. 
+Warning: In design 'pe_array', a pin on submodule 'peij_3_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_data_acc[0]' is connected to logic 0. 
+Warning: In design 'pev2_2_0', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_0', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_0', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_0', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_1', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_1', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_1', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_1', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_2', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_2', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_2', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_2', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_3', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_3', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_3', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_3', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_4', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_4', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_4', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_4', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_5', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_5', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_5', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_5', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_6', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_6', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_6', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_6', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_7', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_7', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_7', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_7', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_8', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_8', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_8', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_8', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_9', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_9', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_9', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_9', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_10', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_10', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_10', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_10', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_11', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_11', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_11', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_11', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_12', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_12', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_12', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_12', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_13', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_13', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_13', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_13', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_14', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_14', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_14', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_14', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_15', a pin on submodule 'clk_gate_int_q_reg_h_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_15', a pin on submodule 'clk_gate_int_q_reg_v_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_15', a pin on submodule 'clk_gate_int_q_reg_in_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pev2_2_15', a pin on submodule 'clk_gate_int_q_acc_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'pe_array', the same net is connected to more than one pin on submodule 'peij_0_3'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_data_acc[8]', 'i_data_acc[7]'', 'i_data_acc[6]', 'i_data_acc[5]', 'i_data_acc[4]', 'i_data_acc[3]', 'i_data_acc[2]', 'i_data_acc[1]', 'i_data_acc[0]'.
+Warning: In design 'pe_array', the same net is connected to more than one pin on submodule 'peij_1_3'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_data_acc[8]', 'i_data_acc[7]'', 'i_data_acc[6]', 'i_data_acc[5]', 'i_data_acc[4]', 'i_data_acc[3]', 'i_data_acc[2]', 'i_data_acc[1]', 'i_data_acc[0]'.
+Warning: In design 'pe_array', the same net is connected to more than one pin on submodule 'peij_2_3'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_data_acc[8]', 'i_data_acc[7]'', 'i_data_acc[6]', 'i_data_acc[5]', 'i_data_acc[4]', 'i_data_acc[3]', 'i_data_acc[2]', 'i_data_acc[1]', 'i_data_acc[0]'.
+Warning: In design 'pe_array', the same net is connected to more than one pin on submodule 'peij_3_3'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_data_acc[8]', 'i_data_acc[7]'', 'i_data_acc[6]', 'i_data_acc[5]', 'i_data_acc[4]', 'i_data_acc[3]', 'i_data_acc[2]', 'i_data_acc[1]', 'i_data_acc[0]'.
+1

@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version F-2011.09-SP3 for amd64 -- Jan 26, 2012
-#@ # Date:   Mon Oct 21 13:14:53 2019
+#@ # Date:   Mon Oct 21 16:27:53 2019
 #@ # Run by: lp19.20@localhost.localdomain
 #@ 
 
@@ -4823,102 +4823,156 @@ source /home/lp19.20/Desktop/convolutional_layer/syn/.synopsys_dc.setup
 #@ # -- End source /home/lp19.20/Desktop/convolutional_layer/syn/.synopsys_dc.setup
 
 gui_start
-analyze -format vhdl pe_syn.vhd
-elaborate pev2_2
+analyze -format vhdl ../core_v2.vhd
+elaborate core_v2
 compile -exact_map
-compile -exact_map -clock_gating
+report_area
 compile -exact_map -gate_clock
-change_selection [get_s clk_gate_int_q_acc_reg]
-change_selection [get_s clk_gate_int_q_acc_reg]
-change_selection [get_s clk_gate_int_q_weight_reg]
-change_selection [get_s clk_gate_int_q_reg_v_reg]
-change_selection [get_s clk_gate_int_q_reg_in_reg]
-create_clock -name "ck" -period 2 {ck}
+report_area
+create_clock -name "ck" -period 1
 report_timing
 create_clock -name "ck" -period 1 {ck}
 report_timing
-create_clock -name "ck" -period 1.1 {ck}
+create_clock -help
+create_clock {ck}
 report_timing
-create_clock -name "ck" -period 1.15 {ck}
+create_clock -period 0 {ck}
 report_timing
-create_clock -name "ck" -period 1.2 {ck}
+create_clock -period 1 {ck}
 report_timing
-analyze -format vhdl ../../pe_array.vhd
-analyze -format vhdl ../pe_array.vhd
+current_instance npu_inst
+elaborate npu_inst
 elaborate pe_array
 compile -exact_map -gate_clock
+create_clock -period 1 {ck}
+report_timing
+report_timing > npu_timing.rpt
+elaborate core_v2
+compile -exact_map -gate_clock
+elaborate core_v2
+check_design
+link
+analyze -format vhdl ../pev2_2.vhd
+analyze -format vhdl ../pe_array.vhd
+elaborate pe_array
+check_design
+change_selection [get_s peij_0_0]
+change_selection [get_s peij_0_0]
+change_selection [get_s peij_0_0]
+change_selection [get_s peij_0_1]
+change_selection [get_s peij_0_0]
+elaborate pev2_2
+check_design
+compile -gate_clock
+check_design
+change_selection [get_s pev2_2]
+report_hier
+::cmenus::create_schematic
+change_selection 
+change_selection [get_s n22]
+change_selection [get_s {{o_data_h[2]}}]
+change_selection [get_s {{r59/B_AS[0]}}]
+change_selection [get_s {{r59/B_AS[8]}}]
+change_selection [get_s n21]
+report_timing
+create_clock -period 0 {ck}
+report_timing
+report_timing > pev2_2_timing.rpt
+elaborate pe_array
+compile -gate_clock
+create_clock -period 0 {ck}
+report_timing
+report_timing > npu_timing.rpt
+check_design
+check_design > check_design_npu.txt
+analyze ../imem_w.vhd
+analyze -format vhdl ../imem_w.vhd
+elaborate imem_w
+analyze -format vhdl ../imem_w.vhd
+elaborate imem_w
+link -help
+analyze -format vhdl [glob ../imem*.vhd]
+analyze -format vhdl ../dual_port_rf.vhd
+analyze -format vhdl ../regn.vhd
+elaborate imem_w
+analyze -format ../globals.pkg.vhd
+analyze -format vhdl ../globals.pkg.vhd
+analyze -format vhdl [glob ../imem*.vhd]
+elaborate imem_w
+link
+analyze -format vhdl ../imem_if.vhd
+elaborate imem_w
+elaborate imem_if
+analyze -format vhdl ../imem_if.vhd
+elaborate imem_if
+analyze -format vhdl ../imem_if.vhd
+elaborate imem_if
+analyze -format vhdl ../imem_if.vhd
+elaborate imem_if
+elaborate core_v2
+link
+analyze -format vhdl ../weight_buffer.vhd
+elaborate weight_buffer
+compile -gate_clock
+create_clock {ck}
+report_timing
+create_clock -period 0 {ck}
+report_timing
+create_clock -period 1 {ck}
+report_timing
+create_clock -period 2 {ck}
+report_timing
+create_clock -period .5 {ck}
+report_timing
+create_clock -period .25 {ck}
+report_timing
+elaborate core_v2
+link
+compile -gate_clock
 compile -exact_map
-compile -exact_map -gate_clock
-change_selection [get_s {peij_0_2 peij_0_3 peij_1_0 peij_1_1}]
-create_clock -name "ck" -period 100 {ck}
+compile -gate_clock
+create_clock -period 0 {ck}
 report_timing
-create_clock -name "ck" -period 10 {ck}
-report_timing
-create_clock -name "ck" -period 1 {ck}
-report_timing
-create_clock -name "ck" -period 1.1 {ck}
-report_timing
-compile -area_effort high -power_effort high -gate_clock -no_design_rule
-report_timing
-report_power
-create_clock -name "ck" -period 2 {ck}
-report_timing
-report_power
-create_clock -name "ck" -period 10 {ck}
-create_clock -name "ck" -period 1 {ck}
-analyze -format vhdl ../datapath.vhd
-elaborate rtl
 elaborate datapath
-pwd
-compile -area_effort high -power_effort high -gate_clock
-create_clock -name "ck" -period 1 {ck}
+compile -gate_clock
+create_clock -period 0 {ck}
 report_timing
-create_clock -name "ck" -period 1.1 {ck}
+current_instance addr_gen_inst
 report_timing
-create_clock -name "ck" -period 1.2 {ck}
-report_timing
-create_clock -name "ck" -period 1.25 {ck}
-report_timing
-create_clock -name "ck" -period 1.5 {ck}
-report_timing
-change_selection [get_s core_inst]
-report_timing -help
-report_timing -nworst 10
-change_selection [get_s npu_ctrl_inst]
-change_selection [get_s {{clk_gate_o_data_reg[0]}}]
-current_instance npu_ctrl_inst
-report_timing
-change_selection [get_s globals_inst]
-current_instance npu_ctrl_inst
-change_selection [get_s core_inst/npu_inst]
-change_selection [get_s npu_ctrl_inst]
-change_selection [get_s datapath]
-change_selection [get_s npu_ctrl_inst]
-current_instance npu_ctrl
-current_instance npu_ctrl_inst
-::cmenus::create_schematic
-change_selection [get_s core_inst]
-change_selection [get_s core_inst]
-::cmenus::create_schematic
-change_selection [get_s core_inst/weight_buffer_inst]
-change_selection [get_s core_inst/ckg_ctrl_inst]
-change_selection [get_s core_inst/npu_inst]
-change_selection [get_s core_inst/npu_inst]
-change_selection [get_s core_inst/npu_inst/peij_0_0]
-change_selection 
-change_selection [get_s core_inst]
-change_selection [get_s npu_ctrl_inst]
-change_selection 
-change_selection [get_s addr_gen_inst]
-analyze -format vhdl ../addr_gen.vhd
 elaborate addr_gen
-compile -exact_map -gate_clock
-create_clock -name "ck" -period 1 {ck}
+create_clock -period 0 {ck}
 report_timing
-change_selection [get_s addr_gen]
+change_selection [get_s add_104]
+change_selection [get_s add_104/*cell*30875]
+change_selection [get_s add_104]
+change_selection [get_s add_104]
+change_selection [get_s add_104/*cell*30875]
 ::cmenus::create_schematic
-report_power
-report_area
-report_area -help
-report_area -physical
-change_selection [get_s clk_gate_int_even_offset_reg]
+change_selection [get_s add_104/*cell*30875/U1_1_1]
+change_selection [get_s {{add_104/*cell*30875/SUM[1]}}]
+change_selection [get_s add_121]
+change_selection [get_s add_121/*cell*30877]
+change_selection [get_s add_127]
+change_selection [get_s add_127/*cell*30880]
+change_selection [get_s add_127/*cell*30880]
+change_selection [get_s add_127]
+change_selection [get_s add_141]
+change_selection [get_s add_121/*cell*30877]
+change_selection [get_s add_121]
+change_selection [get_s add_104]
+change_selection [get_s tilec_cnt]
+change_selection [get_s tilec_cnt]
+::cmenus::create_schematic
+change_selection [get_s add_141]
+change_selection [get_s add_121/*cell*30877]
+::cmenus::create_schematic
+change_selection [get_s add_104/*cell*30875]
+::cmenus::create_schematic
+change_selection [get_s add_121/*cell*30877]
+::cmenus::create_schematic
+change_selection [get_s add_141/*cell*30883]
+::cmenus::create_schematic
+change_selection [get_s {{tilec_cnt/arv[0]}}]
+change_selection [get_s tilec_cnt/n18]
+change_selection [get_s {{tilec_cnt/arv[0]}}]
+change_selection [get_s {{tilec_cnt/q[0]}}]
