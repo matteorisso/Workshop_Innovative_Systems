@@ -7,24 +7,21 @@ port(
 	ck                : in std_logic; 
 	rst               : in std_logic;
 	start          	: in std_logic;
-
-	s_tc_wr				: in std_logic; 
+	s_tc_rd				: in std_logic; 
 	s_tc_hmode			: in std_logic;
 	s_tc_vmode			: in std_logic;
 	s_tc_res				: in std_logic; 
-	s_last_tile			: in std_logic; 
 	s_tc_tilev			: in std_logic;
 	s_tc_tileh			: in std_logic;
 	s_tc_tileb			: in std_logic;
 	s_tc_tilec			: in std_logic;
-
-	ctrl_en_vmode		: out	std_logic;
 	ctrl_en_npu			: out std_logic;
-	ctrl_ld_h			: out	std_logic;
+	ctrl_en_hmode		: out std_logic; 
+	ctrl_en_vmode		: out	std_logic;
+	ctrl_en_rf_ptr		: out std_logic; 
 	ctrl_ld_v			: out std_logic;
 	ctrl_wr_pipe		: out std_logic;
-	ctrl_sel_arv_res	: out std_logic; 
-	
+	ctrl_weight_wr		: out std_logic; 
 	done              : out std_logic
 	);
 
@@ -34,8 +31,9 @@ architecture beh of conv_fsm_v2 is
 
 type state is (
 	IDLE, 
-	LD_KERNEL, 
-	INIT, 
+	LD_KERNEL,
+	INIT_NPU, 
+	WAIT_V,
 	HMODE, 
 	VMODE, 
 	RES, 
@@ -58,7 +56,7 @@ end process;
 cc1: process	(
 	ps, 
 	start, 
-	s_tc_wr, 
+	s_tc_rd, 
 	s_tc_hmode, 
 	s_tc_vmode, 
 	s_tc_res, 
@@ -69,113 +67,113 @@ cc1: process	(
 	)
 	
 begin
+	case (ps) is
 
-case (ps) is
-
-when IDLE => 
-		if start = '1' then
-			ns <= LD_KERNEL;
-		else 
-			ns <= IDLE;
-		end if; 
-		
-when LD_KERNEL =>
-	   if s_tc_vmode = '1' then
-			ns <= INIT;
-		else 
-			ns <= LD_KERNEL;
-		end if;
-		
-when INIT => 
-		if s_tc_wr = '1' then	
-			ns <=	HMODE;
-		else 
-			ns <= INIT;
-		end if;
- 
-when HMODE =>
-		if s_tc_hmode = '1' then	
-			if s_tc_vmode = '1' then
-				if s_last_tile = '1' then
-					ns <= LT_RES;
-				else
-					ns <= RES;
+		when IDLE => 
+				if start = '1' then
+					ns <= LD_KERNEL;
+				else 
+					ns <= IDLE;
+				end if; 
+				
+		when LD_KERNEL =>
+				if s_tc_vmode = '1' then
+					ns <= INIT_NPU;
+				else 
+					ns <= LD_KERNEL;
 				end if;
-			else
-				ns <= VMODE; 
-			end if;
-		else
-				ns <= HMODE;
-		end if;	
-		
-when VMODE => 
-			ns <= HMODE;
+				
+		when INIT_NPU => 
+				if s_tc_rd = '1' then	
+					ns <=	WAIT_V;
+				else 
+					ns <= INIT_NPU;
+				end if;
+		 
+		when HMODE =>
+				if s_tc_hmode = '1' then	
+					if s_tc_vmode = '1' then
+						if s_tc_tilev = '1' then
+							ns <= LT_RES;
+						else
+							ns <= RES;
+						end if;
+					else
+						ns <= VMODE; 
+					end if;
+				else
+						ns <= HMODE;
+				end if;	
+				
+		when VMODE => 
+					ns <= WAIT_V;
 
-when RES =>
-		if s_tc_res = '1' then   
-				ns <= HMODE;
-		else
-				ns <= RES;
-		end if;	
-		
-when LT_RES =>
-		if s_tc_res = '1' then
-			if s_tc_tileb = '1' then
-				ns <= LD_KERNEL;
-			else
-				ns <= INIT;
-			end if;
-		else
-			ns <= LT_RES;
-		end if;
-		
-when others => ns <= IDLE;
+		when WAIT_V =>
+					ns <= HMODE; 
+					
+		when RES =>
+				if s_tc_res = '1' then   
+						ns <= HMODE;
+				else
+						ns <= RES;
+				end if;	
+				
+		when LT_RES =>
+				if s_tc_res = '1' then
+					if ( s_tc_tilec and s_tc_tileb and s_tc_tileh and s_tc_tilev )= '1' then
+						ns <= EOC;
+					else
+						ns <= INIT_NPU;
+					end if;
+				else
+					ns <= LT_RES;
+				end if;
+				
+		when others => ns <= IDLE;
 
-end case;
+	end case;
 end process;
 
 cc2:process(ps)
 begin
  
 -- default
+ctrl_weight_wr		<= '0';
 ctrl_en_vmode 		<= '0';
-ctrl_en_npu 		<= '1'; 
-ctrl_ld_h			<= '0';
+ctrl_en_hmode		<= '0'; 
+ctrl_en_npu 		<= '1';
 ctrl_ld_v			<= '0';
+ctrl_en_rf_ptr		<= '0'; 
 ctrl_wr_pipe		<= '0';
-ctrl_sel_arv_res	<= '0';
 done 					<= '0'; 
 
-case(ps) is
-when LD_KERNEL =>
-			ctrl_en_npu			<= '0';
-			ctrl_en_vmode		<= '1';
-			
-when INIT => 
-			
-			ctrl_en_npu 		<= '0';
-			ctrl_ld_v			<= '1';
-			
-when HMODE =>
-			ctrl_ld_h 			<= '1'; 
-			
-when VMODE =>  
-			ctrl_ld_v			<= '1'; 
-			ctrl_en_vmode  	<= '1';
-			
-when RES =>
-			ctrl_wr_pipe 		<= '1';
-			
-when LT_RES =>
-			ctrl_wr_pipe 		<= '1';
-			ctrl_sel_arv_res	<= '1';
+	case(ps) is
+		when IDLE =>
+				ctrl_en_npu 		<= '0';
+		when LD_KERNEL =>
+					ctrl_en_npu		<= '0';
+					ctrl_en_vmode	<= '1'; 
+					ctrl_weight_wr	<= '1'; 
+		when INIT_NPU => 
+					ctrl_en_rf_ptr	<= '1';
+					ctrl_ld_v		<= '1';
+		when WAIT_V =>
+					ctrl_ld_v		<= '1';			
+		when HMODE =>
+					ctrl_en_hmode	<= '1';
+		when VMODE =>
+					ctrl_en_rf_ptr	<= '1'; 
+					ctrl_en_vmode  <= '1'; 
+		when RES =>
+					ctrl_wr_pipe 	<= '1';
+		when LT_RES =>
+					ctrl_wr_pipe 	<= '1';
+		when EOC => 
+					done 				<= '1'; 
 
-when EOC => 
-			done <= '1'; 
+		when others =>  
 
-when others =>  
-
-end case;
+	end case;
 end process;
 	
 	

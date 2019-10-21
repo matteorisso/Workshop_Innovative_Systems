@@ -18,9 +18,9 @@ from binary_ops import binary_tanh
 
 import config as cf
 
-def build_model(model:str, BinaryNet=False):
+def build_model(model:str, full=False):
    
-    if model=='binary':
+    if model=='bnn':
         Conv_ = lambda filters, kernel_size, dim, channel : BinaryConv2D(\
                                                    kernel_size=kernel_size, 
                                                    H=cf.H,  
@@ -48,7 +48,7 @@ def build_model(model:str, BinaryNet=False):
                                             kernel_regularizer=l2(cf.kernel_regularizer),\
                                             kernel_lr_multiplier=cf.kernel_lr_multiplier,\
                                             use_bias=False)
-        if BinaryNet:
+        if full:
             Act = lambda name : Activation(binary_tanh,name=name)
         else:    
             def quantized_relu(x):
@@ -56,7 +56,7 @@ def build_model(model:str, BinaryNet=False):
     
             Act = lambda name : Activation(quantized_relu,name=name)
     
-    elif model=='ternary': 
+    elif model=='tnn': 
         Conv_ = lambda filters, kernel_size, dim, channel : TernaryConv2D(\
                                                    kernel_size=kernel_size, 
                                                    H=cf.H,  
@@ -83,7 +83,7 @@ def build_model(model:str, BinaryNet=False):
                                             kernel_lr_multiplier=cf.kernel_lr_multiplier,\
                                             use_bias=False)
         
-        if BinaryNet:
+        if full:
             Act = lambda name : Activation(binary_tanh,name=name)
         else:    
             def quantized_relu(x):

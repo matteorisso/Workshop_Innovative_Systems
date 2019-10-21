@@ -45,10 +45,10 @@ _savedir = 'saved_model'
 _logdir  = 'logs'
 _imgdir  = 'img'
 
-_binarycon = 'BinaryConnect2'
-_binarynet = 'BinaryNet2'
-_xnornet   = 'XnorNet'
-_ternary   = 'Q4Ternary'
+_binarycon = 'bnn'#'BinaryConnect2'
+_binarynet = 'full-bnn'#'BinaryNet2'
+#_xnornet   = 'XnorNet'
+_ternary   = 'tnn'#'Q4Ternary'
 _embeddings= 'metadata.tsv'
 _tensorboard_name = 'tensorboard'
 
@@ -59,11 +59,14 @@ imgpath   = join(cwd,_imgdir)
 logpath   = join(join(cwd,_logdir),_tensorboard_name)
 embed     = join(logpath,_embeddings)
 
-FPmodel       = join(savepath,'{}'.format(_model))
-BinaryConnect = join(savepath,'{}'.format(_binarycon))
-BinaryNet     = join(savepath,'{}'.format(_binarynet))
-Ternary       = join(savepath,'{}'.format(_ternary))
-XnorNet       = join(savepath,'{}'.format(_xnornet))
+#FPmodel       
+fp = join(savepath,'{}'.format(_model))
+#BinaryConnect 
+bnn = join(savepath,'{}'.format(_binarycon))
+#BinaryNet     
+full_bnn = join(savepath,'{}'.format(_binarynet))
+#Ternary
+tnn      = join(savepath,'{}'.format(_ternary))
 
 if not isdir(savepath):
     os.makedirs(savepath)
@@ -81,5 +84,5 @@ from ternary_ops import ternarize
 from binary_ops import binarize
 
 model_path = Ternary
-build = lambda : build_model('ternary',BinaryNet=False)
+build = lambda : build_model('tnn',full=False)
 qop = lambda x : ternarize(x)

@@ -10,9 +10,7 @@ constant W 					: natural 	:= 4;
 constant K 					: natural	:= 5; 									
 constant KK 				: real 	 	:= real(K**2);
 
-constant N 					: natural := 4; 										
---constant N_PE_ROW 		: natural := W*N;
---constant N_REG_FIFO 		: natural :=(W+K-1)*N; 							
+constant N 					: natural := 4; 									
 constant BG 				: natural := natural(CEIL(LOG2(KK)));			
 constant N_WEIGHT			: natural := 2; 								
 
@@ -52,21 +50,18 @@ constant clog2H 	: natural := natural(CEIL(LOG2(real(NB_TILEH))));
 constant clog2B 	: natural := natural(CEIL(LOG2(real(NB_TILEB))));
 constant clog2C 	: natural := natural(CEIL(LOG2(real(NB_TILEC))));
 constant clog2M	: natural := natural(CEIL(LOG2(real(CL_MEM_WIDTH))));
- 	 
---subtype RFWord 		is signed(N_PE_ROW	- 1 downto 0);
---subtype FIFORowData 	is signed(N_REG_FIFO	- 1 downto 0);
-subtype PERowData 	is signed(W*N	- 1 downto 0); 			
-subtype PEResData 	is signed(W*(N+BG)	- 1 downto 0);
 
-type 	DualPortRF 		is array (0 to CL_MEM_WIDTH-1) of signed(N*(K-1)-1 downto 0); 
-type 	MemDataOut 		is array (0 to W-1) of signed(N*(K-1)-1 downto 0);
+subtype PERowData is signed(W*N	- 1 downto 0); 			
+subtype PEResData is signed(W*(N+BG)- 1 downto 0);
 
---type 	FIFOBlockData 	is array (0 to W-1) of FIFORowData;	
-type 	PEBlockData 	is array (0 to W-1) of PERowData;	
-type 	PEBlockDataRes is array (0 to W-1) of PEResData;	
+type pe_array_t is array (0 to W-1) of PERowData;	
+type res_pe_array_t is array (0 to W-1) of PEResData;
+type i_pe_array_t is array (0 to W-1) of signed(N-1 downto 0);
+type o_pe_array_t is array (0 to W-1) of signed(N+BG-1 downto 0);
+	
 
-type  PE_ARRAY_I 	is array (0 to W-1) of signed(N-1 downto 0);
-type  PE_ARRAY_O 	is array (0 to W-1) of signed(N+BG-1 downto 0);
+type dual_port_rf_t is array (0 to CL_MEM_WIDTH-1) of signed(N*W-1 downto 0); 
+type mem_data_t is array (0 to W-1) of signed(N*W-1 downto 0);
 
 type layer_t is (
 	C1, 
