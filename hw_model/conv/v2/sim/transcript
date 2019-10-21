@@ -1,0 +1,274 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project tb_fsm
+project compileall
+# Compile of conv_fsm_v2.vhd was successful.
+# Compile of tb_fsm_v2.vhd was successful.
+# Compile of npu_ctrl.vhd was successful.
+# Compile of pe_array.vhd was successful.
+# Compile of pev2_2.vhd was successful.
+# Compile of regn.vhd was successful.
+# Compile of s_tile_gen.vhd was successful.
+# Compile of urom.vhd was successful.
+# Compile of weight_buffer.vhd was successful.
+# Compile of addr_gen.vhd was successful.
+# Compile of ckg_ctrl.vhd was successful.
+# Compile of core_v2.vhd was successful.
+# Compile of countern.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of globals.pkg.vhd was successful.
+# 15 compiles, 0 failed with no errors. 
+vsim work.tb_fsm_v2
+# vsim work.tb_fsm_v2 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-13) Recompile work.tb_fsm_v2(test) because work.datapath has changed.
+# ** Error: /home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd(119): (vopt-1136) Unknown identifier "i_data_mem".
+# ** Error: /home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd(135): (vopt-1136) Unknown identifier "tb".
+# ** Error: /home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd(136): (vopt-1136) Unknown identifier "tb_i_data_conv".
+# ** Error: /home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd(137): (vopt-1136) Unknown identifier "tb_i_weight_conv".
+# ** Error: /home/lp19.20/Desktop/convolutional_layer/sim/conv_fsm_v2.vhd(30): Vopt Compiler exiting
+# Error loading design
+project compileall
+# Compile of conv_fsm_v2.vhd was successful.
+# Compile of tb_fsm_v2.vhd failed with 1 errors.
+# Compile of npu_ctrl.vhd was successful.
+# Compile of pe_array.vhd was successful.
+# Compile of pev2_2.vhd was successful.
+# Compile of regn.vhd was successful.
+# Compile of s_tile_gen.vhd was successful.
+# Compile of urom.vhd was successful.
+# Compile of weight_buffer.vhd was successful.
+# Compile of addr_gen.vhd was successful.
+# Compile of ckg_ctrl.vhd was successful.
+# Compile of core_v2.vhd was successful.
+# Compile of countern.vhd was successful.
+# Compile of datapath.vhd failed with 2 errors.
+# Compile of globals.pkg.vhd was successful.
+# 15 compiles, 2 failed with 3 errors. 
+project compileall
+# Compile of conv_fsm_v2.vhd was successful.
+# Compile of tb_fsm_v2.vhd failed with 1 errors.
+# Compile of npu_ctrl.vhd was successful.
+# Compile of pe_array.vhd was successful.
+# Compile of pev2_2.vhd was successful.
+# Compile of regn.vhd was successful.
+# Compile of s_tile_gen.vhd was successful.
+# Compile of urom.vhd was successful.
+# Compile of weight_buffer.vhd was successful.
+# Compile of addr_gen.vhd was successful.
+# Compile of ckg_ctrl.vhd was successful.
+# Compile of core_v2.vhd was successful.
+# Compile of countern.vhd was successful.
+# Compile of datapath.vhd failed with 2 errors.
+# Compile of globals.pkg.vhd was successful.
+# 15 compiles, 2 failed with 3 errors. 
+project compileall
+# Compile of conv_fsm_v2.vhd was successful.
+# Compile of tb_fsm_v2.vhd was successful.
+# Compile of npu_ctrl.vhd was successful.
+# Compile of pe_array.vhd was successful.
+# Compile of pev2_2.vhd was successful.
+# Compile of regn.vhd was successful.
+# Compile of s_tile_gen.vhd was successful.
+# Compile of urom.vhd was successful.
+# Compile of weight_buffer.vhd was successful.
+# Compile of addr_gen.vhd was successful.
+# Compile of ckg_ctrl.vhd was successful.
+# Compile of core_v2.vhd was successful.
+# Compile of countern.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of globals.pkg.vhd was successful.
+# 15 compiles, 0 failed with no errors. 
+vsim work.tb_fsm_v2
+# vsim work.tb_fsm_v2 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.tb_fsm_v2(test)#1
+# Loading work.datapath(rtl)#1
+# Loading work.core_v2(rtl)#1
+# Loading work.pe_array(rtl)#1
+# Loading work.pev2_2(beh)#1
+# Loading work.countern(beh)#1
+# Updating msgviewer database...
+add wave sim:/tb_fsm_v2/cu/ps
+add wave sim:/tb_fsm_v2/dp/*
+run 20 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_v2/dp/addr_gen_inst
+# Updating msgviewer database...
+project compileoutofdate
+# Compile of tb_fsm_v2.vhd was successful.
+vsim work.tb_fsm_v2
+# vsim work.tb_fsm_v2 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.tb_fsm_v2(test)#1
+# Loading work.datapath(rtl)#1
+# Loading work.core_v2(rtl)#1
+# Loading work.pe_array(rtl)#1
+# Loading work.pev2_2(beh)#1
+# Loading work.countern(beh)#1
+add wave sim:/tb_fsm_v2/cu/ps
+add wave sim:/tb_fsm_v2/dp/*
+run 20 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_v2/dp/addr_gen_inst
+# Updating msgviewer database...
+add wave sim:/tb_fsm_v2/dp/addr_gen_inst/*ptr*
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.tb_fsm_v2(test)#1
+# Loading work.datapath(rtl)#1
+# Loading work.core_v2(rtl)#1
+# Loading work.pe_array(rtl)#1
+# Loading work.pev2_2(beh)#1
+# Loading work.countern(beh)#1
+run 20 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_v2/dp/addr_gen_inst
+# Updating msgviewer database...
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/lp19.20/Desktop/convolutional_layer/sim/wave.do
+project compileoutofdate
+# Compile of urom.vhd was successful.
+vsim work.tb_fsm_v2
+# vsim work.tb_fsm_v2 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.tb_fsm_v2(test)#1
+# Loading work.datapath(rtl)#1
+# Loading work.core_v2(rtl)#1
+# Loading work.pe_array(rtl)#1
+# Loading work.pev2_2(beh)#1
+# Loading work.countern(beh)#1
+source wave.do
+run 20 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_v2/dp/addr_gen_inst
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+add wave sim:/tb_fsm_v2/dp/addr_gen/*
+# (vish-4014) No objects found matching '/tb_fsm_v2/dp/addr_gen/*'.
+add wave sim:/tb_fsm_v2/dp/addr_gen_inst/*
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.tb_fsm_v2(test)#1
+# Loading work.datapath(rtl)#1
+# Loading work.core_v2(rtl)#1
+# Loading work.pe_array(rtl)#1
+# Loading work.pev2_2(beh)#1
+# Loading work.countern(beh)#1
+run 400 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_v2/dp/addr_gen_inst
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+run
+# Updating msgviewer database...
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/lp19.20/Desktop/convolutional_layer/sim/wave.do
+project compileoutofdate
+# Compile of tb_fsm_v2.vhd was successful.
+vsim work.tb_fsm_v2
+# vsim work.tb_fsm_v2 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.tb_fsm_v2(test)#1
+# Loading work.datapath(rtl)#1
+# Loading work.core_v2(rtl)#1
+# Loading work.pe_array(rtl)#1
+# Loading work.pev2_2(beh)#1
+# Loading work.countern(beh)#1
+source wave.do
+run 1 ms
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_v2/dp/addr_gen_inst
+# Updating msgviewer database...
