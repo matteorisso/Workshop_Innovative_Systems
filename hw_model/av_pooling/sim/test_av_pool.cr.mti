@@ -1,4 +1,16 @@
-D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
+D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/tb/avr_pooling_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity avr_pooling_tb
+-- Compiling architecture test of avr_pooling_tb
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_mux2to1.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -66,6 +78,15 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity avr_pooling
 -- Compiling architecture behavior of avr_pooling
 
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_register.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/generic_register.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity generic_register
+-- Compiling architecture behavior of generic_register
+
 } {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/param.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -75,7 +96,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package MATH_REAL
 -- Compiling package param
 
-} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd {2 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/relu_4bit.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -120,6 +141,17 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity countern
 -- Compiling architecture beh of countern
 
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/cgu.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/cgu.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity cgu
+-- Compiling architecture structure of cgu
+
 } {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/pe_block.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -140,5 +172,16 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Compiling entity interf
 -- Compiling architecture behavior of interf
+
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_eu.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/av_pooling/src/avr_pooling_eu.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity avr_pooling_eu
+-- Compiling architecture behavior of avr_pooling_eu
 
 } {} {}}

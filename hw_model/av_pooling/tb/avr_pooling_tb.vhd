@@ -15,54 +15,27 @@ end entity;
 
 architecture test of avr_pooling_tb is
 
-component avr_pooling is
-
-    port(
-		  ck 		  : in  std_logic; 
-		  rst         : in  std_logic;
-		  sel         : in  std_logic;
-		  d_0 	      : in 	signed((W*N-1) downto 0);
-		  d_1 	      : in 	signed((W*N-1) downto 0);
-		  d_2 	      : in 	signed((W*N-1) downto 0);
-		  d_3 	      : in 	signed((W*N-1) downto 0);	
-		  d_4 	      : in 	signed((W*N-1) downto 0);	
-		  d_5 	      : in 	signed((W*N-1) downto 0);	
-		  d_6 	      : in 	signed((W*N-1) downto 0);	
-		  d_7 	      : in 	signed((W*N-1) downto 0);		  
-	      sync_clr    : in  std_logic;	
-		  en		  : in  std_logic; 
-		  ckg_rmask   : in  std_logic_vector(0 to W-1);
-		  ckg_cmask   : in  std_logic_vector(0 to W-1);		  
-		  rst_cnt     : in  std_logic;
-		  en_cnt      : in  std_logic; 	        
-		  o_pool 	  : out PEBlockData;
-		  tc          : out std_logic;                   -- result of the comparator used to understand when the output data are valid 
-		  cnt         : out unsigned(1 downto 0)   --TEST PURPOSE   
-		  
-	);
-	
-end component;
-	
-component avr_pooling_fsm is
-
-    port(	
-		clk            : in  std_logic;
-        rst_fsm        : in  std_logic;		
-		start          : in  std_logic; 
-		done		   : in  std_logic;
-        tc             : in  std_logic;	
-        --tc2            : in  std_logic;
-		sel            : out  std_logic;
-        en_cnt1        : out std_logic;    
-        rst_cnt1       : out std_logic;
-       -- en_cnt2        : out std_logic;    
-       -- rst_cnt2       : out std_logic;						
-		rst            : out std_logic;
-	    sync_clr       : out std_logic	
-		
+	component avr_pooling is
+		port(
+			clk           : in  std_logic;
+			rst_fsm       : in  std_logic;		
+			start         : in  std_logic; 
+			done		  : in  std_logic;
+			en			  : in  std_logic; 
+			size_1 		  :	in 	std_logic_vector(4 downto 0);
+			size_2 		  :	in 	std_logic_vector(4 downto 0);
+			pool_sel      :	in	std_logic;
+			d_0 	      : in 	signed((W*N-1) downto 0);
+			d_1 	      : in 	signed((W*N-1) downto 0);
+			d_2 	      : in 	signed((W*N-1) downto 0);
+			d_3 	      : in 	signed((W*N-1) downto 0);	
+			d_4 	      : in 	signed((W*N-1) downto 0);	
+			d_5 	      : in 	signed((W*N-1) downto 0);	
+			d_6 	      : in 	signed((W*N-1) downto 0);	
+			d_7 	      : in 	signed((W*N-1) downto 0);
+			o_pool 	      : out PEBlockData
 		);
-		
-end component;	
+	end component;
 	
 	file file_in_0_e   : text;
 	file file_in_1_e   : text;
@@ -80,13 +53,8 @@ end component;
 	signal tb_clk		: std_logic;
 	
 -- signals for the DP	
-	signal tb_rst          : std_logic;
-	signal tb_sync_clr	   : std_logic;
-    signal tb_en           : std_logic;
-    signal tb_ckg_rmask    : std_logic_vector(0 to W-1);
-    signal tb_ckg_cmask    : std_logic_vector(0 to W-1);
-	signal tb_rst_cnt1     : std_logic;	
-    signal tb_en_cnt1      : std_logic;	
+    --signal tb_ckg_rmask    : std_logic_vector(0 to W-1);
+    --signal tb_ckg_cmask    : std_logic_vector(0 to W-1);
     
 	signal tb_d_0		   : signed((W*N-1) downto 0);
 	signal tb_d_1		   : signed((W*N-1) downto 0);
@@ -96,21 +64,20 @@ end component;
 	signal tb_d_5		   : signed((W*N-1) downto 0);
 	signal tb_d_6		   : signed((W*N-1) downto 0);
 	signal tb_d_7		   : signed((W*N-1) downto 0);
-	
-    signal tb_cnt1         : unsigned(1 downto 0);	
-    		
+
 
 -- signals for the FSM	
 	signal tb_rst_fsm	: std_logic;	
 	signal tb_start   	: std_logic;
-	signal tb_done   	: std_logic;	
-	signal tb_tc	    : std_logic;
-	signal tb_sel		: std_logic;
+	signal tb_done   	: std_logic;
+	signal tb_en		: std_logic;
 			
 	
 -- output
 	signal tb_o_pool 	: PEBlockData;
-	
+	signal tb_size_1	: std_logic_vector(4 downto 0);
+	signal tb_size_2	: std_logic_vector(4 downto 0);
+	signal tb_pool_sel	: std_logic;
 	
 	
 begin
@@ -166,8 +133,8 @@ begin
     tb_start     <= '0';	
 	tb_done		 <=	'0';
     tb_en        <= '0';       -- These enable has to be controlled from the fsm for the clk gating
-    tb_ckg_cmask <= (others => '1');
-    tb_ckg_rmask <= (others => '1');	
+    --tb_ckg_cmask <= (others => '1');
+    --tb_ckg_rmask <= (others => '1');	
 	tb_d_0		<=	(others => '0');
 	tb_d_1		<=	(others => '0');
 	tb_d_2		<=	(others => '0');
@@ -176,14 +143,17 @@ begin
 	tb_d_5		<=	(others => '0');
 	tb_d_6		<=	(others => '0');
 	tb_d_7		<=	(others => '0');
+	tb_size_1	<=	"11011";
+	tb_size_2	<=	"01001";
+	tb_pool_sel	<=	'0';
 	
 	wait for 4 ns;
 
     -- ATTENZIONE: viene dato lo start, la fsm lo campiona e il colpo di clk successivo prende il primo dato 
     tb_start     <= '1';	
     tb_en        <= '1';       -- These enable has to be controlled from the fsm for the clk gating
-    tb_ckg_cmask <= (others => '0');
-    tb_ckg_rmask <= (others => '0');	
+    --tb_ckg_cmask <= (others => '0');
+    --tb_ckg_rmask <= (others => '0');	
 	
 	wait for 2 ns;
 
@@ -279,20 +249,20 @@ begin
 				end if;
 			end if;
 			
-			if gate_rg >= 4 then
-				tb_ckg_cmask	<= "0011";
-			else
-				tb_ckg_cmask	<= "0000";
-			end if;
+			-- if gate_rg >= 4 then
+				-- tb_ckg_cmask	<= "0011";
+			-- else
+				-- tb_ckg_cmask	<= "0000";
+			-- end if;
 			
 			if gate_dn = 9 then
-				tb_ckg_rmask	<= "0011";
+				--tb_ckg_rmask	<= "0011";
 				gate_dn			:= 0;
 				gate_rg 		:= gate_rg + 1;
-			elsif gate_dn = 8 then
-				tb_ckg_rmask	<= "0011";
-			else
-				tb_ckg_rmask	<= "0000";
+			-- elsif gate_dn = 8 then
+				-- tb_ckg_rmask	<= "0011";
+			-- else
+				-- tb_ckg_rmask	<= "0000";
 			end if;
 			
 			
@@ -318,47 +288,26 @@ begin
 	end process;
 	
 	
-
-	
-        
-		
 	pool : avr_pooling
 		port map(
-		          ck 		  =>	tb_clk,
-				  rst         =>	tb_rst,
-				  sel         =>	tb_sel,
-				  d_0 	      =>	tb_d_0,
-				  d_1 	      =>	tb_d_1,
-				  d_2 	      =>	tb_d_2,
-				  d_3 	      =>	tb_d_3,	
-				  d_4 	      =>	tb_d_4,
-				  d_5 	      =>	tb_d_5,
-				  d_6 	      =>	tb_d_6,
-				  d_7 	      =>	tb_d_7,
-				  sync_clr    =>	tb_sync_clr,
-				  en		  =>	tb_en,
-				  ckg_rmask   =>	tb_ckg_rmask,
-				  ckg_cmask   =>	tb_ckg_cmask, 
-				  rst_cnt     =>	tb_rst_cnt1,
-				  en_cnt      =>	tb_en_cnt1,
-				  o_pool 	  =>	tb_o_pool,
-				  tc          =>	tb_tc,
-				  cnt         =>	tb_cnt1 
-			     );
-				 
-	fsm : avr_pooling_fsm
-	    port map(
-		         clk           =>	tb_clk,
-				rst_fsm        =>	tb_rst_fsm,
-				start          =>	tb_start,
-				done		   =>	tb_done,
-				tc             =>	tb_tc,
-				sel            =>	tb_sel,
-				en_cnt1        =>	tb_en_cnt1,
-				rst_cnt1       =>	tb_rst_cnt1,	
-				rst            =>	tb_rst,
-				sync_clr       =>	tb_sync_clr
-         	     );
-		 
+				clk 	  =>	tb_clk,
+				rst_fsm   =>	tb_rst_fsm,
+				start	  =>	tb_start,
+				done	  =>	tb_done,
+				en		  =>	tb_en,
+				size_1	  =>	tb_size_1,
+				size_2	  =>	tb_size_2,
+				pool_sel  =>	tb_pool_sel,
+				d_0 	  =>	tb_d_0,
+				d_1 	  =>	tb_d_1,
+				d_2 	  =>	tb_d_2,
+				d_3 	  =>	tb_d_3,	
+				d_4 	  =>	tb_d_4,
+				d_5 	  =>	tb_d_5,
+				d_6 	  =>	tb_d_6,
+				d_7 	  =>	tb_d_7,
+				o_pool 	  =>	tb_o_pool
+			    );
+	 
 end test;
         

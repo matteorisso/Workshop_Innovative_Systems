@@ -6,19 +6,19 @@ use work.param.all;
 entity avr_pooling_fsm is
 	
 	port( 
-		clk            : in  std_logic;
-        rst_fsm        : in  std_logic;		
-		start          : in  std_logic; 
-		done		   : in  std_logic;
-        tc             : in  std_logic;	
-        --tc2            : in  std_logic;
-		sel            : out  std_logic;
-        en_cnt1        : out std_logic;    
-        rst_cnt1       : out std_logic;
-       -- en_cnt2        : out std_logic;    
-       -- rst_cnt2       : out std_logic;						
-		rst            : out std_logic;
-	    sync_clr       : out std_logic		
+		clk            	: 	in  std_logic;
+        rst_fsm        	: 	in  std_logic;		
+		start          	: 	in  std_logic; 
+		done		   	: 	in  std_logic;
+        tc             	: 	in  std_logic;	
+		rst_cnt_c		:	out	std_logic;
+		rst_cnt_r		:	out	std_logic;
+		ld_h			:	out	std_logic;
+		sel             : 	out std_logic;
+        en_cnt1         : 	out std_logic;    
+        rst_cnt1        : 	out std_logic;					
+		rst             : 	out std_logic;
+	    sync_clr      	: 	out std_logic		
 		
 		);
 end entity;
@@ -60,12 +60,14 @@ architecture behavioral of avr_pooling_fsm is
 						when IDLE =>
 						
 				        en_cnt1     <= '0';						
-                        rst_cnt1    <= '1';
-				        --en_cnt2     <= '0';						
-                        --rst_cnt2    <= '1';											
+                        rst_cnt1    <= '1';							
 		                rst         <= '1';
                         sync_clr 	<= '1';	
+						ld_h		<= '1';
 						sel			<= '0';
+						rst_cnt_c	<= '0';
+						rst_cnt_r	<= '0';
+
 						
 						if start = '1' then
 						
@@ -86,10 +88,14 @@ architecture behavioral of avr_pooling_fsm is
 				        en_cnt1     <= '1';
                         rst_cnt1    <= '0';
 				        --en_cnt2     <= '1';
-                        --rst_cnt2    <= '0';														 						
+                        --rst_cnt2    <= '0';	
+						ld_h		<= '0';
 		                rst         <= '0'; 
                         sync_clr 	<= '0';	
 						sel			<= '0';
+						rst_cnt_c	<= '1';
+						rst_cnt_r	<= '1';
+				
 						
 						next_state <= L_ODD;
 						
@@ -103,9 +109,12 @@ architecture behavioral of avr_pooling_fsm is
                         rst_cnt1    <= '0';
 				        --en_cnt2     <= '1';
                         --rst_cnt2    <= '0';														 						
-		                rst         <= '0'; 
+		                rst         <= '0';
+						ld_h		<= '0';
                         sync_clr 	<= '0';		
 						sel			<= '1';
+						rst_cnt_c	<= '1';
+						
 
                         if tc = '1' then
 							
@@ -135,9 +144,13 @@ architecture behavioral of avr_pooling_fsm is
                         rst_cnt1    <= '1';
 				        --en_cnt2     <= '1';
                         --rst_cnt2    <= '0';							
-		                rst         <= '0';  
+		                rst         <= '0';
+						ld_h		<= '0';
                         sync_clr 	<= '0';	
 						sel			<= '0';
+						rst_cnt_c	<= '1';
+						rst_cnt_r	<= '1';
+				
 						
 						next_state <= RESET;
 						
@@ -148,11 +161,14 @@ architecture behavioral of avr_pooling_fsm is
 						
 				        en_cnt1     <= '0';
                         rst_cnt1    <= '1';
+						ld_h		<= '0';
 				        --en_cnt2     <= '1';
                         --rst_cnt2    <= '0';							
 		                rst         <= '0';  
                         sync_clr 	<= '1';	
 						sel			<= '0';
+						rst_cnt_c	<= '1';
+						rst_cnt_r	<= '1';
 						
 						next_state <= L_EVEN;																	
 						
