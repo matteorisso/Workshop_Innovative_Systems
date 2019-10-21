@@ -69,6 +69,7 @@ architecture structure of cgu is
 	signal 	del_tc_c_1	:	std_logic;
 	signal 	del_tc_c_2	:	std_logic;
 	signal 	del_tc_c_3	:	std_logic;
+	signal 	del_tc_c_4	:	std_logic;
 	--signal 	en_h		:	std_logic;
 	signal	cnt_r_out	:	std_logic_vector(1	downto	0);
 	signal 	tc_r		:	std_logic;
@@ -150,7 +151,7 @@ begin
 	count_c : process(clk,del_1_tc)
 	begin
 		if clk'event and clk = '1' then
-			if (rst_cnt_c = '0') or (tc_c = '1')then
+			if (rst_cnt_c = '0') then --or (tc_c = '1')then
 				cnt_c_out <= "11";
 				tc_c  <= '0';
 			elsif ld_h = '1' then
@@ -206,14 +207,23 @@ begin
 			end if;
 	end process;
 	
-	
+	ff_tc_c_4	:	process(clk)
+		begin
+			if clk'event and clk = '1' then
+				if rst_h = '1' then
+					del_tc_c_4 <= '0';
+				else 
+					del_tc_c_4 <= del_tc_c_3;
+				end if;
+			end if;
+	end process;
 	
 	
 	mux_cmask	:	generic_mux2to1	generic map(
 										n	=>	4
 									)
 									port map(
-										sel		=>	del_tc_c,
+										sel		=>	tc_c,
 										d_0		=>	"0000",
 										d_1		=>	dec_out,
 										d_out	=>	s_ckg_cmask
@@ -222,12 +232,12 @@ begin
 	count_r : process(clk,tc_c)
 	begin
 		if clk'event and clk = '1' then
-			if (rst_cnt_r = '0') or (tc_r = '1')then
+			if (rst_cnt_r = '0') then --or (tc_r = '1')then
 				cnt_r_out <= "11";
 				tc_r  <= '0';
 			elsif ld_h = '1' then
 				cnt_r_out	<=	horz_slide(1 downto 0);
-			elsif del_tc_c_3 = '1' then
+			elsif (tc_c = '1') and (tc = '1') then
 				cnt_r_out	<= std_logic_vector(unsigned(cnt_r_out)-1);
 			end if;
 		end if;	
@@ -249,7 +259,7 @@ begin
 										n	=>	4
 									)
 									port map(
-										sel		=>	del_tc_r,
+										sel		=>	tc_r,
 										d_0		=>	"0000",
 										d_1		=>	dec_out,
 										d_out	=>	s_ckg_rmask

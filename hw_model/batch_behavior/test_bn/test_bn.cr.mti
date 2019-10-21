@@ -29,6 +29,17 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity adder
 -- Compiling architecture behavior of adder
 
+} {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_behavior/batch_norm_pe.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_behavior/batch_norm_pe.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package param
+-- Compiling entity batch_norm_pe
+-- Compiling architecture structure of batch_norm_pe
+
 } {} {}} D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_behavior/param.vhd {1 {vcom -work work -2002 -explicit D:/Admin/Documents/LibriUniversitari/GitHub/Workshop_Innovative_Systems/hw_model/batch_behavior/param.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
