@@ -4,6 +4,8 @@ use ieee.numeric_std.all;
 
 use work.globals.all;
 
+-- NOT SYN: RM TEST WR PROCESS
+
 entity dual_port_rf is
   generic (N : natural := N*W);
   port(
@@ -30,7 +32,7 @@ begin
 
   wr_proc : process(ck, rst, test, cs)
 
-    variable px_v   : signed(3 downto 0)           := (others => '0');  --generic?
+    variable px_v   : signed(3 downto 0)           := (others => '0');
     variable word_v : signed(i_data'high downto 0) := (others => '0');
 
   begin
@@ -55,9 +57,11 @@ begin
 
 -- sync rd 
 
-  rd_proc : process(ck, cs)
+  rd_proc : process(ck, rst)
   begin
-    if rising_edge(ck) and cs = '1' then
+    if rst = '1' then
+      o_data <= (others => '0');
+    elsif rising_edge(ck) and cs = '1' then
       if rd = '1' then
         o_data <= word(to_integer(rd_addr));
       end if;

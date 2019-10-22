@@ -10,11 +10,11 @@ entity imem_if is
   port(
     i_data_v      : in  mem_data_t;
     i_data_h      : in  mem_data_t;
-    rf_ptr        : in  unsigned(clog2W-1 downto 0);  
+    rf_ptr        : in  unsigned(clog2W-1 downto 0);
     px_ptr        : in  unsigned(clog2K-1 downto 0);
     o_data_conv_v : out signed(N*W-1 downto 0);
     o_data_conv_h : out signed(N*W-1 downto 0);
-    o_data_fc     : out signed(N downto 0)
+    o_data_fc     : out signed(N-1 downto 0)
     );
 end entity;
 

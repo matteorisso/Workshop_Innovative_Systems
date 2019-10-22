@@ -63,10 +63,7 @@ package globals is
   type dual_port_rf_t is array (0 to CL_MEM_WIDTH-1) of signed(N*W-1 downto 0);
   type mem_data_t is array (0 to W-1) of signed(N*W-1 downto 0);
 
-  type layer_t is (
-    C1,
-    C2
-    ); 
+  type layer_t is (C1, C2);
 
 
 end package;

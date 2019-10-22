@@ -110,10 +110,13 @@ begin
       o_data_odd   => int_data_odd
       );
 
+  int_cs_all <= cs_all;
+  int_rd     <= (others => ctrl_en_rf_ptr);
+  int_wr     <= wr;
+
   -- TMP
+  int_weight       <= (others => '1');
   int_addr_wr_even <= (others => '0');
   int_addr_wr_odd  <= (others => '0');
-  int_rd           <= (others => '1');
-  int_wr           <= (others => '0');
   
 end architecture;

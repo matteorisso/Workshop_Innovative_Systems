@@ -9,24 +9,6 @@ Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 -- Compiling architecture rtl of pe_array
 -- Loading entity pev2_2
 
-} {} {}} /home/lp19.20/Desktop/convolutional_layer/urom.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/urom.vhd
-Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Loading package math_real
--- Loading package globals
--- Compiling entity urom
--- Compiling architecture structure of urom
-
-} {} {}} /home/lp19.20/Desktop/convolutional_layer/globals.pkg.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/globals.pkg.vhd
-Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Loading package math_real
--- Compiling package globals
-
 } {} {}} /home/lp19.20/Desktop/convolutional_layer/regn.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/regn.vhd
 Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 -- Loading package standard
@@ -34,16 +16,6 @@ Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 -- Loading package numeric_std
 -- Compiling entity regn
 -- Compiling architecture beh of regn
-
-} {} {}} /home/lp19.20/Desktop/convolutional_layer/imem_w.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/imem_w.vhd
-Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Loading package math_real
--- Loading package globals
--- Compiling entity imem_w
--- Compiling architecture rtl of imem_w
 
 } {} {}} /home/lp19.20/Desktop/convolutional_layer/imem_if.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/imem_if.vhd
 Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
@@ -64,6 +36,22 @@ Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 -- Loading package globals
 -- Compiling entity pev2_2
 -- Compiling architecture beh of pev2_2
+
+} {} {}} /home/lp19.20/Desktop/convolutional_layer/datapath.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/datapath.vhd
+Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package globals
+-- Compiling entity datapath
+-- Compiling architecture rtl of datapath
+-- Loading entity core_v2
+-- Loading entity npu_ctrl
+-- Loading entity s_tile_gen
+-- Loading entity addr_gen
+-- Loading entity urom
+-- Loading entity imem_if_top
 
 } {} {}} /home/lp19.20/Desktop/convolutional_layer/npu_ctrl.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/npu_ctrl.vhd
 Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
@@ -134,25 +122,7 @@ Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 ** Error: /home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd(136): (vcom-1136) Unknown identifier "i_data_h".
 ** Error: /home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd(139): VHDL Compiler exiting
 
-} {12.0 15.0} {}} /home/lp19.20/Desktop/convolutional_layer/conv_fsm_v2.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/conv_fsm_v2.vhd
-Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Compiling entity conv_fsm_v2
--- Compiling architecture beh of conv_fsm_v2
-
-} {} {}} /home/lp19.20/Desktop/convolutional_layer/addr_gen.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/addr_gen.vhd
-Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Loading package math_real
--- Loading package globals
--- Compiling entity addr_gen
--- Compiling architecture rtl of addr_gen
-
-} {} {}} /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd {0 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd
+} {12.0 15.0} {}} /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd
 Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 -- Loading package standard
 -- Loading package std_logic_1164
@@ -163,14 +133,8 @@ Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 -- Compiling architecture rtl of top_level_dp
 -- Loading entity datapath
 -- Loading entity imem_w
-** Error: /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd(104): near "int_addr__wr_even": Identifier may not contain adjacent underlines.
-** Error: /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd(100): (vcom-1136) Unknown identifier "int_rf_ptr".
-** Error: /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd(104): (vcom-1136) Unknown identifier "int_addr__wr_even".
-** Error: /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd(101): Signal "int_rd" is type ieee.std_logic_1164.std_logic; expecting type ieee.std_logic_1164.std_logic_vector.
-** Error: /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd(102): Signal "int_wr" is type ieee.std_logic_1164.std_logic; expecting type ieee.std_logic_1164.std_logic_vector.
-** Error: /home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd(111): VHDL Compiler exiting
 
-} {12.0 18.0} {}} /home/lp19.20/Desktop/convolutional_layer/countern.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/countern.vhd
+} {} {}} /home/lp19.20/Desktop/convolutional_layer/countern.vhd {1 {vcom -work work -2002 -explicit -vopt /home/lp19.20/Desktop/convolutional_layer/countern.vhd
 Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
 -- Loading package standard
 -- Loading package std_logic_1164

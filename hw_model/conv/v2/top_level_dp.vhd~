@@ -46,8 +46,9 @@ architecture rtl of top_level_dp is
 
 
   signal int_cs_all       : std_logic;
-  signal int_rd           : std_logic;
-  signal int_wr           : std_logic;
+  signal int_cs_enc       : unsigned(clog2W-1 downto 0);
+  signal int_rd           : std_logic_vector(0 to W-1);
+  signal int_wr           : std_logic_vector(0 to W-1);
   signal int_addr_rd_even : unsigned(clog2m-1 downto 0);
   signal int_addr_wr_even : unsigned(clog2m-1 downto 0);
   signal int_addr_rd_odd  : unsigned(clog2m-1 downto 0);
@@ -82,6 +83,7 @@ begin
       i_weight       => int_weight,
       i_data_even    => int_data_even,
       i_data_odd     => int_data_odd,
+      o_cs_enc       => int_cs_enc,
       o_addr_rd_even => int_addr_rd_even,
       o_addr_wr_even => int_addr_wr_even,
       o_addr_rd_odd  => int_addr_rd_odd,
@@ -97,7 +99,7 @@ begin
       i_data_even  => i_data_even,
       i_data_odd   => i_data_odd,
       cs_all       => int_cs_all,
-      cs_enc       => int_rf_ptr,
+      cs_enc       => int_cs_enc,
       rd           => int_rd,
       wr           => int_wr,
       even_rd_addr => int_addr_rd_even,
@@ -108,4 +110,13 @@ begin
       o_data_odd   => int_data_odd
       );
 
+  int_cs_all <= cs_all;
+  int_rd     <= rd;
+  int_wr     <= wr;
+
+  -- TMP
+  int_weight       <= (others => '1');
+  int_addr_wr_even <= (others => '0');
+  int_addr_wr_odd  <= (others => '0');
+  
 end architecture;

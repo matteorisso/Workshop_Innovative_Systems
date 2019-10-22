@@ -14,6 +14,7 @@ entity urom is
     arv_tileh   : out unsigned(clog2h-1 downto 0);
     arv_tileb   : out unsigned(clog2b-1 downto 0);
     arv_tilec   : out unsigned(clog2c-1 downto 0);
+    arv_addr    : out unsigned(clog2M-1 downto 0);
     arv_ckg     : out unsigned(clog2W-1 downto 0);
     ckg_mask    : out std_logic_vector(0 to W-1);
     ckg_mask_lt : out std_logic_vector(0 to W-1)
@@ -36,6 +37,7 @@ begin
     arv_tileh   <= to_unsigned(C2_NB_TILEH-1, clog2h);
     arv_tileb   <= to_unsigned(C2_NB_TILEB-1, clog2b);
     arv_tilec   <= to_unsigned(C2_NB_TILEC-1, clog2c);
+    arv_addr    <= to_unsigned(C2_MEM_WIDTH, clog2M);
     arv_ckg     <= to_unsigned(1, clog2W);
     ckg_mask    <= "0000";
     ckg_mask_lt <= "0011";
@@ -48,6 +50,7 @@ begin
     arv_tileh   <= to_unsigned(C1_NB_TILEH-1, clog2h);
     arv_tileb   <= to_unsigned(C1_NB_TILEB-1, clog2b);
     arv_tilec   <= to_unsigned(C1_NB_TILEC-1, clog2c);
+    arv_addr    <= to_unsigned(C1_MEM_WIDTH, clog2M);
     arv_ckg     <= to_unsigned(W-1, clog2W);
     ckg_mask    <= "0000";
     ckg_mask_lt <= "0000";

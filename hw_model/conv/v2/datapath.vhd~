@@ -27,6 +27,11 @@ entity datapath is
     i_weight       : in  std_logic_vector(K*N_WEIGHT-1 downto 0);
     i_data_even    : in  mem_data_t;
     i_data_odd     : in  mem_data_t;
+    o_cs_enc       : out unsigned(clog2W-1 downto 0);
+    o_addr_rd_even : out unsigned(clog2M-1 downto 0);
+    o_addr_wr_even : out unsigned(clog2M-1 downto 0);
+    o_addr_rd_odd  : out unsigned(clog2M-1 downto 0);
+    o_addr_wr_odd  : out unsigned(clog2M-1 downto 0);
     o_data         : out o_pe_array_t
     );
 end entity;
@@ -34,9 +39,9 @@ end entity;
 architecture rtl of datapath is
 
   signal int_o_data      : o_pe_array_t;
-  signal int_data_conv_v      : signed(N*W-1 downto 0);
-  signal int_data_conv_h      : signed(N*W-1 downto 0);
-  
+  signal int_data_conv_v : signed(N*W-1 downto 0);
+  signal int_data_conv_h : signed(N*W-1 downto 0);
+
   signal int_ckg_mask    : std_logic_vector(0 to W-1);
   signal int_ckg_mask_lt : std_logic_vector(0 to W-1);
 
@@ -49,6 +54,7 @@ architecture rtl of datapath is
   signal int_arv_tileh  : unsigned(clog2v-1 downto 0);
   signal int_arv_tileb  : unsigned(clog2b-1 downto 0);
   signal int_arv_tilec  : unsigned(clog2c-1 downto 0);
+  signal int_arv_addr   : unsigned(clog2M-1 downto 0);
 
   signal int_tc_rd    : std_logic;
   signal int_tc_res   : std_logic;
@@ -73,13 +79,16 @@ architecture rtl of datapath is
   signal int_weight_wr : std_logic;
   
 begin
-
-  s_tc_rd    <= int_tc_rd;
-  s_tc_res   <= int_tc_res;
-  s_tc_tilev <= int_s_tc_tilev;
-  s_tc_tileh <= int_s_tc_tileh;
-  s_tc_tileb <= int_s_tc_tileb;
-  s_tc_tilec <= int_s_tc_tilec;
+  
+  o_cs_enc       <= int_rf_ptr;
+  o_addr_rd_even <= int_addr_rd_even;
+  o_addr_rd_odd  <= int_addr_rd_odd;
+  s_tc_rd        <= int_tc_rd;
+  s_tc_res       <= int_tc_res;
+  s_tc_tilev     <= int_s_tc_tilev;
+  s_tc_tileh     <= int_s_tc_tileh;
+  s_tc_tileb     <= int_s_tc_tileb;
+  s_tc_tilec     <= int_s_tc_tilec;
 
   int_weight_wr <= (int_s_tc_tileh and int_s_tc_tilev and (ctrl_en_vmode or int_tc_res)) or ctrl_weight_wr;
   int_arv_res   <= int_arv_rf_ptr when int_s_tc_tileh = '0' else int_arv_ckg;
@@ -164,6 +173,7 @@ begin
       tc_tileh   => int_tc_tileh,
       tc_tileb   => int_tc_tileb,
       tc_tilec   => int_tc_tilec,
+      arv_addr   => int_arv_addr,
       even_odd_n => int_even_odd_n,
       even_addr  => int_even_rd_addr,
       odd_addr   => int_odd_rd_addr,
@@ -180,6 +190,7 @@ begin
       arv_tileh   => int_arv_tileh,
       arv_tileb   => int_arv_tileb,
       arv_tilec   => int_arv_tilec,
+      arv_addr    => int_arv_addr,
       arv_ckg     => int_arv_ckg,
       ckg_mask    => int_ckg_mask,
       ckg_mask_lt => int_ckg_mask_lt

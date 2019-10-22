@@ -120,12 +120,10 @@ begin
   process(int_sgnext, int_q_acc, int_q_weight)
   begin
     if int_q_weight = '1' then
-      int_d_acc <= int_sgnext - int_q_acc;
+      int_d_acc <= int_q_acc - int_sgnext;
     else
-      int_d_acc <= int_sgnext + int_q_acc;
+      int_d_acc <= int_q_acc + int_sgnext;
     end if;
   end process;
-
-
 
 end architecture;

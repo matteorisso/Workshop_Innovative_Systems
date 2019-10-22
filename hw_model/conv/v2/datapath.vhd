@@ -54,6 +54,7 @@ architecture rtl of datapath is
   signal int_arv_tileh  : unsigned(clog2v-1 downto 0);
   signal int_arv_tileb  : unsigned(clog2b-1 downto 0);
   signal int_arv_tilec  : unsigned(clog2c-1 downto 0);
+  signal int_arv_addr   : unsigned(clog2M-1 downto 0);
 
   signal int_tc_rd    : std_logic;
   signal int_tc_res   : std_logic;
@@ -78,7 +79,11 @@ architecture rtl of datapath is
   signal int_weight_wr : std_logic;
   
 begin
-  o_cs_enc   <= int_rf_ptr;
+  
+  o_cs_enc       <= int_rf_ptr;
+  o_addr_rd_even <= int_even_rd_addr;
+  o_addr_rd_odd  <= int_odd_rd_addr;
+
   s_tc_rd    <= int_tc_rd;
   s_tc_res   <= int_tc_res;
   s_tc_tilev <= int_s_tc_tilev;
@@ -169,6 +174,7 @@ begin
       tc_tileh   => int_tc_tileh,
       tc_tileb   => int_tc_tileb,
       tc_tilec   => int_tc_tilec,
+      arv_addr   => int_arv_addr,
       even_odd_n => int_even_odd_n,
       even_addr  => int_even_rd_addr,
       odd_addr   => int_odd_rd_addr,
@@ -185,6 +191,7 @@ begin
       arv_tileh   => int_arv_tileh,
       arv_tileb   => int_arv_tileb,
       arv_tilec   => int_arv_tilec,
+      arv_addr    => int_arv_addr,
       arv_ckg     => int_arv_ckg,
       ckg_mask    => int_ckg_mask,
       ckg_mask_lt => int_ckg_mask_lt

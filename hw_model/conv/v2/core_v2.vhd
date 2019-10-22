@@ -11,7 +11,6 @@ entity core_v2 is
     i_weight_conv : in std_logic_vector(N_WEIGHT*K-1 downto 0);
     i_data_conv_h : in signed(N*W-1 downto 0);  -- to conv_buffer
     i_data_conv_v : in signed(N*W-1 downto 0);  -- to pe_array
-
     en_npu        : in  std_logic;
     ld_h          : in  std_logic;
     ld_v          : in  std_logic;

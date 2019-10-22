@@ -4,757 +4,757 @@ K3
 cModel Technology
 Z0 d/home/lp19.20/Desktop/convolutional_layer/sim
 T_opt
-VlZV9S:QD>ADQKIiZOIEo83
-04 9 4 work tb_fsm_v2 test 1
-=1-52540093200d-5dada80d-5ad60-6c18
-o-quiet -auto_acc_if_foreign -work work
-n@_opt
-OL;O;6.5c;42
+V0FClNYkcif;J4n2mW?^FJ0
+Z1 04 9 4 work tb_fsm_v2 test 1
+Z2 =1-52540093200d-5dae4fda-ab9cd-328d
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 n@_opt
+Z5 OL;O;6.5c;42
 Eaddr_gen
-Z1 w1571615154
-Z2 DPx4 ieee 9 math_real 0 22 zjAF7SKfg_RPI0GT^n1N`1
-Z3 DPx4 work 7 globals 0 22 cXH@2];=FPG>Ih=gazY6R0
-Z4 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
-Z6 8/home/lp19.20/Desktop/convolutional_layer/addr_gen.vhd
-Z7 F/home/lp19.20/Desktop/convolutional_layer/addr_gen.vhd
+Z6 w1571694637
+Z7 DPx4 ieee 9 math_real 0 22 zjAF7SKfg_RPI0GT^n1N`1
+Z8 DPx4 work 7 globals 0 22 cXH@2];=FPG>Ih=gazY6R0
+Z9 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z11 8/home/lp19.20/Desktop/convolutional_layer/addr_gen.vhd
+Z12 F/home/lp19.20/Desktop/convolutional_layer/addr_gen.vhd
 l0
 L7
-VY>a3PdhTjLiWTo`J9aW[H2
-Z8 OL;C;6.5c;42
+Z13 VEYXi>ZRiz:5kD4<[b`id70
+Z14 OL;C;6.5c;42
 32
-Z9 o-work work -2002 -explicit
-Z10 tExplicit 1
-!s100 AnUgkbYQY`zj8dk@;N@4O1
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1
+Z17 !s100 F4Z^T3gOEW78i:e>P[h202
 Artl
-R2
-R3
-R4
-R5
-Z11 DEx4 work 8 addr_gen 0 22 Y>a3PdhTjLiWTo`J9aW[H2
-l80
-L34
-V5YkmFMQ3]0JA`M>D`a?dk3
+R7
 R8
-32
-Z12 Mx4 4 ieee 14 std_logic_1164
-Z13 Mx3 4 ieee 11 numeric_std
-Z14 Mx2 4 work 7 globals
-Z15 Mx1 4 ieee 9 math_real
 R9
 R10
-!s100 aPXG:G5_]0llET@mH4zn]1
+Z18 DEx4 work 8 addr_gen 0 22 EYXi>ZRiz:5kD4<[b`id70
+l78
+L31
+Z19 VbDgaHKd9=BlHMB1]mDNPh3
+R14
+32
+Z20 Mx4 4 ieee 14 std_logic_1164
+Z21 Mx3 4 ieee 11 numeric_std
+Z22 Mx2 4 work 7 globals
+Z23 Mx1 4 ieee 9 math_real
+R15
+R16
+Z24 !s100 K]LEdPE2eM>AcmMC915K`2
 Eckg_ctrl
-R1
-R2
-R3
-R4
-R5
-Z16 8/home/lp19.20/Desktop/convolutional_layer/ckg_ctrl.vhd
-Z17 F/home/lp19.20/Desktop/convolutional_layer/ckg_ctrl.vhd
+Z25 w1571615154
+R7
+R8
+R9
+R10
+Z26 8/home/lp19.20/Desktop/convolutional_layer/ckg_ctrl.vhd
+Z27 F/home/lp19.20/Desktop/convolutional_layer/ckg_ctrl.vhd
 l0
 L7
-VSTm1@jeiKQVdLRWM1UUS@3
-R8
+Z28 VSTm1@jeiKQVdLRWM1UUS@3
+R14
 32
+R15
+R16
+Z29 !s100 Zkjo@?izk_l1O@aZGR6Xl1
+Abeh
+R7
+R8
 R9
 R10
-!s100 Zkjo@?izk_l1O@aZGR6Xl1
-Abeh
-R2
-R3
-R4
-R5
-Z18 DEx4 work 8 ckg_ctrl 0 22 STm1@jeiKQVdLRWM1UUS@3
+Z30 DEx4 work 8 ckg_ctrl 0 22 STm1@jeiKQVdLRWM1UUS@3
 l22
 L20
-V>icWkEYAfGBHULY9]7C152
-R8
-32
-R12
-R13
+Z31 V>icWkEYAfGBHULY9]7C152
 R14
+32
+R20
+R21
+R22
+R23
 R15
+R16
+Z32 !s100 4>M`G:Ml2nOkV8?YV^df31
+Econv_fsm_v2
+Z33 w1571704005
 R9
 R10
-!s100 4>M`G:Ml2nOkV8?YV^df31
-Econv_fsm_v2
-Z19 w1571616797
-R4
-R5
-Z20 8/home/lp19.20/Desktop/convolutional_layer/conv_fsm_v2.vhd
-Z21 F/home/lp19.20/Desktop/convolutional_layer/conv_fsm_v2.vhd
+Z34 8/home/lp19.20/Desktop/convolutional_layer/conv_fsm_v2.vhd
+Z35 F/home/lp19.20/Desktop/convolutional_layer/conv_fsm_v2.vhd
 l0
 L5
-V@W<TD^lX`0RIk`0Klbo5h2
-R8
+Z36 V@W<TD^lX`0RIk`0Klbo5h2
+R14
 32
-R9
-R10
-!s100 Xgb]mGed2n1C1Dg?WKLk53
+R15
+R16
+Z37 !s100 B[:^z`L2Z7R95kO_g@1Nk3
 Abeh
-R4
-R5
-Z22 DEx4 work 11 conv_fsm_v2 0 22 @W<TD^lX`0RIk`0Klbo5h2
-l45
-L30
-V=4i>@5<fUS7zP[9k>gY`20
-R8
-32
-Z23 Mx2 4 ieee 14 std_logic_1164
-Z24 Mx1 4 ieee 11 numeric_std
 R9
 R10
-!s100 CzZlQ0z<SD>FfAW8l]mT41
+Z38 DEx4 work 11 conv_fsm_v2 0 22 @W<TD^lX`0RIk`0Klbo5h2
+l44
+L29
+Z39 V=4i>@5<fUS7zP[9k>gY`20
+R14
+32
+Z40 Mx2 4 ieee 14 std_logic_1164
+Z41 Mx1 4 ieee 11 numeric_std
+R15
+R16
+Z42 !s100 za42_aaYazAzE5]^PETW63
 Ecore_v2
-Z25 w1571658102
-R2
-R3
-R4
-R5
-Z26 8/home/lp19.20/Desktop/convolutional_layer/core_v2.vhd
-Z27 F/home/lp19.20/Desktop/convolutional_layer/core_v2.vhd
+Z43 w1571700068
+R7
+R8
+R9
+R10
+Z44 8/home/lp19.20/Desktop/convolutional_layer/core_v2.vhd
+Z45 F/home/lp19.20/Desktop/convolutional_layer/core_v2.vhd
 l0
 L7
-VUo3c7l@5IdGz`QHz6_Q>b0
-R8
-32
-R9
-R10
-!s100 nX_QBKL`K9;9a_VC@UiZi0
-Artl
-R18
-Z28 DEx4 work 13 weight_buffer 0 22 G7Q5ZNH9Qao106B3mcGNK1
-Z29 DEx4 work 8 pe_array 0 22 YfRYUcC1A5kDiIc^BE__M2
-R2
-R3
-R4
-R5
-Z30 DEx4 work 7 core_v2 0 22 Uo3c7l@5IdGz`QHz6_Q>b0
-l50
-L33
-VU8M>`gWKoQfjRV[A1L59?1
-R8
-32
-R12
-R13
+Z46 VUo3c7l@5IdGz`QHz6_Q>b0
 R14
+32
 R15
+R16
+Z47 !s100 IFoR2=c?N4BCBYNzZiG<B1
+Artl
+R30
+Z48 DEx4 work 13 weight_buffer 0 22 G7Q5ZNH9Qao106B3mcGNK1
+Z49 DEx4 work 8 pe_array 0 22 YfRYUcC1A5kDiIc^BE__M2
+R7
+R8
 R9
 R10
-!s100 :U`?C4OQ@<lON`Y0N`nJ^2
+Z50 DEx4 work 7 core_v2 0 22 Uo3c7l@5IdGz`QHz6_Q>b0
+l49
+L32
+Z51 VU8M>`gWKoQfjRV[A1L59?1
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z52 !s100 =9z:om[OYW077DiR__5oj1
 Ecountern
-Z31 w1571658139
-R4
-R5
-Z32 8/home/lp19.20/Desktop/convolutional_layer/countern.vhd
-Z33 F/home/lp19.20/Desktop/convolutional_layer/countern.vhd
+Z53 w1571658139
+R9
+R10
+Z54 8/home/lp19.20/Desktop/convolutional_layer/countern.vhd
+Z55 F/home/lp19.20/Desktop/convolutional_layer/countern.vhd
 l0
 L5
-V0^;JYgHRJE7nT4OhOcCFk1
-R8
+Z56 V0^;JYgHRJE7nT4OhOcCFk1
+R14
 32
+R15
+R16
+Z57 !s100 n5SNXO@[P8@PkT^n`;V1;0
+Abeh
 R9
 R10
-!s100 n5SNXO@[P8@PkT^n`;V1;0
-Abeh
-R4
-R5
-Z34 DEx4 work 8 countern 0 22 0^;JYgHRJE7nT4OhOcCFk1
+Z58 DEx4 work 8 countern 0 22 0^;JYgHRJE7nT4OhOcCFk1
 l23
 L18
-V8DUK00DBJH7fK[Rmn]jR`2
-R8
+Z59 V8DUK00DBJH7fK[Rmn]jR`2
+R14
 32
-R23
-R24
-R9
-R10
-!s100 D`MUeKM`03=>6Pzl;hP<N0
+R40
+R41
+R15
+R16
+Z60 !s100 D`MUeKM`03=>6Pzl;hP<N0
 Edatapath
-Z35 w1571681671
-R2
-R3
-R4
-R5
-Z36 8/home/lp19.20/Desktop/convolutional_layer/datapath.vhd
-Z37 F/home/lp19.20/Desktop/convolutional_layer/datapath.vhd
-l0
-L7
-VPTM<NE7IPU^=Soi^LUAL^1
+Z61 w1571700244
+R7
 R8
-32
 R9
 R10
-!s100 1K4]k933o]6zVN1H>[8dH3
+Z62 8/home/lp19.20/Desktop/convolutional_layer/datapath.vhd
+Z63 F/home/lp19.20/Desktop/convolutional_layer/datapath.vhd
+l0
+L7
+Z64 VPTM<NE7IPU^=Soi^LUAL^1
+R14
+32
+R15
+R16
+Z65 !s100 1K4]k933o]6zVN1H>[8dH3
 Artl
-Z38 DEx4 work 11 imem_if_top 0 22 MoKaF1QTebogK9aKNF5]33
-Z39 DEx4 work 4 urom 0 22 NYWZlPeBB8=Gzlf;Q=B8l1
-R11
-Z40 DEx4 work 10 s_tile_gen 0 22 ^LjB67YfMFWi6=^Kb_G=[1
-Z41 DEx4 work 8 npu_ctrl 0 22 :X>J0GfN0RYb4T5=>hVKj2
-R30
-R2
-R3
-R4
-R5
-Z42 DEx4 work 8 datapath 0 22 PTM<NE7IPU^=Soi^LUAL^1
-l80
+Z66 DEx4 work 11 imem_if_top 0 22 MoKaF1QTebogK9aKNF5]33
+Z67 DEx4 work 4 urom 0 22 GeVCYKo35C:Tm1mO><^Pb1
+R18
+Z68 DEx4 work 10 s_tile_gen 0 22 ^LjB67YfMFWi6=^Kb_G=[1
+Z69 DEx4 work 8 npu_ctrl 0 22 :X>J0GfN0RYb4T5=>hVKj2
+R50
+R7
+R8
+R9
+R10
+Z70 DEx4 work 8 datapath 0 22 PTM<NE7IPU^=Soi^LUAL^1
+l81
 L39
-V1RMBBd40eePMMU@@]0mZL0
-R8
-32
-R12
-R13
+Z71 V4?PWFGKzna4gh81Z6LRO:0
 R14
+32
+R20
+R21
+R22
+R23
 R15
-R9
-R10
-!s100 KOzVQA3:cQ1<5z<o]<fKX2
+R16
+Z72 !s100 A9>DBfkHb@Y=MXhMVej`E2
 Edual_port_rf
-Z43 w1571658150
-R2
-R3
-R4
-R5
-Z44 8/home/lp19.20/Desktop/convolutional_layer/dual_port_rf.vhd
-Z45 F/home/lp19.20/Desktop/convolutional_layer/dual_port_rf.vhd
-l0
-L7
-V=JedKX3bjPjPL:Gh3g9Un0
+Z73 w1571699311
+R7
 R8
-32
 R9
 R10
-!s100 nQZbSSF1`<MT=]@a8enJ43
-Abeh
-R2
-R3
-R4
-R5
-DEx4 work 12 dual_port_rf 0 22 =JedKX3bjPjPL:Gh3g9Un0
-l27
-L23
-VAERbHeZ>agf[=SDOT;k]P0
-R8
-32
-R12
-R13
-R14
-R15
-R9
-R10
-!s100 mjcS6Ef=GzLcAMM9EH[W;1
-Pglobals
-R2
-R4
-R5
-w1571658167
-8/home/lp19.20/Desktop/convolutional_layer/globals.pkg.vhd
-F/home/lp19.20/Desktop/convolutional_layer/globals.pkg.vhd
-l0
-L7
-VcXH@2];=FPG>Ih=gazY6R0
-R8
-32
-Z46 Mx3 4 ieee 14 std_logic_1164
-Mx2 4 ieee 11 numeric_std
-R15
-R9
-R10
-!s100 65[XZ?Ll;ozAPiKZ^FhQ:0
-Eimem
-Z47 w1571658175
-R2
-R3
-R4
-R5
-Z48 8/home/lp19.20/Desktop/convolutional_layer/imem.vhd
-Z49 F/home/lp19.20/Desktop/convolutional_layer/imem.vhd
-l0
-L7
-VjKln<^kMP9lmjJzVHjm5K2
-R8
-32
-R9
-R10
-!s100 a3eV1KQG3PcXFig6M`1>i0
-Artl
-R2
-R3
-R4
-R5
-DEx4 work 4 imem 0 22 jKln<^kMP9lmjJzVHjm5K2
-l49
-L26
-Ve9l8:i3en@<WA8=j<V[^A0
-R8
-32
-R12
-R13
-R14
-R15
-R9
-R10
-!s100 V?k7zBVfBMEaeR3kE?m?=0
-Eimem_bank_if
-Z50 w1571658194
-R2
-R3
-R4
-R5
-Z51 8/home/lp19.20/Desktop/convolutional_layer/imem_bank_if.vhd
-Z52 F/home/lp19.20/Desktop/convolutional_layer/imem_bank_if.vhd
-l0
-L7
-VaWnR1Y2W^Agk;WG9gz18F3
-R8
-32
-R9
-R10
-!s100 :`zj;1fIE19CzX`:nVM7V0
-Artl
-R2
-R3
-R4
-R5
-DEx4 work 12 imem_bank_if 0 22 aWnR1Y2W^Agk;WG9gz18F3
-l18
-L16
-VAYA0D]M?c?9;OUI^><=Db3
-R8
-32
-R12
-R13
-R14
-R15
-R9
-R10
-!s100 SEK[PHDmWc<5`[0<E5mVN0
-Eimem_if
-Z53 w1571671886
-R2
-R3
-R4
-R5
-Z54 8/home/lp19.20/Desktop/convolutional_layer/imem_if.vhd
-Z55 F/home/lp19.20/Desktop/convolutional_layer/imem_if.vhd
+Z74 8/home/lp19.20/Desktop/convolutional_layer/dual_port_rf.vhd
+Z75 F/home/lp19.20/Desktop/convolutional_layer/dual_port_rf.vhd
 l0
 L9
-VWA7m?@=TgFiJ?<9Bf=bo40
-R8
+Z76 V=JedKX3bjPjPL:Gh3g9Un0
+R14
 32
-R9
-R10
-!s100 @<NoBnU]8@boYhYfb]dUb3
+R15
+R16
+Z77 !s100 a`aMIfI51gTP3G^=99H2R1
 Abeh
-R2
-R3
-R4
-R5
-Z56 DEx4 work 7 imem_if 0 22 WA7m?@=TgFiJ?<9Bf=bo40
-l30
-L21
-VnXPh__AdUEQVLnFTL>KKi0
+R7
 R8
-32
-R12
-R13
-R14
-R15
 R9
 R10
-!s100 1^KZdfzQJgmVi`12KlToS1
-Artl
-R2
-R3
-R4
-R5
-R56
-l28
-L19
-VzHK4>a;18o4nS[lCDXS`e3
-R8
-32
-R12
-R13
-R14
-R15
-R9
-R10
-w1571669571
-!s100 3;J@MlhBGJmhJb;[D>`021
-Eimem_if_top
-Z57 w1571681014
-R2
-R3
-R4
-R5
-Z58 8/home/lp19.20/Desktop/convolutional_layer/imem_if_top.vhd
-Z59 F/home/lp19.20/Desktop/convolutional_layer/imem_if_top.vhd
-l0
-L7
-VMoKaF1QTebogK9aKNF5]33
-R8
-32
-R9
-R10
-!s100 Tb>Q]z@Yh9eEl9hPGabKL1
-Artl
-R2
-R3
-R4
-R5
-R38
-l66
-L21
-V;24>``[ilJE^BozUh1khh2
-R8
-32
-R12
-R13
-R14
-R15
-R9
-R10
-!s100 YOKNX7X<?0L6:]OQ3^gmk2
-Eimem_w
-Z60 w1571680465
-R2
-R3
-R4
-R5
-Z61 8/home/lp19.20/Desktop/convolutional_layer/imem_w.vhd
-Z62 F/home/lp19.20/Desktop/convolutional_layer/imem_w.vhd
-l0
-L7
-VZ[12mf=Uba=^dT<C03CO20
-R8
-32
-R9
-R10
-!s100 5dgZ_b]mahZ]T_J^U4TMM1
-Artl
-R2
-R3
-R4
-R5
-Z63 DEx4 work 6 imem_w 0 22 Z[12mf=Uba=^dT<C03CO20
-l51
-L27
-V_d?Z=b[ce7739o9AnOFi:1
-R8
-32
-R12
-R13
-R14
-R15
-R9
-R10
-!s100 oTXCb4o]giO_@KSdKh91E0
-Enpu_ctrl
-Z64 w1571658220
-R2
-R3
-R4
-R5
-Z65 8/home/lp19.20/Desktop/convolutional_layer/npu_ctrl.vhd
-Z66 F/home/lp19.20/Desktop/convolutional_layer/npu_ctrl.vhd
-l0
-L7
-V:X>J0GfN0RYb4T5=>hVKj2
-R8
-32
-R9
-R10
-!s100 ki?j2aRLKz1OY<7UgDz<M0
-Artl
-R34
-R2
-R3
-R4
-R5
-R41
+Z78 DEx4 work 12 dual_port_rf 0 22 =JedKX3bjPjPL:Gh3g9Un0
 l29
-L24
-VB:cV8Ie;[b[lHzAH0]6IE3
-R8
-32
-R12
-R13
+L25
+Z79 VBKec`_DaC>NNQNin[XJ:60
 R14
+32
+R20
+R21
+R22
+R23
 R15
+R16
+Z80 !s100 iRlT7?m8T14WZM>G`OX>M3
+Pglobals
+R7
 R9
 R10
-!s100 O_Td`aP]j>c6XdPO>=ehP3
-Epe_array
-Z67 w1571658228
-R2
-R3
-R4
-R5
-Z68 8/home/lp19.20/Desktop/convolutional_layer/pe_array.vhd
-Z69 F/home/lp19.20/Desktop/convolutional_layer/pe_array.vhd
+Z81 w1571689447
+Z82 8/home/lp19.20/Desktop/convolutional_layer/globals.pkg.vhd
+Z83 F/home/lp19.20/Desktop/convolutional_layer/globals.pkg.vhd
 l0
 L7
-VYfRYUcC1A5kDiIc^BE__M2
-R8
+Z84 VcXH@2];=FPG>Ih=gazY6R0
+R14
 32
+Z85 Mx3 4 ieee 14 std_logic_1164
+Z86 Mx2 4 ieee 11 numeric_std
+R23
+R15
+R16
+Z87 !s100 05K:H>=3cK4aG:k?=CXMe1
+Eimem
+Z88 w1571697239
+R7
+R8
 R9
 R10
-!s100 NJYzAKL[TYhlmRFNl=TdW2
+Z89 8/home/lp19.20/Desktop/convolutional_layer/imem.vhd
+Z90 F/home/lp19.20/Desktop/convolutional_layer/imem.vhd
+l0
+L7
+Z91 VjKln<^kMP9lmjJzVHjm5K2
+R14
+32
+R15
+R16
+Z92 !s100 a3eV1KQG3PcXFig6M`1>i0
 Artl
-Z70 DEx4 work 6 pev2_2 0 22 [=3c1M7LV8cDT7TL;PlNL3
-R2
-R3
-R4
-R5
-R29
-l45
-L28
-V`80eeZY[0hSR@=Ij@=8]k1
+R7
 R8
-32
-R12
-R13
-R14
-R15
 R9
 R10
-!s100 V_5mf[U>l^jFMCGTfa_SP1
-Epev2_2
-Z71 w1571658241
-R2
-R3
-R4
-R5
-Z72 8/home/lp19.20/Desktop/convolutional_layer/pev2_2.vhd
-Z73 F/home/lp19.20/Desktop/convolutional_layer/pev2_2.vhd
+Z93 DEx4 work 4 imem 0 22 jKln<^kMP9lmjJzVHjm5K2
+l49
+L26
+Z94 Ve9l8:i3en@<WA8=j<V[^A0
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z95 !s100 V?k7zBVfBMEaeR3kE?m?=0
+Eimem_bank_if
+Z96 w1571658194
+R7
+R8
+R9
+R10
+Z97 8/home/lp19.20/Desktop/convolutional_layer/imem_bank_if.vhd
+Z98 F/home/lp19.20/Desktop/convolutional_layer/imem_bank_if.vhd
 l0
 L7
-V[=3c1M7LV8cDT7TL;PlNL3
-R8
-32
-R9
-R10
-!s100 UH4W=[`l8VDc7Gb3i_7TT3
-Abeh
-R2
-R3
-R4
-R5
-R70
-l42
-L26
-VNAm^F`ME8<<`cba^X@a^I3
-R8
-32
-R12
-R13
+Z99 VaWnR1Y2W^Agk;WG9gz18F3
 R14
-R15
-R9
-R10
-!s100 Gj7;O0bze6N2YWlNNe0N[0
-Eregn
-Z74 w1571658255
-R4
-R5
-Z75 8/home/lp19.20/Desktop/convolutional_layer/regn.vhd
-Z76 F/home/lp19.20/Desktop/convolutional_layer/regn.vhd
-l0
-L5
-Vn0Nan9b;4<YFP8gN>`YDn3
-R8
 32
+R15
+R16
+Z100 !s100 :`zj;1fIE19CzX`:nVM7V0
+Artl
+R7
+R8
 R9
 R10
-!s100 6:Ta8DiCH7:c4<eB>ZKJ<0
-Abeh
-R4
-R5
-DEx4 work 4 regn 0 22 n0Nan9b;4<YFP8gN>`YDn3
+Z101 DEx4 work 12 imem_bank_if 0 22 aWnR1Y2W^Agk;WG9gz18F3
 l18
 L16
-V>aUU8[mG9n;3Y1k=>>cdA2
-R8
+Z102 VAYA0D]M?c?9;OUI^><=Db3
+R14
 32
+R20
+R21
+R22
 R23
-R24
+R15
+R16
+Z103 !s100 SEK[PHDmWc<5`[0<E5mVN0
+Eimem_if
+Z104 w1571694849
+R7
+R8
 R9
 R10
-!s100 `CLc01CaSd@f26lH8Wh4M3
-Es_tile_gen
-Z77 w1571658261
-R2
-R3
-R4
-R5
-Z78 8/home/lp19.20/Desktop/convolutional_layer/s_tile_gen.vhd
-Z79 F/home/lp19.20/Desktop/convolutional_layer/s_tile_gen.vhd
+Z105 8/home/lp19.20/Desktop/convolutional_layer/imem_if.vhd
+Z106 F/home/lp19.20/Desktop/convolutional_layer/imem_if.vhd
+l0
+L9
+Z107 V2Y>LDlOZz?dYMh2oBNnlD3
+R14
+32
+R15
+R16
+Z108 !s100 Tb9`0mz^[@7]94DoEK[1_3
+Abeh
+R7
+R8
+R9
+R10
+Z109 DEx4 work 7 imem_if 0 22 2Y>LDlOZz?dYMh2oBNnlD3
+l30
+L21
+Z110 VnXPh__AdUEQVLnFTL>KKi0
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z111 !s100 1^KZdfzQJgmVi`12KlToS1
+Artl
+R7
+R8
+R9
+R10
+Z112 DEx4 work 7 imem_if 0 22 WA7m?@=TgFiJ?<9Bf=bo40
+l28
+L19
+Z113 VzHK4>a;18o4nS[lCDXS`e3
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z114 w1571669571
+Z115 !s100 3;J@MlhBGJmhJb;[D>`021
+Eimem_if_top
+Z116 w1571681014
+R7
+R8
+R9
+R10
+Z117 8/home/lp19.20/Desktop/convolutional_layer/imem_if_top.vhd
+Z118 F/home/lp19.20/Desktop/convolutional_layer/imem_if_top.vhd
 l0
 L7
-V^LjB67YfMFWi6=^Kb_G=[1
-R8
+Z119 VMoKaF1QTebogK9aKNF5]33
+R14
 32
+R15
+R16
+Z120 !s100 Tb>Q]z@Yh9eEl9hPGabKL1
+Artl
+R7
+R8
 R9
 R10
-!s100 n90<X?DAQVAh9z;QL7^^11
+R66
+l66
+L21
+Z121 V;24>``[ilJE^BozUh1khh2
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z122 !s100 YOKNX7X<?0L6:]OQ3^gmk2
+Eimem_w
+Z123 w1571689652
+R7
+R8
+R9
+R10
+Z124 8/home/lp19.20/Desktop/convolutional_layer/imem_w.vhd
+Z125 F/home/lp19.20/Desktop/convolutional_layer/imem_w.vhd
+l0
+L7
+Z126 VZ[12mf=Uba=^dT<C03CO20
+R14
+32
+R15
+R16
+Z127 !s100 5dgZ_b]mahZ]T_J^U4TMM1
+Artl
+R7
+R8
+R9
+R10
+Z128 DEx4 work 6 imem_w 0 22 Z[12mf=Uba=^dT<C03CO20
+l51
+L27
+Z129 V_d?Z=b[ce7739o9AnOFi:1
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z130 !s100 oTXCb4o]giO_@KSdKh91E0
+Enpu_ctrl
+Z131 w1571658220
+R7
+R8
+R9
+R10
+Z132 8/home/lp19.20/Desktop/convolutional_layer/npu_ctrl.vhd
+Z133 F/home/lp19.20/Desktop/convolutional_layer/npu_ctrl.vhd
+l0
+L7
+Z134 V:X>J0GfN0RYb4T5=>hVKj2
+R14
+32
+R15
+R16
+Z135 !s100 ki?j2aRLKz1OY<7UgDz<M0
+Artl
+R58
+R7
+R8
+R9
+R10
+R69
+l29
+L24
+Z136 VB:cV8Ie;[b[lHzAH0]6IE3
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z137 !s100 O_Td`aP]j>c6XdPO>=ehP3
+Epe_array
+Z138 w1571658228
+R7
+R8
+R9
+R10
+Z139 8/home/lp19.20/Desktop/convolutional_layer/pe_array.vhd
+Z140 F/home/lp19.20/Desktop/convolutional_layer/pe_array.vhd
+l0
+L7
+Z141 VYfRYUcC1A5kDiIc^BE__M2
+R14
+32
+R15
+R16
+Z142 !s100 NJYzAKL[TYhlmRFNl=TdW2
+Artl
+Z143 DEx4 work 6 pev2_2 0 22 [=3c1M7LV8cDT7TL;PlNL3
+R7
+R8
+R9
+R10
+R49
+l45
+L28
+Z144 V`80eeZY[0hSR@=Ij@=8]k1
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z145 !s100 V_5mf[U>l^jFMCGTfa_SP1
+Epev2_2
+Z146 w1571704758
+R7
+R8
+R9
+R10
+Z147 8/home/lp19.20/Desktop/convolutional_layer/pev2_2.vhd
+Z148 F/home/lp19.20/Desktop/convolutional_layer/pev2_2.vhd
+l0
+L7
+Z149 V[=3c1M7LV8cDT7TL;PlNL3
+R14
+32
+R15
+R16
+Z150 !s100 UH4W=[`l8VDc7Gb3i_7TT3
 Abeh
-R2
-R3
-R4
-R5
+R7
+R8
+R9
+R10
+R143
+l42
+L26
+Z151 Vd8ZjS<2R`?8:0mPJbLZCI1
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z152 !s100 ncGP]PNSoj9CL_iLBoHRE2
+Eregn
+Z153 w1571658255
+R9
+R10
+Z154 8/home/lp19.20/Desktop/convolutional_layer/regn.vhd
+Z155 F/home/lp19.20/Desktop/convolutional_layer/regn.vhd
+l0
+L5
+Z156 Vn0Nan9b;4<YFP8gN>`YDn3
+R14
+32
+R15
+R16
+Z157 !s100 6:Ta8DiCH7:c4<eB>ZKJ<0
+Abeh
+R9
+R10
+Z158 DEx4 work 4 regn 0 22 n0Nan9b;4<YFP8gN>`YDn3
+l18
+L16
+Z159 V>aUU8[mG9n;3Y1k=>>cdA2
+R14
+32
 R40
+R41
+R15
+R16
+Z160 !s100 `CLc01CaSd@f26lH8Wh4M3
+Es_tile_gen
+Z161 w1571658261
+R7
+R8
+R9
+R10
+Z162 8/home/lp19.20/Desktop/convolutional_layer/s_tile_gen.vhd
+Z163 F/home/lp19.20/Desktop/convolutional_layer/s_tile_gen.vhd
+l0
+L7
+Z164 V^LjB67YfMFWi6=^Kb_G=[1
+R14
+32
+R15
+R16
+Z165 !s100 n90<X?DAQVAh9z;QL7^^11
+Abeh
+R7
+R8
+R9
+R10
+R68
 l26
 L24
-VkaPaI@`P3V;_UdR[4^<1L2
-R8
-32
-R12
-R13
+Z166 VkaPaI@`P3V;_UdR[4^<1L2
 R14
+32
+R20
+R21
+R22
+R23
 R15
+R16
+Z167 !s100 P?HEo`ibNfznKm8>nS>VC3
+Etb_fsm_v2
+Z168 w1571703971
+R7
+R8
 R9
 R10
-!s100 P?HEo`ibNfznKm8>nS>VC3
-Etb_fsm_v2
-Z80 w1571674308
-R2
-R3
-R4
-R5
-Z81 8/home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd
-Z82 F/home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd
+Z169 8/home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd
+Z170 F/home/lp19.20/Desktop/convolutional_layer/sim/tb_fsm_v2.vhd
 l0
 L8
-V=5Sn3`jO:M<PYfcXXH[O[3
-R8
-32
-R9
-R10
-!s100 Q6GO3?hjPB3ik2ajK3C663
-Atest
-Z83 DEx4 work 8 datapath 0 22 E3J^idFg5QnV`kUOIAjUW2
-R22
-R2
-R3
-R4
-R5
-DEx4 work 9 tb_fsm_v2 0 22 =5Sn3`jO:M<PYfcXXH[O[3
-l39
-L11
-V7jcI3>kN[<Q5ALM::UKVI2
-R8
-32
-R12
-R13
+Z171 V=5Sn3`jO:M<PYfcXXH[O[3
 R14
+32
 R15
+R16
+Z172 !s100 Q6GO3?hjPB3ik2ajK3C663
+Atest
+R38
+Z173 DEx4 work 12 top_level_dp 0 22 _>4TQGkj^78UbN5>8R7zj3
+R7
+R8
 R9
 R10
-!s100 nM4BGA>ROXfAQO>KKPgEm0
+Z174 DEx4 work 9 tb_fsm_v2 0 22 =5Sn3`jO:M<PYfcXXH[O[3
+l43
+L11
+Z175 V3Qf?Z?LPDIG2m[A_Hh;VG1
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z176 !s100 7OmR0WihPj6@F_]XgifBz1
 Etop_level_dp
-Z84 w1571681920
-R2
-R3
-R4
-R5
-Z85 8/home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd
-Z86 F/home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd
+Z177 w1571703948
+R7
+R8
+R9
+R10
+Z178 8/home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd
+Z179 F/home/lp19.20/Desktop/convolutional_layer/top_level_dp.vhd
 l0
 L7
-V_>4TQGkj^78UbN5>8R7zj3
-!s100 Mi[O1_fTSIQoRzBhH;BL33
-R8
+Z180 V_>4TQGkj^78UbN5>8R7zj3
+R14
 32
+R15
+R16
+Z181 !s100 Mi[O1_fTSIQoRzBhH;BL33
+Artl
+R128
+R70
+R7
+R8
 R9
 R10
-Artl
-R63
-R42
-R2
-R3
-R4
-R5
-DEx4 work 12 top_level_dp 0 22 _>4TQGkj^78UbN5>8R7zj3
+R173
 l61
 L41
-V^7@>WQCN@>;o?jk8928K20
-!s100 BnOAKodc?4B1=W>`J07Xm2
-R8
-32
-R12
-R13
+Z182 V0XEC82Hbh8hBo=8RWSO9F2
 R14
+32
+R20
+R21
+R22
+R23
 R15
+R16
+Z183 !s100 [``9Qb71mnb77oGdNX=6>0
+Eurom
+Z184 w1571692063
+R7
+R8
 R9
 R10
-Eurom
-Z87 w1571660963
-R2
-R3
-R4
-R5
-Z88 8/home/lp19.20/Desktop/convolutional_layer/urom.vhd
-Z89 F/home/lp19.20/Desktop/convolutional_layer/urom.vhd
+Z185 8/home/lp19.20/Desktop/convolutional_layer/urom.vhd
+Z186 F/home/lp19.20/Desktop/convolutional_layer/urom.vhd
 l0
 L7
-VNYWZlPeBB8=Gzlf;Q=B8l1
-R8
-32
-R9
-R10
-!s100 IKToR9<82WZf3;5]CP9GK0
-Astructure
-R2
-R3
-R4
-R5
-R39
-l25
-L23
-VOM2M0H[Rf0BL9Ad0;oXX23
-R8
-32
-R12
-R13
+Z187 VGeVCYKo35C:Tm1mO><^Pb1
 R14
+32
 R15
+R16
+Z188 !s100 F`B?eG]0YLY`@ldEYHQPM1
+Astructure
+R7
+R8
 R9
 R10
-!s100 Xb0n7Xbz8FD;>TZ16Lia72
+R67
+l26
+L24
+Z189 VQ@a=lYXUN72]o=eiWd_QP0
+R14
+32
+R20
+R21
+R22
+R23
+R15
+R16
+Z190 !s100 ?CoElP:mBVSaXhUDKWnF61
 Eweight_buffer
-Z90 w1571669617
-R2
-R3
-R4
-R5
-Z91 8/home/lp19.20/Desktop/convolutional_layer/weight_buffer.vhd
-Z92 F/home/lp19.20/Desktop/convolutional_layer/weight_buffer.vhd
+Z191 w1571669617
+R7
+R8
+R9
+R10
+Z192 8/home/lp19.20/Desktop/convolutional_layer/weight_buffer.vhd
+Z193 F/home/lp19.20/Desktop/convolutional_layer/weight_buffer.vhd
 l0
 L8
-VG7Q5ZNH9Qao106B3mcGNK1
-R8
+Z194 VG7Q5ZNH9Qao106B3mcGNK1
+R14
 32
+R15
+R16
+Z195 !s100 ET:5?lW>=f1Z2@eDZ`;=D0
+Abeh
+R7
+R8
 R9
 R10
-!s100 ET:5?lW>=f1Z2@eDZ`;=D0
-Abeh
-R2
-R3
-R4
-R5
-R28
+R48
 l30
 L23
-VKh]^z_Ko3MMToC4H9c4m52
-R8
-32
-R12
-R13
+Z196 VKh]^z_Ko3MMToC4H9c4m52
 R14
+32
+R20
+R21
+R22
+R23
 R15
-R9
-R10
-!s100 0QF1:jWelOe5MZT?^=0V72
+R16
+Z197 !s100 0QF1:jWelOe5MZT?^=0V72
