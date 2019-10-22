@@ -1,0 +1,156 @@
+/home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/data_maker_new.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/data_maker_new.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package textio
+-- Loading package std_logic_textio
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package param
+-- Compiling entity data_maker_new
+-- Compiling architecture beh of data_maker_new
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/adder_subn.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/adder_subn.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity adder_subn
+-- Compiling architecture structure of adder_subn
+-- Loading entity fa
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/fa.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/fa.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture dataflow of fa
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/param.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/param.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Compiling package param
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/netlist/fully_connected_all.v {1 {vlog -work work -vopt /home/isa01/Desktop/fully_connected_4x4_unif/netlist/fully_connected_all.v
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+-- Compiling module fully_connected_all
+
+Top level modules:
+	fully_connected_all
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/zero_skip.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/zero_skip.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package param
+-- Compiling entity zero_skip
+-- Compiling architecture beh of zero_skip
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/countern.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/countern.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity countern
+-- Compiling architecture beh of countern
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/fully_connected.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/fully_connected.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package param
+-- Compiling entity fully_connected
+-- Compiling architecture behavior of fully_connected
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/fully_connected_all.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/fully_connected_all.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package param
+-- Compiling entity fully_connected_all
+-- Compiling architecture behavior of fully_connected_all
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c2.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c2.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity mux_c2
+-- Compiling architecture beh of mux_c2
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/tb_fc.v {1 {vlog -work work -vopt /home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/tb_fc.v
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+-- Compiling module tb_fc
+
+Top level modules:
+	tb_fc
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/pe_block.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/pe_block.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package param
+-- Compiling entity pe_block
+-- Compiling architecture rtl of pe_block
+-- Loading entity pe
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/clk_gen.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/clk_gen.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity clk_gen
+-- Compiling architecture beh of clk_gen
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/fsm_fully_connected.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/fsm_fully_connected.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package param
+-- Compiling entity fsm_fully_connected
+-- Compiling architecture behavioral of fsm_fully_connected
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity mux_c
+-- Compiling architecture beh of mux_c
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/regn.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/regn.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity regn
+-- Compiling architecture beh of regn
+
+} {} {}} /home/isa01/Desktop/fully_connected_4x4_unif/src/pe.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/fully_connected_4x4_unif/src/pe.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Loading package param
+-- Compiling entity pe
+-- Compiling architecture structure of pe
+-- Loading entity adder_subn
+
+} {} {}}

@@ -1,0 +1,456 @@
+m255
+13
+cModel Technology
+d/home/isa01/Desktop/ISA_HW1/fir_3unfolded_pipelined/sim
+T_opt
+VIce0zUY`7O4T?eg_@244;3
+06 5 4 ./work tb_fc fast 0
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_fc/UUT=../netlist/fully_connected_all.sdf -suppress 1948
+tExplicit 1
+OE;O;6.2g;35
+Eadder_subn
+w1571740221
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/adder_subn.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/adder_subn.vhd
+l0
+L5
+V5DPd9^`n0fa:DEhJ:UXKV0
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Astructure
+DE work fa A4doi:5L<4B;>2KQZNKCE0
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work adder_subn 5DPd9^`n0fa:DEhJ:UXKV0
+l20
+L15
+Vanf>C_4mb]<1?>]9;X8O]1
+OE;C;6.2g;35
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-work work -2002 -explicit
+tExplicit 1
+Eclk_gen
+w1571740221
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/clk_gen.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/clk_gen.vhd
+l0
+L6
+VDlU6_:0cWH8=W7ChPhZ:S3
+OE;C;6.2g;35
+o-work work -2002 -explicit
+tExplicit 1
+Abeh
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work clk_gen DlU6_:0cWH8=W7ChPhZ:S3
+32
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+l18
+L12
+VozmB=W4?ae:ACcN^?UiVH3
+OE;C;6.2g;35
+o-work work -2002 -explicit
+tExplicit 1
+Ecountern
+w1571740221
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/countern.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/countern.vhd
+l0
+L6
+V?AVG65@Y@oPT^gnHdZmmd1
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work countern ?AVG65@Y@oPT^gnHdZmmd1
+l22
+L17
+VQ:`3KSKQMOnL<aPZV_MRQ0
+OE;C;6.2g;35
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-work work -2002 -explicit
+tExplicit 1
+Edata_maker_new
+w1571740221
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/data_maker_new.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/data_maker_new.vhd
+l0
+L12
+V^kjD4gc[[]D0@LVfmeCCU0
+OE;C;6.2g;35
+o-work work -2002 -explicit
+tExplicit 1
+Abeh
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work data_maker_new ^kjD4gc[[]D0@LVfmeCCU0
+32
+M8 ieee std_logic_1164
+M7 ieee std_logic_arith
+M6 ieee std_logic_unsigned
+M5 ieee std_logic_textio
+M4 std textio
+M3 work param
+M2 ieee numeric_std
+M1 ieee math_real
+l41
+L32
+Vf@YAeANdbnHYRjUmKzb2@1
+OE;C;6.2g;35
+o-work work -2002 -explicit
+tExplicit 1
+Efa
+w1571740221
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/fa.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/fa.vhd
+l0
+L4
+VA4doi:5L<4B;>2KQZNKCE0
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Adataflow
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fa A4doi:5L<4B;>2KQZNKCE0
+l15
+L13
+VT=>11;BFl[VOT32[k^HVa0
+OE;C;6.2g;35
+32
+M1 ieee std_logic_1164
+o-work work -2002 -explicit
+tExplicit 1
+Efsm_fully_connected
+w1571740221
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/fsm_fully_connected.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/fsm_fully_connected.vhd
+l0
+L6
+Vc4XeIDP66a84jVmUTQRVG3
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Abehavioral
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fsm_fully_connected c4XeIDP66a84jVmUTQRVG3
+l32
+L26
+V>Sa9`jog3cgFV]o8>lz@`2
+OE;C;6.2g;35
+32
+M4 ieee std_logic_1164
+M3 work param
+M2 ieee numeric_std
+M1 ieee math_real
+o-work work -2002 -explicit
+tExplicit 1
+Efully_connected
+w1571740221
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/fully_connected.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/fully_connected.vhd
+l0
+L7
+VI1ofb0Q=D35H^Z9fzWnkN3
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Abehavior
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fully_connected I1ofb0Q=D35H^Z9fzWnkN3
+l97
+L32
+VY[;SBzOJLz<S8C9[>kd<73
+OE;C;6.2g;35
+32
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 work param
+M1 ieee math_real
+o-work work -2002 -explicit
+tExplicit 1
+vfully_connected_all
+IDgkPb1J@TJ9dK4OP2i@?M2
+V[`df]RU8B[5c1;FCnZTEm2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+w1571765328
+8/home/isa01/Desktop/fully_connected_4x4_unif/netlist/fully_connected_all.v
+F/home/isa01/Desktop/fully_connected_4x4_unif/netlist/fully_connected_all.v
+L0 8
+V[`df]RU8B[5c1;FCnZTEm2
+OE;L;6.2g;35
+r1
+31
+o-work work
+Emux_c
+w1571740221
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c.vhd
+l0
+L5
+Vcgom1@mG;>QZC7SNlK:bE1
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work mux_c cgom1@mG;>QZC7SNlK:bE1
+l17
+L15
+VC7cJZG5DM5CQHAa5bOaD22
+OE;C;6.2g;35
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-work work -2002 -explicit
+tExplicit 1
+Emux_c2
+w1571740221
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c2.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/mux_c2.vhd
+l0
+L5
+VokoiPkkf1KN;mZZdM4XIz2
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work mux_c2 okoiPkkf1KN;mZZdM4XIz2
+l17
+L15
+ViI5RUS1443mf7W@=nUYB=1
+OE;C;6.2g;35
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-work work -2002 -explicit
+tExplicit 1
+Pparam
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+M3 ieee std_logic_1164
+M2 ieee numeric_std
+M1 ieee math_real
+w1571740221
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/param.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/param.vhd
+l0
+L6
+VGDn9JM4ESVgU>?lWjUOn:3
+OE;C;6.2g;35
+o-work work -2002 -explicit
+tExplicit 1
+Epe
+w1571740221
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/pe.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/pe.vhd
+l0
+L7
+VG3gOYj3=Pz>2fZP>P`7fM1
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Astructure
+DE work adder_subn 5DPd9^`n0fa:DEhJ:UXKV0
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work pe G3gOYj3=Pz>2fZP>P`7fM1
+l28
+L18
+VjEf`SAV@o<fTfTAEnN1l>3
+OE;C;6.2g;35
+32
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 work param
+M1 ieee math_real
+o-work work -2002 -explicit
+tExplicit 1
+Epe_block
+w1571740221
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/pe_block.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/pe_block.vhd
+l0
+L7
+VbiM@3N>UkAN[_2ZeV@Dde2
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Artl
+DE work pe G3gOYj3=Pz>2fZP>P`7fM1
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work pe_block biM@3N>UkAN[_2ZeV@Dde2
+l28
+L20
+VZFf?]dLmAoEK5mgcHESZG1
+OE;C;6.2g;35
+32
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 work param
+M1 ieee math_real
+o-work work -2002 -explicit
+tExplicit 1
+Eregn
+w1571740221
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/regn.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/regn.vhd
+l0
+L5
+Vn0Nan9b;4<YFP8gN>`YDn3
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work regn n0Nan9b;4<YFP8gN>`YDn3
+l17
+L15
+V>aUU8[mG9n;3Y1k=>>cdA2
+OE;C;6.2g;35
+32
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-work work -2002 -explicit
+tExplicit 1
+vtb_fc
+IKXaVlXiH6g__^I:zNB0_[0
+V_62aBGHLe]5liS`IllnK03
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+w1571740221
+8/home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/tb_fc.v
+F/home/isa01/Desktop/fully_connected_4x4_unif/tb_verilog/tb_fc.v
+L0 3
+V_62aBGHLe]5liS`IllnK03
+OE;L;6.2g;35
+r1
+31
+o-work work
+Ezero_skip
+w1571740221
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+d/home/isa01/Desktop/fully_connected_4x4_unif/sim
+8/home/isa01/Desktop/fully_connected_4x4_unif/src/zero_skip.vhd
+F/home/isa01/Desktop/fully_connected_4x4_unif/src/zero_skip.vhd
+l0
+L7
+VYKeaPfhU=POK3bU_z=TTl3
+OE;C;6.2g;35
+32
+o-work work -2002 -explicit
+tExplicit 1
+Abeh
+DP ieee math_real zjAF7SKfg_RPI0GT^n1N`1
+DP work param GDn9JM4ESVgU>?lWjUOn:3
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work zero_skip YKeaPfhU=POK3bU_z=TTl3
+l19
+L17
+V5zj04AoS>YD]h0J16e8SH0
+OE;C;6.2g;35
+32
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 work param
+M1 ieee math_real
+o-work work -2002 -explicit
+tExplicit 1
