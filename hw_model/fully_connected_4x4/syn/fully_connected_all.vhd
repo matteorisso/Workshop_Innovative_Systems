@@ -9,9 +9,7 @@ entity fully_connected_all is
     port(
 		  clk 		  : in  std_logic; 
           rst_fsm     : in  std_logic;
-          start       : in  std_logic;
-		  ckg_rmask   : in  std_logic_vector(0 to 3);
-		  ckg_cmask   : in  std_logic_vector(0 to 3);		  	  
+          start       : in  std_logic;	  	  
 		  layer_fc    : in  std_logic_vector(1 downto 0); 	     
 		  i_kernel1	  : in  std_logic_vector(7 downto 0);
 		  i_kernel2	  : in  std_logic_vector(7 downto 0);
@@ -34,9 +32,7 @@ component fully_connected is
     port(
 		  ck 		  : in  std_logic; 
 		  rst         : in  std_logic;
-	      sync_clr    : in  std_logic;	
-		  ckg_rmask   : in  std_logic_vector(0 to W-1);
-		  ckg_cmask   : in  std_logic_vector(0 to W-1);		  
+	      sync_clr    : in  std_logic;		  
 		  rst_cnt1    : in  std_logic;
 		  en_cnt1     : in  std_logic; 
 		  rst_cnt2    : in  std_logic;
@@ -94,9 +90,7 @@ begin
 		port map(
 		          ck 		  => clk,   
 		          rst         => tb_rst,
-	              sync_clr    => tb_sync_clr,
-		          ckg_rmask   => ckg_rmask,
-		          ckg_cmask   => ckg_cmask,		  
+	              sync_clr    => tb_sync_clr,	  
 		          rst_cnt1    => tb_rst_cnt1, 
 		          en_cnt1     => tb_en_cnt1,
 		          rst_cnt2    => tb_rst_cnt2,

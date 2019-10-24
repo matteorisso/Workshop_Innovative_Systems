@@ -262,11 +262,11 @@
 /software/synopsys/syn_current_64.18/auxx/gui/dv/dv_path_cat_view.tcl
 /software/synopsys/syn_current_64.18/auxx/gui/common/table/table.tcl
 /software/synopsys/syn_current_64.18/auxx/gui/common/table/table_internal.tcl
-/home/isa01/Desktop/fully_connected_4x4_unif/syn/Power_consumption_estim.tcl
+/home/isa01/Desktop/fully_connected_4x4/syn/Power_consumption_estim.tcl
 /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db
 /software/synopsys/syn_current_64.18/libraries/syn/dw_foundation.sldb
 /software/synopsys/syn_current_64.18/libraries/syn/gtech.db
 /software/synopsys/syn_current_64.18/libraries/syn/standard.sldb
-/home/isa01/Desktop/fully_connected_4x4_unif/netlist/fully_connected_all.v
-/home/isa01/Desktop/fully_connected_4x4_unif/netlist/fully_connected_all.v
-/home/isa01/Desktop/fully_connected_4x4_unif/saif/fully_connected_all_syn.saif
+/home/isa01/Desktop/fully_connected_4x4/netlist/fully_connected_all.v
+/home/isa01/Desktop/fully_connected_4x4/netlist/fully_connected_all.v
+/home/isa01/Desktop/fully_connected_4x4/saif/fully_connected_all_syn.saif

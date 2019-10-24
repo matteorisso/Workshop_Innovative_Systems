@@ -22,6 +22,7 @@ signal sgnext: signed(N-1+G downto 0);
 signal d_acc : signed(N-1+G downto 0);
 signal q_acc : signed(N-1+G downto 0);
 signal q_k 	 : std_logic;
+signal gck 	 : std_logic;
 
 signal int_en : std_logic; 
 
@@ -32,6 +33,8 @@ int_en <= en and k(k'low);
 sgnext(N-1+G downto N-1) <= ( others => q_im(q_im'high) );
 sgnext(N-1 downto 0)		 <= q_im;  
 
+gck <= ck and int_en;
+
 add: 
 entity work.adder_subn generic map(N => N+G) port map(
 	a 			=> q_acc, 
@@ -40,7 +43,7 @@ entity work.adder_subn generic map(N => N+G) port map(
 	res 		=> d_acc);
 
 -- i/o pipelining 
-process(ck, int_en, rst)
+process(gck, int_en, rst)
 begin
 if rst = '1' then
 
@@ -48,9 +51,9 @@ if rst = '1' then
 	 q_acc 	    <= (others=>'0');
 	 q_k		<= '0';
 	 
-elsif ck'event and ck='1' then
+elsif gck'event and gck='1' then
 
- if int_en = '1' then
+-- if int_en = '1' then
 
 	if sync_clr = '1' then
 	
@@ -66,7 +69,7 @@ elsif ck'event and ck='1' then
 
 	end if;
 
- elsif int_en = '0' then
+ if int_en = '0' then
 
 	if sync_clr = '1' then
 	

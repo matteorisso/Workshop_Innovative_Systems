@@ -20,9 +20,7 @@ component fully_connected is
     port(
 		  ck 		  : in  std_logic; 
 		  rst         : in  std_logic;
-	      sync_clr    : in  std_logic;	 
-		  ckg_rmask   : in  std_logic_vector(0 to W-1);
-		  ckg_cmask   : in  std_logic_vector(0 to W-1);		  
+	      sync_clr    : in  std_logic;	 	  
 		  rst_cnt1    : in  std_logic;
 		  en_cnt1     : in  std_logic; 
 		  rst_cnt2    : in  std_logic;
@@ -72,8 +70,6 @@ end component;
 -- signals for the DP	
 	signal tb_rst          : std_logic;
 	signal tb_sync_clr	   : std_logic;
-    signal tb_ckg_rmask    : std_logic_vector(0 to W-1);
-    signal tb_ckg_cmask    : std_logic_vector(0 to W-1);
 	signal tb_rst_cnt1     : std_logic;	
     signal tb_en_cnt1      : std_logic;
 	signal tb_rst_cnt2     : std_logic;	
@@ -130,17 +126,13 @@ begin
 	file_open(file_results,  "sim_results.txt",     write_mode);	
 	file_open(file_results2, "sim_results2.txt",    write_mode);		
 	
-    tb_start     <= '0';	
-    tb_ckg_cmask <= (others => '1');
-    tb_ckg_rmask <= (others => '1');	
-	tb_layer_fc  <= "01";
+    tb_start     <= '0';		
+	tb_layer_fc  <= "11";
 	
 	wait for 3 ns;
 
     -- ATTENZIONE: viene dato lo start, la fsm lo campiona e il colpo di clk successivo prende il primo dato 
     tb_start     <= '1';	
-    tb_ckg_cmask <= (others => '0');
-    tb_ckg_rmask <= (others => '0');
 	tb_layer_fc  <= "01";	
 	
 	wait for 2 ns;
@@ -180,8 +172,10 @@ begin
 	file_close(file_inputs);	
 	
  end loop;
+ 
+ 	tb_layer_fc  <= "11";
 
-	 wait for 20 ns;
+	 wait for 2 ns;
 
     tb_start     <= '1';	  --SECOND LAYER
 	tb_layer_fc  <= "10";	
@@ -298,11 +292,11 @@ end loop;
 	
 	wait for 2 ns;
 	  
-	end loop; 
+	end loop;
 	
 	wait for 4 ns;
 	
-	wait for 22 ns;
+	wait for 4 ns;
 
 	-- read input stimuli from file random_weights2.txt
 -- for the 10 outputs of the second fc layer
@@ -348,9 +342,7 @@ end loop;
 		port map(
 		          ck 		  => tb_clk,   
 		          rst         => tb_rst,
-	              sync_clr    => tb_sync_clr,
-		          ckg_rmask   => tb_ckg_rmask,
-		          ckg_cmask   => tb_ckg_cmask,		  
+	              sync_clr    => tb_sync_clr,		  
 		          rst_cnt1    => tb_rst_cnt1, 
 		          en_cnt1     => tb_en_cnt1,
 		          rst_cnt2    => tb_rst_cnt2,

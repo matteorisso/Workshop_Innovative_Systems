@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP4 for linux64 -- Nov 27, 2018
-#@ # Date:   Tue Oct 22 19:43:28 2019
+#@ # Date:   Wed Oct 23 03:10:07 2019
 #@ # Run by: isa01@localhost.localdomain
 #@ 
 
@@ -6628,15 +6628,15 @@ source /software/synopsys/syn_current_64.18/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /software/synopsys/syn_current_64.18/admin/setup/.synopsys_dc.setup
 
-source /home/isa01/Desktop/fully_connected_4x4_unif/syn/.synopsys_dc.setup
-#@ # -- Starting source /home/isa01/Desktop/fully_connected_4x4_unif/syn/.synopsys_dc.setup
+source /home/isa01/Desktop/fully_connected_4x4/syn/.synopsys_dc.setup
+#@ # -- Starting source /home/isa01/Desktop/fully_connected_4x4/syn/.synopsys_dc.setup
 
 #@ define_design_lib WORK -path ./work
 #@ set search_path [list . /software/synopsys/syn_current_64.18/libraries/syn /software/dk/nangate45/synopsys ]
 #@ set link_library [list "*" "NangateOpenCellLibrary_typical_ecsm_nowlm.db" "dw_foundation.sldb" ]
 #@ set target_library [list "NangateOpenCellLibrary_typical_ecsm_nowlm.db" ]
 #@ set synthetic_library [list "dw_foundation.sldb" ]
-#@ # -- End source /home/isa01/Desktop/fully_connected_4x4_unif/syn/.synopsys_dc.setup
+#@ # -- End source /home/isa01/Desktop/fully_connected_4x4/syn/.synopsys_dc.setup
 
 gui_start
 #@ # -- Starting source /software/synopsys/syn_current_64.18/auxx/tcllib/lib/itk4.0.1/itk.tcl
@@ -42999,12 +42999,12 @@ gui_start
 #@ 
 #@ # -- End source /software/synopsys/syn_current_64.18/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
-uplevel #0 source /home/isa01/Desktop/fully_connected_4x4_unif/syn/Power_consumption_estim.tcl
-#@ # -- Starting source /home/isa01/Desktop/fully_connected_4x4_unif/syn/Power_consumption_estim.tcl
+uplevel #0 source /home/isa01/Desktop/fully_connected_4x4/syn/Power_consumption_estim.tcl
+#@ # -- Starting source /home/isa01/Desktop/fully_connected_4x4/syn/Power_consumption_estim.tcl
 
 #@ read_verilog -netlist ../netlist/fully_connected_all.v
 #@ read_saif -input ../saif/fully_connected_all_syn.saif -instance tb_fc/UUT -unit ns -scale 1
 #@ create_clock -name MY_CLK clk
-#@ # -- End source /home/isa01/Desktop/fully_connected_4x4_unif/syn/Power_consumption_estim.tcl
+#@ # -- End source /home/isa01/Desktop/fully_connected_4x4/syn/Power_consumption_estim.tcl
 
 report_power > fc_report_power_saif

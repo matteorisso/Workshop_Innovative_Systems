@@ -1,0 +1,537 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/lp19.26/Desktop/fully_connected_4x4/saiftest/modelsim
+T_opt
+VMWZ^A@UX;5f;?[7o;W;aX2
+04 5 4 work tb_fc fast 0
+Z1 =1-52540093200d-5db17aeb-8fe81-24c0
+Z2 o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.5c -sdftyp /tb_fc/UUT=../fully_connected_all.sdf -suppress 1948 +acc
+Z3 n@_opt
+Z4 OL;O;6.5c;42
+Eadder_subn
+Z5 w1571749216
+Z6 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z8 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/adder_subn.vhd
+Z9 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/adder_subn.vhd
+l0
+L5
+Z10 V5DPd9^`n0fa:DEhJ:UXKV0
+Z11 OL;C;6.5c;42
+32
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Z14 !s100 WiB4e:1PgadI4^Ui6efL:3
+Astructure
+Z15 DEx4 work 2 fa 0 22 A4doi:5L<4B;>2KQZNKCE0
+R6
+R7
+Z16 DEx4 work 10 adder_subn 0 22 5DPd9^`n0fa:DEhJ:UXKV0
+l20
+L15
+Z17 Vanf>C_4mb]<1?>]9;X8O]1
+R11
+32
+Z18 Mx2 4 ieee 14 std_logic_1164
+Z19 Mx1 4 ieee 11 numeric_std
+R12
+R13
+Z20 !s100 D?73N]V`FbATi>HznaOf:1
+Ecgu_fc
+R5
+Z21 DPx4 ieee 9 math_real 0 22 zjAF7SKfg_RPI0GT^n1N`1
+Z22 DPx4 work 5 param 0 22 GDn9JM4ESVgU>?lWjUOn:3
+R6
+R7
+Z23 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/cgu_fc.vhd
+Z24 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/cgu_fc.vhd
+l0
+L7
+Z25 VP`[C]=]A=M1UHQcGI1_bQ0
+R11
+32
+R12
+R13
+Z26 !s100 ^QIb`H<eBEk>?c7b[=HMO0
+Abeh
+R21
+R22
+R6
+R7
+Z27 DEx4 work 6 cgu_fc 0 22 P`[C]=]A=M1UHQcGI1_bQ0
+l19
+L17
+Z28 VOmgO`k6N;1d]8CL8YKLjc3
+R11
+32
+Z29 Mx4 4 ieee 14 std_logic_1164
+Z30 Mx3 4 ieee 11 numeric_std
+Z31 Mx2 4 work 5 param
+Z32 Mx1 4 ieee 9 math_real
+R12
+R13
+Z33 !s100 N65FJDWXY56PEUTe2BlIH3
+Eclk_gen
+Z34 w1571749196
+Z35 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z36 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+R7
+Z37 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/clk_gen.vhd
+Z38 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/clk_gen.vhd
+l0
+L6
+Z39 VDlU6_:0cWH8=W7ChPhZ:S3
+R11
+32
+R12
+R13
+Z40 !s100 d9>FE1QWk<5EMJWE6]KN[1
+Abeh
+R35
+R36
+R7
+Z41 DEx4 work 7 clk_gen 0 22 DlU6_:0cWH8=W7ChPhZ:S3
+l18
+L12
+Z42 VozmB=W4?ae:ACcN^?UiVH3
+R11
+32
+Z43 Mx3 4 ieee 14 std_logic_1164
+Z44 Mx2 4 ieee 15 std_logic_arith
+Z45 Mx1 4 ieee 18 std_logic_unsigned
+R12
+R13
+Z46 !s100 N46H6<MA;7F=<]bG=WciE3
+Ecountern
+Z47 w1571749218
+R6
+R7
+Z48 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/countern.vhd
+Z49 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/countern.vhd
+l0
+L6
+Z50 V?AVG65@Y@oPT^gnHdZmmd1
+R11
+32
+R12
+R13
+Z51 !s100 emF4cE[9mDjmG:><jmO3n3
+Abeh
+R6
+R7
+Z52 DEx4 work 8 countern 0 22 ?AVG65@Y@oPT^gnHdZmmd1
+l22
+L17
+Z53 VQ:`3KSKQMOnL<aPZV_MRQ0
+R11
+32
+R18
+R19
+R12
+R13
+Z54 !s100 H5c]9l?eJePQ;`ln8X4@f3
+Edata_maker_new
+Z55 w1571749198
+R21
+R6
+R22
+Z56 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z57 DPx4 ieee 16 std_logic_textio 0 22 8YS?iX`WD1REQG`ZRYQGB2
+R35
+R36
+R7
+Z58 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/data_maker_new.vhd
+Z59 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/data_maker_new.vhd
+l0
+L12
+Z60 V@E5?IgZ_R>A]XQi^hMNo^1
+R11
+32
+R12
+R13
+Z61 !s100 VGgDOR3Xd]OZ_k<Hbb^gX2
+Abeh
+R21
+R6
+R22
+R56
+R57
+R35
+R36
+R7
+Z62 DEx4 work 14 data_maker_new 0 22 @E5?IgZ_R>A]XQi^hMNo^1
+l39
+L30
+Z63 V]=Tm3=;zT]Yf;QMLeiiBI1
+R11
+32
+Z64 Mx8 4 ieee 14 std_logic_1164
+Z65 Mx7 4 ieee 15 std_logic_arith
+Z66 Mx6 4 ieee 18 std_logic_unsigned
+Z67 Mx5 4 ieee 16 std_logic_textio
+Z68 Mx4 3 std 6 textio
+Z69 Mx3 4 work 5 param
+Z70 Mx2 4 ieee 11 numeric_std
+R32
+R12
+R13
+Z71 !s100 IkbK8EV7zMO6FjBf=ULeA3
+Efa
+Z72 w1571749220
+R7
+Z73 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fa.vhd
+Z74 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fa.vhd
+l0
+L4
+Z75 VA4doi:5L<4B;>2KQZNKCE0
+R11
+32
+R12
+R13
+Z76 !s100 CJ@m;FZI?ia?fE5jNaP4j2
+Adataflow
+R7
+R15
+l15
+L13
+Z77 VT=>11;BFl[VOT32[k^HVa0
+R11
+32
+Z78 Mx1 4 ieee 14 std_logic_1164
+R12
+R13
+Z79 !s100 ;NNWgzCzKgahzfSdl?NNi1
+Efsm_fully_connected
+R72
+R21
+R6
+R22
+R7
+Z80 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fsm_fully_connected.vhd
+Z81 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fsm_fully_connected.vhd
+l0
+L6
+Z82 Vc4XeIDP66a84jVmUTQRVG3
+R11
+32
+R12
+R13
+Z83 !s100 2kWXTb;oYY^:6<Km^HJ_W0
+Abehavioral
+R21
+R6
+R22
+R7
+Z84 DEx4 work 19 fsm_fully_connected 0 22 c4XeIDP66a84jVmUTQRVG3
+l32
+L26
+Z85 V>Sa9`jog3cgFV]o8>lz@`2
+R11
+32
+R29
+R69
+R70
+R32
+R12
+R13
+Z86 !s100 IDI4m6QMgk4Y1eX?MVo>Q2
+Efully_connected
+R72
+R21
+R22
+R6
+R7
+Z87 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fully_connected.vhd
+Z88 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fully_connected.vhd
+l0
+L7
+Z89 V@g5b<G:AmUSF[g>?`4VjY1
+R11
+32
+R12
+R13
+Z90 !s100 ^lR6VBXN8GSm7O1O0^@V80
+Abehavior
+R21
+R22
+R6
+R7
+Z91 DEx4 work 15 fully_connected 0 22 @g5b<G:AmUSF[g>?`4VjY1
+l109
+L30
+Z92 VE<bVMlc^D;n_Z]maN`3SP3
+R11
+32
+R29
+R30
+R31
+R32
+R12
+R13
+Z93 !s100 CfXQ458YbeD=P_cH?2U]b3
+vfully_connected_all
+Z94 Ia1M7Xl>Yg8WkXKSU3??eT1
+Z95 VR6P[oOa8jOB3a]QP`J?[H0
+Z96 w1571912273
+Z97 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fully_connected_all_netlist.v
+Z98 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/fully_connected_all_netlist.v
+L0 20
+Z99 OL;L;6.5c;42
+r1
+31
+Z100 !s102 -nocovercells
+Z101 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z102 !s100 Y=@oZ]Ql>ALfj=TcHi5JV1
+!s85 0
+Emux_c
+R72
+R6
+R7
+Z103 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/mux_c.vhd
+Z104 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/mux_c.vhd
+l0
+L5
+Z105 Vcgom1@mG;>QZC7SNlK:bE1
+R11
+32
+R12
+R13
+Z106 !s100 kC_ezLa6[<EJa=1>61Do`2
+Abeh
+R6
+R7
+Z107 DEx4 work 5 mux_c 0 22 cgom1@mG;>QZC7SNlK:bE1
+l17
+L15
+Z108 VC7cJZG5DM5CQHAa5bOaD22
+R11
+32
+R18
+R19
+R12
+R13
+Z109 !s100 Vez8UO35_bKDL_C8Bc@CS2
+Emux_c2
+Z110 w1571749222
+R6
+R7
+Z111 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/mux_c2.vhd
+Z112 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/mux_c2.vhd
+l0
+L5
+Z113 VokoiPkkf1KN;mZZdM4XIz2
+R11
+32
+R12
+R13
+Z114 !s100 XDnaj574VI^^`QfzF:kMF2
+Abeh
+R6
+R7
+Z115 DEx4 work 6 mux_c2 0 22 okoiPkkf1KN;mZZdM4XIz2
+l17
+L15
+Z116 ViI5RUS1443mf7W@=nUYB=1
+R11
+32
+R18
+R19
+R12
+R13
+Z117 !s100 M4X`nPg3a^a9[Ke7fjXBg3
+Pparam
+R21
+R6
+R7
+R110
+Z118 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/param.vhd
+Z119 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/param.vhd
+l0
+L6
+Z120 VGDn9JM4ESVgU>?lWjUOn:3
+R11
+32
+R43
+R70
+R32
+R12
+R13
+Z121 !s100 17_PQDeiPf;k7LlQ_NJ1[2
+Epe
+Z122 w1571911646
+R21
+R22
+R6
+R7
+Z123 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/pe.vhd
+Z124 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/pe.vhd
+l0
+L7
+Z125 VG3gOYj3=Pz>2fZP>P`7fM1
+R11
+32
+R12
+R13
+Z126 !s100 DN>S:i:FXH7>4?_FSZjZJ2
+Astructure
+R16
+R21
+R22
+R6
+R7
+Z127 DEx4 work 2 pe 0 22 G3gOYj3=Pz>2fZP>P`7fM1
+l29
+L18
+Z128 VLO1mMfHZ[^6mX2a8MHP=>2
+R11
+32
+R29
+R30
+R31
+R32
+R12
+R13
+Z129 !s100 Q5Sd:mM>LcdEChY14LDe92
+Epe_block
+Z130 w1571749224
+R21
+R22
+R6
+R7
+Z131 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/pe_block.vhd
+Z132 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/pe_block.vhd
+l0
+L7
+Z133 VbiM@3N>UkAN[_2ZeV@Dde2
+R11
+32
+R12
+R13
+Z134 !s100 L0fDBE`ZZIZ[6WQ@70hEK0
+Artl
+R127
+R21
+R22
+R6
+R7
+Z135 DEx4 work 8 pe_block 0 22 biM@3N>UkAN[_2ZeV@Dde2
+l28
+L20
+Z136 VZFf?]dLmAoEK5mgcHESZG1
+R11
+32
+R29
+R30
+R31
+R32
+R12
+R13
+Z137 !s100 Q=PEiH=P85ZDW[8cO[aP30
+Eregn
+R130
+R6
+R7
+Z138 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/regn.vhd
+Z139 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/regn.vhd
+l0
+L5
+Z140 Vn0Nan9b;4<YFP8gN>`YDn3
+R11
+32
+R12
+R13
+Z141 !s100 1=X:0=>3lf6ZP0E2>zJBa3
+Abeh
+R6
+R7
+Z142 DEx4 work 4 regn 0 22 n0Nan9b;4<YFP8gN>`YDn3
+l17
+L15
+Z143 V>aUU8[mG9n;3Y1k=>>cdA2
+R11
+32
+R18
+R19
+R12
+R13
+Z144 !s100 zAf=BWnoQ>Fi8lF:cLFE81
+vSNPS_CLOCK_GATE_HIGH_countern_N4
+Z145 IG9_8ZN3YkHg2=V`BhoAMF3
+Z146 VI[iXJ8YgDM8ed2PGR]L_13
+R96
+R97
+R98
+L0 11
+R99
+r1
+31
+R100
+R101
+Z147 n@s@n@p@s_@c@l@o@c@k_@g@a@t@e_@h@i@g@h_countern_@n4
+Z148 !s100 PQ9iKTWU<0:LJj[h2M^=U1
+!s85 0
+vSNPS_CLOCK_GATE_HIGH_countern_N9
+Z149 I6Pn5J8Ynlh<9^d^jj_W0?1
+Z150 Vch98jF;^f8mP?V6ZDK<9H0
+R96
+R97
+R98
+L0 2
+R99
+r1
+31
+R100
+R101
+Z151 n@s@n@p@s_@c@l@o@c@k_@g@a@t@e_@h@i@g@h_countern_@n9
+Z152 !s100 ]68BM:[`3`Mehj0MUCFIk2
+!s85 0
+vtb_fc
+Z153 I>hoEm]R9hUdKVg79VaIgm3
+Z154 V_62aBGHLe]5liS`IllnK03
+R55
+Z155 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/tb_fc.v
+Z156 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/tb_fc.v
+L0 3
+R99
+r1
+31
+R100
+R101
+Z157 !s100 R4;D:cX26AT4@L;iAI;4?2
+!s85 0
+Ezero_skip
+R130
+R21
+R22
+R6
+R7
+Z158 8/home/lp19.26/Desktop/fully_connected_4x4/saiftest/zero_skip.vhd
+Z159 F/home/lp19.26/Desktop/fully_connected_4x4/saiftest/zero_skip.vhd
+l0
+L7
+Z160 VYKeaPfhU=POK3bU_z=TTl3
+R11
+32
+R12
+R13
+Z161 !s100 I6XdJ^Tah7D6f:o>HT`6k3
+Abeh
+R21
+R22
+R6
+R7
+Z162 DEx4 work 9 zero_skip 0 22 YKeaPfhU=POK3bU_z=TTl3
+l19
+L17
+Z163 V5zj04AoS>YD]h0J16e8SH0
+R11
+32
+R29
+R30
+R31
+R32
+R12
+R13
+Z164 !s100 gb3QoV9I^^P1NE:eaE@Oi0
