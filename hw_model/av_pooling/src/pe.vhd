@@ -48,7 +48,9 @@ if rst = '1' then
 	 q_acc 	    <= (others=>'0');
 	 q_k		<= '0';
 	 
-elsif ck'event and ck='1' and int_en = '1' then
+elsif ck'event and ck='1' then
+
+ if int_en = '1' then
 
 	if sync_clr = '1' then
 	
@@ -64,7 +66,7 @@ elsif ck'event and ck='1' and int_en = '1' then
 
 	end if;
 
-elsif ck'event and ck='1' and int_en = '0' then
+ elsif int_en = '0' then
 
 	if sync_clr = '1' then
 	
@@ -79,8 +81,9 @@ elsif ck'event and ck='1' and int_en = '0' then
 		q_k 	<= k(k'high); 		
 
 	end if;
- 		
-	
+ 
+ end if;		
+ 	
 end if;
 end process;
 

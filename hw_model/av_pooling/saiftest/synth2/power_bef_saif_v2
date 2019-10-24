@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : avr_pooling_unrolled
+Version: F-2011.09-SP3
+Date   : Wed Oct 23 21:16:22 2019
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+avr_pooling_unrolled   5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 107.1363 uW   (73%)
+  Net Switching Power  =  39.6894 uW   (27%)
+                         ---------
+Total Dynamic Power    = 146.8258 uW  (100%)
+
+Cell Leakage Power     =  59.9549 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     10.6609           17.2454        1.1144e+03           29.0207  (  14.03%)
+register          79.4556            1.1250        1.5815e+04           96.3955  (  46.62%)
+sequential     7.9085e-02        2.2680e-02           39.8119            0.1416  (   0.07%)
+combinational     16.9408           21.2964        4.2986e+04           81.2231  (  39.28%)
+--------------------------------------------------------------------------------------------------
+Total            107.1364 uW        39.6894 uW     5.9955e+04 nW       206.7808 uW
+1
