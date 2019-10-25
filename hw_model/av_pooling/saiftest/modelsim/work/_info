@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 d/home/lp19.7/Desktop/av_pooling/saiftest/modelsim
 T_opt
-VPVVz;=XVI8186lXcYS`J52
+VihIf:lj>7E7Q4cZn;WkTT0
 Z1 04 7 4 work tb_pool fast 0
-Z2 =1-52540093200d-5db0aa27-545c6-2665
-Z3 o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_pool/UUT=../avr_pooling_v2.sdf -suppress 1948
+Z2 =1-52540093200d-5db1fcf1-da597-7233
+Z3 o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_pool/UUT=../avr_pooling_v3.sdf -suppress 1948
 Z4 n@_opt
 Z5 OL;O;6.5c;42
 T_opt1
@@ -156,17 +156,17 @@ R21
 R22
 Z59 !s100 HbCMkiYITK_7j<]IEJZlk0
 vavr_pooling_unrolled
-Z60 IjBzHY<o2beX4>WPfiGd;K2
+Z60 IaHdIei[W1NTTc4LPi;3721
 Z61 VYD?eBKVQ^dNKAQQM@0F5c0
-Z62 w1571858352
-Z63 8../avr_pooling_netlist_v2.v
-Z64 F../avr_pooling_netlist_v2.v
+Z62 w1571945107
+Z63 8../avr_pooling_netlist_v3.v
+Z64 F../avr_pooling_netlist_v3.v
 L0 11
 Z65 OL;L;6.5c;42
 r1
 31
 Z66 o-work ./work -L mtiAvm -L mtiOvm -L mtiUPF
-Z67 !s100 _j`PLIhcDo9@Rgkl<Lz3e2
+Z67 !s100 Og=oL;FnCgYoJ9aIZI=8P3
 !s85 0
 Ecgu
 R14
@@ -256,7 +256,7 @@ R21
 R22
 Z91 !s100 H5c]9l?eJePQ;`ln8X4@f3
 Edata_maker_new
-Z92 w1571858899
+Z92 w1571945697
 R31
 R32
 R15

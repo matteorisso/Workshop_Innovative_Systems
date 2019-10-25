@@ -53,7 +53,7 @@ if rst = '1' then
 	 
 elsif gck'event and gck='1' then
 
- --if int_en = '1' then
+ if int_en = '1' then
 
 	if sync_clr = '1' then
 	
@@ -69,7 +69,7 @@ elsif gck'event and gck='1' then
 
 	end if;
 
- --elsif int_en = '0' then
+elsif int_en = '0' then
 
 	if sync_clr = '1' then
 	
@@ -85,7 +85,7 @@ elsif gck'event and gck='1' then
 
 	end if;
  
- --end if;		
+ end if;		
  	
 end if;
 end process;
