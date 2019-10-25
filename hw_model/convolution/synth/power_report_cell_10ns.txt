@@ -1,0 +1,159 @@
+ 
+****************************************
+Report : power
+        -cell
+        -hier
+        -analysis_effort low
+        -sort_mode cell_internal_power
+Design : convolutional_layer_wrap
+Version: F-2011.09-SP3
+Date   : Fri Oct 25 15:22:28 2019
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+convolutional_layer_wrap
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+
+                        Cell      Driven Net  Tot Dynamic      Cell
+                        Internal  Switching   Power            Leakage
+Cell                    Power     Power       (% Cell/Tot)     Power      Attrs
+--------------------------------------------------------------------------------
+wrap                    1.745e+03       N/A        N/A (N/A)   9253997.0000
+                                                                          h
+--------------------------------------------------------------------------------
+Totals (1 cell)            1.745mW     N/A         N/A (N/A)      9.254mW
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+convolutional_layer_wrap               1.33e+03 1.75e+03 9.26e+06 1.23e+04 100.0
+  wrap (convolutional_layer)           1.33e+03 1.74e+03 9.25e+06 1.23e+04 100.0
+    conv_fsm_v2_1 (conv_fsm_v2)           1.421    2.896 1.86e+03    6.171   0.1
+    top_level_dp_1 (top_level_dp)      1.33e+03 1.74e+03 9.25e+06 1.23e+04  99.9
+      imem_inst (imem_w)                173.698  569.419 1.03e+06 1.77e+03  14.4
+        imem_inst (imem)                173.074  569.176 1.03e+06 1.77e+03  14.3
+          rfi_3_0 (dual_port_rf_n_addr6_n_word16_width48_1)
+                                         20.642   66.821 1.28e+05  215.163   1.7
+          rfi_2_0 (dual_port_rf_n_addr6_n_word16_width48_2)
+                                         20.715   67.291 1.28e+05  215.704   1.7
+          rfi_1_0 (dual_port_rf_n_addr6_n_word16_width48_3)
+                                         20.716   67.288 1.28e+05  215.697   1.7
+          rfi_0_0 (dual_port_rf_n_addr6_n_word16_width48_4)
+                                         21.072   68.555 1.28e+05  217.296   1.8
+          rfi_3 (dual_port_rf_n_addr6_n_word16_width48_5)
+                                         20.656   67.063 1.28e+05  215.419   1.7
+          rfi_2 (dual_port_rf_n_addr6_n_word16_width48_6)
+                                         20.722   67.319 1.28e+05  215.738   1.7
+          rfi_1 (dual_port_rf_n_addr6_n_word16_width48_7)
+                                         20.734   67.204 1.28e+05  215.635   1.7
+          rfi_0 (dual_port_rf_n_addr6_n_word16_width48_0)
+                                         21.097   68.460 1.28e+05  217.216   1.8
+          rd_addr_odd_reg_3 (regn_N6_1)
+                                          0.620    3.375  543.119    4.538   0.0
+          rd_addr_even_reg_3 (regn_N6_2)
+                                          0.620    3.375  543.119    4.538   0.0
+          rd_addr_odd_reg_2 (regn_N6_3)
+                                          0.627    3.409  543.170    4.579   0.0
+          rd_addr_even_reg_2 (regn_N6_4)
+                                          0.627    3.409  543.170    4.579   0.0
+          rd_addr_odd_reg_1 (regn_N6_5)
+                                          0.634    3.446  543.221    4.623   0.0
+          rd_addr_even_reg_1 (regn_N6_6)
+                                          0.634    3.446  543.221    4.623   0.0
+          rd_addr_odd_reg_0 (regn_N6_7)
+                                          0.808    4.285  544.496    5.637   0.0
+          rd_addr_even_reg_0 (regn_N6_0)
+                                          0.808    4.285  544.496    5.637   0.0
+      spad_inst (spad)                 1.08e+03  991.761 8.09e+06 1.02e+04  82.4
+        rfi_3 (dual_port_rf_n_addr9_n_word48_width294_1)
+                                        269.465  247.717 2.02e+06 2.54e+03  20.6
+        rfi_2 (dual_port_rf_n_addr9_n_word48_width294_2)
+                                        269.465  247.718 2.02e+06 2.54e+03  20.6
+        rfi_1 (dual_port_rf_n_addr9_n_word48_width294_3)
+                                        269.468  247.719 2.02e+06 2.54e+03  20.6
+        rfi_0 (dual_port_rf_n_addr9_n_word48_width294_0)
+                                        269.463  247.713 2.02e+06 2.54e+03  20.6
+      dp_inst (datapath)                 49.342  170.633 1.20e+05  339.663   2.8
+        imem_if_inst (imem_if_top)        9.759   10.645 2.10e+04   41.374   0.3
+          imem_if_inst (imem_if)          4.426    4.384 6.59e+03   15.396   0.1
+          imem_if_mem2 (imem_bank_if_1)
+                                          2.669    3.132 7.17e+03   12.974   0.1
+          imem_if_mem1 (imem_bank_if_0)
+                                          2.665    3.129 7.17e+03   12.967   0.1
+        globals_inst (urom)               0.127 1.92e-02   28.706    0.175   0.0
+        spad_addr_gen_inst (spad_addr_gen)
+                                          0.701    5.536 7.34e+03   13.578   0.1
+          add_50 (spad_addr_gen_DW01_add_1)
+                                       3.67e-03 5.73e-04  539.750    0.544   0.0
+          r91 (spad_addr_gen_DW01_add_0)
+                                       5.56e-04 9.56e-04  456.653    0.458   0.0
+          tileb_cnt (countern_N3_1)       0.239    0.875 1.02e+03    2.137   0.0
+          tileh_cnt (countern_N3_2)    4.98e-02    0.636 1.05e+03    1.733   0.0
+          tilev_cnt (countern_N3_3)    5.17e-02    0.641 1.05e+03    1.740   0.0
+        psb_1 (psb)                       1.417    1.310 1.04e+04   13.090   0.1
+          add_33 (psb_DW01_add_3)         0.000    0.000  683.817    0.684   0.0
+          add_33_G2 (psb_DW01_add_2)      0.000    0.000  683.817    0.684   0.0
+          add_33_G3 (psb_DW01_add_1)      0.000    0.000  683.817    0.684   0.0
+          add_33_G4 (psb_DW01_add_0)      0.000    0.000  683.817    0.684   0.0
+        addr_gen_inst (addr_gen)          1.694    7.365 1.06e+04   19.657   0.2
+          tilec_cnt (countern_N4)      9.75e-02    0.653 1.41e+03    2.160   0.0
+          tileb_cnt (countern_N3_4)       0.273    0.877 1.02e+03    2.173   0.0
+          tileh_cnt (countern_N3_5)    4.99e-02    0.632 1.05e+03    1.729   0.0
+          tilev_cnt (countern_N3_6)       0.111    0.801 1.06e+03    1.973   0.0
+          rf_cnt (countern_N2_1)          0.515    1.892  737.691    3.145   0.0
+        s_tile_gen_inst (s_tile_gen)   5.35e-02    0.631  389.289    1.074   0.0
+        npu_ctrl_inst (npu_ctrl)          1.853    5.072 2.97e+03    9.896   0.1
+          res_pipe_cnt_inst (countern_N2_0)
+                                       3.72e-02    1.467  859.894    2.364   0.0
+          vmode_cnt_inst (countern_N3_7)
+                                          1.054    1.934 1.03e+03    4.017   0.0
+          hmode_cnt_inst (countern_N3_0)
+                                          0.753    1.623 1.03e+03    3.405   0.0
+        core_inst (core_v2)              33.319  136.381 6.64e+04  236.129   1.9
+          ckg_ctrl_inst (ckg_ctrl)     8.67e-02 3.88e-02  902.337    1.028   0.0
+          weight_buffer_inst (weight_buffer)
+                                          1.812    6.730 7.33e+03   15.875   0.1
+          npu_inst (pe_array)            31.421  129.612 5.82e+04  219.226   1.8
+            peij_3_3 (pev2_2_1)           1.936    8.573 3.58e+03   14.092   0.1
+            peij_3_2 (pev2_2_2)           1.935    8.538 3.58e+03   14.049   0.1
+            peij_3_1 (pev2_2_3)           1.928    8.511 3.58e+03   14.014   0.1
+            peij_3_0 (pev2_2_4)           1.877    8.509 3.57e+03   13.961   0.1
+            peij_2_3 (pev2_2_5)           1.829    7.982 3.57e+03   13.382   0.1
+            peij_2_2 (pev2_2_6)           1.819    7.918 3.57e+03   13.305   0.1
+            peij_2_1 (pev2_2_7)           1.806    7.883 3.57e+03   13.255   0.1
+            peij_2_0 (pev2_2_8)           1.757    7.866 3.57e+03   13.190   0.1
+            peij_1_3 (pev2_2_9)           1.837    8.019 3.57e+03   13.427   0.1
+            peij_1_2 (pev2_2_10)          1.820    7.920 3.57e+03   13.309   0.1
+            peij_1_1 (pev2_2_11)          1.808    7.889 3.57e+03   13.265   0.1
+            peij_1_0 (pev2_2_12)          1.758    7.870 3.57e+03   13.196   0.1
+            peij_0_3 (pev2_2_13)          1.798    7.983 3.57e+03   13.353   0.1
+            peij_0_2 (pev2_2_14)          1.787    7.912 3.57e+03   13.267   0.1
+            peij_0_1 (pev2_2_15)          1.775    7.878 3.57e+03   13.220   0.1
+            peij_0_0 (pev2_2_0)           1.726    7.853 3.57e+03   13.147   0.1
+1
