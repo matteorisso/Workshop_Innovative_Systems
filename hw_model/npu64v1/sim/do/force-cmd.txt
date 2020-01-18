@@ -1,0 +1,995 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+vcom ../src/reg.vhd ../src/pkg/globals.pkg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# -- Loading package math_real
+# -- Compiling package globals
+vcom -93 -check_synthesis -source -novopt ../src/input_if.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity input_if
+# -- Compiling architecture rtl of input_if
+# -- Loading entity reg
+vsim -help
+# Usage: vsim [options] [[<library>.]<primary>[(<secondary>)]]...
+#    -help                   Print this message
+#    -version                Print the version of the simulator
+# --------------------------- VHDL and Verilog options ---------------------------
+#    -0in                    Enable support for 0in tools
+#    -0in_options            Specify options to be passed to the 0in tools in quotes
+#    -0in_voptflow           Should be specified with -0in while loading a module optimized by vopt.
+#    -assertdebug            Keep data for debugging assertion failures
+#    -assertfile <filename>  Alternative file for recording assert messages
+#    -errorfile <filename>   Alternative file for recording error messages
+#    -assume                 Simulate PSL and Verilog assume directives same as assert directives
+#    -autoexclusionsdisable=fsm|assertions|all|none 
+#                            Turns on/off automatic fsm or assertions code coverage exclusions
+#    -c                      Command line mode
+#    -capacity               Enable fine grain capacity analysis
+#    -compress_elab          In conjunction with -elab, enables compression of
+#                            the elab file
+#    -coverage               Allows enabled coverage statistics to be kept
+#    -do "<command>"         Execute <command> on startup; <command> can be
+#                            a macro filename
+#    -displaymsgmode <mode>  Controls transcripting of display system task messages.
+#                            Messages will appear in transcript and/or MsgViewer (.wlf file)
+#                            Valid modes - tran, wlf, both (Default: tran)
+#    +dumpports+direction    Provide port direction info in VCD file for dumpports
+#    +dumpports+unique       Provide unique Extended VCD identifier for each port
+#    +dumpports+no_strength_range
+#                            Ignore strength range when resolving conflicts
+#    +dumpports+collapse     Collapse dumpport vectors into single VCD ids
+#    +dumpports+nocollapse   Don't collapse dumpport vectors into single VCD ids
+#    +dumpports+force_direction
+#                            Ignore driver location. Use port direction for input and output ports
+#    -elab <filename>        Elaborate a design into a file
+#    -elab_cont <filename>   Elaborate a design into a file and simulate
+#    -elab_defer_fli         Defer calling FLI initialization routines
+#    -error <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Error
+#    -f <filename>           Read command line arguments from <filename>
+#    -fatal <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Fatal
+#    -filemap_elab <HDLfilename>=<NEWfilename>
+#                            Define a mapping used during -load_elab
+#    -g<Name>=<Value>        Specify generic/parameter default Value for Name
+#    -G<Name>=<Value>        Override generic/parameter with specified Value
+#    -gblso <shared_obj>     Open the specified shared object with global
+#                            symbol visibility.
+#    -gui                    Open the GUI without loading a design
+#    -i                      Force interactive mode
+#    -installcolormap        Cause the application to use its own color map
+#    -keeploaded             Prevent the simulator from unloading/reloading
+#                            shared libraries
+#    -keeploadedrestart      Prevent the simulator from unloading/reloading
+#                            shared libraries during restart
+#    -keepstdout             Do not redirect stdout to transcript window
+#    -l <filename>           Write simulation log to <filename>
+#                            (Default: transcript)
+#    -learn <fname>          Learn the names of objects externally accessed at runtime
+#                            (by methods such as PLI, VPI, SignalSpy, or CLI).
+#                            <fname>.ocf, <fname>.ocm and <fname>.acc files created
+#    -lib <libname>          Load top-level design units from <libname>
+#                            (Default: work)
+#    -lic_nomgc              Do not look for Mentor Graphics Licenses
+#    -lic_nomti              Do not look for Model Technology Licenses
+#    -lic_noqueue            Do not wait in the license queue when a license
+#                            is not available
+#    -lic_plus               Immediately reserve a VHDL and Verilog license
+#    -lic_vhdl               Immediately reserve a VHDL license
+#    -lic_vlog               Immediately reserve a Verilog license
+#    -lic_no_slvhdl          Disable checkout of qhsimvh and vsim single
+#                            language VHDL license features
+#    -lic_no_slvlog          Disable checkout of qhsimvl and vsimvlog
+#                            single language Verilog license features
+#    -lic_no_mix             Disable checkout of msimhdlmix and hdlmix
+#                            second language only license features
+#    -lic_no_lnl             Disable checkout of msimhdlsim and hdlsim
+#                            language neutral license features
+#    -lic_mixed_only         Disable checkout of qhsimvh,qhsimvl,vsim,
+#                            vsimvlog single language license features
+#    -lic_lnl_only           Disable checkout of qhsimvh,qhsimvl,vsim,
+#                            vsimvlog,msimhdlmix,hdlmix license features
+#    -load_elab <filename>   Load simulation from previous elaboration
+#    -memprof                Collect memory allocation profile data for use with
+#                            current simulation
+#    -memprof[+file=<filename>]
+#                            Collect memory allocation profile data for use with
+#                            current simulation and copy raw data to <filename>
+#    -memprof[+fileonly=<filename>]
+#                            Collect memory allocation profile data in raw format
+#                            to <filename>
+#    -modelsimini <modelsim.ini>
+#                            Specify path to the modelsim.ini file
+#    -multisource_delay min|max|latest
+#                            Controls annotation of SDF INTERCONNECT construct
+#                            (Default: max)
+#    +multisource_int_delays Enable multisource interconnect delays
+#                            for both Verilog and VHDL
+#    -msgmode <mode>         Controls transcripting of elaboration/runtime messages.
+#                            Messages will appear in transcript and/or MsgViewer (.wlf file)
+#                            Valid modes - tran, wlf, both (Default: both)
+#    -nocompress             Create/restore uncompressed checkpoint file
+#    -nocoverage             Passed to vopt to turn off code coverage compile options
+#    +no_notifier            Disable notifier toggling for timing constraint
+#                            violations
+#    -noassertdebug          Do not keep data for debugging assertion failures
+#    -noassume               Do not simulate PSL and Verilog assume directives
+#    -nocapacity             Do not display capacity related information
+#    -noexcludehiz           Do not automatically exclude rows with Hi-Z for
+#                            expression coverage
+#    -nopsl                  Disable PSL assertions
+#    +no_tchk_msg            Disable timing constraint error messages
+#    -note <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Note
+#    +notimingchecks         Disable Verilog and VITAL timing checks
+#    -novopt                 Force incremental mode (pre-6.0 behavior)
+#    -onfinish <mode>        Customize the kernel shutdown behavior at the end of simulation
+#                            Valid modes - ask, stop, exit, final (Default: ask)
+#    -pa                     Enable PowerAware RTL mode
+#    -pa_lib <libname>       Use PA specific dumps from <libname> library. (Default: work)
+#    -pa_bboxprefix=<bbox_prefix> Allow vsim to use different top level hierarchy for PA
+#                            (Example: -pa_bboxprefix=/tb2)
+#    -printsimstats          Print simstats result at the end of simulation
+#    -psl                    Enable PSL assertions
+#    -psloneattempt          Force single PSL assertion coverage attempt
+#    -pslinfinitythreshold   Redefine infinite clock tick for strong operators
+#    -quiet                  Do not report 'Loading...' messages
+#    -restore <filename>     Restore simulation from previous checkpoint
+#    -runinit                Execute run -init before command prompt or running -do files.
+#    -sdfmax[@<delayScale>] [<instance>=]<sdffile>
+#                            Annotate VITAL or Verilog <instance> with maximum
+#                            timing from <sdffile>, scaled by <delayScale>
+#    -sdfmaxerrors <n>       Max number of missing instances reported (default is 5)
+#    -sdfmin[@<delayScale>] [<instance>=]<sdffile>
+#                            Annotate VITAL or Verilog <instance> with minimum
+#                            timing from <sdffile>, scaled by <delayScale>
+#    -sdfnoerror             Treat SDF errors as warnings
+#    -sdfnowarn              Disable warnings from SDF annotator
+#    -sdftyp[@<delayScale>] [<instance>=]<sdffile>
+#                            Annotate VITAL or Verilog <instance> with typical
+#                            timing from <sdffile>, scaled by <delayScale>
+#    +sdf_verbose            Display SDF annotator status messages
+#    -suppress <msgNumber>[,<msgNumber>...]  Suppress the listed messages
+#    -t [1|10|100]fs|ps|ns|us|ms|sec  Time resolution limit
+#                            (VHDL default: resolution setting from .ini file)
+#                            (Verilog default: minimum time_precision in the
+#                            design)
+#    -tag <string>           Set tag for FLI/PLI tracing to <string>
+#    -notoggleints           Excludes VHDL integers from toggle coverage
+#    -togglemaxintvalues     Sets max number of values saved for VHDL integers
+#    -togglemaxrealvalues    Sets max number of values saved for SystemVerilog reals
+#    -togglemaxfixedsizearray <size>
+#                            Sets the limit on the size of Verilog unpacked fixed-size arrays
+#                            that are included for toggle coverage
+#    -togglecountlimit       Sets max count saved for a toggle node
+#    -togglewidthlimit       Sets max width for vectors counted for toggles
+#    -togglevlogreal         Includes Verilog real type in toggle coverage
+#    -togglefixedsizearray   Includes Verilog unpacked fixed-size arrays in toggle coverage
+#    -notogglevlogints       Excludes Verilog integers from toggle coverage
+#    -notogglevlogreal       Excludes Verilog real type in toggle coverage
+#    -notogglefixedsizearray Excludes Verilog unpacked fixed-size arrays in toggle coverage
+#    -togglepackedasvec      Treat SystemVerilog packed structures and multi-d arrays as flattened vectors
+#    -togglevlogenumbits     Treat SystemVerilog enums as reg-vectors for toggle coverage
+#    -title <string>         Optional title for the Main window
+#    -trace_foreign <n>      Set FLI/PLI tracing to level <n>
+#    -valgrind "[options]"   same as SystemC -valgrind option
+#    -vcdstim [<instance>=]<filename>  Stimulate the top-level design or instances
+#                            from an Extended VCD file
+#    -view [<dataset>=]<filename>  View the contents of a WLF file
+#    -viewcov [<dataset>=]<ucdbfilename>  View the contents of the coverage ucdb file
+#    -vopt                   Run vopt optimization before elaborating the simulator
+#    -voptargs="<arglist>"   Pass the specified arguments to vopt
+#    -warning <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Warning
+#    -wlf <filename>         Specify the name of the WLF file (Default: vsim.wlf)
+#    -wlfcompress            Turn on WLF file compression (default)
+#    -wlfnocompress          Turn off WLF file compression
+#    -wlfindex               Turn on WLF file indexing (default)
+#    -wlfnoindex             Turn off WLF file indexing
+#    -wlfopt                 Turn on WLF file optimization (default)
+#    -wlfnoopt               Turn off WLF file optimization
+#    -wlfthreads             Turn on WLF file threading (default if available)
+#    -wlfnothreads           Turn off WLF file threading
+#    -wlflock                Use WLF file locking (default)
+#    -wlfnolock              Disable WLF file locking
+#    -wlfslim <size>         Specify maximum number of Megabytes to be saved in
+#                            WLF file (Default: infinite)
+#    -wlftlim <duration>     Specify maximum duration of time to be saved in
+#                            WLF file (Default: all)
+#    -wlfdeleteonquit        Delete WLF file when simulation quits.
+#    -wlfnodeleteonquit      Save WLF file when simulation quits. (default)
+#    -wlfcachesize           Specify WLF reader cache size (per WLF file.)
+#                            (Default: no reader cache)
+#    -wlfnocollapse          Log every item event and preserve event order.
+#    -wlfcollapsedelta       Log item values only at end of iteration. (default)
+#    -wlfcollapsetime        Log item values only at end of time step.
+# --------------------------------- VHDL options ---------------------------------
+#    -absentisempty          Treat non-existent VHDL files opened for read
+#                            as empty
+#    -foreign "<C_init_func> <shared_lib>"  Load a foreign module
+#    -nocollapse             Disable optimization of internal port map connections
+#    -nofileshare            Do not share file descriptors for VHDL files opened
+#                            for write or append that have identical names
+#    -noglitch               Disable VITAL glitch generation
+#    +no_glitch_msg          Disable glitch error messages
+#    -std_input <filename>   Use filename for VHDL textio STD_INPUT file
+#    -std_output <filename>  Use filename for VHDL textio STD_OUTPUT file
+#    -strictvital            Sacrifice performance for strict VITAL compliance
+#    -vcdread <filename>     Stimulate the VHDL top-level design from a VCD file
+#    -vital2.2b              Select SDF mapping for VITAL 2.2b (Default: VITAL 95)
+#    -vital_fix_negative_setup_hold_sum
+#                            Set negative time to zero when setuphold sum is negative
+# -------------------------------- Verilog options -------------------------------
+#    +alt_path_delays        Use current output value instead of pending value
+#                            when selecting inertial specify path output delay
+#    -cvg63                  Enforce 6.3 behavior of covergroups
+#    -cvgsingledefaultbin    Collapse a Covergroup default array bin into a scalar bin
+#    -cvghaltillbin          Halt simulation when an illegal cover/cross bin gets hit
+#    -nocrossautobins        Avoid generating auto bins in cross coverage computation.
+#    -dpiexportobj <filename> Generate specified DPI export object file then quit
+#    -dpiforceheader         Force generation of dpi header file even when empty
+#                            of function prototypes
+#    -dpiheader <filename>   Generate specified DPI C header file
+#    -dpioutoftheblue 1|0    Turn on/off DPI out-of-the-blue call from C function
+#    -extend_tcheck_data_limit <percent relaxation> Relax data limit for convergence
+#    -extend_tcheck_ref_limit  <percent relaxation> Relax ref limit for convergence
+#    -hazards                Enable hazard checking
+#    +initmem+<seed>         Specify seed value to be used for randomizing
+#                            fixed-size arrays marked for randomization by vlog/vopt.
+#    +initreg+<seed>         Specify seed value to be used for randomizing
+#                            variables marked for randomization by vlog/vopt.
+#    +int_delays             Optimize annotation of interconnect delays
+#    -L <libname>            Search library for design units instantiated from
+#                            Verilog and for VHDL default component binding
+#    -Lf <libname>           Same as -L, but libraries are searched before `uselib
+#    +maxdelays              Use maximum timing from min:typ:max expressions
+#    +mindelays              Use minimum timing from min:typ:max expressions
+#    +no_cancelled_e_msg     Disable negative pulse warning messages
+#    -noimmedca              Revert to pre-6.5 continuous assignment event ordering
+#    +no_neg_tchk            Set negative timing check limits to zero
+#    +no_path_edge           Ignore the input edge specification on path delays
+#    +no_pulse_msg           Disable path pulse error warning messages
+#    +nosdferror             Treat SDF errors as warnings
+#    +nosdfwarn              Disable warnings from SDF annotator
+#    +no_show_cancelled_e    Cancel negative pulse (Default)
+#    +nospecify              Disable specify path delays and timing checks
+#    -nosva                  Disable System Verilog concurrent assertions
+#    -nocvg63                Enforce covergroup behavior as defined in SV IEEE-2008
+#    +nowarn<CODE | Number>  Disable specified warning message
+#                            (Example: +nowarnTFMPC)
+#    +ntc_warn               Enable warnings from negative timing constraint
+#                            algorithm
+#    -pli "<object list>"    Load the list of PLI shared objects
+#    +<plusarg>              Option accessible by PLI routine mc_scan_plusargs
+#    +pulse_e/<percent>      Set path pulse error limit as percentage of
+#                            path delay
+#    +pulse_e_style_ondetect Drive pulse error state immediately on detection
+#    +pulse_e_style_onevent  Drive pulse error state on time of pending event
+#                            (Default)
+#    +pulse_int_e/<percent>  Set interconnect pulse error limit as percentage
+#                            of delay
+#    +pulse_int_r/<percent>  Set interconnect pulse rejection limit as
+#                            percentage of delay
+#    +pulse_r/<percent>      Set path pulse rejection limit as percentage of
+#                            path delay
+#    +sdf_nocheck_celltype   Disable check between SDF celltype name and
+#                            module name
+#    +show_cancelled_e       Drive pulse error state on negative pulse
+#    -solvefaildebug         Display constraint conflicts on randomize() failure
+#    -solveflags=<flags>     Modify constraint solver behavior for specific testcases
+#                            (Example: -solveflags=ri)
+#    -solverev <version>     Specify random sequence compatibility with <version>
+#                            (Example: -solverev 6.2a)
+#    -sv_lib <shared_obj>    DPI shared object, without extension
+#    -sv_root <dirname>      Directory name to use as prefix for DPI
+#                            shared object lookups
+#    -sv_liblist <filename>  The name of a bootstrap file containing names
+#                            of DPI shared objects to load
+#    -sv_seed <seed>         Specify a seed for the Random Number Generator
+#                            (RNG) of the root thread (SystemVerilog)
+#    -sva                    Enable System Verilog concurrent assertions
+#    -tab <filename>         Specify PLI TAB file
+#    +transport_int_delays   Use transport mode for interconnect delays
+#    +transport_path_delays  Use transport mode for path delays
+#                            (Default: inertial)
+#    +typdelays              Use typical timing from min:typ:max expressions
+#                            (Default)
+#    -v2k_int_delays         Use Verilog 2000 style interconnect delays
+# -------------------------------- SystemC options -------------------------------
+#    -cpppath </path/to/[gcc|g++]> 
+#                            Specify path to the desired GNU compiler.
+#                            Use same compiler path as specified on the sccom
+#                            command line.
+#    -noautoldlibpath        Disable setting of LD_LIBRARY_PATH set internally.
+#    -sc_arg <arg>           Specify a SystemC command line argument
+#                            accessible using sc_main(), sc_argc() and
+#                            sc_argv()
+#    -scdpidebug             Turn on debugging for SystemC DPI export function call
+#    -sclib <libname>        Load the SystemC shared library from <libname>
+#                            By default the systemc.so shared library is loaded
+#                            from the library in which the top level SystemC design
+#                            unit is compiled. This option should be used when systemc.so 
+#                            is not in the same library as the top level SystemC design unit.
+#    -valgrind "[options]"   Run valgrind in simulation with user given options
+vsim work.input_if
+# vsim work.input_if 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.input_if(rtl)#1
+# Updating msgviewer database...
+# Updating msgviewer database...
+add wave *
+force -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/input_if/rst 1 0, 0 {5 ns} 
+force -drive sim:/input_if/ctrl_ld_v '1'
+force -drive sim:/input_if/i_data_h 16#1234
+force -drive sim:/input_if/px_ptr "00"
+force -drive sim:/input_if/rf_ptr "00"
+run 50 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+add wave sim:/input_if/int_q_data_h
+# (vish-4014) No objects found matching '/input_if/int_q_data_h'.
+add wave sim:/input_if/int_o_data_h
+# (vish-4014) No objects found matching '/input_if/int_o_data_h'.
+vsim -novopt work.input_if
+# vsim -novopt work.input_if 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Refreshing /home/lp19.20/Desktop/workshop/sim/work.globals
+# Loading work.globals
+# Loading work.input_if(rtl)
+# Refreshing /home/lp19.20/Desktop/workshop/sim/work.reg(beh)
+# Loading work.reg(beh)
+add wave *
+force -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/input_if/rst 1 0, 0 {5 ns}
+force -drive sim:/input_if/px_ptr "00"
+force -drive sim:/input_if/ctrl_ld_v '1'
+force -drive sim:/input_if/i_data_h 16#1234
+force -drive sim:/input_if/i_data_v 16#1234
+force -drive sim:/input_if/rf_ptr "00"
+run 30 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "01"
+force -drive sim:/input_if/i_data_h 16#5678
+run 30 ns
+# Updating msgviewer database...
+vcom -93 -check_synthesis -source -novopt ../src/input_if.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity input_if
+# -- Compiling architecture rtl of input_if
+# -- Loading entity reg
+vsim -novopt work.input_if
+# vsim -novopt work.input_if 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.input_if(rtl)
+# Loading work.reg(beh)
+force -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/input_if/rst 1 0, 0 {5 ns}
+force -drive sim:/input_if/ctrl_ld_v '1'
+force -drive sim:/input_if/i_data_h 16#1234
+force -drive sim:/input_if/rf_ptr "00"
+force -drive sim:/input_if/px_ptr "00"
+force -drive sim:/input_if/i_data_v 16#1234
+run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "01"
+force -drive sim:/input_if/i_data_h 16#5678
+run 100 ns
+# Updating msgviewer database...
+force -drive sim:/input_if/i_data_h 16#9ABC
+force -drive sim:/input_if/rf_ptr "10"
+run 100 ns
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "11"
+force -drive sim:/input_if/i_data_h 16#DEFF
+run 100 ns
+# Updating msgviewer database...
+add wave *
+restart -f
+force -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/input_if/rst 1 0, 0 {5 ns}
+force -drive sim:/input_if/ctrl_ld_v '1'
+force -drive sim:/input_if/px_ptr "00"
+force -drive sim:/input_if/rf_ptr "00"
+force -drive sim:/input_if/i_data_v 16#1234
+force -drive sim:/input_if/i_data_h 16#1234
+run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "01"
+force -drive sim:/input_if/i_data_h 16#5678
+run 100 ns
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "10"
+force -drive sim:/input_if/i_data_h 16#9ABC
+run 100 ns
+# Updating msgviewer database...
+force -drive sim:/input_if/i_data_h 16#DEFF
+force -drive sim:/input_if/rf_ptr "11"
+run 100 ns
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "01"
+run 100 ns
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "10"
+run 100 ns
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "11"
+run 100 ns
+# Updating msgviewer database...
+do force_cmd.txt
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# -- Loading package math_real
+# -- Compiling package globals
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity input_if
+# -- Compiling architecture rtl of input_if
+# -- Loading entity reg
+###### ../src/input_if.vhd(127):         d   => rf_ptr,
+# ** Error: ../src/input_if.vhd(127): Signal "rf_ptr" is type ieee.numeric_std.unsigned; expecting type ieee.numeric_std.signed.
+###### ../src/input_if.vhd(128):         q   => int_q_rf_ptr
+# ** Error: ../src/input_if.vhd(128): Signal "int_q_rf_ptr" is type ieee.numeric_std.unsigned; expecting type ieee.numeric_std.signed.
+###### ../src/input_if.vhd(164): end architecture;
+# ** Error: ../src/input_if.vhd(164): VHDL Compiler exiting
+# ** Error: /software/mentor/modelsim_6.5c/modeltech/linux_x86_64/vcom failed.
+# Error in macro ./force_cmd.txt line 20
+# /software/mentor/modelsim_6.5c/modeltech/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -93 -check_synthesis -source -novopt ../src/input_if.vhd"
+do force_cmd.txt
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# -- Loading package math_real
+# -- Compiling package globals
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity input_if
+# -- Compiling architecture rtl of input_if
+# -- Loading entity reg
+###### ../src/input_if.vhd(128):         q   => signed(int_q_rf_ptr)
+# ** Error: ../src/input_if.vhd(128): (vcom-1041) Formal "q" of mode OUT cannot be associated with an actual that is a
+# type conversion.
+###### ../src/input_if.vhd(164): end architecture;
+# ** Error: ../src/input_if.vhd(164): VHDL Compiler exiting
+# ** Error: /software/mentor/modelsim_6.5c/modeltech/linux_x86_64/vcom failed.
+# Error in macro ./force_cmd.txt line 20
+# /software/mentor/modelsim_6.5c/modeltech/linux_x86_64/vcom failed.
+#     while executing
+# "vcom -93 -check_synthesis -source -novopt ../src/input_if.vhd"
+do force_cmd.txt
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# -- Loading package math_real
+# -- Compiling package globals
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity input_if
+# -- Compiling architecture rtl of input_if
+# -- Loading entity reg
+# Usage: vsim [options] [[<library>.]<primary>[(<secondary>)]]...
+#    -help                   Print this message
+#    -version                Print the version of the simulator
+# --------------------------- VHDL and Verilog options ---------------------------
+#    -0in                    Enable support for 0in tools
+#    -0in_options            Specify options to be passed to the 0in tools in quotes
+#    -0in_voptflow           Should be specified with -0in while loading a module optimized by vopt.
+#    -assertdebug            Keep data for debugging assertion failures
+#    -assertfile <filename>  Alternative file for recording assert messages
+#    -errorfile <filename>   Alternative file for recording error messages
+#    -assume                 Simulate PSL and Verilog assume directives same as assert directives
+#    -autoexclusionsdisable=fsm|assertions|all|none 
+#                            Turns on/off automatic fsm or assertions code coverage exclusions
+#    -c                      Command line mode
+#    -capacity               Enable fine grain capacity analysis
+#    -compress_elab          In conjunction with -elab, enables compression of
+#                            the elab file
+#    -coverage               Allows enabled coverage statistics to be kept
+#    -do "<command>"         Execute <command> on startup; <command> can be
+#                            a macro filename
+#    -displaymsgmode <mode>  Controls transcripting of display system task messages.
+#                            Messages will appear in transcript and/or MsgViewer (.wlf file)
+#                            Valid modes - tran, wlf, both (Default: tran)
+#    +dumpports+direction    Provide port direction info in VCD file for dumpports
+#    +dumpports+unique       Provide unique Extended VCD identifier for each port
+#    +dumpports+no_strength_range
+#                            Ignore strength range when resolving conflicts
+#    +dumpports+collapse     Collapse dumpport vectors into single VCD ids
+#    +dumpports+nocollapse   Don't collapse dumpport vectors into single VCD ids
+#    +dumpports+force_direction
+#                            Ignore driver location. Use port direction for input and output ports
+#    -elab <filename>        Elaborate a design into a file
+#    -elab_cont <filename>   Elaborate a design into a file and simulate
+#    -elab_defer_fli         Defer calling FLI initialization routines
+#    -error <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Error
+#    -f <filename>           Read command line arguments from <filename>
+#    -fatal <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Fatal
+#    -filemap_elab <HDLfilename>=<NEWfilename>
+#                            Define a mapping used during -load_elab
+#    -g<Name>=<Value>        Specify generic/parameter default Value for Name
+#    -G<Name>=<Value>        Override generic/parameter with specified Value
+#    -gblso <shared_obj>     Open the specified shared object with global
+#                            symbol visibility.
+#    -gui                    Open the GUI without loading a design
+#    -i                      Force interactive mode
+#    -installcolormap        Cause the application to use its own color map
+#    -keeploaded             Prevent the simulator from unloading/reloading
+#                            shared libraries
+#    -keeploadedrestart      Prevent the simulator from unloading/reloading
+#                            shared libraries during restart
+#    -keepstdout             Do not redirect stdout to transcript window
+#    -l <filename>           Write simulation log to <filename>
+#                            (Default: transcript)
+#    -learn <fname>          Learn the names of objects externally accessed at runtime
+#                            (by methods such as PLI, VPI, SignalSpy, or CLI).
+#                            <fname>.ocf, <fname>.ocm and <fname>.acc files created
+#    -lib <libname>          Load top-level design units from <libname>
+#                            (Default: work)
+#    -lic_nomgc              Do not look for Mentor Graphics Licenses
+#    -lic_nomti              Do not look for Model Technology Licenses
+#    -lic_noqueue            Do not wait in the license queue when a license
+#                            is not available
+#    -lic_plus               Immediately reserve a VHDL and Verilog license
+#    -lic_vhdl               Immediately reserve a VHDL license
+#    -lic_vlog               Immediately reserve a Verilog license
+#    -lic_no_slvhdl          Disable checkout of qhsimvh and vsim single
+#                            language VHDL license features
+#    -lic_no_slvlog          Disable checkout of qhsimvl and vsimvlog
+#                            single language Verilog license features
+#    -lic_no_mix             Disable checkout of msimhdlmix and hdlmix
+#                            second language only license features
+#    -lic_no_lnl             Disable checkout of msimhdlsim and hdlsim
+#                            language neutral license features
+#    -lic_mixed_only         Disable checkout of qhsimvh,qhsimvl,vsim,
+#                            vsimvlog single language license features
+#    -lic_lnl_only           Disable checkout of qhsimvh,qhsimvl,vsim,
+#                            vsimvlog,msimhdlmix,hdlmix license features
+#    -load_elab <filename>   Load simulation from previous elaboration
+#    -memprof                Collect memory allocation profile data for use with
+#                            current simulation
+#    -memprof[+file=<filename>]
+#                            Collect memory allocation profile data for use with
+#                            current simulation and copy raw data to <filename>
+#    -memprof[+fileonly=<filename>]
+#                            Collect memory allocation profile data in raw format
+#                            to <filename>
+#    -modelsimini <modelsim.ini>
+#                            Specify path to the modelsim.ini file
+#    -multisource_delay min|max|latest
+#                            Controls annotation of SDF INTERCONNECT construct
+#                            (Default: max)
+#    +multisource_int_delays Enable multisource interconnect delays
+#                            for both Verilog and VHDL
+#    -msgmode <mode>         Controls transcripting of elaboration/runtime messages.
+#                            Messages will appear in transcript and/or MsgViewer (.wlf file)
+#                            Valid modes - tran, wlf, both (Default: both)
+#    -nocompress             Create/restore uncompressed checkpoint file
+#    -nocoverage             Passed to vopt to turn off code coverage compile options
+#    +no_notifier            Disable notifier toggling for timing constraint
+#                            violations
+#    -noassertdebug          Do not keep data for debugging assertion failures
+#    -noassume               Do not simulate PSL and Verilog assume directives
+#    -nocapacity             Do not display capacity related information
+#    -noexcludehiz           Do not automatically exclude rows with Hi-Z for
+#                            expression coverage
+#    -nopsl                  Disable PSL assertions
+#    +no_tchk_msg            Disable timing constraint error messages
+#    -note <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Note
+#    +notimingchecks         Disable Verilog and VITAL timing checks
+#    -novopt                 Force incremental mode (pre-6.0 behavior)
+#    -onfinish <mode>        Customize the kernel shutdown behavior at the end of simulation
+#                            Valid modes - ask, stop, exit, final (Default: ask)
+#    -pa                     Enable PowerAware RTL mode
+#    -pa_lib <libname>       Use PA specific dumps from <libname> library. (Default: work)
+#    -pa_bboxprefix=<bbox_prefix> Allow vsim to use different top level hierarchy for PA
+#                            (Example: -pa_bboxprefix=/tb2)
+#    -printsimstats          Print simstats result at the end of simulation
+#    -psl                    Enable PSL assertions
+#    -psloneattempt          Force single PSL assertion coverage attempt
+#    -pslinfinitythreshold   Redefine infinite clock tick for strong operators
+#    -quiet                  Do not report 'Loading...' messages
+#    -restore <filename>     Restore simulation from previous checkpoint
+#    -runinit                Execute run -init before command prompt or running -do files.
+#    -sdfmax[@<delayScale>] [<instance>=]<sdffile>
+#                            Annotate VITAL or Verilog <instance> with maximum
+#                            timing from <sdffile>, scaled by <delayScale>
+#    -sdfmaxerrors <n>       Max number of missing instances reported (default is 5)
+#    -sdfmin[@<delayScale>] [<instance>=]<sdffile>
+#                            Annotate VITAL or Verilog <instance> with minimum
+#                            timing from <sdffile>, scaled by <delayScale>
+#    -sdfnoerror             Treat SDF errors as warnings
+#    -sdfnowarn              Disable warnings from SDF annotator
+#    -sdftyp[@<delayScale>] [<instance>=]<sdffile>
+#                            Annotate VITAL or Verilog <instance> with typical
+#                            timing from <sdffile>, scaled by <delayScale>
+#    +sdf_verbose            Display SDF annotator status messages
+#    -suppress <msgNumber>[,<msgNumber>...]  Suppress the listed messages
+#    -t [1|10|100]fs|ps|ns|us|ms|sec  Time resolution limit
+#                            (VHDL default: resolution setting from .ini file)
+#                            (Verilog default: minimum time_precision in the
+#                            design)
+#    -tag <string>           Set tag for FLI/PLI tracing to <string>
+#    -notoggleints           Excludes VHDL integers from toggle coverage
+#    -togglemaxintvalues     Sets max number of values saved for VHDL integers
+#    -togglemaxrealvalues    Sets max number of values saved for SystemVerilog reals
+#    -togglemaxfixedsizearray <size>
+#                            Sets the limit on the size of Verilog unpacked fixed-size arrays
+#                            that are included for toggle coverage
+#    -togglecountlimit       Sets max count saved for a toggle node
+#    -togglewidthlimit       Sets max width for vectors counted for toggles
+#    -togglevlogreal         Includes Verilog real type in toggle coverage
+#    -togglefixedsizearray   Includes Verilog unpacked fixed-size arrays in toggle coverage
+#    -notogglevlogints       Excludes Verilog integers from toggle coverage
+#    -notogglevlogreal       Excludes Verilog real type in toggle coverage
+#    -notogglefixedsizearray Excludes Verilog unpacked fixed-size arrays in toggle coverage
+#    -togglepackedasvec      Treat SystemVerilog packed structures and multi-d arrays as flattened vectors
+#    -togglevlogenumbits     Treat SystemVerilog enums as reg-vectors for toggle coverage
+#    -title <string>         Optional title for the Main window
+#    -trace_foreign <n>      Set FLI/PLI tracing to level <n>
+#    -valgrind "[options]"   same as SystemC -valgrind option
+#    -vcdstim [<instance>=]<filename>  Stimulate the top-level design or instances
+#                            from an Extended VCD file
+#    -view [<dataset>=]<filename>  View the contents of a WLF file
+#    -viewcov [<dataset>=]<ucdbfilename>  View the contents of the coverage ucdb file
+#    -vopt                   Run vopt optimization before elaborating the simulator
+#    -voptargs="<arglist>"   Pass the specified arguments to vopt
+#    -warning <msgNumber>[,<msgNumber>...]  Change the severity of the listed
+#                            messages to Warning
+#    -wlf <filename>         Specify the name of the WLF file (Default: vsim.wlf)
+#    -wlfcompress            Turn on WLF file compression (default)
+#    -wlfnocompress          Turn off WLF file compression
+#    -wlfindex               Turn on WLF file indexing (default)
+#    -wlfnoindex             Turn off WLF file indexing
+#    -wlfopt                 Turn on WLF file optimization (default)
+#    -wlfnoopt               Turn off WLF file optimization
+#    -wlfthreads             Turn on WLF file threading (default if available)
+#    -wlfnothreads           Turn off WLF file threading
+#    -wlflock                Use WLF file locking (default)
+#    -wlfnolock              Disable WLF file locking
+#    -wlfslim <size>         Specify maximum number of Megabytes to be saved in
+#                            WLF file (Default: infinite)
+#    -wlftlim <duration>     Specify maximum duration of time to be saved in
+#                            WLF file (Default: all)
+#    -wlfdeleteonquit        Delete WLF file when simulation quits.
+#    -wlfnodeleteonquit      Save WLF file when simulation quits. (default)
+#    -wlfcachesize           Specify WLF reader cache size (per WLF file.)
+#                            (Default: no reader cache)
+#    -wlfnocollapse          Log every item event and preserve event order.
+#    -wlfcollapsedelta       Log item values only at end of iteration. (default)
+#    -wlfcollapsetime        Log item values only at end of time step.
+# --------------------------------- VHDL options ---------------------------------
+#    -absentisempty          Treat non-existent VHDL files opened for read
+#                            as empty
+#    -foreign "<C_init_func> <shared_lib>"  Load a foreign module
+#    -nocollapse             Disable optimization of internal port map connections
+#    -nofileshare            Do not share file descriptors for VHDL files opened
+#                            for write or append that have identical names
+#    -noglitch               Disable VITAL glitch generation
+#    +no_glitch_msg          Disable glitch error messages
+#    -std_input <filename>   Use filename for VHDL textio STD_INPUT file
+#    -std_output <filename>  Use filename for VHDL textio STD_OUTPUT file
+#    -strictvital            Sacrifice performance for strict VITAL compliance
+#    -vcdread <filename>     Stimulate the VHDL top-level design from a VCD file
+#    -vital2.2b              Select SDF mapping for VITAL 2.2b (Default: VITAL 95)
+#    -vital_fix_negative_setup_hold_sum
+#                            Set negative time to zero when setuphold sum is negative
+# -------------------------------- Verilog options -------------------------------
+#    +alt_path_delays        Use current output value instead of pending value
+#                            when selecting inertial specify path output delay
+#    -cvg63                  Enforce 6.3 behavior of covergroups
+#    -cvgsingledefaultbin    Collapse a Covergroup default array bin into a scalar bin
+#    -cvghaltillbin          Halt simulation when an illegal cover/cross bin gets hit
+#    -nocrossautobins        Avoid generating auto bins in cross coverage computation.
+#    -dpiexportobj <filename> Generate specified DPI export object file then quit
+#    -dpiforceheader         Force generation of dpi header file even when empty
+#                            of function prototypes
+#    -dpiheader <filename>   Generate specified DPI C header file
+#    -dpioutoftheblue 1|0    Turn on/off DPI out-of-the-blue call from C function
+#    -extend_tcheck_data_limit <percent relaxation> Relax data limit for convergence
+#    -extend_tcheck_ref_limit  <percent relaxation> Relax ref limit for convergence
+#    -hazards                Enable hazard checking
+#    +initmem+<seed>         Specify seed value to be used for randomizing
+#                            fixed-size arrays marked for randomization by vlog/vopt.
+#    +initreg+<seed>         Specify seed value to be used for randomizing
+#                            variables marked for randomization by vlog/vopt.
+#    +int_delays             Optimize annotation of interconnect delays
+#    -L <libname>            Search library for design units instantiated from
+#                            Verilog and for VHDL default component binding
+#    -Lf <libname>           Same as -L, but libraries are searched before `uselib
+#    +maxdelays              Use maximum timing from min:typ:max expressions
+#    +mindelays              Use minimum timing from min:typ:max expressions
+#    +no_cancelled_e_msg     Disable negative pulse warning messages
+#    -noimmedca              Revert to pre-6.5 continuous assignment event ordering
+#    +no_neg_tchk            Set negative timing check limits to zero
+#    +no_path_edge           Ignore the input edge specification on path delays
+#    +no_pulse_msg           Disable path pulse error warning messages
+#    +nosdferror             Treat SDF errors as warnings
+#    +nosdfwarn              Disable warnings from SDF annotator
+#    +no_show_cancelled_e    Cancel negative pulse (Default)
+#    +nospecify              Disable specify path delays and timing checks
+#    -nosva                  Disable System Verilog concurrent assertions
+#    -nocvg63                Enforce covergroup behavior as defined in SV IEEE-2008
+#    +nowarn<CODE | Number>  Disable specified warning message
+#                            (Example: +nowarnTFMPC)
+#    +ntc_warn               Enable warnings from negative timing constraint
+#                            algorithm
+#    -pli "<object list>"    Load the list of PLI shared objects
+#    +<plusarg>              Option accessible by PLI routine mc_scan_plusargs
+#    +pulse_e/<percent>      Set path pulse error limit as percentage of
+#                            path delay
+#    +pulse_e_style_ondetect Drive pulse error state immediately on detection
+#    +pulse_e_style_onevent  Drive pulse error state on time of pending event
+#                            (Default)
+#    +pulse_int_e/<percent>  Set interconnect pulse error limit as percentage
+#                            of delay
+#    +pulse_int_r/<percent>  Set interconnect pulse rejection limit as
+#                            percentage of delay
+#    +pulse_r/<percent>      Set path pulse rejection limit as percentage of
+#                            path delay
+#    +sdf_nocheck_celltype   Disable check between SDF celltype name and
+#                            module name
+#    +show_cancelled_e       Drive pulse error state on negative pulse
+#    -solvefaildebug         Display constraint conflicts on randomize() failure
+#    -solveflags=<flags>     Modify constraint solver behavior for specific testcases
+#                            (Example: -solveflags=ri)
+#    -solverev <version>     Specify random sequence compatibility with <version>
+#                            (Example: -solverev 6.2a)
+#    -sv_lib <shared_obj>    DPI shared object, without extension
+#    -sv_root <dirname>      Directory name to use as prefix for DPI
+#                            shared object lookups
+#    -sv_liblist <filename>  The name of a bootstrap file containing names
+#                            of DPI shared objects to load
+#    -sv_seed <seed>         Specify a seed for the Random Number Generator
+#                            (RNG) of the root thread (SystemVerilog)
+#    -sva                    Enable System Verilog concurrent assertions
+#    -tab <filename>         Specify PLI TAB file
+#    +transport_int_delays   Use transport mode for interconnect delays
+#    +transport_path_delays  Use transport mode for path delays
+#                            (Default: inertial)
+#    +typdelays              Use typical timing from min:typ:max expressions
+#                            (Default)
+#    -v2k_int_delays         Use Verilog 2000 style interconnect delays
+# -------------------------------- SystemC options -------------------------------
+#    -cpppath </path/to/[gcc|g++]> 
+#                            Specify path to the desired GNU compiler.
+#                            Use same compiler path as specified on the sccom
+#                            command line.
+#    -noautoldlibpath        Disable setting of LD_LIBRARY_PATH set internally.
+#    -sc_arg <arg>           Specify a SystemC command line argument
+#                            accessible using sc_main(), sc_argc() and
+#                            sc_argv()
+#    -scdpidebug             Turn on debugging for SystemC DPI export function call
+#    -sclib <libname>        Load the SystemC shared library from <libname>
+#                            By default the systemc.so shared library is loaded
+#                            from the library in which the top level SystemC design
+#                            unit is compiled. This option should be used when systemc.so 
+#                            is not in the same library as the top level SystemC design unit.
+#    -valgrind "[options]"   Run valgrind in simulation with user given options
+# vsim work.input_if 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Loading work.input_if(rtl)#1
+# Loading work.reg(beh)#1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+# ** Error: (vish-4014) No objects found matching '/input_if/int_o_data_h'.
+# Error in macro ./force_cmd.txt line 358
+# (vish-4014) No objects found matching '/input_if/int_o_data_h'.
+#     while executing
+# "add wave sim:/input_if/int_o_data_h"
+restart -f
+force -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/input_if/rst 1 0, 0 {5 ns}
+force -drive sim:/input_if/ctrl_ld_v '1'
+force -drive sim:/input_if/px_ptr "00"
+force -drive sim:/input_if/rf_ptr "00"
+force -drive sim:/input_if/i_data_v 16#1234
+force -drive sim:/input_if/i_data_h 16#1234
+run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "01"
+force -drive sim:/input_if/i_data_h 16#5678
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "10"
+force -drive sim:/input_if/i_data_h 16#9ABC
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/i_data_h 16#DEFF
+force -drive sim:/input_if/rf_ptr "11"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "01"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "10"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "11"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+
+vsim -novopt work.input_if
+# vsim -novopt work.input_if 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Refreshing /home/lp19.20/Desktop/workshop/sim/work.globals
+# Loading work.globals
+# Loading work.input_if(rtl)
+# Refreshing /home/lp19.20/Desktop/workshop/sim/work.reg(beh)
+# Loading work.reg(beh)
+vcom -check_synthesis -93 ../src/input_if.vhd
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity input_if
+# -- Compiling architecture rtl of input_if
+# -- Loading entity reg
+vsim -novopt work.input_if
+# vsim -novopt work.input_if 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.globals
+# Refreshing /home/lp19.20/Desktop/workshop/sim/work.input_if(rtl)
+# Loading work.input_if(rtl)
+# Loading work.reg(beh)
+add wave *
+restart -f
+force -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/input_if/rst 1 0, 0 {5 ns}
+force -drive sim:/input_if/ctrl_ld_v '1'
+force -drive sim:/input_if/px_ptr "00"
+force -drive sim:/input_if/rf_ptr "00"
+force -drive sim:/input_if/i_data_v 16#1234
+force -drive sim:/input_if/i_data_h 16#1234
+run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /input_if
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "01"
+force -drive sim:/input_if/i_data_h 16#5678
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/rf_ptr "10"
+force -drive sim:/input_if/i_data_h 16#9ABC
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/i_data_h 16#DEFF
+force -drive sim:/input_if/rf_ptr "11"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "01"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "10"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+force -drive sim:/input_if/px_ptr "11"
+run 100 ns
+# Updating msgviewer database...
+# Updating msgviewer database...
+

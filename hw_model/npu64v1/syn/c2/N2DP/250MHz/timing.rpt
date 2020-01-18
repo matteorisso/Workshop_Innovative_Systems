@@ -1,0 +1,66 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dp
+Version: F-2011.09-SP3
+Date   : Fri Jan 17 20:09:16 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: i_weight[1]
+              (input port clocked by MY_CLK)
+  Endpoint: npu_inst/pe_1_1_5/int_q_acc_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dp                 5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  i_weight[1] (in)                                        0.00       0.50 r
+  npu_inst/i_weight[1] (npu)                              0.00       0.50 r
+  npu_inst/U186/Z (BUF_X1)                                0.17       0.67 r
+  npu_inst/pe_1_1_5/i_weight[1] (pe_50)                   0.00       0.67 r
+  npu_inst/pe_1_1_5/U119/ZN (INV_X1)                      0.05       0.72 f
+  npu_inst/pe_1_1_5/U118/ZN (INV_X1)                      0.04       0.76 r
+  npu_inst/pe_1_1_5/U33/ZN (AND2_X1)                      0.05       0.81 r
+  npu_inst/pe_1_1_5/U27/ZN (INV_X1)                       0.03       0.84 f
+  npu_inst/pe_1_1_5/U142/ZN (OR2_X1)                      0.06       0.90 f
+  npu_inst/pe_1_1_5/sub_74/U2_1/CO (FA_X1)                0.09       0.99 f
+  npu_inst/pe_1_1_5/U129/ZN (OR2_X1)                      0.07       1.06 f
+  npu_inst/pe_1_1_5/U127/ZN (OR2_X1)                      0.06       1.12 f
+  npu_inst/pe_1_1_5/U125/ZN (OR2_X1)                      0.06       1.19 f
+  npu_inst/pe_1_1_5/U123/ZN (OR2_X1)                      0.06       1.25 f
+  npu_inst/pe_1_1_5/U121/ZN (OR2_X1)                      0.06       1.32 f
+  npu_inst/pe_1_1_5/U120/ZN (XNOR2_X1)                    0.06       1.37 f
+  npu_inst/pe_1_1_5/U51/ZN (AOI222_X1)                    0.10       1.47 r
+  npu_inst/pe_1_1_5/U50/ZN (INV_X1)                       0.02       1.49 f
+  npu_inst/pe_1_1_5/int_q_acc_reg[7]/D (DFFR_X1)          0.01       1.50 f
+  data arrival time                                                  1.50
+
+  clock MY_CLK (rise edge)                                4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.07       3.93
+  npu_inst/pe_1_1_5/int_q_acc_reg[7]/CK (DFFR_X1)         0.00       3.93 r
+  library setup time                                     -0.04       3.89
+  data required time                                                 3.89
+  --------------------------------------------------------------------------
+  data required time                                                 3.89
+  data arrival time                                                 -1.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.39
+
+
+1

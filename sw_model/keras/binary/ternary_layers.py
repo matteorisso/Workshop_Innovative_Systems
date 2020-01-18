@@ -15,7 +15,7 @@ from keras import constraints
 from keras import initializers
 
 from ternary_ops import ternarize as ternarize, ternarize_dot
-
+from quantized_ops import quantize
 
 class Clip(constraints.Constraint):
     def __init__(self, min_value, max_value=None):
@@ -162,22 +162,24 @@ class TernaryConv2D(Conv2D):
         self.built = True
 
     def call(self, inputs):
-        ternary_kernel = ternarize(self.kernel, H=self.H) 
+
+        ternary_kernel = ternarize(self.kernel, H=self.H)
+        
         outputs = K.conv2d(
-            inputs,
-            ternary_kernel,
-            strides=self.strides,
-            padding=self.padding,
-            data_format=self.data_format,
-            dilation_rate=self.dilation_rate)
-        ''' internal precision fixed to 8-bit Q5.3
-        '''
-        outputs = K.clip(outputs, -2**4,2**4-1)
+                inputs,
+                ternary_kernel,
+                strides=self.strides,
+                padding=self.padding,
+                data_format=self.data_format,
+                dilation_rate=self.dilation_rate)
+  
+        #outputs = K.clip(outputs, -2**4,2**4-1) 
+        
         if self.use_bias:
             outputs = K.bias_add(
-                outputs,
-                self.bias,
-                data_format=self.data_format)
+            outputs,
+            self.bias,
+            data_format=self.data_format)
 
         if self.activation is not None:
             return self.activation(outputs)

@@ -1,0 +1,204 @@
+Wed Jan 08 04:27:36 PM CET 2020
+Trace back: can't read "itk_component(tbf31)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf31)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf31)": no such element in array}
+Wed Jan 08 09:31:22 PM CET 2020
+Trace back: can't read "itk_component(tbf31)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf31)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf31)": no such element in array}
+Sat Jan 11 02:40:34 PM CET 2020
+Trace back: can't read "itk_component(tbf50)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf50)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf50)": no such element in array}
+Sun Jan 12 06:50:43 PM CET 2020
+Trace back: unknown color name "miny"
+    (processing "-color" option)
+    invoked from within
+".main_pane.wave.interior.cs.body.pw.wf.tree.tree1 itemconfig 144 -radix default -radixenum default -format Literal -min 0 -max 0 -height 15 -label {} ..."
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    (procedure "ApplyWaveSig" line 92)
+    invoked from within
+"ApplyWaveSig .main_pane.wave.interior.cs.body.pw.wf.tree.tree1"
+    invoked from within
+".main_pane.wave.interior.cs.body.pw.wf.sig_dlg.bb.button0 invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "::tk::ButtonInvoke" line 9)
+    invoked from within
+"::tk::ButtonInvoke $ok"
+    ("Entry" arm line 7)
+    invoked from within
+"switch [winfo class $foc] {
+         Text {
+            return 1 ;# Text widget, don't do anything
+         }
+         Entry {
+            # For entry..."
+    (procedure "MtiDialog::privHandleEnter" line 14)
+    invoked from within
+"MtiDialog::privHandleEnter .main_pane.wave.interior.cs.body.pw.wf.sig_dlg.bb.button0"
+    (command bound to event)
+  2: ::tkerror {unknown color name "miny"}
+  1: ::bgerror {unknown color name "miny"}
+Mon Jan 13 04:12:43 PM CET 2020
+Trace back: can't read "itk_component(tbf31)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf31)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf31)": no such element in array}
+Mon Jan 13 07:05:14 PM CET 2020
+Trace back: can't read "itk_component(tbf31)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf31)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf31)": no such element in array}
+Tue Jan 14 10:21:20 PM CET 2020
+Trace back: can't read "itk_component(tbf22)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf22)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf22)": no such element in array}
+Thu Jan 16 01:31:21 AM CET 2020
+Trace back: can't read "itk_component(tbf16)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack {Visibility Event}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack {Visibility Event}"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack {Visibility Event}"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf16)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf16)": no such element in array}
+Thu Jan 16 09:59:20 PM CET 2020
+Trace back: can't read "itk_component(tbf31)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf31)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf31)": no such element in array}
+Fri Jan 17 03:10:08 AM CET 2020
+Trace back: can't read "itk_component(tbf31)": no such element in array
+    while executing
+"winfo width $itk_component($tb)"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::redoPack" body line 55)
+    invoked from within
+"redoPack again"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (object "::.dockbar" method "::mtiwidgets::Dockbar::_delayedEval" body line 3)
+    invoked from within
+"::.dockbar _delayedEval redoPack again"
+    (in namespace inscope "::mtiwidgets::Dockbar" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::Dockbar ::.dockbar _delayedEval redoPack again"
+    ("after" script)
+  2: ::tkerror {can't read "itk_component(tbf31)": no such element in array}
+  1: ::bgerror {can't read "itk_component(tbf31)": no such element in array}

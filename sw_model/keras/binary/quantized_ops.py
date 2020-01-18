@@ -2,8 +2,6 @@
 from __future__ import absolute_import
 import keras.backend as K
 import tensorflow as tf
-import numpy as np
-
 
 def round_through(x):
     '''Element-wise rounding to the closest integer with full gradient propagation.
@@ -14,13 +12,13 @@ def round_through(x):
     return rounded_through
 
 
-def clip_through(x, min_val, max_val):
+#def clip_through(x, min_val, max_val):
     '''Element-wise clipping with gradient propagation
     Analogue to round_through
     '''
-    clipped = K.clip(x, min_val, max_val)
-    clipped_through= x + K.stop_gradient(clipped-x)
-    return clipped_through 
+#    clipped = K.clip(x, min_val, max_val)
+#    clipped_through= x + K.stop_gradient(clipped-x)
+#    return clipped_through 
 
 
 def clip_through(x, min, max):
@@ -176,3 +174,4 @@ def xnorize(W, H=1., axis=None, keepdims=False):
     Wa = _mean_abs(W, axis, keepdims)
     
     return Wa, Wb
+

@@ -5,84 +5,244 @@ Created on Sun Sep  1 15:58:21 2019
 @author: Antonio
 """
 
-'''
-buffer controller 
-'''
+import os
 import math
 import numpy as np
-
-c1dim = 32
-c2dim = 14
-c3dim = 5
-c1channels=1
-c2channels=6
-c3channels=16
-
-px = 5
-py = 5
-
-nb_banks=py
-banks_word=px
-banks_width= int(max([math.ceil(c1dim/py)*math.ceil(c1dim/px)*c1channels,\
-                      math.ceil(c2dim/py)*math.ceil(c2dim/px)*c2channels]))
-
-#map1 = np.chararray((c1dim,c1dim,c1channels))
-
-''' 
- make ifmaps
-'''
-map1 = np.zeros((c1dim,c1dim,c1channels))
-map2 = np.zeros((c2dim,c2dim,c2channels))
-map3 = np.zeros((c3dim,c3dim,c3channels))
-
-for i in range(c1channels):
-    for j in range(c1dim):
-        for k in range(c1dim):
-            map1[j,k,i]='{}.{}{}'.format(j,k,i)            
-for i in range(c2channels):
-    for j in range(c2dim):
-        for k in range(c2dim):
-            map2[j,k,i]='{}.{}{}'.format(j,k,i)
-for i in range(c3channels):
-    for j in range(c3dim):
-        for k in range(c3dim):
-            map3[j,k,i]='{}.{}{}'.format(j,k,i)
  
-'''
-load ifmaps in img memory (24x8x4b=24x32b x8 banks rf) @size[rows,word]=[rows, #pixel*bitwidth]
-'''                
-imem1 = np.zeros((nb_banks,banks_word,banks_width))
-imem2 = np.zeros((nb_banks,banks_word,banks_width))
-imem3 = np.zeros((nb_banks,banks_word,banks_width))
+#Two's complement conversion from decimal 
+def twoscomp(x, nbits, nfrac, hexa=False):
+      
+    m = 2**(nbits-1)
+    m_frac = 2**(nfrac)
+    
+    quant = lambda x, m, m_frac: np.clip(np.round(x*m_frac), -m, m-1)/m_frac #quantize   
+    scale = lambda x, m: int(x*m) #scale to integer (np.floor)
+    qop = lambda x, m, m_frac: scale(quant(x, m, m_frac), m_frac) #convert x
+   
+    #repr : force sign ext for 2C
+    rep = lambda x, hexa: (bin(x & int("1"*nbits, 2))[2:], hex(x & int("1"*nbits, 2))[2:])[hexa] 
+    
+    w = rep(qop(x, m, m_frac), hexa)
+    wn = rep(~qop(x, m, m_frac) + qop(1/m, m, m), hexa) #2's complement
+    
+    return (w, wn)[w[0]=='-']
 
-for imem_,map_ in zip([imem1,imem2,imem3],[map1,map2,map3]):
-    cnt = 0 #banks_width axis index
-    for ch in range(map_.shape[-1]):# channels loop
-        for block_idx2 in range(0,map_.shape[1],banks_word): #set horizontal index for data block
-            for block_idx in range(0,map_.shape[0],banks_word):#set vertical index for data block 
-                bank_idx=0 #bank index for each row in a block
-                for row in map_[block_idx:block_idx+px,block_idx2:block_idx2+px,ch]: #8x32 block of data
-                    if row.shape[-1] <= px: #data width less than word size, fill zeros
-                        tmp = np.zeros(px)
-                        tmp[:row.shape[-1]]=row
-                        row=tmp
-                    imem_[bank_idx,:,cnt]=row
-                    bank_idx+=1 #update bank index within a block
-                cnt+=1 #update bank width index after each block
+#Activations memory map
+def act_memory_map(img, nbits, nfrac, npu_dim, filename, filename2, index=False):
+  
+    x, y, b = img.shape
+    
+    with open(filename,'w+') as fe, open(filename2,'w+') as fo:           
+            for i in range(math.ceil(x/(2*npu_dim))):    
+                for j in range(y):
+                    for k in range(b): 
+                        
+                        dw = np.zeros(2*npu_dim)   #doubleword
+                        
+                        lo_idx_x = i*2*npu_dim  
+                        hi_idx_x = lo_idx_x + 2*npu_dim              
+                        
+                        # pad remainder memory word 
+                        dw[:len(img[j, lo_idx_x : hi_idx_x, k])] = img[j, lo_idx_x:hi_idx_x, k]
+                        
+                        if not index:
+                            dw = [ twoscomp(val, nbits, nfrac, hexa=True) for val in dw ]
+                            
+                        fe.write('{}\n'.format(''.join(map(str, dw[ : npu_dim]))))
+                        fo.write('{}\n'.format(''.join(map(str, dw[npu_dim : ]))))                         
+
+#                # pad remainder memory locations
+#                if img.shape[0]//npu_dim < npu_dim:
+#                    for pad in range(img.shape[0]%npu_dim):    
+#                        dword = np.zeros(2*npu_dim)
+#                        dword = [ twoscomp(val, nbits, nfrac, hexa=True) for val in dword ]
+#                        fe.write('{}\n'.format(''.join(map(str, dword[ : npu_dim]))))
+#                        fo.write('{}\n'.format(''.join(map(str, dword[npu_dim : ]))))                         
+#Correlation function
+def convolution(image, kernel):
+    
+    m, n, w, c = kernel.shape
+    y, x, w = image.shape
+    
+    #new image shape
+    y = y - m + 1
+    x = x - m + 1
+    
+    new_image = np.zeros((y,x,c))
+
+    for k in range(c):        
+        for l in range(w):
+            for i in range(y):
+                for j in range(x):
+                    new_image[i][j][k] += np.sum(image[i:i+m,j:j+m,l]*kernel[:,:,l,k])
+                    
+    return new_image
+
+#Ternary weights table
+def weight_table(w):
+    
+    if w == -1:
+        k = '3'
+    elif w == 1:
+        k = '2'
+    else: 
+        k = '0'       
+    return k
+
+#Results memory map
+def res_memory_map(res, nbits, nfrac, npu_dim, filename, index=False):
+    
+    x, y, z = res.shape
+    
+    with open(filename, 'w+') as f:
+        for k in range(z):   
+            for i in range(math.ceil(x/(npu_dim))):
+                for j in range(y):
+                    
+                    dw = np.zeros(npu_dim) #doubleword 
+                    
+                    #slices index
+                    lo_idx_x = i * npu_dim  #def low index h-mode
+                    hi_idx_x = lo_idx_x + npu_dim #def high index h-mode
+                    
+                    #pad remainder memory word 
+                    dw[ : len(res[j, lo_idx_x : hi_idx_x, k])] = res[j, lo_idx_x : hi_idx_x, k] 
+                    
+                    if not index:
+                        dw = [ twoscomp(val, nbits, nfrac, hexa=True) for val in dw ]
+                        
+                    f.write('{}\n'.format(' '.join(map(str, dw)))) 
+                    
+                    
+if __name__ == '__main__':
+    
+    memdir = 'mem'
+    memdir = os.path.join(os.getcwd(), memdir)
+    
+    try: 
+        os.mkdir(memdir) 
+    except:
+        pass
+    
+    # index examples
+    
+    c1dim = 32
+    c2dim = 14
+    c1channels = 1
+    c2channels = 6
+    
+    px = 8
+    py = 8
+    
+    map1 = np.zeros((c1dim,c1dim,c1channels))
+    map2 = np.zeros((c2dim,c2dim,c2channels))
+    maps = (map1, map2)
+    
+    for i in range(c1channels):
+        for j in range(c1dim):
+            for k in range(c1dim):
+                map1[j,k,i]='{}.{}{}'.format(j,k,i)      
+                
+    for i in range(c2channels):
+        for j in range(c2dim):
+            for k in range(c2dim):
+                map2[j,k,i]='{}.{}{}'.format(j,k,i)
+                        
+    for map_,i in zip(maps,range(len(maps))):
         
-#2**2 offset in imem = switch set of banks 0..Py-1 | Py..2Py-1
-#        
-#nb_tile_v = int(map1.shape[0]/px) 
-#nb_tile_h = int(map1.shape[1]/px) 
-#for i in range(nb_tile_v):
-#    print('{}\nADDR:{}'.format(imem1[0,:,i],bin(i)))            
-#    print('{}\nADDR:{}'.format(imem1[0,:,i+nb_tile_v],bin(i+nb_tile_v)))        
+        filename = '{}/tb_even_map_idx{}.mem'.format(memdir,i)
+        filename2 = '{}/tb_odd_map_idx{}.mem'.format(memdir,i)    
+        act_memory_map(map_, None, None, 8, filename, filename2, index=True)
+    
+    ''' get golden model
+    '''
+    
+    npu_dim = 8
+    
+    # Create test memory
+    
+    nbits = 3
+    nfrac = 2
+    
+    activations = np.load('./saved_model/tnn_act.npy', allow_pickle=True).item()
+    weights = np.load('./saved_model/tnn_weights.npy', allow_pickle=True)
+    
+    '''
+    C1
+    '''
+    
+    kernelc1 = weights.item(0) #C1  kernel
+    img = np.load('./saved_model/tnn_img.npy', allow_pickle=True).item()['img'].reshape((32, 32, 1))
+    
+    act_memory_map(img, nbits, nfrac, npu_dim, '{}/evenc1act.mem'.format(memdir),'{}/oddc1act.mem'.format(memdir))
+    
+    nbits = 8
+    nfrac = 2
+    
+    # create results file
+    res_c1 = convolution(img, kernelc1)
+    res_memory_map(res_c1, 8, 2, 8, memdir+'/c1result.mem')
+    
+    # create weights file
+    with open(memdir+'/c1kernel.mem', 'w+') as f:
+        m, n, b, c = kernelc1.shape
+        for k in range(c):
+            for i in range(m):
+                for j in range(n):
+                    for h in range(b):
+                        f.write(weight_table(kernelc1[i,j,h,k])+'\n')
+           
+    '''C2
+    '''
+    
+    nbits = 3
+    nfrac = 2
+    
+    kernelc2 = weights.item(5) #C2 kernel
+    c2_in = activations[ [ layer for layer in activations.keys() if layer.startswith('s1') ][0] ]
+    
+    act_memory_map(c2_in, nbits, nfrac, npu_dim, '{}/evenc2act.mem'.format(memdir),'{}/oddc2act.mem'.format(memdir))
+    
+    nbits = 8
+    nfrac = 2
+    # create results file
+    res_c2 = convolution(c2_in, kernelc2)
+    res_memory_map(res_c2, 8, 2, 8, memdir+'/c2result.mem')
+    
+    # create weights file
+    with open(memdir+'/c2kernel.mem', 'w+') as f:
+        m, n, b, c = kernelc2.shape
+        for k in range(c):
+            for i in range(m):
+                for j in range(n):
+                    for h in range(b):
+                        f.write(weight_table(kernelc2[i,j,h,k])+'\n')
 
-bPy1 = np.zeros((nb_banks,banks_word,int(banks_width/2)))
-b2Py1 = np.zeros((nb_banks,banks_word,int(banks_width/2)))
-idx=0
-for i,j in zip(range(0,math.ceil(c1dim/py)*math.ceil(c1dim/px)*c1channels,math.ceil(c1dim/py)*2),\
-               range(math.ceil(c1dim/py),math.ceil(c1dim/py)*math.ceil(c1dim/px)*c1channels,math.ceil(c1dim/py)*2)):
-    bPy1[:,:,idx:idx+math.ceil(c1dim/py)]=imem1[:,:,i:i+math.ceil(c1dim/py)]
-    b2Py1[:,:,idx:idx+math.ceil(c1dim/py)]=imem1[:,:,j:j+math.ceil(c1dim/py)]
-    idx+=1
+#    '''
+#    Batch normalization
+#    '''
+#    nbits = 3
+#    nfrac = 2
+#    
+#    m = pow(2, nbits)
+#    m_frac = pow(2, nfrac)
+#    
+#    quantize = lambda x, m, m_frac: np.clip(np.round(x*m_frac), -m, m-1)/m_frac
+#    relu = lambda x : x if x >= 0 else 0
+#    
+#    bn1_a = weights.item(1)[-1]
+#    bn1_b = weights.item(2)[-1]
+#    
+#    bn = np.zeros(resc1.shape)
+#    bnq = np.zeros(bn.shape)
+#    
+#    for i in range(resc1.shape[0]):
+#        for j in range(resc1.shape[1]):
+#            bn[i,j] = resc1[i,j]*bn1_a + bn1_b
+#            
+#            bnq[i,j] = relu(quantize(bn[i,j], m, m_frac))
+            
+            
+
+    
+  

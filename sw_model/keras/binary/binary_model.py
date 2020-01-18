@@ -5,13 +5,15 @@ Created on Mon Aug 19 21:01:11 2019
 @author: Antonio
 """
 import tensorflow as tf
-import os
-
-import scipy.io as spio
 import numpy as np
-
+import matplotlib.pyplot as plt
 import dataset
 import config as cf
+import os
+
+from keras import Model
+from keract import get_activations
+from keract import display_activations
 
 ''' 
  create model
@@ -25,23 +27,21 @@ model = cf.build()
 from keras.optimizers import Adam
 from keras.losses import squared_hinge
 
-adam= Adam(lr=cf.lr, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=cf.decay)
-model.compile(loss = squared_hinge, optimizer = adam, metrics = ['accuracy'])
+adam = Adam(lr=cf.lr, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=cf.decay)
+model.compile(loss=squared_hinge, optimizer=adam, metrics=['accuracy'])
 
 '''
  callbacks
 '''
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint, TensorBoard
-early_stop = EarlyStopping(monitor='loss', min_delta=0.001, patience=10, mode='min', verbose=1)
 
-tensorboard=TensorBoard(cf.logpath,\
-                          histogram_freq=0, write_graph=True, write_images=False)
+early_stop = EarlyStopping(monitor='loss', min_delta=0.001, patience=10, mode='min', verbose=1)
+tensorboard = TensorBoard(cf.logpath, histogram_freq=0, write_graph=True, write_images=False)
 '''
 Save model and weights
 '''
-
-checkpoint = ModelCheckpoint(cf.model_path+'.hdf5', monitor='val_acc', verbose=1, \
+checkpoint = ModelCheckpoint(cf.model_path+'.hdf5', monitor='val_acc', verbose=1,\
                              save_best_only=True, save_weights_only=True,\
                              mode='max', period=1)
 
@@ -49,100 +49,208 @@ checkpoint = ModelCheckpoint(cf.model_path+'.hdf5', monitor='val_acc', verbose=1
  load dataset
 '''
 data = dataset.mnist()
-train,test = data.process()
+train, test = data.process()
 
-x_train,y_train=train
-x_test,y_test=test
+x_train, y_train = train
+x_test, y_test = test
 
 '''
  check saved model
 '''
-if os.path.isfile(cf.model_path+'.hdf5'):
-    
-    import keras.backend as K
-    
-    model.load_weights(cf.model_path+'.hdf5')   
-    W = model.get_weights()
-    Wq = np.copy(W)        
+if not os.path.isfile(cf.model_path+'.hdf5'):
 
-    with tf.Session() as sess:    
-        init = tf.global_variables_initializer()
-        sess.run(init)
-    
-        for it in range(len(W)):
-            if len(W[it].shape)>1:#skip batch norm parameters 
-                Wq[it]  = sess.run(cf.qop(tf.convert_to_tensor(W[it])))
-            else:
-                #quantize batch norm with res 2**-8, clip values to 255, -256
-                m = pow(2,4) #better accuracy with 2**4 !
-                Wq[it] = sess.run(K.clip(tf.math.round(tf.convert_to_tensor(W[it])*m)/m,-m,m-1))
-                
-    model.set_weights(Wq) 
-    Wq = Wq.tolist()
     '''
-    conv param : #weights = ksize*ksize*ch_in*ch_o
-    C1 : 5*5*1*6 = 150 + 6 bias (BN)
-    C2 : 5*5*6*16 = 2400 + 16 bias (BN)
-    C3 : 5*5*16*120 = 48000 + 120 bias (BN)
+    training
     '''
-        
-else:
-    '''
-     training
-     - acc, loss metrics on training dataset
-     - val_acc, val_loss metrics on validation dataset
-    '''
-    hist = model.fit(x = x_train, y = y_train, epochs = cf.epochs, batch_size = cf.batch_size, \
-                     validation_data = (x_test, y_test), verbose = 1,\
-                     callbacks = [checkpoint,tensorboard,early_stop])
+    hist = model.fit(x=x_train, y=y_train, epochs=cf.epochs, batch_size=cf.batch_size, \
+                     validation_data=(x_test, y_test), verbose=1,\
+                     callbacks=[checkpoint, tensorboard, early_stop])
     print('Trained model saved at {} '.format(cf.model_path))
+    
+'''
+restore model
+'''
+
+model.load_weights(cf.model_path+'.hdf5')   
+
+#hist = model.fit(x=x_train, y=y_train, epochs=cf.epochs, batch_size=cf.batch_size, \
+#                 validation_data=(x_test, y_test), verbose=1,\
+#                 callbacks=[checkpoint, tensorboard, early_stop])
+# 
+W = model.get_weights()
+Wq = np.copy(W)        
+
+'''
+quantize network weights
+'''
+
+# batch norm parameters quantization
+
+nbits = 8
+nfrac = 6
+
+m = 2**(nbits-1)
+mfrac = 2**(nfrac)
+
+quant = lambda x, m, m_frac: np.clip(np.round(x*m_frac), -m, m-1)/m_frac
+
+from bn_bc import bn_param_reduction 
+
+bn = [] #batch norm parameters container, each element is one layer
+ 
+#collect scale, offset, mean and variance for each layer
+#
+for k in range(1, len(W), 5):
+#    
+    bn1_scale = W[k] #gamma
+    bn1_offset = W[k+1] #beta
+    bn1_mean = W[k+2] #mu
+    bn1_var = W[k+3] #sigma
+#    
+    bn_param = [] #batch norm layer parameters
+#    
+    # reduction
+    for i in range(bn1_mean.shape[-1]):
+        bn_param.append(bn_param_reduction(bn1_scale[i], bn1_offset[i], bn1_mean[i], bn1_var[i]))
+#    
+#    #add reduced param
+    bn.append(bn_param)
+
+# quantize    
+with tf.Session() as sess:    
+    
+    init = tf.global_variables_initializer()
+    sess.run(init)
+
+    bn_layer_cnt = 0 #
+    bn_param_cnt = 0 #
+    
+    for it in range(len(W)):
+        if len(W[it].shape) > 1: #skip bn parameters 
+            
+            Wq[it] = sess.run(cf.qop(tf.convert_to_tensor(W[it]))) #ternary
+        
+            bn_param_cnt = 0 #
+            
+        else:
+#           Wq[it] = np.clip(np.round(W[it]*mfrac), -m, m-1)/mfrac
+            
+            if bn_param_cnt == 0: #
+                #set gamma as A coefficient #
+                for i in range(len(bn[bn_layer_cnt])): # foreach channel get first value of tuple #
+                    Wq[it][i] = bn[bn_layer_cnt][i][0] #
+                    Wq[it][i] = quant(Wq[it][i], m, mfrac)
+                    
+            elif bn_param_cnt == 1: #
+                #set offset as B coefficient #
+                for i in range(len(bn[bn_layer_cnt])): # foreach channel get second value of tuple #
+                    Wq[it][i] = bn[bn_layer_cnt][i][1] # 
+                    Wq[it][i] = quant(Wq[it][i], m, mfrac)
+                    
+            elif bn_param_cnt == 2: #
+                #set mean 0.
+                 for i in range(len(bn[bn_layer_cnt])): #
+                    Wq[it][i] = 0 #
+            else:
+                #set var 1.
+                for i in range(len(bn[bn_layer_cnt])): #
+                    Wq[it][i] = 1 #
+                
+            if bn_param_cnt == 3: #
+                bn_layer_cnt +=1  #
+                
+            bn_param_cnt +=1 #
+            
+            
+model.set_weights(Wq) 
+Wq = Wq.tolist()
+
+np.save(cf.model_path+'_weights.npy', Wq)
 
 '''
  check accuracy
 '''
 
 test_score = model.evaluate(x_test, y_test)
-print("Test loss {:.4f}, accuracy {:.2f}%".format(test_score[0], \
-      test_score[1] * 100))
+print("Test loss {:.4f}, accuracy {:.2f}%".format(test_score[0], test_score[1] * 100))
 print()
 
-from keras import Model
-from keract import get_activations
-from keract import display_activations
+hidden = [layer.output for layer in model.layers]
 
-hidden =  [layer.output for layer in model.layers]
-model = Model(inputs = model.input,\
-              outputs =hidden ) 
-  
-model.compile(loss = squared_hinge, optimizer = adam)    
+model = Model(inputs=model.input, outputs=hidden) 
+model.compile(loss=squared_hinge, optimizer=adam)    
 
-activations = get_activations(model,x_test[0:1])
+activations = get_activations(model, x_test[0:1])
+
 display_activations(activations, save=True, path=cf.imgpath)
 
-activations = dict([(layer[0],layer[1][0]) for layer in activations.items()])
-spio.savemat(cf.model_path+'_activations.mat',activations)
+activations = dict([(layer[0], layer[1][0]) for layer in activations.items()])
+np.save(cf.model_path+'_act.npy', np.asarray(activations))
+
+#activations = [layer.output for layer in model.layers]
+#spio.savemat(cf.model_path+'_activations.mat', activations)
 
 '''
 zero activations ratio
 '''
+
 img_inputs = [x_test[0:1][0]]
+#spio.savemat(cf.model_path+'_img.mat', {'img':x_test[0:1]})
+
+np.save(cf.model_path+'_img.npy', {'img':x_test[0:1]})
+
 for key in activations.keys():
     if key.startswith('s') or key.startswith('f'): 
-        #check conv and fc inputs (after activation funct.)
         img_inputs.append(activations[key])     
-zeros_act=[]
+        
+zeros_act = []
+
 for it in img_inputs:    
-    cnt=0 
+    cnt = 0 
     for i in it.ravel():
-        if i == 0: cnt+=1
+        if i == 0: cnt += 1
     zeros_act.append(cnt/np.size(it)*100)
+    
+print('\nZero activations ratio :')
+print(zeros_act)
 
 '''
 zero weights ratio
-#'''
-zeros_k=[]
-for it in Wq[0::5]:    
-    cnt=0 
+'''
+wtmp = Wq[0::5]
+
+zeros_k = []
+for it in wtmp:    
+    cnt = 0 
     for i in it.ravel():
-        if i== 0: cnt+=1
+        if i == 0: cnt += 1
     zeros_k.append(cnt/np.size(it)*100)
+    
+print('\nZero weights ratio :')
+print(zeros_k)
+
+''' 
+plot hist
+'''
+for item in range(len(img_inputs)):
+    
+    img_inputs[item] = img_inputs[item].ravel()
+    u, inv = np.unique(img_inputs[item], return_inverse=True)
+    counts = np.bincount(inv)
+
+    plt.bar(u, counts, width=0.3)
+    plt.xticks(np.arange(-1, 1.1, 0.5)) 
+    
+plt.show()
+    
+for item in range(len(wtmp)):
+    
+    wtmp[item] = wtmp[item].ravel()
+    u, inv = np.unique(wtmp[item], return_inverse=True)
+    counts = np.bincount(inv)    
+    
+    plt.bar(u, counts, width=0.3)
+    plt.xticks(np.arange(-1, 1.1, 0.5))
+    
+plt.show()
+

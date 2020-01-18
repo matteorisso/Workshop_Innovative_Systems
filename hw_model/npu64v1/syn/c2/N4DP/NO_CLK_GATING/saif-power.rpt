@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'dp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : dp
+Version: F-2011.09-SP3
+Date   : Fri Jan 17 01:45:35 2020
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dp                     5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   7.7976 mW   (80%)
+  Net Switching Power  =   1.9589 mW   (20%)
+                         ---------
+Total Dynamic Power    =   9.7565 mW  (100%)
+
+Cell Leakage Power     = 870.6855 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       6.9364e+03           41.2159        3.8776e+05        7.3654e+03  (  69.31%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    861.0283        1.9177e+03        4.8291e+05        3.2616e+03  (  30.69%)
+--------------------------------------------------------------------------------------------------
+Total          7.7975e+03 uW     1.9589e+03 uW     8.7067e+05 nW     1.0627e+04 uW
+1

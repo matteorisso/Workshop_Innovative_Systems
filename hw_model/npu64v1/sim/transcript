@@ -1,0 +1,56 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -novopt work.prod_sum 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.globals
+# Loading work.globals
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.prod_sum(beh)
+# Loading work.prod_sum(beh)
+orce -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
+# invalid command name "orce"
+force -drive sim:/input_if/rst 1 0, 0 {5 ns}
+# ** Error: (vish-4008) Object 'sim:/input_if/rst' not found.
+# 
+force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/force/rst 1 0, 0 {5 ns}
+# ** Error: (vish-4008) Object 'sim:/force/rst' not found.
+# 
+force -drive sim:/prod_sum/rst 1 0, 0 {5 ns}
+run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
+add wave *
+restart -f ; run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
+force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
+restart -f ; run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
+force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/prod_sum/rst 1 0, 0 {5 ns}
+run 100 ns
+restart -f
+force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
+force -drive sim:/prod_sum/rst 1 0, 0 {5 ns}
+force -drive sim:prod_sum/i_data 16#00
+force -drive sim:prod_sum/i_gamma 16#25
+force -drive sim:prod_sum/i_beta 16#19
+run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
+force -drive sim:prod_sum/i_data 16#c
+run 100 ns
+quit -f

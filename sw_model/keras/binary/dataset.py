@@ -26,14 +26,16 @@ def _initialize(train :tuple, test :tuple):
     # reshape (28,28) img : (28,28,1) = (height, width, channels)
     x_train = x_train.reshape(x_train.shape[0], 28,28,1)
     x_test  = x_test.reshape(x_test.shape[0], 28,28,1)
-    
+
     print('\nImage Shape:\t{}'.format(x_train[0].shape))
+    
     # reshape img to lenet5 input (32,32,1)
     x_train = np.pad(x_train, ((0,0),(2,2),(2,2),(0,0)), 'constant')
     x_test  = np.pad(x_test, ((0,0),(2,2),(2,2),(0,0)), 'constant')
+    
     print('Reshape...')
     print('Image Shape:\t{}\n'.format(x_train[0].shape))
-    
+
     train = (x_train,y_train)
     test = (x_test,y_test)
     
@@ -46,11 +48,23 @@ def _process(train :tuple, test :tuple, n_classes):
     
     x_train = x_train.astype('float32')
     x_test  = x_test.astype('float32')
-       
+          
     # normalize value to help loss function minimization during training 
     x_train = normalize(x_train, axis=-1)
     x_test  = normalize(x_test, axis=-1)
-       
+    
+    
+#   # ternary cnn     
+    nbits = 3
+    
+    m = pow(2, nbits-1)
+    x_test = np.clip(np.round(x_test*m), -m, m-1)/m
+    x_train = np.clip(np.round(x_train*m), -m, m-1)/m
+    
+    # binary
+#    x_test = np.sign(x_test - 0.1) # sign(x) ret 0 if x == 0, add small bias to map -1
+#    x_train = np.sign(x_train - 0.1)
+    
     # Transform labels to one-hot encoding for categorical_crossentropy loss function
     y_train = np_utils.to_categorical(y_train, n_classes)
     y_test  = np_utils.to_categorical(y_test,  n_classes)
@@ -68,6 +82,7 @@ class mnist():
         
         print('\nLoading MNIST...\n') 
         train, test = datasets.mnist.load_data()
+        
         self.train, self.test = _initialize(train,test)
         
     def process(self):
