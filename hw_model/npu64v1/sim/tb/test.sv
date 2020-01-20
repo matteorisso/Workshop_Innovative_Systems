@@ -37,53 +37,29 @@ module test;
    wire 	       ctrl_ldh_v_n;
    wire 	       ctrl_wr_pipe;
    wire 	       done;
-
-   /* -----------------------------------------------
-   npu ctrl inst.
-      ----------------------------------------------- */
-   
-   localparam ARV_K = K-1;
-   localparam ARV_W = W-1;
-   
-   reg [CLOG2K-1:0]    arv_hmode  = '0; //default size is 32: truncated unsigned vector
-   reg [CLOG2K-1:0]    arv_vmode  = '0;
-   reg [CLOG2K-1:0]    arv_k 	  = '0;
-   reg [CLOG2W-1:0]    arv_res 	  = '0;
-      
-   /* -----------------------------------------------
-   tile ctrl inst.
-      ----------------------------------------------- */
-   /*
-    * test Cx
-    */
-   
-   localparam ARV_TV = C2_NB_TILE-1;
-   localparam ARV_TH = C2_NB_TILE-1;
-   localparam ARV_TB = C2_NB_TILEB-1;
-   localparam ARV_TC = C2_NB_TILEC-1;
-   
-   reg [CLOG2W-1:0]    arv_npu 	   = '0;
-   reg [CLOG2T-1:0]    arv_tile    = '0;
-   reg [CLOG2B-1:0]    arv_ifmaps  = '0;
-   reg [CLOG2C-1:0]    arv_ofmaps  = '0;
    
    /* -----------------------------------------------
-    clk gating ctrl inst.
+   ctrl param. inst.
     ----------------------------------------------- */
-   
-   reg [CLOG2W-1:0]    arv_ckg 	   = '0;
-   
+   reg 		       c1_c2_n;
+
+   reg [CLOG2W-1:0]    arv_npu;
+   reg [CLOG2K-1:0]    arv_k;
+   reg [CLOG2W-1:0]    arv_ckg;
+   reg [CLOG2T-1:0]    arv_tile;
+   reg [CLOG2B-1:0]    arv_ifmaps;
+   reg [CLOG2C-1:0]    arv_ofmaps;
+
    /* -----------------------------------------------
     address gen. inst.
     ----------------------------------------------- */
    
-   wire 	       even_odd_n;
-   wire [CLOG2M+CLOG2W-1:0] even_addr;
-   wire [CLOG2M+CLOG2W-1:0] odd_addr;
-   
+   wire 	       i_data_even_odd_n;
+   wire [CLOG2M+CLOG2W-1:0] i_data_even_addr;
+   wire [CLOG2M+CLOG2W-1:0] i_data_odd_addr;
    
    /* -----------------------------------------------
-    memory_array
+    test memory array
     ------------------------------------------------- */
    
    reg [4*W-1:0] 	  test_mem_even[0:1023];//[0:CL_MEM_WIDTH-1];
@@ -117,54 +93,32 @@ module test;
    
    initial
      begin
-	/* -----------------------------------------------
-	 
-	 Init auto-reload values for counters
-	 	 
-	 trick to use parameters in number literals 
-	 N.B. init '0 in wire or reg declaration
-	 
-	 ----------------------------------------------- */
-	
-	arv_hmode   = arv_hmode + ARV_K;
-	arv_vmode   = arv_vmode + ARV_K;
-	arv_k 	    = arv_vmode;
-	arv_res     = arv_res + ARV_W;
-	arv_ckg     = arv_ckg + 1;
-// ARV_K - 1;
-	arv_npu     = arv_npu + ARV_W;
-	arv_tile    = arv_tile + ARV_TV;
-	arv_ifmaps  = arv_ifmaps + ARV_TB;
-	arv_ofmaps  = arv_ofmaps + ARV_TC;
-	
-	//Force idle state and start fsm
 	rst 	    = 1'b1;
 	start 	    = 1'b0;
 	
-	//Initialize test mem
-		
+	//Initialize test mem		
 	for(i=0; i<$size(test_mem_even); i++)
 	  begin
 	     test_mem_even[i] = 0;
 	     test_mem_odd[i]  = 0;	     
 	  end
 	
-	$readmemh("mem/evenc2act.mem", test_mem_even);
-	$readmemh("mem/oddc2act.mem", test_mem_odd);
-
-	//Initialize res mem
-		
+	//Initialize res mem		
 	for(i=0; i<$size(test_res); i++)
 	     test_res[i] = 0;
 	
-	$readmemh("mem/c2result.mem", test_res);
-	  
 	//Initialize kernel buffer
-	       
 	for(i=0; i<$size(test_k); i++)
 	     test_k[i] = 0;
+
+	//LAYER
 	
-        $readmemh("mem/c2kernel.mem", test_k);
+	c1_c2_n = 1'b0;
+	
+	$readmemh("mem/evenc1act.mem", test_mem_even);
+	$readmemh("mem/oddc1act.mem", test_mem_odd);		
+        $readmemh("mem/c1kernel.mem", test_k);
+	$readmemh("mem/c1result.mem", test_res);	  
 	
 	// Test
 
@@ -205,11 +159,9 @@ module test;
 	  end
      end // always @ (posedge ck, posedge rst)
    
+
    /* -----------------------------------------------
-    stimuli (MEM)
-      ----------------------------------------------- */
-   /* -----------------------------------------------
-    input data
+    input stimuli
     ----------------------------------------------- */
    
    reg [4*W-1:0] 	  i_data_h;
@@ -217,8 +169,8 @@ module test;
    
    always_comb // xbar MEM IF  
      begin
-	i_data_h <= even_odd_n == 1'b0 ? test_mem_odd[int'(odd_addr)] : test_mem_even[int'(even_addr)];
-	i_data_v <= even_odd_n == 1'b0 ? test_mem_even[int'(even_addr)] : test_mem_odd[int'(odd_addr)];
+	i_data_h <= i_data_even_odd_n == 1'b0 ? test_mem_odd[int'(i_data_odd_addr)] : test_mem_even[int'(i_data_even_addr)];
+	i_data_v <= i_data_even_odd_n == 1'b0 ? test_mem_even[int'(i_data_even_addr)] : test_mem_odd[int'(i_data_odd_addr)];
      end
 
    // from HEX to 2b activations
@@ -326,9 +278,9 @@ module test;
 	       .arv_tile(arv_tile),
 	       .arv_ifmaps(arv_ifmaps),
 	       .arv_ofmaps(arv_ofmaps),
-	       .i_data_even_addr(even_addr),
-	       .i_data_odd_addr(odd_addr),
-	       .i_data_ev_odd_n(even_odd_n),
+	       .i_data_even_addr(i_data_even_addr),
+	       .i_data_odd_addr(i_data_odd_addr),
+	       .i_data_ev_odd_n(i_data_even_odd_n),
 	       .o_data(results)
 	       );
 
@@ -351,5 +303,15 @@ module test;
 		 .ctrl_wr_pipe(ctrl_wr_pipe),
 		 .done(done)
 		 );
-  
+
+   ctrl_param ctrl_param_inst (
+			       .c1_c2_n(c1_c2_n),
+			       .arv_npu(arv_npu),
+			       .arv_ksize(arv_k),
+			       .arv_ckgate(arv_ckg),
+			       .arv_tile(arv_tile),
+			       .arv_ifmaps(arv_ifmaps),
+			       .arv_ofmaps(arv_ofmaps)
+			       );
+   
 endmodule // tb_if

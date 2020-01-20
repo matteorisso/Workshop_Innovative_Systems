@@ -35,7 +35,7 @@ entity dp is
     i_data_even_addr : out unsigned(CLOG2M+CLOG2W-1 downto 0);
     i_data_odd_addr  : out unsigned(CLOG2M+CLOG2W-1 downto 0);
     i_data_ev_odd_n  : out std_logic;
-    o_data           : out std_logic_vector((N+BG)*2*W-1 downto 0)--//*2 is tmp
+    o_data           : out std_logic_vector((N+BG)*W-1 downto 0)--//*2 is tmp
                                                                   --: after bn
     );
 
@@ -217,7 +217,7 @@ begin
       i_data_conv_h => int_i_data_h_npu,
       i_data_conv_v => int_i_data_v_npu,
       i_data_acc    => int_i_data_acc,
-      o_data        => int_o_data_npu);
+      o_data        => o_data);--int_o_data_npu);
 
   process(ck, rst)
   begin
@@ -402,17 +402,17 @@ begin
 --//  o_data_addr_gen_inst:
 
 --// batch norm unit (multiplier-adder)
-  bn_unit_inst:
-  for i in 0 to W-1 generate
-    prod_sum_i : entity work.prod_sum
-      port map (
-        ck                       => ck,
-        rst                      => rst,
-        en                       => ps_ctrl_wr_pipe,
-        i_gamma                  => i_gamma,
-        i_beta                   => i_beta,
-        i_data                   => signed(int_o_data_npu(int_o_data_npu'high - i*(N+BG) downto int_o_data_npu'length - (i+1)*(N+BG))),
-        std_logic_vector(o_data) => o_data(o_data'high - i*(N+BG)*2 downto o_data'length - (i+1)*(N+BG)*2));
-  end generate;
+--  bn_unit_inst:
+--  for i in 0 to W-1 generate
+--    prod_sum_i : entity work.prod_sum
+--      port map (
+--        ck                       => ck,
+--        rst                      => rst,
+--        en                       => ps_ctrl_wr_pipe,
+--        i_gamma                  => i_gamma,
+--        i_beta                   => i_beta,
+--        i_data                   => signed(int_o_data_npu(int_o_data_npu'high - i*(N+BG) downto int_o_data_npu'length - (i+1)*(N+BG))),
+--        std_logic_vector(o_data) => o_data(o_data'high - i*(N+BG)*2 downto o_data'length - (i+1)*(N+BG)*2));
+--  end generate;
   
 end architecture;

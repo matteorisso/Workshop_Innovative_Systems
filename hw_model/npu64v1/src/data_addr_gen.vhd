@@ -22,11 +22,15 @@ architecture beh of data_addr_gen is
   signal int_data_offs_addr      : unsigned(CLOG2M+CLOG2W-1 downto 0);
   signal int_data_odd_base_addr  : unsigned(CLOG2M+CLOG2W-1 downto 0);
   signal int_data_even_base_addr : unsigned(CLOG2M+CLOG2W-1 downto 0);
-  
+  signal int_data_even_addr      : unsigned(CLOG2M+CLOG2W-1 downto 0);
+  signal int_data_odd_addr       : unsigned(CLOG2M+CLOG2W-1 downto 0);
 begin
+
+  data_even_addr     <= int_data_even_addr;
+  data_odd_addr      <= int_data_odd_addr;
   
-  data_even_addr <= int_data_even_base_addr + int_data_offs_addr;
-  data_odd_addr  <= int_data_odd_base_addr + int_data_offs_addr;
+  int_data_even_addr <= int_data_even_base_addr + int_data_offs_addr;
+  int_data_odd_addr  <= int_data_odd_base_addr + int_data_offs_addr;
 
 
   --// base for even memory loc
@@ -39,7 +43,7 @@ begin
         int_data_even_base_addr <= (others => '0');
       elsif en = '1' then
         if inc_even = '1' then
-          int_data_even_base_addr <= int_data_offs_addr + 1;
+          int_data_even_base_addr <= int_data_even_addr + 1;
         end if;
       end if;
     end if;
@@ -55,13 +59,13 @@ begin
         int_data_odd_base_addr <= (others => '0');
       elsif en = '1' then
         if inc_odd = '1' then
-          int_data_odd_base_addr <= int_data_offs_addr + 1;
+          int_data_odd_base_addr <= int_data_odd_addr + 1;
         end if;
       end if;
     end if;
   end process;
 
-  -- cnt + 1 (offset in base)
+  --// cnt + 1 (offset in base)
   process(ck, rst)
   begin
     if rst = '1' then

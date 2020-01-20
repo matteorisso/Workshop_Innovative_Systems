@@ -18,10 +18,7 @@ foreach src [split [read $f] "\n"] {
 # testbench
 set dir "./tb"
 vlog -sv -work work ${dir}/pkg/globals.pkg.sv
-
-# these are tmporary here - check sv in for loop also 
-# vlog -sv -work work ../src/dp.sv
-
+vlog -sv -work work ${dir}/ctrl_param.sv
 vlog -sv -work work ${dir}/test.sv
 
 # simulate

@@ -8,49 +8,462 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -novopt work.prod_sum 
+# do do/test.tcl 
+# Reading /software/mentor/modelsim_6.5c/modeltech/linux_x86_64/../modelsim.ini
+# "work" maps to directory work. (Default mapping)
+# ../src
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Compiling package globals
+# file16
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity countern
+# -- Compiling architecture beh of countern
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity prod_sum
+# -- Compiling architecture beh of prod_sum
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity pe
+# -- Compiling architecture beh of pe
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity npu
+# -- Compiling architecture rtl of npu
+# -- Loading entity pe
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity data_addr_gen
+# -- Compiling architecture beh of data_addr_gen
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity ckg_ctrl8b
+# -- Compiling architecture rtl of ckg_ctrl8b
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity act_if
+# -- Compiling architecture beh of act_if
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity act_buffer
+# -- Compiling architecture beh of act_buffer
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity fsm
+# -- Compiling architecture behavior of fsm
+# ** Note: (vcom-143) Recognized '1' FSM/s in design unit 'fsm.behavior'.
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity dp
+# -- Compiling architecture rtl of dp
+# -- Loading entity act_buffer
+# -- Loading entity act_if
+# -- Loading entity npu
+# -- Loading entity ckg_ctrl8b
+# -- Loading entity countern
+# -- Loading entity data_addr_gen
+# ./tb
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package globals_sv
+# 
+# Top level modules:
+# 	--none--
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package ctrl_param_sv_unit
+# -- Importing package globals_sv
+# -- Compiling module ctrl_param
+# 
+# Top level modules:
+# 	ctrl_param
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package test_sv_unit
+# -- Importing package globals_sv
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# vsim -novopt work.test 
+# Loading sv_std.std
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.globals_sv
+# Loading work.globals_sv
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.test_sv_unit
+# Loading work.test_sv_unit
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.test
+# Loading work.test
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.ctrl_param_sv_unit
+# Loading work.ctrl_param_sv_unit
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.ctrl_param
+# Loading work.ctrl_param
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading ieee.math_real(body)
 # Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.globals
 # Loading work.globals
-# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.prod_sum(beh)
-# Loading work.prod_sum(beh)
-orce -drive sim:/input_if/ck 1 0, 0 {5 ns} -r 10
-# invalid command name "orce"
-force -drive sim:/input_if/rst 1 0, 0 {5 ns}
-# ** Error: (vish-4008) Object 'sim:/input_if/rst' not found.
+# Loading work.dp(rtl)
+# Loading work.act_buffer(beh)
+# Loading work.act_if(beh)
+# Loading work.npu(rtl)
+# Loading work.pe(beh)
+# Loading work.ckg_ctrl8b(rtl)
+# Loading work.countern(beh)
+# Loading work.data_addr_gen(beh)
+# Loading work.fsm(behavior)
+# ** Warning: (vsim-3017) ./tb/test.sv(315): [TFMPC] - Too few port connections. Expected 8, found 7.
+#         Region: /test/ctrl_param_inst
+# ** Warning: (vsim-3722) ./tb/test.sv(315): [TFMPC] - Missing connection for port 'opcode'.
+# hexadecimal
+# 1
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 588 of file "mem/c1result.mem". (Current address [4704], address range [0:4703])    : ./tb/test.sv(121)
+#    Time: 0 ns  Iteration: 0  Instance: /test
 # 
-force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
-force -drive sim:/force/rst 1 0, 0 {5 ns}
-# ** Error: (vish-4008) Object 'sim:/force/rst' not found.
+# Processing
 # 
-force -drive sim:/prod_sum/rst 1 0, 0 {5 ns}
-run 100 ns
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
-add wave *
-restart -f ; run 100 ns
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
-force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
-restart -f ; run 100 ns
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
-force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
-force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
-force -drive sim:/prod_sum/rst 1 0, 0 {5 ns}
-run 100 ns
-restart -f
-force -drive sim:prod_sum/ck 1 0, 0 {5 ns} -r 10
-force -drive sim:/prod_sum/rst 1 0, 0 {5 ns}
-force -drive sim:prod_sum/i_data 16#00
-force -drive sim:prod_sum/i_gamma 16#25
-force -drive sim:prod_sum/i_beta 16#19
-run 100 ns
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /prod_sum
-force -drive sim:prod_sum/i_data 16#c
-run 100 ns
-quit -f
+# * ERROR:                  826 0c != 00	
+# * Pause sim.
+# Break in Module test at ./tb/test.sv line 245
+# Simulation Breakpoint: Break in Module test at ./tb/test.sv line 245
+# MACRO ./do/test.tcl PAUSED at line 40
+do do/test.tcl
+# Reading /software/mentor/modelsim_6.5c/modeltech/linux_x86_64/../modelsim.ini
+# "work" maps to directory work. (Default mapping)
+# ../src
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Compiling package globals
+# file23
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity countern
+# -- Compiling architecture beh of countern
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity prod_sum
+# -- Compiling architecture beh of prod_sum
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity pe
+# -- Compiling architecture beh of pe
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity npu
+# -- Compiling architecture rtl of npu
+# -- Loading entity pe
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity data_addr_gen
+# -- Compiling architecture beh of data_addr_gen
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity ckg_ctrl8b
+# -- Compiling architecture rtl of ckg_ctrl8b
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity act_if
+# -- Compiling architecture beh of act_if
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity act_buffer
+# -- Compiling architecture beh of act_buffer
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity fsm
+# -- Compiling architecture behavior of fsm
+# ** Note: (vcom-143) Recognized '1' FSM/s in design unit 'fsm.behavior'.
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity dp
+# -- Compiling architecture rtl of dp
+# -- Loading entity act_buffer
+# -- Loading entity act_if
+# -- Loading entity npu
+# -- Loading entity ckg_ctrl8b
+# -- Loading entity countern
+# -- Loading entity data_addr_gen
+# ./tb
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package globals_sv
+# 
+# Top level modules:
+# 	--none--
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package ctrl_param_sv_unit
+# -- Importing package globals_sv
+# -- Compiling module ctrl_param
+# 
+# Top level modules:
+# 	ctrl_param
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package test_sv_unit
+# -- Importing package globals_sv
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# vsim -novopt work.test 
+# Loading sv_std.std
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.globals_sv
+# Loading work.globals_sv
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.test_sv_unit
+# Loading work.test_sv_unit
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.test
+# Loading work.test
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.ctrl_param_sv_unit
+# Loading work.ctrl_param_sv_unit
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.ctrl_param
+# Loading work.ctrl_param
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.globals
+# Loading work.globals
+# Loading work.dp(rtl)
+# Loading work.act_buffer(beh)
+# Loading work.act_if(beh)
+# Loading work.npu(rtl)
+# Loading work.pe(beh)
+# Loading work.ckg_ctrl8b(rtl)
+# Loading work.countern(beh)
+# Loading work.data_addr_gen(beh)
+# Loading work.fsm(behavior)
+# ** Warning: (vsim-3017) ./tb/test.sv(315): [TFMPC] - Too few port connections. Expected 8, found 7.
+#         Region: /test/ctrl_param_inst
+# ** Warning: (vsim-3722) ./tb/test.sv(315): [TFMPC] - Missing connection for port 'opcode'.
+# hexadecimal
+# 1
+# 
+# Processing
+# 
+# 
+# Success.
+# 
+# Break in Module test at ./tb/test.sv line 135
+# Simulation Breakpoint: Break in Module test at ./tb/test.sv line 135
+# MACRO ./do/test.tcl PAUSED at line 40
+do do/test.tcl
+# Reading /software/mentor/modelsim_6.5c/modeltech/linux_x86_64/../modelsim.ini
+# "work" maps to directory work. (Default mapping)
+# ../src
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Compiling package globals
+# file24
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity countern
+# -- Compiling architecture beh of countern
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity prod_sum
+# -- Compiling architecture beh of prod_sum
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity pe
+# -- Compiling architecture beh of pe
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity npu
+# -- Compiling architecture rtl of npu
+# -- Loading entity pe
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity data_addr_gen
+# -- Compiling architecture beh of data_addr_gen
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity ckg_ctrl8b
+# -- Compiling architecture rtl of ckg_ctrl8b
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity act_if
+# -- Compiling architecture beh of act_if
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity act_buffer
+# -- Compiling architecture beh of act_buffer
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity fsm
+# -- Compiling architecture behavior of fsm
+# ** Note: (vcom-143) Recognized '1' FSM/s in design unit 'fsm.behavior'.
+# Model Technology ModelSim SE-64 vcom 6.5c Compiler 2009.08 Aug 27 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package math_real
+# -- Loading package globals
+# -- Compiling entity dp
+# -- Compiling architecture rtl of dp
+# -- Loading entity act_buffer
+# -- Loading entity act_if
+# -- Loading entity npu
+# -- Loading entity ckg_ctrl8b
+# -- Loading entity countern
+# -- Loading entity data_addr_gen
+# ./tb
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package globals_sv
+# 
+# Top level modules:
+# 	--none--
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package ctrl_param_sv_unit
+# -- Importing package globals_sv
+# -- Compiling module ctrl_param
+# 
+# Top level modules:
+# 	ctrl_param
+# Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
+# -- Compiling package test_sv_unit
+# -- Importing package globals_sv
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# vsim -novopt work.test 
+# Loading sv_std.std
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.globals_sv
+# Loading work.globals_sv
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.test_sv_unit
+# Loading work.test_sv_unit
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.test
+# Loading work.test
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.ctrl_param_sv_unit
+# Loading work.ctrl_param_sv_unit
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.ctrl_param
+# Loading work.ctrl_param
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Refreshing /home/lp19.20/Desktop/npu64v1/sim/work.globals
+# Loading work.globals
+# Loading work.dp(rtl)
+# Loading work.act_buffer(beh)
+# Loading work.act_if(beh)
+# Loading work.npu(rtl)
+# Loading work.pe(beh)
+# Loading work.ckg_ctrl8b(rtl)
+# Loading work.countern(beh)
+# Loading work.data_addr_gen(beh)
+# Loading work.fsm(behavior)
+# ** Warning: (vsim-3017) ./tb/test.sv(315): [TFMPC] - Too few port connections. Expected 8, found 7.
+#         Region: /test/ctrl_param_inst
+# ** Warning: (vsim-3722) ./tb/test.sv(315): [TFMPC] - Missing connection for port 'opcode'.
+# hexadecimal
+# 1
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 588 of file "mem/c1result.mem". (Current address [4704], address range [0:4703])    : ./tb/test.sv(121)
+#    Time: 0 ns  Iteration: 0  Instance: /test
+# 
+# Processing
+# 
+# 
+# Success.
+# 
+# Break in Module test at ./tb/test.sv line 135
+# Simulation Breakpoint: Break in Module test at ./tb/test.sv line 135
+# MACRO ./do/test.tcl PAUSED at line 40
