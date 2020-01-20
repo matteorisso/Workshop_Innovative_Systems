@@ -62,7 +62,7 @@ report_clock > clock.rpt
 
 # Verilog netlist
 
-#ungroup -all -flatten
+ungroup -all -flatten
 
 # verilog rules for the names of the internal signals
 change_names -hierarchy -rules verilog

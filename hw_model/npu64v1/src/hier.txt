@@ -1,4 +1,5 @@
 countern.vhd
+weight_addr_gen.vhd
 prod_sum.vhd
 pe.vhd
 npu.vhd
