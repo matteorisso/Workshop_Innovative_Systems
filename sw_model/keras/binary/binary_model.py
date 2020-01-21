@@ -99,20 +99,20 @@ from bn_bc import bn_param_reduction
 bn = [] #batch norm parameters container, each element is one layer
  
 #collect scale, offset, mean and variance for each layer
-#
+
 for k in range(1, len(W), 5):
-#    
+    
     bn1_scale = W[k] #gamma
     bn1_offset = W[k+1] #beta
     bn1_mean = W[k+2] #mu
     bn1_var = W[k+3] #sigma
-#    
+    
     bn_param = [] #batch norm layer parameters
-#    
+    
     # reduction
     for i in range(bn1_mean.shape[-1]):
         bn_param.append(bn_param_reduction(bn1_scale[i], bn1_offset[i], bn1_mean[i], bn1_var[i]))
-#    
+    
 #    #add reduced param
     bn.append(bn_param)
 
@@ -129,7 +129,7 @@ with tf.Session() as sess:
         if len(W[it].shape) > 1: #skip bn parameters 
             
             Wq[it] = sess.run(cf.qop(tf.convert_to_tensor(W[it]))) #ternary
-        
+            
             bn_param_cnt = 0 #
             
         else:

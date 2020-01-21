@@ -27,26 +27,29 @@ architecture beh of pe is
 
   type input_rf_t is array (0 to 5) of unsigned(N-1 downto 0);
 
-  signal int_q_reg_v : input_rf_t;
-  signal int_q_reg_h : input_rf_t;
-  signal int_data    : unsigned(N-1 downto 0);
-  signal int_d_acc   : signed(N+BG-1 downto 0);
-  signal int_q_acc   : signed(N+BG-1 downto 0);
+  signal int_q_reg_v  : input_rf_t;
+  signal int_q_reg_h  : input_rf_t;
+  signal int_q_weight : std_logic_vector(1 downto 0);
+  signal int_data     : unsigned(N-1 downto 0);
+  signal int_d_acc    : signed(N+BG-1 downto 0);
+  signal int_q_acc    : signed(N+BG-1 downto 0);
   
 begin
   --------------------------------------------------------------------
   -- // pe_input
   --------------------------------------------------------------------
-  
   input_reg:
   process(ck, rst)
   begin
     if rst = '1' then
-      int_q_reg_h <= (others => (others => '0'));
-      int_q_reg_v <= (others => (others => '0'));
+      int_q_reg_h  <= (others => (others => '0'));
+      int_q_reg_v  <= (others => (others => '0'));
+      int_q_weight <= (others => '0');
       
     elsif rising_edge(ck) then
       if en = '1' then
+        int_q_weight <= i_weight;
+
         if ldh_v_n = '1' then
           int_q_reg_h(to_integer(i_ifmap_ptr)) <= i_data_v;
           int_q_reg_v(to_integer(i_ifmap_ptr)) <= i_data_v;
@@ -62,14 +65,15 @@ begin
   --------------------------------------------------------------------
   -- // pe_core
   --------------------------------------------------------------------
+  int_data_mask :
+  for i in 0 to int_data'high generate
+    int_data(i) <= int_q_reg_h(to_integer(i_ifmap_ptr))(i) and int_q_weight(1);
+  end generate;
 
-  add_mux :
-    int_data <= int_q_reg_h(to_integer(i_ifmap_ptr)) when i_weight(1) = '1' else (others => '0');
-  
   add_sub :
-  process(int_data, int_q_acc, i_weight(0))
+  process(int_data, int_q_acc, int_q_weight(0))
   begin
-    if i_weight(0) = '1' then
+    if int_q_weight(0) = '1' then
       int_d_acc <= int_q_acc - signed('0'&int_data);
     else
       int_d_acc <= int_q_acc + signed('0'&int_data);
@@ -79,7 +83,6 @@ begin
   --------------------------------------------------------------------
   -- // pe_output 
   --------------------------------------------------------------------
-
   acc:
   process(ck, rst)
   begin
@@ -94,9 +97,9 @@ begin
       else
         if ldh_v_n = '0' then
           if ckg = '0' then
-            if i_weight(1) = '1' then
+            if int_q_weight(1) = '1' then
               int_q_acc <= int_d_acc;
-              
+
             end if;
           end if;
         end if;

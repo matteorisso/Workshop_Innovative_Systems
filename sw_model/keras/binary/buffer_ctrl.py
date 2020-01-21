@@ -22,42 +22,45 @@ def twoscomp(x, nbits, nfrac, hexa=False):
     #repr : force sign ext for 2C
     rep = lambda x, hexa: (bin(x & int("1"*nbits, 2))[2:], hex(x & int("1"*nbits, 2))[2:])[hexa] 
     
+    radix = (1, 4)[hexa==True]
+    
     w = rep(qop(x, m, m_frac), hexa)
     wn = rep(~qop(x, m, m_frac) + qop(1/m, m, m), hexa) #2's complement
     
-    return (w, wn)[w[0]=='-']
+    return (w, wn)[w[0]=='-'].zfill(math.ceil(nbits/radix))
 
 #Activations memory map
-def act_memory_map(img, nbits, nfrac, npu_dim, filename, filename2, index=False):
+def act_memory_map(img, nbits, nfrac, npu_dim, filename, BXY=False, index=False):
   
     x, y, b = img.shape
     
-    with open(filename,'w+') as fe, open(filename2,'w+') as fo:           
+    if BXY==True:
+        bb, b = b, 1 #swap loop range
+    else:
+        bb, b = 1, b
+        
+    with open(filename+'even.mem','w+') as fe, open(filename+'odd.mem','w+') as fo:           
+        for kk in range(bb): 
             for i in range(math.ceil(x/(2*npu_dim))):    
                 for j in range(y):
                     for k in range(b): 
                         
-                        dw = np.zeros(2*npu_dim)   #doubleword
+                        dw = np.zeros(2*npu_dim)# doubleword
                         
                         lo_idx_x = i*2*npu_dim  
                         hi_idx_x = lo_idx_x + 2*npu_dim              
                         
+                        channel = (k, kk)[BXY==True] #swap loop index
+                       
                         # pad remainder memory word 
-                        dw[:len(img[j, lo_idx_x : hi_idx_x, k])] = img[j, lo_idx_x:hi_idx_x, k]
+                        dw[:len(img[j, lo_idx_x : hi_idx_x, channel])] = img[j, lo_idx_x:hi_idx_x, channel]
                         
                         if not index:
                             dw = [ twoscomp(val, nbits, nfrac, hexa=True) for val in dw ]
                             
                         fe.write('{}\n'.format(''.join(map(str, dw[ : npu_dim]))))
-                        fo.write('{}\n'.format(''.join(map(str, dw[npu_dim : ]))))                         
-
-#                # pad remainder memory locations
-#                if img.shape[0]//npu_dim < npu_dim:
-#                    for pad in range(img.shape[0]%npu_dim):    
-#                        dword = np.zeros(2*npu_dim)
-#                        dword = [ twoscomp(val, nbits, nfrac, hexa=True) for val in dword ]
-#                        fe.write('{}\n'.format(''.join(map(str, dword[ : npu_dim]))))
-#                        fo.write('{}\n'.format(''.join(map(str, dword[npu_dim : ]))))                         
+                        fo.write('{}\n'.format(''.join(map(str, dw[npu_dim : ]))))      
+  
 #Correlation function
 def convolution(image, kernel):
     
@@ -89,30 +92,6 @@ def weight_table(w):
         k = '0'       
     return k
 
-#Results memory map
-def res_memory_map(res, nbits, nfrac, npu_dim, filename, index=False):
-    
-    x, y, z = res.shape
-    
-    with open(filename, 'w+') as f:
-        for k in range(z):   
-            for i in range(math.ceil(x/(npu_dim))):
-                for j in range(y):
-                    
-                    dw = np.zeros(npu_dim) #doubleword 
-                    
-                    #slices index
-                    lo_idx_x = i * npu_dim  #def low index h-mode
-                    hi_idx_x = lo_idx_x + npu_dim #def high index h-mode
-                    
-                    #pad remainder memory word 
-                    dw[ : len(res[j, lo_idx_x : hi_idx_x, k])] = res[j, lo_idx_x : hi_idx_x, k] 
-                    
-                    if not index:
-                        dw = [ twoscomp(val, nbits, nfrac, hexa=True) for val in dw ]
-                        
-                    f.write('{}\n'.format(' '.join(map(str, dw)))) 
-                    
                     
 if __name__ == '__main__':
     
@@ -150,9 +129,8 @@ if __name__ == '__main__':
                         
     for map_,i in zip(maps,range(len(maps))):
         
-        filename = '{}/tb_even_map_idx{}.mem'.format(memdir,i)
-        filename2 = '{}/tb_odd_map_idx{}.mem'.format(memdir,i)    
-        act_memory_map(map_, None, None, 8, filename, filename2, index=True)
+        filename = '{}/tb_map_idx{}'.format(memdir,i)
+        act_memory_map(map_, None, None, 8, filename, index=True)
     
     ''' get golden model
     '''
@@ -174,14 +152,15 @@ if __name__ == '__main__':
     kernelc1 = weights.item(0) #C1  kernel
     img = np.load('./saved_model/tnn_img.npy', allow_pickle=True).item()['img'].reshape((32, 32, 1))
     
-    act_memory_map(img, nbits, nfrac, npu_dim, '{}/evenc1act.mem'.format(memdir),'{}/oddc1act.mem'.format(memdir))
+    act_memory_map(img, nbits, nfrac, npu_dim, '{}/c1act'.format(memdir))
     
     nbits = 8
     nfrac = 2
     
     # create results file
     res_c1 = convolution(img, kernelc1)
-    res_memory_map(res_c1, 8, 2, 8, memdir+'/c1result.mem')
+    #res_memory_map(res_c1, 8, 2, 8, memdir+'/c1result.mem')
+    act_memory_map(res_c1, nbits, nfrac, npu_dim, '{}/c1res'.format(memdir), BXY=True)
     
     # create weights file
     with open(memdir+'/c1kernel.mem', 'w+') as f:
@@ -201,13 +180,14 @@ if __name__ == '__main__':
     kernelc2 = weights.item(5) #C2 kernel
     c2_in = activations[ [ layer for layer in activations.keys() if layer.startswith('s1') ][0] ]
     
-    act_memory_map(c2_in, nbits, nfrac, npu_dim, '{}/evenc2act.mem'.format(memdir),'{}/oddc2act.mem'.format(memdir))
+    act_memory_map(c2_in, nbits, nfrac, npu_dim, '{}/c2act'.format(memdir))
     
     nbits = 8
     nfrac = 2
     # create results file
     res_c2 = convolution(c2_in, kernelc2)
     res_memory_map(res_c2, 8, 2, 8, memdir+'/c2result.mem')
+    act_memory_map(res_c2, nbits, nfrac, npu_dim, '{}/c2res'.format(memdir), BXY=True)
     
     # create weights file
     with open(memdir+'/c2kernel.mem', 'w+') as f:
@@ -219,7 +199,7 @@ if __name__ == '__main__':
                         f.write(weight_table(kernelc2[i,j,h,k])+'\n')
 
 #    '''
-#    Batch normalization
+#    Batch normalization test
 #    '''
 #    nbits = 3
 #    nfrac = 2
@@ -228,21 +208,32 @@ if __name__ == '__main__':
 #    m_frac = pow(2, nfrac)
 #    
 #    quantize = lambda x, m, m_frac: np.clip(np.round(x*m_frac), -m, m-1)/m_frac
-#    relu = lambda x : x if x >= 0 else 0
+##    relu = lambda x : x if x >= 0 else 0
 #    
 #    bn1_a = weights.item(1)[-1]
 #    bn1_b = weights.item(2)[-1]
 #    
-#    bn = np.zeros(resc1.shape)
+#    bn = np.zeros(res_c1.shape)
 #    bnq = np.zeros(bn.shape)
 #    
-#    for i in range(resc1.shape[0]):
-#        for j in range(resc1.shape[1]):
-#            bn[i,j] = resc1[i,j]*bn1_a + bn1_b
-#            
-#            bnq[i,j] = relu(quantize(bn[i,j], m, m_frac))
-            
-            
-
-    
+#    y, x, z = res_c1.shape
+#    
+#    for i in range(y):
+#        for j in range(x):
+#            bn[i,j] = res_c1[i,j]*bn1_a + bn1_b
+#            bn[i,j] = quantize(bn[i,j], pow(2,16), pow(2,8))
+#            #bnq[i,j] = relu(quantize(bn[i,j], m, m_frac))
+#    
+#    #i_gamma            
+#    print(twoscomp(bn1_a,8,6,hexa=True))  
+#    #i_beta
+#    print(twoscomp(bn1_b,8,6,hexa=True))  
+#    #i_data
+#    print(twoscomp(res_c1[16,16,0],8,2,hexa=True))  
+#    
+#    #o_data
+#    print(twoscomp(bn[16,16,0],16,8,hexa=True))
+#    print(twoscomp(bn[16,16,0],16,8))
+#
+#    
   

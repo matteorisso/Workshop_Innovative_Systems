@@ -3,74 +3,74 @@ Loading db file '/software/synopsys/syn_current_64.11/libraries/syn/standard.sld
   Loading link library 'NangateOpenCellLibrary'
   Loading link library 'gtech'
 Running PRESTO HDLC
-Warning:  ..//src/dp.vhd:72: The initial value for signal 'int_i_data_acc' is not supported for synthesis. Presto ignores it.  (ELAB-130)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[63] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[62] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[61] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[60] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[59] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[58] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[57] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[56] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[55] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[54] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[53] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[52] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[51] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[50] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[49] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[48] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[47] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[46] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[45] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[44] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[43] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[42] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[41] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[40] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[39] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[38] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[37] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[36] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[35] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[34] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[33] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[32] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[31] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[30] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[29] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[28] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[27] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[26] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[25] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[24] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[23] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[22] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[21] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[20] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[19] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[18] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[17] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[16] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[15] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[14] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[13] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[12] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[11] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[10] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[9] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[8] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[7] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[6] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[5] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[4] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[3] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[2] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[1] of cell npu_inst' connected to ground. (ELAB-294)
-Warning:  ..//src/dp.vhd:210: Floating pin 'i_data_acc[0] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:75: The initial value for signal 'int_i_data_acc' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[63] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[62] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[61] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[60] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[59] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[58] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[57] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[56] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[55] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[54] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[53] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[52] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[51] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[50] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[49] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[48] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[47] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[46] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[45] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[44] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[43] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[42] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[41] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[40] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[39] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[38] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[37] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[36] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[35] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[34] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[33] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[32] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[31] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[30] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[29] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[28] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[27] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[26] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[25] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[24] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[23] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[22] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[21] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[20] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[19] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[18] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[17] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[16] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[15] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[14] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[13] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[12] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[11] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[10] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[9] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[8] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[7] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[6] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[5] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[4] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[3] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[2] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[1] of cell npu_inst' connected to ground. (ELAB-294)
+Warning:  ..//src/dp.vhd:217: Floating pin 'i_data_acc[0] of cell npu_inst' connected to ground. (ELAB-294)
 
 Inferred memory devices in process
-	in routine dp line 140 in file
+	in routine dp line 147 in file
 		'..//src/dp.vhd'.
 =================================================================================
 |     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -80,7 +80,7 @@ Inferred memory devices in process
 =================================================================================
 
 Inferred memory devices in process
-	in routine dp line 184 in file
+	in routine dp line 191 in file
 		'..//src/dp.vhd'.
 ================================================================================
 |    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -89,19 +89,18 @@ Inferred memory devices in process
 ================================================================================
 
 Inferred memory devices in process
-	in routine dp line 195 in file
+	in routine dp line 202 in file
 		'..//src/dp.vhd'.
-================================================================================
-|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-================================================================================
-| ps_ctrl_en_hmode_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
-|  ps_ctrl_en_npu_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
-| ps_ctrl_ldh_v_n_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
-| ps_ctrl_wr_pipe_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
-================================================================================
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| ps_ctrl_en_npu_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| ps_ctrl_ldh_v_n_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| ps_ctrl_wr_pipe_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
 
 Inferred memory devices in process
-	in routine dp line 226 in file
+	in routine dp line 233 in file
 		'..//src/dp.vhd'.
 =================================================================================
 |     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -111,13 +110,32 @@ Inferred memory devices in process
 =================================================================================
 
 Inferred memory devices in process
-	in routine dp line 291 in file
+	in routine dp line 298 in file
 		'..//src/dp.vhd'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
 |    int_q_tc_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
+
+Inferred memory devices in process
+	in routine dp line 406 in file
+		'..//src/dp.vhd'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| int_o_data_ev_odd_n_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine dp line 418 in file
+		'..//src/dp.vhd'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| int_o_data_odd_addr_reg  | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+| int_o_data_even_addr_reg | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+====================================================================================
 Presto compilation completed successfully.
 Elaborated 1 design.
 Current design is now 'dp'.
@@ -275,10 +293,11 @@ Inferred memory devices in process
 ===============================================================================
 |   int_q_reg_h_reg   | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
 |   int_q_reg_v_reg   | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  int_q_weight_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine pe line 83 in file
+	in routine pe line 86 in file
 		'..//src/pe.vhd'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |

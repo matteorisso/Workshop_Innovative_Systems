@@ -1,5 +1,4 @@
 import globals_sv::*;
-
   
 module test;
 
@@ -15,7 +14,8 @@ module test;
     ----------------------------------------------- */
 
    wire [1:0] k;
-   wire [(N+BG)*W-1:0] results;
+   wire [(N+BG)*W-1:0] o_data;
+   
    reg [(N+BG)-1:0]    res[0:W-1]; // util
    
    /* -----------------------------------------------
@@ -41,6 +41,7 @@ module test;
    /* -----------------------------------------------
    ctrl param. inst.
     ----------------------------------------------- */
+   
    reg 		       c1_c2_n;
 
    reg [CLOG2W-1:0]    arv_npu;
@@ -55,18 +56,26 @@ module test;
     ----------------------------------------------- */
 
    wire 	       i_data_even_odd_n;
-   
+   wire 	       o_data_even_odd_n;
+   	          	       
    wire [CLOG2M+CLOG2W-1:0] i_data_even_addr;
    wire [CLOG2M+CLOG2W-1:0] i_data_odd_addr;
-   wire [31:0] i_weight_addr;
+
+   wire [CLOG2M+CLOG2W-1:0] o_data_even_addr;
+   wire [CLOG2M+CLOG2W-1:0] o_data_odd_addr;
+   
+   wire [31:0] 		    i_weight_addr;
    
    /* -----------------------------------------------
     test memory array
     ------------------------------------------------- */
    
-   reg [4*W-1:0] 	  test_mem_even[0:1023];//[0:CL_MEM_WIDTH-1];
-   reg [4*W-1:0] 	  test_mem_odd[0:1023];//CL_MEM_WIDTH-1];
-   reg [(N+BG)-1:0] 	  test_res[0:4703];
+   reg [4*W-1:0] 	  test_mem_even[0:1023];
+   reg [4*W-1:0] 	  test_mem_odd[0:1023];
+   
+   reg [(N+BG)*W-1:0] 	  test_res_even[0:1024*16-1];   
+   reg [(N+BG)*W-1:0] 	  test_res_odd[0:1024*16-1];   
+
    reg [1:0] 		  test_k[0:NB_TILEB*NB_TILEC*KK-1];
 
    
@@ -98,31 +107,35 @@ module test;
 	rst 	    = 1'b1;
 	start 	    = 1'b0;
 	
-	//Initialize test mem		
+	//Reset act mem		
 	for(i=0; i<$size(test_mem_even); i++)
 	  begin
 	     test_mem_even[i] = 0;
 	     test_mem_odd[i]  = 0;	     
 	  end
 	
-	//Initialize res mem		
-	for(i=0; i<$size(test_res); i++)
-	     test_res[i] = 0;
+	//Reset res mem		
+	for(i=0; i<$size(test_res_even); i++)
+	  begin
+	     test_res_even[i] = 0;
+	     test_res_odd[i]  = 0;	     
+	  end	
 	
-	//Initialize kernel buffer
+	//Reset kernel mem
 	for(i=0; i<$size(test_k); i++)
 	     test_k[i] = 0;
 
-	//Layer test mem
-		
-	$readmemh("mem/evenc2act.mem", test_mem_even);
-	$readmemh("mem/oddc2act.mem", test_mem_odd);		
-        $readmemh("mem/c2kernel.mem", test_k);
-	$readmemh("mem/c2result.mem", test_res);	  
-	
+	//Initialize test mem
+	// 		
+	$readmemh("mem/c1acteven.mem", test_mem_even);
+	$readmemh("mem/c1actodd.mem", test_mem_odd);		
+        $readmemh("mem/c1kernel.mem", test_k);
+	$readmemh("mem/c1reseven.mem", test_res_even);
+	$readmemh("mem/c1resodd.mem", test_res_odd);		
+        
 	// Test
 	
-	c1_c2_n = 1'b1; // select conv layer
+	c1_c2_n = 1'b0; // select conv layer
 	
 	$display("\nProcessing\n");
 	  
@@ -160,7 +173,8 @@ module test;
    
    reg [4*W-1:0] 	  i_data_h;
    reg [4*W-1:0] 	  i_data_v;
-   
+   reg [(N+BG)*W-1:0] 	  res_data;
+    
    always_comb // xbar mem. if.
      begin
 	i_data_h <= i_data_even_odd_n == 1'b0 ? test_mem_odd[int'(i_data_odd_addr)]   : test_mem_even[int'(i_data_even_addr)];
@@ -195,6 +209,17 @@ module test;
    assign i_actv[N*W-(N*6)-1 -: N] = i_data_v[4*W-1-(4*6) -: 4]; 
    assign i_actv[N*W-(N*7)-1 -: N] = i_data_v[4*W-1-(4*7) -: 4];
    
+    /* -----------------------------------------------
+    golden model for Scoreboard
+    ----------------------------------------------- */
+   
+   always @(posedge ck, posedge rst) // mux result mem. if.
+     begin
+	if (rst == 1'b1)
+	  res_data <= 64'd0;
+	else
+	  res_data <=  o_data_even_odd_n == 1'b1 ? test_res_odd[int'(o_data_odd_addr)] : test_res_even[int'(o_data_even_addr)];
+     end
    
    /* -----------------------------------------------
     Scoreboard
@@ -202,33 +227,36 @@ module test;
    
    // def data_valid flag 
    
-   reg 		  ps_ctrl_wr_pipe;
-   
+   reg 		  ps_ctrl_wr_pipe; 
+    		   		  
    always @(posedge ck, posedge rst)
      begin
 	if (rst == 1'b1)
-	  ps_ctrl_wr_pipe  <= 1'b0;
-	else	     
-	  ps_ctrl_wr_pipe  <= ctrl_wr_pipe;	  
+	  begin
+	     ps_ctrl_wr_pipe  <= 1'b0;	     
+	  end
+	else	
+	  begin
+	     ps_ctrl_wr_pipe  <= ctrl_wr_pipe;
+	end
      end // always @ (posedge ck, posedge rst)
-   
+
+   // procedure
    localparam RES_HIGH = (N+BG)*W-1;
-   integer addr = 0;
     
    always @(posedge ck)
      begin
 	if (ps_ctrl_wr_pipe == 1'b1)
 	  begin
-	     for(i=0; i < W; i++)
-	       begin
-		  res[i] = results[RES_HIGH - i*(N+BG) -: (N+BG)];
-		  if (test_res[addr] != res[i])
-		    begin		       
- 		       $display("* ERROR: %t %h != %h\t", $time, test_res[addr], res[i]);
+	     for(i=0; i < W; i++)	     
+	       begin		  
+		  res[i] = o_data[RES_HIGH - i*(N+BG) -: (N+BG)];
+		  if (res_data[RES_HIGH - i*(N+BG) -: (N+BG)] != res[i])		  
+		    begin		       		       
+		       $display("* ERROR: %t %h != %h\t", $time, res_data[RES_HIGH - i*(N+BG) -: (N+BG)], res[i]);		       
 		       $display("* Pause sim.");
 		       $stop;
-		    end		  
-		  addr += 1;
+		    end 
 	       end // for (i=0; i < W; i++)
 	  end // if (ps_ctrl_wr_pipe == 1'b1)
      end
@@ -263,11 +291,14 @@ module test;
 	      .arv_tile(arv_tile),
 	      .arv_ifmaps(arv_ifmaps),
 	      .arv_ofmaps(arv_ofmaps),
-	      .i_weight_addr(i_weight_addr),
+	      .i_weight_addr(i_weight_addr),	      
+	      .i_data_ev_odd_n(i_data_even_odd_n),	      
 	      .i_data_even_addr(i_data_even_addr),
 	      .i_data_odd_addr(i_data_odd_addr),
-	      .i_data_ev_odd_n(i_data_even_odd_n),
-	      .o_data(results));
+	      .o_data_ev_odd_n(o_data_even_odd_n),
+	      .o_data_even_addr(o_data_even_addr),
+	      .o_data_odd_addr(o_data_odd_addr),
+	      .o_data(o_data));
    fsm 
      fsm_inst (
 	       .ck(ck),

@@ -54,17 +54,16 @@ def _process(train :tuple, test :tuple, n_classes):
     x_test  = normalize(x_test, axis=-1)
     
     
-#   # ternary cnn     
+#   # quantized cnn     
     nbits = 3
-    
     m = pow(2, nbits-1)
     x_test = np.clip(np.round(x_test*m), -m, m-1)/m
     x_train = np.clip(np.round(x_train*m), -m, m-1)/m
-    
-    # binary
+
+    # binary-net
 #    x_test = np.sign(x_test - 0.1) # sign(x) ret 0 if x == 0, add small bias to map -1
 #    x_train = np.sign(x_train - 0.1)
-    
+#    
     # Transform labels to one-hot encoding for categorical_crossentropy loss function
     y_train = np_utils.to_categorical(y_train, n_classes)
     y_test  = np_utils.to_categorical(y_test,  n_classes)

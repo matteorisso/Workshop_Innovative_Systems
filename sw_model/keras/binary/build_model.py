@@ -54,7 +54,7 @@ def build_model(model:str, full=False, sequential=True):
             Act = lambda name : Activation(binary_tanh, name=name)
         else:    
             def quantized_relu(x):
-                return quantize_op(x, nb=4)
+                return quantize_op(x, nb=3)
             
             Act = lambda name : Activation(quantized_relu, name=name)
             

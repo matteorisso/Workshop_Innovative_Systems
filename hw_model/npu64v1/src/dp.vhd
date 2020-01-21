@@ -33,9 +33,12 @@ entity dp is
     s_tc_ifmaps      : out std_logic;
     s_tc_ofmaps      : out std_logic;
     i_weight_addr    : out unsigned(31 downto 0);
+    i_data_ev_odd_n  : out std_logic;
     i_data_even_addr : out unsigned(CLOG2M+CLOG2W-1 downto 0);
     i_data_odd_addr  : out unsigned(CLOG2M+CLOG2W-1 downto 0);
-    i_data_ev_odd_n  : out std_logic;
+    o_data_ev_odd_n  : out std_logic;
+    o_data_even_addr : out unsigned(CLOG2M+CLOG2W-1 downto 0);
+    o_data_odd_addr  : out unsigned(CLOG2M+CLOG2W-1 downto 0);
     o_data           : out std_logic_vector((N+BG)*W-1 downto 0)  --//*2 is tmp
                                                                   --: after bn
     );
@@ -44,79 +47,83 @@ end entity;
 
 architecture rtl of dp is
   --// ctrl pipe stage
-  signal ps_ctrl_en_npu      : std_logic;
-  signal ps_ctrl_ldh_v_n     : std_logic;
-  signal ps_ctrl_wr_pipe     : std_logic;  -- #
-  signal ps_ctrl_en_hmode    : std_logic;
+  signal ps_ctrl_en_npu       : std_logic;
+  signal ps_ctrl_ldh_v_n      : std_logic;
+  signal ps_ctrl_wr_pipe      : std_logic;  -- #
+  signal ps_ctrl_en_hmode     : std_logic;
   --// activation queue
-  signal int_i_data_if1      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_i_data_if2      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_i_data_if3      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_i_data_if4      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_i_data_if5      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_i_data_if6      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_i_data_if7      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_i_data_if8      : std_logic_vector(N*(K-1)-1 downto 0);
-  signal int_sel_column      : unsigned(CLOG2K-1 downto 0);
-  signal int_i_data_h_npu1   : signed(N-1 downto 0);
-  signal int_i_data_h_npu2   : signed(N-1 downto 0);
-  signal int_i_data_h_npu3   : signed(N-1 downto 0);
-  signal int_i_data_h_npu4   : signed(N-1 downto 0);
-  signal int_i_data_h_npu5   : signed(N-1 downto 0);
-  signal int_i_data_h_npu6   : signed(N-1 downto 0);
-  signal int_i_data_h_npu7   : signed(N-1 downto 0);
-  signal int_i_data_h_npu8   : signed(N-1 downto 0);
+  signal int_i_data_if1       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_i_data_if2       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_i_data_if3       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_i_data_if4       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_i_data_if5       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_i_data_if6       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_i_data_if7       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_i_data_if8       : std_logic_vector(N*(K-1)-1 downto 0);
+  signal int_sel_column       : unsigned(CLOG2K-1 downto 0);
+  signal int_i_data_h_npu1    : signed(N-1 downto 0);
+  signal int_i_data_h_npu2    : signed(N-1 downto 0);
+  signal int_i_data_h_npu3    : signed(N-1 downto 0);
+  signal int_i_data_h_npu4    : signed(N-1 downto 0);
+  signal int_i_data_h_npu5    : signed(N-1 downto 0);
+  signal int_i_data_h_npu6    : signed(N-1 downto 0);
+  signal int_i_data_h_npu7    : signed(N-1 downto 0);
+  signal int_i_data_h_npu8    : signed(N-1 downto 0);
   --// npu data
-  signal int_i_data_h_npu    : std_logic_vector(N*W-1 downto 0);
-  signal int_i_data_v_npu    : std_logic_vector(N*W-1 downto 0);
-  signal int_i_data_acc      : std_logic_vector((N+BG)*W-1 downto 0) := (others => '0');
-  signal int_o_data_npu      : std_logic_vector((N+BG)*W-1 downto 0);
+  signal int_i_data_h_npu     : std_logic_vector(N*W-1 downto 0);
+  signal int_i_data_v_npu     : std_logic_vector(N*W-1 downto 0);
+  signal int_i_data_acc       : std_logic_vector((N+BG)*W-1 downto 0) := (others => '0');
+  signal int_o_data_npu       : std_logic_vector((N+BG)*W-1 downto 0);
   --// kernel counters
-  signal int_en_hmode        : std_logic;
-  signal int_en_vmode        : std_logic;
-  signal int_hmode_cnt       : unsigned(CLOG2K-1 downto 0);
-  signal int_vmode_cnt       : unsigned(CLOG2K-1 downto 0);
-  signal ps_int_hmode_cnt    : unsigned(CLOG2K-1 downto 0);
+  signal int_en_hmode         : std_logic;
+  signal int_en_vmode         : std_logic;
+  signal int_hmode_cnt        : unsigned(CLOG2K-1 downto 0);
+  signal int_vmode_cnt        : unsigned(CLOG2K-1 downto 0);
+  signal ps_int_hmode_cnt     : unsigned(CLOG2K-1 downto 0);
   --// result pipe counter
-  signal int_s_tc_res        : std_logic;
-  signal int_arv_res         : unsigned(CLOG2W-1 downto 0);
+  signal int_s_tc_res         : std_logic;
+  signal int_arv_res          : unsigned(CLOG2W-1 downto 0);
   --// tile counters
-  signal int_en_npu_ptr      : std_logic;
-  signal int_en_tilev_ptr    : std_logic;
-  signal int_en_tileh_ptr    : std_logic;
-  signal int_en_ifmaps_ptr   : std_logic;
-  signal int_en_ofmaps_ptr   : std_logic;
-  signal int_tc_npu_ptr      : std_logic;
-  signal int_tc_tilev        : std_logic;
-  signal int_tc_tileh        : std_logic;
-  signal int_tc_ofmaps       : std_logic;
-  signal int_tc_ifmaps       : std_logic;
-  signal int_arv_tilev       : unsigned(CLOG2T-1 downto 0);
-  signal int_arv_tileh       : unsigned(CLOG2T-1 downto 0);
-  signal int_npu_ptr         : unsigned(CLOG2W-1 downto 0);
-  signal int_tilev_ptr       : unsigned(CLOG2T-1 downto 0);
-  signal int_tileh_ptr       : unsigned(CLOG2T-1 downto 0);
-  signal int_ofmaps_ptr      : unsigned(CLOG2C-1 downto 0);
-  signal int_ifmaps_ptr      : unsigned(CLOG2B-1 downto 0);
-  signal ps_int_ifmaps_ptr   : unsigned(CLOG2B-1 downto 0);
+  signal int_en_npu_ptr       : std_logic;
+  signal int_en_tilev_ptr     : std_logic;
+  signal int_en_tileh_ptr     : std_logic;
+  signal int_en_ifmaps_ptr    : std_logic;
+  signal int_en_ofmaps_ptr    : std_logic;
+  signal int_tc_npu_ptr       : std_logic;
+  signal int_tc_tilev         : std_logic;
+  signal int_tc_tileh         : std_logic;
+  signal int_tc_ofmaps        : std_logic;
+  signal int_tc_ifmaps        : std_logic;
+  signal int_arv_tilev        : unsigned(CLOG2T-1 downto 0);
+  signal int_arv_tileh        : unsigned(CLOG2T-1 downto 0);
+  signal int_npu_ptr          : unsigned(CLOG2W-1 downto 0);
+  signal int_tilev_ptr        : unsigned(CLOG2T-1 downto 0);
+  signal int_tileh_ptr        : unsigned(CLOG2T-1 downto 0);
+  signal int_ofmaps_ptr       : unsigned(CLOG2C-1 downto 0);
+  signal int_ifmaps_ptr       : unsigned(CLOG2B-1 downto 0);
+  signal ps_int_ifmaps_ptr    : unsigned(CLOG2B-1 downto 0);
   --// tile status  
-  signal int_d_tc            : std_logic_vector(2 downto 0);
-  signal int_q_tc            : std_logic_vector(2 downto 0);
-  signal int_s_tc_tilev      : std_logic;
-  signal int_s_tc_tileh      : std_logic;
-  signal int_s_tc_ifmaps     : std_logic;
-  signal int_s_tc_ofmaps     : std_logic;
+  signal int_d_tc             : std_logic_vector(2 downto 0);
+  signal int_q_tc             : std_logic_vector(2 downto 0);
+  signal int_s_tc_tilev       : std_logic;
+  signal int_s_tc_tileh       : std_logic;
+  signal int_s_tc_ifmaps      : std_logic;
+  signal int_s_tc_ofmaps      : std_logic;
   --// clk gating ctrl 
-  signal ps_int_s_tc_tilev   : std_logic;
-  signal ps_int_s_tc_tileh   : std_logic;
-  signal int_ckg_rmask       : std_logic_vector(0 to 7);
-  signal int_ckg_cmask       : std_logic_vector(0 to 7);
+  signal ps_int_s_tc_tilev    : std_logic;
+  signal ps_int_s_tc_tileh    : std_logic;
+  signal int_ckg_rmask        : std_logic_vector(0 to 7);
+  signal int_ckg_cmask        : std_logic_vector(0 to 7);
   --// i_data address ctrl
-  signal int_inc_i_data_even : std_logic;
-  signal int_inc_i_data_odd  : std_logic;
-  signal int_rst_i_data_addr : std_logic;
+  signal int_inc_i_data_even  : std_logic;
+  signal int_inc_i_data_odd   : std_logic;
+  signal int_rst_i_data_addr  : std_logic;
   --// i_weight address ctrl
-  signal int_inc_i_w_addr    : std_logic;
+  signal int_inc_i_w_addr     : std_logic;
+  --// o_data address 
+  signal int_o_data_ev_odd_n  : std_logic;
+  signal int_o_data_even_addr : unsigned(CLOG2M+CLOG2W-1 downto 0);
+  signal int_o_data_odd_addr  : unsigned(CLOG2M+CLOG2W-1 downto 0);
   
 begin
   act_buffer_inst : entity work.act_buffer
@@ -395,9 +402,39 @@ begin
         data_even_addr => i_data_even_addr,
         data_odd_addr  => i_data_odd_addr);
 
---//  o_data_addr_gen_inst:
+  --// sample ev_odd_n for output data
+  process(ck, rst)
+  begin
+    if rst = '1' then
+      int_o_data_ev_odd_n <= '0';
+    elsif rising_edge(ck) then
+      if int_s_tc_res = '1' then
+        int_o_data_ev_odd_n <= int_tileh_ptr(0);
+      end if;
+    end if;
+  end process;
 
---//  i_w addr gen inst
+  --// cnt + 1 o_data_addr
+  process(ck, rst)
+  begin
+    if rst = '1' then
+      int_o_data_even_addr <= (others => '0');
+      int_o_data_odd_addr <= (others => '0');
+    elsif rising_edge(ck) then
+      if ctrl_wr_pipe = '1' then
+        if int_o_data_ev_odd_n = '1' then
+          int_o_data_odd_addr <= int_o_data_odd_addr + 1;
+        else
+          int_o_data_even_addr <= int_o_data_even_addr + 1;
+        end if;
+      end if;
+    end if;
+  end process;
+
+  o_data_even_addr <= int_o_data_even_addr;
+  o_data_odd_addr  <= int_o_data_odd_addr;
+  o_data_ev_odd_n  <= int_o_data_ev_odd_n;
+
   int_inc_i_w_addr <= int_s_tc_tilev and int_s_tc_tileh and int_s_tc_res;
 
   i_weight_addr_gen_inst :
@@ -406,22 +443,22 @@ begin
         ck       => ck,
         rst      => rst,
         sync_clr => int_s_tc_res,
-        en       => ps_ctrl_en_hmode,
+        en       => ctrl_en_hmode,
         inc      => int_inc_i_w_addr,
         o_addr   => i_weight_addr);
 
---// batch norm unit (multiplier-adder)
---  bn_unit_inst:
---  for i in 0 to W-1 generate
---    prod_sum_i : entity work.prod_sum
---      port map (
---        ck                       => ck,
---        rst                      => rst,
---        en                       => ps_ctrl_wr_pipe,
---        i_gamma                  => i_gamma,
---        i_beta                   => i_beta,
---        i_data                   => signed(int_o_data_npu(int_o_data_npu'high - i*(N+BG) downto int_o_data_npu'length - (i+1)*(N+BG))),
---        std_logic_vector(o_data) => o_data(o_data'high - i*(N+BG)*2 downto o_data'length - (i+1)*(N+BG)*2));
---  end generate;
+--vect_mpy_add_inst:
+--for i in 0 to W-1 generate
+--  prod_sum_i : entity work.prod_sum
+--    port map (
+--      ck                       => ck,
+--      rst                      => rst,
+--      en                       => ps_ctrl_wr_pipe,
+--      i_gamma                  => i_gamma,
+--      i_beta                   => i_beta,
+--      i_data                   => signed(int_o_data_npu(int_o_data_npu'high - i*(N+BG) downto int_o_data_npu'length - (i+1)*(N+BG))),
+--      std_logic_vector(o_data) => o_data(o_data'high - i*(N+BG)*2 downto o_data'length - (i+1)*(N+BG)*2),
+--      o_data_val               => int_o_data_val);
+--end generate;
 
 end architecture;
