@@ -223,44 +223,6 @@ begin
           o_data   => int_o_data_p(int_o_data_p'high - i*(N+2) downto int_o_data_p'length - (i+1)*(N+2)));
   end generate;
 
-  --p_unit_0 :
-  --  entity work.avgp_unit
-  --    port map (
-  --      ck       => ck,
-  --      rst      => rst,
-  --      en_p_acc => ps_ctrl_en_p,
-  --      i_data_1 => int_o_data_relu(int_o_data_relu'high - 0*N downto int_o_data_relu'length - N*(0+1)),
-  --      i_data_2 => int_o_data_relu(int_o_data_relu'high - (0+1)*N downto int_o_data_relu'length - N*(0+2)),
-  --      o_data   => int_o_data_p(int_o_data_p'high - 0*(N+2) downto int_o_data_p'length - (0+1)*(N+2)));
-  --p_unit_1 :
-  --  entity work.avgp_unit
-  --    port map (
-  --      ck       => ck,
-  --      rst      => rst,
-  --      en_p_acc => ps_ctrl_en_p,
-  --      i_data_1 => int_o_data_relu(int_o_data_relu'high - 2*N downto int_o_data_relu'length - N*(2+1)),
-  --      i_data_2 => int_o_data_relu(int_o_data_relu'high - (2+1)*N downto int_o_data_relu'length - N*(2+2)),
-  --      o_data   => int_o_data_p(int_o_data_p'high - 1*(N+2) downto int_o_data_p'length - (1+1)*(N+2)));
-  --p_unit_2 :
-  --  entity work.avgp_unit
-  --    port map (
-  --      ck       => ck,
-  --      rst      => rst,
-  --      en_p_acc => ps_ctrl_en_p,
-  --      i_data_1 => int_o_data_relu(int_o_data_relu'high - 4*N downto int_o_data_relu'length - N*(4+1)),
-  --      i_data_2 => int_o_data_relu(int_o_data_relu'high - (4+1)*N downto int_o_data_relu'length - N*(4+2)),
-  --      o_data   => int_o_data_p(int_o_data_p'high - 2*(N+2) downto int_o_data_p'length - (2+1)*(N+2)));
-
-  --p_unit_3 :
-  --  entity work.avgp_unit
-  --    port map (
-  --      ck       => ck,
-  --      rst      => rst,
-  --      en_p_acc => ps_ctrl_en_p,
-  --      i_data_1 => int_o_data_relu(int_o_data_relu'high - 6*N downto int_o_data_relu'length - N*(6+1)),
-  --      i_data_2 => int_o_data_relu(int_o_data_relu'high - (6+1)*N downto int_o_data_relu'length - N*(6+2)),
-  --      o_data   => int_o_data_p(int_o_data_p'high - 3*(N+2) downto int_o_data_p'length - (3+1)*(N+2)));
-
   --// quantize pooling res
   quantize_p_inst:
   for i in 0 to (W/2)-1 generate
