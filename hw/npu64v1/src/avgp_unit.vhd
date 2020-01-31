@@ -36,23 +36,3 @@ begin
   end process;
   
 end architecture;
-
---  signal int_o_data : unsigned(N+2-1 downto 0);
---  signal int_psum   : unsigned(N+1-1 downto 0);
---begin
---  o_data   <= int_o_data;
---  int_psum <= unsigned('0'&i_data_1) + unsigned('0'&i_data_2);
-
---  process(ck, rst)
---  begin
---    if rst = '1' then
---      int_o_data <= (others => '0');
---    elsif rising_edge(ck) then
---      if en_p_acc = '1' then
---        int_o_data <= int_o_data + unsigned('0'&int_psum);
---      else                              --//clr
---        int_o_data <= (others => '0');
---      end if;
---    end if;
---  end process;  
---end architecture;
