@@ -4,18 +4,18 @@ Created on Sun Sep  1 15:58:21 2019
 
 @author: Antonio
 """
+
 import os
 import math
 import numpy as np
  
-#Two's complement conversion from decimal 
+# Two's complement conversion from decimal 
 def twoscomp(x, nbits, nfrac, hexa=False):
       
     m = 2**(nbits-1)
     m_frac = 2**(nfrac)
    
-    mask = int("1"*nbits, 2) #ensure fixed wordlength (lsd)
-    
+    mask = int("1"*nbits, 2) #ensure fixed wordlength (least-significand digits)
     # repr : force sign ext for 2C
     rep = lambda x, hexa: (bin(x & mask)[2:], hex(x & mask)[2:])[hexa] 
     
@@ -216,6 +216,8 @@ if __name__ == '__main__':
     act_memory_map(s2_in, 3, 2, npu_dim, '{}/c2res'.format(memdir))
     s2_out = activations[ [ layer for layer in activations.keys() if layer.startswith('s2') ][0] ]
     act_memory_map(s2_out, 3, 2, npu_dim, '{}/c3act'.format(memdir))
+    
+    
 #    '''
 #    Batch normalization test
 #    '''

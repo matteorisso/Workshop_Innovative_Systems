@@ -7,7 +7,6 @@ import numpy as np
 import os
 
 def _evaluate(model: Model, nodes_to_evaluate, x, y=None):
-
     if not model._is_compiled:
         if model.name in ['vgg16', 'vgg19', 'inception_v3', 'inception_resnet_v2', 'mobilenet_v2', 'mobilenetv2']:
             print('Transfer learning detected. Model will be compiled with ("categorical_crossentropy", "adam").')
@@ -23,11 +22,9 @@ def _evaluate(model: Model, nodes_to_evaluate, x, y=None):
                   'then just compile your model like that:')
             print('model.compile(loss="mse", optimizer="adam")')
             raise Exception('Compilation of the model required.')
-
     symb_inputs = (model._feed_inputs + model._feed_targets + model._feed_sample_weights)
     f = K.function(symb_inputs, nodes_to_evaluate)
     x_, y_, sample_weight_ = model._standardize_user_data(x, y)
-
     return f(x_ + y_ + sample_weight_)
 
 
@@ -41,18 +38,13 @@ def get_activations(model, x, layer_name=None):
     """
     nodes = [layer.output for layer in model.layers if layer.name == layer_name or layer_name is None][1:]
     # we process the placeholders later (Inputs node in Keras). Because there's a bug in Tensorflow.
-
     input_layer_outputs, layer_outputs = [], []
     [input_layer_outputs.append(node) if 'input_' in node.name else layer_outputs.append(node) for node in nodes]
-
     activations = _evaluate(model, layer_outputs, x, y=None)
-
     activations_dict = dict(zip([output.name for output in layer_outputs], activations))
     activations_inputs_dict = dict(zip([output.name for output in input_layer_outputs], x))
-
     result = activations_inputs_dict.copy()
     result.update(activations_dict)
-
     return result
 
 
