@@ -1,0 +1,12 @@
+countern.vhd
+addr_gen.vhd
+pe.vhd
+act_if.vhd
+act_buffer.vhd
+wrap_act_buffer.vhd
+relu.vhd
+quantize_p.vhd
+npu.vhd
+avgp_unit.vhd
+fsm.vhd
+dp.vhd
