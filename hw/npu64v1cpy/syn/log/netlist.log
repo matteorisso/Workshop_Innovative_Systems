@@ -1,0 +1,14 @@
+Loading db file '/home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db'
+Loading db file '/software/synopsys/syn_current_64.11/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.11/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Loading verilog file '/home/lp19.20/Desktop/npu64v1cpy/netlist/dp.v'
+Running DC verilog reader
+Performing 'read' command.
+Compiling source file /home/lp19.20/Desktop/npu64v1cpy/netlist/dp.v
+Verilog netlist reader completed successfully.
+Current design is now '/home/lp19.20/Desktop/npu64v1cpy/netlist/dp.db:dp'
+Loaded 1 design.
+Current design is 'dp'.
+dp

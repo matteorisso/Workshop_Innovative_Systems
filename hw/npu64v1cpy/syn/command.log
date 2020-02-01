@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version F-2011.09-SP3 for amd64 -- Jan 26, 2012
-#@ # Date:   Sat Feb  1 05:00:22 2020
+#@ # Date:   Sat Feb  1 21:19:25 2020
 #@ # Run by: lp19.20@localhost.localdomain
 #@ 
 
@@ -4781,10 +4781,13 @@ source -echo -verbose /home/lp19.20/Desktop/npu64v1cpy/syn/scripts/saif.tcl
 #@ 
 #@ file delete -force -- work
 #@ 
-#@ read_verilog -netlist ${NETLIST_DIR}/${DESIGN}.v
-#@ read_saif -input ${SAIF_DIR}/${DESIGN}.saif -instance ${TB}/${DUT} -unit ns -scale 1
+#@ file mkdir rpt
+#@ file mkdir log
+#@ 
+#@ read_verilog -netlist ${NETLIST_DIR}/${DESIGN}.v > log/netlist.log
+#@ read_saif -input ${SAIF_DIR}/${DESIGN}.saif -instance ${TB}/${DUT} -unit ns -scale 1 > log/saif.log
 #@ create_clock -name MY_CLK -period ${CLK} ck
 #@ 
-#@ report_power > saif-power.rpt
+#@ report_power > rpt/saif-power.rpt
 #@ 
 #@ quit

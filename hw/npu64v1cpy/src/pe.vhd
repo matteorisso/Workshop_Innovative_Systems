@@ -50,9 +50,9 @@ begin
           int_q_reg_v(to_integer(i_ifmap_ptr)) <= i_data_v;
         elsif ldh_v_n = '0' then
           int_q_reg_h(to_integer(i_ifmap_ptr)) <= i_data_h;
-        end if;  -- ld_v
-      end if;  -- en
-    end if;  -- rising_edge(ck)    
+        end if;  --// ld_v
+      end if;  --// en
+    end if;  --// rising_edge(ck)    
   end process;
 
   int_data_mask :
@@ -81,18 +81,18 @@ begin
       else
         if ldh_v_n = '0' then
           if ckg = '0' then
-            if int_q_weight(1) = '1' then
+            if int_q_weight(1) = '1' then 
               int_q_acc <= int_d_acc;
             end if;
           end if;
         end if;
-      end if;  -- wr_pipe/en
-    end if;  -- rising_edge(ck)
+      end if;  --// wr_pipe/en
+    end if;  --// rising_edge(ck)
   end process;
 
   --// output freeze
   res_pin : for i in 0 to o_data_res'high generate
-    o_data_res(i) <= wr_pipe and int_q_acc(i);  --//for DGB force '1'
+    o_data_res(i) <= wr_pipe and int_q_acc(i);  --// for DGB force '1'
   end generate;
 
   v_reg_pin : for i in 0 to o_data_v'high generate

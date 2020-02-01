@@ -1,10 +1,15 @@
-pwd 
-
-file delete -force -- work
-
 set DIR "../"
 set DESIGN "dp" 
 set CLK 4
+
+pwd 
+
+file delete -force -- work
+file delete -force -- rpt
+file delete -force -- log
+
+file mkdir rpt
+file mkdir log
 
 # Analyze source files
 
@@ -22,7 +27,7 @@ set power_cg_flatten true
 
 # Elaborate design
 
-elaborate -lib work ${DESIGN} > ./elaborate.txt 
+elaborate -lib work ${DESIGN} > log/elaborate.log 
 
 uniquify 
 link
@@ -45,21 +50,20 @@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] ck]
 set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 
 
-# output load : BUF_X4 gate capacitance 
+# output load 
 set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 set_load $OLOAD [all_outputs]
 
 # Compile 
 
-compile -gate_clock
-#compile_ultra ; optimize_registers -- DC : REGISTERS NOT MOVED -- VSIM-SDF-3444 FAILURE
+compile -gate_clock > log/compile.log
 
 # Reports
 
-report_timing > timing.rpt
-report_area > area.rpt
-report_power > power.rpt
-report_clock > clock.rpt
+report_timing > rpt/timing.rpt
+report_area > rpt/area.rpt
+report_power > rpt/power.rpt
+report_clock > rpt/clock.rpt
 
 # Verilog netlist
 
@@ -77,4 +81,4 @@ write -f verilog -output ${DIR}/netlist/${DESIGN}.v
 # save i/o constraints
 write_sdc ${DIR}/netlist/${DESIGN}.sdc
 
-#quit
+quit

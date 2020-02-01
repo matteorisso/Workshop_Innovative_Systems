@@ -64,6 +64,8 @@ package globals_sv;
    localparam CLOG2T  = $clog2(int'(NB_TILE));
    localparam CLOG2B  = $clog2(int'(NB_TILEB));
    localparam CLOG2C  = $clog2(int'(NB_TILEC));
+
+   localparam CLOG2L  = NB_TILE > NB_TILEC ? $clog2(int'(NB_TILE)) : $clog2(int'(NB_TILEC)); 
    localparam CLOG2M  = $clog2(int'(CL_MEM_WIDTH));
    localparam CLOG2MW = $clog2(int'(KK*NB_TILEC));
      

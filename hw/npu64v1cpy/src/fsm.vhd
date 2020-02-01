@@ -7,14 +7,14 @@ entity fsm is
     ck            : in  std_logic;
     rst           : in  std_logic;
     start         : in  std_logic;
-    s_tc_npu_ptr  : in  std_logic;
     s_tc_hmode    : in  std_logic;
     s_tc_vmode    : in  std_logic;
     s_tc_res      : in  std_logic;
-    s_tc_tilev    : in  std_logic;
-    s_tc_tileh    : in  std_logic;
-    s_tc_ifmaps   : in  std_logic;
-    s_tc_ofmaps   : in  std_logic;
+    s_tc_L0       : in  std_logic; --// ifmaps ptr
+    s_tc_L1       : in  std_logic; --// npu ptr
+    s_tc_L2       : in  std_logic; --// tile-v ptr
+    s_tc_L3       : in  std_logic; --// tile-h ptr
+    s_tc_L4       : in  std_logic; --// ofmaps ptr
     ctrl_en_npu   : out std_logic;
     ctrl_en_hmode : out std_logic;
     ctrl_en_vmode : out std_logic;
@@ -54,17 +54,16 @@ begin
   cc1 : process (
     ps,
     start,
-    s_tc_npu_ptr,
+    s_tc_L1,
     s_tc_hmode,
     s_tc_vmode,
     s_tc_res,
-    s_tc_tilev,
-    s_tc_tileh,
-    s_tc_ifmaps,
-    s_tc_ofmaps)
+    s_tc_L2,
+    s_tc_L3,
+    s_tc_L0,
+    s_tc_L4)
   begin
     case (ps) is
-
       when IDLE =>
         if start = '1' then
           ns <= FILL;
@@ -73,7 +72,7 @@ begin
         end if;
         
       when HMODE =>
-        if (s_tc_hmode and s_tc_ifmaps) = '1' then
+        if (s_tc_hmode and s_tc_L0) = '1' then
           if s_tc_vmode = '1' then
             ns <= PS1;
           else
@@ -84,7 +83,7 @@ begin
         end if;
         
       when VMODE =>
-        if s_tc_ifmaps = '1' then
+        if s_tc_L0 = '1' then
           ns <= HMODE;
         else
           ns <= VMODE;
@@ -95,7 +94,7 @@ begin
         
       when PS2 =>
         if s_tc_res = '1' then
-          if (s_tc_tilev and s_tc_tileh and s_tc_ofmaps) = '1' then
+          if (s_tc_L2 and s_tc_L3 and s_tc_L4) = '1' then
             ns <= EOC;
           else
             ns <= FILL;
@@ -108,7 +107,7 @@ begin
         ns <= PS2;
 
       when FILL =>
-        if (s_tc_npu_ptr and s_tc_ifmaps) = '1' then
+        if (s_tc_L1 and s_tc_L0) = '1' then
           ns <= HMODE;
         else
           ns <= FILL;
@@ -132,7 +131,6 @@ begin
     done          <= '0';
 
     case(ps) is
-      
       when HMODE =>
     ctrl_en_npu   <= '1';
     ctrl_en_hmode <= '1';
@@ -166,7 +164,6 @@ begin
 
   end case;
 end process;
-
 
 end architecture;
 

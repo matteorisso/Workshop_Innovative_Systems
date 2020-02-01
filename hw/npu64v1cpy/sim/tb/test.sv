@@ -1,5 +1,5 @@
 import globals_sv::*;
-  
+
 module test;
 
    parameter CLK = 4;
@@ -28,14 +28,14 @@ module test;
       ----------------------------------------------- */
    
    reg 		       start;
-   wire 	       s_tc_npu_ptr;
    wire 	       s_tc_hmode;
    wire 	       s_tc_vmode;
-   wire 	       s_tc_res;
-   wire 	       s_tc_tilev;
-   wire 	       s_tc_tileh;
-   wire 	       s_tc_ifmaps;
-   wire 	       s_tc_ofmaps;
+   wire 	       s_tc_res;   
+   wire 	       s_tc_L1;
+   wire 	       s_tc_L2;
+   wire 	       s_tc_L3;
+   wire 	       s_tc_L0;
+   wire 	       s_tc_L4;
    wire 	       ctrl_en_npu;
    wire 	       ctrl_en_hmode;
    wire 	       ctrl_en_vmode;
@@ -50,12 +50,13 @@ module test;
     ----------------------------------------------- */
    
    reg 		       c1_c2_n;
-   reg [CLOG2K-1:0]    arv_k;
-   reg [CLOG2W-1:0]    arv_ckg;
-   reg [CLOG2T-1:0]    arv_i_tile;
-   reg [CLOG2T-1:0]    arv_o_tile;
-   reg [CLOG2B-1:0]    arv_ifmaps;
-   reg [CLOG2C-1:0]    arv_ofmaps;
+   reg [CLOG2K-1:0]    arv_KSI;
+   reg [CLOG2W-1:0]    arv_CKG;
+   reg [CLOG2L-1:0]    arv_L0;
+   reg [CLOG2L-1:0]    arv_L1;
+   reg [CLOG2L-1:0]    arv_L2;
+   reg [CLOG2L-1:0]    arv_L3;
+   reg [CLOG2L-1:0]    arv_L4;
 
    /* -----------------------------------------------
     address gen. inst.
@@ -132,15 +133,15 @@ module test;
 
 	//Initialize test mem
 	// 		
-	$readmemh("mem2/c2acteven.mem", test_mem_even);
-	$readmemh("mem2/c2actodd.mem", test_mem_odd);		
-        $readmemh("mem2/c2kernel.mem", test_k);
-	$readmemh("mem2/c3acteven.mem", test_res_even);
-	$readmemh("mem2/c3actodd.mem", test_res_odd);		
+	$readmemh("mem2/c1acteven.mem", test_mem_even);
+	$readmemh("mem2/c1actodd.mem", test_mem_odd);		
+        $readmemh("mem2/c1kernel.mem", test_k);
+	$readmemh("mem2/c2acteven.mem", test_res_even);
+	$readmemh("mem2/c2actodd.mem", test_res_odd);		
         
 	// Test
 	
-	c1_c2_n = 1'b1; // select conv layer
+	c1_c2_n = 1'b0; // select conv layer
 	
 	$display("\nProcessing\n");
 	  
@@ -150,11 +151,25 @@ module test;
 
 	@(posedge done)
 	  begin
-	     $display("\nSuccess.\n");
+	     $display("\nFirst layer done");	     
+	     $display("Processing second layer\n");
 	     
-	     #(2*CLK) $stop; //$finish
-	  end
+	     c1_c2_n = 1'b1; // select conv layer
 	
+	     $readmemh("mem2/c2acteven.mem", test_mem_even);
+	     $readmemh("mem2/c2actodd.mem", test_mem_odd);		
+             $readmemh("mem2/c2kernel.mem", test_k);
+	     $readmemh("mem2/c3acteven.mem", test_res_even);
+	     $readmemh("mem2/c3actodd.mem", test_res_odd);	     
+	  end // @ (posedge done)
+	
+	@(posedge ck) #(2*CLK) start = ~start;
+	
+	@(posedge done) 
+	  begin	     	     
+	     $display("\nSuccess.\n");
+	     #(2*CLK) $stop;
+	  end	 	
      end // initial begin
 
    
@@ -165,12 +180,13 @@ module test;
    ctrl_param 
      ctrl_param_inst (
 		      .c1_c2_n(c1_c2_n),
-		      .arv_ksize(arv_k),
-		      .arv_ckgate(arv_ckg),
-		      .arv_i_tile(arv_i_tile),
-		      .arv_o_tile(arv_o_tile),
-		      .arv_ifmaps(arv_ifmaps),
-		      .arv_ofmaps(arv_ofmaps));
+		      .arv_KSI(arv_KSI),
+		      .arv_CKG(arv_CKG),
+		      .arv_L0(arv_L0),
+		      .arv_L1(arv_L1),
+		      .arv_L2(arv_L2),
+		      .arv_L3(arv_L3),
+		      .arv_L4(arv_L4));
    
    /* -----------------------------------------------
     input stimuli
@@ -216,6 +232,7 @@ module test;
     /* -----------------------------------------------
     golden model for Scoreboard
     ----------------------------------------------- */
+   
    reg [4*W-1:0]  o_data_r;
 
    always_comb// mux result mem. if.
@@ -227,11 +244,6 @@ module test;
    assign o_actr[N*(W/2)-(N*1)-1 -: N] = o_data_wrh_l_n == 1'b0 ? o_data_r[4*W-1-(4*1) -: 4] : o_data_r[4*W-1-(4*5) -: 4]; 
    assign o_actr[N*(W/2)-(N*2)-1 -: N] = o_data_wrh_l_n == 1'b0 ? o_data_r[4*W-1-(4*2) -: 4] : o_data_r[4*W-1-(4*6) -: 4];  
    assign o_actr[N*(W/2)-(N*3)-1 -: N] = o_data_wrh_l_n == 1'b0 ? o_data_r[4*W-1-(4*3) -: 4] : o_data_r[4*W-1-(4*7) -: 4];
-   
-//   assign o_actr[N*W-(N*4)-1 -: N] = o_data_r[4*W-1-(4*4) -: 4]; 
-//   assign o_actr[N*W-(N*5)-1 -: N] = o_data_r[4*W-1-(4*5) -: 4];
-//   assign o_actr[N*W-(N*6)-1 -: N] = o_data_r[4*W-1-(4*6) -: 4]; 
-//   assign o_actr[N*W-(N*7)-1 -: N] = o_data_r[4*W-1-(4*7) -: 4];
    
    /* -----------------------------------------------
     Scoreboard
@@ -274,21 +286,22 @@ module test;
 	      .ctrl_en_hmode(ctrl_en_hmode),
 	      .ctrl_en_vmode(ctrl_en_vmode),
 	      .ctrl_en_p(ctrl_en_p),
-	      .ctrl_wr_mem(ctrl_wr_mem),
-	      .s_tc_npu_ptr(s_tc_npu_ptr),
+	      .ctrl_wr_mem(ctrl_wr_mem),	      
 	      .s_tc_hmode(s_tc_hmode),
 	      .s_tc_vmode(s_tc_vmode),
-	      .s_tc_res(s_tc_res),
-	      .s_tc_tilev(s_tc_tilev),
-	      .s_tc_tileh(s_tc_tileh),
-	      .s_tc_ifmaps(s_tc_ifmaps),
-	      .s_tc_ofmaps(s_tc_ofmaps),	   
-	      .arv_ckg(arv_ckg),
-	      .arv_k(arv_k),
-	      .arv_i_tile(arv_i_tile),
-	      .arv_o_tile(arv_o_tile),
-	      .arv_ifmaps(arv_ifmaps),
-	      .arv_ofmaps(arv_ofmaps),
+	      .s_tc_res(s_tc_res),	      
+	      .s_tc_L0(s_tc_L0),
+	      .s_tc_L1(s_tc_L1),
+	      .s_tc_L2(s_tc_L2),
+	      .s_tc_L3(s_tc_L3),
+	      .s_tc_L4(s_tc_L4),	   
+	      .arv_CKG(arv_CKG),
+	      .arv_KSI(arv_KSI),
+	      .arv_L0(arv_L0),
+	      .arv_L1(arv_L1),
+	      .arv_L2(arv_L2),
+	      .arv_L3(arv_L3),
+	      .arv_L4(arv_L4),
 	      .i_weight_addr(i_weight_addr),	      
 	      .i_data_ev_odd_n(i_data_even_odd_n),	      
 	      .i_data_even_addr(i_data_even_addr),
@@ -304,14 +317,14 @@ module test;
 	       .ck(ck),
 	       .rst(rst),
 	       .start(start),
-	       .s_tc_npu_ptr(s_tc_npu_ptr),
 	       .s_tc_hmode(s_tc_hmode),
 	       .s_tc_vmode(s_tc_vmode),
-	       .s_tc_res(s_tc_res),
-	       .s_tc_tilev(s_tc_tilev),
-	       .s_tc_tileh(s_tc_tileh),
-	       .s_tc_ifmaps(s_tc_ifmaps),
-	       .s_tc_ofmaps(s_tc_ofmaps),
+	       .s_tc_res(s_tc_res),	       
+	       .s_tc_L0(s_tc_L0),	       
+	       .s_tc_L1(s_tc_L1),
+	       .s_tc_L2(s_tc_L2),
+	       .s_tc_L3(s_tc_L3),
+	       .s_tc_L4(s_tc_L4),
 	       .ctrl_en_hmode(ctrl_en_hmode),
 	       .ctrl_en_vmode(ctrl_en_vmode),
 	       .ctrl_en_npu(ctrl_en_npu),
