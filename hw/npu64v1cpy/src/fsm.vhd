@@ -10,17 +10,18 @@ entity fsm is
     s_tc_hmode    : in  std_logic;
     s_tc_vmode    : in  std_logic;
     s_tc_res      : in  std_logic;
-    s_tc_L0       : in  std_logic; --// ifmaps ptr
-    s_tc_L1       : in  std_logic; --// npu ptr
-    s_tc_L2       : in  std_logic; --// tile-v ptr
-    s_tc_L3       : in  std_logic; --// tile-h ptr
-    s_tc_L4       : in  std_logic; --// ofmaps ptr
+    s_tc_L0       : in  std_logic;      --// ifmaps ptr
+    s_tc_L1       : in  std_logic;      --// npu ptr
+    s_tc_L2       : in  std_logic;      --// tile-v ptr
+    s_tc_L3       : in  std_logic;      --// tile-h ptr
+    s_tc_L4       : in  std_logic;      --// ofmaps ptr
     ctrl_en_npu   : out std_logic;
     ctrl_en_hmode : out std_logic;
     ctrl_en_vmode : out std_logic;
     ctrl_ldh_v_n  : out std_logic;
     ctrl_wr_pipe  : out std_logic;
     ctrl_en_p     : out std_logic;
+    ctrl_en_st    : out std_logic;
     ctrl_wr_mem   : out std_logic;
     done          : out std_logic
     );
@@ -35,6 +36,7 @@ architecture beh of fsm is
     PS1,
     PS2,
     RES_PS1,
+    RES,
     FILL,
     EOC);
 
@@ -94,25 +96,35 @@ begin
         
       when PS2 =>
         if s_tc_res = '1' then
-          if (s_tc_L2 and s_tc_L3 and s_tc_L4) = '1' then
-            ns <= EOC;
-          else
-            ns <= FILL;
-          end if;
+          ns <= RES;
         else
-          ns <= PS2;
+          ns <= RES_PS1;
         end if;
         
       when RES_PS1 =>
         ns <= PS2;
 
+      when RES =>
+        if (s_tc_L2 and s_tc_L3 and s_tc_L4) = '1' then
+          ns <= EOC;
+        else
+          ns <= FILL;
+        end if;
+        
       when FILL =>
         if (s_tc_L1 and s_tc_L0) = '1' then
           ns <= HMODE;
         else
           ns <= FILL;
         end if;
-
+        
+      when EOC =>
+        if start = '1' then
+          ns <= FILL;
+        else
+          ns <= IDLE;
+        end if;
+        
       when others => ns <= IDLE;
 
     end case;
@@ -128,6 +140,7 @@ begin
     ctrl_wr_pipe  <= '0';
     ctrl_en_p     <= '0';
     ctrl_wr_mem   <= '0';
+    ctrl_en_st    <= '0';
     done          <= '0';
 
     case(ps) is
@@ -152,6 +165,11 @@ begin
     ctrl_wr_pipe <= '1';
     ctrl_wr_mem  <= '1';
     ctrl_en_p    <= '1';
+
+    when RES =>
+    ctrl_wr_mem <= '1';
+    ctrl_en_p   <= '1';
+    ctrl_en_st  <= '1';
 
     when FILL =>
     ctrl_en_npu  <= '1';

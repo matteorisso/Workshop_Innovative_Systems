@@ -14,14 +14,15 @@ module test;
     ----------------------------------------------- */
 
    wire [1:0] i_c_weight;
+   reg [127:0] i_fc_weight = 128'h0;
    
    wire       o_data_wr;
+   wire       o_data_wrh;
    wire       o_data_wrh_l_n;
 
-   wire [N*W-1:0] o_data_npu; // dbg
+   //wire [N*W-1:0] o_data_npu; // dbg
    
-   wire [N*(W/2)-1:0] o_data;  
-   reg [N-1:0] 	  o_data_act[0:(W/2)-1]; // util
+   wire [N*W-1:0] o_data;  
    
    /* -----------------------------------------------
    fsm inst.
@@ -42,6 +43,7 @@ module test;
    wire 	       ctrl_ldh_v_n;
    wire 	       ctrl_wr_pipe;
    wire 	       ctrl_en_p;
+   wire 	       ctrl_en_st;
    wire 	       ctrl_wr_mem;
    wire 	       done;
    
@@ -49,7 +51,7 @@ module test;
    ctrl param. inst.
     ----------------------------------------------- */
    
-   reg 		       c1_c2_n;
+   reg [2:0] 	       opcode;
    reg [CLOG2K-1:0]    arv_KSI;
    reg [CLOG2W-1:0]    arv_CKG;
    reg [CLOG2L-1:0]    arv_L0;
@@ -77,12 +79,11 @@ module test;
     test memory array
     ------------------------------------------------- */
    
-   reg [4*W-1:0] 	  test_mem_even[0:1023];
-   reg [4*W-1:0] 	  test_mem_odd[0:1023];
+   reg [4*W-1:0] 	  test_mem_even[0:1024*6-1];
+   reg [4*W-1:0] 	  test_mem_odd[0:1024*6-1];
    reg [4*W-1:0] 	  test_res_even[0:1024*16-1];   
    reg [4*W-1:0] 	  test_res_odd[0:1024*16-1];   
-   reg [1:0] 		  test_k[0:NB_TILEB*NB_TILEC*KK-1];
-
+   reg [1:0] 		  test_k[0:NB_IFMAPS*NB_OFMAPS*KK-1];
    
    /*
     ==============================================
@@ -100,10 +101,9 @@ module test;
 	forever #(CLK/2) ck = ~ck;
      end
 
-
    integer i; // loop index
    integer mem_width = $size(test_mem_even); // my mem size
- 
+   integer fd; // variable for file descriptor handle
    /* -----------------------------------------------
     procedural timing block - test
     ----------------------------------------------- */
@@ -132,43 +132,50 @@ module test;
 	     test_k[i] = 0;
 
 	//Initialize test mem
-	// 		
-	$readmemh("mem2/c1acteven.mem", test_mem_even);
-	$readmemh("mem2/c1actodd.mem", test_mem_odd);		
-        $readmemh("mem2/c1kernel.mem", test_k);
-	$readmemh("mem2/c2acteven.mem", test_res_even);
-	$readmemh("mem2/c2actodd.mem", test_res_odd);		
+       
+        $readmemh("mem/c1kernel.mem",  test_k);
+	$readmemh("mem/c1acteven.mem", test_mem_even);
+	$readmemh("mem/c1actodd.mem",  test_mem_odd);
+	$readmemh("mem/c2acteven.mem", test_res_even);
+	$readmemh("mem/c2actodd.mem",  test_res_odd);		
         
 	// Test
 	
-	c1_c2_n = 1'b0; // select conv layer
+	opcode = 3'b000; // select conv layer
 	
 	$display("\nProcessing\n");
-	  
+	
+	fd = $fopen("results","w");
+   
 	@(posedge ck) rst    = ~rst;
 	@(posedge ck) start  = ~start; // start fsm 
 	@(posedge ck) start  = ~start; // only one convolution
-
+  
 	@(posedge done)
+
 	  begin
 	     $display("\nFirst layer done");	     
 	     $display("Processing second layer\n");
 	     
-	     c1_c2_n = 1'b1; // select conv layer
+	     opcode = 3'b001; // select conv layer
 	
-	     $readmemh("mem2/c2acteven.mem", test_mem_even);
-	     $readmemh("mem2/c2actodd.mem", test_mem_odd);		
-             $readmemh("mem2/c2kernel.mem", test_k);
-	     $readmemh("mem2/c3acteven.mem", test_res_even);
-	     $readmemh("mem2/c3actodd.mem", test_res_odd);	     
+	     $readmemh("mem/c2acteven.mem", test_mem_even);
+	     $readmemh("mem/c2actodd.mem", test_mem_odd);		
+             $readmemh("mem/c2kernel.mem", test_k);
+	     $readmemh("mem/c3acteven.mem", test_res_even);
+	     $readmemh("mem/c3actodd.mem", test_res_odd);	     
 	  end // @ (posedge done)
+	
+	rst = 1'b1;
+	#CLK rst =1'b0 ;
 	
 	@(posedge ck) #(2*CLK) start = ~start;
 	
 	@(posedge done) 
 	  begin	     	     
 	     $display("\nSuccess.\n");
-	     #(2*CLK) $stop;
+	     $fclose(fd);	     
+	     $stop;
 	  end	 	
      end // initial begin
 
@@ -177,16 +184,16 @@ module test;
     layer config
     ----------------------------------------------- */
    
-   ctrl_param 
-     ctrl_param_inst (
-		      .c1_c2_n(c1_c2_n),
-		      .arv_KSI(arv_KSI),
-		      .arv_CKG(arv_CKG),
-		      .arv_L0(arv_L0),
-		      .arv_L1(arv_L1),
-		      .arv_L2(arv_L2),
-		      .arv_L3(arv_L3),
-		      .arv_L4(arv_L4));
+   cfg 
+     cfg_inst (
+	       .opcode(opcode),
+	       .arv_KSI(arv_KSI),
+	       .arv_CKG(arv_CKG),
+	       .arv_L0(arv_L0),
+	       .arv_L1(arv_L1),
+	       .arv_L2(arv_L2),
+	       .arv_L3(arv_L3),
+	       .arv_L4(arv_L4));
    
    /* -----------------------------------------------
     input stimuli
@@ -235,37 +242,58 @@ module test;
    
    reg [4*W-1:0]  o_data_r;
 
-   always_comb// mux result mem. if.
+   always @(posedge ck)// mux result mem. if.
      o_data_r <=  o_data_even_odd_n == 1'b1 ? test_res_odd[int'(o_data_odd_addr)] : test_res_even[int'(o_data_even_addr)];
+  
+   wire [N*W-1:0] o_actr;
+  
+   assign o_actr[N*W-(N*0)-1 -: N] =  o_data_r[4*W-1-(4*0) -: 4];
+   assign o_actr[N*W-(N*1)-1 -: N] =  o_data_r[4*W-1-(4*1) -: 4];
+   assign o_actr[N*W-(N*2)-1 -: N] =  o_data_r[4*W-1-(4*2) -: 4];
+   assign o_actr[N*W-(N*3)-1 -: N] =  o_data_r[4*W-1-(4*3) -: 4];
+   assign o_actr[N*W-(N*4)-1 -: N] =  o_data_r[4*W-1-(4*4) -: 4];
+   assign o_actr[N*W-(N*5)-1 -: N] =  o_data_r[4*W-1-(4*5) -: 4];
+   assign o_actr[N*W-(N*6)-1 -: N] =  o_data_r[4*W-1-(4*6) -: 4];
+   assign o_actr[N*W-(N*7)-1 -: N] =  o_data_r[4*W-1-(4*7) -: 4];
    
-   wire [N*(W/2)-1:0] o_actr;
-    
-   assign o_actr[N*(W/2)-(N*0)-1 -: N] = o_data_wrh_l_n == 1'b0 ? o_data_r[4*W-1-(4*0) -: 4] : o_data_r[4*W-1-(4*4) -: 4];
-   assign o_actr[N*(W/2)-(N*1)-1 -: N] = o_data_wrh_l_n == 1'b0 ? o_data_r[4*W-1-(4*1) -: 4] : o_data_r[4*W-1-(4*5) -: 4]; 
-   assign o_actr[N*(W/2)-(N*2)-1 -: N] = o_data_wrh_l_n == 1'b0 ? o_data_r[4*W-1-(4*2) -: 4] : o_data_r[4*W-1-(4*6) -: 4];  
-   assign o_actr[N*(W/2)-(N*3)-1 -: N] = o_data_wrh_l_n == 1'b0 ? o_data_r[4*W-1-(4*3) -: 4] : o_data_r[4*W-1-(4*7) -: 4];
    
    /* -----------------------------------------------
     Scoreboard
     ----------------------------------------------- */
    
-   // procedure
-   localparam RES_HIGH = N*(W/2)-1;
-    
+   integer 	  RES_HIGH;
+   integer 	  WL;
+
+   
+   reg [N-1:0] 	  DUT_RES[0:W-1]; // util   
+   reg [N-1:0] 	  TEST_RES[0:W-1]; // util
+   
+   always_comb
+     begin
+	RES_HIGH = (o_data_wrh_l_n) ? N*(W/2)-1 : N*W-1;
+	WL = (o_data_wrh) ? W/2 : W;
+     end
+
    always @(posedge ck)
      begin
 	if (o_data_wr == 1'b1)
-	  begin
-	     for(i=0; i < W; i++)	     
-	       begin		  
-		  o_data_act[i] = o_data[RES_HIGH - i*N -: N]; // non-blocking
-		  if (o_actr[RES_HIGH - i*N -: N] != o_data_act[i])		  
+	  begin	     	     
+	     for(i=0; i < WL; i++)	     
+	       begin
+		  
+		  DUT_RES[i]   = o_data[RES_HIGH - i*N -: N]; 
+		  TEST_RES[i]  = o_actr[RES_HIGH - i*N -: N];
+		  
+		  // dump
+		  $fdisplay(fd, " TIME:\t%t\n REF: \t %h\n DP: \t %h \n RES_HIGH: \t%d \n", $time, TEST_RES[i], DUT_RES[i], RES_HIGH);
+		  
+		  if (DUT_RES[i] != TEST_RES[i])		  
 		    begin		       		       
-		       $display("* ERROR: %t %h != %h\t", $time, o_actr[RES_HIGH - i*N -: N], o_data_act[i]);		       
+		       $display("* ERROR: %t RES : %h != %h\t", $time, TEST_RES[i], DUT_RES[i]);		       
 		       $display("* Pause sim.");
-		       #(4*CLK)$stop;
+		       $stop;
 		    end 
-	       end // for (i=0; i < W; i++)
+	       end // for (i=0; i < W; i++) 
 	  end // if (ps_ctrl_wr_pipe == 1'b1)
      end
    
@@ -277,15 +305,18 @@ module test;
      dp_inst (
 	      .ck(ck),
 	      .rst(rst),
+	      .hctrl_fc(opcode[2]),
 	      .i_acth(i_acth),
 	      .i_actv(i_actv),
-	      .i_weight(i_c_weight),    
+	      .i_c_weight(i_c_weight),
+	      .i_fc_weight(i_fc_weight),
 	      .ctrl_en_npu(ctrl_en_npu),
 	      .ctrl_ldh_v_n(ctrl_ldh_v_n),
 	      .ctrl_wr_pipe(ctrl_wr_pipe),
 	      .ctrl_en_hmode(ctrl_en_hmode),
 	      .ctrl_en_vmode(ctrl_en_vmode),
 	      .ctrl_en_p(ctrl_en_p),
+	      .ctrl_en_st(ctrl_en_st),
 	      .ctrl_wr_mem(ctrl_wr_mem),	      
 	      .s_tc_hmode(s_tc_hmode),
 	      .s_tc_vmode(s_tc_vmode),
@@ -309,7 +340,8 @@ module test;
 	      .o_data_ev_odd_n(o_data_even_odd_n),
 	      .o_data_even_addr(o_data_even_addr),
 	      .o_data_odd_addr(o_data_odd_addr),
-	      .o_data_wr(o_data_wr),	   
+	      .o_data_wr(o_data_wr),
+	      .o_data_wrh(o_data_wrh),
 	      .o_data_wrh_l_n(o_data_wrh_l_n),
 	      .o_data(o_data));
    fsm 
@@ -331,6 +363,7 @@ module test;
 	       .ctrl_ldh_v_n(ctrl_ldh_v_n),
 	       .ctrl_wr_pipe(ctrl_wr_pipe),
 	       .ctrl_en_p(ctrl_en_p),
+	       .ctrl_en_st(ctrl_en_st),
 	       .ctrl_wr_mem(ctrl_wr_mem),
 	       .done(done));
 

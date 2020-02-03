@@ -8,7 +8,7 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 ============================================================================
 
 
-Information: There are 363 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 751 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 
@@ -28,9 +28,9 @@ Information: There are 363 potential problems in your design. Please run 'check_
   Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N10_3_0'
   Mapping integrated clock gating circuitry
   Processing 'addr_gen_N10_3'
-  Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N9_0'
+  Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N12_0'
   Mapping integrated clock gating circuitry
-  Processing 'addr_gen_N9'
+  Processing 'addr_gen_N12'
   Processing 'SNPS_CLOCK_GATE_HIGH_countern_N4_0'
   Mapping integrated clock gating circuitry
   Processing 'countern_N4_0'
@@ -293,10 +293,10 @@ Information: Updating design information... (UID-85)
   Processing 'addr_gen_N10_3_DW01_add_1'
   Processing 'addr_gen_N10_3_DW01_add_2'
   Processing 'addr_gen_N10_3_DW01_add_3'
-  Processing 'addr_gen_N9_DW01_add_0'
-  Processing 'addr_gen_N9_DW01_add_1'
-  Processing 'addr_gen_N9_DW01_add_2'
-  Processing 'addr_gen_N9_DW01_add_3'
+  Processing 'addr_gen_N12_DW01_add_0'
+  Processing 'addr_gen_N12_DW01_add_1'
+  Processing 'addr_gen_N12_DW01_add_2'
+  Processing 'addr_gen_N12_DW01_add_3'
   Processing 'pe_0_DW01_add_0'
   Processing 'pe_0_DW01_sub_0'
   Processing 'pe_1_DW01_add_0'
@@ -521,10 +521,10 @@ Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_0, since th
 Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_1, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_2, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_3, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N9_DW01_add_0, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N9_DW01_add_1, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N9_DW01_add_2, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N9_DW01_add_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design addr_gen_N12_DW01_add_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design addr_gen_N12_DW01_add_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design addr_gen_N12_DW01_add_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design addr_gen_N12_DW01_add_3, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_0_DW01_add_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_0_DW01_sub_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_1_DW01_add_0, since there are no registers. (PWR-806)
@@ -667,7 +667,7 @@ Information: Performing clock-gating on design countern_N4_3. (PWR-730)
 Information: Performing clock-gating on design countern_N4_2. (PWR-730)
 Information: Performing clock-gating on design countern_N4_1. (PWR-730)
 Information: Performing clock-gating on design countern_N4_0. (PWR-730)
-Information: Performing clock-gating on design addr_gen_N9. (PWR-730)
+Information: Performing clock-gating on design addr_gen_N12. (PWR-730)
 Information: Performing clock-gating on design addr_gen_N10_3. (PWR-730)
 Information: Performing clock-gating on design addr_gen_N10_2. (PWR-730)
 Information: Performing clock-gating on design addr_gen_N10_1. (PWR-730)
@@ -744,25 +744,25 @@ Information: Performing clock-gating on design pe_0. (PWR-730)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:36   34926.6      8.62    4924.5   10768.7                          
-    0:00:36   34926.6      8.62    4924.5   10768.7                          
-    0:00:37   35149.2      6.97    3541.8    7151.6                          
-    0:00:38   35208.6      1.67     821.4    3340.5                          
-    0:00:44   35646.4      0.00      -0.0      39.0                          
-    0:00:44   35646.4      0.00      -0.0      39.0                          
-    0:00:44   35646.4      0.00      -0.0      39.0                          
-    0:00:44   35646.4      0.00      -0.0      39.0                          
-    0:00:44   35646.4      0.00      -0.0      39.0                          
-    0:00:52   30307.2      0.00      -0.0       4.5                          
-    0:00:53   30304.8      0.00      -0.0       4.5                          
-    0:00:56   30304.8      0.00      -0.0       4.5                          
-    0:00:56   30304.8      0.00      -0.0       4.5                          
-    0:00:56   30304.8      0.00      -0.0       4.5                          
-    0:00:56   30304.8      0.00      -0.0       4.5                          
-    0:00:56   30306.7      0.00      -0.0       0.0                          
-    0:00:56   30306.7      0.00      -0.0       0.0                          
-    0:00:56   30306.7      0.00      -0.0       0.0                          
-    0:00:56   30306.7      0.00      -0.0       0.0                          
+    0:00:37   34428.9      8.62    5854.8   11894.2                          
+    0:00:37   34428.9      8.62    5854.8   11894.2                          
+    0:00:37   34651.6      6.97    4791.3    8277.1                          
+    0:00:38   34710.9      3.84    2142.0    4461.9                          
+    0:00:45   35039.9      0.00      -0.0      39.0                          
+    0:00:45   35039.9      0.00      -0.0      39.0                          
+    0:00:45   35039.9      0.00      -0.0      39.0                          
+    0:00:45   35039.9      0.00      -0.0      39.0                          
+    0:00:45   35039.9      0.00      -0.0      39.0                          
+    0:00:53   29832.7      0.00      -0.0       4.5                          
+    0:00:53   29829.8      0.00      -0.0       4.5                          
+    0:00:56   29829.8      0.00      -0.0       4.5                          
+    0:00:56   29829.8      0.00      -0.0       4.5                          
+    0:00:57   29829.8      0.00      -0.0       4.5                          
+    0:00:57   29829.8      0.00      -0.0       4.5                          
+    0:00:57   29831.6      0.00      -0.0       0.0                          
+    0:00:57   29831.6      0.00      -0.0       0.0                          
+    0:00:57   29831.6      0.00      -0.0       0.0                          
+    0:00:57   29831.6      0.00      -0.0       0.0                          
 
 
 
@@ -772,9 +772,9 @@ Information: Performing clock-gating on design pe_0. (PWR-730)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:57   30306.7      0.00      -0.0       0.0                          
-    0:00:57   30306.7      0.00      -0.0       0.0                          
-    0:00:59   30245.5      0.00      -0.0     960.0                          
+    0:00:57   29831.6      0.00      -0.0       0.0                          
+    0:00:57   29831.6      0.00      -0.0       0.0                          
+    0:00:59   29769.9      0.00      -0.0     960.0                          
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
@@ -783,8 +783,8 @@ Information: Performing clock-gating on design pe_0. (PWR-730)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:59   30245.5      0.00      -0.0     960.0                          
-    0:00:59   30253.2      0.00      -0.0       0.0                          
+    0:00:59   29769.9      0.00      -0.0     960.0                          
+    0:00:59   29777.6      0.00      -0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -793,30 +793,30 @@ Information: Performing clock-gating on design pe_0. (PWR-730)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:59   30253.2      0.00      -0.0       0.0                          
-    0:00:59   30253.2      0.00      -0.0       0.0                          
-    0:01:01   30244.5      0.00      -0.0       0.0                          
-    0:01:02   30235.7      0.00      -0.0       0.0                          
-    0:01:02   30231.4      0.00      -0.0       0.0                          
-    0:01:02   30228.2      0.00      -0.0       0.0                          
-    0:01:02   30225.0      0.00      -0.0       0.0                          
-    0:01:02   30221.9      0.00      -0.0       0.0                          
-    0:01:02   30218.7      0.00      -0.0       0.0                          
-    0:01:03   30216.0      0.00      -0.0       0.0                          
-    0:01:03   30213.3      0.00      -0.0       0.0                          
-    0:01:03   30210.7      0.00      -0.0       0.0                          
-    0:01:03   30208.0      0.00      -0.0       0.0                          
-    0:01:03   30205.4      0.00      -0.0       0.0                          
-    0:01:03   30202.7      0.00      -0.0       0.0                          
-    0:01:03   30202.7      0.00      -0.0       0.0                          
-    0:01:04   30202.7      0.00      -0.0       0.0                          
-    0:01:04   30130.4      0.00      -0.0       0.0                          
-    0:01:04   30130.4      0.00      -0.0       0.0                          
-    0:01:04   30130.4      0.00      -0.0       0.0                          
-    0:01:04   30130.4      0.00      -0.0       0.0                          
-    0:01:04   30130.4      0.00      -0.0       0.0                          
-    0:01:04   30130.4      0.00      -0.0       0.0                          
-    0:01:05   30130.4      0.00      -0.0       0.0                          
+    0:00:59   29777.6      0.00      -0.0       0.0                          
+    0:00:59   29777.6      0.00      -0.0       0.0                          
+    0:01:02   29765.9      0.00      -0.0       0.0                          
+    0:01:02   29758.5      0.00      -0.0       0.0                          
+    0:01:02   29751.8      0.00      -0.0       0.0                          
+    0:01:02   29748.1      0.00      -0.0       0.0                          
+    0:01:03   29744.4      0.00      -0.0       0.0                          
+    0:01:03   29741.2      0.00      -0.0       0.0                          
+    0:01:03   29738.0      0.00      -0.0       0.0                          
+    0:01:03   29735.3      0.00      -0.0       0.0                          
+    0:01:03   29732.7      0.00      -0.0       0.0                          
+    0:01:03   29730.0      0.00      -0.0       0.0                          
+    0:01:04   29727.4      0.00      -0.0       0.0                          
+    0:01:04   29724.7      0.00      -0.0       0.0                          
+    0:01:04   29722.0      0.00      -0.0       0.0                          
+    0:01:04   29722.0      0.00      -0.0       0.0                          
+    0:01:04   29722.0      0.00      -0.0       0.0                          
+    0:01:05   29647.3      0.00      -0.0       0.0                          
+    0:01:05   29647.3      0.00      -0.0       0.0                          
+    0:01:05   29647.3      0.00      -0.0       0.0                          
+    0:01:05   29647.3      0.00      -0.0       0.0                          
+    0:01:05   29647.3      0.00      -0.0       0.0                          
+    0:01:05   29647.3      0.00      -0.0       0.0                          
+    0:01:05   29647.3      0.00      -0.0       0.0                          
 Loading db file '/home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db'
 
   Optimization Complete

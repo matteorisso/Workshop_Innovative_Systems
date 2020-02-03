@@ -13,7 +13,8 @@ entity npu is
     ckg_rmask     : in  std_logic_vector(0 to W-1);
     ckg_cmask     : in  std_logic_vector(0 to W-1);
     i_ifmap_ptr   : in  unsigned(CLOG2B-1 downto 0);
-    i_weight      : in  std_logic_vector(1 downto 0);
+    i_c_weight    : in  std_logic_vector(1 downto 0);
+    i_fc_weight   : in  std_logic_vector(2*W*W-1 downto 0);
     i_data_conv_h : in  std_logic_vector(N*W-1 downto 0);
     i_data_conv_v : in  std_logic_vector(N*W-1 downto 0);
     i_data_acc    : in  std_logic_vector((N+BG)*W-1 downto 0);
@@ -38,7 +39,7 @@ begin
   for i in 0 to W-1 generate
     ckg_j :
     for j in 0 to W-1 generate
-      int_ckg(i)(j) <= (ckg_rmask(i) or ckg_cmask(j));
+      int_ckg(i)(j) <= ckg_rmask(i) or ckg_cmask(j) or not(en);
     end generate;
   end generate;
 
@@ -54,7 +55,7 @@ begin
             ldh_v_n     => ldh_v_n,
             wr_pipe     => wr_pipe,
             i_ifmap_ptr => i_ifmap_ptr,
-            i_weight    => i_weight,
+            i_weight    => i_c_weight,
             i_data_h    => int_data_x(i, j+1),
             i_data_v    => int_data_y(i+1, j),
             i_data_acc  => int_data_res(i+1, j),

@@ -1,14 +1,12 @@
 set NETLIST_DIR "../netlist"
 set SRC_DIR "../src"
-#set TEST_DIR "../sim"
 set TB_DIR "tb/"
-#"../sim/tb"
 set DESIGN "dp" 
 set DUT "dp_inst"
 set TB "test"
 set CLK 4
 
-file delete -force -- wor
+file delete -force -- work
 
 vlib work
 vmap work
@@ -20,7 +18,11 @@ vcom -93 -work work ${SRC_DIR}/pkg/globals.pkg.vhd
 vlog -sv ${TB_DIR}/pkg/globals.pkg.sv
 
 # TB
+vlog -sv ${TB_DIR}/cfg.sv
 vlog -sv ${TB_DIR}/${TB}.sv
+
+# fsm
+vcom -93 -work work ${SRC_DIR}/fsm.vhd
 
 # DUT
 vlog ${NETLIST_DIR}/${DESIGN}.v

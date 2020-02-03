@@ -54,7 +54,7 @@ begin
     if rst = '1' then
       int_offs_addr <= (others => '0');
     elsif rising_edge(ck) then
-      if clr_offs = '1' then
+      if (clr_offs or sync_clr) = '1' then
         int_offs_addr <= (others => '0');
       elsif en_offs = '1' then
         int_offs_addr <= int_offs_addr + inc_value_offs;

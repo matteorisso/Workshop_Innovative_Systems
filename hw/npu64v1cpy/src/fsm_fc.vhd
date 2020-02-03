@@ -20,7 +20,7 @@ entity fsm_fc is
     );
 end entity;
 
-architecture beh of fsm is
+architecture beh of fsm_fc is
 
   type state is (
     IDLE,
@@ -77,6 +77,7 @@ begin
         else
           ns <= LD;
         end if;
+        
       when others => ns <= IDLE;
 
     end case;

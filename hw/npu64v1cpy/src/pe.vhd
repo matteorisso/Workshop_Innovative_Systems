@@ -92,7 +92,7 @@ begin
 
   --// output freeze
   res_pin : for i in 0 to o_data_res'high generate
-    o_data_res(i) <= wr_pipe and int_q_acc(i);  --// for DGB force '1'
+    o_data_res(i) <= '1' and int_q_acc(i);  --// for DGB force '1'
   end generate;
 
   v_reg_pin : for i in 0 to o_data_v'high generate
