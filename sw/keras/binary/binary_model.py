@@ -4,12 +4,14 @@ Created on Mon Aug 19 21:01:11 2019
 
 @author: Antonio
 """
+
+import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
-import matplotlib.pyplot as plt
+import os
+import math
 import dataset
 import config as cf
-import os
 
 from keras import Model
 from keract import get_activations
@@ -36,8 +38,9 @@ model.compile(loss=squared_hinge, optimizer=adam, metrics=['accuracy'])
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint, TensorBoard
 
-early_stop = EarlyStopping(monitor='loss', min_delta=0.001, patience=10, mode='min', verbose=1)
-#tensorboard = TensorBoard(cf.logpath, histogram_freq=0, write_graph=True, write_images=False)
+early_stop = EarlyStopping(monitor='loss', min_delta=0.001, patience=20, mode='min', verbose=1)
+tensorboard = TensorBoard(cf.logpath, histogram_freq=0, write_graph=True, write_images=False)
+
 '''
 Save model and weights
 '''
@@ -73,10 +76,6 @@ restore model
 
 model.load_weights(cf.model_path+'.hdf5')   
 
-#hist = model.fit(x=x_train, y=y_train, epochs=cf.epochs, batch_size=cf.batch_size, \
-#                 validation_data=(x_test, y_test), verbose=1,\
-#                 callbacks=[checkpoint, early_stop])
-# 
 W = model.get_weights()
 Wq = np.copy(W)        
 
@@ -86,19 +85,22 @@ quantize network weights
 
 # batch norm parameters quantization
 #
-#nbits = 4
-#nfrac = 2
+#nbits = 8
+#nfrac = 6
 #
 #m = 2**(nbits-1)
 #mfrac = 2**(nfrac)
 #
 #quant = lambda x, m, m_frac: np.clip(np.round(x*m_frac), -m, m-1)/m_frac
 #
-#from bn_bc import bn_param_reduction 
+#def bn_param_reduction(gamma,beta,mu,sigma):
+#    a  =    gamma/math.sqrt(sigma)
+#    b  =    beta - (mu*gamma)/(math.sqrt(sigma))
+#    return a,b
 #
 #bn = [] #batch norm parameters container, each element is one layer
 # 
-##collect scale, offset, mean and variance for each layer
+#collect scale, offset, mean and variance for each layer
 #
 #for k in range(1, len(W), 5):
 #    
@@ -124,13 +126,13 @@ with tf.Session() as sess:
 
 #    bn_layer_cnt = 0 #
 #    bn_param_cnt = 0 #
-    
+#    
     for it in range(len(W)):
         if len(W[it].shape) > 1: #skip bn parameters 
             
             Wq[it] = sess.run(cf.qop(tf.convert_to_tensor(W[it]))) #ternary
             
-#            bn_param_cnt = 0 #
+            bn_param_cnt = 0 #
 #            
 #        else:
 ##           Wq[it] = np.clip(np.round(W[it]*mfrac), -m, m-1)/mfrac
@@ -140,12 +142,16 @@ with tf.Session() as sess:
 #                for i in range(len(bn[bn_layer_cnt])): # foreach channel get first value of tuple #
 #                    Wq[it][i] = bn[bn_layer_cnt][i][0] #
 #                    Wq[it][i] = quant(Wq[it][i], m, mfrac)
+#                    #test approx shift
+#                    #Wq[it][i] = 1/pow(2, np.round(math.log(abs(Wq[it][i]*mfrac))/math.log(2)))
 #                    
 #            elif bn_param_cnt == 1: #
 #                #set offset as B coefficient #
 #                for i in range(len(bn[bn_layer_cnt])): # foreach channel get second value of tuple #
 #                    Wq[it][i] = bn[bn_layer_cnt][i][1] # 
 #                    Wq[it][i] = quant(Wq[it][i], m, mfrac)
+#                    #test approx
+#                    #Wq[it][i] = 1/pow(2, np.round(math.log(abs(Wq[it][i])*mfrac)/math.log(2)))
 #                    
 #            elif bn_param_cnt == 2: #
 #                #set mean 0.
@@ -187,20 +193,18 @@ display_activations(activations, save=True, path=cf.imgpath)
 activations = dict([(layer[0], layer[1][0]) for layer in activations.items()])
 np.save(cf.model_path+'_act.npy', np.asarray(activations))
 
-#activations = [layer.output for layer in model.layers]
-#spio.savemat(cf.model_path+'_activations.mat', activations)
-
 '''
 zero activations ratio
 '''
 
 img_inputs = [x_test[0:1][0]]
-#spio.savemat(cf.model_path+'_img.mat', {'img':x_test[0:1]})
 
 np.save(cf.model_path+'_img.npy', {'img':x_test[0:1]})
-
+print()
+print()
 for key in activations.keys():
-    if key.startswith('c') or key.startswith('f'): 
+    if key.startswith('c') or key.startswith('fc'): 
+        print(key)
         img_inputs.append(activations[key])     
         
 zeros_act = []
@@ -229,20 +233,22 @@ for it in wtmp:
 print('\nZero weights ratio :')
 print(zeros_k)
 
-''' 
-plot hist
+'''
+plot 
 '''
 for item in range(len(img_inputs)):
     
     img_inputs[item] = img_inputs[item].ravel()
     u, inv = np.unique(img_inputs[item], return_inverse=True)
-    counts = np.bincount(inv)
-
+    counts = np.bincount(inv)    
+    
     plt.bar(u, counts, width=0.3)
-    plt.xticks(np.arange(-1, 1.1, 0.5)) 
-    
+    plt.xticks(np.arange(-1, 1.1, 0.5))
+
+plt.legend()
 plt.show()
-    
+
+
 for item in range(len(wtmp)):
     
     wtmp[item] = wtmp[item].ravel()

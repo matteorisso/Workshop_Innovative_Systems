@@ -37,14 +37,13 @@ while read line; do
     list=($(grep "$cnt " "pass1.txt" | cut -d " " -f2))
 
     if ((cnt!=cnt_1)); then
+	cnt_1="$cnt"
 	if ((${#list[@]}!=1)); then 
-	     gethier ${list[@]} 
-	     sort -r gethier.tmp | cut -d " " -f2 >> hier.txt
+	    gethier ${list[@]} 
+	    sort -r gethier.tmp | cut -d " " -f2 >> hier.txt     
 	else
-	    echo ${list[@]} >> hier.txt 
-	fi
-	cnt_1=$cnt
+	    echo ${list[@]} >> hier.txt
+	fi	
     fi
 done < pass1.txt
-
 rm gethier.tmp pass1.txt 

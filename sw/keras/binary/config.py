@@ -11,10 +11,10 @@ from os.path import join,isdir
 #------------------------------------------------------------------------------
 
 # Custom Layers
-H                       = 1.
 kernel_lr_multiplier    = 'Glorot'
 kernel_regularizer      = 0.
 activity_regularizer    = 0.
+H                       = 1.
 
 # Convolution
 img_dim = 32 
@@ -32,9 +32,9 @@ epsilon     = 1e-6
 momentum    = 0.9
 
 # Training 
-epochs      = 40   # number of iterations on the entire dataset
-batch_size  = 32   # after BATCH_SIZE samples eval, do the update 
-lr          = 0.001
+epochs      = 40 # number of iterations on the entire dataset
+batch_size  = 32 # after BATCH_SIZE samples eval, do the update 
+lr          = 0.001 # update resolution
 decay       = 0.000025
 
 #------------------------------------------------------------------------------
@@ -45,9 +45,9 @@ _savedir = 'saved_model'
 _logdir  = 'logs'
 _imgdir  = 'img'
 
-_binarycon = 'bnn'
+_binarycon = 'bnn4b'
 _binarynet  = 'full-bnn'
-_ternary    = 'tnn_no_bn2b'
+_ternary    = 'tnn4b'
 _ternarynet = 'full-tnn'
 
 _embeddings= 'metadata.tsv'
@@ -87,6 +87,8 @@ from build_model import build_model
 from ternary_ops import ternarize
 from binary_ops import binarize
 
-model_path = tnn
 build = lambda : build_model('tnn', full=False)
 qop = lambda x : ternarize(x)
+
+model_path = tnn
+nb = 5 #Q1.nb-1

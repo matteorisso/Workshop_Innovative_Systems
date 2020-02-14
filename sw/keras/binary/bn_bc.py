@@ -19,13 +19,11 @@ def quantized_relu(W, nb=4):
     return Wq
 
 def bn_param_reduction(gamma,beta,mu,sigma):
-    
     a  =    gamma/sqrt(sigma)
-    b  =    beta - (mu*gamma)/sqrt(sigma)
+    b  =    beta - (mu*gamma)/(sqrt(sigma))
     return a,b
 
 def dec2bin(var,fp) :
-    
     if var >= 0 :
         string = '0'+str(fp+1)+'b'
         bin_var = format(var,string)
@@ -34,7 +32,6 @@ def dec2bin(var,fp) :
     return bin_var
 
 def float2fix(x,fract_part):
-    
     x_fix = int(round(x*pow(2,fract_part)))
     x_fix_bin = dec2bin(x_fix,fract_part)
     x_fix = 0
@@ -52,30 +49,28 @@ def float2fix(x,fract_part):
             acc += 1      
     return x_fix
 
+'''
+calcolo a, b
+'''
+A      = []
+B      = []
+bn_1   = numpy.asarray(Wq[11:15])
 
+frac_part = 3
 
-if __name__ == '__main__':
+for i in bn_1.T:
+    A.append(bn_param_reduction(i[0],i[1],i[2],i[3])[0])
+    B.append(bn_param_reduction(i[0],i[1],i[2],i[3])[1])
     
-    # calcolo a, b
-    A      = []
-    B      = []
-    bn_1   = numpy.asarray(Wq[11:15])
-    
-    frac_part = 3
-    
-    for i in bn_1.T:
-        A.append(bn_param_reduction(i[0],i[1],i[2],i[3])[0])
-        B.append(bn_param_reduction(i[0],i[1],i[2],i[3])[1])
-        
-    conv = activations['binary_conv2d_110/convolution:0']
-    
-    bn_output = numpy.zeros([120])
-    act_f_output = numpy.zeros([120])
-    for i in range(120):
-    #    for j in range(10):
-    #        for k in range(10):
-        bn_output[i] = float2fix(A[i],frac_part)*conv[0,0,i]+float2fix(B[i],frac_part)
-        act_f_output[i] = quantized_relu(bn_output[i])
-                
-    print(numpy.array_equal(act_f_output,activations['activation_3/clip_by_value_1:0']))
-    
+conv = activations['binary_conv2d_110/convolution:0']
+
+bn_output = numpy.zeros([120])
+act_f_output = numpy.zeros([120])
+for i in range(120):
+#    for j in range(10):
+#        for k in range(10):
+    bn_output[i] = float2fix(A[i],frac_part)*conv[0,0,i]+float2fix(B[i],frac_part)
+    act_f_output[i] = quantized_relu(bn_output[i])
+            
+print(numpy.array_equal(act_f_output,activations['activation_3/clip_by_value_1:0']))
+

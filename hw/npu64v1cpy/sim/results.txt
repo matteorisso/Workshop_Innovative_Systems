@@ -1,0 +1,9860 @@
+ TIME:	                 182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 350
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                 350
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                 358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 358
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                 358
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                 366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                 838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                 862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1006
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                1006
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                1006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1014
+ REF: 	 7
+ DP: 	 7 
+ RES_HIGH: 	         15 
+
+ TIME:	                1014
+ REF: 	 7
+ DP: 	 7 
+ RES_HIGH: 	         15 
+
+ TIME:	                1014
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         15 
+
+ TIME:	                1014
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         15 
+
+ TIME:	                1022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1022
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                1022
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                1022
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                1030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1342
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                1342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                1350
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                1350
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         15 
+
+ TIME:	                1350
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         15 
+
+ TIME:	                1350
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	                1494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1670
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	                1670
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                1670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1678
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                1678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1678
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                1686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1686
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                1686
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                1830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1830
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                1830
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                1830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1838
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                1838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1846
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                1846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1854
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                1854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1998
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                1998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                1998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2006
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                2006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                2806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2830
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	                2974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2974
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                2982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                2998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                3462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3486
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3486
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3486
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                3486
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                3630
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                3630
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3630
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3630
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         15 
+
+ TIME:	                3638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3798
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                3806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3806
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                3806
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3814
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3814
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         15 
+
+ TIME:	                3822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3822
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                3822
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3822
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3966
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	                3966
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                3966
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                3974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                3974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4142
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                4142
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                4142
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                4142
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                4286
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                4286
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	                4286
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	                4286
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                4294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4294
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	                4294
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                4294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4302
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                4302
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                4302
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                4302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4310
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                4310
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                4310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4454
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	                4454
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                4454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4462
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                4462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4470
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                4470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                4774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                4966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                5430
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5430
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5430
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5430
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5598
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                5598
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                5606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5606
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                5606
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                5614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                5942
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6110
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6254
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	                6254
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6254
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6254
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6262
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6262
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	                6262
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	                6262
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	                6270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6278
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                6422
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6422
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6422
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6422
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6430
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6430
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6430
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                6430
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6438
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                6438
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6438
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                6446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6446
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6446
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6590
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6590
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                6590
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6598
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6598
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                6598
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                6598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                6742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6910
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                6910
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                6910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6918
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	                6918
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                6918
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6918
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6926
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                6926
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                6926
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6926
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6934
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                6934
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                6934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                6934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7078
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                7078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7102
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                7398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7422
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7422
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7422
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7422
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7574
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7574
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7574
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7574
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7582
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7582
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7582
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7582
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7734
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7734
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7734
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7734
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7742
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                7910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8070
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                8078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8078
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                8222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8230
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                8230
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                8238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8414
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                8710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8726
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                8726
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                8726
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                8726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8734
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	                8734
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	                8734
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                8734
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	                8878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8886
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                8886
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8886
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8886
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8894
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8894
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                8894
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                8894
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	                8902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                8902
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9054
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9062
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9222
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	                9366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9390
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                9390
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	                9390
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	                9390
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	                9534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9534
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                9534
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	                9542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9542
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9550
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9550
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9550
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9550
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	                9878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10206
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10214
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10366
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10374
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10534
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               10678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               10870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11350
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               11350
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               11350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11358
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               11358
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               11358
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               11358
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               11502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11526
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11686
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11694
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11694
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               11838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11838
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               11846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11846
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               11990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               11998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12014
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               12014
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               12014
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               12014
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               12158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12158
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               12158
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               12166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12166
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12166
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               12166
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               12174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12174
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               12174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               12646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12822
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12838
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               12998
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13006
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13158
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13326
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               13326
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               13470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13470
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               13470
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               13478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13478
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13486
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               13958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               13982
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	               13982
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               13982
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               13982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14126
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               14126
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               14126
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	               14126
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	               14134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14150
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               14294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14294
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               14302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14302
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               14302
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               14310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14310
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               14310
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               14310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14318
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               14318
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               14318
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14462
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               14462
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               14462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14470
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               14614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14638
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14782
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               14782
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               14782
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               14782
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               14790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14790
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14798
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               14798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14798
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14806
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               14806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14950
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               14974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               15270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15270
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               15630
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               16694
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               16694
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         31 
+
+ TIME:	               16694
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         31 
+
+ TIME:	               16694
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         31 
+
+ TIME:	               16702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16702
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               16710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               16718
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               16718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               17522
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               17522
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               17522
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               17522
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               18326
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         15 
+
+ TIME:	               18326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18326
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               18350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               19154
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               19154
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               19154
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               19154
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               19958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               19958
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               19958
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               19958
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               19966
+ REF: 	 f
+ DP: 	 f 
+ RES_HIGH: 	         31 
+
+ TIME:	               19966
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         31 
+
+ TIME:	               19966
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               19966
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               19974
+ REF: 	 b
+ DP: 	 b 
+ RES_HIGH: 	         31 
+
+ TIME:	               19974
+ REF: 	 e
+ DP: 	 e 
+ RES_HIGH: 	         31 
+
+ TIME:	               19974
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         31 
+
+ TIME:	               19974
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               19982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               19982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               19982
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               19982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               20786
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               20786
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               20786
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               20786
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               21590
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         15 
+
+ TIME:	               21590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21590
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21614
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               21614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               21614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               22418
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               22418
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               22418
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               22418
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               23222
+ REF: 	 a
+ DP: 	 a 
+ RES_HIGH: 	         31 
+
+ TIME:	               23222
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               23222
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               23222
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               23230
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               23230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               23230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               23230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               23238
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               23238
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               23238
+ REF: 	 b
+ DP: 	 b 
+ RES_HIGH: 	         31 
+
+ TIME:	               23238
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               23246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               23246
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               23246
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               23246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               24050
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               24050
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               24050
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               24050
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               24854
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               24854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24854
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24878
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	               24878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               24878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               25682
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	               25682
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               25682
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               25682
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               26486
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               26486
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               26486
+ REF: 	 7
+ DP: 	 7 
+ RES_HIGH: 	         31 
+
+ TIME:	               26486
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               26494
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               26494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               26494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               26494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               26502
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               26502
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               26502
+ REF: 	 7
+ DP: 	 7 
+ RES_HIGH: 	         31 
+
+ TIME:	               26502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               26510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               26510
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               26510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               26510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               27314
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               27314
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               27314
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               27314
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               28118
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	               28118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28118
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28126
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28946
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               28946
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28946
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               28946
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               29750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29750
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29758
+ REF: 	 d
+ DP: 	 d 
+ RES_HIGH: 	         31 
+
+ TIME:	               29758
+ REF: 	 e
+ DP: 	 e 
+ RES_HIGH: 	         31 
+
+ TIME:	               29758
+ REF: 	 f
+ DP: 	 f 
+ RES_HIGH: 	         31 
+
+ TIME:	               29758
+ REF: 	 e
+ DP: 	 e 
+ RES_HIGH: 	         31 
+
+ TIME:	               29766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29766
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               29766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29774
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               29774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               29774
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               30578
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               30578
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               30578
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               30578
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         31 
+
+ TIME:	               31382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31382
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31390
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	               31390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31398
+ REF: 	 d
+ DP: 	 d 
+ RES_HIGH: 	         15 
+
+ TIME:	               31398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31406
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         15 
+
+ TIME:	               31406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               31406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               32210
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               32210
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               32210
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               32210
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               33014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33014
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33022
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               33022
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               33022
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         31 
+
+ TIME:	               33030
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               33030
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               33030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33030
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               33038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33038
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               33038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33842
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               33842
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               33842
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               33842
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               34646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34646
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34654
+ REF: 	 a
+ DP: 	 a 
+ RES_HIGH: 	         15 
+
+ TIME:	               34654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               34670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               35474
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               35474
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               35474
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               35474
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               36278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36278
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36294
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               36294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               36302
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               37106
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               37106
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               37106
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               37106
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               37910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37910
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37918
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	               37918
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37918
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37918
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37926
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               37926
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37926
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37926
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37934
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         15 
+
+ TIME:	               37934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               37934
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               38738
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               38738
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               38738
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               38738
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               39542
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               39542
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               39542
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               39542
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               39550
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               39550
+ REF: 	 9
+ DP: 	 9 
+ RES_HIGH: 	         31 
+
+ TIME:	               39550
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               39550
+ REF: 	 a
+ DP: 	 a 
+ RES_HIGH: 	         31 
+
+ TIME:	               39558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               39558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               39558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               39558
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               39566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               39566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               39566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               39566
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               40370
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               40370
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               40370
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               40370
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               41174
+ REF: 	 7
+ DP: 	 7 
+ RES_HIGH: 	         15 
+
+ TIME:	               41174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41174
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41182
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         15 
+
+ TIME:	               41182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41182
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41190
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               41190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41190
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               41198
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               42002
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               42002
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               42002
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               42002
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               42806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42806
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42814
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42822
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               42822
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               42822
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               42822
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               42830
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               42830
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               42830
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               42830
+ REF: 	 b
+ DP: 	 b 
+ RES_HIGH: 	         31 
+
+ TIME:	               43634
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               43634
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               43634
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               43634
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               44438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44438
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44446
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         15 
+
+ TIME:	               44446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44446
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44454
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         15 
+
+ TIME:	               44454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44454
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               44462
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               45266
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               45266
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               45266
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               45266
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               46070
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46070
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               46070
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               46070
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               46078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46078
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46086
+ REF: 	 a
+ DP: 	 a 
+ RES_HIGH: 	         31 
+
+ TIME:	               46086
+ REF: 	 f
+ DP: 	 f 
+ RES_HIGH: 	         31 
+
+ TIME:	               46086
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               46086
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46094
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46898
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46898
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46898
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               46898
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               47702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47702
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47710
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47718
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               47726
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               48530
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               48530
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               48530
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               48530
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               49334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49334
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49342
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               49342
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               49342
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               49342
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49350
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49358
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               49358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               49358
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               50162
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               50162
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               50162
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               50162
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               50966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50966
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50974
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50982
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               50990
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               51794
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               51794
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               51794
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               51794
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               52598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52598
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52606
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               52606
+ REF: 	 a
+ DP: 	 a 
+ RES_HIGH: 	         31 
+
+ TIME:	               52606
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               52606
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52614
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               52622
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               53426
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               53426
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               53426
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               53426
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               54230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54230
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54238
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54246
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               54254
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               55058
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               55058
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               55058
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               55058
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               55862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55862
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55870
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               55870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55870
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55870
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               55878
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55878
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               55878
+ REF: 	 a
+ DP: 	 a 
+ RES_HIGH: 	         31 
+
+ TIME:	               55878
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               55886
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               55886
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               55886
+ REF: 	 9
+ DP: 	 9 
+ RES_HIGH: 	         31 
+
+ TIME:	               55886
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               56690
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               56690
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               56690
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               56690
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               57494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57494
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57502
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57510
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               57510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57510
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57518
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               57518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               57518
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               58322
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               58322
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               58322
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               58322
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               59126
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               59126
+ REF: 	 b
+ DP: 	 b 
+ RES_HIGH: 	         31 
+
+ TIME:	               59126
+ REF: 	 a
+ DP: 	 a 
+ RES_HIGH: 	         31 
+
+ TIME:	               59126
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               59134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59134
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59142
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59142
+ REF: 	 7
+ DP: 	 7 
+ RES_HIGH: 	         31 
+
+ TIME:	               59150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59150
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               59150
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               59150
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               59954
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               59954
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               59954
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               59954
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               60758
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         15 
+
+ TIME:	               60758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60758
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60766
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         15 
+
+ TIME:	               60766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60766
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60774
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               60782
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               61586
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               61586
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               61586
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               61586
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               62390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62390
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62398
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62398
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               62406
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               62406
+ REF: 	 6
+ DP: 	 6 
+ RES_HIGH: 	         31 
+
+ TIME:	               62406
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               62406
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               62414
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               62414
+ REF: 	 1
+ DP: 	 1 
+ RES_HIGH: 	         31 
+
+ TIME:	               62414
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               62414
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               63218
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               63218
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               63218
+ REF: 	 3
+ DP: 	 3 
+ RES_HIGH: 	         31 
+
+ TIME:	               63218
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               64022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64022
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64030
+ REF: 	 d
+ DP: 	 d 
+ RES_HIGH: 	         15 
+
+ TIME:	               64030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64030
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64038
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64046
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64850
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64850
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64850
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               64850
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               65654
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65654
+ REF: 	 4
+ DP: 	 4 
+ RES_HIGH: 	         31 
+
+ TIME:	               65654
+ REF: 	 8
+ DP: 	 8 
+ RES_HIGH: 	         31 
+
+ TIME:	               65654
+ REF: 	 7
+ DP: 	 7 
+ RES_HIGH: 	         31 
+
+ TIME:	               65662
+ REF: 	 9
+ DP: 	 9 
+ RES_HIGH: 	         31 
+
+ TIME:	               65662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65662
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65670
+ REF: 	 5
+ DP: 	 5 
+ RES_HIGH: 	         31 
+
+ TIME:	               65670
+ REF: 	 2
+ DP: 	 2 
+ RES_HIGH: 	         31 
+
+ TIME:	               65670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65670
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               65678
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               66482
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               66482
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               66482
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               66482
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         31 
+
+ TIME:	               67286
+ REF: 	 c
+ DP: 	 c 
+ RES_HIGH: 	         15 
+
+ TIME:	               67286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67286
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67294
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67302
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+
+ TIME:	               67310
+ REF: 	 0
+ DP: 	 0 
+ RES_HIGH: 	         15 
+

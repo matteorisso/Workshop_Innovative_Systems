@@ -9,27 +9,30 @@ import os
 import math
 import numpy as np
  
+def quantize(x, nbits, nfrac):
+    
+    m = pow(2, nbits-1)
+    mfrac = pow(2, nfrac)
+    # quantize : np.clip(np.round(x/LSB), min, max)*LSB 
+    # scaling  : int(x/LSB) np.floor    
+    return int(np.clip(np.round(x*mfrac), -m, m-1)/mfrac * mfrac)
+
 # Two's complement conversion from decimal 
+    
 def twoscomp(x, nbits, nfrac, hexa=False):
-      
-    m = 2**(nbits-1)
-    m_frac = 2**(nfrac)
-   
+     
     mask = int("1"*nbits, 2) #ensure fixed wordlength (least-significand digits)
     # repr : force sign ext for 2C
     rep = lambda x, hexa: (bin(x & mask)[2:], hex(x & mask)[2:])[hexa] 
     
-    # quantize : np.clip(np.round(x/LSB), min, max)*LSB 
-    # scaling  : int(x/LSB) np.floor    
-    quant_op = lambda x, m, m_frac : int(np.clip(np.round(x*m_frac), -m, m-1)/m_frac * m_frac)
-
-    val = rep(quant_op(x, m, m_frac), hexa)
-    nval = rep(~quant_op(x, m, m_frac) + quant_op(1/m, m, m), hexa) #2's complement
+    val = rep(quantize(x, nbits, nfrac), hexa)
+    nval = rep(~quantize(x, nbits, nfrac) + quantize(1/pow(2, nbits-1), pow(2, nbits-1), pow(2, nbits-1)), hexa) #2's complement
     
     radix = (1, 4)[hexa==True]
     return (val, nval)[val[0]=='-'].zfill(math.ceil(nbits/radix))
 
 #Activations memory map
+    
 def act_memory_map(img, nbits, nfrac, npu_dim, filename, channel_first=True, index=False):
   
     x, y, b = img.shape
@@ -60,6 +63,7 @@ def act_memory_map(img, nbits, nfrac, npu_dim, filename, channel_first=True, ind
                         fo.write('{}\n'.format(''.join(map(str, dw[npu_dim : ]))))      
   
 #Correlation function
+                        
 def convolution(image, kernel):
     
     m, n, w, c = kernel.shape
@@ -93,7 +97,7 @@ def weight_table(w):
                     
 if __name__ == '__main__':
     
-    memdir = 'mem'
+    memdir = 'mem4b'
     memdir = os.path.join(os.getcwd(), memdir)
     
     try: 
@@ -137,23 +141,23 @@ if __name__ == '__main__':
     
     # Create test memory
     
-    nbits = 3
-    nfrac = 2
+    nbits = 5
+    nfrac = 4
     
-    activations = np.load('./saved_model/tnn_no_bn2b_act.npy', allow_pickle=True).item()
-    weights = np.load('./saved_model/tnn_no_bn2b_weights.npy', allow_pickle=True)
+    activations = np.load('./saved_model/tnn4b_act.npy', allow_pickle=True).item()
+    weights = np.load('./saved_model/tnn4b_weights.npy', allow_pickle=True)
     
     '''
     C1
     '''
     
     kernelc1 = weights.item(0) #C1  kernel
-    img = np.load('./saved_model/tnn_no_bn2b_img.npy', allow_pickle=True).item()['img'].reshape((32, 32, 1))
+    img = np.load('./saved_model/tnn4b_img.npy', allow_pickle=True).item()['img'].reshape((32, 32, 1))
     
     act_memory_map(img, nbits, nfrac, npu_dim, '{}/c1act'.format(memdir))
     
     nbits = 8
-    nfrac = 2
+    nfrac = 4
     
     # create results file
     res_c1 = convolution(img, kernelc1)
@@ -169,7 +173,7 @@ if __name__ == '__main__':
                     for h in range(b):
                         f.write(weight_table(kernelc1[i,j,h,k])+'\n')
            
-    #c1 + relu 
+    #c1 + batch + relu 
     s1_in = activations[ [ layer for layer in activations.keys() if layer.startswith('c1') ][0] ]
     
     x, y, z = s1_in.shape
@@ -180,16 +184,17 @@ if __name__ == '__main__':
         for j in range(0,x,2):
             for i in range(0,y,2):
                 s1_out[i//2, j//2, k] += np.sum(s1_in[i:i+2, j:j+2, k])
-#                np.clip(np.round(np.sum(s1_in[i:i+2, j:j+2, k])*4), 0, 2)                
-               
-    act_memory_map(s1_in, 3, 2, npu_dim, '{}/c1res'.format(memdir))
-    act_memory_map(s1_out, 5, 2, npu_dim, '{}/p1res'.format(memdir))    
+              
+    nbits = 5
+    nfrac = 4
+    act_memory_map(s1_in, nbits, nfrac, npu_dim, '{}/c1res'.format(memdir))
+    act_memory_map(s1_out, nbits+2, nfrac, npu_dim, '{}/p1res'.format(memdir))    
     
     '''C2
     '''
     
-    nbits = 3
-    nfrac = 2
+    nbits = 5
+    nfrac = 4
     
     kernelc2 = weights.item(1) #C2 kernel
     c2_in = activations[ [ layer for layer in activations.keys() if layer.startswith('s1') ][0] ]
@@ -197,10 +202,10 @@ if __name__ == '__main__':
     act_memory_map(c2_in, nbits, nfrac, npu_dim, '{}/c2act'.format(memdir))
     
     nbits = 8
-    nfrac = 2
+    nfrac = 4
+    
     # create results file
     res_c2 = convolution(c2_in, kernelc2)
-    #res_memory_map(res_c2, 8, 2, 8, memdir+'/c2result.mem')
     act_memory_map(res_c2, nbits, nfrac, npu_dim, '{}/c2res'.format(memdir))
     
     # create weights file
@@ -214,10 +219,37 @@ if __name__ == '__main__':
             
     s2_in = activations[ [ layer for layer in activations.keys() if layer.startswith('c2') ][0] ]
     act_memory_map(s2_in, 3, 2, npu_dim, '{}/c2res'.format(memdir))
+    
+    x, y, z = s2_in.shape
+    
+    mys2_out = np.zeros((x//2, y//2, z))
+       
+    for k in range(z):
+        for j in range(0,x,2):
+            for i in range(0,y,2):
+                mys2_out[i//2, j//2, k] += np.sum(s2_in[i:i+2, j:j+2, k])
+                mys2_out[i//2, j//2, k] = quantize(mys2_out[i//2, j//2, k], 3, 2)/pow(2,2)
+                 
+    nbits = 5
+    nfrac = 4
     s2_out = activations[ [ layer for layer in activations.keys() if layer.startswith('s2') ][0] ]
-    act_memory_map(s2_out, 3, 2, npu_dim, '{}/c3act'.format(memdir))
-    
-    
+    act_memory_map(s2_out, nbits, nfrac, npu_dim, '{}/c3act'.format(memdir))
+#        
+#    bn1_a = weights.item(1)
+#    bn1_b = weights.item(2)
+#    
+#    with open(memdir+'/c1gamma.mem', 'w+') as f1, open(memdir+'/c1beta.mem', 'w+') as f2:
+#        for i,j in zip(bn1_a,bn1_b):
+#            f1.write(twoscomp(i, 8, 6, hexa=True)+'\n')
+#            f2.write(twoscomp(j, 8, 6, hexa=True)+'\n')
+#            
+#    bn2_a = weights.item(6)
+#    bn2_b = weights.item(7)
+#    
+#    with open(memdir+'/c2gamma.mem', 'w+') as f1, open(memdir+'/c2beta.mem', 'w+') as f2:
+#        for i,j in zip(bn2_a,bn2_b):
+#            f1.write(twoscomp(i, 8, 6, hexa=True)+'\n')
+#            f2.write(twoscomp(j, 8, 6, hexa=True)+'\n')
 #    '''
 #    Batch normalization test
 #    '''

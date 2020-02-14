@@ -14,7 +14,6 @@ file mkdir log
 # Analyze source files
 
 analyze -f vhdl -l work ${DIR}/src/pkg/globals.pkg.vhd
-analyze -f sverilog -l work ${DIR}/sim/tb/pkg/globals.pkg.sv
 
 set f [open ${DIR}/src/hier.txt r]
 foreach src [split [read $f] "\n"] {
@@ -35,6 +34,8 @@ link
 create_clock -name MY_CLK -period ${CLK} ck
 
 set_dont_touch_network MY_CLK
+#set_dont_touch [get_cells "*/p_unit*"]
+
 
 # Set constraints
 
@@ -56,19 +57,20 @@ set_load $OLOAD [all_outputs]
 
 # Compile 
 
-compile -gate_clock > log/compile.log
+compile -gate_clock  > log/compile.log
+#compile_ultra -gate_clock -no_autoungroup > log/compile.log
 
 # Reports
 
-report_timing > rpt/timing.rpt
-report_area > rpt/area.rpt
-report_power > rpt/power.rpt
 report_clock > rpt/clock.rpt
+report_resources > rpt/resources.rpt
+report_area > rpt/area.rpt
+report_timing > rpt/timing.rpt
+report_power > rpt/power.rpt
 
 # Verilog netlist
 
 ungroup -all -flatten
-
 # verilog rules for the names of the internal signals
 change_names -hierarchy -rules verilog
 
@@ -81,4 +83,4 @@ write -f verilog -output ${DIR}/netlist/${DESIGN}.v
 # save i/o constraints
 write_sdc ${DIR}/netlist/${DESIGN}.sdc
 
-quit
+#quit

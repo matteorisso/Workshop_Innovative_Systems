@@ -8,9 +8,8 @@ Created on Tue May 21 23:18:51 2019
 from keras import datasets
 from keras.utils import np_utils, normalize
 from PIL import Image, ImageFilter 
-
+import config as cf
 import numpy as np
-import scipy.io as spio
 import os
 
 
@@ -54,13 +53,14 @@ def _process(train :tuple, test :tuple, n_classes):
     x_test  = normalize(x_test, axis=-1)
     
 #   # quantized cnn apply scale factor
-    nbits = 3
+    nbits = cf.nb
     m = pow(2, nbits-1)
+        
+#    x_test = np.clip(np.round(x_test*m), -m, m-1)/m
+#    x_train = np.clip(np.round(x_train*m), -m, m-1)/m
     
     x_test /= m
     x_train /= m
-#    x_test = np.clip(np.round(x_test*m), -m, m-1)/m
-#    x_train = np.clip(np.round(x_train*m), -m, m-1)/m
 
     # binary-net
 #    x_test = np.sign(x_test - 0.1) # sign(x) ret 0 if x == 0, add small bias to map -1

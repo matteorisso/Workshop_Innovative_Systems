@@ -10,8 +10,8 @@ package globals_sv;
    localparam K = 5; // kernel size
    localparam KK = K*K;     
 
-   localparam N = 2; // activation bits
-   localparam BG = 6; // bit-growth
+   localparam N = 4; // activation bits
+   localparam BG = 4; // bit-growth
 
    // 2d layers
    
@@ -24,10 +24,10 @@ package globals_sv;
    
    // convolution
    
-   localparam C1_NB_TILE  = 4; 
+   localparam C1_NB_TILE   = 4; 
    localparam C1_NB_IFMAPS = 1;
    localparam C1_NB_OFMAPS = 6;
-   localparam C2_NB_TILE  = 2;
+   localparam C2_NB_TILE   = 2;
    localparam C2_NB_IFMAPS = C1_NB_OFMAPS;
    localparam C2_NB_OFMAPS = 16;
 

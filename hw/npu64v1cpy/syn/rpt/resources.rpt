@@ -1,0 +1,38 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'dp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : resources
+Design : dp
+Version: F-2011.09-SP3
+Date   : Fri Feb 14 20:06:25 2020
+****************************************
+
+Resource Sharing Report for design dp in file ..//src/dp.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r72      | DW01_inc     | width=10   |               | add_215              |
+| r74      | DW01_inc     | width=10   |               | add_521              |
+| r76      | DW01_inc     | width=10   |               | add_537              |
+| r176     | DW02_mult    | A_width=4  |               | mult_add_586_aco     |
+|          |              | B_width=1  |               |                      |
+| r178     | DW01_inc     | width=5    |               | add_586_aco          |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_215            | DW01_inc         | rpl                |                |
+| add_521            | DW01_inc         | rpl                |                |
+| add_537            | DW01_inc         | rpl                |                |
+===============================================================================
+
+
+No multiplexors to report
+1

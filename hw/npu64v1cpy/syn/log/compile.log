@@ -8,13 +8,13 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 ============================================================================
 
 
-Information: There are 751 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 698 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'SNPS_CLOCK_GATE_HIGH_dp'
+  Processing 'SNPS_CLOCK_GATE_HIGH_dp_0'
   Mapping integrated clock gating circuitry
   Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N10_0_0'
   Mapping integrated clock gating circuitry
@@ -22,12 +22,7 @@ Information: There are 751 potential problems in your design. Please run 'check_
   Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N10_1_0'
   Mapping integrated clock gating circuitry
   Processing 'addr_gen_N10_1'
-  Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N10_2_0'
-  Mapping integrated clock gating circuitry
-  Processing 'addr_gen_N10_2'
-  Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N10_3_0'
-  Mapping integrated clock gating circuitry
-  Processing 'addr_gen_N10_3'
+  Processing 'addr_gen_o_ctrl'
   Processing 'SNPS_CLOCK_GATE_HIGH_addr_gen_N12_0'
   Mapping integrated clock gating circuitry
   Processing 'addr_gen_N12'
@@ -55,20 +50,21 @@ Information: There are 751 potential problems in your design. Please run 'check_
   Processing 'SNPS_CLOCK_GATE_HIGH_countern_N3_2'
   Mapping integrated clock gating circuitry
   Processing 'countern_N3_2'
-  Processing 'quantize_p_0'
-  Processing 'SNPS_CLOCK_GATE_HIGH_avgp_unit_0'
+  Processing 'round_i_N6_o_N4_0'
+  Processing 'SNPS_CLOCK_GATE_HIGH_pool_0'
   Mapping integrated clock gating circuitry
-  Processing 'avgp_unit_0'
-  Processing 'SNPS_CLOCK_GATE_HIGH_avgp_unit_1'
+  Processing 'pool_0'
+  Processing 'SNPS_CLOCK_GATE_HIGH_pool_1'
   Mapping integrated clock gating circuitry
-  Processing 'avgp_unit_1'
-  Processing 'SNPS_CLOCK_GATE_HIGH_avgp_unit_2'
+  Processing 'pool_1'
+  Processing 'SNPS_CLOCK_GATE_HIGH_pool_2'
   Mapping integrated clock gating circuitry
-  Processing 'avgp_unit_2'
-  Processing 'SNPS_CLOCK_GATE_HIGH_avgp_unit_3'
+  Processing 'pool_2'
+  Processing 'SNPS_CLOCK_GATE_HIGH_pool_3'
   Mapping integrated clock gating circuitry
-  Processing 'avgp_unit_3'
-  Processing 'relu_0'
+  Processing 'pool_3'
+  Processing 'relu_i_N8_o_N4_0'
+  Processing 'ppu'
   Processing 'SNPS_CLOCK_GATE_HIGH_pe_0_0'
   Mapping integrated clock gating circuitry
   Processing 'pe_0'
@@ -262,13 +258,16 @@ Information: There are 751 potential problems in your design. Please run 'check_
   Mapping integrated clock gating circuitry
   Processing 'pe_63'
   Processing 'npu'
-  Processing 'SNPS_CLOCK_GATE_HIGH_wrap_act_buffer'
+  Processing 'SNPS_CLOCK_GATE_HIGH_act_buffer'
   Mapping integrated clock gating circuitry
   Processing 'act_if'
-  Processing 'SNPS_CLOCK_GATE_HIGH_act_buffer_0'
+  Processing 'SNPS_CLOCK_GATE_HIGH_act_rf_0'
   Mapping integrated clock gating circuitry
+  Processing 'act_rf'
   Processing 'act_buffer'
-  Processing 'wrap_act_buffer'
+  Processing 'SNPS_CLOCK_GATE_HIGH_act_lb_0'
+  Mapping integrated clock gating circuitry
+  Processing 'act_lb'
   Processing 'dp'
 
   Updating timing information
@@ -277,6 +276,8 @@ Information: Updating design information... (UID-85)
   Beginning Implementation Selection
   ----------------------------------
   Processing 'dp_DW01_inc_0'
+  Processing 'dp_DW01_inc_1'
+  Processing 'dp_DW01_inc_2'
   Processing 'addr_gen_N10_0_DW01_add_0'
   Processing 'addr_gen_N10_0_DW01_add_1'
   Processing 'addr_gen_N10_0_DW01_add_2'
@@ -285,18 +286,18 @@ Information: Updating design information... (UID-85)
   Processing 'addr_gen_N10_1_DW01_add_1'
   Processing 'addr_gen_N10_1_DW01_add_2'
   Processing 'addr_gen_N10_1_DW01_add_3'
-  Processing 'addr_gen_N10_2_DW01_add_0'
-  Processing 'addr_gen_N10_2_DW01_add_1'
-  Processing 'addr_gen_N10_2_DW01_add_2'
-  Processing 'addr_gen_N10_2_DW01_add_3'
-  Processing 'addr_gen_N10_3_DW01_add_0'
-  Processing 'addr_gen_N10_3_DW01_add_1'
-  Processing 'addr_gen_N10_3_DW01_add_2'
-  Processing 'addr_gen_N10_3_DW01_add_3'
   Processing 'addr_gen_N12_DW01_add_0'
   Processing 'addr_gen_N12_DW01_add_1'
   Processing 'addr_gen_N12_DW01_add_2'
   Processing 'addr_gen_N12_DW01_add_3'
+  Processing 'pool_0_DW01_add_0'
+  Processing 'pool_0_DW01_add_1'
+  Processing 'pool_1_DW01_add_0'
+  Processing 'pool_1_DW01_add_1'
+  Processing 'pool_2_DW01_add_0'
+  Processing 'pool_2_DW01_add_1'
+  Processing 'pool_3_DW01_add_0'
+  Processing 'pool_3_DW01_add_1'
   Processing 'pe_0_DW01_add_0'
   Processing 'pe_0_DW01_sub_0'
   Processing 'pe_1_DW01_add_0'
@@ -425,86 +426,91 @@ Information: Updating design information... (UID-85)
   Processing 'pe_62_DW01_sub_0'
   Processing 'pe_63_DW01_add_0'
   Processing 'pe_63_DW01_sub_0'
+  Processing 'dp_DW01_inc_3'
+  Processing 'dp_DW02_mult_0'
 Information: Skipping clock gating on design npu, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_7, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design quantize_p_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design addr_gen_o_ctrl, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design act_if, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design act_if_MUX_OP_8_3_64, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_63_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_62_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_61_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_60_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_59_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_58_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_57_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_56_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_55_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_54_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_53_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_52_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_51_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_50_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_49_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_48_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_47_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_46_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_45_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_44_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_43_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_42_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_41_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_40_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_39_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_38_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_37_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_36_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_35_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_34_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_33_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_32_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_31_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_30_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_29_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_28_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_27_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_26_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_25_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_24_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_23_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_22_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_21_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_20_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_19_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_18_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_17_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_16_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_15_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_14_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_13_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_12_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_11_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_10_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_9_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_8_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_7_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_6_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_5_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_4_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_3_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_2_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_1_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design pe_0_MUX_OP_8_3_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_0, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_1, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_2, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_3, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_4, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_5, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design relu_6, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design quantize_p_0, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design quantize_p_1, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design quantize_p_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design round_i_N6_o_N4_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design act_if_MUX_OP_8_3_128, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_63_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_62_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_61_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_60_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_59_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_58_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_57_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_56_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_55_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_54_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_53_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_52_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_51_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_50_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_49_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_48_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_47_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_46_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_45_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_44_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_43_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_42_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_41_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_40_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_39_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_38_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_37_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_36_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_35_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_34_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_33_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_32_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_31_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_30_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_29_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_28_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_27_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_26_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_25_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_24_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_23_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_22_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_21_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_20_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_19_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_18_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_17_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_16_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_15_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_14_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_13_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_12_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_11_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_10_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_9_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_8_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_7_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_6_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_5_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_4_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_3_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_2_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_1_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pe_0_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design relu_i_N8_o_N4_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design round_i_N6_o_N4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design round_i_N6_o_N4_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design round_i_N6_o_N4_2, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design dp_DW01_inc_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design dp_DW01_inc_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design dp_DW01_inc_2, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N10_0_DW01_add_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N10_0_DW01_add_1, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N10_0_DW01_add_2, since there are no registers. (PWR-806)
@@ -513,18 +519,18 @@ Information: Skipping clock gating on design addr_gen_N10_1_DW01_add_0, since th
 Information: Skipping clock gating on design addr_gen_N10_1_DW01_add_1, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N10_1_DW01_add_2, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N10_1_DW01_add_3, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_2_DW01_add_0, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_2_DW01_add_1, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_2_DW01_add_2, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_2_DW01_add_3, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_0, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_1, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_2, since there are no registers. (PWR-806)
-Information: Skipping clock gating on design addr_gen_N10_3_DW01_add_3, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N12_DW01_add_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N12_DW01_add_1, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N12_DW01_add_2, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design addr_gen_N12_DW01_add_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_0_DW01_add_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_0_DW01_add_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_1_DW01_add_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_1_DW01_add_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_2_DW01_add_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_2_DW01_add_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_3_DW01_add_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design pool_3_DW01_add_1, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_0_DW01_add_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_0_DW01_sub_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_1_DW01_add_0, since there are no registers. (PWR-806)
@@ -653,12 +659,12 @@ Information: Skipping clock gating on design pe_62_DW01_add_0, since there are n
 Information: Skipping clock gating on design pe_62_DW01_sub_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_63_DW01_add_0, since there are no registers. (PWR-806)
 Information: Skipping clock gating on design pe_63_DW01_sub_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design dp_DW01_inc_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design dp_DW02_mult_0, since there are no registers. (PWR-806)
 Information: Performing clock-gating on design dp. (PWR-730)
-Information: Performing clock-gating on design wrap_act_buffer. (PWR-730)
-Information: Performing clock-gating on design avgp_unit_3. (PWR-730)
-Information: Performing clock-gating on design avgp_unit_2. (PWR-730)
-Information: Performing clock-gating on design avgp_unit_1. (PWR-730)
-Information: Performing clock-gating on design avgp_unit_0. (PWR-730)
+Information: Performing clock-gating on design act_lb. (PWR-730)
+Information: Performing clock-gating on design act_buffer. (PWR-730)
+Information: Performing clock-gating on design ppu. (PWR-730)
 Information: Performing clock-gating on design countern_N3_2. (PWR-730)
 Information: Performing clock-gating on design countern_N3_1. (PWR-730)
 Information: Performing clock-gating on design countern_N3_0. (PWR-730)
@@ -668,11 +674,9 @@ Information: Performing clock-gating on design countern_N4_2. (PWR-730)
 Information: Performing clock-gating on design countern_N4_1. (PWR-730)
 Information: Performing clock-gating on design countern_N4_0. (PWR-730)
 Information: Performing clock-gating on design addr_gen_N12. (PWR-730)
-Information: Performing clock-gating on design addr_gen_N10_3. (PWR-730)
-Information: Performing clock-gating on design addr_gen_N10_2. (PWR-730)
 Information: Performing clock-gating on design addr_gen_N10_1. (PWR-730)
 Information: Performing clock-gating on design addr_gen_N10_0. (PWR-730)
-Information: Performing clock-gating on design act_buffer. (PWR-730)
+Information: Performing clock-gating on design act_rf. (PWR-730)
 Information: Performing clock-gating on design pe_63. (PWR-730)
 Information: Performing clock-gating on design pe_62. (PWR-730)
 Information: Performing clock-gating on design pe_61. (PWR-730)
@@ -737,6 +741,10 @@ Information: Performing clock-gating on design pe_3. (PWR-730)
 Information: Performing clock-gating on design pe_2. (PWR-730)
 Information: Performing clock-gating on design pe_1. (PWR-730)
 Information: Performing clock-gating on design pe_0. (PWR-730)
+Information: Performing clock-gating on design pool_3. (PWR-730)
+Information: Performing clock-gating on design pool_2. (PWR-730)
+Information: Performing clock-gating on design pool_1. (PWR-730)
+Information: Performing clock-gating on design pool_0. (PWR-730)
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
@@ -744,25 +752,25 @@ Information: Performing clock-gating on design pe_0. (PWR-730)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:37   34428.9      8.62    5854.8   11894.2                          
-    0:00:37   34428.9      8.62    5854.8   11894.2                          
-    0:00:37   34651.6      6.97    4791.3    8277.1                          
-    0:00:38   34710.9      3.84    2142.0    4461.9                          
-    0:00:45   35039.9      0.00      -0.0      39.0                          
-    0:00:45   35039.9      0.00      -0.0      39.0                          
-    0:00:45   35039.9      0.00      -0.0      39.0                          
-    0:00:45   35039.9      0.00      -0.0      39.0                          
-    0:00:45   35039.9      0.00      -0.0      39.0                          
-    0:00:53   29832.7      0.00      -0.0       4.5                          
-    0:00:53   29829.8      0.00      -0.0       4.5                          
-    0:00:56   29829.8      0.00      -0.0       4.5                          
-    0:00:56   29829.8      0.00      -0.0       4.5                          
-    0:00:57   29829.8      0.00      -0.0       4.5                          
-    0:00:57   29829.8      0.00      -0.0       4.5                          
-    0:00:57   29831.6      0.00      -0.0       0.0                          
-    0:00:57   29831.6      0.00      -0.0       0.0                          
-    0:00:57   29831.6      0.00      -0.0       0.0                          
-    0:00:57   29831.6      0.00      -0.0       0.0                          
+    0:01:08   72164.5     15.06   13015.6   17290.8                          
+    0:01:08   72164.5     15.06   13015.6   17290.8                          
+    0:01:09   72571.2     15.06   12936.4   15437.2                          
+    0:01:10   72819.4      3.85    6847.4   11423.0                          
+    0:01:11   73524.5      0.00       0.0    3686.7                          
+    0:01:28   74275.7      0.00       0.0      20.6                          
+    0:01:29   74275.7      0.00       0.0      20.6                          
+    0:01:29   74275.7      0.00       0.0      20.6                          
+    0:01:29   74275.7      0.00       0.0      20.6                          
+    0:01:30   74275.7      0.00       0.0      20.6                          
+    0:01:41   67988.5      0.00       0.0       0.0                          
+    0:01:42   67978.4      0.00       0.0       0.0                          
+    0:01:48   67978.4      0.00       0.0       0.0                          
+    0:01:48   67978.4      0.00       0.0       0.0                          
+    0:01:48   67978.4      0.00       0.0       0.0                          
+    0:01:48   67978.4      0.00       0.0       0.0                          
+    0:01:49   67978.4      0.00       0.0       0.0                          
+    0:01:49   67978.4      0.00       0.0       0.0                          
+    0:01:49   67978.4      0.00       0.0       0.0                          
 
 
 
@@ -772,19 +780,19 @@ Information: Performing clock-gating on design pe_0. (PWR-730)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:57   29831.6      0.00      -0.0       0.0                          
-    0:00:57   29831.6      0.00      -0.0       0.0                          
-    0:00:59   29769.9      0.00      -0.0     960.0                          
+    0:01:49   67978.4      0.00       0.0       0.0                          
+    0:01:49   67978.4      0.00       0.0       0.0                          
+    0:01:52   67930.8      0.00       0.0      12.0                          
 
 
-  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  Beginning Design Rule Fixing  (max_capacitance)
   ----------------------------
 
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:59   29769.9      0.00      -0.0     960.0                          
-    0:00:59   29777.6      0.00      -0.0       0.0                          
+    0:01:52   67930.8      0.00       0.0      12.0                          
+    0:01:53   67932.7      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -793,32 +801,37 @@ Information: Performing clock-gating on design pe_0. (PWR-730)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:59   29777.6      0.00      -0.0       0.0                          
-    0:00:59   29777.6      0.00      -0.0       0.0                          
-    0:01:02   29765.9      0.00      -0.0       0.0                          
-    0:01:02   29758.5      0.00      -0.0       0.0                          
-    0:01:02   29751.8      0.00      -0.0       0.0                          
-    0:01:02   29748.1      0.00      -0.0       0.0                          
-    0:01:03   29744.4      0.00      -0.0       0.0                          
-    0:01:03   29741.2      0.00      -0.0       0.0                          
-    0:01:03   29738.0      0.00      -0.0       0.0                          
-    0:01:03   29735.3      0.00      -0.0       0.0                          
-    0:01:03   29732.7      0.00      -0.0       0.0                          
-    0:01:03   29730.0      0.00      -0.0       0.0                          
-    0:01:04   29727.4      0.00      -0.0       0.0                          
-    0:01:04   29724.7      0.00      -0.0       0.0                          
-    0:01:04   29722.0      0.00      -0.0       0.0                          
-    0:01:04   29722.0      0.00      -0.0       0.0                          
-    0:01:04   29722.0      0.00      -0.0       0.0                          
-    0:01:05   29647.3      0.00      -0.0       0.0                          
-    0:01:05   29647.3      0.00      -0.0       0.0                          
-    0:01:05   29647.3      0.00      -0.0       0.0                          
-    0:01:05   29647.3      0.00      -0.0       0.0                          
-    0:01:05   29647.3      0.00      -0.0       0.0                          
-    0:01:05   29647.3      0.00      -0.0       0.0                          
-    0:01:05   29647.3      0.00      -0.0       0.0                          
+    0:01:53   67932.7      0.00       0.0       0.0                          
+    0:01:53   67932.7      0.00       0.0       0.0                          
+    0:01:59   67912.5      0.00       0.0       0.0                          
+    0:02:00   67898.1      0.00       0.0       0.0                          
+    0:02:01   67888.8      0.00       0.0       0.0                          
+    0:02:02   67883.5      0.00       0.0       0.0                          
+    0:02:02   67849.2      0.00       0.0       0.0                          
+    0:02:04   67844.9      0.00       0.0       0.0                          
+    0:02:04   67841.2      0.00       0.0       0.0                          
+    0:02:04   67837.4      0.00       0.0       0.0                          
+    0:02:05   67833.7      0.00       0.0       0.0                          
+    0:02:11   67830.0      0.00       0.0       0.0                          
+    0:02:12   67826.3      0.00       0.0       0.0                          
+    0:02:12   67823.1      0.00       0.0       0.0                          
+    0:02:12   67819.9      0.00       0.0       0.0                          
+    0:02:12   67817.2      0.00       0.0       0.0                          
+    0:02:13   67814.6      0.00       0.0       0.0                          
+    0:02:13   67811.9      0.00       0.0       0.0                          
+    0:02:13   67811.9      0.00       0.0       0.0                          
+    0:02:13   67811.9      0.00       0.0       0.0                          
+    0:02:14   67771.7      0.00       0.0       0.0                          
+    0:02:14   67771.7      0.00       0.0       0.0                          
+    0:02:14   67771.7      0.00       0.0       0.0                          
+    0:02:14   67771.7      0.00       0.0       0.0                          
+    0:02:14   67771.7      0.00       0.0       0.0                          
+    0:02:14   67771.7      0.00       0.0       0.0                          
+    0:02:15   67771.7      0.00       0.0       0.0                          
 Loading db file '/home/mg.lowpower/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db'
 
   Optimization Complete
   ---------------------
+Warning: Design 'dp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'act_lb_inst/clk_gate_int_data_reg[1]/CLK': 1176 load(s), 1 driver(s)
 1

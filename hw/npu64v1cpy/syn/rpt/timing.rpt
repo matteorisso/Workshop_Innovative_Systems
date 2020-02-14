@@ -1,4 +1,3 @@
-Information: Updating design information... (UID-85)
  
 ****************************************
 Report : timing
@@ -7,8 +6,10 @@ Report : timing
         -max_paths 1
 Design : dp
 Version: F-2011.09-SP3
-Date   : Tue Feb  4 01:50:49 2020
+Date   : Fri Feb 14 20:06:25 2020
 ****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top

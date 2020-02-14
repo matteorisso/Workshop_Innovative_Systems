@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : dp
 Version: F-2011.09-SP3
-Date   : Tue Feb  4 01:50:51 2020
+Date   : Fri Feb 14 20:06:29 2020
 ****************************************
 
 
@@ -34,12 +34,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   1.6879 mW   (70%)
-  Net Switching Power  = 734.0502 uW   (30%)
+  Cell Internal Power  =   3.2135 mW   (75%)
+  Net Switching Power  =   1.0652 mW   (25%)
                          ---------
-Total Dynamic Power    =   2.4220 mW  (100%)
+Total Dynamic Power    =   4.2787 mW  (100%)
 
-Cell Leakage Power     = 512.8076 uW
+Cell Leakage Power     =   1.0732 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -48,10 +48,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network    397.9997          284.2216        1.2025e+04          694.2462  (  23.66%)
-register       1.1696e+03           15.4120        2.1889e+05        1.4039e+03  (  47.84%)
+clock_network  1.5962e+03          141.1012        6.0880e+04        1.7982e+03  (  33.60%)
+register       1.3789e+03           26.4212        6.4968e+05        2.0550e+03  (  38.40%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    120.3716          434.4150        2.8189e+05          836.6760  (  28.51%)
+combinational    238.3843          897.6455        3.6267e+05        1.4987e+03  (  28.00%)
 --------------------------------------------------------------------------------------------------
-Total          1.6879e+03 uW       734.0487 uW     5.1280e+05 nW     2.9348e+03 uW
+Total          3.2135e+03 uW     1.0652e+03 uW     1.0732e+06 nW     5.3519e+03 uW
 1

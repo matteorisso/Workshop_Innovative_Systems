@@ -9,8 +9,8 @@ package globals is
   constant K  : natural := 5;           --// kernel size
   constant KK : real    := real(K**2);
 
-  constant N  : natural := 2;           --// activation bits
-  constant BG : natural := 6;           --// bit-growth
+  constant N  : natural := 4;           --// activation bits
+  constant BG : natural := 4;           --// bit-growth
 
   --// 2d layers
 
