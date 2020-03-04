@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Theoretical analysis}{3}
+\contentsline {subsection}{\numberline {2.1}Half Adder}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}Area}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}Timing}{4}
+\contentsline {subsubsection}{\numberline {2.1.3}Power consumption: dynamic power}{5}
+\contentsline {subsubsection}{\numberline {2.1.4}Power consumption: static power}{6}
+\contentsline {subsection}{\numberline {2.2}Full adder}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Area}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Timing}{7}
+\contentsline {subsubsection}{\numberline {2.2.3}Power consumption: dynamic power}{8}
+\contentsline {subsubsection}{\numberline {2.2.4}Power consumption: static power}{8}
+\contentsline {section}{\numberline {3}Octave implemetation}{9}
+\contentsline {section}{\numberline {4}Results}{17}

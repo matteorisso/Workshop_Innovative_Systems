@@ -1,0 +1,44 @@
+\subsection{Occupied Area}
+In order to evaluate the occupied area of the Wallace Tree, the number of full adders, half adders and D flip flops have been considered. The adders have been implemented by using exclusively ND2 gate while flip flops also include inverter gates.
+
+In Figures \ref{fig:half_adder}, \ref{fig:full_adder} and \ref{fig:f_f} are shown the designs of an half adder, a full adder and D flip flops implemented as previously described.
+
+\begin{figure}[H]
+	\centering
+	\textsf{{\fontsize{9pt}{5.5pt}
+			\input{./immagini/half_adder.pgf}}}
+	\caption{Half Adder ND2 implementation}
+	\label{fig:half_adder}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\textsf{{\fontsize{9pt}{4.0pt}
+			\input{./immagini/full_adder.pgf}}}
+	\caption{Full Adder ND2 implementation}
+	\label{fig:full_adder}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\textsf{{\fontsize{9pt}{5.5pt}
+			\input{./immagini/ff.pgf}}}
+	\caption{D flip flop implementation}
+	\label{fig:f_f}
+\end{figure}
+The code requires as inputs the ND2 area and the INV one: the total area has been calculated as follows:
+
+\begin{equation}
+area_{FA}=9\cdot area_{ND2}
+\end{equation}
+\begin{equation}
+area_{HA}=5\cdot area_{ND2}
+\end{equation}
+\begin{equation}
+area_{FF}=8\cdot area_{ND2}+2\cdot area_{INV}
+\end{equation}
+\begin{equation}
+area_{total}=N_{FA}\cdot area_{FA}+N_{HA}\cdot area_{HA}+N_{FF}\cdot area_{FF}
+\end{equation}
+
+$N_{FA}$, $N_{HA}$ and $N_{FF}$ are respectively referred to the number of full adders, half adders and flip flops instantiated in the Wallace structure.

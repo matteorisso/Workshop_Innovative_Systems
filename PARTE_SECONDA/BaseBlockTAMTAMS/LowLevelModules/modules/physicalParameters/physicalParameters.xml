@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>physicalParameters</name>
+    <displayName>Parameters </displayName>
+    <implementation>  
+        <engine>matlab</engine>
+        <technology></technology>
+        <name>physical</name>
+        <parameters type="String" defaultValue="300" value="1"> Temp</parameters> 
+        <parameters type="String" defaultValue="2" value="1"> fi</parameters>
+        <parameters type="String" defaultValue="0.55" value="1"> p</parameters>
+        <parameters type="String" defaultValue="50000" value="1"> Ng</parameters>
+        <parameters type="String" defaultValue="100000000" value="1"> Ntot</parameters>
+        <parameters type="String" defaultValue="0.7" value="1"> mem</parameters>
+        <parameters type="String" defaultValue="0.1" value="1"> skew</parameters>
+        <parameters type="String" defaultValue="26" value="1"> setup</parameters>
+        <parameters type="String" defaultValue="26" value="1"> delay</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> se</parameters>
+        <parameters type="String" defaultValue="0.03" value="1"> gate_criteria</parameters>
+        <parameters type="String" defaultValue="15" value="1"> logic_depth</parameters>
+        <parameters type="String" defaultValue="0.6" value="1"> Fo1</parameters>
+        <parameters type="String" defaultValue="0.2" value="1"> Fo2</parameters>
+        <parameters type="String" defaultValue="0.14" value="1"> Fo3</parameters>
+        <parameters type="String" defaultValue="0.06" value="1"> Fo4</parameters>
+        <parameters type="String" defaultValue="0.25" value="1"> alfa</parameters>
+        <parameters type="String" defaultValue="2.5" value="1"> Fo_avg</parameters>
+        <parameters type="String" defaultValue="0.75" value="1"> se_glob</parameters>
+        <parameters type="String" defaultValue="32" value="1"> WL</parameters>
+        <parameters type="String" defaultValue="0.05" value="1"> R</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Nmemblock</parameters>
+        <parameters type="String" defaultValue="4" value="1"> DIE_AREA</parameters>
+        <parameters type="String" defaultValue="0.001" value="1"> CLUSTER_AREA_min</parameters>
+        <parameters type="String" defaultValue="4" value="1"> n_LEVEL</parameters>
+        <parameters type="String" defaultValue="20000" value="1"> n_LATCH_TOT</parameters>
+        <parameters type="String" defaultValue="1" value="1"> K_LATCH</parameters>
+        <parameters type="String" defaultValue="3" value="1"> DELTA_Tild_perc</parameters>
+        <parameters type="String" defaultValue="3" value="1"> DELTA_Hint_perc</parameters>
+        <parameters type="String" defaultValue="5" value="1"> DELTA_Leff_perc</parameters>
+        <parameters type="String" defaultValue="1.2" value="1"> DELTA_Tox_perc</parameters>
+        <parameters type="String" defaultValue="5" value="1"> DELTA_Vth_perc</parameters>
+        <parameters type="String" defaultValue="20" value="1"> DELTA_CL_perc</parameters>
+        <parameters type="String" defaultValue="10" value="1"> DELTA_Vdd_perc</parameters>
+        <parameters type="String" defaultValue="8" value="1"> DELTA_T_perc</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> pA</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> pB</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> pC</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> pD</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> alpha_in</parameters>
+        <parameters type="String" defaultValue="2" value="1"> alpha_W</parameters>
+        <parameters type="String" defaultValue="2" value="1"> alpha_pass</parameters>
+        <parameters type="String" defaultValue="2" value="1"> alpha_static_FF</parameters>
+        <parameters type="String" defaultValue="2" value="1"> alpha_C2_FF</parameters>
+        <parameters type="String" defaultValue="1.7" value="1"> kclock</parameters>
+        <parameters type="String" defaultValue="1.7" value="1"> kclock_static_FF</parameters>
+        <parameters type="String" defaultValue="1.7" value="1"> kclock_C2_FF</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> Nreg_c2mos</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> Nreg_stat</parameters>
+        <parameters type="String" defaultValue="1" value="1"> fi2</parameters>
+        <parameters type="String" defaultValue="0" value="1"> fi3</parameters>
+        <parameters type="String" defaultValue="0" value="1"> fi4</parameters>
+        <parameters type="String" defaultValue="0" value="1"> CG</parameters>
+        <parameters type="String" defaultValue="0.5" value="1"> Nread</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Nwrite</parameters>
+        <parameters type="String" defaultValue="1" value="1"> alpha_addr</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Ncmos</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Ndyn</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Npass</parameters>
+        <parameters type="String" defaultValue="1" value="1"> VDD2</parameters>
+        <parameters type="String" defaultValue="1" value="1"> PACKAGE</parameters>
+        <parameters type="String" defaultValue="1" value="1"> N_contacts </parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_logic</parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_memory</parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_IO</parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_RF</parameters>
+        <parameters type="String" defaultValue="1" value="1"> FLASH</parameters>
+        <parameters type="String" defaultValue="1" value="1"> EEPROM</parameters>
+        <parameters type="String" defaultValue="1" value="1"> RAM</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Cache_levels</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Power_supply</parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_Local_BUS</parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_Global_BUS</parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_Shared_BUS</parameters>
+        <parameters type="String" defaultValue="1" value="1"> perc_Bridge_BUS</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Block_connection</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Clock_distribution</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_SPI</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_I2C</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_UART</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_CAN</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_DAC</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_ADC</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_DMA</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_PWM</parameters>
+        <parameters type="String" defaultValue="1" value="1"> number_Timer</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Fmax</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Power_supply</parameters>
+        <parameters type="String" defaultValue="1" value="1"> ADC_resulution</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Instruction_set</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Pipeline_level</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Parallel_data_BUS</parameters>
+        <parameters type="String" defaultValue="1" value="1"> Core_number</parameters>  
+    </implementation>
+</module>

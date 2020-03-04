@@ -1,0 +1,36 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Multiplexer architecture}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Multiplexer with NAND gates}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}CMOS realization of multiplexers}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Types of Multiplexer}{6}{section.1.4}
+\contentsline {section}{\numberline {1.5}NAND with TAMTAMS}{7}{section.1.5}
+\contentsline {chapter}{\numberline {2}Power consumption}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Theoretical analysis}{10}{section.2.1}
+\contentsline {paragraph}{Static Power}{10}{section.2.1}
+\contentsline {paragraph}{Dynamic Power}{10}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Models}{11}{subsection.2.1.1}
+\contentsline {paragraph}{Static power model}{12}{subsection.2.1.1}
+\contentsline {paragraph}{Dynamic power model}{12}{equation.2.1.1}
+\contentsline {section}{\numberline {2.2}Simulation results}{14}{section.2.2}
+\contentsline {section}{\numberline {2.3}Discussion}{15}{section.2.3}
+\contentsline {section}{\numberline {2.4}Matlab implementation}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Main code}{19}{subsection.2.4.1}
+\contentsline {chapter}{\numberline {3}MUX time propagation delay }{22}{chapter.3}
+\contentsline {section}{\numberline {3.1}Theoretical analysis}{22}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}MUX time delay}{23}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Simulation results}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Discussion}{24}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Matlab implementation}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Main time delay}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Mastar4 Vth Ioff Ig HP2010()}{28}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Ion Master model HP 2010()}{33}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Multiplexer area}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Theoretical analysis}{38}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulation results}{38}{section.4.2}
+\contentsline {subsubsection}{Hp Technology}{39}{section.4.2}
+\contentsline {subsubsection}{Lop Technology}{39}{section.4.2}
+\contentsline {subsubsection}{Lstp Technology}{39}{section.4.2}
+\contentsline {section}{\numberline {4.3}Discussion}{39}{section.4.3}
+\contentsline {section}{\numberline {4.4}Matlab implementation}{41}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Main code}{41}{subsection.4.4.1}

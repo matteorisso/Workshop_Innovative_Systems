@@ -1,0 +1,36 @@
+\subsection{Power consumption}
+In this section, in order to estimate the power consumption, both static power and  dynamic power contributions have been taken into account.
+
+The dynamic power of a ND2 gate has been computed as follows:
+
+\begin{equation}
+P_{dyn}^{ND2}=0.5\cdot C_{ND2}\cdot f_{ck}\cdot V_{DD}^2
+\end{equation}
+while for INV gate:
+\begin{equation}
+P_{dyn}^{INV}=0.5\cdot C_{\textit{INV}}\cdot f_{ck}\cdot V_{DD}^2
+\end{equation}
+where $f_{ck}$ is given by the technology of reference.
+
+It's possible to compute the dynamic power contribution also considering the $f_{max}$ computed as the reverse of the critical path.
+
+The total dynamic power contribution is obtained as:
+
+\begin{equation}
+P_{dyn}^{total}=P_{dyn}^{ND2}\cdot N_{ND2}+P_{dyn}^{INV}\cdot N_{INV}
+\end{equation}
+
+For static power evaluation, $I_{static}^{ND2}$ and $I_{static}^{INV}$ are required as input and have the same value. This contribution is usually obtained starting from $I_{gate}^{ND2}$ and $I_{off}^{ND2}$ currents, provided by the Roadmap. 
+For a ND2 gate, the static power consumption is:
+\begin{equation}
+P_{static}^{ND2}=I_{static}^{ND2}\cdot V_{DD}
+\end{equation}
+For a INV gate:
+\begin{equation}
+P_{static}^{INV}=I_{static}^{INV}\cdot V_{DD}
+\end{equation}
+The total static power contribution is obtained from the following equation:
+
+\begin{equation}
+P_{static}^{total}=P_{static}^{ND2}\cdot N_{ND2}+P_{static}^{INV}\cdot N_{INV}
+\end{equation}

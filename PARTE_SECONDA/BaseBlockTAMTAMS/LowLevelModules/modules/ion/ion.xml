@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>ion</name>  
+	<displayName>OnCurrent</displayName>
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>finfet</technology>
+		<name>ion-abbas</name>
+	</implementation> 
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>utbb</technology>
+		<name>utbbid</name>
+	</implementation> 
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>fdsoi</technology>
+		<name>fdsoicurrents</name>
+	</implementation> 
+        
+
+</module>
+
+

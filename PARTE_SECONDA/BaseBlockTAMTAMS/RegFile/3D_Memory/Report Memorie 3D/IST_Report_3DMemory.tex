@@ -1,0 +1,193 @@
+% !TeX document-id = {b74286d3-7306-4fec-91ce-ebb12c9a14b7}
+\documentclass[a4paper,12pt,oneside]{book}
+%-----------------------------------------------
+%package
+%-----------------------------------------------
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{subfigure}
+\graphicspath{{foto/}}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{footmisc}
+\usepackage[citecolor=black, filecolor=blue, linkcolor=blue, urlcolor=blue, colorlinks=true] {hyperref}
+\usepackage{multirow}
+\usepackage[font=small, format=hang, labelfont={bf}]{caption}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage{minted}
+
+% !TeX TXS-program:compile = txs:///lualatex/[--shell-escape]
+\usemintedstyle{manni}
+\definecolor{bgcode}{rgb}{0.97,0.97,0.97}
+
+\interfootnotelinepenalty =10000
+%-----------------------------------------------
+%new command, colors, code listings
+%-----------------------------------------------
+%commands
+\newcommand\tab[1][1cm]{\hspace{#1}}
+\newcommand\C{^\circ C}
+\newcommand\MatLab{\textsc{MatLab}}
+\newcommand\smsr{\textsc{Smsr}}
+\newcommand\fwhm{\textsc{Fwhm}}
+\newcommand\osa{\textsc{Osa}}
+\newcommand\esa{\textsc{Esa}}
+
+%fancy
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\chead{}
+\cfoot{\thepage}
+\lhead{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\makeatletter 
+
+\renewcommand{\@makechapterhead}[1]{% 
+\vspace*{30 pt}% 
+{\setlength{\parindent}{0pt} \raggedright \normalfont 
+\bfseries\Huge 
+\ifnum \value{secnumdepth}>1 
+   \if@mainmatter\thechapter.\ \fi% 
+\fi 
+#1\par\nobreak\vspace{40 pt}}} 
+\makeatother
+\renewcommand{\chaptermark}[1]{%
+\markboth{#1}{}}
+\makeatletter 
+
+%definizione figure
+\usepackage[labelfont={bf}, font={small}, justification={centerlast}]{caption}
+
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\lstset{language=Matlab,%
+    breaklines=true,%
+    morekeywords={void},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{black}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+%formato numeri titoli
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{10pt}}
+\newfont{\chapterNumber}{eurb10 scaled 7000}
+
+\titleformat{\chapter}[display]%
+{\relax}{\mbox{}\marginpar{\vspace*{-\baselineskip}\color{gray75}\chapterNumber\thechapter}}{0pt}%
+  {\huge\bfseries}[\normalsize\vspace*{.8\baselineskip}\titlerule]% 
+  
+\titleformat{\section}[hang]{\normalfont\bfseries}{\thesection\hsp\textcolor{gray75}{|}\hsp}{0pt}{\normalfont\bfseries\Large}
+
+\titleformat{\subsection}[hang]{\normalfont\bfseries}{\thesubsection\hsp\textcolor{gray75}{|}\hsp}{0pt}{\large\bfseries}
+
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsubsection\hsp\textcolor{gray75}{|}\hsp}{0pt}{\normalfont\bfseries}
+
+\setcounter{secnumdepth}{4}
+
+%definizione parametri pagina 
+\usepackage{geometry}
+\geometry{a4paper,top=4cm,bottom=3.5cm,left=2.5cm,right=2.5cm}
+
+%colors
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+
+%highlight code
+\lstdefinestyle{C}{
+	language		= C,
+	basicstyle		= \ttfamily,
+	keywordstyle	= \color{blue}\ttfamily,
+	stringstyle		= \color{red}\ttfamily,
+	commentstyle	= \color{green}\ttfamily,
+	morekeywords	= {for, },
+	morecomment		= [l][\color{magenta}]{\#},
+}
+\lstdefinestyle{VHDL}{
+	language     = VHDL,
+	basicstyle   = \ttfamily,
+	keywordstyle = \color{blue!100!black!80}\bfseries,
+	commentstyle = \color{green!90!black!90},
+	morekeywords={ library,use,all,entity,is,port,in,out,end,architecture,of,
+	begin,and},
+	morecomment=[l]--
+}
+
+%to force a line break in a table (package makecell)
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%-----------------------------------------------
+%Title and first informations:
+%-----------------------------------------------
+
+
+
+
+%-----------------------------------------------
+%document
+%-----------------------------------------------
+\begin{document}
+%-----------------------------------------------
+%Title and index in the document
+%-----------------------------------------------
+
+\tableofcontents
+\listoffigures
+
+%This way the first page is the title page, the second the index page and from the next page starts the real document
+\newpage
+
+
+%-----------------------------------------------
+%Instruments
+%-----------------------------------------------
+
+
+%-----------------------------------------------
+%chapters
+%-----------------------------------------------
+
+\mainmatter
+
+\input{Chapters/Chapter1}%Intro
+\input{Chapters/Chapter2}%Area
+\input{Chapters/Chapter3}%Delay
+\input{Chapters/Chapter4}%Power
+\input{Chapters/Chapter5}%Code
+
+\begin{thebibliography}{9}
+	\bibitem{paper}
+	V. Mohan, T. Bunker, L. Grupp, S. Gurumurthi,
+	M. R. Stan, S. Swanson (2013),
+	\emph{Modeling Power Consumption of NAND Flash
+		Memories Using FlashPower}, IEEE TRANSACTIONS ON COMPUTER-AIDED DESIGN OF INTEGRATED CIRCUITS AND SYSTEMS, VOL. 32, NO. 7, JULY 2013.
+\end{thebibliography}
+
+\end{document}

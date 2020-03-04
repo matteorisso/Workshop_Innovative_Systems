@@ -1,0 +1,72 @@
+		<li><b>Delay_Pow_nand2_cmos</b> - NAND2 CMOS logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_nand2_cmos.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/CMOS-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+		<li><b>Delay_Pow_nand3_cmos</b> - NAND3 CMOS logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_nand3_cmos.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/CMOS-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+		<li><b>Delay_Pow_nand4_cmos</b> - NAND4 CMOS logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_nand4_cmos.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/CMOS-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+		<li><b>Delay_Pow_nor2_cmos</b> - NOR2 CMOS logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_nor2_cmos.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/CMOS-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+		<li><b>Delay_Pow_nor3_cmos</b> - NOR3 CMOS logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_nor3_cmos.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/CMOS-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+		<li><b>Delay_Pow_nor4_cmos</b> - NOR4 CMOS logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_nor4_cmos.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/CMOS-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+	<li><b>Delay_Pow_and2_dyn</b> - AND2 Dynamic logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_and2_dyn.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/Dynamic-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+	<li><b>Delay_Pow_and3_dyn</b> - AND3 Dynamic logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_and3_dyn.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/Dynamic-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+	<li><b>Delay_Pow_and4_dyn</b> - AND4 Dynamic logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_and4_dyn.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/Dynamic-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+	<li><b>Delay_Pow_or2_dyn</b> - OR2 Dynamic logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_or2_dyn.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/Dynamic-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+	<li><b>Delay_Pow_or3_dyn</b> - OR3 Dynamic logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_or3_dyn.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/Dynamic-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>
+	<li><b>Delay_Pow_or4_dyn</b> - OR4 Dynamic logic Delay, Static Power, Dynamic Power</i>
+				<ul>
+	    		<li><u><i><a href="Documentation/ModulesHTML/nand_and/Delay_Pow_or4_dyn.html" target="_blank"> Source Code</a></u></i></li>
+				<li><u><i><a href="Documentation/ModulesPDF/nand_and/Dynamic-logic gates characterisation.pdf" target="_blank"> View PDF</a></u></i>
+	    		</ul>
+            </li>

@@ -1,0 +1,28 @@
+\subsection{Timing analysis}
+In order to estimate the maximum operating frequency the critical path has been calculated. In a pipelined version of the Wallace Tree, the critical path to be considered is the longest combinatorial path between 2 layers of flip flops, in particular it is represented by the path which goes through a certain number of full adders (that depends on the number of levels of the tree and the number of pipeline stages inserted).
+
+Since the system is timed through flip flops, the Clock-to-Output delay and set-up time have been also considered. In particular the minimum allowed clock period (in the fully pipelined case) will therefore be:
+
+\begin{equation}
+t_{min}=t_{ClkToOut}+delay_{FA}+t_{setup}
+\end{equation}
+
+Otherwise, the number of FA between two layers of Flip-Flops has to be considered. The full adder delay is given by the following expression:
+\begin{equation}
+delay_{FA}=6\cdot\tau_{ND2}
+\end{equation}
+$t_{ClkToOut}$ and $t_{setup}$ are passed as inputs to the function implemented for the estimations.
+The delay of a single ND2 gate, $\tau_{ND2}$, is calculated by considering the model of delay in the Roadmap, that is the following:
+\begin{equation}
+\tau_{ND2}=\frac{C_{ND2}\cdot V_{DD}}{I_{ND2}}
+\end{equation}
+In the Matlab function that has been implemented $\tau_{ND2}$ is passed as an input as well.
+
+Finally the Wallace Tree delay has been obtained as:
+\begin{equation}
+delay_{total}=N_{pipestage}\cdot t_{min}
+\end{equation}
+
+Once obtained the critical path, it is possible to evaluate the maximum operating frequency, $f_{max}$, calculated as the reverse of $t_{min}$. 
+
+In the case of a non-pipelined implemetation the delay is given by $N$ times the FA delay, where $N$ is the number of levels of the tree.

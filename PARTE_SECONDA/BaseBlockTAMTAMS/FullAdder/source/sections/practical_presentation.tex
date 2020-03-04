@@ -1,0 +1,78 @@
+\lstset{ 
+	language=Matlab,                		% choose the language of the code
+	%	basicstyle=10pt,       				% the size of the fonts that are used for the code
+	numbers=left,                  			% where to put the line-numbers
+	numberstyle=\footnotesize,      		
+	keywordstyle=\color{blue},
+	commentstyle=\color{red},
+	identifierstyle=\color{black},
+	basicstyle=\color{black},
+	stepnumber=1,                   		
+	numbersep=5pt,                  		% how far the line-numbers are from the code
+	%	backgroundcolor=\color{white},  	% choose the background color. You must add \usepackage{color}
+	showspaces=false,               		% show spaces adding particular underscores
+	showstringspaces=false,         		% underline spaces within strings
+	showtabs=false,                 			% show tabs within strings adding particular underscores
+	%	frame=single,	                			% adds a frame around the code
+	%	tabsize=2,                				% sets default tabsize to 2 spaces
+	%	captionpos=b,                   			% sets the caption-position to bottom
+	breaklines=true,                			% sets automatic line breaking
+	breakatwhitespace=false,        		% sets if automatic breaks should only happen at whitespace
+	escapeinside={\%*}{*)},      		% if you want to add a comment within your code
+	frame = single
+}
+
+Below is reported the MATLAB code and the tables of input (table \ref{tab_in_data}) parameters and output parameters (table \ref{tab_out_data}) for simpler reading.
+
+\lstinputlisting[language=Matlab]{img/half_adder_full_adder.m}
+
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|} \hline
+			\textbf{Quantity name} & \textbf{Description} & \textbf{u.m. (S.I.)} & \textbf{Variable name} \\ \hline
+			$L_{eff}$ & Effective gate length & $\mu m$ & L\_eff \\ 
+			$L_{s,d}$ & Source and drain length & $\mu m$ & L\_s\_d \\
+			$inter_{ovr}$ & Area override due to interconnections & \% & interc\_override \\
+			$V_{DD}$ & Power supply & V & vdd \\
+			$\alpha$ & Switching activity & \% & alpha \\
+			$W_{gate}$ & nMOS width & $\mu m$ & Wgate \\
+			$\beta$ & beta factor between nMOS and pMOS & / & beta \\
+			$C_{j0n}$ & nMOS junction capacitance per unit area & $\frac{pF}{\mu m^2}$ & Cj0n \\
+			$C_{j0p}$ & pMOS junction capacitance per unit area & $\frac{pF}{\mu m^2}$ & Cj0p \\
+			$C_{jswn}$ & nMOS sidewall junction capacitance per unit area & $\frac{pF}{\mu m^2}$ & Cjswn \\
+			$C_{jswp}$ & pMOS sidewall junction capacitance per unit area & $\frac{pF}{\mu m^2}$ & Cjswp \\
+			$C_{gd0n}$ & nMOS overlap capacitance between gate and drain per unit area & $\frac{pF}{\mu m^2}$ & Cgd0n \\
+			$C_{gd0p}$ & pMOS overlap capacitance between gate and drain per unit area & $\frac{pF}{\mu m^2}$ & Cgd0p \\
+			$C_{ox}$ & Oxide capacitance per unit area & $\frac{pF}{\mu m^2}$ & Cox \\
+			$L_{diff}$ & Source and drain diffusion length & $\mu m$ & lungh\_diff \\
+			$C_{NAND}$ & NAND2 capacitance & $fF$ & cap\_nand \\
+			$I_{off_n}$ & subthreshold current for nMOS & $\mu A$ & ioff\_n \\
+			$I_{off_p}$ & subthreshold current for pMOS & $\mu A$ & ioff\_p \\
+			$I_{gate_n}$ & gate current for nMOS & $\mu A$ & igate\_n \\
+			$I_{gate_p}$ & gate current for pMOS & $\mu A$ & igate\_p \\
+			$I_{NAND}$ & output current for NAND gate & $\mu A$ & i\_NAND \\ \hline
+		\end{tabular}
+	\end{center}
+	\caption{Input data}
+	\label{tab_in_data}
+\end{table}
+
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|} \hline
+			\textbf{Quantity name} & \textbf{Description} & \textbf{u.m. (S.I.)} & \textbf{Variable name} \\ \hline
+			$area_{HA}$ & Area half adder & $\mu m^2$ & area\_half\_adder \\
+			$area_{FA}$ & Area full adder & $\mu m^2$ & area\_full\_adder \\
+			$t_{cp,HA}$ & Critical path half adder & ps & t\_max\_half\_adder \\
+			$t_{cp,FA}$ & Critical path full adder & ps & t\_max\_full\_adder \\
+			$f_{max,HA}$ & Maximum allowed frequency for half adder & GHz & freq\_allowed\_half\_adder \\
+			$f_{max,FA}$ & Maximum allowed frequency for full adder & GHz & freq\_allowed\_full\_adder \\
+			$P_{tot_{HA,W}}$ & Half adder total power consumption with fixed $\alpha$ & $\mu W$ & P\_tot\_half\_adder \\
+			$P_{tot_{FA,W}}$ & Full adder total power consumption with fixed $\alpha$ & $\mu W$ & P\_tot\_full\_adder \\
+			$P_{tot_{HA,\alpha}}$ & Half adder total power consumption with fixed gate width & $\mu W$ & P\_tot\_half\_adder\_new \\
+			$P_{tot_{FA,\alpha}}$ & Full adder total power consumption with fixed gate width & $\mu W$ & P\_tot\_full\_adder\_new \\ \hline
+		\end{tabular}
+	\end{center}
+	\caption{Output data}
+	\label{tab_out_data}
+\end{table}

@@ -1,0 +1,27 @@
+\subsection{Wallace tree design}
+
+Wallace tree is an efficient structure in which half and full adders can be arranged in order to add multiple operands. This structrure is often used in multipliers in order to sum up together the previously-computed partial products.
+The main idea is to exploit a partial addition by columns.\\
+
+The first step needed to implement a Wallace Tree Adder is to correctly align data so that partial terms with the same weight are in the same column.
+
+At this point, the summands are grouped by three. The bits of each column are added together using a full adder or an half adder.
+An HA is able to compress two bits with weight $k$ to one bit of weight $k$ and one bit of weight $k+1$. FAs does the same thing with three bits instead allowing a compression ratio equal to $1.5$. 
+For this reason, starting from a structure with $n$ operands several levels of HAs and FAs are needed to compress these $n$ summands to two operands. Finally, when the tree has reduced the operands from $n$ to two, they are added together by a fast adder. \cite{Wallace}
+
+The number of required levels $L$ and the maximum number of elements at each level can be obtained as follows.
+The maximum number of elements at the last level (before the final adder) is two ($l_0=2$).
+
+At the generic level $j$ the maximum number of elements is instead given by the following expression: 
+\[
+	l_j=\left\lfloor\dfrac{3}{2}l_{j-1}\right\rfloor
+\]
+
+The number of required levels can be obtained by repeating this operation until $j \ge n$.
+
+In order to better illustrate the behaviour of the system is often used the dot notation. An example can be seen in Figure \ref{fig:wallace_tree} (this particular Figure has been generated through the Matlab code).
+
+Wallace allocation of the adders is ASAP, this means that at each level dots are divided in three-dots-wide stripes and each stripe is filled with the maximum possible amount of FAs and HAs.
+Stripes that only have one or two operands are forwarded to the next level of the tree structure.
+
+This execution flow can also be pipelined: in particular, in this work, different Wallace tree solutions have been explored and compared in terms of pipeline depth. Positive-edge triggered D flip flops have been inserted to store the outputs of the adders (sum and carry bits). In this way the computation performed by the tree is splitted onto multiple clock cycles depending on the depth of the tree.

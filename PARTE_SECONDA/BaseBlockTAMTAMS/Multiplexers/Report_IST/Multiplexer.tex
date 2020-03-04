@@ -1,0 +1,108 @@
+\documentclass[12pt, oneside]{report}
+\usepackage{geometry}
+\geometry{a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm,heightrounded}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{units}
+\usepackage{verbatim} 
+\usepackage{color}
+\usepackage{subcaption} 
+\usepackage{pdflscape}
+\usepackage{bm}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{epstopdf}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tablefootnote}
+\usepackage{setspace}
+\usepackage{quoting}
+\usepackage{wrapfig}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{titlesec}
+\lstset{language=Matlab,%
+	basicstyle=\small\ttfamily,
+	numbers=left,
+	numberstyle=\tiny,
+	stepnumber=2,
+	frame=lines
+}
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+%\hypersetup{
+%	colorlinks=true,
+%	urlcolor=black,
+%	linkcolor=black,
+%	pdftitle={Micro e nano system},
+%	bookmarks=true}
+\usepackage{eso-pic}
+
+\def\nicefrac#1#2{\leavevmode%
+	\raise.5ex\hbox{\small #1}%
+	\kern-.1em/\kern-.15em%
+	\lower.25ex\hbox{\small #2}}
+
+	\newcommand{\ohm}{$\Omega$\ }
+	\newcommand{\micro}{\textmu}
+	
+	\usepackage{eso-pic}
+	
+
+\begin{document}
+	\renewcommand{\chaptername}{Chapter}
+
+	\include{capitoli/0-frontespizio}
+	
+\begingroup 
+\makeatletter\let\ps@plain\ps@empty\makeatother 
+\tableofcontents
+\thispagestyle{empty} % elimino il numero di pagina nell'indice
+\cleardoublepage 
+\thispagestyle{empty} % elimino il numero di pagina nell'indice
+\endgroup
+
+	 
+
+
+	%\singlespacing
+	\onehalfspace % interlinea 1.5
+	%\doublespacing
+	
+	%\cleardoublepage
+	\quotingsetup{font=small}
+
+	\pagestyle{fancy}
+	\fancyhf{} % azzeriamo i campi
+	\fancyhead[RE]{\leftmark}
+	\fancyhead[LO]{\nouppercase{\rightmark}}	
+	\pagenumbering{arabic}
+	\fancyfoot[C]{\thepage}	
+	
+	%inserire qui tutti i capitoli
+	\include{capitoli/1-Introduction}
+%	\include{capitoli/1-Mult_arch}
+	\include{capitoli/2-potenza}
+	\include{capitoli/Marco-Time_propagation_delay}
+	\include{capitoli/areaoccupata}
+	
+%\include{capitoli/3-Theory}
+	%\include{capitoli/4-Simulation}
+	%\include{capitoli/5-Results}
+	%\include{capitoli/8-Bibliography}
+	
+	
+	
+\end{document}

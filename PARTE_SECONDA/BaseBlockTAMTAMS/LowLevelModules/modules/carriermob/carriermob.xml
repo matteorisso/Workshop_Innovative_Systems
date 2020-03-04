@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>carriermob</name>  
+	<displayName>mobility</displayName> 
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>finfet</technology>
+		<parameters type="String" defaultValue="1">Test_Parameter_FINFET</parameters>
+		<name>carriermob-abbas</name>
+	</implementation> 
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>fdsoi</technology>
+		<dependency>vth</dependency>
+		<name>fdsoimobility</name>
+		<parameters type="String" defaultValue="9">Test_Parameter</parameters>
+
+	</implementation> 
+</module>

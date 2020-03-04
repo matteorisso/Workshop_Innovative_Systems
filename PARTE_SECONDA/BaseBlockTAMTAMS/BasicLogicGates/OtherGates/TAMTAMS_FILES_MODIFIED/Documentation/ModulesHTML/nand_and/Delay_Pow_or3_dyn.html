@@ -1,0 +1,255 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>Delay_Pow_or3_dyn</title>
+      <meta name="generator" content="MATLAB 7.7">
+      <meta name="date" content="2016-04-18">
+      <meta name="m-file" content="Delay_Pow_or3_dyn"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head>
+   <body>
+      <div class="content"><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%          ______________________          %</span>
+<span class="comment">%         |     TAMTAMS WEB      |         %</span>
+<span class="comment">%         |________2016__________|         %</span>
+<span class="comment">%                                          %</span>
+<span class="comment">%               OR 3 Dynamic               %</span>
+<span class="comment">%                                          %</span>
+<span class="comment">%    Delay, Dynamic Power, Static Power    %</span>
+<span class="comment">%                                          %</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+<span class="comment">%------PARAMETERS---------------------------</span>
+
+N = 3;<span class="comment">%inputs number</span>
+const = 3; <span class="comment">%n-MOS dimension</span>
+<span class="comment">%DIMENSION OF DRAIN/SOURCE AREAS</span>
+Leff=Lgate-Gamma.*Xj;  <span class="comment">%nm effective lenght</span>
+fs_I=Leff./1000;
+WD=fs_I;
+lungh_diff=2.5.*fs_I; 	<span class="comment">%um Source and drain diffusion length</span>
+perim_N=2.*lungh_diff+WD; <span class="comment">%nm perimeter nMOS dimension</span>
+perim_P=2.*lungh_diff+2.*WD; <span class="comment">%nm perimeter pMOS dimension</span>
+<span class="comment">%DIMENSION OF TRANSISTOR</span>
+Wn = Wgate.*1e-3;          		<span class="comment">%um</span>
+Wp = (mueff_n./mueff_p).*Wgate.*1e-3;	<span class="comment">%um</span>
+<span class="comment">%CAPACITANCES</span>
+Cbottom_n=lungh_diff.*Cj0n.*(1+Vdd./(2.*Pbn)).^(-Mjn);  <span class="comment">%pF/um nMOS source and drain diffusion capacitance</span>
+Csidewall_n=1e6.*Cjswn.*(1+Vdd./(2.*Pbswn)).^(-Mswn); 	<span class="comment">%pF./um nMOS source and drain sidewall capacitance</span>
+Cbottom_p=lungh_diff.*Cj0p.*(1+Vdd./(2.*Pbp)).^(-Mjp); 	<span class="comment">%pF./um pMOS source and drain diffusion capacitance</span>
+Csidewall_p=1e6.*Cjswp.*(1+Vdd./(2.*Pbswp)).^(-Mswp);   <span class="comment">%pF./um pMOS source and drain sidewall capacitance</span>
+Coverlap_n=1e6.*Cgd0n; <span class="comment">%pF/um overlap n capacitance</span>
+Coverlap_p=1e6.*Cgd0p; <span class="comment">%pF/um overlap p capacitance</span>
+Cjn=Cbottom_n.*WD+Csidewall_n.*perim_N;		<span class="comment">%pF nMOS junction capacitance</span>
+Cjp=Cbottom_p.*2.*WD+Csidewall_p.*perim_P;	<span class="comment">%pF pMOS junction capacitance</span>
+C_ox_n = Cox.*Wn.*Leff.*1e-3;<span class="comment">%pF effective nMOS oxide capacitance</span>
+C_ox_p = Cox.*Wp.*Leff.*1e-3;<span class="comment">%pF effective pMOS oxide capacitance</span>
+<span class="comment">%MOS_resistance</span>
+Rn = 1/(mueff_n*1e8*Cox*1e-12*(Wgate/Leff)*1e-3*(Vdd-Vth_n))*Wn;	<span class="comment">%Ohm nMOS channel resistance</span>
+Rp = 1/(mueff_p*1e8*Cox*1e-12*(Wgate/Leff)*1e-3*abs(Vth_p-Vdd))*Wp;	<span class="comment">%Ohm pMOS channel resistance</span>
+<span class="comment">%GATE CURRENTS</span>
+Igate_nmos = Igate_n.*Wn;       <span class="comment">%nA</span>
+Igate_pmos = Igate_p.*Wp;       <span class="comment">%nA</span>
+<span class="comment">%OFF CURRENTS</span>
+Ioff_nmos = Ioff_n.*Wn;       <span class="comment">%nA</span>
+Ioff_pmos = Ioff_p.*Wp;       <span class="comment">%nA</span>
+
+<span class="comment">%------OUTPUTS COMPUTATION-------------------</span>
+
+<span class="comment">%---DYNAMIC POWER</span>
+<span class="comment">%switching activity of nodes</span>
+alfa_a = 1/2;
+alfa_b = 1/2;
+alfa_c = 1/2;
+alfa_M = 7/4;
+alfa_x1 = 1/4;
+alfa_Y = alfa_M;
+alfa_clk = 2;
+<span class="comment">%nodes capacitances</span>
+C_in = C_ox_n*2+C_ox_p+2*Coverlap_n+2*Coverlap_p;<span class="comment">%pF</span>
+C_L =  (C_ox_n+C_ox_p+2*Coverlap_n+2*Coverlap_p);<span class="comment">%pF</span>
+C_M = (const*2)*Cjn+Cjp+C_L;<span class="comment">%pF</span>
+C_X = (const*2+2)*Cjn; <span class="comment">%pF</span>
+<span class="keyword">for</span> h=1:4 <span class="comment">%loop for each FANOUT</span>
+C_Y = Cjn+Cjp+h*C_L; <span class="comment">%pF</span>
+C_tot=(C_ox_n*2+2*Coverlap_n)*(alfa_a+alfa_b+alfa_c)+C_M*alfa_M+C_X*(alfa_x1)+C_Y*alfa_Y+(C_in)*alfa_clk;  <span class="comment">%pF</span>
+dyn_power(h)=0.5*freq*1e6*C_tot*1e-12*(Vdd)^2;  <span class="comment">%W</span>
+endfor
+
+<span class="comment">%---I/O DELAY</span>
+t_precharge=Rp*(Cjp+N*Cjn+C_L);
+<span class="keyword">for</span> h=1:4 <span class="comment">%loop for each FANOUT</span>
+tfall_nor=Rn*(3*(N+1)*Cjn+2*Cjp+2*C_L);
+trise_INV=Rp*(Cjp+Cjn+h*C_L);
+tfall_INV=Rn*(Cjn+Cjp+h*C_L);
+Dyn_tpdr= t_precharge+tfall_nor+trise_INV;
+Dyn_tpdf= t_precharge+tfall_INV;
+t_delay(h)= max(Dyn_tpdr,Dyn_tpdf)/1e3;
+endfor;
+
+<span class="comment">%---STATIC POWER</span>
+static_power = Vdd*0.0625*(9*Ioff_pmos+8*Igate_pmos+11*Ioff_nmos+42*Igate_nmos)*1e-9;	<span class="comment">%W</span>
+
+<span class="comment">%------OUTPUTS STORAGE-----------------------</span>
+
+Pnand_and_dyn(counter_mod_index,counter_tech_index,:)=dyn_power(:);
+Pnand_and(counter_mod_index,counter_tech_index,:)=[static_power,static_power,static_power,static_power];
+Delay_nand_and(counter_mod_index,counter_tech_index,:)=t_delay(:);
+</pre>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%          ______________________          %
+%         |     TAMTAMS WEB      |         %
+%         |________2016__________|         %
+%                                          %
+%               OR 3 Dynamic               %
+%                                          %
+%    Delay, Dynamic Power, Static Power    %
+%                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHPARAMETERSREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+
+N = 3;%inputs number
+const = 3; %n-MOS dimension
+%DIMENSION OF DRAIN/SOURCE AREAS	
+Leff=Lgate-Gamma.*Xj;  %nm effective lenght
+fs_I=Leff./1000;
+WD=fs_I;
+lungh_diff=2.5.*fs_I; 	%um Source and drain diffusion length
+perim_N=2.*lungh_diff+WD; %nm perimeter nMOS dimension
+perim_P=2.*lungh_diff+2.*WD; %nm perimeter pMOS dimension
+%DIMENSION OF TRANSISTOR
+Wn = Wgate.*1e-3;          		%um
+Wp = (mueff_n./mueff_p).*Wgate.*1e-3;	%um
+%CAPACITANCES
+Cbottom_n=lungh_diff.*Cj0n.*(1+Vdd./(2.*Pbn)).^(-Mjn);  %pF/um nMOS source and drain diffusion capacitance 
+Csidewall_n=1e6.*Cjswn.*(1+Vdd./(2.*Pbswn)).^(-Mswn); 	%pF./um nMOS source and drain sidewall capacitance
+Cbottom_p=lungh_diff.*Cj0p.*(1+Vdd./(2.*Pbp)).^(-Mjp); 	%pF./um pMOS source and drain diffusion capacitance
+Csidewall_p=1e6.*Cjswp.*(1+Vdd./(2.*Pbswp)).^(-Mswp);   %pF./um pMOS source and drain sidewall capacitance
+Coverlap_n=1e6.*Cgd0n; %pF/um overlap n capacitance
+Coverlap_p=1e6.*Cgd0p; %pF/um overlap p capacitance
+Cjn=Cbottom_n.*WD+Csidewall_n.*perim_N;		%pF nMOS junction capacitance 
+Cjp=Cbottom_p.*2.*WD+Csidewall_p.*perim_P;	%pF pMOS junction capacitance 
+C_ox_n = Cox.*Wn.*Leff.*1e-3;%pF effective nMOS oxide capacitance 
+C_ox_p = Cox.*Wp.*Leff.*1e-3;%pF effective pMOS oxide capacitance
+%MOS_resistance
+Rn = 1/(mueff_n*1e8*Cox*1e-12*(Wgate/Leff)*1e-3*(Vdd-Vth_n))*Wn;	%Ohm nMOS channel resistance
+Rp = 1/(mueff_p*1e8*Cox*1e-12*(Wgate/Leff)*1e-3*abs(Vth_p-Vdd))*Wp;	%Ohm pMOS channel resistance
+%GATE CURRENTS
+Igate_nmos = Igate_n.*Wn;       %nA
+Igate_pmos = Igate_p.*Wp;       %nA
+%OFF CURRENTS
+Ioff_nmos = Ioff_n.*Wn;       %nA
+Ioff_pmos = Ioff_p.*Wp;       %nA
+
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHOUTPUTS COMPUTATIONREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+
+%REPLACE_WITH_DASH_DASH-DYNAMIC POWER 
+%switching activity of nodes
+alfa_a = 1/2;
+alfa_b = 1/2;
+alfa_c = 1/2;
+alfa_M = 7/4;
+alfa_x1 = 1/4;
+alfa_Y = alfa_M;
+alfa_clk = 2;
+%nodes capacitances
+C_in = C_ox_n*2+C_ox_p+2*Coverlap_n+2*Coverlap_p;%pF
+C_L =  (C_ox_n+C_ox_p+2*Coverlap_n+2*Coverlap_p);%pF
+C_M = (const*2)*Cjn+Cjp+C_L;%pF
+C_X = (const*2+2)*Cjn; %pF
+for h=1:4 %loop for each FANOUT
+C_Y = Cjn+Cjp+h*C_L; %pF
+C_tot=(C_ox_n*2+2*Coverlap_n)*(alfa_a+alfa_b+alfa_c)+C_M*alfa_M+C_X*(alfa_x1)+C_Y*alfa_Y+(C_in)*alfa_clk;  %pF    
+dyn_power(h)=0.5*freq*1e6*C_tot*1e-12*(Vdd)^2;  %W
+endfor
+
+%REPLACE_WITH_DASH_DASH-I/O DELAY
+t_precharge=Rp*(Cjp+N*Cjn+C_L);
+for h=1:4 %loop for each FANOUT
+tfall_nor=Rn*(3*(N+1)*Cjn+2*Cjp+2*C_L);
+trise_INV=Rp*(Cjp+Cjn+h*C_L);
+tfall_INV=Rn*(Cjn+Cjp+h*C_L);
+Dyn_tpdr= t_precharge+tfall_nor+trise_INV;
+Dyn_tpdf= t_precharge+tfall_INV;
+t_delay(h)= max(Dyn_tpdr,Dyn_tpdf)/1e3;
+endfor;
+
+%REPLACE_WITH_DASH_DASH-STATIC POWER
+static_power = Vdd*0.0625*(9*Ioff_pmos+8*Igate_pmos+11*Ioff_nmos+42*Igate_nmos)*1e-9;	%W
+
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHOUTPUTS STORAGEREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+
+Pnand_and_dyn(counter_mod_index,counter_tech_index,:)=dyn_power(:);
+Pnand_and(counter_mod_index,counter_tech_index,:)=[static_power,static_power,static_power,static_power];
+Delay_nand_and(counter_mod_index,counter_tech_index,:)=t_delay(:);
+
+##### SOURCE END #####
+-->
+   </body>
+</html>

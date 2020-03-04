@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>test</name>
+	<displayName>TEST_CLASS</displayName>
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>test_tech</technology>
+		<name>antani_2019</name>
+	</implementation>
+        <implementation>  
+                <engine>matlab</engine>
+		<name>tapioca_2019</name>
+	</implementation>
+</module>
+

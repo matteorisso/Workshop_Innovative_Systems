@@ -1,0 +1,27 @@
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Block structure of the register file\relax }}{2}{figure.caption.3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of a single SRAM cell\relax }}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Detailed structure of the register file\relax }}{3}{figure.caption.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Scheme of the precharge unit\relax }}{5}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Core of the dynamic NAND decoder\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Full scheme of the memory\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Row decoder and block decoder timing\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Elmore model for the wordline delay\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Structure of a SRAM cell\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sense amplifier structure\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Equivalent circuit for the first half of the write delay\relax }}{15}{figure.caption.13}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces SRAM cell\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Delay on a read operation\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Delay on a write operation\relax }}{17}{figure.caption.16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Dynamic Power Consumption on a read operation\relax }}{22}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Dynamic Power Consumption on a write operation\relax }}{22}{figure.caption.18}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Simplified Register File structure\relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Stack structure\relax }}{25}{figure.caption.20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Simulation of the Total Area value, varying the number of bit.\relax }}{29}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation of the Total Volume value, varying the number of bit.\relax }}{29}{figure.caption.22}
+\addvspace {10\p@ }
+\contentsfinish 

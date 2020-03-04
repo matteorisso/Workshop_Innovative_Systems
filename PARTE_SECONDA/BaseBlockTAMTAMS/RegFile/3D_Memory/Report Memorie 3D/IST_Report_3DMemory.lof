@@ -1,0 +1,28 @@
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Block structure of the memory\relax }}{2}{figure.caption.3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Block diagram of the total structure\relax }}{3}{figure.caption.4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces State machine for memory operation\relax }}{3}{figure.caption.5}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Detailed memory scheme\relax }}{5}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Core of the dynamic NAND decoder\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Full scheme of the memory\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Row decoder and block decoder timing\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Elmore model for the wordline delay\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Elmore model for the bitline delay\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Sense amplifier structure\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Elmore model for the pass transistors delay\relax }}{13}{figure.caption.13}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Simulation of the delay varying the size of the memory array\relax }}{14}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Read Dynamic Power and Write Dynamic Power versus $N_{wl},N_{bl}$\relax }}{22}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Erase Dynamic Power versus $N_{wl},N_{bl}$\relax }}{22}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Read Dynamic Power and Write Dynamic Power versus $N_{slice}$\relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Erase Dynamic Power versus $N_{slice}$\relax }}{23}{figure.caption.18}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Simplified memory structure\relax }}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Stack structure\relax }}{25}{figure.caption.20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Simulation of the Total Area value, varying the size of the memory array\relax }}{29}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation of the Total Volume value, varying the size of the memory array\relax }}{30}{figure.caption.22}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simulation of the Total Area value, varying the number of slice\relax }}{30}{figure.caption.23}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Simulation of the Total Volume value, varying the number of slice\relax }}{31}{figure.caption.24}
+\addvspace {10\p@ }

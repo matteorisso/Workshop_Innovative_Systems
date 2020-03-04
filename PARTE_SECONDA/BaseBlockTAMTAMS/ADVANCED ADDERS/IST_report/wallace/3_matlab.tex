@@ -1,0 +1,17 @@
+\section{MATLAB implementation}
+The developed Matlab code was written both as a simple script and as a function. The final function-version is the one that has been used to do multiple estimations (by varying n and k). The script reported in Paragraph 1.3.2 is instead the code that has been used to perform these estimations by passing the input values to the cited function.
+
+\subsection{Function}
+\lstinputlisting{wallace/wallace.m}
+\subsection{Script}
+\lstinputlisting{wallace/script.m}
+\subsection{Automatic Generation of FidoCadJ drawing}
+In addition, it was used a \emph{MATLAB} function to print the Wallace tree drawing. FidoCadJ was used as vector graphic editor to draw the dot notation version of the tree.
+\lstinputlisting{wallace/dotNotation.m}
+
+\subsection{Automatic Generation of VHDL code}
+An automatic VHDL implementation was carried out to test the algorithm. In this section the MATLAB functions called by the main script are reported.
+\lstinputlisting{wallace/init_wallace_VHDL.m}
+\lstinputlisting{wallace/gen_FAHA_VHDL.m}
+\lstinputlisting{wallace/mv_row_VHDL.m}
+\lstinputlisting{wallace/end_wallace_VHDL.m}

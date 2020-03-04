@@ -1,0 +1,293 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{clear} \PYG{n}{all}
+\PYG{n}{clc}
+
+\PYG{c}{\PYGZpc{}TEST PARAMETERS}
+\PYG{c}{\PYGZpc{}channel length }
+\PYG{n}{L} \PYG{p}{=} \PYG{l+m+mf}{1.00E\PYGZhy{}07}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}transistor width}
+\PYG{n}{W} \PYG{p}{=} \PYG{l+m+mf}{1.00E\PYGZhy{}06}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}ratio of mobilities pmos/nmos}
+\PYG{n}{Beta} \PYG{p}{=} \PYG{l+m+mi}{2}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}FILE PARAMETERS}
+\PYG{c}{\PYGZpc{}output capacitance of the driver driving the gates of the pmos inside the precharge unit	}
+	\PYG{n}{C\PYGZus{}ext\PYGZus{}pu\PYGZus{}driver} \PYG{p}{=} \PYG{l+m+mf}{20E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitante of a pmos inside the precharge unit	}
+	\PYG{n}{Cg\PYGZus{}pre} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the pmos equalizer inside the precharge unit	}
+	\PYG{n}{Cg\PYGZus{}equalizer} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}output resistance of the driver driving the gates of the pmos inside the precharge unit	}
+	\PYG{n}{R\PYGZus{}ext\PYGZus{}pu\PYGZus{}driver} \PYG{p}{=} \PYG{l+m+mi}{50}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of the precharge pmos driving the bitline	}
+	\PYG{n}{Req\PYGZus{}pre\PYGZus{}p} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}source capacitance of the precharge pmos driving the bitline	}
+	\PYG{n}{Cs\PYGZus{}pre} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}interconnect resistance per unit of length of the bitline	}
+	\PYG{n}{BL\PYGZus{}r} \PYG{p}{=} \PYG{l+m+mf}{1.00E+07}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}interconnect capacitance per unit of length of the bitline	}
+	\PYG{n}{BL\PYGZus{}c} \PYG{p}{=} \PYG{l+m+mf}{3.06E\PYGZhy{}11}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}interconnect capacitance per unit of length of the wordline	    }
+    \PYG{n}{WL\PYGZus{}c} \PYG{p}{=} \PYG{l+m+mf}{3.06E\PYGZhy{}11}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the sense amplifier p\PYGZhy{}MOS transistor	}
+	\PYG{n}{Cd\PYGZus{}sa\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the sense amplifier n\PYGZhy{}MOS transistor	}
+	\PYG{n}{Cd\PYGZus{}sa\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the sense amplifier p\PYGZhy{}MOS transistor	}
+	\PYG{n}{Cg\PYGZus{}sa\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the sense amplifier n\PYGZhy{}MOS transistor	}
+	\PYG{n}{Cg\PYGZus{}sa\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the evaluation n\PYGZhy{}mos transistor in the block decoder	}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the evaluation n\PYGZhy{}mos transistor in the row decoder	}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of a nmos inside the block decoder	}
+	\PYG{n}{Cg\PYGZus{}bdec\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of a nmos inside the row decoder	}
+	\PYG{n}{Cg\PYGZus{}rdec\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the pass transistor at the end of the bitline and connecting it to the external	}
+	\PYG{n}{Cd\PYGZus{}blockpass} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of a nmos in the block decoder	}
+	\PYG{n}{Req\PYGZus{}bdec\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the precharge pmos inside the dynamic block decoder	}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}pcharge} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the pmos inside the inverter on the output of the block decoder	}
+	\PYG{n}{Cg\PYGZus{}bdec\PYGZus{}inv\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the nmos inside the inverter on the output of the block decoder	}
+	\PYG{n}{Cg\PYGZus{}bdec\PYGZus{}inv\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of the pmos inside the inverter on the output of the block decoder	}
+	\PYG{n}{Req\PYGZus{}bdec\PYGZus{}inv\PYGZus{}p} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain resistance of the pmos inside the inverter on the output of the block decoder	}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}inv\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain resistance of the nmos inside the inverter on the output of the block decoder	}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}inv\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of a row pass transistor, on the output of the row decoder and connecting it to the wordline	}
+	\PYG{n}{Cg\PYGZus{}rowpass} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the pass transistor at the end of the bitline and connecting it to the external	}
+	\PYG{n}{Cg\PYGZus{}blockpass} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of a nmos in the row decoder	}
+	\PYG{n}{Req\PYGZus{}rdec\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the precharge pmos inside the dynamic row decoder	}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}pcharge} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the pmos inside the inverter on the output of the row decoder	}
+	\PYG{n}{Cg\PYGZus{}rdec\PYGZus{}inv\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the nmos inside the inverter on the output of the row decoder	}
+	\PYG{n}{Cg\PYGZus{}rdec\PYGZus{}inv\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of the pmos inside the inverter on the output of the row decoder	}
+	\PYG{n}{Req\PYGZus{}rdec\PYGZus{}inv\PYGZus{}p} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the p\PYGZus{}MOS of the inverter on the output of the row decoder	}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}inv\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the n\PYGZus{}MOS of the inverter on the output of the row decoder	}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}inv\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of a row pass transistor, on the output of the row decoder and connecting it to the wordline	}
+	\PYG{n}{Req\PYGZus{}rowpass} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of a row pass transistor, on the output of the row decoder and connecting it to the wordline	}
+	\PYG{n}{Cd\PYGZus{}rowpass} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of the pull\PYGZhy{}down nmos inside the memory cell	}
+	\PYG{n}{Req\PYGZus{}cell\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of the memory cell access nmos transistor	}
+	\PYG{n}{Req\PYGZus{}access\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the memory cell access nmos transistor	}
+	\PYG{n}{Cg\PYGZus{}access} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the memory cell access nmos transistor	}
+	\PYG{n}{Cd\PYGZus{}access} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}source capacitance of the memory cell access nmos transistor	}
+	\PYG{n}{Cs\PYGZus{}access} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}percentage of voltage swing that makes the sense amplifier switch	}
+	\PYG{n}{K\PYGZus{}SA} \PYG{p}{=} \PYG{l+m+mf}{0.05}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}input sense amplifier resistance	}
+	\PYG{n}{Req\PYGZus{}sa\PYGZus{}mod\PYGZus{}parallel} \PYG{p}{=} \PYG{l+m+mi}{100}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of a column pass transistor, at the end of the bitline and connecting it to the external	}
+	\PYG{n}{Req\PYGZus{}colpass} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of the external driver forcing the value to be written on the bitlines	}
+	\PYG{n}{Req\PYGZus{}driver} \PYG{p}{=} \PYG{l+m+mi}{25}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}output capacitance of the external driver forcing the value to be written on the bitlines	}
+	\PYG{n}{C\PYGZus{}driver} \PYG{p}{=} \PYG{l+m+mf}{40E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}equivalent resistance of the pull\PYGZhy{}up pmos inside the memory cell	}
+	\PYG{n}{Req\PYGZus{}cell\PYGZus{}p} \PYG{p}{=} \PYG{l+m+mi}{200}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the pull\PYGZhy{}up pmos inside the memory cell	}
+	\PYG{n}{Cg\PYGZus{}cell\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}gate capacitance of the pull\PYGZhy{}down nmos inside the memory cell	}
+	\PYG{n}{Cg\PYGZus{}cell\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{5E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the pull\PYGZhy{}up pmos inside the memory cell	}
+	\PYG{n}{Cd\PYGZus{}cell\PYGZus{}p} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}drain capacitance of the pull\PYGZhy{}down nmos inside the memory cell	}
+	\PYG{n}{Cd\PYGZus{}cell\PYGZus{}n} \PYG{p}{=} \PYG{l+m+mf}{1.7E\PYGZhy{}16}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}number of words in the memory	}
+	\PYG{n}{N\PYGZus{}word} \PYG{p}{=} \PYG{l+m+mi}{128}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}number of bits in each word	}
+	\PYG{n}{N\PYGZus{}bit\PYGZus{}array} \PYG{p}{=} \PYG{p}{[}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{l+m+mi}{16}\PYG{p}{,} \PYG{l+m+mi}{32}\PYG{p}{,} \PYG{l+m+mi}{64}\PYG{p}{,} \PYG{l+m+mi}{128}\PYG{p}{];}
+\PYG{c}{\PYGZpc{}precharge voltage	}
+	\PYG{n}{V\PYGZus{}bl\PYGZus{}prec} \PYG{p}{=} \PYG{l+m+mf}{1.2}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}pass\PYGZhy{}transistor voltage	}
+	\PYG{n}{V\PYGZus{}on\PYGZus{}pt} \PYG{p}{=} \PYG{l+m+mf}{1.2}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}selected wordline voltage	}
+	\PYG{n}{V\PYGZus{}sel} \PYG{p}{=} \PYG{l+m+mf}{1.2}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}unselected wordline voltage	}
+	\PYG{n}{V\PYGZus{}unsel} \PYG{p}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}zero read voltage	}
+	\PYG{n}{V\PYGZus{}rd\PYGZus{}0} \PYG{p}{=} \PYG{l+m+mf}{0.8}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}one read voltage	}
+	\PYG{n}{V\PYGZus{}rd\PYGZus{}1} \PYG{p}{=} \PYG{l+m+mf}{1.2}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}programming bitline voltage	}
+	\PYG{n}{V\PYGZus{}prog} \PYG{p}{=} \PYG{l+m+mf}{1.2}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}unprogramming bitline voltage	}
+	\PYG{n}{V\PYGZus{}unprog} \PYG{p}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}Read frequency}
+    \PYG{n}{f\PYGZus{}read} \PYG{p}{=} \PYG{l+m+mf}{5E6}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}Write frequency}
+    \PYG{n}{f\PYGZus{}write} \PYG{p}{=} \PYG{l+m+mf}{5E6}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}number of write ports	}
+	\PYG{n}{N\PYGZus{}port\PYGZus{}Wr} \PYG{p}{=} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}number of read ports	}
+	\PYG{n}{N\PYGZus{}port\PYGZus{}Rd} \PYG{p}{=} \PYG{l+m+mi}{2}\PYG{p}{;}
+	
+	\PYG{n}{Tr\PYGZus{}n\PYGZus{}Area} \PYG{p}{=} \PYG{n}{W}\PYG{o}{*}\PYG{n}{L}\PYG{p}{;}
+	
+	\PYG{n}{Tr\PYGZus{}p\PYGZus{}Area} \PYG{p}{=} \PYG{n}{Beta}\PYG{o}{*}\PYG{n}{Tr\PYGZus{}n\PYGZus{}Area}\PYG{p}{;}
+\PYG{c}{\PYGZpc{}distance between columns of transistor	}
+	\PYG{n}{Pitch\PYGZus{}pp} \PYG{p}{=} \PYG{l+m+mf}{3.00E\PYGZhy{}07}\PYG{p}{;}
+		
+		
+		
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+	
+\PYG{c}{\PYGZpc{}\PYGZpc{}COMPUTATIONS }
+
+\PYG{k}{for} \PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n+nb}{numel}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{)}
+    \PYG{n}{N\PYGZus{}bit} \PYG{p}{=} \PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{);}
+
+	\PYG{p}{[} \PYG{n}{total\PYGZus{}read\PYGZus{}power}\PYG{p}{,} \PYG{n}{total\PYGZus{}write\PYGZus{}power}\PYG{p}{,} \PYG{n}{Total\PYGZus{}delay\PYGZus{}read}\PYG{p}{,}  \PYG{n}{Total\PYGZus{}delay\PYGZus{}write}\PYG{p}{]} \PYG{p}{=} \PYG{n}{Register\PYGZus{}File} \PYG{p}{(}\PYG{n}{C\PYGZus{}ext\PYGZus{}pu\PYGZus{}driver}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}pre}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}equalizer}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{R\PYGZus{}ext\PYGZus{}pu\PYGZus{}driver}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}pre\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cs\PYGZus{}pre}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{BL\PYGZus{}r}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{BL\PYGZus{}c}\PYG{p}{,} \PYG{c}{...}
+    \PYG{n}{WL\PYGZus{}c}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}sa\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}sa\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}sa\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}sa\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}bdec\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}rdec\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}blockpass}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}bdec\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}pcharge}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}bdec\PYGZus{}inv\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}bdec\PYGZus{}inv\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}bdec\PYGZus{}inv\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}inv\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}bdec\PYGZus{}inv\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}rowpass}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}blockpass}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}rdec\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}pcharge}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}rdec\PYGZus{}inv\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}rdec\PYGZus{}inv\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}rdec\PYGZus{}inv\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}inv\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}rdec\PYGZus{}inv\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}rowpass}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}rowpass}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}cell\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}access\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}access}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}access}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cs\PYGZus{}access}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{K\PYGZus{}SA}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}sa\PYGZus{}mod\PYGZus{}parallel}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}colpass}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}driver}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{C\PYGZus{}driver}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Req\PYGZus{}cell\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}cell\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cg\PYGZus{}cell\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}cell\PYGZus{}p}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{Cd\PYGZus{}cell\PYGZus{}n}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{N\PYGZus{}word}\PYG{p}{,} \PYG{c}{...}
+	\PYG{n}{N\PYGZus{}bit}\PYG{p}{,}\PYG{c}{...}
+    \PYG{n}{V\PYGZus{}bl\PYGZus{}prec}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{V\PYGZus{}on\PYGZus{}pt}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{V\PYGZus{}sel}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{V\PYGZus{}unsel}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{V\PYGZus{}rd\PYGZus{}0}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{V\PYGZus{}rd\PYGZus{}1}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{V\PYGZus{}prog}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{V\PYGZus{}unprog}\PYG{p}{,}\PYG{c}{...}
+    \PYG{n}{f\PYGZus{}read}\PYG{p}{,}\PYG{c}{...}
+    \PYG{n}{f\PYGZus{}write}\PYG{p}{,}\PYG{c}{...}
+	\PYG{n}{N\PYGZus{}port\PYGZus{}Wr}\PYG{p}{,}\PYG{c}{...			}
+	\PYG{n}{N\PYGZus{}port\PYGZus{}Rd}\PYG{p}{,}\PYG{c}{...			}
+	\PYG{n}{Tr\PYGZus{}n\PYGZus{}Area}\PYG{p}{,}\PYG{c}{...			}
+	\PYG{n}{Tr\PYGZus{}p\PYGZus{}Area}\PYG{p}{,}\PYG{c}{...			 }
+	\PYG{n}{Pitch\PYGZus{}pp}\PYG{p}{);}		
+	
+	\PYG{n}{total\PYGZus{}read\PYGZus{}power\PYGZus{}array}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)} \PYG{p}{=} \PYG{n}{total\PYGZus{}read\PYGZus{}power}\PYG{p}{;}
+	\PYG{n}{total\PYGZus{}write\PYGZus{}power\PYGZus{}array}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)} \PYG{p}{=}  \PYG{n}{total\PYGZus{}write\PYGZus{}power}\PYG{p}{;}
+	\PYG{n}{Total\PYGZus{}delay\PYGZus{}read\PYGZus{}array}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)} \PYG{p}{=} \PYG{n}{Total\PYGZus{}delay\PYGZus{}read}\PYG{p}{;}  
+	\PYG{n}{Total\PYGZus{}delay\PYGZus{}write\PYGZus{}array}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)} \PYG{p}{=} \PYG{n}{Total\PYGZus{}delay\PYGZus{}write}\PYG{p}{;}
+    \PYG{n}{Total\PYGZus{}area\PYGZus{}array}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)} \PYG{p}{=} \PYG{n}{Total\PYGZus{}delay\PYGZus{}read}\PYG{p}{;}  
+	\PYG{n}{Total\PYGZus{}volume\PYGZus{}array}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{)} \PYG{p}{=} \PYG{n}{Total\PYGZus{}delay\PYGZus{}write}\PYG{p}{;}	
+		
+\PYG{k}{end}
+\PYG{n}{figure}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{xq}\PYG{p}{=} \PYG{l+m+mi}{8}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{128}\PYG{p}{;}
+\PYG{n}{s} \PYG{p}{=} \PYG{n}{spline}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}delay\PYGZus{}read\PYGZus{}array}\PYG{p}{,}\PYG{n}{xq}\PYG{p}{);} \PYG{c}{\PYGZpc{}xq coordinate x punti interpolazione, s coordinate y punti interpolazione}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}delay\PYGZus{}read\PYGZus{}array}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}*\PYGZsq{}}\PYG{p}{,} \PYG{n}{xq}\PYG{p}{,} \PYG{n}{s}\PYG{p}{)}
+\PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Total delay \PYGZhy{} read\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}N\PYGZus{}\PYGZob{}bit\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Delay\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{grid} \PYG{n}{on}
+\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}delay\PYGZus{}read\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}\PYGZhy{}depsc\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{figure}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{xq}\PYG{p}{=} \PYG{l+m+mi}{8}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{128}\PYG{p}{;}
+\PYG{n}{s} \PYG{p}{=} \PYG{n}{spline}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}delay\PYGZus{}write\PYGZus{}array}\PYG{p}{,}\PYG{n}{xq}\PYG{p}{);} \PYG{c}{\PYGZpc{}xq coordinate x punti interpolazione, s coordinate y punti interpolazione}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}delay\PYGZus{}write\PYGZus{}array}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}*\PYGZsq{}}\PYG{p}{,} \PYG{n}{xq}\PYG{p}{,} \PYG{n}{s}\PYG{p}{)}
+\PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Total delay \PYGZhy{} write\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}N\PYGZus{}\PYGZob{}bit\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Delay\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{grid} \PYG{n}{on}
+\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}delay\PYGZus{}write\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}\PYGZhy{}depsc\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{figure}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)}
+\PYG{n}{xq}\PYG{p}{=} \PYG{l+m+mi}{8}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{128}\PYG{p}{;}
+\PYG{n}{s} \PYG{p}{=} \PYG{n}{spline}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}area\PYGZus{}array}\PYG{p}{,}\PYG{n}{xq}\PYG{p}{);} \PYG{c}{\PYGZpc{}xq coordinate x punti interpolazione, s coordinate y punti interpolazione}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}area\PYGZus{}array}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}*\PYGZsq{}}\PYG{p}{,} \PYG{n}{xq}\PYG{p}{,} \PYG{n}{s}\PYG{p}{)}
+\PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Total area\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}N\PYGZus{}\PYGZob{}bit\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Area\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{grid} \PYG{n}{on}
+
+\PYG{n}{figure}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{)}
+\PYG{n}{xq}\PYG{p}{=} \PYG{l+m+mi}{8}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{128}\PYG{p}{;}
+\PYG{n}{s} \PYG{p}{=} \PYG{n}{spline}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}volume\PYGZus{}array}\PYG{p}{,}\PYG{n}{xq}\PYG{p}{);} \PYG{c}{\PYGZpc{}xq coordinate x punti interpolazione, s coordinate y punti interpolazione}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{Total\PYGZus{}volume\PYGZus{}array}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}*\PYGZsq{}}\PYG{p}{,} \PYG{n}{xq}\PYG{p}{,} \PYG{n}{s}\PYG{p}{)}
+\PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Total volume\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}N\PYGZus{}\PYGZob{}bit\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Volume\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{grid} \PYG{n}{on}
+
+\PYG{n}{figure}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}
+\PYG{n}{xq}\PYG{p}{=} \PYG{l+m+mi}{8}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{128}\PYG{p}{;}
+\PYG{n}{s} \PYG{p}{=} \PYG{n}{spline}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{total\PYGZus{}read\PYGZus{}power\PYGZus{}array}\PYG{p}{,}\PYG{n}{xq}\PYG{p}{);} \PYG{c}{\PYGZpc{}xq coordinate x punti interpolazione, s coordinate y punti interpolazione}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{total\PYGZus{}read\PYGZus{}power\PYGZus{}array}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}*\PYGZsq{}}\PYG{p}{,} \PYG{n}{xq}\PYG{p}{,} \PYG{n}{s}\PYG{p}{)}
+\PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Read Power\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}N\PYGZus{}\PYGZob{}bit\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Power\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{grid} \PYG{n}{on}
+
+\PYG{n}{figure}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{)}
+\PYG{n}{xq}\PYG{p}{=} \PYG{l+m+mi}{8}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{128}\PYG{p}{;}
+\PYG{n}{s} \PYG{p}{=} \PYG{n}{spline}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{total\PYGZus{}write\PYGZus{}power\PYGZus{}array}\PYG{p}{,}\PYG{n}{xq}\PYG{p}{);} \PYG{c}{\PYGZpc{}xq coordinate x punti interpolazione, s coordinate y punti interpolazione}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{N\PYGZus{}bit\PYGZus{}array}\PYG{p}{,}\PYG{n}{total\PYGZus{}write\PYGZus{}power\PYGZus{}array}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}*\PYGZsq{}}\PYG{p}{,} \PYG{n}{xq}\PYG{p}{,} \PYG{n}{s}\PYG{p}{)}
+\PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Write Power\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}N\PYGZus{}\PYGZob{}bit\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Power\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{grid} \PYG{n}{on}
+\end{Verbatim}

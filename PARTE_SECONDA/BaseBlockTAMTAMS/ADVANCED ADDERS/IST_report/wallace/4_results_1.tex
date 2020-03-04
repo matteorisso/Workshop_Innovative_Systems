@@ -1,0 +1,285 @@
+
+\section{Results}
+
+In this section the area, delay and power consumption for both a 50\%-pipelined and a non-pipelined version of the Wallace tree have been reported. The comparison has been performed for different numbers of bits and for different numbers of input operands and refers to a radix 2 multiplier implementation, where  the partial product terms to be added are placed as in Figure \ref{fig:wallace_tree}.
+\begin{figure}[H]
+	\centering
+	\hspace{1 cm}
+	\textsf{{\fontsize{9pt}{5.5pt}
+			\input{./immagini/code_fidoCadJ.pgf}}}
+	\caption{Wallace Tree with $ n=8 $, $ k=8 $}
+	\label{fig:wallace_tree}
+\end{figure}
+
+
+\subsection{Area}
+
+	\begin{figure}[H]
+		\makebox[\textwidth][c]{
+			\begin{subfigure}{0.55\textwidth}
+					\includegraphics[width=9cm]{immagini/radix2ppipe0/area.png}
+					\caption{Non-pipelined version}
+				%				\label{fig:area}
+			\end{subfigure}
+			\begin{subfigure}{0.55\textwidth}
+				\includegraphics[width=9cm]{immagini/radix2ppipe2/area.png}
+				\caption{50\%-Pipelined version}
+%				\label{fig:3D area}
+			\end{subfigure}
+		
+}{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe0/area3D.png}
+			\caption{Non-pipelined version}
+			%				\label{fig:area}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe2/area3D.png}
+			\caption{50\%-Pipelined version}
+			%				\label{fig:3D area}
+		\end{subfigure}
+	}
+	\caption{Area}
+	\label{fig:Area}
+\end{figure}
+As expected, the total area of the tree linearly increases with the number of bits (n) per input operand (Figures \ref{fig:Area}). The higher the number of operands (k) is, the larger is the total amount of the occupied area because of the higher number of stages required for the calculation.
+
+In particular in order to appreciate the differences between the two versions of the tree, some meaningful points have been reported in the following table.
+
+
+\begin{center}
+\begin{tabular}{cc|c|c|}
+	\cline{3-4}
+	\multicolumn{1}{l}{}               & \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{\textbf{Occupied area {[}m\textasciicircum{}2{]}}} \\ \hline
+	\multicolumn{1}{|c|}{\textbf{n}}   & \textbf{k}            & \textbf{Non-pipelined}            & \textbf{50\% pipelined}            \\ \hline
+	\multicolumn{1}{|c|}{\textbf{4}}   & \textbf{4}            & 3.4e-11                           & 6.504e-11                          \\ \hline
+	\multicolumn{1}{|c|}{\textbf{4}}   & \textbf{128}          & 2.499e-9                          & 8.278e-9                           \\ \hline
+	\multicolumn{1}{|c|}{\textbf{128}} & \textbf{4}            & 1.15e-9                           & 2.267e-9                           \\ \hline
+	\multicolumn{1}{|c|}{\textbf{128}} & \textbf{128}          & 7.28e-8                           & 1.332e-7                           \\ \hline
+\end{tabular}
+
+\end{center}
+As expected, the occupied area increases in the pipelind case since different levels of Flip flops are inserted; this increase becomes more and more significant as the number of bits and operands increase.
+
+
+
+\subsection{Delay}
+
+The delay is the time interval necessary to complete the computation through the whole tree.
+In the non-pipelined case the path is entirely combinatorial while in the pipelined version the critical path is splitted into shorter homogeneous paths. In this last case the delay is therefore computed as the product between the clock period (the critical path delay) and the number of the pipeline stages inserted.
+
+\begin{figure}[H]
+	\makebox[\textwidth][c]{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe0/delay.png}
+			\caption{Non-pipelined version}
+			%				\label{fig:area}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe2/delay.png}
+			\caption{50\%-Pipelined version}
+			%				\label{fig:3D area}
+		\end{subfigure}
+	}
+{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe0/delay3D.png}
+			\caption{Non-pipelined version}
+			%				\label{fig:area}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe2/delay3D.png}
+			\caption{50\%-Pipelined version}
+			%				\label{fig:3D area}
+		\end{subfigure}
+	}
+	\caption{Delay}
+	\label{fig:Delay}
+\end{figure}
+
+As shown in Figure \ref{fig:Delay}, the amount of delay increases with the number of input operands, instead it is constant with respect to the number of bits. Since in each stage of the tree, full adders and half adders work in parallel, an higher input parallelism does not affect the total delay.
+
+Once again, in order to appreciate the differences between the two versions of the tree, the delay has been computed for a growing number of operands.
+
+\begin{center}
+	\begin{tabular}{c|c|c|}
+		\cline{2-3}
+		\textbf{}                          & \multicolumn{2}{c|}{\textbf{Delay {[}ns{]}}}     \\ \hline
+		\multicolumn{1}{|c|}{\textbf{k}}   & \textbf{Non-pipelined} & \textbf{50\% pipelined} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{4}}   & 0.15                   & 0.198                   \\ \hline
+		\multicolumn{1}{|c|}{\textbf{8}}   & 0.3                    & 0.395                   \\ \hline
+		\multicolumn{1}{|c|}{\textbf{16}}  & 0.45                   & 0.593                   \\ \hline
+		\multicolumn{1}{|c|}{\textbf{32}}  & 0.6                    & 0.79                    \\ \hline
+		\multicolumn{1}{|c|}{\textbf{64}}  & 0.75                   & 0.988                   \\ \hline
+		\multicolumn{1}{|c|}{\textbf{128}} & 0.825                  & 1.063                    \\ \hline
+	\end{tabular}
+\end{center}
+
+As expected, it is possible to notice how the delay increases in the pipelined case because of the overhead introduced by the registers stages. In particular, as k increases, also the number of levels of the tree increases and so more stages of flip flops are introduced.
+
+\subsection{Static power}
+
+Static power increases with both the number of bits and  the number of operands. This is trivial to understand why both of them depend on the total equivalent capacitance of the tree.
+\begin{figure}[H]
+	\makebox[\textwidth][c]{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe0/p_static.png}
+			\caption{Non-pipelined version}
+			%				\label{fig:area}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe2/p_static.png}
+			\caption{50\%-Pipelined version}
+			%				\label{fig:3D area}
+		\end{subfigure}
+	}
+	{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe0/p_static3D.png}
+			\caption{Non-pipelined version}
+			%				\label{fig:area}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe2/p_static3D.png}
+			\caption{50\%-Pipelined version}
+			%				\label{fig:3D area}
+		\end{subfigure}
+	}
+	\caption{Static power}
+	\label{fig:pstat}
+\end{figure}
+
+Some quantitative evaluations are reported in the table below.
+
+\begin{center}
+	\begin{tabular}{cc|c|c|}
+		\cline{3-4}
+		\multicolumn{1}{l}{}               & \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{\textbf{Static power {[}W{]}}} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{n}}   & \textbf{k}            & \textbf{Non-pipelined}  & \textbf{50\% pipelined} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{4}}   & \textbf{4}            & 1.495e-5                & 3.078e-5                \\ \hline
+		\multicolumn{1}{|c|}{\textbf{4}}   & \textbf{128}          & 1.1e-3                  & 3.933e-3                \\ \hline
+		\multicolumn{1}{|c|}{\textbf{128}} & \textbf{4}            & 5.057e-4                & 1.067e-3                \\ \hline
+		\multicolumn{1}{|c|}{\textbf{128}} & \textbf{128}          & 3.2e-2                  & 6.224e-2                \\ \hline
+	\end{tabular}
+\end{center}
+
+The pipelined version, again, is characterized by a larger static power consumption with respect to the non pipelined version since also the power consumption of the flip flops has been taken into account. 
+
+
+\subsection{Dynamic power}
+In order to make a proper comparison, dynamic power estimation has been performed for both versions of the tree considering an operating frequency of 5GHz.
+\begin{figure}[H]
+	\makebox[\textwidth][c]{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe0/p_dyn.png}
+			\caption{Non-pipelined version}
+			%				\label{fig:area}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe2/p_dyn.png}
+			\caption{50\%-Pipelined version}
+			%				\label{fig:3D area}
+		\end{subfigure}
+	}
+	{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe0/p_dyn3D.png}
+			\caption{Non-pipelined version}
+			%				\label{fig:area}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=8cm]{immagini/radix2ppipe2/p_dyn3D.png}
+			\caption{50\%-Pipelined version}
+			%				\label{fig:3D area}
+		\end{subfigure}
+	}
+	\caption{Dynamic power ($f_{ck}=5 GHz$)}
+	\label{fig:pdyn}
+\end{figure}
+
+In order to appreciate the differences between the two versions of the tree, some meaningful points have been reported in the following table.
+\begin{center}
+	\begin{tabular}{cc|c|c|}
+		\cline{3-4}
+		\multicolumn{1}{l}{}               & \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{\textbf{Dynamic power {[}W{]}}} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{n}}   & \textbf{k}            & \textbf{Non-pipelined}   & \textbf{50\% pipelined}  \\ \hline
+		\multicolumn{1}{|c|}{\textbf{4}}   & \textbf{4}            & 6.681e-4                 & 1.218e-3                 \\ \hline
+		\multicolumn{1}{|c|}{\textbf{4}}   & \textbf{128}          & 0.049                    & 0.155                    \\ \hline
+		\multicolumn{1}{|c|}{\textbf{128}} & \textbf{4}            & 0.023                    & 0.043                    \\ \hline
+		\multicolumn{1}{|c|}{\textbf{128}} & \textbf{128}          & 1.431                    & 2.516                    \\ \hline
+	\end{tabular}
+\end{center}
+
+Also in this case the power consumption grows with the number of bits-per-operand (n) and with the number of operands (k). 
+In particular if n increases, the number of flip flops per level also increases; if k increases, the number of the stages of the tree and therefore the number of pipeline stages to be inserted increase. For this reason the pipelined version consumes more than the non-pipelined one.
+
+Besides performing power estimations considering an operating frequency selected by the user, the developed script also is able to compute the maximum operating frequency depending on the critical path. It is possible to use then this value to obtain the dissipated power amount in the case of working at maximum performance.
+In particular, considering the technological parameters involved, the system is able to work up to a $f_{ckMax}$ of about 5.06 GHz.
+
+\subsection{Different pipeline percentages comparison}
+The developed Matlab code also uses a parameter called $ppipe$: it is linked to the percentage of pipelining to be applied at the tree, in particular it indicates every how many levels of the tree a pipe stage is introduced. For example:
+\begin{itemize}
+	\item if $ppipe=0$ no pipeline stages are introduced (non-pipelined version);
+	\item if $ppipe=1$ a pipeline stage is inserted at every level of the tree (fully pipelined version, 100\%);
+	\item if $ppipe=2$ a pipeline stage is inserted every 2 levels of the tree (50\%).
+\end{itemize}
+In Figure \ref{fig:ppipe} occupied area, delay, static and dynamic power estimations are shown in the case of n=128, k=128 and a varying value of ppipe.
+It is possible to observe that the plots are similar. When ppipe=0 no flip flops are inserted in the design, this corresponds to the minimum area and power.
+When ppipe=1 the design is fully pipelined and therefore here lies the maximum for both area and power.
+As the pipeline percentage decreases (ppipe increases) the plots approximately follow the trend of a decreasing exponential.
+
+\begin{figure}[H]
+	\makebox[\textwidth][c]{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe2/area_pipe.png}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe2/p_static_pipe.png}
+		\end{subfigure}
+	}
+{
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe2/delay_pipe.png}
+		\end{subfigure}
+		\begin{subfigure}{0.55\textwidth}
+			\includegraphics[width=9cm]{immagini/radix2ppipe2/p_dyn_fmax_pipe.png}
+		\end{subfigure}
+	}
+	\caption{Comparisons}
+	\label{fig:ppipe}
+\end{figure}
+Considering the delay, in particular it is possible to notice how the behaviour does not strictly follow the one of the other 3 plots presented. The trend in this case is linked to the number of operands which determine the number of the levels of the tree. In this case since for 128 operands the number of levels is 11, starting from ppipe=6 the trend is perfectly flat: only one pipe level is inserted for ppipe$>$6 therefore the total delay of the tree is the same. Something similar happens for ppipe=4 and ppipe=5 but 2 register levels are added in this case.
+It is therefore possible to notice how the optimal pipe percentage to be inserted in the tree depends on the number of operands.
+
+\subsubsection{Throughput} In Figure \ref{fmax} is reported the throughput taking into account different pipeline depths cases. 
+
+The trend is similar to the previous cases: the fully pipelined case (ppipe=1) is characterized by the highest possible throughput since the critical path is the one of a single FA. This allows to have multiple elaborations in execution at the same time (at different stages of the pipelined structure). With an increasing number of pipeline stages, latency (in terms of clock cycles needed to complete an elaboration) increases as well. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{immagini/radix2ppipe2/fmax_pipe.png}
+	\caption{Maximum throughput for different pipeline depths}
+	\label{fmax}
+\end{figure}
+   
+\subsection{VHDL}
+The developed script also generates the VHDL description of the tree. The output design has been then verified through simulation. In Fig \ref{fig:schem} is shown the block diagram schematic for a simple tree with n=4, k=4 and ppipe=2.  
+
+\begin{figure}[H]
+	\includegraphics[trim={0 1.2cm 0 0},clip=true,scale=0.8]{./immagini/4x4.png}
+	\caption{4x4 Wallace tree design (ppipe=2)}
+	\label{fig:schem}
+\end{figure}
+
+The flip flop layer is placed after the second level of the tree, it has been included in the components $HA\_ff$ and $FA\_ff$.
+
+\section{Conclusions}
+It was developed a model of a Wallace tree with a percentage of pipelining which can be defined by the user. The present model also allows to not insert any pipeline stage. 
+The main advantage of a pipelined implemantation lies in the fact that throughput increases while the time required to complete a single computation increases. 
+Since flip flop insertion causes an increase of both area and power, it is therefore important to carefully choose how many pipeline stages should be inserted in the tree. 
+The choice depends on the application, the optimal choice for the Wallace tree does not corresponds to a fully pipelined approach since it maximizes occupied area, consumptions and also latency.
+
+
+
+
+

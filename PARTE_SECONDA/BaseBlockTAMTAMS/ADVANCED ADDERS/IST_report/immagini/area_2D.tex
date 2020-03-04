@@ -1,0 +1,75 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+xlabel = {n},
+ylabel = {Area $[\SI{}{\micro \meter}^2]$},
+width=4.529in,
+height=3.566in,
+at={(0.76in,0.481in)},
+scale only axis,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\color{black}},
+every x tick/.append style={black},
+xmin=0,
+xmax=70,
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\color{black}},
+every y tick/.append style={black},
+ymin=0,
+ymax=2e-09,
+ytick={0,4e-10,8e-10,12e-10,16e-10,20e-10},
+yticklabels = {0,400,800,1200,1600,2000},
+scaled y ticks = false,
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left
+]
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+4	5.00222085975111e-12\\
+7	1.94972926692571e-11\\
+64	2.76003220278653e-10\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+4	1.25055521493778e-11\\
+6	3.7005065678386e-11\\
+64	5.58998181077186e-10\\
+};
+\addplot [color=green, forget plot]
+  table[row sep=crcr]{%
+4	2.24957830141648e-11\\
+5	4.50057768830447e-11\\
+6	6.40056896372698e-11\\
+64	8.4699536273547e-10\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+4	2.99991143037914e-11\\
+5	5.99982286075829e-11\\
+6	8.69988525664667e-11\\
+64	1.13099929421878e-09\\
+};
+\addplot [color=yellow, forget plot]
+  table[row sep=crcr]{%
+4	4.50057768830447e-11\\
+5	8.94999629963422e-11\\
+6	1.28494548334857e-10\\
+64	1.43350575854129e-09\\
+};
+\addplot [color=purple, forget plot]
+  table[row sep=crcr]{%
+4	5.24948973179562e-11\\
+5	1.05004005490628e-10\\
+6	1.51501922118769e-10\\
+8	2.10505390896287e-10\\
+64	1.72249770002963e-09\\
+};
+\end{axis}
+\end{tikzpicture}%

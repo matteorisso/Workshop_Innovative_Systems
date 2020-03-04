@@ -1,0 +1,88 @@
+\documentclass[a4paper, 10 pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+\usepackage{booktabs}
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[tmargin=3cm,lmargin=3cm,rmargin=3cm,bmargin=3cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{array}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{capt-of}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage{epstopdf}
+\usepackage{tikz-timing}
+\usepackage{enumitem}
+\usepackage{slashbox}
+\usepackage{pgfplots}
+\usepackage{adjustbox}
+\usepackage{amssymb}
+\usepackage{engtlc}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{amsfonts}
+%\usepackage{cite}
+%\usepackage[numbered,autolinebreaks,framed]{mcode} %per mettere le impostazioni su come importare il codice Matlab
+\usepackage{float} % per forzare la posizione delle immagini nel testo
+
+
+\usepackage[numbered,autolinebreaks,framed]{mcode}	%framed for outlines
+\lstset{breakatwhitespace=false}
+\setlength{\columnseprule}{1pt}
+
+\usetikztiminglibrary[rising arrows]{clockarrows}
+\usepgfplotslibrary{external} 
+\tikzexternalize
+\newcommand{\datetime}{\today}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcommand\todo[1]{\textcolor{blue}{#1}}
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt} % optional
+\renewcommand{\footrulewidth}{0.4pt} % optional
+\fancyhead[C]{\nouppercase{\leftmark}}
+\cfoot{\thepage}
+
+
+
+\usepackage[hidelinks]{hyperref}
+
+
+
+
+\begin{document}
+
+
+
+\input{0_title}
+\tableofcontents
+\chapter{Pentium IV adder}
+\input{pentium/Relazione_PentiumIV}
+\chapter{Pipelined Wallace tree}
+\input{wallace/1_intro}
+\input{wallace/2_theoretical_analysis}
+\input{wallace/3_matlab}
+\input{wallace/4_results_1}
+
+
+\chapter{A Dynamic CMOS Survey}
+\input{dinamic_logic_survey/dinamic_logic_survey}
+\bibliography{dinamic_logic_survey/references}	
+\bibliographystyle{ieeetr}
+\end{document}

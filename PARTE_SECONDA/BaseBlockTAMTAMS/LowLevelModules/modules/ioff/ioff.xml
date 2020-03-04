@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>ioff</name>  
+	<displayName>offcurrent</displayName> 
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>finfet</technology>
+		
+		<name>ioff-abbas</name>
+	</implementation> 
+<implementation>  
+                <engine>matlab</engine>
+                <technology>fdsoi</technology>
+		
+		<name>fdsoiioff</name>
+	</implementation> 
+
+</module>
+

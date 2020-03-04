@@ -1,0 +1,91 @@
+\documentclass[10pt,  english, makeidx, a4paper, titlepage, oneside]{article}
+\usepackage{babel}
+\usepackage{fancyhdr}
+\usepackage{makeidx}
+\usepackage{titlesec}
+\usepackage{listings} 
+\usepackage{color}
+\newenvironment{listato}{\footnotesize}
+                        {\normalsize }
+\textwidth 19cm
+\textheight 23cm
+\topmargin -1.5cm
+\oddsidemargin -1.5cm
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{}
+\chead{Module name}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\rhead{\thepage}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+
+\titleformat{\chapter}[display]
+{\normalfont\Large\filcenter\sffamily}
+{\titlerule[0.5pt]%
+\vspace{1pt}
+\titlerule
+\vspace{1pc}
+\LARGE\MakeUppercase{\chaptertitlename} \thechapter
+}
+{1pc}
+{\titlerule
+\vspace{1pc}
+\Huge}
+
+\makeindex
+
+\begin{document}
+\begin{titlepage}
+\vspace{2cm}
+\centerline{
+\includegraphics[width=2cm]{./img/logopoli.eps}}  
+\centerline{\LARGE Politecnico di Torino}
+\bigskip
+\centerline{\Large III Facolt\`a di Ingegneria}
+\vspace{4cm}
+\centerline{\Huge\sf Area, power and timing analysis of half adder and full adder}
+\bigskip
+\centerline{\Huge\bfseries\sf Integrated system technology}
+\vspace{2cm}
+\centerline{\Large GROUP: 08}
+\vspace{2cm}
+\centerline{\Large Jacopo Abramo}
+\vspace{2cm}
+\centerline{\Large \today}
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\lstset{language=VHDL}
+
+\newpage
+\section{Introduction} \label{intro}
+\input{./sections/introduction}
+
+\newpage
+\section{Theoretical analysis}\label{theo_analysis}
+\input{./sections/theoretical_presentation}
+
+\newpage
+\section{Octave implemetation}
+\input{./sections/practical_presentation}
+
+\newpage
+\section{Results}
+\input{./sections/results}
+
+\newpage
+\input{./sections/biblio}
+\end{document}
+

@@ -1,0 +1,48 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction to the laboratory experience}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Structure explanation}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Behaviour of the memory}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Organization of the words}{4}{section.1.4}
+\contentsline {chapter}{\numberline {2}Delay}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Delay computation}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Precharge \& Read operation}{5}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Precharge unit delay}{5}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Block decoder delay}{6}{subsubsection.2.1.1.2}
+\contentsline {paragraph}{\numberline {2.1.1.2.1}Output inverter delay}{9}{paragraph.2.1.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Row decoder delay}{9}{subsubsection.2.1.1.3}
+\contentsline {paragraph}{\numberline {2.1.1.3.1}Word line delay}{10}{paragraph.2.1.1.3.1}
+\contentsline {subsubsection}{\numberline {2.1.1.4}SRAM memory cell}{11}{subsubsection.2.1.1.4}
+\contentsline {paragraph}{\numberline {2.1.1.4.1}Bit line delay}{12}{paragraph.2.1.1.4.1}
+\contentsline {subsubsection}{\numberline {2.1.1.5}Sense amplifier delay}{12}{subsubsection.2.1.1.5}
+\contentsline {subsubsection}{\numberline {2.1.1.6}Delay of the column pass transistor}{13}{subsubsection.2.1.1.6}
+\contentsline {subsubsection}{\numberline {2.1.1.7}Total delay}{13}{subsubsection.2.1.1.7}
+\contentsline {subsection}{\numberline {2.1.2}Write operation}{13}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Driver delay}{14}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}Cell delay}{14}{subsubsection.2.1.2.2}
+\contentsline {section}{\numberline {2.2}Simulation results}{15}{section.2.2}
+\contentsline {chapter}{\numberline {3}Power Analysis}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Capacitance modeling}{18}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Precharge block capacitances}{19}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Lines capacitances}{19}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Decoders capacitance}{19}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Sense Amplifier}{20}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Read power}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Decoding stage}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Precharge}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Read operation}{20}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Sense Amplifier}{21}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Total Dynamic Read Power}{21}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Write Dynamic Power}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Simulation results}{22}{section.3.4}
+\contentsline {chapter}{\numberline {4}Area and Volume}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Memory Block}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Decoders}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}Bit Line Inverters, Pass Transistors \\and Precharge Transistors}{27}{section.4.3}
+\contentsline {section}{\numberline {4.4}Sense Amplifier}{28}{section.4.4}
+\contentsline {section}{\numberline {4.5}Total Area and Total Volume}{28}{section.4.5}
+\contentsline {section}{\numberline {4.6}Simulation result}{29}{section.4.6}
+\contentsline {chapter}{\numberline {5}Matlab code}{30}{chapter.5}
+\contentsline {section}{\numberline {5.1}Parameters.m}{30}{section.5.1}
+\contentsline {section}{\numberline {5.2}Register\_File.m}{37}{section.5.2}
+\contentsfinish 

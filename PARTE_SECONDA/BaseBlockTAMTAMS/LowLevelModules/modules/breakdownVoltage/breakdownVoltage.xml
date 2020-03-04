@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>breakdownVoltage</name>
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>antani_2019</name>
+	</implementation>
+</module>
+

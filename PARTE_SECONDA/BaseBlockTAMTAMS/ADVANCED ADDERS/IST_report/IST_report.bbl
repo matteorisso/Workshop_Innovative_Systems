@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{Wallace}
+C.~S. Wallace, ``A suggestion for a fast multiplier,'' {\em IEEE}, 1964.
+
+\bibitem{Rabaey}
+J.~Rabaey, A.~Chandrakasan, and B.~Nikolic, ``Circuiti integrati digitali,
+  l'ottica del progettista,'' {\em Pearson}, 2005.
+
+\bibitem{Krambeck}
+R.~Krambeck, C.~Lee, and H.~Law, ``High-speed compact circuits with cmos,''
+  {\em IEEE}, 1982.
+
+\bibitem{Verma}
+S.~Verma, A.~Angeline, and K.~Bhaaskaran, ``Multiphase pipelining in domino
+  logic alu,'' {\em IEEE}, 2017.
+
+\bibitem{dominoAdder8}
+T.~Maruyama, M.~Hamada, and T.~Kuroda, ``Comparative performance analysis of
+  dual-rail domino logic and cmos logic under near threshold operation,'' {\em
+  IEEE}, 2018.
+
+\bibitem{Nalamwar}
+S.~Nalamwar and S.~Bhosale, ``Design of low power logic gates by using 32nm and
+  16nm finfet technology,'' {\em IEEE}, 2015.
+
+\bibitem{Rasouli}
+S.~Rasouli, H.~Koike, and K.~Banerjee, ``High-speed low-power finfet based
+  domino logic,'' {\em IEEE}, 2009.
+
+\end{thebibliography}

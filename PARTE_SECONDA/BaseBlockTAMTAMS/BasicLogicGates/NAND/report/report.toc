@@ -1,0 +1,10 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Theoretical analysis}{2}
+\contentsline {subsection}{\numberline {2.1}Technological Parameters}{2}
+\contentsline {subsection}{\numberline {2.2}Dynamic Analysis}{5}
+\contentsline {subsection}{\numberline {2.3}Static Analysis}{6}
+\contentsline {subsection}{\numberline {2.4}Delay Analysis}{7}
+\contentsline {subsection}{\numberline {2.5}Elmore Delay}{8}
+\contentsline {section}{\numberline {3}Octave implemetation}{11}
+\contentsline {section}{\numberline {4}Results}{13}

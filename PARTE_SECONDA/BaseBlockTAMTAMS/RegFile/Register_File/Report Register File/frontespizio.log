@@ -1,0 +1,400 @@
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6730)  (format=lualatex 2018.10.7)  14 MAY 2019 17:25
+ restricted system commands enabled.
+**frontespizio.tex
+(./frontespizio.tex
+LaTeX2e <2018-04-01> patch level 5
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using cache: C:/Users/chiar/AppData/Local/MiKTeX/2.9/luatex-cache/gene
+ric)
+luaotfload | conf : Root cache directory is C:/Users/chiar/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “D:/Programmi/MiKTeX 2.9/tex/luatex/luaotfload/fontloader-2017-
+02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/Users/chiar/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.801 seconds
+("D:/Programmi/MiKTeX 2.9/tex/latex/base/article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("D:/Programmi/MiKTeX 2.9/tex/latex/base/size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/chiar/AppData/Local/M
+iKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/chi
+ar/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
+))
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("D:/Programmi/MiKTeX 2.9/tex/generic/babel/babel.sty"
+Package: babel 2018/06/05 3.22 The Babel package
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/babel/switch.def"
+File: switch.def 2018/06/05 3.22 Babel switching mechanism
+)
+("D:/Programmi/MiKTeX 2.9/tex/generic/babel/luababel.def"
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 114.
+\l@ancientgreek=\language3
+\l@arabic=\language4
+\l@armenian=\language5
+\l@assamese=\language6
+\l@basque=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@classiclatin=\language12
+\l@coptic=\language13
+\l@croatian=\language14
+\l@czech=\language15
+\l@danish=\language16
+\l@dutch=\language17
+\l@esperanto=\language18
+\l@estonian=\language19
+\l@farsi=\language20
+\l@finnish=\language21
+\l@french=\language22
+\l@galician=\language23
+\l@georgian=\language24
+\l@german=\language25
+\l@german-x-2018-03-31=\language26
+\l@greek=\language27
+\l@gujarati=\language28
+\l@hindi=\language29
+\l@hungarian=\language30
+\l@icelandic=\language31
+\l@indonesian=\language32
+\l@interlingua=\language33
+\l@irish=\language34
+\l@italian=\language35
+\l@kannada=\language36
+\l@kurmanji=\language37
+\l@latin=\language38
+\l@latvian=\language39
+\l@lithuanian=\language40
+\l@malayalam=\language41
+\l@marathi=\language42
+\l@mongolian=\language43
+\l@mongolianlmc=\language44
+\l@monogreek=\language45
+\l@ngerman=\language46
+\l@ngerman-x-2018-03-31=\language47
+\l@nynorsk=\language48
+\l@oriya=\language49
+\l@panjabi=\language50
+\l@piedmontese=\language51
+\l@pinyin=\language52
+\l@polish=\language53
+\l@portuguese=\language54
+\l@romanian=\language55
+\l@romansh=\language56
+\l@russian=\language57
+\l@sanskrit=\language58
+\l@serbian=\language59
+\l@serbianc=\language60
+\l@slovak=\language61
+\l@slovenian=\language62
+\l@spanish=\language63
+\l@swedish=\language64
+\l@swissgerman=\language65
+\l@tamil=\language66
+\l@telugu=\language67
+\l@thai=\language68
+\l@turkish=\language69
+\l@turkmen=\language70
+\l@ukenglish=\language71
+\l@ukrainian=\language72
+\l@uppersorbian=\language73
+\l@usenglishmax=\language74
+\l@welsh=\language75
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("D:/Programmi/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of 
+babel
+)
+("D:/Programmi/MiKTeX 2.9/tex/latex/babel-italian/italian.ldf"
+Language: italian 2015/03/26 v1.3n Italian support from the babel system
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/babel/babel.def"
+File: babel.def 2018/06/05 3.22 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/babel/luababel.def"))
+\it@lettering=\count89
+\it@doublequoteactive=\count90
+\it@ISOcompliance=\count91
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/hyph-utf8/loadhyph/loadhyph-it.tex"
+UTF-8 Italian hyphenation patterns
+("D:/Programmi/MiKTeX 2.9/tex/generic/hyph-utf8/patterns/tex/hyph-it.tex")
+("D:/Programmi/MiKTeX 2.9/tex/generic/hyph-utf8/patterns/quote/hyph-quote-it.te
+x")))) ("D:/Programmi/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty"
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count92
+)
+("D:/Programmi/MiKTeX 2.9/tex/latex/base/inputenc.sty"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) ("D:/Programmi/MiKTeX 2.9/tex/latex/geometry/geometry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/graphics/keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("D:/Programmi/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count93
+\Gm@cntv=\count94
+\c@Gm@tempcnt=\count95
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks17
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/geometry/geometry.cfg"))
+("D:/Programmi/MiKTeX 2.9/tex/latex/graphics/graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/graphics/graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/graphics/trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("D:/Programmi/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 99.
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/graphics-def/luatex.def"
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("D:/Programmi/MiKTeX 2.9/tex/latex/frontespizio/frontespizio.sty"
+Package: frontespizio 2011/09/21 1.4a (Enrico Gregorio)
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/tools/afterpage.sty"
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks18
+\AP@partial=\box26
+\AP@footins=\box27
+)
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))
+("D:/Programmi/MiKTeX 2.9/tex/latex/environ/environ.sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/trimspaces/trimspaces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks19
+)
+\front@candtoks=\toks20
+\front@candcount=\count96
+\front@reltoks=\toks21
+\front@relcount=\count97
+\front@correltoks=\toks22
+\front@correlcount=\count98
+)
+No auxiliary output files.
+
+No file frontespizio.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("D:/Programmi/MiKTeX 2.9/tex/context/base/supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen115
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks24
+) ("D:/Programmi/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("D:/Programmi/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("D:/Programmi/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+))))
+("D:/Programmi/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks25
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\AtBeginShipoutBox=\box29
+(load luc: C:/Users/chiar/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/ot
+l/lmroman12-bold.luc)(load luc: C:/Users/chiar/AppData/Local/MiKTeX/2.9/luatex-c
+ache/generic/fonts/otl/lmroman12-regular.luc)(load luc: C:/Users/chiar/AppData/L
+ocal/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+<logo_PoliTO.png, id=1, 1027.84pt x 1027.84pt>
+File: logo_PoliTO.png Graphic file (type png)
+<use logo_PoliTO.png>
+Package luatex.def Info: logo_PoliTO.png  used on input line 28.
+(luatex.def)             Requested size: 99.57489pt x 99.58464pt.
+ [1
+
+{C:/Users/chiar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}<./logo_PoliTO
+.png>])
+
+Here is how much of LuaTeX's memory you used:
+ 3499 strings out of 494412
+ 125171,154059 words of node,token memory allocated
+ 399 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 5 glue, 4 attribute, 47 glue_spec, 4 attribute_list
+, 1 write nodes
+   avail lists: 1:1,2:140,3:22,4:7,5:37,6:11,7:528,8:17,9:80,10:6,11:69,12:1
+ 7479 multiletter control sequences out of 65536+200000
+ 31 fonts using 1498591 bytes
+ 41i,14n,25p,804b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
+<d:/programmi/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><d:/prog
+rammi/miktex 2.9/fonts/opentype/public/lm/lmromancaps10-regular.otf><d:/programm
+i/miktex 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><d:/programmi/miktex
+ 2.9/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on frontespizio.pdf (1 page, 250977 bytes).
+
+PDF statistics: 36 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+

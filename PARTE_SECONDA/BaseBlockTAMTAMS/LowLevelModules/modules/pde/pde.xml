@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>pde</name>
+	<displayName>Poly Depletion Effect</displayName>
+	<implementation> 
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>pde_Arora_bul</name>
+	</implementation>
+	<implementation>
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>pde_void_bul</name>
+	</implementation>
+	<implementation>
+                <engine>matlab</engine>
+                <technology>soi</technology>
+		<name>pde_void_soi</name>
+	</implementation>
+</module>
+

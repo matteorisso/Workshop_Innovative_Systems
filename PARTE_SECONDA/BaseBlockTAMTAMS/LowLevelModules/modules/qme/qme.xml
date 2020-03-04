@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>qme</name>
+	<displayName>Transistor Quantum Effect</displayName>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>qme_Chaudhry_Roy_bul</name>
+	</implementation>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>qme_void_bul</name>
+	</implementation>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>soi</technology>
+		<name>qme_void_soi</name>
+	</implementation>
+</module>
+

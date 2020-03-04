@@ -1,0 +1,70 @@
+In table \ref{tab:input_dep} there are the used variables in our model, and in table \ref{tab:output_var} there are the output parameters estimates.
+\begin{itemize}
+\item \emph{CMOS\_NAND2\_fanout1.m}\\
+\item \emph{CMOS\_NAND2\_fanout2.m}\\
+\item \emph{CMOS\_NAND2\_fanout3.m}\\
+\item \emph{CMOS\_NAND2\_fanout4.m}\\
+\item \emph{CMOS\_NAND2\_generic\_fanout.m}
+\end{itemize}
+\begin{table}[htdp]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Code variable & Source file & Physical quantity\\
+\hline
+Cox & Technology file & $pF/\mu m^2$\\
+\hline
+Lgate & Technology file & $nm$\\
+\hline
+Cj0n & Technology file & $pF/\mu m^2$\\
+\hline
+Vdd & Technology file & $V$\\
+\hline
+Cjswn & Technology file & $F/m$\\
+\hline
+Cj0p & Technology file & $pF/\mu m^2$\\
+\hline
+Cjswp & Technology file & $F/m$\\
+\hline
+Cgd0n & Technology file & $F/m$\\
+\hline
+Cgd0p & Technology file & $F/m$\\
+\hline
+Ion\_n & Ion\_mas.m & $\mu A/\mu m$\\
+\hline
+Ion\_p & Ion\_mas.m & $\mu A/\mu m$\\
+\hline
+Ioff\_n & Ioff\_mas.m & $\mu A/\mu m$\\
+\hline
+Ioff\_p & Ioff\_mas.m & $\mu A/\mu m$\\
+\hline
+Igate\_n & Igate\_mas.m & $\mu A/\mu m$\\
+\hline
+Igate\_p & Igate\_mas.m & $\mu A/\mu m$\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Variables used in NAND2 module}
+\label{tab:input_dep}
+\end{table}
+\begin{table}[htdp]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Code variable & Physical quantity & Meaning\\
+\hline
+P\_static\_nd2 & $W$ & Static power of 2-input NAND gate\\
+\hline
+P\_dyn & W & Dynamic power of 2-input NAND gate\\
+\hline
+t\_nd2 & s & Propagation delay across 2-input NAND gate\\
+\hline
+f\_max & Hz & Maximum frequency of 2-input NAND gate\\
+\hline
+tpd & s & Elmore model propagation delay across 2-input NAND gate\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Variables provided in output in NAND2 module}
+\label{tab:output_var}
+\end{table}

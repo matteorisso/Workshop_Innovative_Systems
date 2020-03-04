@@ -1,0 +1,547 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.7)  24 JUL 2017 17:04
+entering extended mode
+**./report.tex
+(report.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen104
+\ttl@minus=\dimen105
+\ttl@toksa=\toks14
+\titlewidth=\dimen106
+\titlewidthlast=\dimen107
+\titlewidthfirst=\dimen108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\lst@mode=\count88
+\lst@gtempboxa=\box27
+\lst@token=\toks16
+\lst@length=\count89
+\lst@currlwidth=\dimen109
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen110
+\lst@width=\dimen111
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen112
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box28
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count96
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen115
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen116
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count97
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count98
+\leftroot@=\count99
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count100
+\DOTSCASE@=\count101
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen117
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
+\dotsspace@=\muskip10
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks18
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks19
+\eqnshift@=\dimen118
+\alignsep@=\dimen119
+\tagshift@=\dimen120
+\tagwidth@=\dimen121
+\totwidth@=\dimen122
+\lineht@=\dimen123
+\@envbody=\toks20
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip57
+\thm@postskip=\skip58
+\thm@headsep=\skip59
+\dth@everypar=\toks27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+\@indexfile=\write3
+\openout3 = `report.idx'.
+
+
+Writing index file report.idx
+
+LaTeX Warning: Unused global option(s):
+    [makeidx].
+
+(report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+\c@lstlisting=\count109
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen124
+\scratchbox=\box31
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen125
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks29
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package epstopdf Info: Source file: <./img/logopoli.eps>
+(epstopdf)                    date: 2017-07-06 22:24:53
+(epstopdf)                    size: 1528296 bytes
+(epstopdf)             Output file: <./img/logopoli-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-07-07 14:50:11
+(epstopdf)                    size: 134322 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/logopoli-eps-converte
+d-to.pdf ./img/logopoli.eps>
+(epstopdf)             \includegraphics on input line 50.
+Package epstopdf Info: Output file is already uptodate.
+
+<./img/logopoli-eps-converted-to.pdf, id=1, 574.145pt x 566.115pt>
+File: ./img/logopoli-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./img/logopoli-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/logopoli-eps-converted-to.pdf used on input line
+ 50.
+(pdftex.def)             Requested size: 56.9055pt x 56.10515pt.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/logopoli-eps-conver
+ted-to.pdf>] (report.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write4
+\openout4 = `report.toc'.
+
+ [1]
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(sections/introduction.tex) [2] (sections/theoretical_presentation.tex
+<img/half_adder.png, id=21, 301.125pt x 194.7275pt>
+File: img/half_adder.png Graphic file (type png)
+ <use img/half_adder.png>
+Package pdftex.def Info: img/half_adder.png used on input line 5.
+(pdftex.def)             Requested size: 142.26378pt x 92.0003pt.
+
+<img/xor_to_nand.png, id=23, 252.19218pt x 117.81516pt>
+File: img/xor_to_nand.png Graphic file (type png)
+
+<use img/xor_to_nand.png>
+Package pdftex.def Info: img/xor_to_nand.png used on input line 21.
+(pdftex.def)             Requested size: 252.19156pt x 117.81487pt.
+
+<img/nand_gate_transistor.png, id=24, 108.0286pt x 102.00609pt>
+File: img/nand_gate_transistor.png Graphic file (type png)
+
+<use img/nand_gate_transistor.png>
+Package pdftex.def Info: img/nand_gate_transistor.png used on input line 28.
+(pdftex.def)             Requested size: 108.0283pt x 102.00583pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+
+<img/and_to_nand.png, id=25, 209.28188pt x 32.74734pt>
+File: img/and_to_nand.png Graphic file (type png)
+
+<use img/and_to_nand.png>
+Package pdftex.def Info: img/and_to_nand.png used on input line 49.
+(pdftex.def)             Requested size: 209.28134pt x 32.74724pt.
+ [3 <./img/half_adder.png> <./img/xor_to_nand.png>]
+[4 <./img/nand_gate_transistor.png> <./img/and_to_nand.png>]
+<img/xor_timing.png, id=38, 169.38281pt x 117.06235pt>
+File: img/xor_timing.png Graphic file (type png)
+
+<use img/xor_timing.png>
+Package pdftex.def Info: img/xor_timing.png used on input line 102.
+(pdftex.def)             Requested size: 169.38239pt x 117.06204pt.
+ <img/and_timing.png, id=39, 127.97812pt x 32.74734pt>
+File: img/and_timing.png Graphic file (type png)
+
+<use img/and_timing.png>
+Package pdftex.def Info: img/and_timing.png used on input line 109.
+(pdftex.def)             Requested size: 127.9778pt x 32.74724pt.
+ [5 <./img/xor_timing.png> <./img/and_timing.png>]
+<img/gate_leakage.png, id=45, 113.29828pt x 45.54515pt>
+File: img/gate_leakage.png Graphic file (type png)
+
+<use img/gate_leakage.png>
+Package pdftex.def Info: img/gate_leakage.png used on input line 149.
+(pdftex.def)             Requested size: 113.29799pt x 45.54503pt.
+File: img/gate_leakage.png Graphic file (type png)
+ <use img/gate_leakage.png>
+Package pdftex.def Info: img/gate_leakage.png used on input line 156.
+(pdftex.def)             Requested size: 113.29799pt x 45.54503pt.
+ [6 <./img/gate_leakage.png>] <img/Figura_FA.jpg, id=50, 168.63pt x 66.2475pt>
+File: img/Figura_FA.jpg Graphic file (type jpg)
+ <use img/Figura_FA.jpg>
+Package pdftex.def Info: img/Figura_FA.jpg used on input line 195.
+(pdftex.def)             Requested size: 168.62958pt x 66.24733pt.
+
+<img/or_to_nand.png, id=51, 222.07968pt x 73.77562pt>
+File: img/or_to_nand.png Graphic file (type png)
+ <use img/or_to_nand.png>
+Package pdftex.def Info: img/or_to_nand.png used on input line 202.
+(pdftex.def)             Requested size: 222.07913pt x 73.77542pt.
+
+<img/FA_timing.jpg, id=52, 168.63pt x 66.2475pt>
+File: img/FA_timing.jpg Graphic file (type jpg)
+ <use img/FA_timing.jpg>
+Package pdftex.def Info: img/FA_timing.jpg used on input line 219.
+(pdftex.def)             Requested size: 168.62958pt x 66.24733pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./img/Figura_FA.jpg> <./img/or_to_nand.png>]) [8 <./img/FA_timing.jpg>]
+(sections/practical_presentation.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(img/half_adder_full_adder.m [9] [10] [11] [12] [13] [14])) [15] [16]
+(sections/results.tex
+Package epstopdf Info: Source file: <img/area_rep.eps>
+(epstopdf)                    date: 2017-07-17 16:03:47
+(epstopdf)                    size: 23959 bytes
+(epstopdf)             Output file: <img/area_rep-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-07-17 17:34:07
+(epstopdf)                    size: 4200 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/area_rep-eps-converted-
+to.pdf img/area_rep.eps>
+(epstopdf)             \includegraphics on input line 4.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/area_rep-eps-converted-to.pdf, id=86, 421.575pt x 316.18124pt>
+File: img/area_rep-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/area_rep-eps-converted-to.pdf>
+Package pdftex.def Info: img/area_rep-eps-converted-to.pdf used on input line 4
+.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+ [17 <./img/area_rep-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/delay_rep.eps>
+(epstopdf)                    date: 2017-07-17 16:03:29
+(epstopdf)                    size: 22288 bytes
+(epstopdf)             Output file: <img/delay_rep-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-07-17 17:34:36
+(epstopdf)                    size: 4121 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/delay_rep-eps-converted
+-to.pdf img/delay_rep.eps>
+(epstopdf)             \includegraphics on input line 13.
+Package epstopdf Info: Output file is already uptodate.
+ <img/delay_rep-eps-converted-to.pdf, id=94, 421.575pt x 316.18124pt>
+File: img/delay_rep-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/delay_rep-eps-converted-to.pdf>
+Package pdftex.def Info: img/delay_rep-eps-converted-to.pdf used on input line 
+13.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+ [18 <./img/delay_rep-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/freq_rep.eps>
+(epstopdf)                    date: 2017-07-17 16:02:47
+(epstopdf)                    size: 22321 bytes
+(epstopdf)             Output file: <img/freq_rep-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-07-17 17:39:59
+(epstopdf)                    size: 4117 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/freq_rep-eps-converted-
+to.pdf img/freq_rep.eps>
+(epstopdf)             \includegraphics on input line 22.
+Package epstopdf Info: Output file is already uptodate.
+ <img/freq_rep-eps-converted-to.pdf, id=103, 421.575pt x 316.18124pt>
+File: img/freq_rep-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/freq_rep-eps-converted-to.pdf>
+Package pdftex.def Info: img/freq_rep-eps-converted-to.pdf used on input line 2
+2.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+ [19 <./img/freq_rep-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/power_rep.eps>
+(epstopdf)                    date: 2017-07-17 17:48:09
+(epstopdf)                    size: 22800 bytes
+(epstopdf)             Output file: <img/power_rep-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-07-17 17:48:37
+(epstopdf)                    size: 4167 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/power_rep-eps-converted
+-to.pdf img/power_rep.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+ <img/power_rep-eps-converted-to.pdf, id=111, 421.575pt x 316.18124pt>
+File: img/power_rep-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/power_rep-eps-converted-to.pdf>
+Package pdftex.def Info: img/power_rep-eps-converted-to.pdf used on input line 
+31.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+ [20 <./img/power_rep-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/power_rep_swt_act.eps>
+(epstopdf)                    date: 2017-07-17 16:00:28
+(epstopdf)                    size: 22200 bytes
+(epstopdf)             Output file: <img/power_rep_swt_act-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2017-07-17 16:01:51
+(epstopdf)                    size: 4146 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/power_rep_swt_act-eps-c
+onverted-to.pdf img/power_rep_swt_act.eps>
+(epstopdf)             \includegraphics on input line 40.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/power_rep_swt_act-eps-converted-to.pdf, id=119, 421.575pt x 316.18124pt>
+File: img/power_rep_swt_act-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/power_rep_swt_act-eps-converted-to.pdf>
+Package pdftex.def Info: img/power_rep_swt_act-eps-converted-to.pdf used on inp
+ut line 40.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+) [21 <./img/power_rep_swt_act-eps-converted-to.pdf>] (sections/biblio.tex) [22
+] (report.aux) ) 
+Here is how much of TeX's memory you used:
+ 5368 strings out of 493333
+ 72181 string characters out of 3139191
+ 395875 words of memory out of 3000000
+ 8765 multiletter control sequences out of 15000+200000
+ 8713 words of font info for 33 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,12n,43p,949b,2133s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (23 pages, 501434 bytes).
+PDF statistics:
+ 175 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+

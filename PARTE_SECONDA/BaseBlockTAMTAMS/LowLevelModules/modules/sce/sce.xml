@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>sce</name>
+	<displayName>Short Channel Effect</displayName>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>sce_void_bul</name>
+	</implementation>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>sce_mas_bul</name>
+	</implementation>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>soi</technology>
+		<name>sce_mas_soi</name>
+	</implementation>
+</module>
+

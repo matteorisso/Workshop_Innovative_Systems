@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>vth</name>
+	<displayName>Threshold Voltage</displayName>
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>vth_mas_complete_bul</name>
+                <output>vth</output>
+	</implementation>
+
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>soi</technology>
+		<name>vth_mas_complete_soi</name>
+                <dependency>physicalParameters</dependency>
+	</implementation>
+
+<implementation>  
+                <engine>matlab</engine>
+                <technology>finfet</technology>
+		
+		<name>vth2-abbas</name>
+</implementation>
+	<implementation>  
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>vth_modular_bul</name>
+		<dependency>sce</dependency>
+		<dependency>qme</dependency>
+		<dependency>pde</dependency>
+		<dependency>dibl</dependency>
+                <parameters type="String" defaultValue="Copper" admittedValues="Aluminium,Copper">Test_Parameter</parameters>
+	</implementation>
+<implementation>  
+                <engine>matlab</engine>
+                <technology>fdsoi</technology>
+		<name>fdsoivth</name>
+</implementation>
+
+
+</module>
+

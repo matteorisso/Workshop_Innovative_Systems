@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>dibl</name>
+	<displayName>Drain Induced Barrier Lowering</displayName>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>dibl_Liu1993_bul</name>
+		<dependency>physicalParameters</dependency>
+	</implementation>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>dibl_mas_bul</name>
+		<dependency>physicalParameters</dependency>
+	</implementation>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>soi</technology>
+		<name>dibl_mas_soi</name>
+		<dependency>physicalParameters</dependency>
+	</implementation>
+	<implementation>  <!--Matlab is just an example, could be Scilab or Octave-->
+                <engine>matlab</engine>
+                <technology>bulk</technology>
+		<name>dibl_void_bul</name>
+		<dependency>physicalParameters</dependency>
+	</implementation>
+</module>
+

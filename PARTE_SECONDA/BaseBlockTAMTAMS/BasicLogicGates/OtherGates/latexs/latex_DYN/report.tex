@@ -1,0 +1,651 @@
+\documentclass[12pt,  english, makeidx, a4paper, titlepage, oneside]{article}
+\usepackage[english]{babel}
+\usepackage[applemac]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{makeidx}
+\usepackage{titlesec}
+\usepackage{listings} 
+\newenvironment{listato}{\footnotesize}
+                        {\normalsize }
+\textwidth 19cm
+\textheight 23cm
+\topmargin -1.5cm
+\oddsidemargin -1.5cm
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{}
+\chead{NAND/AND Modules}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\rhead{\thepage}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+
+\titleformat{\chapter}[display]
+{\normalfont\Large\filcenter\sffamily}
+{\titlerule[0.5pt]%
+\vspace{1pt}
+\titlerule
+\vspace{1pc}
+\LARGE\MakeUppercase{\chaptertitlename} \thechapter
+}
+{1pc}
+{\titlerule
+\vspace{1pc}
+\Huge}
+
+\makeindex
+
+\begin{document}
+\begin{titlepage}
+\vspace{1cm}
+\centerline{
+\includegraphics[width=2cm]{./img/logopoli.eps}}  
+\centerline{\LARGE Politecnico di Torino}
+\bigskip
+\vspace{3cm}
+\centerline{\LARGE TAMTAMS Web}
+\vspace{0.5cm}
+\centerline{\Large Integrated System Technology}
+\vspace{3cm}
+\centerline{\huge NAND/AND MODULES:}
+\vspace{0.7cm}
+\centerline{\large Delay\_Pow\_and2\_dyn, Delay\_Pow\_and3\_dyn,  Delay\_Pow\_and4\_dyn}
+\vspace{0.3cm}
+\centerline{\large Delay\_Pow\_or2\_dyn,  Delay\_Pow\_or3\_dyn,  Delay\_Pow\_or4\_dyn}
+\bigskip
+\vspace{5cm}
+\centerline{\Large Simone Aiassa\\Alberto Cassisa\\Giovanni Fazio}
+\vspace{1cm}
+\centerline{\Large \today}
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\lstset{language=Matlab}
+
+\newpage
+
+
+\section{Introduction}
+
+% % % % % % % % % % % % % %da fare % % % % %
+
+Analysis and parameters estimation in terms of power and delay of different single logic gates.
+To do that \textit{AND2, AND3, AND4}  and \textit{OR2, OR3, OR4} logic gates implemented in \textit{Dynamic-logic} are analysed. \\
+This \textit{OCTAVE} files are implemented for \textit{TAMTAMS}: 
+\begin{itemize}
+\item \textbf{Delay\_Pow\_and2\_dyn.m}: Dynamic-logic 2-inputs AND;
+\item \textbf{Delay\_Pow\_and3\_dyn.m}: Dynamic-logic 3-inputs AND;
+\item \textbf{Delay\_Pow\_and4\_dyn.m}: Dynamic-logic 4-inputs AND;
+\item \textbf{Delay\_Pow\_or2\_dyn.m}: Dynamic-logic 2-inputs OR;
+\item \textbf{Delay\_Pow\_or3\_dyn.m}: Dynamic-logic 3-inputs OR;
+\item \textbf{Delay\_Pow\_or4\_dyn.m}: Dynamic-logic 4-inputs OR;
+\end{itemize}
+
+where the following parameters are estimated:
+
+\begin{itemize}
+\item \textbf{Delay\_nand\_and}: input to output delay;
+\item \textbf{Pnand\_and\_dyn}: dynamic power;
+\item \textbf{Pnand\_and}: static power;
+\end{itemize}
+ 
+\newpage 
+\section{Logic Implementation}
+
+\label{section:logicimplementation}
+The different logic gates involved into the analysis are represented in form of schematic.\\
+The dimension of the transistor are forced in order to have a resistance (and an $I_{on}$) equal to the inverter of minimal dimension. 
+\\The figure  \ref{fig:DYNRID} shows the \textit{Dynamic} structures taken in account.\\
+The \textit{n-MOS} and the \textit{p-MOS} connected to \textit{CLK} are the header and the footer used to disclaim between the two dynamic phase. Then a pull-down network is used to evaluate the output. A \textit{CMOS} inverter must be added because of the sharing of charge that could appears between one gate and the next one. For that reason the inverter is added as a part of the gates itself and must be taken into account in all analysis; it is a fundamental part of the structure.\\
+Note that those gates are \textit{non-inverting} where a \textit{CMOS} logic is \textit{inverting}; moreover this fact does not afflict the comparison between the two structure because if the \textit{NAND2} is the fundamental block of \textit{CMOS} logic, the \textit{AND2} is the fundamental
+one for the \textit{Dynamic} logic.\\
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=19cm]{img/DYN_GRID.jpg}
+\caption{Dynamic schemes}
+\label{fig:DYNRID}
+\end{center}
+\end{figure}
+
+\newpage
+
+\section{Delay}
+
+\subsection{Theoretical Analysis}
+\label{captech*}
+The delay analysis of the different gates is implemented exploiting the \textit{Elmore} Delay model, taking into account that it is an optimistic model. Moreover it could be used to easily compare different technological implementation.\\
+Necessary technological parameters in order to evaluate the delay are reported below.\\
+The analysis is done on gate with a load made of a minimum inverter or multiple of it. Is possible compute input capacitance of \textit{n-MOS} and \textit{p-MOS} transistors per unit length:
+\begin{eqnarray}
+C_{in_N}=C_{OX}+C_{overlapN} \quad [pF/\mu m]\\
+C_{in_P}=C_{OX}+C_{overlapP} \quad [pF/\mu m]
+\end{eqnarray}
+where the two overlap capacitances are due to the overlap size between the gate and drain/source areas:
+\begin{eqnarray}
+C_{overlapN}=10^6 \cdot C_{GDOn} \quad [pF/\mu m]\\
+C_{overlapP}=10^6 \cdot C_{GDOp} \quad [pF/\mu m]
+\end{eqnarray}
+The junction capacitances between source and drain are:
+\begin{eqnarray}
+C_{jN}=C_{bottomN} + C_{sidewallN} \quad [pF/\mu m]\\
+C_{jP}=C_{bottomP} + C_{sidewallP} \quad [pF/\mu m]
+\end{eqnarray}
+$C_{bottom}$ is the capacitance due to the area of the pool of the source/drain and $C_{sidewall}$ is the one due to the edge of the same pool.
+\begin{eqnarray}
+C_{bottomN}=C_{j0_N} \cdot \Bigl(1+ \frac{V_{DD}}{2 \cdot P_{bN}} \Bigr)^{-M_{jN}} \cdot 2.5 \cdot L_{drawn} \quad [pF/\mu m]\\
+C_{bottomP}=C_{j0_P} \cdot \Bigl(1+ \frac{V_{DD}}{2 \cdot P_{bP}} \Bigr)^{-M_{jP}} \cdot 2.5 \cdot L_{drawn} \quad [pF/\mu m]\\
+C_{sidewallN}=10^6 \cdot C_{sw_N} \cdot \Bigl(1+ \frac{V_{DD}}{2 \cdot P_{bswN}} \Bigr)^{-M_{jswN}} \quad [pF/\mu m]\\
+C_{sidewallP}=10^6 \cdot C_{sw_P} \cdot \Bigl(1+ \frac{V_{DD}}{2 \cdot P_{bswP}} \Bigr)^{-M_{jswP}} \quad [pF/\mu m]
+\end{eqnarray}
+Moreover for the estimation of parasitic capacitances $C_{jN}$ and $C_{jP}$, it is necessary to evaluate the perimeter.
+\begin{eqnarray}
+\text{perim}_N=2 \cdot \text{lungh\_diff} + W_N [\mu m]\\
+\text{perim}_P=2 \cdot \text{lungh\_diff} + W_P [\mu m]
+\end{eqnarray}
+We consider only one side for the $W$, because the internal one does not touch a conductor, but just a spatial charge. \\Therefore $C_{jN}$ and $C_{jP}$ are:
+\begin{eqnarray}
+C_{jN}=C_{bottomN} \cdot W_N + C_{sidewallN} \cdot \text{perim}_N \quad [pF]\\
+C_{jP}=C_{bottomP} \cdot W_P + C_{sidewallP} \cdot \text{perim}_P \quad [pF]
+\end{eqnarray}
+\\ Now we have to evaluate the equivalent resistance of the \textit{MOS} that contributes in the delay calculation:
+\begin{equation}
+R_n=\frac{1}{\mu_n \cdot C_{OX} \cdot \frac{W_N}{L_{eff}}\cdot (V_{DD}-V_{tn})} \quad [\Omega]
+\end{equation}\\
+\begin{equation}
+R_p=\frac{1}{\mu_p \cdot C_{OX} \cdot \frac{W_P}{L_{eff}}\cdot (V_{DD}-V_{tp})} \quad [\Omega]
+\end{equation}\\
+Another parameters used in our analysis is \textit{h}. It's simply the multiplier of the number of inverter linked in output, the parametrized fan-out.
+\subsection{Delay calculation}
+In figure \ref{fig:nand_2_dyn} the \textit{Elmore} model of \textit{AND2-Dynamic} gate is shown.\\  
+The total delay it's the combination of two contributes: the delay of the \textit{pull-down dynamic} structure plus the delay of the inverter. In this architecture we have to consider also the \textit{pre-charge} time that in the case of the fall time will be summed up with the other two contributes. Note that the first stage has to charge the inverter input capacitance too.\\
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{img/NAND2_DynLogic_Delay.jpg}
+		\caption{Dynamic-AND2 Elmore Model}
+		\label{fig:nand_2_dyn}
+	\end{center}
+\end{figure}\\
+So in general we can represent the two delays (for both \textit{OR} and \textit{AND}) as :
+\begin{equation}
+\begin{gathered}
+t_r = t_{precharge} + t_{fall-gate} + t_{rise-inverter}\\
+t_f = t_{precharge}  + t_{fall-inverter}
+\end{gathered}
+\end{equation}
+Where the rise and fall time of the inverter are :\\
+\begin{equation}
+\begin{gathered}
+t_{rise-inverter} =  R_p \cdot ( C_{jp} +  C_{jn} + h\cdot C_L )\\
+t_{fall-inverter} =  R_n \cdot ( C_{jn} +  C_{jp} + h\cdot C_L )
+\end{gathered}
+\end{equation}
+From here on out it will be showed only the contribute depending from the first part of the gate because the \textit{inverter} contribute it's always the same.
+\begin{itemize}
+	\item\textbf{AND2-Dynamic}
+	\begin{equation}
+	tr_{dand2}= R_p \cdot ( C_{jp} + C_{jn} +  C_L )
+	\end{equation}
+	\begin{equation}
+	\begin{gathered}
+	tf_{dand2}= R_n \cdot (  C_{jn} + C_{jn} +C_{jn} + C_{jp} + C_L ) +R_n \cdot (  C_{jn} + C_{jn} + C_{jp} + C_L ) +  R_n \cdot (  C_{jn}  + C_{jp} +C_L ) =\\=  R_n \cdot ( 6\cdot C_{jn} + 3 \cdot C_{jp} + 3\cdot C_L )
+	\end{gathered}
+	\end{equation}
+	\item\textbf{AND3-Dynamic}
+	\begin{equation}
+	tr_{dand3}= R_p \cdot ( C_{jp} + C_{jn} +  C_L )
+	\end{equation}
+	\begin{equation}
+	tf_{dand3}=   R_n \cdot ( 10\cdot C_{jn} + 4 \cdot C_{jp} + 4\cdot C_L )
+	\end{equation}
+	\item\textbf{AND4-Dynamic}
+	\begin{equation}
+	tr_{dand4}= R_p \cdot ( C_{jp} + C_{jn} +  C_L )
+	\end{equation}
+	\begin{equation}
+	tf_{dand4}=   R_n \cdot ( 15\cdot C_{jn} + 5 \cdot C_{jp} + 5\cdot C_L )
+	\end{equation}
+	\item\textbf{OR2-Dynamic}
+	\begin{equation}
+	tr_{dor2}= R_p \cdot ( C_{jp} + 2 \cdot C_{jn} +   C_L )
+	\end{equation}
+	\begin{equation}
+	tf_{dor2}= R_n \cdot ( C_{jn} + C_{jn} + C_{jn}+ C_{jp} + C_L )+ R_n \cdot ( C_{jn} + C_{jn} + C_{jp} + C_L ) = R_p\cdot (7\cdot C_{jn} + 2\cdot C_{jp} + 2\cdot C_L )
+	\end{equation}
+	\item\textbf{OR3-Dynamic}
+	\begin{equation}
+	tr_{dor3}= R_p \cdot (  C_{jp} + 3 \cdot C_{jn} +  C_L )
+	\end{equation}
+	\begin{equation}
+	tf_{dor3}= R_n \cdot(10\cdot C_{jn} + 2\cdot C_{jp} + 2\cdot C_L )
+	\end{equation}
+	\item\textbf{OR4-Dynamic}
+	\begin{equation}
+	tr_{dor4}= R_p \cdot (  C_{jp} + 4 \cdot C_{jn} +  C_L )
+	\end{equation}
+	\begin{equation}
+	tf_{dor4}= R_n \cdot(13\cdot C_{jn} +2\cdot C_{jp} +2\cdot C_L )
+	\end{equation}
+\end{itemize}
+
+
+
+\newpage
+
+\section{Dynamic Power}
+\subsection{Theoretical Analysis}
+The dynamic power can be evaluated through the following:
+\begin{equation}
+P_{dynamic}=\frac{1}{2} \cdot f \cdot C \cdot \alpha \cdot V_{DD}^{2} \quad [W]
+\end{equation}
+Where $\alpha$ is the switching activity, f the frequency and C the  total capacitance.\\
+This analysis was made imposing two assumption in order to get simplified expression to easily make consideration on the technological behaviour of described gates:
+\begin{itemize}
+	\item The input probability is always considered as $\frac{1}{2}$;
+	\item The computation of the switching activity for every single node is based on a \textit{probabilistic model} (shown in detail later). 
+\end{itemize}   
+All the necessary technological parameters involved into this analysis are detailed in \ref{captech*}.
+
+\subsection{Dynamic power calculation} 
+In this section is reported a detailed analysis of \textit{NAND2} gate implemented exploiting \textit{dynamic} logic. In Figure \ref{NAND2_DynamicLogic} can be seen the scheme of the analysed  gate.
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{img/NAND2_DynLogic_PotDyn}
+		\caption{Dynamic 2-input AND architecture}
+		\label{NAND2_DynamicLogic}
+	\end{center}
+\end{figure}
+The expression to compute the dynamic power is:
+\begin{equation}
+C \cdot \alpha = C_{IN_{nmos}} \cdot (\alpha_A + \alpha_B)+ C_M \cdot \alpha_M+C_X \cdot (\alpha_{X1}+\alpha_{X2})+ C_Y \cdot \alpha_Y+ (C_{IN_{nmos}}+C_{IN_{pmos}}) \cdot \alpha_{CLK}
+\end{equation}
+The considered capacitances are the following:
+\begin{itemize}
+\item $ C_{IN_{nmos}} $ and $ C_{IN_{pmos}} $ are the capacitances associated to the inputs for \textit{n-MOS} and \textit{p-MOS} respectively:\\
+\begin{equation}
+C_{IN_{nmos}}=C_{OX} \cdot 3W_N\cdot L_{eff}+2C_{overlapN} = 3 C_{OXN}+ 2C_{overlapN} \quad [pF]
+\end{equation}
+\begin{equation}
+C_{IN_{pmos}}=C_{OX} \cdot W_P\cdot L_{eff}+2C_{overlapP}
+= C_{OXP}+ 2C_{overlapP} \quad [pF]
+\end{equation}
+\item $ C_{X1} $ and $ C_{X2} $ are the capacitances associated to the internal nodes, always supposing that source and drain are common for the two \textit{n-MOS}:\\
+\begin{equation}
+C_{X1}=C_{X2}=3C_{jN} \quad [pF]
+\end{equation}
+\item $ C_M $ is obviously the capacitance of the middle node M:
+\begin{equation}
+C_{M}=C_{jP}+3C_{jN}+C_{INV} \quad [pF]
+\end{equation}
+To note that $C_{INV}$ is simply the input capacitance for the inverter:
+	\begin{equation}
+	C_{INV}= C_{OX} \cdot W_N \cdot L_{eff} + C_{OX} \cdot W_P \cdot L_{eff} + 2C_{overlapN}+ 2C_{overlapP} \quad [pF]
+	\end{equation}
+\item $ C_Y $ is the output capacitance:
+\begin{equation}
+C_{Y}=C_{jP}+C_{jN}+C_{L} \quad [pF]
+\end{equation}
+
+\end{itemize}
+Regarding the switching activity we have to do some consideration:
+$ \alpha_{CLK} $ is the switching activity associated to the clock signal and can be considered equal to 2. This because for sure there are two commutations in a single clock period.\\ 
+The switching activity associated to the input is the same seen for the CMOS static logic:
+\begin{equation}
+\alpha_A = \alpha_B = \frac{1}{2}
+\end{equation}
+For the internal and the M nodes the switching activity can be computed as:
+\begin{equation}
+\alpha_{X,M} = 2 \cdot (1-P_{X,M})
+\end{equation}
+This because, considering the worst case, each node commutes 2 times when in \textit{pre-charge phase} is charged and then in \textit{evaluation phase} is discharged, so in the case that the node goes to \textit{zero}.\\
+In this particular example we have:
+\begin{equation}
+P_{X1}=P_A \cdot (1-P_B)
+\end{equation}
+\begin{equation}
+P_{X2}=P_A \cdot P_B
+\end{equation}
+\begin{equation}
+P_{M}=(1-P_A) \cdot (1-P_B)
+\end{equation}
+Regarding the node Y we can say that $ \alpha_M = \alpha_Y $.This due to the presence of the inverter, it's easy to see that if the there's a commutation on the M node there will be also on the node Y.
+Summing up all the contribution, the final expression is the following:
+\begin{equation}
+\begin{split}
+&
+C \cdot \alpha_{DAND2} = 3 C_{IN_{nmos}}+\frac{3}{2}\cdot C_M+3C_X+\frac{3}{2}\cdot C_Y+2C_{IN_{pmos}}=
+\\&
+=\frac{21}{2} C_{OXN}+9C_{overlapN}+\frac{7}{2}C_{OXP}+7C_{overlapP}+15C_{jN}+3C_{jP}+C_L
+\end{split}
+\end{equation}
+The other logic gates are analysed in similar way.\\
+Here are reported just the final expression for $ C \cdot \alpha $ in those cases:
+\begin{itemize}
+	\item  \textbf{AND3-Dynamic}: 
+\begin{equation}
+C \cdot \alpha_{DAND3} = C_{IN_{nmos}} \cdot (\alpha_A + \alpha_B + \alpha_C)+ C_M \cdot \alpha_M+C_X \cdot (\alpha_{X1}+\alpha_{X2}+ \alpha_{X3})+ C_Y \cdot \alpha_Y+ (C_{IN_{nmos}}+C_{IN_{pmos}}) \cdot \alpha_{CLK}
+\end{equation}
+\begin{equation}
+\frac{3}{2} \cdot C_{IN_{nmos}} +\frac{7}{4}\cdot C_{M} +\frac{15}{2} \cdot C_X+\frac{7}{4}\cdot C_Y+2 \cdot (C_{IN_{nmos}}+C_{IN_{pmos}})
+\end{equation}
+\begin{equation}
+=\frac{63}{4}C_{OXN}+\frac{21}{2}C_{overlapN}+\frac{15}{2}C_{OXP}+\frac{15}{2}C_{overlapP}+\frac{155}{4}C_{jN}+\frac{7}{2}C_{jP}+C_L
+\end{equation}
+	\item \textbf{AND4-Dynamic}:
+	\begin{equation}
+	\begin{gathered}
+	C \cdot \alpha_{DAND4}  = C_{IN_{nmos}} \cdot (\alpha_A + \alpha_B + \alpha_C+\alpha_D)+ C_M \cdot \alpha_M+ \\ +C_X \cdot (\alpha_{X1}+\alpha_{X2}+  \alpha_{X3}+\alpha_{X4})+ C_Y \cdot \alpha_Y+ (C_{IN_{nmos}}+C_{IN_{pmos}}) \cdot \alpha_{CLK}=
+	\end{gathered}
+	\end{equation}
+	\begin{equation}
+	=2 \cdot C_{IN_{nmos}} +\frac{15}{8}\cdot C_{M} +7 \cdot C_X+\frac{15}{8}\cdot C_Y+2 \cdot (C_{IN_{nmos}}+C_{IN_{pmos}})=
+	\end{equation}
+\begin{equation}
+	=\frac{175}{8}C_{OXN}+\frac{47}{4}C_{overlapN}+\frac{31}{8}C_{OXP}+\frac{31}{4}C_{overlapP}+\frac{185}{4}C_{jN}+\frac{15}{4}C_{jP}+C_L
+\end{equation}	
+	\item \textbf{OR2-Dynamic}:
+	\begin{equation}
+	C \cdot \alpha_{DOR2} = C_{IN_{nmos}} \cdot (\alpha_A + \alpha_B )+ C_M \cdot \alpha_M+C_X \cdot \alpha_{X1}+ C_Y \cdot \alpha_Y+ (C_{IN_{nmos}}+C_{IN_{pmos}}) \cdot \alpha_{CLK}=
+	\end{equation}	
+	\begin{equation}
+	=C_{IN_{nmos}} +\frac{3}{2}\cdot C_{M} +\frac{1}{2} \cdot C_X+\frac{3}{2}\cdot C_Y+2 \cdot (C_{IN_{nmos}}+C_{IN_{pmos}})=
+	\end{equation}
+\begin{equation}
+	=\frac{15}{2}C_{OXN}+{9}C_{overlapN}+\frac{7}{2}C_{OXP}+\frac{7}C_{overlapP}+\frac{21}{2}C_{jN}+{3}C_{jP}+C_L
+\end{equation}	
+	\item \textbf{OR3-Dynamic}:
+	\begin{equation}
+	C \cdot \alpha_{COR3} = C_{IN_{nmos}} \cdot (\alpha_A + \alpha_B+ \alpha_C )+ C_M \cdot \alpha_M+C_X \cdot \alpha_{X1}+ C_Y \cdot \alpha_Y+ (C_{IN_{nmos}}+C_{IN_{pmos}}) \cdot \alpha_{CLK}=
+	\end{equation}	
+	\begin{equation}
+	=\frac{3}{2} \cdot C_{IN_{nmos}} +\frac{7}{4}\cdot C_{M} +\frac{1}{4} \cdot C_X+\frac{7}{4}\cdot C_Y+2 \cdot (C_{IN_{nmos}}+C_{IN_{pmos}})=
+	\end{equation}
+\begin{equation}
+	=\frac{35}{4}C_{OXN}+\frac{21}{2}C_{overlapN}+\frac{15}{4}C_{OXP}+\frac{15}{2}C_{overlapP}+\frac{57}{4}C_{jN}+\frac{7}{2}C_{jP}+C_L
+\end{equation}
+	\item \textbf{OR4-Dynamic}::
+	\begin{equation}
+	C \cdot \alpha _{COR4} = C_{IN_{nmos}} \cdot (\alpha_A + \alpha_B+ \alpha_C+ \alpha_D )+ C_M \cdot \alpha_M+C_X \cdot \alpha_{X1}+ C_Y \cdot \alpha_Y+ (C_{IN_{nmos}}+C_{IN_{pmos}}) \cdot \alpha_{CLK}=
+	\end{equation}	
+	\begin{equation}
+	={2} \cdot C_{IN_{nmos}} +\frac{15}{8}\cdot C_{M} +\frac{1}{8} \cdot C_X+\frac{15}{8}\cdot C_Y+2 \cdot (C_{IN_{nmos}}+C_{IN_{pmos}})=
+	\end{equation}		
+\begin{equation}
+	=\frac{79}{8}C_{OXN}+\frac{47}{4}C_{overlapN}+\frac{31}{8}C_{OXP}+\frac{31}{4}C_{overlapP}+\frac{145}{8}C_{jN}+\frac{15}{4}C_{jP}+C_L
+\end{equation}	
+	\end{itemize}
+\newpage
+\section{Static Power}
+
+\subsection{Theoretical Analysis}
+The static power can be evaluated as shown below:
+\begin{equation}
+P_{static}=V_{DD} \cdot I_{leak} \quad [W]
+\end{equation}
+where $I_{leak}$ is the total leakage current and $V_{DD}$ is the supply voltage.
+For the leakage current we consider two factors:
+\begin{itemize}
+\item $\mathbf{I_{OFF}}$ \textbf{- Subthreshold current}: is the leakage current that flows drain-source when $V_{GS}=0$ and $|V_{DS}|=V_{DD}$ as shown in figure \ref{fig:ds_leakage}.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{img/mos_off.png}
+\caption{Leakage drain/source current when MOS are off}
+\label{fig:ds_leakage}
+\end{center}
+\end{figure}
+
+\item $\mathbf{I_{GATE}}$ \textbf{- Gate Current}: is the leakage current that flows from drain and source to gate or vice versa when $|V_{GS}|=V_{DD}$ and $V_{DS}=0$  as can be seen in fig \ref{fig:gate_leakage}. Also in other condition a small gate current could appear but is possible to say that in those other cases the contribution is negligible.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{img/mos_gate.jpg}
+\caption{Leakage gate current}
+\label{fig:gate_leakage}
+\end{center}
+\end{figure}
+
+\end{itemize}
+
+
+\subsection{Static power calculation}
+As example the detailed procedure used to estimate the static power of the \textit{AND2} is fully explained.\\
+Assuming that all the signal switches are immediate is possible to consider the gates into two static condition:
+\begin{itemize}
+\item \textbf{Precharge}:\\
+when the clock is at \textit{zero}; the line is precharged at \textit{$V_{DD}$} so the goes at \textit{GND}.\\
+So considering all the structure:
+\begin{equation}
+I_{leakDAND2}^{precharge}=  I_{OFFp}W_P+ I_{GATEp}W_P+ I_{OFFn}3W_N+ I_{GATEn}W_N \quad [nA]
+\end{equation}
+\item \textbf{Evaluate}:\\
+when the clock is at \textit{one}; the output is evaluated from the inputs. \\
+Every possible combination of the two inputs are considered and for each of those cases the different appearing leakages contribution are taken into account. \\
+To simplify the leakage current due by the dynamic structure is separated from the one due by the inverter. Notice that this contribution must be added because as told in the section \ref{section:logicimplementation} is an essential part of the gate.
+The table \ref{tab:i_leakage_DYN} shows as before this analysis.
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+A & B & Y & LEAKEAGE CURRENT (logic) & LEAKEAGE CURRENT (inverter)\\
+\hline
+0 & 0 & 0 & $ I_{OFFn}3W_N + I_{GATEn}3W_N $& $ I_{OFFp}W_P + I_{GATEn}W_N $\\
+\hline
+0 & 1 & 0 & $ I_{OFFn}3W_N + 2 \cdot I_{GATEn}3W_N $& $ I_{OFFp}W_P + I_{GATEn}W_N $\\
+\hline
+1 & 0 & 0 & $ I_{OFFn}3W_N + I_{GATEn}3W_N $& $ I_{OFFp}W_P + I_{GATEn}W_N $\\
+\hline
+1 & 1 & 1 & $ I_{OFFp}W_P + 3\cdot I_{GATEn}3W_N$&
+$ I_{OFFn}W_N + I_{GATEp}W_P $\\
+\hline
+\end{tabular}
+\caption{Leakage current contributes for each combination of inputs}
+\label{tab:i_leakage_DYN}
+\end{table}\\
+Adding all those terms and exploiting the mean value:
+\begin{equation}
+I_{leakDAND2}^{evaluate} =  {1 \over 4} \cdot (4 \cdot I_{OFFp}W_P + I_{GATEp}W_P + 10 \cdot I_{OFFn}W_N+ 24 \cdot I_{GATEn}W_N )\quad [nA]
+\end{equation}
+\end{itemize}
+Assuming that those states occupy an half of the period each, is possible to say that half of the time the logic is in one condition, half in the other, so the to total static current is:
+\begin{equation}
+	I_{leakDAND2}={1 \over 2} \cdot I_{leakDAND2}^{precharge}+ {1 \over2} \cdot I_{leakDAND2}^{evaluate}
+	\end{equation}
+and so:
+\begin{equation}
+I_{leakDAND2}= {1 \over 2} \cdot {1 \over 4}\cdot(5 \cdot I_{OFFp}W_P+2 \cdot I_{GATEp}W_P+13 \cdot I_{OFFn}W_N+25 \cdot I_{GATEn}W_N)\quad [nA]
+\end{equation}
+Exploiting the same analysis is possible to found an expression for the static current for all the other gates.
+Only the final expression are reported below.
+\begin{itemize}
+\item \textbf{AND3-Dynamic}:\\
+ $I_{leakDAND3}= {1 \over 2} \cdot {1 \over 8}\cdot(9 \cdot I_{OFFp}W_P+2 \cdot I_{GATEp}W_P+33 \cdot I_{OFFn}W_N+68 \cdot I_{GATEn}W_N)\quad [nA]$
+
+
+\item \textbf{AND4-Dynamic}:\\
+ $I_{leakDAND4}= {1 \over 2} \cdot {1 \over 16}\cdot(17 \cdot I_{OFFp}W_P+2 \cdot I_{GATEp}W_P+81 \cdot I_{OFFn}W_N+161 \cdot I_{GATEn}W_N) \quad [nA]$
+
+
+\item \textbf{OR2-Dynamic}:\\
+ $I_{leakDOR2}= {1 \over 2} \cdot {1 \over 4}\cdot(5 \cdot I_{OFFp}W_P+4 \cdot I_{GATEp}W_P+7 \cdot I_{OFFn}W_N+18 \cdot I_{GATEn}W_N) \quad [nA]$
+
+
+\item \textbf{OR3-Dynamic}:\\
+ $I_{leakDOR3}= {1 \over 2} \cdot {1 \over 8}\cdot(9 \cdot I_{OFFp}W_P+8 \cdot I_{GATEp}W_P+11 \cdot I_{OFFn}W_N+42 \cdot I_{GATEn}W_N) \quad [nA]$
+
+
+\item \textbf{OR4-Dynamic}:\\
+ $I_{leakDOR4}= {1 \over 2} \cdot {1 \over 16}\cdot(17 \cdot I_{OFFp}W_P+16 \cdot I_{GATEp}W_P+18 \cdot I_{OFFn}W_N+98 \cdot I_{GATEn}W_N) \quad [nA]$
+
+
+\end{itemize}
+\newpage
+
+
+\section{Octave Implementation}
+In table \ref{tab:input_dep} the variables  used  into the modules are reported and in table \ref{tab:output_var} there are the output parameters estimates.
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Code variable & Source file & Physical quantity\\
+			\hline
+			Lgate & Technology file & $nm$\\
+			\hline
+			Wgate & Technology file & $\mu m$\\
+			\hline
+			Vdd & Technology file & $V$\\
+			\hline
+			Xj & Technology file & $nm$\\
+			\hline
+			Cox & Technology file & $ F/ cm^2$\\
+			\hline
+			Cj0n & Technology file & $pF/\mu m^2$\\
+			\hline
+			Cjswn & Technology file & $pF/\mu m^2$\\
+			\hline
+			Cj0p & Technology file & $pF/\mu m^2$\\
+			\hline
+			Cjswp & Technology file & $pF/\mu m^2$\\
+			\hline
+			Cgd0n & Technology file & $F/m$\\
+			\hline
+			Cgd0p & Technology file & $F/m$\\
+			\hline
+			Gamma & Technology file & $-$\\
+			\hline
+			Mjn & Technology file & \% \\
+			\hline
+			Mjp & Technology file & \% \\
+			\hline
+			Mswn & Technology file & \% \\
+			\hline
+			Mswp & Technology file & \% \\
+			\hline
+			Pbn & Technology file & $V$ \\
+			\hline
+			Pbp & Technology file & $V$ \\
+			\hline
+			Pbswn & Technology file & $V$ \\
+			\hline
+			Pbswp & Technology file & $V$ \\
+			\hline
+			mueff\_n & Mobility module & $cm^2/Vs$\\
+			\hline
+			mueff\_p & Mobility module & $cm^2/Vs$\\
+			\hline
+			Vth\_n & Vth module & $V$\\
+			\hline
+			Vth\_p & Vth module & $V$\\
+			\hline
+			Ioff\_n & Ioff module & $\mu A/\mu m$\\
+			\hline
+			Ioff\_p & Ioff module & $\mu A/\mu m$\\
+			\hline
+			Igate\_n & Igate module & $\mu A/\mu m$\\
+			\hline
+			Igate\_p & Igate module & $\mu A/\mu m$\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Variables required and used by the module}
+	\label{tab:input_dep}
+\end{table}
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Code variable & Physical quantity & Meaning\\
+			\hline
+			Delay\_nand\_and & $ns$ & input to output delay of selected module\\
+			\hline
+			Pnand\_and\_dyn & $W$ & Dynamic power of selected module\\
+			\hline
+			Pnand\_and  & $W$ & Static power of selected module\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Variables provided in output of selected module}
+	\label{tab:output_var}
+\end{table}
+\newpage
+\subsection{Text Results}
+An example of the output provided by the TAMTAMS analysis using the \textit{Print text results} is provided below.
+The computed values of delay, dynamic and static power are reported for four possible value of \textit{Fan Out} where this quantity just means the number of inverter considered as output load for the gate.
+\footnotesize
+\begin{verbatim}
+
+    Technology: bulk/HP_2005 
+
+    System Setup: 2016-04-17 13:37:08 
+    Cox =  2.8776e-06
+    Vtlong =  0.61691
+    SCE =  0.18990
+    DIBL =  0.24118
+    mueff_n =  252.01
+    mueff_p =  61.319
+    Ecrit_n =  7.9360e+04
+    Ecrit_p =  3.2616e+05
+    Vdsat_n =  0.15325
+    Vdsat_p =  0.41401
+    Cdep =  5.0656e-07
+    m =  1.2831
+    
+    Module 0 : Delay_Pow_and2_dyn 
+    
+    Fan Out = 1:
+    I/ODelay[ns]  DynPower[W]  StaticPower[W]
+      1.2092e+01   3.0145e-06   4.4364e-09
+
+    Fan Out = 2:
+    I/ODelay[ns]  DynPower[W]  StaticPower[W]
+      1.2971e+01   3.2121e-06   4.4364e-09
+    
+    Fan Out = 3:
+    I/ODelay[ns]  DynPower[W]  StaticPower[W]
+      1.3851e+01   3.4096e-06   4.4364e-09
+
+    Fan Out = 4:
+    I/ODelay[ns]  DynPower[W]  StaticPower[W]
+      1.4730e+01   3.6072e-06   4.4364e-09
+\end{verbatim}
+\normalsize
+\subsection{Graphical Results}
+Using the  \textit{Show graphical results} three different graph are provided as output. The first one represents the delay; an example is reported in fig. \ref{fig:delay_out}. There are four different lines, one for each value of \textit{Fan Out}. \\
+The figure \ref{fig:dpower_out} shows the second graph provided and it represent the dynamic power.\\ The last graph shows the static power (fig. \ref{fig:spower_out}). This value does not depends on output load so all the lines are overlapped.\\
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=17cm]{img/Delay_Pow_and2_dyn_Delay.jpeg}
+		\caption{Delay graphical output}
+		\label{fig:delay_out}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=17cm]{img/Delay_Pow_and2_dyn_Dpower.jpeg}
+		\caption{Dynamic power graphical output}
+		\label{fig:dpower_out}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=17cm]{img/Delay_Pow_and2_dyn_Spower.jpeg}
+		\caption{Static power graphical output}
+		\label{fig:spower_out}
+	\end{center}
+\end{figure}
+
+
+
+\end{document}
+

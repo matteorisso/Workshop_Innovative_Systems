@@ -1,0 +1,37 @@
+\begin{par}
+The Single Walled capacitance is made up of a parallel of quantum capacitance of each cunductive channel.
+\end{par} \vspace{1em}
+\begin{par}
+In each iteration of the for loop evaluate the capacitance of each layer.
+\end{par} \vspace{1em}
+\begin{verbatim}
+for i = 1:num_level(counter_tech_index)
+\end{verbatim}
+\begin{par}
+Consider the diameter in order to calculate the correct value of the number of the quantum channel.
+\end{par} \vspace{1em}
+\begin{verbatim}
+    if(D(i, counter_tech_index)>dT/T(i, counter_tech_index))
+        nqc = (a*T(i, counter_tech_index)*D(i, counter_tech_index)+b);
+    else
+        nqc = 2/3;
+    end
+\end{verbatim}
+\begin{par}
+The capacitance is:
+\end{par} \vspace{1em}
+\begin{par}
+$$cap = Cqch * nqc$$
+\end{par} \vspace{1em}
+\begin{verbatim}
+	cap(counter_mod_index, counter_tech_index, i) = Cqch * nqc;
+\end{verbatim}
+\begin{verbatim}
+end
+\end{verbatim}
+\begin{par}
+Free the memory.
+\end{par} \vspace{1em}
+\begin{verbatim}
+clear nqc
+\end{verbatim}
