@@ -37,16 +37,16 @@ classdef nand2
         lambda = 1;
         
         % Power HP (FO4) data from HP_2010.m
-        Pstat_HP_FO4 = 1.8287e-04		% [W]
-        Pdyn_HP_FO4 = 2.1343e-06		% [W]
+        Pstat_HP_FO4 = 1.8287e-04;		% [W]
+        Pdyn_HP_FO4 = 2.1343e-06;		% [W]
         
         % Power LOP (FO4) data from LOP_2010.m
-        Pstat_LOP_FO4 = 1.8064e-06		% [W]
-        Pdyn_LOP_FO4 = 8.1353e-07		% [W]
+        Pstat_LOP_FO4 = 1.8064e-06;		% [W]
+        Pdyn_LOP_FO4 = 8.1353e-07;		% [W]
 
         % Power LSTP (FO4) data from LSTP_2010.m
-        Pstat_LSTP_FO4 = 1.02421e-7		% [W]
-        Pdyn_LSTP_FO4 = 1.242597e-6		% [W]
+        Pstat_LSTP_FO4 = 1.02421e-7;	% [W]
+        Pdyn_LSTP_FO4 = 1.242597e-6;	% [W]
         
     end
     
