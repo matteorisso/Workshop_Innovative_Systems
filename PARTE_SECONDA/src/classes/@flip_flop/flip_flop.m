@@ -5,9 +5,15 @@ classdef flip_flop < nand2
     % The class describes the circuit in terms of delay,power and area. It
     % starts from technological parameters of HP, LOP and LSTP devices,
     % present in IRDS 2010. The user need to specify the pull-down width
-    % Wn, followed by the number of inputs and the parallelism of data.
+    % Wn.
     
     methods
+		% Constructor
+        function obj = flip_flop(nMOS_width)
+            % Constructor of father class nand2
+            obj = obj@nand2(nMOS_width);
+        end
+		
         % Delay evaluation
         function [Tdp_HP_ff, Tdp_LOP_ff, Tdp_LSTP_ff] = delay(obj)
             [Tdp_HP_nd2, Tdp_LOP_nd2, Tdp_LSTP_nd2] = delay@nand2(obj);
