@@ -16,30 +16,30 @@ classdef register < flip_flop
         % Constructor
         function obj = register(nMOS_width, n_bit)
             % Constructor of father class flip_flop
-            obj = obj@flip_flop(nMOS_width);
-            obj.bit_width = n_bit;
+            obj             = obj@flip_flop(nMOS_width);
+            obj.bit_width   = n_bit;
 		end
 		
 		% Delay evaluation
         function [Tdp_HP_reg, Tdp_LOP_reg, Tdp_LSTP_reg] = delay(obj)
             [Tdp_HP_ff, Tdp_LOP_ff, Tdp_LSTP_ff] = delay@flip_flop(obj);
             % HP
-            Tdp_HP_reg = Tdp_HP_ff; % [s]
+            Tdp_HP_reg      = Tdp_HP_ff; % [s]
             % LOP
-            Tdp_LOP_reg = Tdp_LOP_ff; % [s]
+            Tdp_LOP_reg     = Tdp_LOP_ff; % [s]
             % LSTP
-            Tdp_LSTP_reg = Tdp_LSTP_ff; % [s]
+            Tdp_LSTP_reg    = Tdp_LSTP_ff; % [s]
 		end
 		
 		% Area evaluation
         function [A_HP_reg, A_LOP_reg, A_LSTP_reg] = area(obj)
             [A_HP_ff, A_LOP_ff, A_LSTP_ff] = area@flip_flop(obj);
             % HP
-            A_HP_reg = obj.bit_width * A_HP_ff; % [um^2]
+            A_HP_reg    = obj.bit_width * A_HP_ff; % [um^2]
             % LOP
-            A_LOP_reg = obj.bit_width * A_LOP_ff; % [um^2]
+            A_LOP_reg   = obj.bit_width * A_LOP_ff; % [um^2]
             % LSTP
-            A_LSTP_reg = obj.bit_width * A_LSTP_ff; % [um^2]
+            A_LSTP_reg  = obj.bit_width * A_LSTP_ff; % [um^2]
 		end
         
 		
@@ -47,22 +47,22 @@ classdef register < flip_flop
         function [Pdyn_HP_reg, Pdyn_LOP_reg, Pdyn_LSTP_reg] = power_dyn(obj)
             [Pdyn_HP_ff, Pdyn_LOP_ff, Pdyn_LSTP_ff] = power_dyn@flip_flop(obj);
             % HP
-            Pdyn_HP_reg = obj.bit_width * Pdyn_HP_ff; % [W]
+            Pdyn_HP_reg     = obj.bit_width * Pdyn_HP_ff; % [W]
             % LOP
-            Pdyn_LOP_reg = obj.bit_width * Pdyn_LOP_ff; % [W]
+            Pdyn_LOP_reg    = obj.bit_width * Pdyn_LOP_ff; % [W]
             % LSTP
-            Pdyn_LSTP_reg = obj.bit_width * Pdyn_LSTP_ff; % [W]
+            Pdyn_LSTP_reg   = obj.bit_width * Pdyn_LSTP_ff; % [W]
         end
         
         % Static power evaluation
         function [Pstat_HP_reg, Pstat_LOP_reg, Pstat_LSTP_reg] = power_stat(obj)
             [Pstat_HP_ff, Pstat_LOP_ff, Pstat_LSTP_ff] = power_stat@flip_flop(obj);
             % HP
-            Pstat_HP_reg = obj.bit_width * Pstat_HP_ff; % [W]
+            Pstat_HP_reg    = obj.bit_width * Pstat_HP_ff; % [W]
             % LOP
-            Pstat_LOP_reg = obj.bit_width * Pstat_LOP_ff; % [W]
+            Pstat_LOP_reg   = obj.bit_width * Pstat_LOP_ff; % [W]
             % LSTP 
-            Pstat_LSTP_reg = obj.bit_width * Pstat_LSTP_ff; % [W]
+            Pstat_LSTP_reg  = obj.bit_width * Pstat_LSTP_ff; % [W]
         end
         
     end

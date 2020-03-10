@@ -24,11 +24,11 @@ classdef nandn < nand2
         function [Tdp_HP_ndn, Tdp_LOP_ndn, Tdp_LSTP_ndn] = delay(obj)
             [Tdp_HP_nd2, Tdp_LOP_nd2, Tdp_LSTP_nd2] = delay@nand2(obj);
             % HP
-            Tdp_HP_ndn      = ceil(log2(obj.N)) * Tdp_HP_nd2; % [s]
+            Tdp_HP_ndn  = ceil(log2(obj.N)) * Tdp_HP_nd2; % [s]
             % LOP
             Tdp_LOP_ndn     = ceil(log2(obj.N)) * Tdp_LOP_nd2; % [s]
             % LSTP
-            Tdp_LSTP_ndn    = ceil(log2(obj.N)) * Tdp_LSTP_nd2; % [s]
+            Tdp_LSTP_ndn = ceil(log2(obj.N)) * Tdp_LSTP_nd2; % [s]
         end
         
         % Area evaluation
@@ -46,22 +46,22 @@ classdef nandn < nand2
         function [Pdyn_HP_ndn, Pdyn_LOP_ndn, Pdyn_LSTP_ndn] = power_dyn(obj)
             [Pdyn_HP_nd2, Pdyn_LOP_nd2, Pdyn_LSTP_nd2] = power_dyn@nand2(obj);
             % HP
-            Pdyn_HP_ndn     = (obj.N - 1) * Pdyn_HP_nd2; % [W]
+            Pdyn_HP_ndn = (obj.N - 1) * Pdyn_HP_nd2; % [W]
             % LOP
-            Pdyn_LOP_ndn    = (obj.N - 1) * Pdyn_LOP_nd2; % [W]
+            Pdyn_LOP_ndn = (obj.N - 1) * Pdyn_LOP_nd2; % [W]
             % LSTP
-            Pdyn_LSTP_ndn   = (obj.N - 1) * Pdyn_LSTP_nd2; % [W]
+            Pdyn_LSTP_ndn = (obj.N - 1) * Pdyn_LSTP_nd2; % [W]
         end
         
         % Static power evaluation
         function [Pstat_HP_ndn, Pstat_LOP_ndn, Pstat_LSTP_ndn] = power_stat(obj)
             [Pstat_HP_nd2, Pstat_LOP_nd2, Pstat_LSTP_nd2] = power_stat@nand2(obj);
             % HP
-            Pstat_HP_ndn    = (obj.N - 1) * Pstat_HP_nd2; % [W]
+            Pstat_HP_ndn = (obj.N - 1) * Pstat_HP_nd2; % [W]
             % LOP
-            Pstat_LOP_ndn   = (obj.N - 1) * Pstat_LOP_nd2; % [W]
+            Pstat_LOP_ndn = (obj.N - 1) * Pstat_LOP_nd2; % [W]
             % LSTP
-            Pstat_LSTP_ndn  = (obj.N - 1) * Pstat_LSTP_nd2; % [W]
+            Pstat_LSTP_ndn = (obj.N - 1) * Pstat_LSTP_nd2; % [W]
         end
         
     end
