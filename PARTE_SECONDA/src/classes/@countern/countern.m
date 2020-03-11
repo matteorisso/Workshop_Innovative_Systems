@@ -83,13 +83,13 @@ classdef countern < flip_flop
             [Pdyn_HP_or,  Pdyn_LOP_or,  Pdyn_LSTP_or]  = obj.or_gate.power_dyn;
             % HP
             Pdyn_HP_countern   = Pdyn_HP_cnt + (obj.bit_width * Pdyn_HP_mux) ...
-                + Pdyn_HP_sub + Pdyn_HP_nor + Pdyn_HP_or; % [um^2]
+                + Pdyn_HP_sub + Pdyn_HP_nor + Pdyn_HP_or; % [W]
             % LOP
             Pdyn_LOP_countern   = Pdyn_LOP_cnt + (obj.bit_width * Pdyn_LOP_mux) ...
-                + Pdyn_LOP_sub + Pdyn_LOP_nor + Pdyn_LOP_or; % [um^2]
+                + Pdyn_LOP_sub + Pdyn_LOP_nor + Pdyn_LOP_or; % [W]
             % LSTP
             Pdyn_LSTP_countern   = Pdyn_LSTP_cnt + (obj.bit_width * Pdyn_LSTP_mux) ...
-                + Pdyn_LSTP_sub + Pdyn_LSTP_nor + Pdyn_LSTP_or; % [um^2]
+                + Pdyn_LSTP_sub + Pdyn_LSTP_nor + Pdyn_LSTP_or; % [W]
 		end
         
         % Dynamic power evaluation
@@ -101,13 +101,13 @@ classdef countern < flip_flop
             [Pstat_HP_or,  Pstat_LOP_or,  Pstat_LSTP_or]  = obj.or_gate.power_stat;
             % HP
             Pstat_HP_countern   = Pstat_HP_cnt + (obj.bit_width * Pstat_HP_mux) ...
-                + Pstat_HP_sub + Pstat_HP_nor + Pstat_HP_or; % [um^2]
+                + Pstat_HP_sub + Pstat_HP_nor + Pstat_HP_or; % [W]
             % LOP
             Pstat_LOP_countern   = Pstat_LOP_cnt + (obj.bit_width * Pstat_LOP_mux) ...
-                + Pstat_LOP_sub + Pstat_LOP_nor + Pstat_LOP_or; % [um^2]
+                + Pstat_LOP_sub + Pstat_LOP_nor + Pstat_LOP_or; % [W]
             % LSTP
             Pstat_LSTP_countern   = Pstat_LSTP_cnt + (obj.bit_width * Pstat_LSTP_mux) ...
-                + Pstat_LSTP_sub + Pstat_LSTP_nor + Pstat_LSTP_or; % [um^2]
+                + Pstat_LSTP_sub + Pstat_LSTP_nor + Pstat_LSTP_or; % [W]
 		end
 		
  	end

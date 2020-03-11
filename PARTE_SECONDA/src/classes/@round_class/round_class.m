@@ -73,13 +73,13 @@ classdef round_class < nand2
             [Pdyn_HP_or,  Pdyn_LOP_or,  Pdyn_LSTP_or]  = obj.orn_gate.power_dyn;
             % HP
             Pdyn_HP_round      = (3 * Pdyn_HP_mux) ...
-                + Pdyn_HP_add + Pdyn_HP_or; % [um^2]
+                + Pdyn_HP_add + Pdyn_HP_or; % [W]
             % LOP
             Pdyn_LOP_round      = (3 * Pdyn_LOP_mux) ...
-                + Pdyn_LOP_add + Pdyn_LOP_or; % [um^2]
+                + Pdyn_LOP_add + Pdyn_LOP_or; % [W]
             % LSTP
             Pdyn_LSTP_round      = (3 * Pdyn_LSTP_mux) ...
-                + Pdyn_LSTP_add + Pdyn_LSTP_or; % [um^2]
+                + Pdyn_LSTP_add + Pdyn_LSTP_or; % [W]
 		end
         
         % Static power evaluation
@@ -89,13 +89,13 @@ classdef round_class < nand2
             [Pstat_HP_or,  Pstat_LOP_or,  Pstat_LSTP_or]  = obj.orn_gate.power_stat;
             % HP
             Pstat_HP_round      = (3 * Pstat_HP_mux) ...
-                + Pstat_HP_add + Pstat_HP_or; % [um^2]
+                + Pstat_HP_add + Pstat_HP_or; % [W]
             % LOP
             Pstat_LOP_round      = (3 * Pstat_LOP_mux) ...
-                + Pstat_LOP_add + Pstat_LOP_or; % [um^2]
+                + Pstat_LOP_add + Pstat_LOP_or; % [W]
             % LSTP
             Pstat_LSTP_round      = (3 * Pstat_LSTP_mux) ...
-                + Pstat_LSTP_add + Pstat_LSTP_or; % [um^2]
+                + Pstat_LSTP_add + Pstat_LSTP_or; % [W]
 		end
     end
 end
