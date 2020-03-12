@@ -12,8 +12,8 @@ classdef relu < nand2
     % the corresponding relu.vhd component.
     
     properties
-        i_N {mustBeInteger}; % input parallelism
-        o_N {mustBeInteger}; % output parallelism
+        N {mustBeInteger}; % in/out parallelism
+        BG {mustBeInteger}; % bit growth
         nor_gate; % nor object
         mux; % mux object
         orn_gate; % or object
@@ -21,14 +21,14 @@ classdef relu < nand2
     
     methods
         % Constructor
-        function obj = relu(nMOS_width, n_bit_in, n_bit_out)
+        function obj = relu(nMOS_width, n_bit, bit_growth)
             % Constructor of father class nand2
             obj             = obj@nand2(nMOS_width);
-            obj.i_N         = n_bit_in;
-            obj.o_N         = n_bit_out;
+            obj.N           = n_bit;
+            obj.BG          = bit_growth;
             obj.mux         = muxnto1_nbit(nMOS_width, 2, 1);
             obj.nor_gate    = nor2(nMOS_width);
-            obj.orn_gate    = orn(nMOS_width, n_bit_in-n_bit_out);
+            obj.orn_gate    = orn(nMOS_width, bit_growth);
         end
         
         % Delay evaluation
@@ -56,13 +56,13 @@ classdef relu < nand2
             [A_HP_or,  A_LOP_or,  A_LSTP_or]      = obj.orn_gate.area;
             % HP
             A_HP_relu      = (3 * A_HP_nd2) ...
-                + A_HP_nor + A_HP_or + (obj.o_N * A_HP_mux); % [um^2]
+                + A_HP_nor + A_HP_or + (obj.N * A_HP_mux); % [um^2]
             % LOP
             A_LOP_relu      = (3 * A_LOP_nd2) ...
-                + A_LOP_nor + A_LOP_or + (obj.o_N * A_LOP_mux); % [um^2]
+                + A_LOP_nor + A_LOP_or + (obj.N * A_LOP_mux); % [um^2]
             % LSTP
             A_LSTP_relu      = (3 * A_LSTP_nd2) ...
-                + A_LSTP_nor + A_LSTP_or + (obj.o_N * A_LSTP_mux); % [um^2]
+                + A_LSTP_nor + A_LSTP_or + (obj.N * A_LSTP_mux); % [um^2]
 		end
         
 		
@@ -74,13 +74,13 @@ classdef relu < nand2
             [Pdyn_HP_or,  Pdyn_LOP_or,  Pdyn_LSTP_or]      = obj.orn_gate.power_dyn;
             % HP
             Pdyn_HP_relu      = (3 * Pdyn_HP_nd2) ...
-                + Pdyn_HP_nor + Pdyn_HP_or + (obj.o_N * Pdyn_HP_mux); % [W]
+                + Pdyn_HP_nor + Pdyn_HP_or + (obj.N * Pdyn_HP_mux); % [W]
             % LOP
             Pdyn_LOP_relu      = (3 * Pdyn_LOP_nd2) ...
-                + Pdyn_LOP_nor + Pdyn_LOP_or + (obj.o_N * Pdyn_LOP_mux); % [W]
+                + Pdyn_LOP_nor + Pdyn_LOP_or + (obj.N * Pdyn_LOP_mux); % [W]
             % LSTP
             Pdyn_LSTP_relu      = (3 * Pdyn_LSTP_nd2) ...
-                + Pdyn_LSTP_nor + Pdyn_LSTP_or + (obj.o_N * Pdyn_LSTP_mux); % [W]
+                + Pdyn_LSTP_nor + Pdyn_LSTP_or + (obj.N * Pdyn_LSTP_mux); % [W]
 		end
         
         % Static power evaluation
@@ -91,13 +91,13 @@ classdef relu < nand2
             [Pstat_HP_or,  Pstat_LOP_or,  Pstat_LSTP_or]      = obj.orn_gate.power_stat;
             % HP
             Pstat_HP_relu      = (3 * Pstat_HP_nd2) ...
-                + Pstat_HP_nor + Pstat_HP_or + (obj.o_N * Pstat_HP_mux); % [W]
+                + Pstat_HP_nor + Pstat_HP_or + (obj.N * Pstat_HP_mux); % [W]
             % LOP
             Pstat_LOP_relu      = (3 * Pstat_LOP_nd2) ...
-                + Pstat_LOP_nor + Pstat_LOP_or + (obj.o_N * Pstat_LOP_mux); % [W]
+                + Pstat_LOP_nor + Pstat_LOP_or + (obj.N * Pstat_LOP_mux); % [W]
             % LSTP
             Pstat_LSTP_relu      = (3 * Pstat_LSTP_nd2) ...
-                + Pstat_LSTP_nor + Pstat_LSTP_or + (obj.o_N * Pstat_LSTP_mux); % [W]
+                + Pstat_LSTP_nor + Pstat_LSTP_or + (obj.N * Pstat_LSTP_mux); % [W]
 		end
     end
 end
