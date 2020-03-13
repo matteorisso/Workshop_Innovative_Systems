@@ -23,7 +23,7 @@ classdef act_lb_class < nand2
             obj.reg              = register(nMOS_width, 32);
             obj.mux2to1          = muxnto1_nbit(nMOS_width, 2, 32);
             obj.mux128to1        = muxnto1_nbit(nMOS_width, 128, 1);
-            obj.decoder7to128    = decoder(nMOS_width, 6);
+            obj.decoder7to128    = decoder(nMOS_width, 7);
         end
         
         % Delay evaluation
