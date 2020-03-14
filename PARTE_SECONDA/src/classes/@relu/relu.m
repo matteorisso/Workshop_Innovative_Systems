@@ -1,15 +1,15 @@
 classdef relu < nand2
     % relu class describes combinational circuit capable of performing
-    % quantization. The component is modeled with a number of
-    % multiplexer euqal to the output number of bit plus a multi-input or
-    % gate, a nor gate and some nand2 gate,
+    % quantization. The component is modeled with a number of multiplexer
+    % euqal to the output number of bit plus a multi-input or gate, a nor
+    % gate and some nand2 gate,
 	% everything is obtained with nand2 gates,
     % thus the class inherits properties and methods nand2. The class
     % describes the circuit in terms of delay,power and area. It starts
     % from technological parameters of HP, LOP and LSTP devices, present in
     % IRDS 2010. The user need to specify the pull-down width Wn, followed
-    % by  the parallelism of input data and output data. The class models
-    % the corresponding relu.vhd component.
+    % by  the parallelism of input data and the bit growth of data. The
+    % class models the corresponding relu.vhd component.
     
     properties
         N {mustBeInteger}; % in/out parallelism
