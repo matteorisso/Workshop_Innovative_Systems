@@ -27,15 +27,15 @@ classdef addr_gen_class < nand2
             obj.add         = rca(nMOS_width, n_bit_in_out);
             obj.mux         = muxnto1_nbit(nMOS_width, 2, n_bit_in_out);
             obj.reg         = register(nMOS_width,n_bit_in_out);						
-            obj.or2_gate    = or2(nMOS_width, n_bit_in_out);
+            obj.or2_gate    = or2(nMOS_width);
         end
         
         % Delay evaluation
         function [Tdp_HP_addr_gen, Tdp_LOP_addr_gen, Tdp_LSTP_addr_gen] = delay(obj)
             [Tdp_HP_mux, Tdp_LOP_mux, Tdp_LSTP_mux] = obj.mux.delay;
             [Tdp_HP_add, Tdp_LOP_add, Tdp_LSTP_add] = obj.add.delay;
-            [Tdp_HP_reg,  Tdp_LOP_reg,  Tdp_LSTP_reg]  = obj.reg.delay;			
-            [Tdp_HP_or,  Tdp_LOP_or,  Tdp_LSTP_or]  = obj.or2_gate.delay;
+            %[Tdp_HP_reg,  Tdp_LOP_reg,  Tdp_LSTP_reg]  = obj.reg.delay;			
+            %[Tdp_HP_or,  Tdp_LOP_or,  Tdp_LSTP_or]  = obj.or2_gate.delay;
             % HP
             Tdp_HP_addr_gen     =  Tdp_HP_add + 3 * Tdp_HP_mux; % [s]
             % LOP

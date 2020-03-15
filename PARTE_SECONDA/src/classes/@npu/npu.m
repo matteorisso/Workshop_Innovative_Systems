@@ -83,7 +83,7 @@ classdef npu < pe
             % LSTP
             Pstat_LSTP_npu        = (obj.W * obj.W) * ...
                 (Pstat_LSTP_pe + Pstat_LSTP_nd2 + Pstat_LSTP_orn); % [W]
-		end
+        end 
     end
 end
 
