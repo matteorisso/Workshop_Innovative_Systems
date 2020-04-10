@@ -6,12 +6,13 @@ classdef act_rf < nand2
     % describes the circuit in terms of delay,power and area. It starts
     % from technological parameters of HP, LOP and LSTP devices, present in
     % IRDS 2010. The user need to specify the pull-down width Wn, followed
-    % by activation bits and kernel size. The class models the corresponding
+    % by activation bits, array size and kernel size. The class models the corresponding
     % act_rf.vhd component.
     
     properties
         N {mustBeInteger}; % activation bits
         K {mustBeInteger}; % kernel size
+        W  {mustBeInteger}; % array size		
         mux2to1; % mux object with bit_width N*(K-1)
         mux8to1; % mux object with bit_width N*(K-1)
 		reg; % register object
@@ -20,12 +21,15 @@ classdef act_rf < nand2
     
     methods
         % Constructor
-        function obj = act_rf(nMOS_width, N, K)
+        function obj = act_rf(nMOS_width, n_bit, array_size, kernel_size)
             % Constructor of father class nand2
             obj            = obj@nand2(nMOS_width);
-            obj.mux2to1        = muxnto1_nbit(nMOS_width, 2, N*(K-1));
-            obj.mux8to1        = muxnto1_nbit(nMOS_width, 8, N*(K-1));
-			obj.reg            = register(nMOS_width, N*(K-1));
+            obj.N            = n_bit;
+            obj.K            = kernel_size;				
+            obj.W            = array_size;				
+            obj.mux2to1        = muxnto1_nbit(nMOS_width, 2, n_bit*(kernel_size-1));
+            obj.mux8to1        = muxnto1_nbit(nMOS_width, array_size, n_bit*(kernel_size-1));
+			obj.reg            = register(nMOS_width, n_bit*(kernel_size-1));
             obj.decoder3to8    = decoder(nMOS_width, 3);			
         end
         

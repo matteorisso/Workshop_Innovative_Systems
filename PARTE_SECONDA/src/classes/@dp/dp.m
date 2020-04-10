@@ -51,8 +51,8 @@ classdef dp < nand2
             obj.BG                  = bit_growth;
             obj.W                   = array_size;
             obj.K                   = kernel_size;
-            obj.act_lb              = act_lb_class(nMOS_width); 		
-            obj.act_buffer          = act_buffer(nMOS_width, n_bit, kernel_size);
+            obj.act_lb              = act_lb_class(nMOS_width, n_bit, array_size); 		
+            obj.act_buffer          = act_buffer(nMOS_width, n_bit, kernel_size,array_size);
             obj.npu                 = npu(nMOS_width, n_bit, bit_growth, array_size); 			
             obj.ppu                 = ppu(nMOS_width, n_bit, bit_growth, array_size); 			
             obj.cnt3                = countern(nMOS_width, 3); 			

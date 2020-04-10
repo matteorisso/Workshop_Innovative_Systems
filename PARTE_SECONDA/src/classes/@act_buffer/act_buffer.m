@@ -1,17 +1,18 @@
 classdef  act_buffer < nand2
     % act_buffer class describes a sequential circuit
-    % modeled with an act_if and an act_rf block plus a single register.
+    % modeled with an act_if and an act_rf blocks plus a single register.
 	% Everything is obtained with nand2 gates,
     % thus the class inherits properties and methods nand2. The class
     % describes the circuit in terms of delay,power and area. It starts
     % from technological parameters of HP, LOP and LSTP devices, present in
     % IRDS 2010. The user need to specify the pull-down width Wn,
-    % followed by activation bits and kernel size.
+    % followed by activation bits, kernel size and array size.
     % The class models the corresponding act_buffer.vhd component.
     
     properties
         N {mustBeInteger}; % activation bits
         K {mustBeInteger}; % kernel size
+        W  {mustBeInteger}; % array size		
         act_rf; % act_rf object
         act_if; % act_if object
         reg; % register object
@@ -19,12 +20,15 @@ classdef  act_buffer < nand2
     
     methods
         % Constructor
-        function obj = act_buffer(nMOS_width, N, K)
+        function obj = act_buffer(nMOS_width, n_bit, kernel_size, array_size)
             % Constructor of father class nand2
             obj             = obj@nand2(nMOS_width);
-            obj.act_rf     =  act_rf(nMOS_width, N, K);
-            obj.act_if      =  act_if(nMOS_width, N, K);
-            obj.reg         = register(nMOS_width, 32);
+            obj.N           = n_bit;			
+            obj.K           = kernel_size;			
+            obj.W           = array_size;			
+            obj.act_rf     =  act_rf(nMOS_width, n_bit, array_size, kernel_size);
+            obj.act_if      =  act_if(nMOS_width, n_bit, kernel_size);
+            obj.reg         = register(nMOS_width, n_bit*array_size);
         end
         
         % Delay evaluation

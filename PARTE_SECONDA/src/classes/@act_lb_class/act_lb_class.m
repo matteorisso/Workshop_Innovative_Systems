@@ -1,14 +1,17 @@
 classdef act_lb_class < nand2
-    % act_lb_class class describes a sequential circuit circuit
+    % act_lb_class class describes a sequential circuit
     % modeled with a decoder, 97 registers and 129 mux,
 	% where everything is obtained with nand2 gates,
     % thus the class inherits properties and methods nand2. The class
     % describes the circuit in terms of delay,power and area. It starts
     % from technological parameters of HP, LOP and LSTP devices, present in
-    % IRDS 2010. The user need to specify the pull-down width Wn.
+    % IRDS 2010. The user need to specify the pull-down width Wn, activation 
+	% bits and array size.
     % The class models the cdecoder7to128responding act_lb.vhd component.
     
     properties
+	    N {mustBeInteger}; % activation bits
+		W  {mustBeInteger}; % array size
         reg; % register object
         mux2to1; % mux2to1 object
         mux128to1; % mux128to1 object
@@ -17,11 +20,13 @@ classdef act_lb_class < nand2
     
     methods
         % Constructdecoder7to128
-        function obj = act_lb_class(nMOS_width)
+        function obj = act_lb_class(nMOS_width, n_bit, array_size)
             % Constructdecoder7to128 of father class
             obj                  = obj@nand2(nMOS_width);
-            obj.reg              = register(nMOS_width, 32);
-            obj.mux2to1          = muxnto1_nbit(nMOS_width, 2, 32);
+            obj.N                = n_bit;			
+            obj.W                = array_size;			
+            obj.reg              = register(nMOS_width, n_bit*array_size);
+            obj.mux2to1          = muxnto1_nbit(nMOS_width, 2, n_bit*array_size);
             obj.mux128to1        = muxnto1_nbit(nMOS_width, 128, 1);
             obj.decoder7to128    = decoder(nMOS_width, 7);
         end

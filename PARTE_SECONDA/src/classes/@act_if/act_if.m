@@ -16,10 +16,12 @@ classdef act_if < nand2
     
     methods
         % Constructor
-        function obj = act_if(nMOS_width, N, K)
+        function obj = act_if(nMOS_width, n_bit, kernel_size)
             % Constructor of father class nand2
             obj            = obj@nand2(nMOS_width);
-            obj.mux        = muxnto1_nbit(nMOS_width, 8, N*(K-1));
+            obj.N          = n_bit;
+            obj.K          = kernel_size;			
+            obj.mux        = muxnto1_nbit(nMOS_width, 8, n_bit*(kernel_size-1));
         end
         
         % Delay evaluation
