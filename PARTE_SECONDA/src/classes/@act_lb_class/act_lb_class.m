@@ -19,9 +19,8 @@ classdef act_lb_class < nand2
     end
     
     methods
-        % Constructdecoder7to128
         function obj = act_lb_class(nMOS_width, n_bit, array_size)
-            % Constructdecoder7to128 of father class
+       
             obj                  = obj@nand2(nMOS_width);
             obj.N                = n_bit;			
             obj.W                = array_size;			
