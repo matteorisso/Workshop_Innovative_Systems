@@ -1,0 +1,165 @@
+
+--  mux_1 : process()
+--  begin
+
+--    case (to_integer(i_sel_column)) is
+
+--      when 1 =>
+
+--        o_data1 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+--        o_data2 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+--        o_data3 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+--        o_data4 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+--        o_data5 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+--        o_data6 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+--        o_data7 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+--        o_data8 <= signed(int_data_o(int_data_o'high - 1*N downto int_data_o'length - 2*N));
+
+--      when 2 =>
+
+--        o_data1 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+--        o_data2 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+--        o_data3 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+--        o_data4 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+--        o_data5 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+--        o_data6 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+--        o_data7 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+--        o_data8 <= signed(int_data_o(int_data_o'high - 2*N downto int_data_o'length - 3*N));
+
+--      when 3 =>
+
+--        o_data1 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+--        o_data2 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+--        o_data3 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+--        o_data4 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+--        o_data5 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+--        o_data6 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+--        o_data7 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+--        o_data8 <= signed(int_data_o(int_data_o'high - 3*N downto int_data_o'length - 4*N));
+
+--      when others =>
+
+--        o_data1 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+--        o_data2 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+--        o_data3 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+--        o_data4 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+--        o_data5 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+--        o_data6 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+--        o_data7 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+--        o_data8 <= signed(int_data_o(int_data_o'high - 0*N downto int_data_o'length - 1*N));
+
+--    end case;
+--  end process;
+
+--end architecture;
+--rotate_1 : process(int_reg_q, rd_addr_i)
+--begin
+--  case (to_integer(rd_addr_i)) is
+
+--    when 1 =>
+
+--      int_data_o <= int_reg_q(1 to int_reg_q'high) & int_reg_q(0);
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--    when 2 =>
+
+--      int_data_o <= int_reg_q(2 to int_reg_q'high) & int_reg_q(0 to 1);
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--    when 3 =>
+
+--      int_data_o <= int_reg_q(3 to int_reg_q'high) & int_reg_q(0 to 2);
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--    when 4 =>
+
+
+--      int_data_o <= int_reg_q(4 to int_reg_q'high) & int_reg_q(0 to 3);
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--    when 5 =>
+
+--      int_data_o <= int_reg_q(5 to int_reg_q'high) & int_reg_q(0 to 4);
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--    when 6 =>
+
+--      int_data_o <= int_reg_q(6 to int_reg_q'high) & int_reg_q(0 to 5);
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--    when 7 =>
+
+--      int_data_o <= int_reg_q(7 to int_reg_q'high) & int_reg_q(0 to 6);
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--    when others =>
+
+--      int_data_o <= int_reg_q;
+
+--      --int_data_o(0) <= int_reg_q(1);
+--      --int_data_o(1) <= int_reg_q(2);
+--      --int_data_o(2) <= int_reg_q(3);
+--      --int_data_o(3) <= int_reg_q(4);
+--      --int_data_o(4) <= int_reg_q(5);
+--      --int_data_o(5) <= int_reg_q(6);
+--      --int_data_o(6) <= int_reg_q(7);
+--      --int_data_o(7) <= int_reg_q(0);
+
+--  end case;
+--end process;
