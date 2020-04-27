@@ -1,0 +1,28 @@
+classdef or < nand2
+   % or class describes an elementary OR gate with generic fan-in, realized as
+   % balanced binary tree of nand2 gates, thus the class inherits
+   % properties and methods from father class nand2. The class describes
+   % the circuit in terms of delay,power and area. It starts from
+   % technological parameters of HP, LOP and LSTP devices, present in IRDS
+   % 2010. The user need to specify the pull-down width Wn followed by the
+   % fan-in.
+    
+    properties
+        Property1
+    end
+    
+    methods
+        function obj = or(inputArg1,inputArg2)
+            %OR Construct an instance of this class
+            %   Detailed explanation goes here
+            obj.Property1 = inputArg1 + inputArg2;
+        end
+        
+        function outputArg = method1(obj,inputArg)
+            %METHOD1 Summary of this method goes here
+            %   Detailed explanation goes here
+            outputArg = obj.Property1 + inputArg;
+        end
+    end
+end
+
