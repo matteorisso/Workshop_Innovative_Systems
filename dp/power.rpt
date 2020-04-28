@@ -1,14 +1,14 @@
-Information: Updating design information... (UID-85)
-Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
  
 ****************************************
 Report : power
         -analysis_effort low
-Design : top
+Design : dp
 Version: O-2018.06-SP4
-Date   : Tue Apr 28 19:42:40 2020
+Date   : Tue Apr 28 22:16:23 2020
 ****************************************
 
 
@@ -22,7 +22,7 @@ Wire Load Model Mode: top
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-top                    5K_hvratio_1_1    NangateOpenCellLibrary
+dp                     5K_hvratio_1_1    NangateOpenCellLibrary
 
 
 Global Operating Voltage = 1.1  
@@ -34,12 +34,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   4.3861 mW   (75%)
-  Net Switching Power  =   1.4864 mW   (25%)
+  Cell Internal Power  =   2.5534 mW   (76%)
+  Net Switching Power  = 792.5577 uW   (24%)
                          ---------
-Total Dynamic Power    =   5.8725 mW  (100%)
+Total Dynamic Power    =   3.3460 mW  (100%)
 
-Cell Leakage Power     = 539.6801 uW
+Cell Leakage Power     = 494.3348 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -48,10 +48,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network    896.1943          783.7659        1.6366e+04        1.6963e+03  (  26.45%)
-register       2.9606e+03           65.2463        2.1414e+05        3.2400e+03  (  50.53%)
+clock_network    636.0129          387.9205        1.6079e+04        1.0400e+03  (  27.08%)
+register       1.7217e+03           23.1083        1.8627e+05        1.9310e+03  (  50.28%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational    529.2568          637.3586        3.0917e+05        1.4758e+03  (  23.02%)
+combinational    195.7472          381.5282        2.9199e+05          869.2659  (  22.64%)
 --------------------------------------------------------------------------------------------------
-Total          4.3861e+03 uW     1.4864e+03 uW     5.3968e+05 nW     6.4121e+03 uW
+Total          2.5534e+03 uW       792.5571 uW     4.9433e+05 nW     3.8403e+03 uW
 1
