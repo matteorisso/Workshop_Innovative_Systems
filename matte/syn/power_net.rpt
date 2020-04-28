@@ -1,0 +1,125 @@
+ 
+****************************************
+Report : power
+        -net
+        -analysis_effort low
+        -sort_mode net_switching_power
+Design : top
+Version: O-2018.06-SP4
+Date   : Tue Apr 28 19:55:24 2020
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+
+                             Total      Static   Toggle   Switching
+Net                          Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+dp_ptr_int[9]                 10.165    0.138    0.0517      0.3182  
+mem_data_rd_o                  9.381    0.198    0.0245      0.1389  
+dp_ptr_int[3]                  8.866    0.047    0.0239      0.1284  
+addr_weight_o[0]               5.229    0.071    0.0291      0.0922  
+ready_o                        7.949    0.650    0.0182      0.0877  
+addr_data_even_o[1]            3.712    0.144    0.0387      0.0870  
+addr_data_odd_o[1]             3.712    0.144    0.0387      0.0870  
+dp_ptr_int[10]                 4.691    0.117    0.0254      0.0721  
+mem_weight_rd_o                7.962    0.112    0.0143      0.0687  
+addr_data_even_o[0]            3.712    0.107    0.0266      0.0596  
+addr_data_odd_o[0]             3.712    0.107    0.0266      0.0596  
+addr_data_even_o[3]            3.712    0.119    0.0214      0.0480  
+addr_data_odd_o[3]             3.712    0.119    0.0214      0.0480  
+addr_data_even_o[2]            3.712    0.135    0.0213      0.0477  
+addr_data_odd_o[2]             3.712    0.135    0.0213      0.0477  
+dp_ptr_int[6]                  1.438    0.138    0.0517      0.0450  
+n1                             4.070    0.350    0.0182      0.0449  
+addr_weight_o[1]               5.229    0.058    0.0142      0.0448  
+dp_cmd_int_MEM_RD_WEIGHT_      3.317    0.112    0.0143      0.0286  
+dp_ptr_int[4]                  3.422    0.046    0.0121      0.0251  
+addr_data_even_o[4]            3.712    0.108    0.0105      0.0237  
+addr_data_odd_o[4]             3.712    0.108    0.0105      0.0237  
+addr_weight_o[2]               5.229    0.056    0.0070      0.0222  
+dp_ptr_int[7]                  1.438    0.117    0.0254      0.0221  
+dp_ptr_int[11]                 2.648    0.085    0.0121      0.0193  
+dp_cmd_int_MEM_RD_WORD_        1.284    0.198    0.0245      0.0190  
+dp_cmd_int_EN_NPU_             1.188    0.310    0.0163      0.0117  
+dp_ptr_int[8]                  1.438    0.085    0.0121      0.0105  
+addr_data_even_o[5]            3.712    0.076    0.0046      0.0103  
+addr_data_odd_o[5]             3.712    0.076    0.0046      0.0103  
+addr_weight_o[3]               5.229    0.040    0.0031      0.0097  
+dp_ptr_int[5]                  1.438    0.019    0.0096      0.0084  
+addr_weight_o[4]               5.229    0.018    0.0009      0.0029  
+addr_data_even_o[6]            3.712    0.002    0.76e-4     0.0002  
+addr_data_odd_o[6]             3.712    0.002    0.76e-4     0.0002  
+addr_weight_o[5]               5.229    0.001    0.31e-4  9.654e-05  
+dp_ckg_rmask_int[0]            2.010    0.000    0.15e-4  1.856e-05  
+dp_ckg_rmask_int[1]            2.010    0.000    0.15e-4  1.856e-05  
+addr_data_even_o[7]            3.712    0.000    0.0000      0.0000  
+addr_data_even_o[8]            3.712    0.000    0.0000      0.0000  
+addr_data_even_o[9]            3.712    0.000    0.0000      0.0000  
+addr_data_even_o[10]           3.712    0.000    0.0000      0.0000  
+addr_data_even_o[11]           3.712    0.000    0.0000      0.0000  
+addr_data_even_o[12]           3.712    0.000    0.0000      0.0000  
+addr_data_even_o[13]           3.712    0.000    0.0000      0.0000  
+addr_data_even_o[14]           3.712    0.000    0.0000      0.0000  
+addr_data_even_o[15]           3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[7]             3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[8]             3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[9]             3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[10]            3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[11]            3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[12]            3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[13]            3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[14]            3.712    0.000    0.0000      0.0000  
+addr_data_odd_o[15]            3.712    0.000    0.0000      0.0000  
+addr_weight_o[6]               5.229    0.000    0.0000      0.0000  
+addr_weight_o[7]               5.229    0.000    0.0000      0.0000  
+addr_weight_o[8]               5.229    0.000    0.0000      0.0000  
+addr_weight_o[9]               5.229    0.000    0.0000      0.0000  
+addr_weight_o[10]              5.229    0.000    0.0000      0.0000  
+addr_weight_o[11]              5.229    0.000    0.0000      0.0000  
+addr_weight_o[12]              5.229    0.000    0.0000      0.0000  
+addr_weight_o[13]              5.229    0.000    0.0000      0.0000  
+addr_weight_o[14]              5.229    0.000    0.0000      0.0000  
+addr_weight_o[15]              5.229    0.000    0.0000      0.0000  
+dp_ckg_cmask_int[0]            2.010    0.000    0.0000      0.0000  
+dp_ckg_cmask_int[1]            2.010    0.000    0.0000      0.0000  
+dp_ckg_cmask_int[2]            2.010    0.000    0.0000      0.0000  
+dp_ckg_cmask_int[3]            2.010    0.000    0.0000      0.0000  
+dp_ckg_cmask_int[7]            1.700    0.000    0.0000      0.0000  d
+dp_ckg_rmask_int[2]            2.010    0.000    0.0000      0.0000  
+dp_ckg_rmask_int[3]            2.010    0.000    0.0000      0.0000  
+dp_ckg_rmask_int[7]            1.700    0.000    0.0000      0.0000  d
+dp_cmd_int_EN_P_2_2_           0.975    0.000    0.0000      0.0000  d
+dp_ptr_int[0]                  1.128    0.000    0.0000      0.0000  d
+dp_ptr_int[1]                  1.128    0.000    0.0000      0.0000  d
+dp_ptr_int[2]                  1.128    0.000    0.0000      0.0000  d
+n2                            12.315    0.000    0.0000      0.0000  d
+--------------------------------------------------------------------------------
+Total (79 nets)                                              1.7735 uW
+1

@@ -1,0 +1,1994 @@
+ 
+****************************************
+Report : resources
+Design : top
+Version: O-2018.06-SP4
+Date   : Tue Apr 28 19:50:39 2020
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : dp
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : p_2_2_0
+****************************************
+Resource Sharing Report for design p_2_2_0 in file ../../dp/p_2_2.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r593     | DW01_add     | width=6    |               | add_2_root_add_0_root_add_60_3 |
+| r595     | DW01_add     | width=6    |               | add_1_root_add_0_root_add_60_3 |
+| r597     | DW01_add     | width=6    |               | add_0_root_add_0_root_add_60_3 |
+===============================================================================
+
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : round_N_I6_N_O4_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : p_2_2_1
+****************************************
+Resource Sharing Report for design p_2_2_0 in file ../../dp/p_2_2.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r593     | DW01_add     | width=6    |               | add_2_root_add_0_root_add_60_3 |
+| r595     | DW01_add     | width=6    |               | add_1_root_add_0_root_add_60_3 |
+| r597     | DW01_add     | width=6    |               | add_0_root_add_0_root_add_60_3 |
+===============================================================================
+
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : round_N_I6_N_O4_1
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : p_2_2_2
+****************************************
+Resource Sharing Report for design p_2_2_0 in file ../../dp/p_2_2.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r593     | DW01_add     | width=6    |               | add_2_root_add_0_root_add_60_3 |
+| r595     | DW01_add     | width=6    |               | add_1_root_add_0_root_add_60_3 |
+| r597     | DW01_add     | width=6    |               | add_0_root_add_0_root_add_60_3 |
+===============================================================================
+
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : round_N_I6_N_O4_2
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : p_2_2_3
+****************************************
+Resource Sharing Report for design p_2_2_0 in file ../../dp/p_2_2.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r898     | DW01_add     | width=6    |               | add_2_root_add_0_root_add_60_3 |
+| r900     | DW01_add     | width=6    |               | add_1_root_add_0_root_add_60_3 |
+| r902     | DW01_add     | width=6    |               | add_0_root_add_0_root_add_60_3 |
+===============================================================================
+
+
+No implementations to report
+ 
+****************************************
+Design : round_N_I6_N_O4_3
+****************************************
+Resource Sharing Report for design round_N_I6_N_O4_0 in file
+        ../../dp/round.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r295     | DW01_inc     | width=4    |               | add_30 add_36        |
+===============================================================================
+
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_2
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_3
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_4
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_5
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_6
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : relu_N_I16_N_O4_7
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : npu
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_0
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_1
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_2
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_2
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_3
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_3
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_4
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_4
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_5
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_5
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_6
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_6
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_7
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_7
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_8
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_8
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_9
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_9
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_10
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_10
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_11
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_11
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_12
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_12
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_13
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_13
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_14
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_14
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_15
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_15
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_16
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_16
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_17
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_17
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_18
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_18
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_19
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_19
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_20
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_20
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_21
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_21
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_22
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_22
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_23
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_23
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_24
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_24
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_25
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_25
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_26
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_26
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_27
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_27
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_28
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_28
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_29
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_29
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_30
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_30
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_31
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_31
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_32
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_32
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_33
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_33
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_34
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_34
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_35
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_35
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_36
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_36
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_37
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_37
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_38
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_38
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_39
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_39
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_40
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_40
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_41
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_41
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_42
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_42
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_43
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_43
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_44
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_44
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_45
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_45
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_46
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_46
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_47
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_47
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_48
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_48
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_49
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_49
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_50
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_50
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_51
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_51
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_52
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_52
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_53
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_53
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_54
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_54
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_55
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_55
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_56
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_56
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_57
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_57
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_58
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_58
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_59
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_59
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_60
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_60
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_61
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_61
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_62
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : addsub_N16_62
+****************************************
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pe_63
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : addsub_N16_63
+****************************************
+Resource Sharing Report for design addsub_N16_0 in file ../../dp/addsub.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r296     | DW01_add     | width=16   |               | add_104              |
+| r298     | DW01_sub     | width=16   |               | sub_108              |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_104            | DW01_add         | rpl                |                |
+| sub_108            | DW01_sub         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : act_buffer_v
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : act_buffer_h
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : pipeline_stage
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : main
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : addressgen_weight_N16
+****************************************
+Resource Sharing Report for design addressgen_weight_N16 in file
+        ../../addressgen/addressgen2.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r298     | DW01_add     | width=16   |               | add_29               |
+| r300     | DW01_inc     | width=16   |               | add_75               |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_29             | DW01_add         | rpl                |                |
+| add_75             | DW01_inc         | rpl                |                |
+===============================================================================
+
+ 
+****************************************
+Design : addressgen_N16
+****************************************
+Resource Sharing Report for design addressgen_N16 in file
+        ../../addressgen/addressgen.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r342     | DW01_add     | width=16   |               | add_1_root_add_178_3 |
+|          |              |            |               | add_1_root_add_179_3 |
+| r356     | DW01_add     | width=16   |               | add_62               |
+| r358     | DW01_add     | width=16   |               | add_89               |
+| r360     | DW01_add     | width=16   |               | add_116              |
+| r362     | DW01_add     | width=16   |               | add_143              |
+| r364     | DW01_add     | width=16   |               | add_170              |
+| r959     | DW01_add     | width=16   |               | add_1_root_add_0_root_add_178_3 |
+| r961     | DW01_add     | width=16   |               | add_0_root_add_0_root_add_178_3 |
+| r1548    | DW01_add     | width=16   |               | add_1_root_add_0_root_add_179_3 |
+| r1550    | DW01_add     | width=16   |               | add_0_root_add_0_root_add_179_3 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_0_root_add_0_root_add_178_3       |                    |                |
+|                    | DW01_add         | rpl                |                |
+| add_1_root_add_0_root_add_178_3       |                    |                |
+|                    | DW01_add         | rpl                |                |
+| add_0_root_add_0_root_add_179_3       |                    |                |
+|                    | DW01_add         | rpl                |                |
+| add_1_root_add_0_root_add_179_3       |                    |                |
+|                    | DW01_add         | rpl                |                |
+| r342               | DW01_add         | rpl                |                |
+| add_62             | DW01_add         | rpl                |                |
+| add_89             | DW01_add         | rpl                |                |
+| add_116            | DW01_add         | rpl                |                |
+| add_143            | DW01_add         | rpl                |                |
+| add_170            | DW01_add         | rpl                |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : ctrl_top
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : ctrl_weight_addressgen
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : ctrl_addressgen
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : ctrl_idx_cnt_IDX_CNT_WIDTH4
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mod_counter_N4_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mod_counter_N4_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mod_counter_N4_2
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : mod_counter_N4_3
+****************************************
+Resource Sharing Report for design mod_counter_N4_0 in file
+        ../../modc/mod_counter.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r298     | DW_cmp       | width=4    |               | eq_27                |
+| r300     | DW01_inc     | width=4    |               | add_51               |
+===============================================================================
+
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : ctrl_mac_cnt_MAC_CNT_WIDTH3
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mod_counter_N3_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mod_counter_N3_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mod_counter_N3_2
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mod_counter_N3_3
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : mod_counter_N3_4
+****************************************
+Resource Sharing Report for design mod_counter_N3_0 in file
+        ../../modc/mod_counter.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r298     | DW_cmp       | width=3    |               | eq_27                |
+| r300     | DW01_inc     | width=3    |               | add_51               |
+===============================================================================
+
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : ctrl_fsm
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cfg
+****************************************
+
+No implementations to report
+1
