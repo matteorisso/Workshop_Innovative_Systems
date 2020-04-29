@@ -1,0 +1,22 @@
+Array size= 64
+
+Delay
+HP_del = 8.3246e-10
+LOP_del = 1.3092e-09
+LSTP_del = 1.7774e-09
+
+Area
+HP_A = 1.3060e+04
+LOP_A = 1.5962e+04
+LSTP_A = 2.0315e+04
+
+Power dyn
+HP_Pdyn = 9.8001
+LOP_Pdyn = 3.7355
+LSTP_Pdyn = 5.7057
+
+Power stat
+HP_Pstat = 839.0726
+LOP_Pstat = 8.2911
+LSTP_Pstat = 0.4742
+

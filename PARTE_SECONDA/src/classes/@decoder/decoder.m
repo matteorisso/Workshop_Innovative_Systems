@@ -20,7 +20,7 @@ classdef decoder < nand2
             % Constructor of father class nand2
             obj             = obj@nand2(nMOS_width);
             obj.N           = n_IN;			
-            obj.nandN       = nandN(nMOS_width, n_IN);
+            obj.nandN       = nandn(nMOS_width, n_IN);
         end
         
         % Delay evaluation
