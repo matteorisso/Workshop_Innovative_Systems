@@ -11,8 +11,8 @@ entity dp_extra is
         clk               : in  std_logic;
         rst_n             : in  std_logic;
 --        
-        fsm_cmd_i         : in  fsm_cmd_t;
-        fsm_flag_o        : out fsm_flag_t;
+        ctrl_i            : in  fsm_cmd_t;
+        flag_o            : out fsm_flag_t;
 --
         cfg_idx_mod_i     : in  idx_cnt_mod_t;  --! <-- cfg
         cfg_mac_mod_i     : in  mac_cnt_mod_t;  --! <-- cfg
@@ -56,14 +56,13 @@ architecture rtl of dp_extra is
 begin
 
 
-    fsm_flag_o.tc_idx <= idx_cnt_tc_int;
-    fsm_flag_o.tc_mac <= mac_cnt_tc_int;
+    flag_o.tc_idx <= idx_cnt_tc_int;
+    flag_o.tc_mac <= mac_cnt_tc_int;
 
-    mac_cnt_en_int.npu <= fsm_cmd_i.mem_rd_data;
-    mac_cnt_en_int.kx  <= fsm_cmd_i.en_cnt_kx;
-    mac_cnt_en_int.ky  <= fsm_cmd_i.en_cnt_ky;
-    mac_cnt_en_int.re  <= fsm_cmd_i.en_cnt_re;
-
+    mac_cnt_en_int.npu <= ctrl_i.mem_rd_data;
+    mac_cnt_en_int.kx  <= ctrl_i.en_cnt_kx;
+    mac_cnt_en_int.ky  <= ctrl_i.en_cnt_ky;
+    mac_cnt_en_int.re  <= ctrl_i.en_cnt_re;
 
     mac_cnt_mod_int_1    <= cfg_mac_mod_i;
     mac_cnt_mod_int_2.kx <= mac_cnt_mod_int_1.kx;
@@ -98,7 +97,7 @@ begin
             clk   => clk,
             rst_n => rst_n,
             mod_i => cfg_idx_mod_i,
-            en_i  => fsm_cmd_i.update_idx,
+            en_i  => ctrl_i.update_idx,
             tc_o  => idx_cnt_tc_int,
             en_o  => idx_cnt_en_int,
             q_o   => idx_cnt_q_int
@@ -118,8 +117,8 @@ begin
         
         port map (
             nif_z_i      => nif_z_int,
-            en_base_i    => fsm_cmd_i.update_idx,
-            en_offs_i    => fsm_cmd_i.mem_rd_data,
+            en_base_i    => ctrl_i.update_idx,
+            en_offs_i    => ctrl_i.mem_rd_data,
             idx_cnt_en_i => idx_cnt_en_int,
             idx_cnt_tc_i => idx_cnt_tc_int,
             idx_cnt_q_i  => idx_cnt_q_int,
@@ -146,7 +145,7 @@ begin
     addressgen_weight_logic_1 : entity work.addressgen_weight_logic
         
         port map (
-            en_offs_i    => fsm_cmd_i.mem_rd_weight,
+            en_offs_i    => ctrl_i.mem_rd_weight,
             idx_cnt_en_i => idx_cnt_en_int,
             idx_cnt_tc_i => idx_cnt_tc_int,
             cmd_o        => addr_weight_cmd_int

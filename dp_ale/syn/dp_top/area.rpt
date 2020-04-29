@@ -1,0 +1,111 @@
+ 
+****************************************
+Report : area
+Design : dp_top
+Version: O-2018.06-SP4
+Date   : Wed Apr 29 17:30:31 2020
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/data_o_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap1_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/tap2_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/data_o_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/data_o_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_0/data_o_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/data_o_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap1_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/tap2_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/data_o_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/data_o_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_3/data_o_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/data_o_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap1_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/tap2_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/data_o_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/data_o_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_2/data_o_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_2_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_2_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_2_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_2_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_1_int_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_1_int_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_1_int_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/data_o_reg[0]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap1_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/tap2_1_int_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/data_o_reg[1]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/data_o_reg[2]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Warning: At pin 'dp_main_1/p_2_2_i_1/data_o_reg[3]/CK' clock 'MY_CLK' does not have the needed 'rise' edge.  (TIM-250)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+Number of ports:                        17323
+Number of nets:                         32111
+Number of cells:                        13719
+Number of combinational cells:          10216
+Number of sequential cells:              2604
+Number of macros/black boxes:               0
+Number of buf/inv:                       3724
+Number of references:                       2
+
+Combinational area:              16621.010171
+Buf/Inv area:                     2102.198008
+Noncombinational area:           14845.460322
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 31466.470492
+Total area:                 undefined
+1

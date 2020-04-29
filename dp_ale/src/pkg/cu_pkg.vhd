@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.dp_pkg.all; --! mac_cnt_tc, idx_cnt_tc
+use work.dp_pkg.all;                    --! mac_cnt_tc, idx_cnt_tc
 
 package cu_pkg is
 
@@ -33,9 +33,9 @@ package cu_pkg is
         mem_rd_data   : std_logic;
         mem_rd_weight : std_logic;
 --
-        dp_en_npu     : std_logic;
-        dp_ldh_v_n    : std_logic;
-        dp_ldk        : std_logic;
+        en_npu        : std_logic;
+        ldh_v_n       : std_logic;
+        ldk           : std_logic;
 --        npu   : std_logic;
         en_cnt_kx     : std_logic;
         en_cnt_ky     : std_logic;

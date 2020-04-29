@@ -1,0 +1,102 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dp_top
+Version: O-2018.06-SP4
+Date   : Wed Apr 29 17:30:33 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: fc_i (input port clocked by MY_CLK)
+  Endpoint: dp_main_1/npu_1/pe_i_0_1/acc_q_int_reg[15]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dp_top             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  fc_i (in)                                               0.00       0.50 r
+  dp_main_1/fc_i (dp_main)                                0.00       0.50 r
+  dp_main_1/npu_1/fc_i (npu)                              0.00       0.50 r
+  dp_main_1/npu_1/U152/Z (BUF_X1)                         0.04       0.54 r
+  dp_main_1/npu_1/U32/Z (BUF_X1)                          0.04       0.58 r
+  dp_main_1/npu_1/U18/Z (BUF_X2)                          0.13       0.71 r
+  dp_main_1/npu_1/pe_i_0_1/fc_i (pe_62)                   0.00       0.71 r
+  dp_main_1/npu_1/pe_i_0_1/U49/ZN (INV_X1)                0.06       0.77 f
+  dp_main_1/npu_1/pe_i_0_1/U14/ZN (AOI22_X1)              0.11       0.88 r
+  dp_main_1/npu_1/pe_i_0_1/U10/ZN (INV_X1)                0.05       0.93 f
+  dp_main_1/npu_1/pe_i_0_1/U16/ZN (AOI22_X1)              0.07       1.00 r
+  dp_main_1/npu_1/pe_i_0_1/U15/ZN (INV_X1)                0.03       1.04 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/b_i[0] (addsub_N16_62)
+                                                          0.00       1.04 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/B[0] (addsub_N16_62_DW01_add_0)
+                                                          0.00       1.04 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U2/ZN (AND2_X1)
+                                                          0.04       1.08 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_1/CO (FA_X1)
+                                                          0.09       1.17 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_2/CO (FA_X1)
+                                                          0.09       1.26 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_3/CO (FA_X1)
+                                                          0.09       1.35 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_4/CO (FA_X1)
+                                                          0.09       1.44 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_5/CO (FA_X1)
+                                                          0.09       1.53 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_6/CO (FA_X1)
+                                                          0.09       1.62 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_7/CO (FA_X1)
+                                                          0.09       1.71 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_8/CO (FA_X1)
+                                                          0.09       1.80 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_9/CO (FA_X1)
+                                                          0.09       1.89 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_10/CO (FA_X1)
+                                                          0.09       1.98 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_11/CO (FA_X1)
+                                                          0.09       2.07 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_12/CO (FA_X1)
+                                                          0.09       2.16 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_13/CO (FA_X1)
+                                                          0.09       2.25 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_14/CO (FA_X1)
+                                                          0.09       2.35 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/U1_15/S (FA_X1)
+                                                          0.13       2.48 r
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/add_104/SUM[15] (addsub_N16_62_DW01_add_0)
+                                                          0.00       2.48 r
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/U33/ZN (AOI22_X1)     0.03       2.50 f
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/U32/ZN (INV_X1)       0.03       2.53 r
+  dp_main_1/npu_1/pe_i_0_1/addsub_1/s_i[15] (addsub_N16_62)
+                                                          0.00       2.53 r
+  dp_main_1/npu_1/pe_i_0_1/acc_q_int_reg[15]/D (SDFFR_X1)
+                                                          0.01       2.54 r
+  data arrival time                                                  2.54
+
+  clock MY_CLK (rise edge)                                4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.07       3.93
+  dp_main_1/npu_1/pe_i_0_1/acc_q_int_reg[15]/CK (SDFFR_X1)
+                                                          0.00       3.93 r
+  library setup time                                     -0.07       3.86
+  data required time                                                 3.86
+  --------------------------------------------------------------------------
+  data required time                                                 3.86
+  data arrival time                                                 -2.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.32
+
+
+1

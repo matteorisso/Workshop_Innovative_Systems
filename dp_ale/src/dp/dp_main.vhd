@@ -89,7 +89,7 @@ begin
             
             if (cmd_i.mem_rd_weight and fc_i) = '1' then
                 
-                weight_fc_int <=  weight_fc_i;
+                weight_fc_int <= weight_fc_i;
                 
             end if;
             

@@ -14,9 +14,6 @@ entity dp_extra is
 --      --! fsm  
         mem_rd_data_i             : in  std_logic;
         mem_rd_weight_i           : in  std_logic;
-        dp_en_npu_i               : in  std_logic;
-        dp_ldh_v_n_i              : in  std_logic;
-        dp_ldk_i                  : in  std_logic;
         en_cnt_kx_i               : in  std_logic;
         en_cnt_ky_i               : in  std_logic;
         en_cnt_re_i               : in  std_logic;
@@ -69,7 +66,7 @@ end entity;
 architecture rtl of dp_extra is
 
 --  --! flatten
-    signal fsm_cmd_i           : fsm_cmd_t;
+    signal ctrl_i              : fsm_cmd_t;
     signal cfg_idx_mod_i       : idx_cnt_mod_t;
     signal cfg_addr_stride_i   : addressgen_stride_t;
 --
@@ -98,15 +95,12 @@ begin
     --! flat i/o
     --! -------------------------------------------------------------------------------------
 
-    fsm_cmd_i.mem_rd_data     <= mem_rd_data_i;
-    fsm_cmd_i.mem_rd_weight   <= mem_rd_weight_i;
-    fsm_cmd_i.dp_en_npu       <= dp_en_npu_i;
-    fsm_cmd_i.dp_ldh_v_n      <= dp_ldh_v_n_i;
-    fsm_cmd_i.dp_ldk          <= dp_ldk_i;
-    fsm_cmd_i.en_cnt_kx       <= en_cnt_kx_i;
-    fsm_cmd_i.en_cnt_ky       <= en_cnt_ky_i;
-    fsm_cmd_i.en_cnt_re       <= en_cnt_re_i;
-    fsm_cmd_i.update_idx      <= update_idx_i;
+    ctrl_i.mem_rd_data        <= mem_rd_data_i;
+    ctrl_i.mem_rd_weight      <= mem_rd_weight_i;
+    ctrl_i.en_cnt_kx          <= en_cnt_kx_i;
+    ctrl_i.en_cnt_ky          <= en_cnt_ky_i;
+    ctrl_i.en_cnt_re          <= en_cnt_re_i;
+    ctrl_i.update_idx         <= update_idx_i;
     cfg_idx_mod_i.nif         <= cfg_idx_cnt_mod_nif_i;
     cfg_idx_mod_i.nof         <= cfg_idx_cnt_mod_nof_i;
     cfg_idx_mod_i.block_y     <= cfg_idx_cnt_mod_block_y_i;
@@ -131,10 +125,10 @@ begin
     --! ------------------------------------------------------------------------------------
 
 
-    mac_cnt_en_int.npu <= fsm_cmd_i.mem_rd_data;
-    mac_cnt_en_int.kx  <= fsm_cmd_i.en_cnt_kx;
-    mac_cnt_en_int.ky  <= fsm_cmd_i.en_cnt_ky;
-    mac_cnt_en_int.re  <= fsm_cmd_i.en_cnt_re;
+    mac_cnt_en_int.npu <= ctrl_i.mem_rd_data;
+    mac_cnt_en_int.kx  <= ctrl_i.en_cnt_kx;
+    mac_cnt_en_int.ky  <= ctrl_i.en_cnt_ky;
+    mac_cnt_en_int.re  <= ctrl_i.en_cnt_re;
 
     mac_cnt_mod_int_2.kx <= mac_cnt_mod_int_1.kx;
     mac_cnt_mod_int_2.ky <= mac_cnt_mod_int_1.ky;
@@ -168,7 +162,7 @@ begin
             clk   => clk,
             rst_n => rst_n,
             mod_i => cfg_idx_mod_i,
-            en_i  => fsm_cmd_i.update_idx,
+            en_i  => ctrl_i.update_idx,
             tc_o  => idx_cnt_tc_int,
             en_o  => idx_cnt_en_int,
             q_o   => idx_cnt_q_int
@@ -188,8 +182,8 @@ begin
         
         port map (
             nif_z_i      => nif_z_int,
-            en_base_i    => fsm_cmd_i.update_idx,
-            en_offs_i    => fsm_cmd_i.mem_rd_data,
+            en_base_i    => ctrl_i.update_idx,
+            en_offs_i    => ctrl_i.mem_rd_data,
             idx_cnt_en_i => idx_cnt_en_int,
             idx_cnt_tc_i => idx_cnt_tc_int,
             idx_cnt_q_i  => idx_cnt_q_int,
@@ -216,7 +210,7 @@ begin
     addressgen_weight_logic_1 : entity work.addressgen_weight_logic
         
         port map (
-            en_offs_i    => fsm_cmd_i.mem_rd_weight,
+            en_offs_i    => ctrl_i.mem_rd_weight,
             idx_cnt_en_i => idx_cnt_en_int,
             idx_cnt_tc_i => idx_cnt_tc_int,
             cmd_o        => addr_weight_cmd_int
