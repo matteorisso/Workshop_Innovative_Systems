@@ -43,7 +43,8 @@ classdef nand2
         % Power LOP (FO4) data from LOP_2010.m
         Pstat_LOP_FO4       = 1.8064e-06;		% [W]
         Pdyn_LOP_FO4        = 8.1353e-07;		% [W]
-
+%         Pstat_LOP_FO4       = 36.33e-09;		% [W]
+%         Pdyn_LOP_FO4        = 26.75e-09;		% [W]
         % Power LSTP (FO4) data from LSTP_2010.m
         Pstat_LSTP_FO4      = 1.02421e-7;	% [W]
         Pdyn_LSTP_FO4       = 1.242597e-6;	% [W]
