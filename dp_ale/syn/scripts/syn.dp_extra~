@@ -1,0 +1,71 @@
+set DIR ..
+set PKG ${DIR}/src/pkg
+set SRC ${DIR}/src/dp
+set DESIGN "dp_extra" 
+set CLK 4
+
+pwd 
+file delete -force -- work
+
+analyze -f vhdl -l work ${PKG}/mem_pkg.vhd
+analyze -f vhdl -l work ${PKG}/dp_pkg.vhd
+analyze -f vhdl -l work ${PKG}/cu_pkg.vhd
+#
+analyze -f vhdl -l work ${SRC}/dp_extra/addressgen/addressgen_data.vhd
+analyze -f vhdl -l work ${SRC}/dp_extra/addressgen/addressgen_data_logic.vhd
+analyze -f vhdl -l work ${SRC}/dp_extra/addressgen/addressgen_weight.vhd
+analyze -f vhdl -l work ${SRC}/dp_extra/addressgen/addressgen_weight_logic.vhd
+analyze -f vhdl -l work ${SRC}/dp_extra/mod_counter.vhd
+analyze -f vhdl -l work ${SRC}/dp_extra/mac_cnt.vhd
+analyze -f vhdl -l work ${SRC}/dp_extra/idx_cnt.vhd
+#
+analyze -f vhdl -l work ${SRC}/dp_extra_flat.vhd
+
+# elaborate gtech design
+elaborate -lib work ${DESIGN}
+uniquify
+link
+
+# clk
+create_clock -name MY_CLK -period ${CLK} clk
+set_dont_touch_network [get_clocks MY_CLK]
+
+# set timing constraints
+set_clock_uncertainty 0.07 [get_clocks MY_CLK] 
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set_load [load_of NangateOpenCellLibrary/BUF_X4/A] [all_outputs]
+set_wire_load_model -name 5K_hvratio_1_1 -library NangateOpenCellLibrary
+
+set_fix_multiple_port_nets -all -constants -buffer_constants [get_designs *]
+remove_unconnected_ports -blast_buses [get_cells -hierarchical *]
+
+# tech library map
+set power_preserve_rtl_hier_names true
+set power_cg_flatten true 
+compile -gate_clock -power_effort high 
+
+# reports
+file mkdir ${DESIGN}
+report_area        > ${DESIGN}/area.rpt
+report_clock       > ${DESIGN}/clock.rpt
+report_timing      > ${DESIGN}/timing.rpt
+
+report_power       > ${DESIGN}/power.rpt
+report_power -net  > ${DESIGN}/power.net.rpt
+report_power -cell > ${DESIGN}/power.cell.rpt
+
+# Verilog netlist
+set verilogout_no_tri true
+set verilogout_ignore_case true
+set verilogout_single_bit false
+set verilogout_unconnected_prefix "UNCONNECTED"
+set verilogout_show_unconnected_pins true
+
+ungroup -all -flatten
+change_names -hierarchy -rules verilog
+write_sdf ${DIR}/netlist/${DESIGN}.sdf
+write -f verilog -hierarchy -output ${DIR}/netlist/${DESIGN}.v
+write_sdc ${DIR}/netlist/${DESIGN}.sdc
+
+#quit

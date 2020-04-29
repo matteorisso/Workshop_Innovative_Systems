@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.ctrl_pkg.all;
+use work.mem_pkg.all;
+use work.dp_pkg.all;
+
+entity ctrl_addressgen_data is
+    
+    port(
+        nif_z_i      : in  std_logic;
+        fsm_cmd_i    : in  fsm_cmd_t;
+        idx_cnt_en_i : in  idx_cnt_en_t;
+        idx_cnt_tc_i : in  idx_cnt_tc_t;
+        idx_cnt_q_i  : in  idx_cnt_q_t;
+        cmd_o        : out addressgen_cmd_t
+        );
+
+end entity;
+
+architecture gate of ctrl_addressgen_data is
+
+begin
+
+    --! ----------------------------------------------------------------------------------
+    cmd_o.en_word          <= fsm_cmd_i.mem_rd_data;
+    cmd_o.en_nif           <= fsm_cmd_i.update_idx;
+--    
+    cmd_o.en_block_y       <= idx_cnt_en_i.block_y;
+    cmd_o.en_block_x_even  <= idx_cnt_en_i.block_x and not(idx_cnt_q_i.block_x(0));
+    cmd_o.en_block_x_odd   <= idx_cnt_en_i.block_x and idx_cnt_q_i.block_x(0);
+--
+    cmd_o.clr_word         <= idx_cnt_en_i.block_x when nif_z_i = '1' else fsm_cmd_i.update_idx;
+    cmd_o.clr_nif          <= idx_cnt_en_i.block_y;
+    cmd_o.clr_block_y      <= idx_cnt_en_i.block_x;
+    cmd_o.clr_block_x_even <= idx_cnt_en_i.nof;
+    cmd_o.clr_block_x_odd  <= idx_cnt_en_i.nof;
+
+    
+end architecture;

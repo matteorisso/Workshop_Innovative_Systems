@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : power
+        -cell
+        -analysis_effort low
+        -sort_mode cell_internal_power
+Design : dp_extra
+Version: O-2018.06-SP4
+Date   : Wed Apr 29 16:30:40 2020
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dp_extra               5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+
+                        Cell      Driven Net  Tot Dynamic      Cell
+                        Internal  Switching   Power            Leakage
+Cell                    Power     Power       (% Cell/Tot)     Power      Attrs
+--------------------------------------------------------------------------------
+addressgen_1              99.3810       N/A        N/A (N/A)   18532.2070 h
+mac_cnt_1                 39.9397       N/A        N/A (N/A)   3349.6907  h
+addressgen_weight_1       22.5023       N/A        N/A (N/A)   4720.0020  h
+idx_cnt_1                 15.4830       N/A        N/A (N/A)   3720.2559  h
+addressgen_data_logic_1    0.2998       N/A        N/A (N/A)    274.7151  h
+U62                        0.1580    0.1478      0.306 (52%)     22.7929   
+U65                        0.1385    0.1296      0.268 (52%)     22.8376   
+addressgen_weight_logic_1
+                           0.0898       N/A        N/A (N/A)     83.8426  h
+U61                        0.0767    0.0728      0.150 (51%)     22.8676   
+U55                        0.0661    0.0760      0.142 (47%)     27.8584   
+U64                        0.0643    0.0610      0.125 (51%)     23.0386   
+U53                        0.0635    0.0780      0.141 (45%)     26.4299   
+U60                        0.0352    0.0336   6.88e-02 (51%)     23.0395   
+U52                        0.0349    0.0914      0.126 (28%)     21.1995   
+U58                        0.0346    0.0905      0.125 (28%)     17.3934   
+U29                        0.0326    0.0429   7.55e-02 (43%)     18.1048   
+U36                        0.0318    0.0148   4.67e-02 (68%)     21.1290   
+U51                        0.0280    0.0248   5.27e-02 (53%)     32.6015   
+U63                        0.0253    0.0242   4.96e-02 (51%)     23.2494   
+U59                        0.0247    0.0624   8.71e-02 (28%)     14.3532   
+U57                        0.0237    0.0295   5.32e-02 (45%)     12.1894   
+U56                        0.0231    0.0436   6.68e-02 (35%)     22.6925   
+U54                        0.0230    0.0282   5.12e-02 (45%)     16.4685   
+U48                        0.0189    0.0261   4.51e-02 (42%)     18.1034   
+U50                        0.0169    0.0236   4.05e-02 (42%)     18.0871   
+U46                        0.0167    0.0233   4.00e-02 (42%)     19.6006   
+U45                        0.0148    0.0210   3.58e-02 (41%)     19.5986   
+U44                        0.0145    0.0207   3.51e-02 (41%)     21.1296   
+U42                        0.0129    0.0185   3.14e-02 (41%)     21.1423   
+U47                        0.0116    0.0167   2.82e-02 (41%)     22.7293   
+U34                        0.0115    0.1218      0.133 (9%)      10.6536   
+U35                        0.0106    0.1005      0.111 (10%)     10.5855   
+U49                        0.0105    0.0151   2.56e-02 (41%)     22.7575   
+U43                     9.385e-03    0.0139   2.33e-02 (40%)     24.1962   
+U41                     7.997e-03    0.0119   1.99e-02 (40%)     24.2385   
+U40                     5.373e-03 8.103e-03   1.35e-02 (40%)     25.8457   
+U39                     5.354e-03 9.114e-03   1.45e-02 (37%)     26.2261   
+U37                     2.972e-03 4.643e-03   7.62e-03 (39%)     27.4961   
+U38                     2.817e-03 4.386e-03   7.20e-03 (39%)     27.4227   
+U30                        0.0000    0.0000      0.000 (N/A)     18.6041   
+U32                        0.0000    0.0000      0.000 (N/A)     18.6041   
+--------------------------------------------------------------------------------
+Totals (41 cells)        178.752uW     N/A         N/A (N/A)     31.426uW
+1
